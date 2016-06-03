@@ -1,0 +1,32 @@
+/* global */
+#body {
+    padding: 10px;
+    margin-top: 50px;
+}
+
+/* navbar */
+#navbar, .navbar {
+    height: 50px;
+    margin: 0;
+}
+
+.navbar-header {
+    float: left !important;
+}
+
+.navbar-brand sup {
+    font-size: 0.5em;
+}
+
+.navbar-right {
+    float: right !important;
+    margin: 0 -15px 0 0 !important;
+}
+
+.navbar-right li {
+    float: left !important;
+}
+
+.navbar-right li a {
+    padding: 15px !important;
+}

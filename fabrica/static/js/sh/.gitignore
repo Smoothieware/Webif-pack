@@ -1,0 +1,6 @@
+old
+docs/clean.php
+node_modules
+makedocs.bat
+jsdoc.json
+package.json
