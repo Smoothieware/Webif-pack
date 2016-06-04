@@ -1,0 +1,841 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  
+<!-- Mirrored from github.com/grbl/grbl/wiki/Configuring-Grbl-v0.8 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-3c1694fab1568340f2e75b26efa1f55d97c5153364a7357e9e1104c718ff1a2f.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-3e95d73eb454e0099947df00d91ab0dbfc6b10be69dd5daf5de7aeb676580d20.css" media="all" rel="stylesheet" />
+    
+    
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-c4b4365da282e51c06e107368db8502a2ecf82e64094d29d791b797372212de2.css" media="all" rel="stylesheet" />
+    
+
+    <link as="script" href="https://assets-cdn.github.com/assets/frameworks-f8175c23360b42a4eb18b2319fefeae252cfeea482fb804356f4136a52bfddb3.js" rel="preload" />
+    
+    <link as="script" href="https://assets-cdn.github.com/assets/github-1502104f450cb05859f99b57e29782e071e3fb240e237adb8cbf17ebbdb271c7.js" rel="preload" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Configuring Grbl v0.8 · grbl/grbl Wiki · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="https://github.com/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://github.com/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://github.com/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://github.com/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://github.com/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars0.githubusercontent.com/u/1336278?v=3&amp;s=400" name="twitter:image:src" /><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="grbl/grbl" name="twitter:title" /><meta content="grbl - An open source, embedded, high performance g-code-parser and CNC milling controller written in optimized C that will run on a straight Arduino" name="twitter:description" />
+      <meta content="https://avatars0.githubusercontent.com/u/1336278?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="grbl/grbl" property="og:title" /><meta content="https://github.com/grbl/grbl" property="og:url" /><meta content="grbl - An open source, embedded, high performance g-code-parser and CNC milling controller written in optimized C that will run on a straight Arduino" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="https://github.com/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_wiki" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="55A92EEF:7A02:17254E0:5735BE2E" name="octolytics-dimension-request_id" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/wiki/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="YTQ5ODNhNjRjNDM3NjQ0MjEwMmEyOTUxNWI4YmJjMzFmYTAwOTEwMzlmYmI4MzRkMzM0MTEyN2Y1ZDcwZmFjNXx7InJlbW90ZV9hZGRyZXNzIjoiODUuMTY5LjQ2LjIzOSIsInJlcXVlc3RfaWQiOiI1NUE5MkVFRjo3QTAyOjE3MjU0RTA6NTczNUJFMkUiLCJ0aW1lc3RhbXAiOjE0NjMxMzk4ODZ9">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta content="d6013ef313dc33a770980c6e66b5cb1d7130dd9d" name="form-nonce" />
+
+    <meta http-equiv="x-pjax-version" content="22dd3b7ce1aea89995da9e98ee8a9677">
+    
+
+      
+  <meta name="description" content="grbl - An open source, embedded, high performance g-code-parser and CNC milling controller written in optimized C that will run on a straight Arduino">
+  <meta name="go-import" content="github.com/grbl/grbl git https://github.com/grbl/grbl.git">
+
+  <meta content="1336278" name="octolytics-dimension-user_id" /><meta content="grbl" name="octolytics-dimension-user_login" /><meta content="114102" name="octolytics-dimension-repository_id" /><meta content="grbl/grbl" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="114102" name="octolytics-dimension-repository_network_root_id" /><meta content="grbl/grbl" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/grbl/grbl/commits/master.atom" rel="alternate" title="Recent Commits to grbl:master" type="application/atom+xml">
+
+
+  </head>
+
+
+  <body class="logged-out   env-production  vis-public">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"></div>
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+          <header class="site-header js-details-container" role="banner">
+  <div class="container-responsive">
+    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+    </a>
+
+    <button class="btn-link right site-header-toggle js-details-target" type="button" aria-label="Toggle navigation">
+      <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path d="M11.41 9H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1z m0-4H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1zM0.59 11h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1z"></path></svg>
+    </button>
+
+    <div class="site-header-menu">
+      <nav class="site-header-nav site-header-nav-main">
+        <a href="https://github.com/personal" class="js-selected-navigation-item nav-item nav-item-personal" data-ga-click="Header, click, Nav menu - item:personal" data-selected-links="/personal /personal">
+          Personal
+</a>        <a href="https://github.com/open-source" class="js-selected-navigation-item nav-item nav-item-opensource" data-ga-click="Header, click, Nav menu - item:opensource" data-selected-links="/open-source /open-source">
+          Open source
+</a>        <a href="https://github.com/business" class="js-selected-navigation-item nav-item nav-item-business" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/features /business/customers /business">
+          Business
+</a>        <a href="https://github.com/explore" class="js-selected-navigation-item nav-item nav-item-explore" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship /explore">
+          Explore
+</a>      </nav>
+
+      <div class="site-header-actions">
+            <a class="btn btn-primary site-header-actions-btn" href="https://github.com/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+          <a class="btn site-header-actions-btn mr-2" href="https://github.com/login?return_to=%2Fgrbl%2Fgrbl%2Fwiki%2FConfiguring-Grbl-v0.8" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+      </div>
+
+        <nav class="site-header-nav site-header-nav-secondary">
+          <a class="nav-item" href="https://github.com/pricing">Pricing</a>
+          <a class="nav-item" href="https://github.com/blog">Blog</a>
+          <a class="nav-item" href="https://help.github.com/">Support</a>
+          <a class="nav-item header-search-link" href="https://github.com/search">Search GitHub</a>
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/grbl/grbl/search" class="js-site-search-form" data-scoped-search-url="/grbl/grbl/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        tabindex="1"
+        autocapitalize="off">
+    </label>
+</form></div>
+
+        </nav>
+    </div>
+  </div>
+</header>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fgrbl%2Fgrbl"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+    Watch
+  </a>
+  <a class="social-count" href="https://github.com/grbl/grbl/watchers">
+    402
+  </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fgrbl%2Fgrbl"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="https://github.com/grbl/grbl/stargazers">
+      1,552
+    </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fgrbl%2Fgrbl"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M8 1c-1.11 0-2 0.89-2 2 0 0.73 0.41 1.38 1 1.72v1.28L5 8 3 6v-1.28c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v1.78l3 3v1.78c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V9.5l3-3V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2zM2 4.2c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3 10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3-10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+        Fork
+      </a>
+
+    <a href="https://github.com/grbl/grbl/network" class="social-count">
+      1,008
+    </a>
+  </li>
+</ul>
+
+    <h1 class="entry-title public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a href="https://github.com/grbl" class="url fn" rel="author">grbl</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="https://github.com/grbl/grbl" data-pjax="#js-repo-pjax-container">grbl</a></strong>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/grbl/grbl" class="js-selected-navigation-item reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /grbl/grbl" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M9.5 3l-1.5 1.5 3.5 3.5L8 11.5l1.5 1.5 4.5-5L9.5 3zM4.5 3L0 8l4.5 5 1.5-1.5L2.5 8l3.5-3.5L4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="https://github.com/grbl/grbl/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /grbl/grbl/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7S10.14 13.7 7 13.7 1.3 11.14 1.3 8s2.56-5.7 5.7-5.7m0-1.3C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7S10.86 1 7 1z m1 3H6v5h2V4z m0 6H6v2h2V10z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">110</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/grbl/grbl/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /grbl/grbl/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 11.28c0-1.73 0-6.28 0-6.28-0.03-0.78-0.34-1.47-0.94-2.06s-1.28-0.91-2.06-0.94c0 0-1.02 0-1 0V0L4 3l3 3V4h1c0.27 0.02 0.48 0.11 0.69 0.31s0.3 0.42 0.31 0.69v6.28c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72z m-1 2.92c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2zM4 3c0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72 0 1.55 0 5.56 0 6.56-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V4.72c0.59-0.34 1-0.98 1-1.72z m-0.8 10c0 0.66-0.55 1.2-1.2 1.2s-1.2-0.55-1.2-1.2 0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2z m-1.2-8.8c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">9</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="https://github.com/grbl/grbl/wiki" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /grbl/grbl/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M2 5h4v1H2v-1z m0 3h4v-1H2v1z m0 2h4v-1H2v1z m11-5H9v1h4v-1z m0 2H9v1h4v-1z m0 2H9v1h4v-1z m2-6v9c0 0.55-0.45 1-1 1H8.5l-1 1-1-1H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h5.5l1 1 1-1h5.5c0.55 0 1 0.45 1 1z m-8 0.5l-0.5-0.5H1v9h6V3.5z m7-0.5H8.5l-0.5 0.5v8.5h6V3z"></path></svg>
+      Wiki
+</a>
+
+  <a href="https://github.com/grbl/grbl/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /grbl/grbl/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0V10h3.6L4.5 8.2l0.9 5.4L9 8.5l1.6 1.5H14V8H11.5z"></path></svg>
+    Pulse
+</a>
+  <a href="https://github.com/grbl/grbl/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /grbl/grbl/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M16 14v1H0V0h1v14h15z m-11-1H3V8h2v5z m4 0H7V3h2v10z m4 0H11V6h2v7z"></path></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+
+<div id="wiki-wrapper" class="wiki-wrapper page">
+<div class="gh-header">
+  <div class="gh-header-show">
+    <h1 class="gh-header-title instapaper_title">Configuring Grbl v0.8</h1>
+      <div class="gh-header-meta">
+        Karel Heyse edited this page <relative-time datetime="2014-01-03T21:59:35Z">Jan 3, 2014</relative-time>
+        &middot;
+        <a href="https://github.com/grbl/grbl/wiki/Configuring-Grbl-v0.8/_history" class="history">
+          26 revisions
+        </a>
+      </div>
+  </div>
+</div>
+<div id="wiki-content" class="wiki-content">
+  <div class="has-rightbar">
+
+  <div id="wiki-rightbar" class="wiki-rightbar">
+    <div class="wiki-pages-box readability-sidebar boxed-group flush js-wiki-pages-box " role="navigation">
+      
+<h3 class="js-wiki-toggle-collapse wiki-auxiliary-content">
+  <svg aria-hidden="true" class="octicon octicon-triangle-down caret-expanded" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M0 5l6 6 6-6H0z"></path></svg>
+  <svg aria-hidden="true" class="octicon octicon-triangle-right caret-collapsed" height="16" version="1.1" viewBox="0 0 6 16" width="6"><path d="M0 14l6-6L0 2v12z"></path></svg>
+  Pages <span class="counter">14</span>
+</h3>
+<div class="boxed-group-inner wiki-auxiliary-content wiki-auxiliary-content-no-bg">
+
+  <ul class="wiki-pages" data-filterable-for="wiki-pages-filter" data-filterable-type="substring">
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki" class="wiki-page-link">Home</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki/Compiling-Grbl" class="wiki-page-link">Compiling Grbl</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki/Configuring-Grbl-v0.7" class="wiki-page-link">Configuring Grbl v0.7</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki/Configuring-Grbl-v0.8" class="wiki-page-link">Configuring Grbl v0.8</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki/Configuring-Grbl-v0.9" class="wiki-page-link">Configuring Grbl v0.9</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki/Connecting-Grbl" class="wiki-page-link">Connecting Grbl</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki/Development-Path-and-Future-Needs" class="wiki-page-link">Development Path and Future Needs</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki/Flashing-Grbl-to-an-Arduino" class="wiki-page-link">Flashing Grbl to an Arduino</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki/Frequently-Asked-Questions" class="wiki-page-link">Frequently Asked Questions</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki/G-Code-Examples" class="wiki-page-link">G Code Examples</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki/Interfacing-with-Grbl" class="wiki-page-link">Interfacing with Grbl</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki/Known-Bugs" class="wiki-page-link">Known Bugs</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki/Licensing" class="wiki-page-link">Licensing</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/grbl/grbl/wiki/Using-Grbl" class="wiki-page-link">Using Grbl</a></strong>
+    </li>
+  </ul>
+</div>
+
+    </div>
+
+
+    <div class="clone-url">
+      <h5>Clone this wiki locally</h5>
+      <div class="input-group js-zeroclipboard-container">
+        <input type="text" class="form-control input-sm text-small text-muted input-monospace js-url-field js-zeroclipboard-target"
+               value="https://github.com/grbl/grbl.wiki.git" readonly="readonly">
+        <span class="input-group-button">
+          <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M2 12h4v1H2v-1z m5-6H2v1h5v-1z m2 3V7L6 10l3 3V11h5V9H9z m-4.5-1H2v1h2.5v-1zM2 11h2.5v-1H2v1z m9 1h1v2c-0.02 0.28-0.11 0.52-0.3 0.7s-0.42 0.28-0.7 0.3H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h3C4 0.89 4.89 0 6 0s2 0.89 2 2h3c0.55 0 1 0.45 1 1v5h-1V5H1v9h10V12zM2 4h8c0-0.55-0.45-1-1-1h-1c-0.55 0-1-0.45-1-1s-0.45-1-1-1-1 0.45-1 1-0.45 1-1 1h-1c-0.55 0-1 0.45-1 1z"></path></svg></button>
+        </span>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div id="wiki-body" class="wiki-body gollum-markdown-content instapaper_body">
+      <div class="markdown-body">
+        <p>Grbl has a system ‘$’-command to tweak the settings and trigger runtime commands. Connect to Grbl using the serial terminal of your choice (baud rate 9600 unless you changed that in config.h) as 8-N-1 (8-bits, no parity, and 1-stop bit.) Once connected you should get the Grbl-prompt, which looks like this:</p>
+
+<pre><code>Grbl 0.8c ['$' for help]
+</code></pre>
+
+<p>Type $ and press enter. You should not see any local echo of the $ and enter, but Grbl should respond with a help message:</p>
+
+<pre><code>$$ (view Grbl settings)
+$# (view # parameters)
+$G (view parser state)
+$N (view startup blocks)
+$x=value (save Grbl setting)
+$Nx=line (save startup block)
+$C (check gcode mode)
+$X (kill alarm lock)
+$H (run homing cycle)
+~ (cycle start)
+! (feed hold)
+? (current status)
+ctrl-x (reset Grbl)
+</code></pre>
+
+<p>Of these commands, only four of them are used to configure Grbl <code>[$$, $x=value, $N, $Nx=line]</code>, while the rest are runtime commands that either report the current state in Grbl or tweak the behavior.</p>
+
+<h1>
+<a id="user-content-the-four-configuration-commands--xval-n-nxline" class="anchor" href="#the-four-configuration-commands--xval-n-nxline" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>The four configuration commands: <code>$$, $x=val, $N, $Nx=line</code>
+</h1>
+
+<h3>
+<a id="user-content----view-grbl-settings-xval---save-grbl-setting" class="anchor" href="#---view-grbl-settings-xval---save-grbl-setting" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$$ - View Grbl settings, $x=val - Save Grbl setting</h3>
+
+<p>When connected to Grbl, type <code>$$</code> and press enter. Grbl should respond with a list of the current system settings, similar to as shown in the following. All of these settings are persistent and kept in EEPROM, so if you power down, these will be loaded back up the next time your power up your Arduino.</p>
+
+<pre><code>$0=755.906 (x, step/mm)
+$1=755.906 (y, step/mm)
+$2=755.906 (z, step/mm)
+$3=30 (step pulse, usec)
+$4=500.000 (default feed, mm/min)
+$5=500.000 (default seek, mm/min)
+$6=28 (step port invert mask, int:00011100)
+$7=25 (step idle delay, msec)
+$8=50.000 (acceleration, mm/sec^2)
+$9=0.050 (junction deviation, mm)
+$10=0.100 (arc, mm/segment)
+$11=25 (n-arc correction, int)
+$12=3 (n-decimals, int)
+$13=0 (report inches, bool)
+$14=1 (auto start, bool)
+$15=0 (invert step enable, bool)
+$16=0 (hard limits, bool)
+$17=0 (homing cycle, bool)
+$18=0 (homing dir invert mask, int:00000000)
+$19=25.000 (homing feed, mm/min)
+$20=250.000 (homing seek, mm/min)
+$21=100 (homing debounce, msec)
+$22=1.000 (homing pull-off, mm)
+</code></pre>
+
+<p>To change e.g. the microseconds step pulse option to 10us you would type this, followed by an enter:</p>
+
+<pre><code>$3=10
+</code></pre>
+
+<p>If everything went well, Grbl will respond with an 'ok' and this setting is stored in EEPROM and will be retained forever or until you change them. You can check if Grbl has received and stored your setting correctly by typing <code>$$</code> to view the system settings again.</p>
+
+<h3>
+<a id="user-content-n---view-startup-blocks-nxline---save-startup-block" class="anchor" href="#n---view-startup-blocks-nxline---save-startup-block" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$N - View startup blocks, $Nx=line - Save startup block</h3>
+
+<p><code>$Nx</code> are the startup blocks that Grbl runs everytime you power on Grbl or reset Grbl. In other words, a startup block is a line of g-code that you can have Grbl auto-magically run to set your g-code defaults, or anything else you need Grbl to do everytime you start up your machine. At the moment, Grbl will store two blocks of g-code as a system default, but it can store anywhere from 1 to 5, as a compile-time option (changing config.h and re-compiling). </p>
+
+<p>So, when connected to Grbl, type <code>$N</code> and then enter. Grbl should respond with something short like:</p>
+
+<pre><code>$N0=
+$N1=
+ok
+</code></pre>
+
+<p>Not much to go on, but this just means that there is no g-code block stored in line <code>$N0</code> for Grbl to run upon startup. <code>$N1</code> is the next line to be run. (If you re-compile to have more, it will execute in order on to <code>$N4</code>.)</p>
+
+<p>To set a startup block, type <code>$N0=</code> followed by a valid g-code block and an enter. Grbl will run the block to check if it's valid and then reply with an <code>ok</code> or an <code>error:</code> to tell you if it's successful or something went wrong. </p>
+
+<p>For example, say that you want to use your first startup block <code>$N0</code> to set your g-code parser modes like G54 work coordinate, G20 inches mode, G17 XY-plane. You would type <code>$N0=G20 G54 G17</code> with an enter and you should see an 'ok' response. You can then check if it got stored by typing <code>$N</code> and you should now see a response like <code>$N0=G20G54G17</code>.</p>
+
+<p>Once you have a startup block stored in Grbl's EEPROM, everytime you startup or reset you will see your startup block printed back to you and a response from Grbl to indicate if it ran ok. So for the previous example, you'll see:</p>
+
+<pre><code>Grbl 0.8c ['$' for help]
+G20G54G17ok
+</code></pre>
+
+<p>If you have multiple g-code startup blocks, they will print back to you in order upon every startup. And if you'd like to clear one of the startup blocks, type <code>$N0=</code> without anything following the equal sign.</p>
+
+<p>Also, if you have homing enabled, the startup blocks will execute immediately after the homing cycle, not at startup. </p>
+
+<p>IMPORTANT: Be very careful when storing any motion (G0/1,G2/3,G28/30) commands in the startup blocks. These motion commands will run everytime you reset or power up Grbl, so if you have an emergency situation and have to e-stop and reset, a startup block move can and will likely make things worse quickly.</p>
+
+<h1>
+<a id="user-content-grbls-xval-settings-and-what-they-mean" class="anchor" href="#grbls-xval-settings-and-what-they-mean" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Grbl's <code>$x=val</code> settings and what they mean</h1>
+
+<h3>
+<a id="user-content-0-1-and-2--xyz-stepsmm" class="anchor" href="#0-1-and-2--xyz-stepsmm" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$0, $1 and $2 – XYZ, steps/mm</h3>
+
+<p>Grbl needs to know how far each step will take the tool in reality. To calculate steps/mm for an axis of your machine you need to know:</p>
+
+<ul>
+<li>The mm per revolution of the lead screw</li>
+<li>The full steps per revolution of your steppers (typically 200)</li>
+<li>The microsteps per step of your controller (typically 1, 2, 4, 8, or 16). <em>Tip: Using high microstep values (e.g 16) can reduce your stepper motor torque, so use the lowest that gives you the desired axes resolution and comfortable running properties.</em>
+</li>
+</ul>
+
+<p>The steps/mm can then be calculated like this: <code>steps_per_mm = (steps_per_revolution*microsteps)/mm_per_rev</code></p>
+
+<p>Compute this value for every axis and write these settings to Grbl.</p>
+
+<h3>
+<a id="user-content-3--step-pulse-microseconds" class="anchor" href="#3--step-pulse-microseconds" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$3 – Step pulse, microseconds</h3>
+
+<p>Stepper drivers are rated for a certain minimum step pulse length. Check the data sheet or just try some numbers. You want as short pulses as the stepper drivers can reliably recognize. If the pulses are too long you might run into trouble running the system at high feed rates. Generally something between 5 and 50 microseconds works fine.</p>
+
+<h3>
+<a id="user-content-4-and-5--default-feed-and-seek-rates-mmmin" class="anchor" href="#4-and-5--default-feed-and-seek-rates-mmmin" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$4 and $5 – Default feed and seek rates, mm/min</h3>
+
+<p>This setting sets the default seek(G0) and feed rates(G1,G2,G3) after Grbl powers on and initializes. The seek rate (aka rapids) is used for moving from point A to point B as quickly as possible, usually for traversing into position. The seek rate should be set at the maximum speed your machine can go in any axes movement. The default feed rate usually does not enter into the picture as feed rates will generally be specified in the g-code program, but if not, this default feed rate will be used.</p>
+
+<p>NOTE: In future releases, the default feed rate will be removed. G-code standards do not have a default feed rate (G1,G2,G3), but error out if there has been no 'F' feed rate command specified. The seek rate (aka rapids) will be updated so users can specify the maximum speed each axes can move, rather than have just one speed that limits all of them.</p>
+
+<h3>
+<a id="user-content-6--step-port-invert-mask-intbinary" class="anchor" href="#6--step-port-invert-mask-intbinary" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$6 – Step port invert mask, int:binary</h3>
+
+<p>Some cnc-stepper controllers needs its high-low inputs inverted for both direction and steps. Signal lines are normally held high or low to signal direction or held high and goes low for a couple of microseconds to signal a step event. To achieve this, Grbl can invert the output bits to accomodate particular needs. The invert mask value is a byte that is xored with the step and direction data before it is sent down the stepping port. That way you can use this both to invert step pulses or to invert one or more of the directions of the axes. The bits in this byte corresponds to the pins assigned to stepping in config.h. Note that bits 0 and 1 are not used for inversion. Per default bits are assigned like this:</p>
+
+<pre><code>#define X_STEP_BIT 2
+#define Y_STEP_BIT 3
+#define Z_STEP_BIT 4
+#define X_DIRECTION_BIT 5
+#define Y_DIRECTION_BIT 6
+#define Z_DIRECTION_BIT 7
+</code></pre>
+
+<p>If you wanted to invert the X and Y direction in this setup you would calculate a value by bitshifting like this (in your favorite calculating environment):</p>
+
+<p><code>&gt; (1&lt;&lt;X_DIRECTION_BIT)|(1&lt;&lt;Y_DIRECTION_BIT)</code></p>
+
+<p>Which is equal to 96, so issuing this command would invert them:</p>
+
+<p><code>$6=96</code></p>
+
+<p>Now when you view the current settings, you should now see this in your invert mask line with the binary representation of the number (bits 5 and 6 should now show a 1 to indicate inversion.)</p>
+
+<p><code>$6=96 (step port invert mask. int:1100000)</code></p>
+
+<h3>
+<a id="user-content-7---step-idle-delay-msec" class="anchor" href="#7---step-idle-delay-msec" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$7 - Step idle delay, msec</h3>
+
+<p>Every time your steppers complete a motion and come to a stop, Grbl will disable the steppers by default. The stepper idle lock time is the time length Grbl will keep the steppers locked before disabling. Depending on the system, you can set this to zero and disable it. On others, you may need 25-50 milliseconds to make sure your axes come to complete stop before disabling. (My machine tends to drift just slightly if I don't have this enabled.) OR, you can always keep your axes enabled at all times by setting this value to the maximum 255 milliseconds. Again, just to repeat, you can keep all axes always enabled by setting <code>$7=255</code>.</p>
+
+<h3>
+<a id="user-content-8--acceleration-mmsec2" class="anchor" href="#8--acceleration-mmsec2" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$8 – Acceleration, mm/sec^2</h3>
+
+<p>This is the acceleration in mm/second/second. You don’t have to understand what that means, suffice it to say that a lower value gives smooooother acceleration while a higher value yields tighter moves and reach the desired feedrates much quicker. In technical terms, this is the point to point acceleration of your machine, independent of axes. Set this acceleration value as high as your most limiting axes can let you without losing <em>ANY</em> steps. Usually you'd like to give yourself a little buffer, because if you lose steps, Grbl has no idea this has happened (steppers are open-loop control) and will keep going.</p>
+
+<h3>
+<a id="user-content-9---junction-deviation-mm" class="anchor" href="#9---junction-deviation-mm" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$9 –  Junction deviation, mm</h3>
+
+<p>Cornering junction deviation is used by the acceleration manager to determine how fast it can move through a path. The math is a bit complicated but in general, higher values gives generally faster, possibly jerkier motion. Lower values makes the acceleration manager more careful and will lead to careful and slower cornering. So if you run into problems where your machine tries to take a corner too fast, <em>decrease</em> this value to make it slow down. If you want your machine to move faster through junctions, <em>increase</em> this value to speed it up. For technical people, hit this <a href="http://t.co/KQ5BvueY">link</a> to read about Grbl's cornering algorithm, which accounts for both velocity and junction angle with a very simple, efficient, and robust method.</p>
+
+<h3>
+<a id="user-content-10--arc-mmsegment" class="anchor" href="#10--arc-mmsegment" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$10 – Arc, mm/segment</h3>
+
+<p>Grbl renders circles and arcs by subdividing them into teeny tiny lines. You will probably never need to adjust this value – but if you find that your circles are too crude (really? one tenth of a millimeter is not precise enough for you? Are you in nanotech?) you may adjust this. Lower values gives higher precision but may lead to performance issues.</p>
+
+<h3>
+<a id="user-content-11---n-arc-correction-int" class="anchor" href="#11---n-arc-correction-int" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$11 - N-arc correction, int</h3>
+
+<p>This is an advanced setting that shouldn't be changed unless there are circumstances that you need to. To make G02/03 arcs possible in Grbl, Grbl approximates the location of the next arc segment by a small angle approximation. N-arc correction is the number of approximate arc segments performed before Grbl computes an exact arc segment to correct for the approximation error drift. Computing these exact locations are computationally expensive, but there are some extreme cases where the small angle approximations can introduce enough error to be noticeable, like very very small arcs with a large arc segment length. Change this setting only if find strange problems with arcs, but it's not recommended to go below 3 because this may lead to buffer starvation, where the axes slow down and hiccup. But, results can vary.</p>
+
+<h3>
+<a id="user-content-12---n-decimal-int" class="anchor" href="#12---n-decimal-int" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$12 - N-decimal, int</h3>
+
+<p>Set how many decimal places all of the floating point values Grbl reports. Not much more complicated than that.</p>
+
+<h3>
+<a id="user-content-13---report-inches-bool" class="anchor" href="#13---report-inches-bool" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$13 - Report inches, bool</h3>
+
+<p>Grbl v0.8 has a real-time positioning reporting feature to provide a user feedback on where the machine is exactly at that time. By default it is set to report in mm, but by sending a <code>$13=1</code> command, you send this boolean flag to true and the status reporting feature will now report in inches. <code>$13=0</code> to set back to mm.</p>
+
+<h3>
+<a id="user-content-14---auto-start-bool" class="anchor" href="#14---auto-start-bool" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$14 - Auto start, bool</h3>
+
+<p>In a more professional CNC environment, pros start a job by loading up their program and then pressing the 'cycle start' button on their machine. It begins the job. Grbl does the same thing, but not by default. As a learning tool, we 'auto-cycle start' any g-code command that user sends to Grbl, for just jogging the machine to see if move in the direction they think it should go, or just seeing with what their machine can do. This makes it easier to load up your machine with Grbl and pick up on how it works, rather than having to diligently hit 'cycle start' anytime you want to move any your axes. Once you learn your machine and get a good handle on g-code, you can disable the 'auto cycle-start' feature by sending Grbl <code>$14=0</code> command. (May need a soft-reset or power cycle to load the change.)</p>
+
+<p>Another way of saying that might be:</p>
+
+<p>If $14=0 then some gcode commands like Xn, Yn etc. won't happen when you enter them at a serial terminal.
+If $14=1 then the gcode motion commands will happen. </p>
+
+<p>Apparently big cnc's won't execute gcode until the operator presses a 'cycle start' button. The gcode commands were received but queued and awaiting the 'cycle start' button. Makes sense yes? When $14=0 then that's how grbl acts too. You need the button! (in which case attach the feed-hold button too!).</p>
+
+<p>When $14=1 then the grbl software automatically presses a software version of the 'cycle start' for you each time you 'enter' a gcode command line via a serial terminal. This is done to make it more convenient for you to enter commands and see something happen without having to push the button. </p>
+
+<h3>
+<a id="user-content-15---invert-step-enable-bool" class="anchor" href="#15---invert-step-enable-bool" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$15 - Invert step enable, bool</h3>
+
+<p>By default, the stepper enable pin is high to disable and low to enable. If your setup needs the opposite, just invert the stepper enable pin by typing <code>$15=1</code>. Disable with <code>$15=0</code>. (May need a power cycle to load the change.)</p>
+
+<h3>
+<a id="user-content-16---hard-limits-bool" class="anchor" href="#16---hard-limits-bool" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$16 - Hard limits, bool</h3>
+
+<p>Hard limit switches are a safety feature to help prevent your machine from traveling way too far off the ends of travel and crashing or breaking something expensive. Basically you wire up some switches (mechanical or optical) near the end of travel of each axes, or where ever you feel like there might be trouble if your program moves too far to where it shouldn't. When the switch triggers, it will immediately stop all motion, shutdown the coolant and spindle (if connected), and go into alarm mode, which forces you to check your machine and reset everything.</p>
+
+<p>To use hard limits with Grbl, the limit pins are held high with an internal pull-up resistor, so all you have to do is wire in a normally-open switch with the pin and ground and enable hard limits with <code>$16=1</code>. That's it. (Disable with <code>$16=0</code>) If you want a limit for both ends of travel of one axes, just wire in two switches in parallel with the pin and ground, so if either one of them trips, it triggers the hard limit.</p>
+
+<p>Just know, that a hard limit event is considered to be critical event, where steppers immediately stop and will have likely lost steps. Grbl doesn't have any feedback on position, so it can't guarantee it has any idea where it is. So, if a hard limit is triggered, Grbl will go into an infinite loop ALARM mode, giving you a chance to check your machine and forcing you to reset Grbl. Remember it's a purely a safety feature.</p>
+
+<p>If you have issues with the hard limit switch constantly triggering after you reset, a soft-reset will reset Grbl into an alarm state, where you can access the settings and Grbl commands, but all g-codes and startup blocks will be locked out. So you can disable the hard limits setting and then $X unlock the alarm. Or, you can wire in a normally-closed switch in series with ground to all the limit switches to disconnect the switches temporarily so you can have Grbl move your axes off the switches.</p>
+
+<h3>
+<a id="user-content-17---homing-cycle-bool" class="anchor" href="#17---homing-cycle-bool" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$17 - Homing cycle, bool</h3>
+
+<p>Ahh, homing. Something that has been sorely needed in Grbl for a long time. It's now fully supported in v0.8. For those just initiated into CNC, the homing cycle is used to accurately and precisely locate position zero on a machine (aka machine zero) everytime you startup your Grbl between sessions. In other words, you know exactly where you are at any given time, every time. Say you start machining something or are about to start the next step in a job and the power goes out, you re-start Grbl and Grbl has no idea where it is. You're left with the task of figuring out where you are. If you have homing, you always have the machine zero reference point to locate from, so all you have to do is run the homing cycle and resume where you left off.</p>
+
+<p>To set up the homing cycle for Grbl, you need to have limit switches in a fixed position that won't get bumped or moved, or else your reference point gets messed up. Usually they are setup in the farthest point in +x, +y, +z of each axes. Wire your limit switches in with the limit pins and ground, just like with the hard limits, and enable homing. If you're curious, you can use your limit switches for both hard limits AND homing. They play nice with each other. </p>
+
+<p>By default, Grbl's homing cycle moves the Z-axis positive first to clear the workspace and then moves both the X and Y-axes at the same time in the positive direction. To set up how your homing cycle behaves, there are more Grbl settings down the page describing what they do (and compile-time options as well.)</p>
+
+<p>Also, one more thing to note, when homing is enabled. Grbl will lock out all g-code commands until you perform a homing cycle. Meaning no axes motions, unless the lock is disabled ($X) but more on that later. Most, if not all CNC controllers, do something similar, as it mostly a safety feature to help users from making positioning mistake, which is very easy to do and be saddening when a mistake ruins a part. If you find this annoying or find any weird bugs, please let us know and we'll try to work on it so everyone is happy. :)</p>
+
+<p>NOTE: Check out config.h for more homing options for advanced users. You can disable the homing lockout at startup, configure which axes move first during a homing cycle and in what order, and more.</p>
+
+<h3>
+<a id="user-content-18---homing-dir-invert-mask-intbinary" class="anchor" href="#18---homing-dir-invert-mask-intbinary" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$18 - Homing dir invert mask, int:binary</h3>
+
+<p>By default, Grbl assumes your homing limit switches are in the positive direction, first moving the z-axis positive, then the x-y axes positive before trying to precisely locate machine zero by going back and forth slowly around the switch. If your machine has a limit switch in the negative direction, the homing direction mask can invert the axes direction. It works just like the invert stepper mask, where all you have to do set the axis direction pins to 1 that you want to invert and that axes will now search for the limit pin in the negative direction.</p>
+
+<h3>
+<a id="user-content-19---homing-feed-mmmin" class="anchor" href="#19---homing-feed-mmmin" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$19 - Homing feed, mm/min</h3>
+
+<p>The homing cycle first searches for the limit switches at a higher seek rate, and after it finds them, it moves at a slower feed rate to hone into the precise location of machine zero. Homing feed rate is that slower feed rate. Set this to whatever rate value that provides repeatable and precise machine zero locating. </p>
+
+<h3>
+<a id="user-content-20---homing-seek-mmmin" class="anchor" href="#20---homing-seek-mmmin" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$20 - Homing seek, mm/min</h3>
+
+<p>Homing seek rate is the homing cycle search rate, or the rate at which it first tries to find the limit switches. Adjust to whatever rate gets to the limit switches in a short enough time without crashing into your limit switches if they come in too fast. This seek rate behaves a little differently than the main stepper driver. Instead of the rate from point to point, it just moves all of the axes at the same individual rate, regardless of how many axes are moving at the same time. So, the XY seek move will seem to move about 41% faster than if you would move it with a G1 command. (You can disable this in config.h if it bothers you. It's there to speed up the homing cycle.)</p>
+
+<h3>
+<a id="user-content-21---homing-debounce-ms" class="anchor" href="#21---homing-debounce-ms" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$21 - Homing debounce, ms</h3>
+
+<p>Whenever a switch triggers, some of them can have electrical/mechanical noise that actually 'bounce' the signal high and low for a few milliseconds before settling in. To solve this, you need to debounce the signal, either by hardware with some kind of signal conditioner or by software with a short delay to let the signal finish bouncing. Grbl performs a short delay only homing when locating machine zero. Set this delay value to whatever your switch needs to get repeatable homing. In most cases, 5-25 milliseconds is fine.</p>
+
+<h3>
+<a id="user-content-22---homing-pull-off-mm" class="anchor" href="#22---homing-pull-off-mm" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>$22 - Homing pull-off, mm</h3>
+
+<p>To play nice with the hard limits feature, where homing can share the same limit switches, the homing cycle will move off the all of the limit switches by this pull-off travel after it completes. In other words, it helps to prevent accidental triggering of the hard limit after a homing cycle. </p>
+
+<p>The homing seek rate setting controls how quickly the pull-off maneuver moves, like a G1 command.</p>
+
+<hr>
+
+<h1>
+<a id="user-content-grbl-internal-commands" class="anchor" href="#grbl-internal-commands" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Grbl Internal Commands:</h1>
+
+<p>Technically, the remaining Grbl commands are not configuration commands, but we're going to explain them here for no good reason, other than for completeness.</p>
+
+<h2>
+<a id="user-content-the-three-current-state-commands-g--" class="anchor" href="#the-three-current-state-commands-g--" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>The three current state commands: <code>$G, $#, ?</code>
+</h2>
+
+<p>Grbl provides three commands to report its current state and where it is. Of the three, one of them is real-time, responding with current position. The other two are not, but respond with how incoming blocks are going to be processed depending on the states set by g-code, settings, or switches. The reason they are not realtime is that Grbl has an internal buffer that stores and plans the buffered motions. The incoming gcode blocks just tack on a new motion at the end of the buffer when it has room. The buffer basically ensures Grbl motion move at the fastest and safest rates possible, constantly re-calculating it real-time as motions finish and new ones come in.</p>
+
+<h3>
+<a id="user-content-g---view-gcode-parser-state" class="anchor" href="#g---view-gcode-parser-state" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a><code>$G</code> - View gcode parser state</h3>
+
+<p>This command prints all of the active gcode modes that the parser will interpret any incoming command. These modes include G20/G21 inches/mm mode, G54-G59 active work coordinate system, G0/G1/G2/G3 active motion mode, G17/G18/G19 active plane selection, G90/G91 absolute mode, G93/G94 inverse feed rate mode, M0/M1/M2 program flow, M3/M4/M5 spindle state, M8/M9 coolant state, T tool number, and F active feed rate. It will also list any active <code>$Sx</code> Grbl switches, like <code>$S1</code> block delete. When called, Grbl will return a line like this:</p>
+
+<pre><code>[G0 G54 G17 G21 G90 G94 M0 M5 M9 T0 F500.000]
+</code></pre>
+
+<h3>
+<a id="user-content----view-gcode-parameters" class="anchor" href="#---view-gcode-parameters" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a><code>$#</code> - View gcode parameters</h3>
+
+<p>G-code parameters generally store the G54-G59 work coordinate offsets and G28/G30 home positions (must not be confused with homing and machine zero. These home positions can be set anywhere in the machine space by the G28.1/G30.1 commands). Most of these parameters are directly written to EEPROM anytime they are changed and are persistent. Meaning that they will remain the same, regardless of power-down, until they are explicitly changed. </p>
+
+<p>G54-G59 work coordinates can be changed via the <code>G10 L2 Px</code> or <code>G10 L20 Px</code> command defined by the NIST gcode standard and the EMC2 (linuxcnc.org) standard. G28/G30 home positions can be changed via the <code>G28.1</code> and the <code>G30.1</code> commands, respectively. Please note that G92 is not persistent or held in EEPROM per g-code standards, and will reset to zero when Grbl is reset.  Please read these g-code standard to understand how they are used.</p>
+
+<p>When <code>$#</code> is called, Grbl will respond with the stored offsets from machine coordinates for each system as follows.</p>
+
+<pre><code>[G54:4.000,0.000,0.000]
+[G55:4.000,6.000,7.000]
+[G56:0.000,0.000,0.000]
+[G57:0.000,0.000,0.000]
+[G58:0.000,0.000,0.000]
+[G59:0.000,0.000,0.000]
+[G28:1.000,2.000,0.000]
+[G30:4.000,6.000,0.000]
+[G92:0.000,0.000,0.000]
+</code></pre>
+
+<p>For the most part, these offset are not particularly useful unless you have homing enabled. If you do have homing enabled, these are wonderfully awesome, because once you home, you can always move back to same stored position by using the work coordinate systems within the accuracy of your machine. Or if you are making multiple parts and have a tool path for just one part, all you have to do is setup your work coordinate systems to the location where the next part is going to be made and re-run that same code.</p>
+
+<h3>
+<a id="user-content----current-status" class="anchor" href="#---current-status" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a><code>?</code> - Current status</h3>
+
+<p>The <code>?</code> command immediately returns Grbl's active state and the real-time current position, both in machine coordinates and work coordinates. This may be sent at any time and works asynchronously with all other processes that Grbl is doing. The <code>$13</code> Grbl setting determines whether it reports millimeters or inches. When <code>?</code> is pressed, Grbl will immediately reply with something like the following:</p>
+
+<pre><code>&lt;Idle,MPos:5.529,0.560,7.000,WPos:1.529,-5.440,-0.000&gt;
+</code></pre>
+
+<p>The active states Grbl can be in are: <strong>Idle, Queue, Run, Hold, Home, Alarm, Check</strong> </p>
+
+<ul>
+<li>
+<strong>Idle</strong>:  All systems are go and it's ready for anything.</li>
+<li>
+<strong>Queue</strong>:  Motion(s) are queued in the planner buffer waiting for a cycle start command to be issued. Certain processes like check g-code mode can't run while something is queued. Reset to clear the queue. </li>
+<li>
+<strong>Run</strong>: Indicates a cycle is running.</li>
+<li>
+<strong>Hold</strong>: A feed hold is in process of executing, or slowing down to a stop. After the hold is complete, Grbl will enter a Queue state, waiting for a cycle start to resume the program.</li>
+<li>
+<strong>Home</strong>: In the middle of a homing cycle. NOTE: Positions are not updated live during the homing cycle, but they'll be set to [0,0,0] once done.</li>
+<li>
+<strong>Alarm</strong>: This indicates something has gone wrong or Grbl doesn't know its position. This state locks out all g-code commands, but allows you to interact with Grbl's settings if you need to. '$X' kill alarm lock releases this state and puts Grbl in the Idle state, which will let you move things again. As said before, be cautious of what you are doing after an alarm.</li>
+<li>
+<strong>Check</strong>: Grbl is in check g-code mode. It will process and respond to all g-code commands, but not motion or turn on anything. Once toggled off with another '$C' command, Grbl will reset itself.</li>
+</ul>
+
+<h2>
+<a id="user-content-other-commands-c-x-h---ctrl-x" class="anchor" href="#other-commands-c-x-h---ctrl-x" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Other Commands <code>$C $X $H</code> <code>~ ! Ctrl-X</code>
+</h2>
+
+<h3>
+<a id="user-content-c---check-gcode-mode" class="anchor" href="#c---check-gcode-mode" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a><code>$C</code> - Check gcode mode</h3>
+
+<p>This toggles the Grbl's gcode parser to take all incoming blocks process them completely, as it would in normal operation, but it does not move any of the axes, ignores dwells, and powers off the spindle and coolant. This is intended as a way to provide the user a way to check how their new g-code program fares with Grbl's parser and monitor for any errors. (And eventually this will also check for soft limit violations.)</p>
+
+<p>When toggled off, Grbl will perform an automatic soft-reset (^X). This is for two purposes. It simplifies the code management a bit. But, it also prevents users from starting a job when their g-code modes are not what they think they are. A system reset always gives the user a fresh, consistent start.</p>
+
+<p>NOTE: Eventually, the check gcode mode could be re-factored to allow for a "program resume" feature in Grbl. This means that Grbl could start a g-code program anywhere. It would internally go through all of the g-code program up to the desired mid-program resume point to set all of the parser states and locations, move to that start point, and begin executing/moving from that point on. For example, say you had to E-stop in the middle of a program because you forgot something or you have the wrong tool in the spindle. Your part is fine and need to restart the program. Right now, you'll have to start the program from the beginning and let it physically move and run up to the point where you e-stopped. If you have a long program, this could take a while. Instead, a "program resume" will just go through the beginning of the program internally, without moving anything, and only begin moving from the resume point on.</p>
+
+<h3>
+<a id="user-content-x---kill-alarm-lock" class="anchor" href="#x---kill-alarm-lock" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a><code>$X</code> - Kill alarm lock</h3>
+
+<p>Grbl's alarm mode is a state when something has gone critically wrong, like a hard limit or an abort during a cycle, or if Grbl doesn't know its position. By default, if you have homing enabled and power-up the Arduino, Grbl enters the alarm state, because it does not know its position. The alarm mode will lock all g-code blocks until the '$H' homing cycle has been performed. Or if a user needs to override the alarm lock to move their axes off their limit switches, for example, '$X' kill alarm lock will override the locks and allow g-code functions to work again.  </p>
+
+<p>But, tread carefully!! This should only be used in emergency situations. The position has likely been lost, and Grbl may not be where you think it is. So, it's advised to use G91 incremental mode to make short moves. Then, perform a homing cycle or reset immediately afterwards. </p>
+
+<h3>
+<a id="user-content-h---run-homing-cycle" class="anchor" href="#h---run-homing-cycle" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a><code>$H</code> - Run homing cycle</h3>
+
+<p>This command is the only way to perform the homing cycle in Grbl. Previously, G28 and G30 would automatically start the homing cycle, but this is incorrect according to the g-code standards. Homing is a completely separate command handled by the controller. G28 and G30 only move to a 'home'/pre-defined position that is stored in the g-code parameters, which can be located anywhere in the machine.</p>
+
+<p>TIP: After running a homing cycle, rather jogging manually all the time to a position in the middle of your workspace volume. You can set a G28 or G30 pre-defined position to be your post-homing position, closer to where you'll be machining. To set these, you'll first need to jog your machine to where you would want it to move to after homing. Type G28.1 (or G30.1) to have Grbl store that position. So then after '$H' homing, you could just enter 'G28' (or 'G30') and it'll move there auto-magically. In general, I would just move the XY axis to the center and leave the Z-axis up. This ensures that there isn't a chance the tool in the spindle doesn't catch on anything.</p>
+
+<h3>
+<a id="user-content----cycle-start" class="anchor" href="#---cycle-start" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a><code>~</code> - Cycle start</h3>
+
+<p>This is the cycle start or resume command that can be issued at any time, as it is a real-time command. When Grbl has motions queued in its buffer and is ready to go, the <code>~</code> cycle start command will start executing the buffer and Grbl will begin moving the axes. However, by default, auto-cycle start is enabled, so new users will not need this command unless a feed hold is performed. When a feed hold is executed, cycle start will resume the program. Cycle start will only be effective when there are motions in the buffer ready to go and will not work with any other process like homing.</p>
+
+<h3>
+<a id="user-content----feed-hold" class="anchor" href="#---feed-hold" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a><code>!</code> - Feed hold</h3>
+
+<p>The feed hold command will bring the active cycle to a stop via a controlled deceleration, so not to lose position. It is also real-time and may be activated at any time. Once finished or paused, Grbl will wait until a cycle start command is issued to resume to program. Feed hold can only pause a cycle and will not affect homing or any other process.</p>
+
+<p>If you need to stop a cycle mid-program and can't afford losing position, perform a feed hold to have Grbl bring everything to a controlled stop. Once finished, you can then issue a reset. Always try to execute a feed hold whenever the machine is running before hitting reset, except of course if there is some emergency situation.</p>
+
+<h3>
+<a id="user-content-ctrl-x---reset-grbl" class="anchor" href="#ctrl-x---reset-grbl" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a><code>Ctrl-x</code> - Reset Grbl</h3>
+
+<p>This is Grbl's soft reset command. It's real-time and can be sent at any time. As the name implies, it resets Grbl, but in a controlled way, <em>retains</em> your machine position, and all done without powering down your Arduino. The only times a soft-reset could lose position is when problems like if the steppers were killed while they were moving. If so, it will report if Grbl's tracking of the machine position has been lost. This is because an uncontrolled deceleration can lead to lost steps, and Grbl has no feedback to how much it lost (this is the problem with steppers in general). Otherwise, Grbl will just re-initialize, run the startup lines, and continue on its merry way. </p>
+
+<p>Please note that it's recommended to do a soft-reset before starting a job. This guarantees that there aren't any g-code modes active that should be from playing around or setting up your machine. So, your machine will always starts fresh and consistently, and your machine does what you expect it to.</p>
+
+<h1>
+<a id="user-content-other-resources" class="anchor" href="#other-resources" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Other Resources:</h1>
+
+<ul>
+<li>
+<strong><a href="http://dank.bengler.no/-/page/show/5474_configuringgrbl">DANK</a></strong> <em>Last updated 2/2011.</em> Only applies to grbl v0.6.</li>
+</ul>
+
+      </div>
+
+  </div>
+  </div>
+</div>
+</div>
+
+
+  </div>
+  <div class="modal-backdrop"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com/" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2016 <span title="0.06187s from github-fe140-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com/" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/compat-7db58f8b7b91111107fac755dd8b178fe7db0f209ced51fc339c446ad3f8da2b.js"></script>
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-f8175c23360b42a4eb18b2319fefeae252cfeea482fb804356f4136a52bfddb3.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-1502104f450cb05859f99b57e29782e071e3fb240e237adb8cbf17ebbdb271c7.js"></script>
+      
+      
+      
+        <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/wiki-fa14ffcd4e52ac6db232ba2d951f07816ab07ad77af457f03e46b6ac278fd8f2.js"></script>
+
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="#">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="#">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  </body>
+
+<!-- Mirrored from github.com/grbl/grbl/wiki/Configuring-Grbl-v0.8 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:15 GMT -->
+</html>
+

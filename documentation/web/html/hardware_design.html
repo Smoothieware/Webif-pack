@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from en.wikipedia.org/wiki/Hardware_design by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Processor design - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Processor_design","wgTitle":"Processor design","wgCurRevisionId":719645275,"wgRevisionId":719645275,"wgArticleId":7597,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing expert attention with no reason or talk parameter","Articles needing expert attention from March 2012","All articles needing expert attention","Electronics articles needing expert attention","Articles needing cleanup from May 2011","All pages needing cleanup","Articles with sections that need to be turned into prose from May 2011","Wikipedia articles needing clarification from January 2013","All articles with unsourced statements","Articles with unsourced statements from May 2010","Articles lacking in-text citations from March 2009","All articles lacking in-text citations","Central processing unit","Computer engineering"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Processor_design","wgRelevantArticleId":7597,"wgRequestId":"VzXCuQpAEFoAAE5rBzYAAAKF","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Hardware_design","wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSAcceptLanguageList":["en","*"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgInternalRedirectTargetUrl":"/wiki/Processor_design","wgCentralAuthMobileDomain":false,"wgWikibaseItemId":"Q1303814","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","ext.centralNotice.bannerController","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.tmh.thumbnail.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.raggett%2CsectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector"/>
+<script async="" src="https://en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.28.0-wmf.1"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="https://en.wikipedia.org/wiki/android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Processor_design"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit"/>
+<link rel="apple-touch-icon" href="https://en.wikipedia.org/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="https://en.wikipedia.org/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Processor_design"/>
+<link rel="dns-prefetch" href="http://meta.wikimedia.org/" />
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Processor_design rootpage-Processor_design skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Processor design</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">  (Redirected from <a href="https://en.wikipedia.org/w/index.php?title=Hardware_design&amp;redirect=no" title="Hardware design">Hardware design</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="metadata plainlinks ambox ambox-content" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs attention from an expert in Electronics</b>. <span class="hide-when-compact">Please add a <i>reason</i> or a <i>talk</i> parameter to this template to explain the issue with the article. <a href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Electronics" title="Wikipedia:WikiProject Electronics">WikiProject Electronics</a> (or its <a href="https://en.wikipedia.org/wiki/Portal:Electronics" title="Portal:Electronics">Portal</a>) may be able to help recruit an expert.</span> <small><i>(March 2012)</i></small></span></td>
+</tr>
+</table>
+<p><b>Processor design</b> is the <a href="https://en.wikipedia.org/wiki/Design_engineer" title="Design engineer">design engineering</a> task of creating a <a href="https://en.wikipedia.org/wiki/Microprocessor" title="Microprocessor">microprocessor</a>, a component of <a href="https://en.wikipedia.org/wiki/Computer_hardware" title="Computer hardware">computer hardware</a>. It is a subfield of <a href="https://en.wikipedia.org/wiki/Electronics_engineering" title="Electronics engineering" class="mw-redirect">electronics engineering</a> and <a href="https://en.wikipedia.org/wiki/Computer_engineering" title="Computer engineering">computer engineering</a>. The design process involves choosing an <a href="https://en.wikipedia.org/wiki/Instruction_set" title="Instruction set">instruction set</a> and a certain execution paradigm (e.g. <a href="https://en.wikipedia.org/wiki/Very_long_instruction_word" title="Very long instruction word">VLIW</a> or <a href="https://en.wikipedia.org/wiki/Reduced_instruction_set_computing" title="Reduced instruction set computing">RISC</a>) and results in a <a href="https://en.wikipedia.org/wiki/Microarchitecture" title="Microarchitecture">microarchitecture</a> described in e.g. <a href="https://en.wikipedia.org/wiki/VHDL" title="VHDL">VHDL</a> or <a href="https://en.wikipedia.org/wiki/Verilog" title="Verilog">Verilog</a>. This description is then manufactured employing some of the various <a href="https://en.wikipedia.org/wiki/Semiconductor_device_fabrication" title="Semiconductor device fabrication">semiconductor device fabrication</a> processes. This results in a <a href="https://en.wikipedia.org/wiki/Die_(integrated_circuit)" title="Die (integrated circuit)">die</a> which is bonded onto some <a href="https://en.wikipedia.org/wiki/Chip_carrier" title="Chip carrier">chip carrier</a>. This chip carrier is then soldered onto some <a href="https://en.wikipedia.org/wiki/Printed_circuit_board" title="Printed circuit board">printed circuit board</a> (PCB).</p>
+<p>The mode of operation of any microprocessor is the execution of lists of instructions. Instructions typically include those to compute or manipulate data values using <a href="https://en.wikipedia.org/wiki/Processor_register" title="Processor register">registers</a>, change or retrieve values in read/write memory, perform relational tests between data values and to control program flow.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Details"><span class="tocnumber">1</span> <span class="toctext">Details</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Micro-architectural_concepts"><span class="tocnumber">1.1</span> <span class="toctext">Micro-architectural concepts</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Research_topics"><span class="tocnumber">1.2</span> <span class="toctext">Research topics</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Performance_analysis_and_benchmarking"><span class="tocnumber">1.3</span> <span class="toctext">Performance analysis and benchmarking</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Markets"><span class="tocnumber">2</span> <span class="toctext">Markets</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#General_purpose_computing"><span class="tocnumber">2.1</span> <span class="toctext">General purpose computing</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#High-end_processor_economics"><span class="tocnumber">2.1.1</span> <span class="toctext">High-end processor economics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#Scientific_computing"><span class="tocnumber">2.2</span> <span class="toctext">Scientific computing</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Embedded_design"><span class="tocnumber">2.3</span> <span class="toctext">Embedded design</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#Embedded_processor_economics"><span class="tocnumber">2.3.1</span> <span class="toctext">Embedded processor economics</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Research_and_educational_CPU_design"><span class="tocnumber">2.3.2</span> <span class="toctext">Research and educational CPU design</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Soft_microprocessor_cores"><span class="tocnumber">2.3.3</span> <span class="toctext">Soft microprocessor cores</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Details">Details</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=1" title="Edit section: Details">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="metadata plainlinks ambox ambox-style ambox-Prose" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>is in a list format that may be better presented using <a href="https://en.wikipedia.org/wiki/Wikipedia:Prose" title="Wikipedia:Prose" class="mw-redirect">prose</a>.</b> <span class="hide-when-compact">You can help by converting this section to prose, if <a href="https://en.wikipedia.org/wiki/Wikipedia:Embedded_list" title="Wikipedia:Embedded list" class="mw-redirect">appropriate</a>. <a href="https://en.wikipedia.org/wiki/Help:Editing" title="Help:Editing">Editing help</a> is available.</span> <small><i>(May 2011)</i></small></span></td>
+</tr>
+</table>
+<p>CPU design focuses on six main areas:</p>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Datapath" title="Datapath">datapaths</a> (such as <a href="https://en.wikipedia.org/wiki/Arithmetic_logic_unit" title="Arithmetic logic unit">ALUs</a> and <a href="https://en.wikipedia.org/wiki/Pipeline_(computing)" title="Pipeline (computing)">pipelines</a>)</li>
+<li><a href="https://en.wikipedia.org/wiki/Control_unit" title="Control unit">control unit</a>: logic which controls the datapaths</li>
+<li>Memory components such as register files, caches</li>
+<li>Clock circuitry such as clock drivers, <a href="https://en.wikipedia.org/wiki/Phase-locked_loop" title="Phase-locked loop">PLLs</a>, <a href="https://en.wikipedia.org/wiki/Clock_distribution_network" title="Clock distribution network" class="mw-redirect">clock distribution networks</a></li>
+<li>Pad transceiver circuitry</li>
+<li>Logic gate cell <a href="https://en.wikipedia.org/wiki/Library_(electronics)" title="Library (electronics)" class="mw-redirect">library</a> which is used to implement the logic</li>
+</ol>
+<p>CPUs designed for high-performance markets might require custom designs for each of these items to achieve frequency, <a href="https://en.wikipedia.org/wiki/Power_consumption" title="Power consumption" class="mw-redirect">power-dissipation</a>, and chip-area goals whereas CPUs designed for lower performance markets might lessen the implementation burden by acquiring some of these items by purchasing them as <a href="https://en.wikipedia.org/wiki/Intellectual_property" title="Intellectual property">intellectual property</a>. Control logic implementation techniques (<a href="https://en.wikipedia.org/wiki/Logic_synthesis" title="Logic synthesis">logic synthesis</a> using CAD tools) can be used to implement datapaths, register files, and clocks. Common logic styles used in CPU design include unstructured random logic, <a href="https://en.wikipedia.org/wiki/Finite-state_machine" title="Finite-state machine">finite-state machines</a>, <a href="https://en.wikipedia.org/wiki/Microprogramming" title="Microprogramming" class="mw-redirect">microprogramming</a> (common from 1965 to 1985), and <a href="https://en.wikipedia.org/wiki/Programmable_logic_array" title="Programmable logic array">Programmable logic arrays</a> (common in the 1980s, no longer common).</p>
+<p>Device types used to implement the logic include:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Transistor-transistor_logic" title="Transistor-transistor logic" class="mw-redirect">Transistor-transistor logic</a> <a href="https://en.wikipedia.org/wiki/Small_Scale_Integration" title="Small Scale Integration" class="mw-redirect">Small Scale Integration</a> logic chips - no longer used for CPUs</li>
+<li><a href="https://en.wikipedia.org/wiki/Programmable_Array_Logic" title="Programmable Array Logic">Programmable Array Logic</a> and <a href="https://en.wikipedia.org/wiki/Programmable_logic_device" title="Programmable logic device">Programmable logic devices</a> - no longer used for CPUs</li>
+<li><a href="https://en.wikipedia.org/wiki/Emitter-coupled_logic" title="Emitter-coupled logic">Emitter-coupled logic</a> (ECL) <a href="https://en.wikipedia.org/wiki/Gate_array" title="Gate array">gate arrays</a> - no longer common</li>
+<li><a href="https://en.wikipedia.org/wiki/CMOS" title="CMOS">CMOS</a> <a href="https://en.wikipedia.org/wiki/Gate_array" title="Gate array">gate arrays</a> - no longer used for CPUs</li>
+<li><a href="https://en.wikipedia.org/wiki/CMOS" title="CMOS">CMOS</a> <a href="https://en.wikipedia.org/wiki/Integrated_circuit" title="Integrated circuit">mass-produced ICs</a> - the vast majority of CPUs by volume</li>
+<li><a href="https://en.wikipedia.org/wiki/CMOS" title="CMOS">CMOS</a> <a href="https://en.wikipedia.org/wiki/Application-specific_integrated_circuit" title="Application-specific integrated circuit">ASICs</a> - only for a minority of special applications due to expense</li>
+<li><a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array" title="Field-programmable gate array">Field-programmable gate arrays</a> (FPGA) - common for <a href="https://en.wikipedia.org/wiki/Soft_microprocessor" title="Soft microprocessor">soft microprocessors</a>, and more or less required for <a href="https://en.wikipedia.org/wiki/Reconfigurable_computing" title="Reconfigurable computing">reconfigurable computing</a></li>
+</ul>
+<p>A CPU design project generally has these major tasks:</p>
+<ul>
+<li>Programmer-visible <a href="https://en.wikipedia.org/wiki/Instruction_set_architecture" title="Instruction set architecture" class="mw-redirect">instruction set architecture</a>, which can be implemented by a variety of <a href="https://en.wikipedia.org/wiki/Microarchitecture" title="Microarchitecture">microarchitectures</a></li>
+<li>Architectural study and performance modeling in <a href="https://en.wikipedia.org/wiki/ANSI_C" title="ANSI C">ANSI C</a>/<a href="https://en.wikipedia.org/wiki/C++" title="C++">C++</a> or <a href="https://en.wikipedia.org/wiki/SystemC" title="SystemC">SystemC</a><sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a href="https://en.wikipedia.org/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text near this tag may need clarification or removal of jargon. (January 2013)">clarification needed</span></a></i>]</sup></li>
+<li><a href="https://en.wikipedia.org/wiki/High-level_synthesis" title="High-level synthesis">High-level synthesis</a> (HLS) or <a href="https://en.wikipedia.org/wiki/Register_transfer_level" title="Register transfer level" class="mw-redirect">register transfer level</a> (RTL, e.g. logic) implementation</li>
+<li>RTL verification</li>
+<li><a href="https://en.wikipedia.org/wiki/Circuit_design" title="Circuit design">Circuit design</a> of speed critical components (caches, registers, ALUs)</li>
+<li><a href="https://en.wikipedia.org/wiki/Logic_synthesis" title="Logic synthesis">Logic synthesis</a> or logic-gate-level design</li>
+<li><a href="https://en.wikipedia.org/wiki/Static_timing_analysis" title="Static timing analysis">Timing analysis</a> to confirm that all logic and circuits will run at the specified operating frequency</li>
+<li>Physical design including <a href="https://en.wikipedia.org/wiki/Floorplan_(microelectronics)#Floorplanning" title="Floorplan (microelectronics)">floorplanning</a>, <a href="https://en.wikipedia.org/wiki/Place_and_route" title="Place and route">place and route</a> of logic gates</li>
+<li>Checking that RTL, gate-level, transistor-level and physical-level representations are equivalent</li>
+<li>Checks for <a href="https://en.wikipedia.org/wiki/Signal_integrity" title="Signal integrity">signal integrity</a>, <a href="https://en.wikipedia.org/wiki/Design_rule_checking" title="Design rule checking">chip manufacturability</a></li>
+</ul>
+<p>Re-designing a CPU core to a smaller die-area helps to shrink everything (a "<a href="https://en.wikipedia.org/wiki/Photomask" title="Photomask">photomask</a> shrink"), resulting in the same number of transistors on a smaller die. It improves performance (smaller transistors switch faster), reduces power (smaller wires have less <a href="https://en.wikipedia.org/wiki/Parasitic_capacitance" title="Parasitic capacitance">parasitic capacitance</a>) and reduces cost (more CPUs fit on the same wafer of silicon). Releasing a CPU on the same size die, but with a smaller CPU core, keeps the cost about the same but allows higher levels of integration within one <a href="https://en.wikipedia.org/wiki/Very-large-scale_integration" title="Very-large-scale integration">very-large-scale integration</a> chip (additional cache, multiple CPUs, or other components), improving performance and reducing overall system cost.</p>
+<p>As with most complex electronic designs, the <a href="https://en.wikipedia.org/wiki/Functional_verification" title="Functional verification">logic verification</a> effort (proving that the design does not have bugs) now dominates the project schedule of a CPU.</p>
+<p>Key CPU architectural innovations include <a href="https://en.wikipedia.org/wiki/Index_register" title="Index register">index register</a>, <a href="https://en.wikipedia.org/wiki/CPU_cache" title="CPU cache">cache</a>, <a href="https://en.wikipedia.org/wiki/Virtual_memory" title="Virtual memory">virtual memory</a>, <a href="https://en.wikipedia.org/wiki/Instruction_pipelining" title="Instruction pipelining">instruction pipelining</a>, <a href="https://en.wikipedia.org/wiki/Superscalar" title="Superscalar" class="mw-redirect">superscalar</a>, <a href="https://en.wikipedia.org/wiki/Complex_instruction_set_computer" title="Complex instruction set computer" class="mw-redirect">CISC</a>, <a href="https://en.wikipedia.org/wiki/Reduced_instruction_set_computer" title="Reduced instruction set computer" class="mw-redirect">RISC</a>, <a href="https://en.wikipedia.org/wiki/Virtual_machine" title="Virtual machine">virtual machine</a>, <a href="https://en.wikipedia.org/wiki/Emulator" title="Emulator">emulators</a>, <a href="https://en.wikipedia.org/wiki/Microprogram" title="Microprogram" class="mw-redirect">microprogram</a>, and <a href="https://en.wikipedia.org/wiki/Stack_(data_structure)" title="Stack (data structure)" class="mw-redirect">stack</a>.</p>
+<h3><span class="mw-headline" id="Micro-architectural_concepts">Micro-architectural concepts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=2" title="Edit section: Micro-architectural concepts">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote relarticle mainarticle">Main article: <a href="https://en.wikipedia.org/wiki/Microarchitecture" title="Microarchitecture">Microarchitecture</a></div>
+<h3><span class="mw-headline" id="Research_topics">Research topics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=3" title="Edit section: Research topics">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote relarticle mainarticle">Main article: <a href="https://en.wikipedia.org/wiki/History_of_general-purpose_CPUs#1990_to_today:_looking_forward" title="History of general-purpose CPUs">History of general-purpose CPUs § 1990 to today: looking forward</a></div>
+<p>A variety of <a href="https://en.wikipedia.org/wiki/History_of_general-purpose_CPUs#1990_to_today:_looking_forward" title="History of general-purpose CPUs">new CPU design ideas</a> have been proposed, including <a href="https://en.wikipedia.org/wiki/Reconfigurable_logic" title="Reconfigurable logic" class="mw-redirect">reconfigurable logic</a>, <a href="https://en.wikipedia.org/wiki/Clockless_CPU" title="Clockless CPU" class="mw-redirect">clockless CPUs</a>, <a href="https://en.wikipedia.org/wiki/Computational_RAM" title="Computational RAM">computational RAM</a>, and <a href="https://en.wikipedia.org/wiki/Optical_computing" title="Optical computing">optical computing</a>.</p>
+<h3><span class="mw-headline" id="Performance_analysis_and_benchmarking">Performance analysis and benchmarking</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=4" title="Edit section: Performance analysis and benchmarking">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote relarticle mainarticle">Main article: <a href="https://en.wikipedia.org/wiki/Computer_performance" title="Computer performance">Computer performance</a></div>
+<p><a href="https://en.wikipedia.org/wiki/Benchmark_(computing)" title="Benchmark (computing)">Benchmarking</a> is a way of testing CPU speed. Examples include SPECint and <a href="https://en.wikipedia.org/wiki/SPECfp" title="SPECfp">SPECfp</a>, developed by <a href="https://en.wikipedia.org/wiki/Standard_Performance_Evaluation_Corporation" title="Standard Performance Evaluation Corporation">Standard Performance Evaluation Corporation</a>, and <a href="https://en.wikipedia.org/w/index.php?title=ConsumerMark&amp;action=edit&amp;redlink=1" class="new" title="ConsumerMark (page does not exist)">ConsumerMark</a> developed by the Embedded Microprocessor Benchmark Consortium <a href="https://en.wikipedia.org/wiki/EEMBC" title="EEMBC">EEMBC</a>.</p>
+<p>Some of the commonly used metrics include:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Instructions_per_second" title="Instructions per second">Instructions per second</a> - Most consumers pick a computer architecture (normally <a href="https://en.wikipedia.org/wiki/Intel" title="Intel">Intel</a> <a href="https://en.wikipedia.org/wiki/IA32" title="IA32" class="mw-redirect">IA32</a> architecture) to be able to run a large base of pre-existing pre-compiled software. Being relatively uninformed on computer benchmarks, some of them pick a particular CPU based on operating frequency (see <a href="https://en.wikipedia.org/wiki/Megahertz_Myth" title="Megahertz Myth" class="mw-redirect">Megahertz Myth</a>).</li>
+<li><a href="https://en.wikipedia.org/wiki/FLOPS" title="FLOPS">FLOPS</a> - The number of floating point operations per second is often important in selecting computers for scientific computations.</li>
+<li><a href="https://en.wikipedia.org/wiki/Performance_per_watt" title="Performance per watt">Performance per watt</a> - System designers building <a href="https://en.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">parallel computers</a>, such as <a href="https://en.wikipedia.org/wiki/Google_search_technology#Current_hardware" title="Google search technology" class="mw-redirect">Google</a>, pick CPUs based on their speed per watt of power, because the cost of powering the CPU outweighs the cost of the CPU itself.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></li>
+<li>Some system designers building parallel computers pick CPUs based on the speed per dollar.</li>
+<li>System designers building <a href="https://en.wikipedia.org/wiki/Real-time_computing" title="Real-time computing">real-time computing</a> systems want to guarantee worst-case response. That is easier to do when the CPU has low <a href="https://en.wikipedia.org/wiki/Interrupt_latency" title="Interrupt latency">interrupt latency</a> and when it has deterministic response. (<a href="https://en.wikipedia.org/wiki/Digital_signal_processor" title="Digital signal processor">DSP</a>)</li>
+<li>Computer programmers who program directly in assembly language want a CPU to support a full featured <a href="https://en.wikipedia.org/wiki/Instruction_set" title="Instruction set">instruction set</a>.</li>
+<li>Low power - For systems with limited power sources (e.g. solar, batteries, human power).</li>
+<li>Small size or low weight - for portable embedded systems, systems for spacecraft.</li>
+<li>Environmental impact - Minimizing environmental impact of computers during manufacturing and recycling as well during use. Reducing waste, reducing hazardous materials. (see <a href="https://en.wikipedia.org/wiki/Green_computing" title="Green computing">Green computing</a>).</li>
+</ul>
+<p>There may be tradeoffs in optimizing some of these metrics. In particular, many design techniques that make a CPU run faster make the "performance per watt", "performance per dollar", and "deterministic response" much worse, and vice versa.</p>
+<h2><span class="mw-headline" id="Markets">Markets</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=5" title="Edit section: Markets">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are several different markets in which CPUs are used. Since each of these markets differ in their requirements for CPUs, the devices designed for one market are in most cases inappropriate for the other markets.</p>
+<h3><span class="mw-headline" id="General_purpose_computing">General purpose computing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=6" title="Edit section: General purpose computing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The vast majority of revenues generated from CPU sales is for general purpose computing<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (May 2010)">citation needed</span></a></i>]</sup>, that is, desktop, laptop, and server computers commonly used in businesses and homes. In this market, the Intel <a href="https://en.wikipedia.org/wiki/IA-32" title="IA-32">IA-32</a> architecture dominates, with its rivals <a href="https://en.wikipedia.org/wiki/PowerPC" title="PowerPC">PowerPC</a> and <a href="https://en.wikipedia.org/wiki/SPARC" title="SPARC">SPARC</a> maintaining much smaller customer bases. Yearly, hundreds of millions of IA-32 architecture CPUs are used by this market. A growing percentage of these processors are for mobile implementations such as netbooks and laptops.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p>Since these devices are used to run countless different types of programs, these CPU designs are not specifically targeted at one type of application or one function. The demands of being able to run a wide range of programs efficiently has made these CPU designs among the more advanced technically, along with some disadvantages of being relatively costly, and having high power consumption.</p>
+<h4><span class="mw-headline" id="High-end_processor_economics">High-end processor economics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=7" title="Edit section: High-end processor economics">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>In 1984, most high-performance CPUs required four to five years to develop.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<h3><span class="mw-headline" id="Scientific_computing">Scientific computing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=8" title="Edit section: Scientific computing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote relarticle mainarticle">Main article: <a href="https://en.wikipedia.org/wiki/Supercomputer" title="Supercomputer">Supercomputer</a></div>
+<p>Scientific computing is a much smaller niche market (in revenue and units shipped). It is used in government research labs and universities. Before 1990, CPU design was often done for this market, but mass market CPUs organized into large clusters have proven to be more affordable. The main remaining area of active hardware design and research for scientific computing is for high-speed data transmission systems to connect mass market CPUs.</p>
+<h3><span class="mw-headline" id="Embedded_design">Embedded design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=9" title="Edit section: Embedded design">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote relarticle mainarticle">Main article: <a href="https://en.wikipedia.org/wiki/Embedded_system" title="Embedded system">Embedded system</a></div>
+<p>As measured by units shipped, most CPUs are embedded in other machinery, such as telephones, clocks, appliances, vehicles, and infrastructure. Embedded processors sell in the volume of many billions of units per year, however, mostly at much lower price points than that of the general purpose processors.</p>
+<p>These single-function devices differ from the more familiar general-purpose CPUs in several ways:</p>
+<ul>
+<li>Low cost is of high importance.</li>
+<li>It is important to maintain a low power dissipation as embedded devices often have a limited battery life and it is often impractical to include cooling fans.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></li>
+<li>To give lower system cost, peripherals are integrated with the processor on the same silicon chip.</li>
+<li>Keeping peripherals on-chip also reduces power consumption as external GPIO ports typically require buffering so that they can source or sink the relatively high current loads that are required to maintain a strong signal outside of the chip.
+<ul>
+<li>Many embedded applications have a limited amount of physical space for circuitry; keeping peripherals on-chip will reduce the space required for the circuit board.</li>
+<li>The program and data memories are often integrated on the same chip. When the only allowed program memory is <a href="https://en.wikipedia.org/wiki/Read-only_memory" title="Read-only memory">ROM</a>, the device is known as a <a href="https://en.wikipedia.org/wiki/Microcontroller" title="Microcontroller">microcontroller</a>.</li>
+</ul>
+</li>
+<li>For many embedded applications, interrupt latency will be more critical than in some general-purpose processors.</li>
+</ul>
+<h4><span class="mw-headline" id="Embedded_processor_economics">Embedded processor economics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=10" title="Edit section: Embedded processor economics">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The embedded CPU family with the largest number of total units shipped is the <a href="https://en.wikipedia.org/wiki/8051" title="8051" class="mw-redirect">8051</a>, averaging nearly a billion units per year.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> The 8051 is widely used because it is very inexpensive. The design time is now roughly zero, because it is widely available as commercial intellectual property. It is now often embedded as a small part of a larger system on a chip. The silicon cost of an 8051 is now as low as US$0.001, because some implementations use as few as 2,200 logic gates and take 0.0127 square millimeters of silicon.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></p>
+<p>As of 2009, more CPUs are produced using the <a href="https://en.wikipedia.org/wiki/ARM_architecture" title="ARM architecture">ARM architecture</a> instruction set than any other 32-bit instruction set.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup><sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> The ARM architecture and the first ARM chip were designed in about one and a half years and 5 human years of work time.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></p>
+<p>The 32-bit <a href="https://en.wikipedia.org/wiki/Parallax_Propeller" title="Parallax Propeller">Parallax Propeller</a> microcontroller architecture and the first chip were designed by two people in about 10 human years of work time.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup></p>
+<p>The 8-bit <a href="https://en.wikipedia.org/wiki/Atmel_AVR" title="Atmel AVR">AVR architecture</a> and first AVR microcontroller was conceived and designed by two students at the Norwegian Institute of Technology.</p>
+<p>The 8-bit 6502 architecture and the first <a href="https://en.wikipedia.org/wiki/MOS_Technology_6502" title="MOS Technology 6502">MOS Technology 6502</a> chip were designed in 13 months by a group of about 9 people.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></p>
+<h4><span class="mw-headline" id="Research_and_educational_CPU_design">Research and educational CPU design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=11" title="Edit section: Research and educational CPU design">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The 32 bit <a href="https://en.wikipedia.org/wiki/Berkeley_RISC" title="Berkeley RISC">Berkeley RISC</a> I and RISC II architecture and the first chips were mostly designed by a series of students as part of a four quarter sequence of graduate courses.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup> This design became the basis of the commercial <a href="https://en.wikipedia.org/wiki/SPARC" title="SPARC">SPARC</a> processor design.</p>
+<p>For about a decade, every student taking the 6.004 class at MIT was part of a team—each team had one semester to design and build a simple 8 bit CPU out of <a href="https://en.wikipedia.org/wiki/7400_series" title="7400 series">7400 series</a> <a href="https://en.wikipedia.org/wiki/Integrated_circuit" title="Integrated circuit">integrated circuits</a>. One team of 4 students designed and built a simple 32 bit CPU during that semester. <sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup></p>
+<p>Some undergraduate courses require a team of 2 to 5 students to design, implement, and test a simple CPU in a FPGA in a single 15 week semester. <sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup></p>
+<p>The MultiTitan CPU was designed with 2.5 man years of effort, which was considered "relatively little design effort" at the time.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup> 24 people contributed to the 3.5 year MultiTitan research project, which included designing and building a prototype CPU.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup></p>
+<h4><span class="mw-headline" id="Soft_microprocessor_cores">Soft microprocessor cores</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=12" title="Edit section: Soft microprocessor cores">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div role="note" class="hatnote relarticle mainarticle">Main article: <a href="https://en.wikipedia.org/wiki/Soft_microprocessor" title="Soft microprocessor">Soft microprocessor</a></div>
+<p>For embedded systems, the highest performance levels are often not needed or desired due to the power consumption requirements. This allows for the use of processors which can be totally implemented by <a href="https://en.wikipedia.org/wiki/Logic_synthesis" title="Logic synthesis">logic synthesis</a> techniques. These synthesized processors can be implemented in a much shorter amount of time, giving quicker time-to-market.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=13" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="noprint portal tright" style="border:solid #aaa 1px;margin:0.5em 0 0.5em 1em">
+<table style="background:#f9f9f9;font-size:85%;line-height:110%;max-width:175px">
+<tr style="vertical-align:middle">
+<td style="text-align:center"><a href="https://en.wikipedia.org/wiki/File:Internet_map_1024.jpg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/28px-Internet_map_1024.jpg" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/42px-Internet_map_1024.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/56px-Internet_map_1024.jpg 2x" data-file-width="1280" data-file-height="1280" /></a></td>
+<td style="padding:0 0.2em;vertical-align:middle;font-style:italic;font-weight:bold"><a href="https://en.wikipedia.org/wiki/Portal:Computer_science" title="Portal:Computer science">Computer science portal</a></td>
+</tr>
+</table>
+</div>
+<table class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Microprocessor_Design" class="extiw" title="wikibooks:Microprocessor Design">Microprocessor Design</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">Central processing unit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Comparison_of_instruction_set_architectures" title="Comparison of instruction set architectures">Comparison of instruction set architectures</a></li>
+<li><a href="https://en.wikipedia.org/wiki/History_of_general-purpose_CPUs" title="History of general-purpose CPUs">History of general-purpose CPUs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Microprocessor" title="Microprocessor">Microprocessor</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Microarchitecture" title="Microarchitecture">Microarchitecture</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Moore%27s_law" title="Moore's law">Moore's law</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Amdahl%27s_law" title="Amdahl's law">Amdahl's law</a></li>
+<li><a href="https://en.wikipedia.org/wiki/System-on-a-chip" title="System-on-a-chip" class="mw-redirect">System-on-a-chip</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Reduced_instruction_set_computer" title="Reduced instruction set computer" class="mw-redirect">Reduced instruction set computer</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Complex_instruction_set_computer" title="Complex instruction set computer" class="mw-redirect">Complex instruction set computer</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Minimal_instruction_set_computer" title="Minimal instruction set computer">Minimal instruction set computer</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Electronic_design_automation" title="Electronic design automation">Electronic design automation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/High-level_synthesis" title="High-level synthesis">High-level synthesis</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit&amp;section=14" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="metadata plainlinks ambox ambox-style ambox-More_footnotes" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article includes a <a href="https://en.wikipedia.org/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">list of references</a>, but <b>its sources remain unclear</b> because it has <b>insufficient <a href="https://en.wikipedia.org/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>. <span class="hide-when-compact">Please help to <a href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" title="Wikipedia:WikiProject Fact and Reference Check">improve</a> this article by <a href="https://en.wikipedia.org/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span> <small><i>(March 2009)</i></small></span></td>
+</tr>
+</table>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://web.archive.org/web/20050327005323/http://www.eembc.org/benchmark/consumer.asp?HTYPE=SIM">"EEMBC ConsumerMark"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.eembc.org/benchmark/consumer.asp?HTYPE=SIM">the original</a> on March 27, 2005.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProcessor+design&amp;rft.btitle=EEMBC+ConsumerMark&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.eembc.org%2Fbenchmark%2Fconsumer.asp%3FHTYPE%3DSIM&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web">Stephen Shankland (December 9, 2005). <a rel="nofollow" class="external text" href="http://www.zdnet.com/article/power-could-cost-more-than-servers-google-warns/">"Power could cost more than servers, Google warns"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProcessor+design&amp;rft.au=Stephen+Shankland&amp;rft.btitle=Power+could+cost+more+than+servers%2C+Google+warns&amp;rft.date=2005-12-09&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.zdnet.com%2Farticle%2Fpower-could-cost-more-than-servers-google-warns%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">Kerr, Justin. <a rel="nofollow" class="external text" href="http://www.maximumpc.com/article/news/amd_loses_market_share_mobile_cpu_sales_outsell_desktop_first_time">"AMD Loses Market Share as Mobile CPU Sales Outsell Desktop for the First Time."</a> Maximum PC. Published 2010-10-26.</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">"New system manages hundreds of transactions per second" article by Robert Horst and Sandra Metz, of Tandem Computers Inc., "Electronics" magazine, 1984 April 19: "While most high-performance CPUs require four to five years to develop, The <a href="https://en.wikipedia.org/wiki/NonStop" title="NonStop">NonStop</a> TXP processor took just 2+1/2 years -- six months to develop a complete written specification, one year to construct a working prototype, and another year to reach volume production."</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">S. Mittal, "<a rel="nofollow" class="external text" href="https://www.academia.edu/4186102/A_survey_of_techniques_for_improving_energy_efficiency_in_embedded_computing_systems">A survey of techniques for improving energy efficiency in embedded computing systems</a>", IJCAET, 6(4), 440–459, 2014.</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://people.wallawalla.edu/~curt.nelson/engr355/lecture/8051_overview.pdf">http://people.wallawalla.edu/~curt.nelson/engr355/lecture/8051_overview.pdf</a></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.keil.com/dd/docs/datashts/evatronix/t8051_ds.pdf">Square millimeters per 8051, 0.013 in 45nm line-widths; see</a></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">To figure dollars per square millimeter, see <a rel="nofollow" class="external autonumber" href="http://www.overclockers.com/forums/showthread.php?t=550542">[1]</a>, and note that an SOC component has no pin or packaging costs.</span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.extremetech.com/extreme/52180-arm-cores-climb-into-3g-territory">"ARM Cores Climb Into 3G Territory"</a> by Mark Hachman, 2002.</span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.embedded.com/electronics-blogs/significant-bits/4024488/The-Two-Percent-Solution">"The Two Percent Solution"</a> by Jim Turley 2002.</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://web.archive.org/web/20090606152116/http://atterer.net/acorn/arm.html">"ARM's way"</a> 1998</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.parallax.com/Portals/0/Downloads/docs/article/WhythePropellerWorks.pdf">"Why the Propeller Works"</a> by <a href="https://en.wikipedia.org/w/index.php?title=Chip_Gracey&amp;action=edit&amp;redlink=1" class="new" title="Chip Gracey (page does not exist)">Chip Gracey</a></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://silicongenesis.stanford.edu/transcripts/mensch.htm">"Interview with William Mensch"</a></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.eecs.berkeley.edu/Pubs/TechRpts/1982/CSD-82-106.pdf">'Design and Implementation of RISC I'</a> - original journal article by <a href="https://en.wikipedia.org/wiki/Carlo_Sequin" title="Carlo Sequin" class="mw-redirect">C.E. Sequin</a> and <a href="https://en.wikipedia.org/wiki/David_A._Patterson_(scientist)" title="David A. Patterson (scientist)" class="mw-redirect">D.A.Patterson</a></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://sub-zero.mit.edu/fbyte/hacks/vhs/">"the VHS"</a></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.fpgacpu.org/teaching.html">"Teaching Computer Design with FPGAs"</a> by Jan Gray</span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text">Norman P. Jouppi and Jeffrey Y. F. Tang. <a rel="nofollow" class="external text" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.85.988&amp;rep=rep1&amp;type=pdf">"A 20-MIPS Sustained 32-bit CMOS Microprocessor with High Ratio of Sustained to Peak Performance"</a>. 1989. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1.1.85.988">10.1.1.85.988</a>. p. "i".</span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="ftp://ftp.hpl.hp.com/pub/DEC/WRL/research-reports/WRL-TR-87.8.pdf">"MultiTitan: Four Architecture Papers"</a>. 1988. p. 4-5.</span></li>
+</ol>
+</div>
+<ul>
+<li><cite class="citation book"><a href="https://en.wikipedia.org/w/index.php?title=Enoch_Hwang&amp;action=edit&amp;redlink=1" class="new" title="Enoch Hwang (page does not exist)">Hwang, Enoch</a> (2006). <a rel="nofollow" class="external text" href="http://faculty.lasierra.edu/~ehwang/digitaldesign"><i>Digital Logic and Microprocessor Design with VHDL</i></a>. Thomson. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="https://en.wikipedia.org/wiki/Special:BookSources/0-534-46593-5" title="Special:BookSources/0-534-46593-5">0-534-46593-5</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProcessor+design&amp;rft.aufirst=Enoch&amp;rft.aulast=Hwang&amp;rft.btitle=Digital+Logic+and+Microprocessor+Design+with+VHDL&amp;rft.date=2006&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Ffaculty.lasierra.edu%2F~ehwang%2Fdigitaldesign&amp;rft.isbn=0-534-46593-5&amp;rft.pub=Thomson&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><a rel="nofollow" class="external text" href="http://www.gamezero.com/team-0/articles/math_magic/micro/index.html">Processor Design: An Introduction</a></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:CPU_technologies" title="Template:CPU technologies"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:CPU_technologies" title="Template talk:CPU technologies"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:CPU_technologies&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="https://en.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">CPU technologies</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Computer_architecture" title="Computer architecture">Architecture</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Von_Neumann_architecture" title="Von Neumann architecture">Von Neumann</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Harvard_architecture" title="Harvard architecture">Harvard</a> (<a href="https://en.wikipedia.org/wiki/Modified_Harvard_architecture" title="Modified Harvard architecture">Modified</a>)</li>
+<li><a href="https://en.wikipedia.org/wiki/Dataflow_architecture" title="Dataflow architecture">Dataflow</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Transport_triggered_architecture" title="Transport triggered architecture">TTA</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Instruction_set" title="Instruction set">Instruction set</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Application-specific_instruction_set_processor" title="Application-specific instruction set processor">ASIP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Complex_instruction_set_computing" title="Complex instruction set computing">CISC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Reduced_instruction_set_computing" title="Reduced instruction set computing">RISC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Explicit_data_graph_execution" title="Explicit data graph execution">EDGE</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Explicitly_parallel_instruction_computing" title="Explicitly parallel instruction computing">EPIC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Minimal_instruction_set_computer" title="Minimal instruction set computer">MISC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/One_instruction_set_computer" title="One instruction set computer">OISC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Very_long_instruction_word" title="Very long instruction word">VLIW</a></li>
+<li><a href="https://en.wikipedia.org/wiki/No_instruction_set_computing" title="No instruction set computing">NISC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Zero_instruction_set_computer" title="Zero instruction set computer">ZISC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/TRIPS_architecture" title="TRIPS architecture">TRIPS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Comparison_of_instruction_set_architectures" title="Comparison of instruction set architectures">Comparison</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Word_(computer_architecture)" title="Word (computer architecture)">Word size</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/1-bit_architecture" title="1-bit architecture">1-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/4-bit" title="4-bit">4-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/8-bit" title="8-bit">8-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Word_(computer_architecture)#Table_of_word_sizes" title="Word (computer architecture)">9-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ferranti_Mercury" title="Ferranti Mercury">10-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/12-bit" title="12-bit">12-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Apollo_Guidance_Computer" title="Apollo Guidance Computer">15-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/16-bit" title="16-bit">16-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/18-bit" title="18-bit">18-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Z3_(computer)" title="Z3 (computer)">22-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/24-bit" title="24-bit">24-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/UNIVAC_III" title="UNIVAC III">25-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Saturn_Launch_Vehicle_Digital_Computer" title="Saturn Launch Vehicle Digital Computer">26-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/D-17B" title="D-17B">27-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/31-bit" title="31-bit">31-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/32-bit" title="32-bit">32-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ZEBRA_(computer)" title="ZEBRA (computer)">33-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fast_Universal_Digital_Computer_M-2" title="Fast Universal Digital Computer M-2">34-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/36-bit" title="36-bit">36-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Word_(computer_architecture)#Table_of_word_sizes" title="Word (computer architecture)">39-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IAS_machine" title="IAS machine">40-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/48-bit" title="48-bit">48-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Atanasoff–Berry_computer" title="Atanasoff–Berry computer">50-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/60-bit" title="60-bit">60-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/64-bit_computing" title="64-bit computing">64-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/128-bit" title="128-bit">128-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/256-bit" title="256-bit">256-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/512-bit" title="512-bit">512-bit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Word_(computer_architecture)#Variable_word_architectures" title="Word (computer architecture)">Variable</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Instruction_cycle" title="Instruction cycle">Execution</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Instruction_pipelining" title="Instruction pipelining">Instruction pipelining</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Bubble_(computing)" title="Bubble (computing)">Bubble</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Operand_forwarding" title="Operand forwarding">Operand forwarding</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Out-of-order_execution" title="Out-of-order execution">Out-of-order execution</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Register_renaming" title="Register renaming">Register renaming</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Speculative_execution" title="Speculative execution">Speculative execution</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Branch_predictor" title="Branch predictor">Branch predictor</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Memory_dependence_prediction" title="Memory dependence prediction">Memory dependence prediction</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Hazard_(computer_architecture)" title="Hazard (computer architecture)">Hazards</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">Parallel level</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Bit-level_parallelism" title="Bit-level parallelism">Bit</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Bit-serial_architecture" title="Bit-serial architecture">Bit-serial</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Word_(computer_architecture)" title="Word (computer architecture)">Word</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Instruction-level_parallelism" title="Instruction-level parallelism">Instruction</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Scalar_processor" title="Scalar processor">Scalar</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Superscalar_processor" title="Superscalar processor">Superscalar</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Task_parallelism" title="Task parallelism">Task</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Thread_(computing)" title="Thread (computing)">Thread</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">Process</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Data_parallelism" title="Data parallelism">Data</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Vector_processor" title="Vector processor">Vector</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Memory-level_parallelism" title="Memory-level parallelism">Memory</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)" title="Multithreading (computer architecture)">Multithreading</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Temporal_multithreading" title="Temporal multithreading">Temporal</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Simultaneous_multithreading" title="Simultaneous multithreading">Simultaneous</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Preemptive_multithreading" title="Preemptive multithreading" class="mw-redirect">Preemptive</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cooperative_multithreading" title="Cooperative multithreading" class="mw-redirect">Cooperative</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Flynn%27s_taxonomy" title="Flynn's taxonomy">Flynn's taxonomy</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/SISD" title="SISD">SISD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/SIMD" title="SIMD">SIMD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MISD" title="MISD">MISD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MIMD" title="MIMD">MIMD</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/SPMD" title="SPMD">SPMD</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Addressing_mode" title="Addressing mode">Addressing mode</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Types</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Digital_signal_processor" title="Digital signal processor">Digital signal processor</a> (DSP)</li>
+<li><a href="https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units" title="General-purpose computing on graphics processing units">GPGPU</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Microcontroller" title="Microcontroller">Microcontroller</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Physics_processing_unit" title="Physics processing unit">Physics processing unit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/System_on_a_chip" title="System on a chip">System on a chip</a> (SoC)</li>
+<li><a href="https://en.wikipedia.org/wiki/Cellular_architecture" title="Cellular architecture">Cellular</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Components</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Address_generation_unit" title="Address generation unit">Address generation unit</a> (AGU)</li>
+<li><a href="https://en.wikipedia.org/wiki/Arithmetic_logic_unit" title="Arithmetic logic unit">Arithmetic logic unit</a> (ALU)</li>
+<li><a href="https://en.wikipedia.org/wiki/Barrel_shifter" title="Barrel shifter">Barrel shifter</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Floating-point_unit" title="Floating-point unit">Floating-point unit</a> (FPU)</li>
+<li><a href="https://en.wikipedia.org/wiki/Back-side_bus" title="Back-side bus">Back-side bus</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Multiplexer" title="Multiplexer">Multiplexer</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Demultiplexer" title="Demultiplexer" class="mw-redirect">Demultiplexer</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Processor_register" title="Processor register">Registers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Memory_management_unit" title="Memory management unit">Memory management unit</a> (MMU)</li>
+<li><a href="https://en.wikipedia.org/wiki/Translation_lookaside_buffer" title="Translation lookaside buffer">Translation lookaside buffer</a> (TLB)</li>
+<li><a href="https://en.wikipedia.org/wiki/CPU_cache" title="CPU cache">Cache</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Register_file" title="Register file">Register file</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Microcode" title="Microcode">Microcode</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Control_unit" title="Control unit">Control unit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Clock_rate" title="Clock rate">Clock rate</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Power_management" title="Power management">Power<br />
+management</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Advanced_Power_Management" title="Advanced Power Management">APM</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface" title="Advanced Configuration and Power Interface">ACPI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dynamic_frequency_scaling" title="Dynamic frequency scaling">Dynamic frequency scaling</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dynamic_voltage_scaling" title="Dynamic voltage scaling">Dynamic voltage scaling</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Clock_gating" title="Clock gating">Clock gating</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Hardware<br />
+<a href="https://en.wikipedia.org/wiki/Computer_security" title="Computer security">security</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/NX_bit" title="NX bit">Non-executable memory (NX bit)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Intel_MPX" title="Intel MPX">Bounds checking (Intel MPX)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hardware_restriction" title="Hardware restriction">Hardware restriction</a> (<a href="https://en.wikipedia.org/wiki/Firmware" title="Firmware">firmware</a>)</li>
+<li><a href="https://en.wikipedia.org/wiki/Trusted_Execution_Technology" title="Trusted Execution Technology">Trusted Execution Technology</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Secure_cryptoprocessor" title="Secure cryptoprocessor">Secure cryptoprocessor</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hardware_security_module" title="Hardware security module">Hardware security module</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hengzhi_chip" title="Hengzhi chip">Hengzhi chip</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:Design" title="Template:Design"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:Design" title="Template talk:Design"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Design&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="https://en.wikipedia.org/wiki/Design" title="Design">Design</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2" style="background:lemonchiffon;">
+<div>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Outline_of_design" title="Outline of design">Outline</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Portal:Design" title="Portal:Design">Portal</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Designer" title="Designer">Designer</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";background:lemonchiffon;"><span style="float:left;width:6em">&#160;</span>
+<div style="font-size:114%">Disciplines</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="background:lemonchiffon;"><a href="https://en.wikipedia.org/wiki/Communication_design" title="Communication design">Communication<br />
+design</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Advertising" title="Advertising">Advertising</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Book_design" title="Book design">Book design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Corporate_design" title="Corporate design">Corporate design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Exhibit_design" title="Exhibit design">Exhibit design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Film_title_design" title="Film title design">Film title design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Graphic_design" title="Graphic design">Graphic design</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Environmental_graphic_design" title="Environmental graphic design">Environmental</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Postage_stamp_design" title="Postage stamp design">Postage stamp design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Print_design" title="Print design">Print design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sustainable_graphic_design" title="Sustainable graphic design">Sustainable</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Illustration" title="Illustration">Illustration</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Information_design" title="Information design">Information design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Instructional_design" title="Instructional design">Instructional design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/News_design" title="News design">News design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Photography" title="Photography">Photography</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Retail_design" title="Retail design">Retail design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Signage" title="Signage">Signage</a>&#160;/ <a href="https://en.wikipedia.org/wiki/Traffic_sign_design" title="Traffic sign design">Traffic sign design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Typography" title="Typography">Typography</a>&#160;/ <a href="https://en.wikipedia.org/wiki/Type_design" title="Type design">Type design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Video_design" title="Video design">Video design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Visual_merchandising" title="Visual merchandising">Visual merchandising</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="background:lemonchiffon;"><a href="https://en.wikipedia.org/wiki/Environmental_design" title="Environmental design">Environmental<br />
+design</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Architecture" title="Architecture">Architecture</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Architectural_lighting_design" title="Architectural lighting design">Architectural lighting design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Building_design" title="Building design">Building design</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Passive_solar_building_design" title="Passive solar building design">Passive solar</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Ecological_design" title="Ecological design">Ecological design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Environmental_impact_design" title="Environmental impact design">Environmental impact design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Garden_design" title="Garden design">Garden design</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Computer-aided_garden_design" title="Computer-aided garden design">Computer-aided</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Healthy_community_design" title="Healthy community design">Healthy community design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Interior_architecture" title="Interior architecture">Interior architecture</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Interior_design" title="Interior design">Interior design</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Experiential_interior_design" title="Experiential interior design">EID</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Keyline_design" title="Keyline design">Keyline design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Landscape_architecture" title="Landscape architecture">Landscape architecture</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Sustainable_landscape_architecture" title="Sustainable landscape architecture">Sustainable</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Landscape_design" title="Landscape design">Landscape design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Spatial_design" title="Spatial design">Spatial design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Transition_design" title="Transition design">Transition design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Urban_design" title="Urban design">Urban design</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="background:lemonchiffon;"><a href="https://en.wikipedia.org/wiki/Industrial_design" title="Industrial design">Industrial<br />
+design</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Automotive_design" title="Automotive design">Automotive design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CMF_design" title="CMF design">CMF design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Corrugated_box_design" title="Corrugated box design">Corrugated box design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Electric_guitar_design" title="Electric guitar design">Electric guitar design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Furniture" title="Furniture">Furniture design</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Sustainable_furniture_design" title="Sustainable furniture design">Sustainable</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Hardware_interface_design" title="Hardware interface design">Hardware interface design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Motorcycle_design" title="Motorcycle design">Motorcycle design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Packaging_and_labeling" title="Packaging and labeling">Packaging and labeling</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Photographic_lens_design" title="Photographic lens design">Photographic lens design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Product_design" title="Product design">Product design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Production_design" title="Production design" class="mw-redirect">Production design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sensory_design" title="Sensory design">Sensory design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Service_design" title="Service design">Service design</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="background:lemonchiffon;"><a href="https://en.wikipedia.org/wiki/Interaction_design" title="Interaction design">Interaction<br />
+design</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Experience_design" title="Experience design">Experience design</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Employee_experience_design" title="Employee experience design">EED</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Game_design" title="Game design">Game design</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Level_design" title="Level design">Level design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Video_game_design" title="Video game design">Video game design</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Hardware_interface_design" title="Hardware interface design">Hardware interface design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Icon_design" title="Icon design">Icon design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Immersive_design" title="Immersive design">Immersive design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Information_design" title="Information design">Information design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Motion_graphic_design" title="Motion graphic design">Motion graphic design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sonic_interaction_design" title="Sonic interaction design">Sonic interaction design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/User_experience_design" title="User experience design">User experience design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/User_interface_design" title="User interface design">User interface design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Web_design" title="Web design">Web design</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="background:lemonchiffon;">Other<br />
+<a href="https://en.wikipedia.org/wiki/Applied_arts" title="Applied arts">applied arts</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Public_art" title="Public art">Public art design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ceramic_art" title="Ceramic art">Ceramic</a>&#160;/ <a href="https://en.wikipedia.org/wiki/Glass_art" title="Glass art">glass design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fashion_design" title="Fashion design">Fashion design</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Costume_design" title="Costume design">Costume design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jewelry_design" title="Jewelry design">Jewelry design</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Floral_design" title="Floral design">Floral design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Game_art_design" title="Game art design">Game art design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Scenic_design" title="Scenic design">Scenic design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sound_design" title="Sound design">Sound design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Lighting_designer" title="Lighting designer">Stage/set lighting design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Textile_design" title="Textile design">Textile design</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="background:lemonchiffon;">Other<br />
+design &amp; <a href="https://en.wikipedia.org/wiki/Engineering" title="Engineering">engineering</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Algorithm_design" title="Algorithm design">Algorithm design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Boiler_design" title="Boiler design">Boiler design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Conceptual_design" title="Conceptual design">Conceptual design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Database_design" title="Database design">Database design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Drug_design" title="Drug design">Drug design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Electrical_system_design" title="Electrical system design">Electrical system design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_of_experiments" title="Design of experiments">Experimental design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Filter_design" title="Filter design">Filter design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Job_design" title="Job design">Job design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Integrated_circuit_design" title="Integrated circuit design">Integrated circuit design</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Circuit_design" title="Circuit design">Circuit design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Physical_design_(electronics)" title="Physical design (electronics)">Physical design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Power_network_design_(IC)" title="Power network design (IC)">Power network design</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Nuclear_weapon_design" title="Nuclear weapon design">Nuclear weapon design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nucleic_acid_design" title="Nucleic acid design">Nucleic acid design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Organization_design" title="Organization design" class="mw-redirect">Organization design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Process_design" title="Process design">Process design</a></li>
+<li><strong class="selflink">Processor design</strong></li>
+<li><a href="https://en.wikipedia.org/wiki/Protein_design" title="Protein design">Protein design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Research_design" title="Research design">Research design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Social_design" title="Social design">Social design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Software_design" title="Software design">Software design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Spacecraft_design" title="Spacecraft design">Spacecraft design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Strategic_design" title="Strategic design">Strategic design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Systems_design" title="Systems design">Systems design</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";background:lemonchiffon;"><span style="float:left;width:6em">&#160;</span>
+<div style="font-size:114%">Approaches</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Activity-centered_design" title="Activity-centered design">Activity-centered</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Adaptive_web_design" title="Adaptive web design">Adaptive web</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Affective_design" title="Affective design">Affective</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_by_committee" title="Design by committee">By committee</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_by_contract" title="Design by contract">By contract</a></li>
+<li><a href="https://en.wikipedia.org/wiki/C-K_theory" title="C-K theory">C-K theory</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_closure" title="Design closure">Closure</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Participatory_design" title="Participatory design">Co-design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Concept-oriented_design" title="Concept-oriented design">Concept-oriented</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Configuration_design" title="Configuration design">Configuration</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Contextual_design" title="Contextual design">Contextual</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Continuous_design" title="Continuous design">Continuous</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cradle-to-cradle_design" title="Cradle-to-cradle design">Cradle-to-cradle</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Creative_problem-solving" title="Creative problem-solving">Creative problem-solving</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Creativity_techniques" title="Creativity techniques">Creativity techniques</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Critical_design" title="Critical design">Critical</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Design_fiction" title="Design fiction">Design fiction</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Defensive_design" title="Defensive design">Defensive</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design–bid–build" title="Design–bid–build">Design–bid–build</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design–build" title="Design–build">Design–build</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Architect-led_design–build" title="Architect-led design–build">architect-led</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Domain-driven_design" title="Domain-driven design">Domain-driven</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ecodesign" title="Ecodesign">Ecodesign</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Energy_neutral_design" title="Energy neutral design">Energy neutral</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Engineering_design_process" title="Engineering design process">Engineering design process</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Probabilistic_design" title="Probabilistic design">Probabilistic design</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Error-tolerant_design" title="Error-tolerant design">Error-tolerant</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fault-tolerant_design" title="Fault-tolerant design" class="mw-redirect">Fault-tolerant</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Framework-oriented_design" title="Framework-oriented design">Framework-oriented</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_for_assembly" title="Design for assembly">For assembly</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_for_behaviour_change" title="Design for behaviour change">For behaviour change</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_for_manufacturability" title="Design for manufacturability">For manufacturability</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_for_Six_Sigma" title="Design for Six Sigma">For Six Sigma</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_for_testing" title="Design for testing">For testing</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_for_X" title="Design for X">For X</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Functional_design" title="Functional design">Functional</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Generative_Design" title="Generative Design">Generative</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Geodesign" title="Geodesign">Geodesign</a></li>
+<li><a href="https://en.wikipedia.org/wiki/High-level_design" title="High-level design">High-level</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Integrated_design" title="Integrated design">Integrated</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Intelligence-based_design" title="Intelligence-based design">Intelligence-based</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Iterative_design" title="Iterative design">Iterative</a></li>
+<li><a href="https://en.wikipedia.org/wiki/KISS_principle" title="KISS principle">KISS principle</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Low-level_design" title="Low-level design">Low-level</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Metadesign" title="Metadesign">Metadesign</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mind_map" title="Mind map">Mind mapping</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Modular_design" title="Modular design">Modular</a></li>
+<li><a href="https://en.wikipedia.org/wiki/New_Wave_(design)" title="New Wave (design)">New Wave</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Object-oriented_design" title="Object-oriented design">Object-oriented</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Open_design" title="Open design">Open</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Parametric_design" title="Parametric design">Parametric</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Participatory_design" title="Participatory design">Participatory</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Platform-based_design" title="Platform-based design">Platform-based</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Policy-based_design" title="Policy-based design">Policy-based</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Process-centered_design" title="Process-centered design">Process-centered</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Public_interest_design" title="Public interest design">Public interest</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rational_design" title="Rational design">Rational</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Regenerative_design" title="Regenerative design">Regenerative</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Reliability_engineering" title="Reliability engineering">Reliability engineering</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Research-based_design" title="Research-based design">Research-based</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Responsibility-driven_design" title="Responsibility-driven design">Responsibility-driven</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Responsive_web_design" title="Responsive web design">RWD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Safe-life_design" title="Safe-life design">Safe-life</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sustainable_design" title="Sustainable design">Sustainable</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Systemic_Design" title="Systemic Design">Systemic</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Systems_Oriented_Design" title="Systems Oriented Design">SOD</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Tableless_web_design" title="Tableless web design">Tableless web</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Theory_of_constraints" title="Theory of constraints">Theory of constraints</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design" title="Top-down and bottom-up design">Top-down and bottom-up</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Transformation_design" title="Transformation design">Transformation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Transgenerational_design" title="Transgenerational design">Transgenerational</a></li>
+<li><a href="https://en.wikipedia.org/wiki/TRIZ" title="TRIZ">TRIZ</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Universal_design" title="Universal design">Universal</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Design_for_All_(in_ICT)" title="Design for All (in ICT)">Design for All</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Usage-centered_design" title="Usage-centered design">Usage-centered</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Use-centered_design" title="Use-centered design">Use-centered</a></li>
+<li><a href="https://en.wikipedia.org/wiki/User-centered_design" title="User-centered design">User-centered</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Empathic_design" title="Empathic design">Empathic</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/User_innovation" title="User innovation">User innovation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Value-driven_design" title="Value-driven design">Value-driven</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Value_sensitive_design" title="Value sensitive design">Value sensitive</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Privacy_by_Design" title="Privacy by Design" class="mw-redirect">Privacy by</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Design <a href="https://en.wikipedia.org/wiki/Design_choice" title="Design choice">choice</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_computing" title="Design computing">computing</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_controls" title="Design controls">controls</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_flow_(EDA)" title="Design flow (EDA)">flow</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_leadership" title="Design leadership">leadership</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_management" title="Design management">management</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_marker" title="Design marker">marker</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_methods" title="Design methods">methods</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_pattern" title="Design pattern">pattern</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_research" title="Design research">research</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_science" title="Design science">science</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_strategy" title="Design strategy">strategy</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_theory" title="Design theory">theory</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_thinking" title="Design thinking">thinking</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";background:lemonchiffon;"><span style="float:left;width:6em">&#160;</span>
+<div style="font-size:114%">
+<div class="hlist">
+<ul>
+<li>Tools</li>
+<li>Intellectual property</li>
+<li>Organizations</li>
+<li>Awards</li>
+</ul>
+</div>
+</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="background:lemonchiffon;"><a href="https://en.wikipedia.org/wiki/Design_tool" title="Design tool">Tools</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Algorithms-Aided_Design_(AAD)" title="Algorithms-Aided Design (AAD)">AAD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Architectural_model" title="Architectural model">Architectural model</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Blueprint" title="Blueprint">Blueprint</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Comprehensive_layout" title="Comprehensive layout">Comprehensive layout</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Computer-aided_design" title="Computer-aided design">CAD</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Computer-aided_industrial_design" title="Computer-aided industrial design">CAID</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Virtual_home_design_software" title="Virtual home design software">Virtual home design software</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Computer-automated_design" title="Computer-automated design">CAutoD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_quality_indicator" title="Design quality indicator">Design quality indicator</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Electronic_design_automation" title="Electronic design automation">Electronic design automation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Flowchart" title="Flowchart">Flowchart</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mockup" title="Mockup">Mockup</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Product_design_specification" title="Product design specification">Product design specification</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Prototype" title="Prototype">Prototype</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sketch_(drawing)" title="Sketch (drawing)">Sketch</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Storyboard" title="Storyboard">Storyboard</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Technical_drawing" title="Technical drawing">Technical drawing</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Web_design_program" title="Web design program">Web design program</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Website_wireframe" title="Website wireframe">Website wireframe</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="background:lemonchiffon;">Intellectual<br />
+property</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Community_design" title="Community design">Community design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_around" title="Design around">Design around</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_patent" title="Design patent">Design patent</a></li>
+<li><i><a href="https://en.wikipedia.org/wiki/Geschmacksmuster" title="Geschmacksmuster">Geschmacksmuster</a></i></li>
+<li><a href="https://en.wikipedia.org/wiki/Industrial_design_right" title="Industrial design right">Industrial design rights</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Industrial_design_rights_in_the_European_Union" title="Industrial design rights in the European Union">European Union</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="background:lemonchiffon;">Organizations</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/AIGA" title="AIGA">AIGA</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chartered_Society_of_Designers" title="Chartered Society of Designers">Chartered Society of Designers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_and_Industries_Association" title="Design and Industries Association">Design and Industries Association</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_Council" title="Design Council">Design Council</a></li>
+<li><a href="https://en.wikipedia.org/wiki/International_Forum_Design" title="International Forum Design">International Forum Design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Design_Society" title="The Design Society">The Design Society</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_Research_Society" title="Design Research Society">Design Research Society</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="background:lemonchiffon;">Awards</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/European_Design_Award" title="European Design Award">European Design Award</a></li>
+<li><a href="https://en.wikipedia.org/wiki/German_Design_Award" title="German Design Award">German Design Award</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Good_Design_Award_(Chicago)" title="Good Design Award (Chicago)">Good Design Award (Chicago)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Good_Design_Award_(Japan)" title="Good Design Award (Japan)">Good Design Award (Japan)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Graphex" title="Graphex">Graphex</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IF_product_design_award" title="IF product design award">IF product design award</a></li>
+<li><a href="https://en.wikipedia.org/wiki/James_Dyson_Award" title="James Dyson Award">James Dyson Award</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Prince_Philip_Designers_Prize" title="Prince Philip Designers Prize">Prince Philip Designers Prize</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";background:lemonchiffon;"><span style="float:left;width:6em">&#160;</span>
+<div style="font-size:114%">Related topics</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Aesthetics" title="Aesthetics">Aesthetics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Concept_art" title="Concept art">Concept art</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Creative_industries" title="Creative industries">Creative industries</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cultural_icon" title="Cultural icon">Cultural icon</a></li>
+<li><a href="https://en.wikipedia.org/wiki/.design" title=".design">.design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Enterprise_architecture" title="Enterprise architecture">Enterprise architecture</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Futures_studies" title="Futures studies">Futures studies</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Intelligent_design" title="Intelligent design">Intelligent design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/New_product_development" title="New product development">New product development</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Philosophy_of_design" title="Philosophy of design">Philosophy of design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Process_simulation" title="Process simulation">Process simulation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Slow_design" title="Slow design">Slow design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/STEAM_fields" title="STEAM fields">STEAM fields</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Unintelligent_design" title="Unintelligent design">Unintelligent design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Visualization_(computer_graphics)" title="Visualization (computer graphics)">Visualization</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Wicked_problem" title="Wicked problem">Wicked problem</a></li>
+</ul>
+<ul>
+<li>Design <a href="https://en.wikipedia.org/wiki/Design_brief" title="Design brief">brief</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_change" title="Design change">change</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_classic" title="Design classic">classic</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_director" title="Design director">director</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_education" title="Design education">education</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_elements_and_principles" title="Design elements and principles">elements and principles</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_engineer" title="Design engineer">engineer</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_firm" title="Design firm" class="mw-redirect">firm</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_history" title="Design history">history</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_knowledge" title="Design knowledge">knowledge</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_language" title="Design language">language</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_life" title="Design life">life</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_load" title="Design load">load</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_museum" title="Design museum">museum</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_paradigm" title="Design paradigm">paradigm</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_rationale" title="Design rationale">rationale</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_review" title="Design review">review</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_specification" title="Design specification">specification</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_studio" title="Design studio">studio</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_technology" title="Design technology">technology</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2">
+<div>
+<ul>
+<li><a href="http://commons.wikimedia.org/wiki/category:Design" class="extiw" title="commons:category:Design"><span style="color:#002bb8">Commons</span></a></li>
+<li><a href="http://en.wikibooks.org/wiki/Design" class="extiw" title="wikibooks:Design"><span style="color:#002bb8">Wikibooks</span></a></li>
+<li><a href="http://en.wikinews.org/wiki/Special:Search/Design" class="extiw" title="wikinews:Special:Search/Design"><span style="color:#002bb8">Wikinews</span></a></li>
+<li><a href="http://en.wikiquote.org/wiki/Design" class="extiw" title="wikiquote:Design"><span style="color:#002bb8">Wikiquote</span></a></li>
+<li><a href="http://en.wikisource.org/wiki/Category:Design" class="extiw" title="wikisource:Category:Design"><span style="color:#002bb8">Wikisource</span></a></li>
+<li><a href="http://en.wiktionary.org/wiki/Design" class="extiw" title="wiktionary:Design"><span style="color:#002bb8">Wiktionary</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1257
+Cached time: 20160512153648
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.333 seconds
+Real time usage: 0.507 seconds
+Preprocessor visited node count: 2131/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 139566/2097152 bytes
+Template argument size: 14450/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 8/500
+Lua time usage: 0.127/10.000 seconds
+Lua memory usage: 3.74 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  379.435      1 - -total
+ 21.32%   80.892      1 - Template:Expert-subject
+ 18.13%   68.810      1 - Template:Reflist
+ 15.24%   57.824      1 - Template:Design
+ 14.11%   53.527      1 - Template:Navbox_with_collapsible_sections
+ 13.54%   51.364      3 - Template:Ambox
+ 10.60%   40.223      2 - Template:Cite_web
+ 10.17%   38.570      1 - Template:Clarify
+  9.11%   34.553      1 - Template:Fix-span
+  8.00%   30.355      2 - Template:Delink
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:7597-0!*!0!!en!4!* and timestamp 20160512153648 and revision id 719645275
+ -->
+<noscript><img src="http://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;oldid=719645275">https://en.wikipedia.org/w/index.php?title=Processor_design&amp;oldid=719645275</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Central_processing_unit" title="Category:Central processing unit">Central processing unit</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Computer_engineering" title="Category:Computer engineering">Computer engineering</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Articles_needing_expert_attention_with_no_reason_or_talk_parameter" title="Category:Articles needing expert attention with no reason or talk parameter">Articles needing expert attention with no reason or talk parameter</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_needing_expert_attention_from_March_2012" title="Category:Articles needing expert attention from March 2012">Articles needing expert attention from March 2012</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_needing_expert_attention" title="Category:All articles needing expert attention">All articles needing expert attention</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Electronics_articles_needing_expert_attention" title="Category:Electronics articles needing expert attention">Electronics articles needing expert attention</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_needing_cleanup_from_May_2011" title="Category:Articles needing cleanup from May 2011">Articles needing cleanup from May 2011</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_pages_needing_cleanup" title="Category:All pages needing cleanup">All pages needing cleanup</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_sections_that_need_to_be_turned_into_prose_from_May_2011" title="Category:Articles with sections that need to be turned into prose from May 2011">Articles with sections that need to be turned into prose from May 2011</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Wikipedia_articles_needing_clarification_from_January_2013" title="Category:Wikipedia articles needing clarification from January 2013">Wikipedia articles needing clarification from January 2013</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_unsourced_statements_from_May_2010" title="Category:Articles with unsourced statements from May 2010">Articles with unsourced statements from May 2010</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_lacking_in-text_citations_from_March_2009" title="Category:Articles lacking in-text citations from March 2009">Articles lacking in-text citations from March 2009</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://en.wikipedia.org/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://en.wikipedia.org/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Processor+design&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Processor+design" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="https://en.wikipedia.org/wiki/Processor_design"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="https://en.wikipedia.org/wiki/Talk:Processor_design"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="https://en.wikipedia.org/wiki/Processor_design" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://en.wikipedia.org/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://en.wikipedia.org/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="https://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="https://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="https://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="https://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="https://en.wikipedia.org/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="http://shop.wikimedia.org/" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="https://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="https://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Processor_design" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Processor_design" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;oldid=719645275" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1303814" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&amp;page=Processor_design&amp;id=719645275" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="https://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Processor+design">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="https://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Processor+design&amp;returnto=Processor+design&amp;oldid=719645275&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="https://en.wikipedia.org/w/index.php?title=Processor_design&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="http://ar.wikipedia.org/wiki/تصميم_وحدة_المعالجة_المركزية" title="تصميم وحدة المعالجة المركزية – Arabic" lang="ar" hreflang="ar">العربية</a></li><li class="interlanguage-link interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Architektura_procesoru" title="Architektura procesoru – Czech" lang="cs" hreflang="cs">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="http://de.wikipedia.org/wiki/Prozessorarchitektur" title="Prozessorarchitektur – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-fa"><a href="http://fa.wikipedia.org/wiki/طراحی_پردازنده" title="طراحی پردازنده – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Architecture_de_processeur" title="Architecture de processeur – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-hi"><a href="http://hi.wikipedia.org/wiki/सीपीयू_शिल्पों_की_तुलना" title="सीपीयू शिल्पों की तुलना – Hindi" lang="hi" hreflang="hi">हिन्दी</a></li><li class="interlanguage-link interwiki-mk"><a href="http://mk.wikipedia.org/wiki/Процесорски_дизајн" title="Процесорски дизајн – Macedonian" lang="mk" hreflang="mk">Македонски</a></li><li class="interlanguage-link interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Processorarchitectuur" title="Processorarchitectuur – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="http://ja.wikipedia.org/wiki/CPU設計" title="CPU設計 – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Architektura_procesora" title="Architektura procesora – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Arquitetura_de_microprocessadores" title="Arquitetura de microprocessadores – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="http://ru.wikipedia.org/wiki/Архитектура_процессора" title="Архитектура процессора – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-sk"><a href="http://sk.wikipedia.org/wiki/Architektúra_procesora" title="Architektúra procesora – Slovak" lang="sk" hreflang="sk">Slovenčina</a></li><li class="interlanguage-link interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Processorarkitektur" title="Processorarkitektur – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-tr"><a href="http://tr.wikipedia.org/wiki/Merkezi_işlem_birimi_tasarımı" title="Merkezi işlem birimi tasarımı – Turkish" lang="tr" hreflang="tr">Türkçe</a></li><li class="interlanguage-link interwiki-zh"><a href="http://zh.wikipedia.org/wiki/CPU设计" title="CPU设计 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1303814#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 10 May 2016, at 22:51.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="http://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="http://en.m.wikipedia.org/w/index.php?title=Processor_design&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="https://en.wikipedia.org/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="http://www.mediawiki.org/"><img src="https://en.wikipedia.org/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.eventLogging.subscriber","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":95,"wgHostname":"mw1110"});});</script>
+	</body>
+
+<!-- Mirrored from en.wikipedia.org/wiki/Hardware_design by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:32 GMT -->
+</html>

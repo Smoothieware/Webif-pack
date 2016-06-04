@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from help.github.com/articles/github-security/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <link rel="search" type="application/opensearchdescription+xml" href="https://help.github.com/opensearch.xml" title="GitHub:Help" />
+  <title>
+  
+    
+      GitHub Security - User Documentation
+    
+  
+  </title>
+  
+<link rel="icon" type="image/x-icon" href="https://help.github.com/assets/images/site/favicon.ico">
+<link rel="stylesheet" href="https://help.github.com/assets/stylesheets/application.css">
+<script src="https://help.github.com/assets/javascripts/application.js"></script>
+
+<meta name="Description" content="We know your code is extremely important to you and your business, and we're very protective of it. After all, GitHub's code is hosted on GitHub, too!  Need to report a security vulnerability? Please v…">
+
+<script type="text/javascript">
+  $(function() {
+    $('#quicksearch-query').lunrSearch({
+      
+      indexUrl: '/search/search.json',
+      
+      quickSearchResults:  '.autocomplete-results',
+      quickSearchEntries:  '.result-group',
+      quickSearchTemplate: '#quicksearch-results-template',
+
+      searchResults: '.search-container',
+      searchEntries: '.search-results',
+      searchTemplate: '#search-results-template'
+    });
+  });
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3769691-27']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+</head>
+
+<body id="com">
+
+<div id="not-footer">
+  
+
+
+  <div id="header">
+    <div class="clearfix">
+      <h1 class="site-logo"><a href="https://help.github.com/">GitHub Help</a></h1>
+
+      <ul class="top-nav">
+        
+<li>
+  <button class="js-dropdown-button dropdown-button">Version <div class="dropdown-caret"></div></button>
+  <div class="dropdown-menu js-dropdown-menu">
+    <a href="https://help.github.com/">GitHub.com</a>
+    
+    <a href="https://help.github.com/enterprise/2.6/">GitHub Enterprise 2.6</a>
+    
+    <a href="https://help.github.com/enterprise/2.5/">GitHub Enterprise 2.5</a>
+    
+    <a href="https://help.github.com/enterprise/2.4/">GitHub Enterprise 2.4</a>
+    
+    <a href="https://help.github.com/enterprise/2.3/">GitHub Enterprise 2.3</a>
+    
+    <a href="https://help.github.com/enterprise/2.2/">GitHub Enterprise 2.2</a>
+    
+  </div>
+</li>
+
+
+        
+        <li><a href="https://github.com/contact">Contact Support</a></li>
+        <li><a href="https://github.com/">Return to GitHub</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div id="content-wrapper">
+
+    <div class="site">
+      
+
+
+
+
+      <div class="content-header small">
+        <h6 class="breadcrumbs">
+          
+          <a href="https://help.github.com/categories/site-policy">Site Policy</a>
+          /
+          
+          GitHub Security
+        </h6>
+        <div class="search-form small right">
+          
+  
+
+
+<script id="quicksearch-results-template" type="text/mustache">
+  <div class="header">
+    <a class="initial quicksearch-seemore" href="/search?q=">See more results</a>
+  </div>
+  [[#entries]]
+    <tr class="article">
+      <td class="info">
+        <a href="[[url]]" class="js-articles-quicksearch-link">[[title]]</a>
+      </td>
+    </tr>
+  [[/entries]]
+</script>
+
+<form accept-charset="UTF-8" action="https://help.github.com/search" id="articles-search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <div class="outer">
+    <div class="inner fade-label">
+      <input type="text" name="q" id="quicksearch-query" class="js-articles-quicksearch"
+      placeholder="How can we help?" />
+      <div class="search-form-btn">
+        <button><span class="octicon octicon-search"></span></button>
+      </div>
+    </div>
+  </div>
+</form>
+<div class="autocomplete-results" style="display: none;">
+  <table class="result-group" border="0" cellpadding="0" cellspacing="0">
+  </table>
+</div>
+
+        </div>
+      </div>
+
+      <div class="article js-hide-during-search">
+
+        <h2>GitHub Security</h2>
+
+        <div id="article-platform-nav">
+  <ul>
+    <li class="platform-mac">
+      <a href="#platform-mac" data-platform="mac">
+        mac
+      </a>
+    </li>
+    <li class="platform-windows">
+      <a href="#platform-windows" data-platform="windows">
+        windows
+      </a>
+    </li>
+    <li class="platform-linux">
+      <a href="#platform-linux" data-platform="linux">
+        linux
+      </a>
+    </li>
+    <li class="platform-all">
+      <a href="#platform-all" data-platform="all">
+        all
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+        <div class="article-body content-body wikistyle markdown-format">
+          <div class='intro'>
+
+          
+
+          </div>
+
+          <p>We know your code is extremely important to you and your business, and we're very protective of it. After all, GitHub's code is hosted on GitHub, too!</p>
+
+<h3>
+<a id="need-to-report-a-security-vulnerability" class="anchor" href="#need-to-report-a-security-vulnerability" aria-hidden="true"><span class="octicon octicon-link"></span></a>Need to report a security vulnerability?</h3>
+
+<p>Please visit our <a href="https://bounty.github.com/">security bug bounty site</a> for information about our responsible disclosure process and to submit a vulnerability report.</p>
+
+<h3>
+<a id="physical-security" class="anchor" href="#physical-security" aria-hidden="true"><span class="octicon octicon-link"></span></a>Physical Security</h3>
+
+<ul>
+<li>Data center access limited to data center technicians and approved GitHub staff</li>
+<li>Biometric scanning for controlled data center access</li>
+<li>Security camera monitoring at all data center locations</li>
+<li>24x7 onsite staff provides additional protection against unauthorized entry</li>
+<li>Unmarked facilities to help maintain low profile</li>
+<li>Physical security audited by an independent firm</li>
+</ul>
+
+<h3>
+<a id="system-security" class="anchor" href="#system-security" aria-hidden="true"><span class="octicon octicon-link"></span></a>System Security</h3>
+
+<ul>
+<li>System installation using hardened, patched OS</li>
+<li>Dedicated firewall and VPN services to help block unauthorized system access</li>
+<li>Distributed Denial of Service (DDoS) mitigation services powered by industry-leading solutions</li>
+</ul>
+
+<h3>
+<a id="operational-security" class="anchor" href="#operational-security" aria-hidden="true"><span class="octicon octicon-link"></span></a>Operational Security</h3>
+
+<ul>
+<li>Our primary data center operations are regularly audited by independent firms against an ISAE 3000/AT 101 Type 2 Examination standard</li>
+<li>Systems access logged and tracked for auditing purposes</li>
+<li>Secure document-destruction policies for all sensitive information</li>
+<li>Fully documented change-management procedures</li>
+</ul>
+
+<h3>
+<a id="software-security" class="anchor" href="#software-security" aria-hidden="true"><span class="octicon octicon-link"></span></a>Software Security</h3>
+
+<p>We employ a team of 24/7/365 server specialists at GitHub to keep our software and its dependencies up to date eliminating potential security vulnerabilities. We employ a wide range of monitoring solutions for preventing and eliminating attacks to the site.</p>
+
+<h3>
+<a id="communications" class="anchor" href="#communications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Communications</h3>
+
+<p>All private data exchanged with GitHub is always transmitted over SSL (which is why your dashboard is served over HTTPS, for instance). All pushing and pulling of private data is done over SSH authenticated with keys, or over HTTPS using your GitHub username and password.</p>
+
+<p>The SSH login credentials used to push and pull can not be used to access a shell or the filesystem. All users are virtual and have no user account on our machines.</p>
+
+<h3>
+<a id="file-system-and-backups" class="anchor" href="#file-system-and-backups" aria-hidden="true"><span class="octicon octicon-link"></span></a>File system and backups</h3>
+
+<p>Every piece of hardware we use has an identical copy ready and waiting for an immediate hot-swap in case of hardware or software failure. Every line of code we store is saved on a minimum of three different servers, including an off-site backup. We do not retroactively remove repositories from backups when deleted by the user, as we may need to restore the repository for the user if it was removed accidentally.</p>
+
+<p>We do not encrypt repositories on disk because it would not be any more secure: the website and git back-end would need to decrypt the repositories on demand, slowing down response times.  Any user with shell access to the file system would have access to the decryption routine, thus negating any security it provides. Therefore, we focus on making our machines and network as secure as possible.</p>
+
+<h3>
+<a id="employee-access" class="anchor" href="#employee-access" aria-hidden="true"><span class="octicon octicon-link"></span></a>Employee access</h3>
+
+<p>No GitHub employees ever access private repositories unless required to for support reasons.  Staff working directly in the file store access the compressed Git database, your code is never present as plaintext files like it would be in a local clone.  Support staff may sign into your account to access settings related to your support issue.  In rare cases staff may need to pull a clone of your code, this will only be done with your consent.  Support staff does not have direct access to clone any repository, they will need to temporarily attach their SSH key to your account to pull a clone.  When working a support issue we do our best to respect your privacy as much as possible, we only access the files and settings needed to resolve your issue.  All cloned repositories are deleted as soon as the support issue has been resolved.</p>
+
+<h3>
+<a id="maintaining-security" class="anchor" href="#maintaining-security" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maintaining security</h3>
+
+<p>We protect your login from brute force attacks with rate limiting.  All passwords are filtered from all our logs and are one-way encrypted in the database using <code>bcrypt</code>.  Login information is always sent over SSL.</p>
+
+<p>We also allow you to use <a href="https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa">two-factor authentication</a>, or 2FA, as an additional security measure when accessing your GitHub account. Enabling 2FA adds security to your account by requiring both your password as well as access to a security code on your phone to access your account.</p>
+
+<p>We have full time security staff to help identify and prevent new attack vectors. We always test new features in order to rule out potential attacks, such as XSS-protecting wikis, and ensuring that Pages cannot access cookies.</p>
+
+<p>We also maintain relationships with reputable security firms to perform regular penetration tests and ongoing audits of GitHub and its code.</p>
+
+<p>We're extremely concerned and active about security, but we're aware that many companies are not comfortable hosting code outside their firewall. For these companies we offer <a href="https://enterprise.github.com/">GitHub Enterprise</a>, a version of GitHub that can be installed to a server within the company's network.</p>
+
+<h3>
+<a id="credit-card-safety" class="anchor" href="#credit-card-safety" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credit card safety</h3>
+
+<p>When you sign up for a paid account on GitHub, we do not store any of your card information on our servers. It's handed off to <a href="https://braintreepaymentsolutions.com/">Braintree Payment Solutions</a>, a company dedicated to storing your sensitive data on <a href="http://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard">PCI-Compliant</a> servers.</p>
+
+<h3>
+<a id="contact-us" class="anchor" href="#contact-us" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact Us</h3>
+
+<p>Have a question, concern, or comment about GitHub security? Please contact <a href="https://github.com/contact">GitHub support</a>.</p>
+        </div>
+
+        <div class="support-footer">
+          <ul class="article-footer button-nav">
+            
+              <li><a href="https://github.com/contact" class="minibutton">
+                  <span class="octicon octicon-comment-discussion"></span>
+                  Contact a human
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar">
+  <h3>Article versions</h3>
+  <ul>
+    <li><a href="#" skip-conversion data-proofer-ignore>GitHub.com</a></li>
+
+    
+      <li class="muted">
+        <a data-proofer-ignore>GitHub Enterprise 2.6</a>
+      </li>
+    
+      <li class="muted">
+        <a data-proofer-ignore>GitHub Enterprise 2.5</a>
+      </li>
+    
+      <li class="muted">
+        <a data-proofer-ignore>GitHub Enterprise 2.4</a>
+      </li>
+    
+      <li class="muted">
+        <a data-proofer-ignore>GitHub Enterprise 2.3</a>
+      </li>
+    
+      <li class="muted">
+        <a data-proofer-ignore>GitHub Enterprise 2.2</a>
+      </li>
+    
+
+  </ul>
+</div>
+
+
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="inner">
+    <a href="https://github.com/" class="invertocat">
+      <img alt="The GitHub Logo" src="https://help.github.com/assets/images/site/invertocat.png" width="24" height="24" />
+    </a>
+    <p class="left">
+      &copy; <span id="year">2016</span> GitHub Inc. All rights reserved.
+    </p>
+      <ul class="links right">
+        <li><a href="https://help.github.com/terms-of-service">Terms of Service</a></li>
+        <li><a href="https://help.github.com/privacy-policy">Privacy</a></li>
+        <li><a href="https://help.github.com/security">Security</a></li>
+        
+          <li><a href="https://github.com/contact">Support</a></li>
+        
+      </ul>
+  </div>
+</div>
+
+
+<div class="fullscreen-overlay"></div>
+</body>
+
+<!-- Mirrored from help.github.com/articles/github-security/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:11 GMT -->
+</html>

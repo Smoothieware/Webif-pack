@@ -1,0 +1,129 @@
+#actionables{padding:20px;background:#a9db80;background:-moz-linear-gradient(top,#a9db80 0%,#c9fba0 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#a9db80),color-stop(100%,#c9fba0));background:-webkit-linear-gradient(top,#a9db80 0%,#c9fba0 100%);background:-o-linear-gradient(top,#a9db80 0%,#c9fba0 100%);background:-ms-linear-gradient(top,#a9db80 0%,#c9fba0 100%);background:linear-gradient(top,#a9db80 0%,#c9fba0 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9db80',endColorstr='#c9fba0',GradientType=0);border-top:solid 1px #86b55f;border-bottom:1px solid #b6e58f;font-size:12pt;text-shadow:1px 1px 0 rgba(255,255,255,0.4);color:#250}
+#actionables #actionables_content{margin:0 auto;width:990px}
+#actionables #actionables_header{float:right;margin:0 0 15px 15px;text-align:right;font-weight:bold;font-size:8.5pt}
+#actionables #actionables_header span{border-bottom:solid 1px #99cb70;padding-bottom:4px}
+#actionables #actionables_content > ol > li h1{color:#000;font-size:15pt;font-weight:bold;margin:0 0 10px}
+#actionables #actionables_content > ol > li p{margin:10px 0 0}
+#actionables #actionables_content.progressing{background:url(http://media3.origo.no/images/progress/spinner_16.gif) no-repeat 100% 100%}
+#actionables a{font-weight:bold}
+#actionables .primary a{padding:5px 10px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;background:#79ab50;color:#fff;text-shadow:1px 1px 0 rgba(0,0,0,0.33);display:inline-block;margin-right:10px}
+#actionables .dismissal a{padding:5px 10px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;background:#99cb70;color:#fff;text-shadow:1px 1px 0 rgba(0,0,0,0.33);display:inline-block}
+#actionables .set_location_actionable{background:url(http://media4.origo.no/images/icons/world_map_with_pins_128x128.png) no-repeat 0 0;padding-left:148px;min-height:128px}
+#actionables .notice_actionable{background:url(http://media4.origo.no/images/icons/exclamation_balloon_128x128.png) no-repeat 0 0;padding-left:148px;min-height:128px}
+#global_page_footer{background:#2d2d2d;padding:20px 0;font-size:8.5pt;font-weight:bold;color:#ddd;text-shadow:rgba(0,0,0,0.25) 1px 1px 0}
+#global_page_footer .grid{margin:0 auto}
+#global_page_footer a:link,#global_page_footer a:visited,#global_page_footer a:active,#global_page_footer a:hover{color:inherit}
+#global_page_footer #global_page_footer_main{background:url(http://media1.origo.no/images/logos/origo_flower_48x48.png) no-repeat 0 0;padding-left:60px;padding-top:6px;height:48px}
+#global_page_footer #global_page_footer_main strong{display:block;margin-bottom:5px;font-size:10pt;color:#fff}
+#global_page_footer #global_page_footer_links a{display:inline-block;float:left;border-left:solid 1px #888;padding:3px 8px}
+#global_page_footer #global_page_footer_links a:first-child{padding-left:0;border:none}
+#global_page_footer #global_page_footer_links #global_page_footer_logo span{display:none}
+#global_page_footer_embed_link a:link{color:#666}
+#global_page_footer .global_page_footer_hidden{display:none}
+#global_page_footer .rightmost_column{text-align:right}
+#global_page_footer #global_page_footer_hiring{background:#7e9d11;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;padding:8px 10px;font-size:11px;font-weight:bold;color:#deeea9;text-shadow:1px 1px 0 #465b02;text-align:center;margin:0 10px 0 0}
+#global_page_footer #global_page_footer_hiring strong{display:block;font-size:12pt;margin:0 0 6px 0;color:#fff}
+.origo_brand{font-family:Arial,Helvetica,Verdana,sans-serif;font-size:11pt;line-height:1;color:#000}
+.origo_brand a:link{color:#18c;text-decoration:none}
+.origo_brand a:active,.origo_brand a:visited{color:#36a;text-decoration:none}
+.origo_brand a:hover,.origo_brand a:active{text-decoration:underline}
+#global_header{clear:both}
+.origo_normal_labeled #global_header_bar{background-color:#333;background-image:-moz-linear-gradient(-90deg,#333,#000);overflow:hidden;height:30px;width:100%;font-size:8.5pt;font-weight:bold;color:#ddd}
+.origo_white_labeled #global_header_bar{position:absolute;top:0;right:0;z-index:65534}
+.origo_white_labeled #global_header_bar #global_header_tab{position:absolute;right:0;z-index:65534;width:155px}
+.origo_normal_labeled #global_header_bar #global_header_tab{position:absolute;left:0}
+#global_header_user{position:relative;top:9px;margin:0 10px;float:right}
+#global_header_user img{vertical-align:top;position:relative;margin-right:4px;top:-2px}
+#global_header_user a,#global_header_user a:link,#global_header_user a:active,#global_header_user a:hover{color:#fff}
+#global_header_user #global_header_user_logout{font-weight:normal;padding-left:5px;margin-left:5px;border-left:solid #888 1px}
+#global_header_user #global_header_user_logout a,#global_header_user #global_header_user_logout a:link,#global_header_user #global_header_user_logout a:active,#global_header_user #global_header_user_logout a:hover{color:#aaa}
+#global_header_user #global_header_user_login{padding-right:5px;margin-right:10px;border-right:solid #888 1px}
+#global_header_user_sudo{display:inline-block}
+#global_header_user_sudo #global_header_user_sudo_button{color:#fff;font-weight:bold;text-transform:uppercase;font-size:8.5pt;margin-left:5px;padding:4px 8px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;background:#000}
+#global_header_user_sudo #global_header_user_sudo_button a{color:inherit}
+#global_header_user_sudo #global_header_user_sudo_active{color:#fff;font-weight:bold;font-size:8.5pt;margin-left:5px;padding:4px 8px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;text-shadow:1px 1px 0 #400;background:#ff3019;background:-moz-linear-gradient(top,#ff3019 0%,#cf0404 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#ff3019),color-stop(100%,#cf0404));background:-webkit-linear-gradient(top,#ff3019 0%,#cf0404 100%);background:-o-linear-gradient(top,#ff3019 0%,#cf0404 100%);background:-ms-linear-gradient(top,#ff3019 0%,#cf0404 100%);background:linear-gradient(top,#ff3019 0%,#cf0404 100%)}
+@-webkit-keyframes blink{0%{opacity:1 }
+50%{opacity:0.3 }
+100%{opacity:1 }
+}
+#global_header_user_sudo_active label{color:#ffc;-webkit-animation:blink 3s infinite linear alternate;-webkit-font-smoothing:antialiased}
+#global_header_user_sudo #global_header_user_sudo_active a{border-left:solid 1px #fff;padding-left:5px}
+#global_header_help{font-weight:bold;position:absolute;left:165px;top:7px;height:16px;padding:2px 0 0 30px;background:url(http://media2.origo.no/images/arrows/arrow_thin_left_darkgray_21x16.png) no-repeat 0 0;color:#888}
+.origo_normal_labeled #global_header #global_header_logo{position:absolute;top:2px;width:106px;height:27px;background:url(http://media4.origo.no/images/global_menu_logo_left_dark.png) no-repeat 0 0;overflow:hidden;color:#fff;font-size:12pt;font-weight:bold}
+.origo_normal_labeled #global_header #global_header_logo:hover,.origo_normal_labeled #global_header #global_header_logo.active{background:#2d2d2d url(http://media2.origo.no/images/global_menu_logo_left_dark_desat.png) no-repeat 0 0}
+.origo_white_labeled #global_header #global_header_logo{position:absolute;top:0;right:0;width:106px;height:27px;background:url(http://media1.origo.no/images/global_menu_logo_right_semitransparent_desat.png) no-repeat 0 0;overflow:hidden;color:#fff;font-size:12pt;font-weight:bold}
+.origo_white_labeled #global_header #global_header_logo:hover,.origo_white_labeled #global_header #global_header_logo.active{background:url(http://media1.origo.no/images/global_menu_logo_right_semitransparent.png) no-repeat 0 0}
+#global_header_logo a{display:none}
+.origo_normal_labeled #global_header #global_header_mail{background:url(http://media2.origo.no/images/global_header_unread_background_left.png) no-repeat 0 0;width:49px;height:28px;left:106px;float:left;position:absolute;top:4px;padding-left:4px;z-index:10}
+.origo_white_labeled #global_header #global_header_mail{background:url(http://media2.origo.no/images/global_header_unread_background_right.png) no-repeat 0 0;width:49px;height:28px;left:0;position:relative;top:3px}
+#global_header #global_header_envelope{float:left;position:relative;left:50%}
+#global_header #global_header_unread{font-size:8.5pt;background:url(http://media4.origo.no/images/global_menu_unread_envelope.png) no-repeat 0 0.66em;text-shadow:rgba(0,0,0,0.25) 1px 1px 0;color:#fff;font-weight:bold;display:block;position:relative;right:50%;padding-left:20px;padding-top:5px;margin-right:4px}
+#global_menu_container{position:absolute;top:26px;z-index:65535}
+.origo_white_labeled #global_menu_container{right:0}
+.origo_normal_labeled #global_menu_container{left:0}
+#global_menu_container .global_menu_box{background:#2d2d2d;color:#ddd;font-size:10pt;padding:25px !important;text-shadow:rgba(0,0,0,0.6) 1px 1px 0;box-shadow:-5px 5px 15px rgba(0,0,0,0.3);-moz-box-shadow:-5px 5px 15px rgba(0,0,0,0.3);-webkit-box-shadow:-5px 5px 15px rgba(0,0,0,0.3)}
+#global_menu_container.global_menu_container_normal .global_menu_box{border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;-webkit-border-top-right-radius:6px;-webkit-border-bottom-left-radius:6px;-webkit-border-bottom-right-radius:6px;-moz-border-radius-topright:6px;-moz-border-radius-bottomleft:6px;-moz-border-radius-bottomright:6px}
+.origo_white_labeled #global_menu_container .global_menu_box{border-top-left-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;-webkit-border-top-left-radius:6px;-webkit-border-bottom-left-radius:6px;-webkit-border-bottom-right-radius:6px;-moz-border-radius-topleft:6px;-moz-border-radius-bottomleft:6px;-moz-border-radius-bottomright:6px}
+.global_menu_box.grid{width:auto}
+.global_menu_box .column_group{overflow:hidden}
+.global_menu_box .column{padding-bottom:500px;margin-bottom:-500px}
+.global_menu_box a:link,.global_menu_box a:visited,.global_menu_box a:hover,.global_menu_box a:active{color:inherit}
+.global_menu_box .global_menu_link_list a{padding-left:8px;margin-left:8px;border-left:solid #888 1px}
+.global_menu_box .global_menu_link_list a:first-child{padding-left:0;margin-left:0;border-left:none}
+.global_menu_box h3{color:#fff;font-weight:bold;margin-bottom:10px;text-shadow:#000 1px 1px 1px}
+.global_menu_box .global_menu_links{margin:10px 0}
+.global_menu_box .global_menu_links li{list-style:none;border-top:dotted 1px #555;padding:4px 0}
+.global_menu_box .global_menu_links li:first-child{border-top:none;padding-top:0}
+.global_menu_box .global_menu_profile_image{vertical-align:middle;position:relative;top:-1px;margin-right:3px}
+.global_menu_box .global_menu_search_box{background:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;padding:3px 6px;margin:0 0 8px 0}
+.global_menu_box .global_menu_search_field{background:none;border:none;padding:0;margin:0;width:175px;float:left;font-size:11pt}
+.global_menu_box .global_menu_search_field:focus{background:none;border:none}
+.global_menu_box .global_menu_search_submit{background-color:transparent;background-image:url(http://media4.origo.no/images/forms/text_field_question_mark.png);background-repeat:no-repeat;float:left;width:17px;height:19px;border:none;padding:0}
+.global_menu_box .global_menu_search_submit:hover{opacity:0.6}
+.global_menu_box .global_menu_search_submit::-moz-focus-inner{border:none}
+#global_menu_anonymous #global_menu_bragging{font-size:11pt}
+#global_menu_anonymous h2{font-weight:normal;margin-top:0;color:#fff;text-shadow:#000 1px 1px 1px}
+#global_menu_anonymous #global_menu_brag_screenshots{width:300px;height:212px;overflow:hidden;display:block;position:relative}
+#global_menu_anonymous #global_menu_brag_screenshots img{position:absolute;top:0;left:0}
+#global_menu_anonymous .button_bar{margin-top:15px}
+#global_menu_anonymous .small{margin-top:15px}
+#global_menu_for_user .global_menu_sandbox_column{border-left:dotted 1px #555;padding-left:10px;border-right:dotted 1px #555;padding-right:10px}
+#global_menu_for_user .global_menu_sandboxes_loading{margin:15px 0;background:url(http://media3.origo.no/images/progress/spinner_on_2d2d2d_16.gif) no-repeat 0 0;width:16px;height:16px}
+#global_menu_for_user #global_menu_sandbox_links{font-weight:bold;color:#fff}
+#global_menu_for_user #global_menu_user_links{margin-top:-10px;font-size:11pt;font-weight:bold}
+#global_menu_for_user #global_menu_user_links a{margin-top:-10px;padding:26px 0 14px 55px;background-position:0 0.7em;background-repeat:no-repeat;display:block;overflow:hidden}
+#global_menu_for_user #global_menu_link_to_profile a{background-image:url(http://media3.origo.no/images/palette_icons/profile.png)}
+#global_menu_for_user #global_menu_link_to_mailbox a{background-image:url(http://media4.origo.no/images/palette_icons/compose_message.png)}
+#global_menu_for_user #global_menu_link_to_local a{background-image:url(http://media1.origo.no/images/palette_icons/local_paper.png)}
+#global_menu_for_user #global_menu_link_to_home a{background-image:url(http://media2.origo.no/images/palette_icons/home.png)}
+#global_menu_for_user #global_menu_link_to_settings a{background-image:url(http://media2.origo.no/images/palette_icons/generic_tool.png)}
+.origo_brand.global_service_state_alert{text-align:center;background:#555;text-shadow:1px 1px 0 #000;color:#fff;font-size:9.5pt;font-weight:bold}
+.origo_brand.global_service_state_alert span{background:url(http://media3.origo.no/images/signage/big_reddish_exclamation_24.png) no-repeat 0 center;padding:10px 10px 10px 60px;display:inline-block}
+.origo_brand.global_service_state_alert a{color:#bbb}
+.origo_brand.user_agent_update_alert{border-bottom:solid 1px #660000;background:#dd3333;color:#fff;font-size:11pt;padding-bottom:10px}
+.origo_brand.user_agent_update_alert a{color:#ffc;text-decoration:underline}
+.origo_brand.god_override_alert{text-align:center;color:#fff;font-weight:bold;font-size:12pt;padding:10px 0;background:#c40;border-top:solid 8px #f2f2f2}
+#global_admin_bar{clear:both;background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.19,#ddd),color-stop(0.77,#f8f8f8));background-image:-moz-linear-gradient(center bottom,#ddd 19%,#f8f8f8 77%);padding:15px 10px;font-size:8.5pt;color:#666;font-weight:bold;text-shadow:0 1px 0 #fff}
+.origo_white_labeled #global_admin_bar{padding-right:170px}
+#global_admin_bar #global_admin_bar_menu a{color:inherit;display:block}
+#global_admin_bar #global_admin_bar_menu label{display:block;white-space:nowrap}
+#global_admin_bar #global_admin_bar_menu > ul{margin-bottom:-20px;position:relative;top:10px;margin-left:-15px}
+#global_admin_bar #global_admin_bar_menu > ul > li{float:left;font-size:11pt;font-weight:bold;padding:0 10px;position:relative;border-left:solid 1px #ccc}
+#global_admin_bar #global_admin_bar_menu > ul > li:first-child{border-left:none}
+#global_admin_bar #global_admin_bar_menu > ul > li > label{color:#666;padding:10px 15px}
+#global_admin_bar #global_admin_bar_menu > ul > li > label:hover{background:#fff;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px}
+#global_admin_bar #global_admin_bar_menu > ul > li:hover > ul{display:block}
+#global_admin_bar #global_admin_bar_menu > ul > li.global_admin_bar_menu_primary label{color:#222}
+#global_admin_bar #global_admin_bar_menu > ul > li > label span{display:block;padding-right:17px;background:url(http://media2.origo.no/images/arrows/arrow_simple_down_494949_12x5.png) no-repeat 100% center}
+#global_admin_bar #global_admin_bar_menu > ul > li > ul{display:none;min-width:250px;position:absolute;border:solid 1px #ddd;left:5px;top:100%;background:#fff;box-shadow:0 5px 15px rgba(0,0,0,0.3);-moz-box-shadow:0 5px 15px rgba(0,0,0,0.3);-webkit-box-shadow:0 5px 15px rgba(0,0,0,0.3);font-size:10pt;font-weight:bold;padding:5px 0;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;z-index:65535}
+#global_admin_bar #global_admin_bar_menu > ul > li > ul > li{padding:0}
+#global_admin_bar #global_admin_bar_menu > ul > li > ul > li > h5{padding:5px 15px;display:block;color:#aaa;margin:0}
+#global_admin_bar #global_admin_bar_menu > ul > li > ul > li > label{padding:5px 15px;display:block;color:#222}
+#global_admin_bar #global_admin_bar_menu > ul > li > ul > li > label strong{color:#666}
+#global_admin_bar #global_admin_bar_menu > ul > li > ul > li > label:hover{background:#f0f0f0;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px}
+#global_admin_bar #global_admin_bar_menu li p{font-size:8.5pt;color:#aaa;font-weight:normal;margin:0 0 10px;padding:0 15px}
+#global_admin_bar #global_admin_bar_menu li.global_admin_bar_menu_group{padding-top:5px;margin-top:5px;margin-bottom:0;border-top:solid 1px #ddd}
+#global_admin_bar #global_admin_bar_menu li.global_admin_bar_menu_current{margin-bottom:5px;padding-bottom:10px;border-bottom:solid 1px #ddd}
+#global_admin_bar #global_admin_bar_sandbox_list_placeholder{height:30px;background:url(http://media3.origo.no/images/progress/spinner_16.gif) no-repeat 15px center}
+#global_admin_bar #global_admin_bar_menu > ul > li#global_admin_bar_menu_hide{float:right;padding-right:0}
+#global_admin_bar #global_admin_bar_menu > ul > li#global_admin_bar_menu_hide > label span{padding-right:0;background:none;font-size:8.5pt}

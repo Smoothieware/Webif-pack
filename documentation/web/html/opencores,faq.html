@@ -1,0 +1,773 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+
+<!-- Mirrored from opencores.org/opencores,faq by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>FAQ :: OpenCores</title>
+    <link rel="stylesheet" type="text/css" href="http://cdn.opencores.org/compiled.css" />
+    <link rel="icon" type="image/png" href="http://cdn.opencores.org/img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="http://cdn.opencores.org/img/favicon.png" />
+    <link type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold" rel="stylesheet" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="cores, VHDL, Verilog HDL, ASIC, Synthesizable, standard cell, IP, Intellectual Property, 32-bit RISC, UART, PCI, SDRAM, full custom, system on a chip, SOC, reusable, design, development, synthesis, designs, developers, C, Linux, eCos, open, free, open source cores, RTL code, system-on-a-chip, circuits, digital, GNU, GPL, core, controller, processor, system design, chip design, EDA, design methodology, design tools, ASICs, programmable logic, FPGA's, PLDs, CPLDs, verification, Synthesis, HDL, Simulation, IC design software, semiconductor design, integrated circuits, system designs, chip designs, EDAs,  design methodologies, design tool, ASIC, programmable logics, FPGA, PLD, CPLD, Synthesis,  circuit, Synopsys, system design, chip design, programmable logic, FPGA's, PLDs,  CPLDs, verification, Simulation
+" />
+        <script defer="defer" type="text/javascript" src="http://cdn.opencores.org/jquery-1.6.2.min.js"></script>
+    <script defer="defer" type="text/javascript" src="http://cdn.opencores.org/compiled.js"></script>
+    <script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js"></script>
+    <script type="text/javascript">
+    GS_googleAddAdSenseService("ca-pub-0097483751598630");
+    GS_googleEnableAllServices();
+    </script>
+    <script type="text/javascript">
+    GA_googleAddSlot("ca-pub-0097483751598630", "125x125");
+    GA_googleAddSlot("ca-pub-0097483751598630", "240x60");
+    GA_googleAddSlot("ca-pub-0097483751598630", "300x60");
+    GA_googleAddSlot("ca-pub-0097483751598630", "468x60");
+    GA_googleAddSlot("ca-pub-0097483751598630", "720x60");
+    GA_googleAddSlot("ca-pub-0097483751598630", "728x90");
+    </script>
+    <script type="text/javascript">
+    GA_googleFetchAds();
+    </script>
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://cdn.opencores.org/ie6.css" />
+    <![endif]-->
+    <!--[if (IE 7)|(IE 8)]>
+    <link rel="stylesheet" type="text/css" href="http://cdn.opencores.org/ie78.css" />
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <script type="text/javascript">
+        
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-2763846-2']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        
+    </script>
+    
+</head>
+<body>
+<div class="main">
+    <div class="top">
+        <a href="http://opencores.org/"><img src="http://cdn.opencores.org/design/OpenCores.png" alt="OpenCores" width="235" height="80" /></a>
+    </div>
+    <div class="line">
+	<div></div>
+	<img src="http://cdn.opencores.org/design/corner.png" alt="" width="28" height="28" />
+    </div>
+    <div class="mid" id="dm">
+        <div class="mainmenu" id="dml">
+	    
+<div class="menu menu-login">
+        <form action="http://opencores.org/login" method="post">
+	Username:
+	<input type="hidden" name="redirect" value="opencores,faq" />
+	<input class="design ie6_input" name="user" type="text" />
+	<br />
+	Password:
+	<br />
+	<input class="design ie6_input" name="pass" type="password" />
+	<br />
+	<input class="design" name="remember" type="checkbox" />Remember me
+	<br />
+	<input class="design" type="submit" value="Login" />
+    </form>
+    <form action="http://opencores.org/register" method="post">
+	<input class="design" type="submit" value="Register" />
+    </form>
+    </div>
+
+<div class="lang">
+    <a href="http://opencores.org/lang,en" class="selected"><img src="http://cdn.opencores.org/flags/gb.gif" alt="English" width="16" height="11" /></a>
+    <a href="http://opencores.org/lang,zh" class=""><img src="http://cdn.opencores.org/flags/cn.gif" alt="Chineese" width="16" height="11" /></a>
+    <p> 部分翻译 </p>
+</div>
+
+<div class="menu">
+    <h2> Browse </h2>
+    <ul>
+	<li><a href="http://opencores.org/projects">Projects</a></li>
+	<li><a href="http://opencores.org/forum">Forums</a></li>
+	<li><a href="http://opencores.org/about" onclick="return !toggle(this);">About</a>
+	    <ul style="display: none;">
+		<li><a href="http://opencores.org/opencores,mission">Mission</a></li>
+		<li><a href="http://opencores.org/opencores,logos">Logos</a></li>
+		<li><a href="http://opencores.org/opencores,contact">Contact us</a></li>
+		<li><a href="http://opencores.org/opencores,advertise">Advertise</a></li>
+	    </ul>
+	</li>
+	<li><a href="http://opencores.org/howto" onclick="return !toggle(this);">HowTo/FAQ</a>
+	    <ul style="display: none;">
+		<li><a href="http://opencores.org/opencores,faq">Site</a></li>
+		<li><a href="http://opencores.org/opencores,faq_pe">Project</a></li>
+		<li><a href="http://opencores.org/opencores,wishbone">Wishbone</a></li>
+		<li><a href="http://opencores.org/opencores,svn">SVN</a></li>
+		<li><a href="http://opencores.org/opencores,tools">EDA Tools</a></li>
+	    </ul>
+	</li>
+	<li><a href="http://opencores.org/misc" onclick="return !toggle(this);">Misc</a>
+	    <ul style="display: none;">
+		<li><a href="http://opencores.org/news">News</a></li>
+		<li><a href="http://opencores.org/articles">Articles</a></li>
+		<li><a href="http://opencores.org/numbers">Statistics</a></li>
+		<li><a href="http://opencores.org/newsletters">Newsletters</a></li>
+		<li><a href="http://opencores.org/jobs">Available jobs</a></li>
+		<li><a href="http://opencores.tradepub.com/">Magazines</a></li>
+	    </ul>
+	</li>
+	<li><a href="http://opencores.org/partners" onclick="return !toggle(this);">Partners</a>
+	    <ul style="display: none;">
+		<li><a href="http://opencores.org/partners,plunify">Plunify</a></li>
+	    </ul>
+	</li>
+	<li><a href="http://opencores.org/shop,items">Shop</a></li>
+    </ul>
+</div>
+
+
+<div class="pad_leftside" style="border:0px">
+    <!-- 125x125 -->
+    <script type="text/javascript">
+    GA_googleFillSlot("125x125");
+    </script>
+</div>
+
+<div class="menu menu-tools">
+    <h2> Tools </h2>
+    <form action="http://www.google.com/cse" id="cse-search-box">
+	<div>
+	    <input type="hidden" name="cx" value="012935124227736198121:b6s3cwd8ada" />
+	    <input type="hidden" name="ie" value="UTF-8" />
+	    <input type="text" name="q" size="12" />
+	    <input type="submit" name="sa" value="Search" />
+	</div>
+    </form>
+</div>
+        </div>
+        <div class="content" id="dmc">
+	    
+<div class="banner" style="padding: 6px 0px; width: 1020px; overflow: visible;">
+    
+    <div style="float: left; width: 720px; height: 60px;">
+        <!-- 720x60 -->
+        <script type='text/javascript'>
+        GA_googleFillSlot("720x60");
+        </script>
+    </div>
+        <div style="float: left; width: 300px; height: 60px;">
+        <!-- 300x60 -->
+        <script type='text/javascript'>
+        GA_googleFillSlot("300x60");
+        </script>
+    </div>
+    
+</div>
+	                
+<h1>Frequently Asked Questions</h1>
+
+<ul class="faq">
+    <li>
+        About this FAQ
+        <ul>
+            <li><a href="#faq_license">FAQ License</a></li>
+            <li><a href="#responsible">Who is responsible for this FAQ</a></li>
+            <li><a href="#whatis">What is OpenCores.ORG</a></li>
+            <li><a href="#purpose">What is the purpose of this FAQ</a></li>
+            <li><a href="#nomatch">My question is not covered in the FAQ, what do I do?</a></li>
+        </ul>
+    </li>
+    <li>
+        Basics
+        <ul>
+            <li><a href="#whycontribute">Why do people contribute to OpenCores?</a></li>
+            <li><a href="#whocontributes">Who contributes to OpenCores?</a></li>
+            <li><a href="#whereisit">Where is OpenCores situated?</a></li>
+            <li><a href="#history">History of OpenCores</a></li>
+            <li><a href="#canyouhelp">Can you help me with my school/college/university project?</a></li>
+            <li><a href="#whatlanguage">What language is spoken on the forums/mailing-lists?</a></li>
+            <li><a href="#spam">Is advertising or SPAM allowed on the forums/mailing-lists?</a></li>
+        </ul>
+    </li>
+    <li>
+        Design Guidelines
+        <ul>
+            <li><a href="#designlanguage">What design language do you use?</a></li>
+            <li><a href="#socbus">What is the preferred System-On-A-Chip (SoC) bus for OpenCores?</a></li>
+            <li><a href="#anyguidelines">Does OpenCores have any coding and interface guidelines?</a></li>
+        </ul>
+    </li>
+    <li>
+        Licensing
+        <ul>
+            <li><a href="#whatlicense">What license is used for OpenCores?</a></li>
+        </ul>
+    </li>
+    <li>
+        Downloading Files
+        <ul>
+            <li><a href="#allprojects">Where can I see all projects/cores?</a></li>
+            <li><a href="#sourceforcore">How do I get the source for a core?</a></li>
+        </ul>
+    </li>
+    <li>
+        Contributing to / Joining OpenCores
+        <ul>
+            <li><a href="#contributemore">How do I contribute?</a></li>
+            <li><a href="#projectis">What is a project?</a></li>
+            <li><a href="#howtohelp">How do I help out on an existing project?</a></li>
+            <li><a href="#howtostart">How do I start my own project?</a></li>
+            <li><a href="#nomaint">I don't want to maintain a project any more. What do I do?</a></li>
+            <li><a href="#nomaint">The original maintainers are not contactable, can I become a co-maintainer and 
+                                   continue to develop and maintain the project?</a></li>
+            <li><a href="#canipublish">I have written a core. Can I publish it on the OpenCores web site?</a></li>
+            <li><a href="#ihaveidea">I have an idea for a core, but need help to develop it.</a></li>
+        </ul>
+    </li>
+    <li>
+        Information for Developers
+        <ul>
+            <li><a href="#howtoedit">How do I edit a page on the OpenCores web server?</a></li>
+            <li><a href="#upload">How do I upload files to the OpenCores server?</a></li>
+            <li><a href="#personaledit">How do I edit my personal page on the opencores web server?</a></li>
+            <li><a href="#password">How do I change my password?</a></li>
+            <li><a href="#editproject">How do I edit a project page on the OpenCores web server?</a></li>
+            <li><a href="#specifications">How do I write specification for my core</a></li>
+            <li><a href="#getemail">How do I get an email address of the form user@opencores.org?</a></li>
+        </ul>
+    </li>
+    <li>
+        Terms and conditions
+        <ul>
+            <li><a href="#termsproject">To create project</a></li>
+            <li><a href="#termsnews">To add news</a></li>
+            <li><a href="#termsarticle">To add article</a></li>
+        </ul>
+    </li>
+</ul>            
+
+<a name="faq_license"></a>
+
+<h2> FAQ License </h2>
+
+<p>
+    This FAQ is free software; you can redistribute it and/or modify it under 
+    the terms of the http://www.gnu.org/licenses/gpl.html
+    (GNU General Public License) as published by the Free Software Foundation; 
+    either version 2 of the License, or (at your option) any later version. 
+</p>
+<p>
+    This FAQ is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+    without even the implied warranty of MERCHANTABILITY or FITNESS FOR A	PARTICULAR 
+    PURPOSE. See the GNU General Public License for more details.
+</p>
+
+<a name="responsible"></a>
+
+<h2>Who is responsible for this FAQ?</h2>
+
+<p>
+    Marcus Erlandsson. Send an mail to marcus.erlandsson@OpenCores.org to 
+    contact the author about this document. </br>
+    </br>
+    Below are some of the previous contributers: </br>
+    - "Copyright 2002-2003 John Dalton, licensed under the GNU GPL v2 or later"</br>
+    - "Copyright 1999-2007 Damjan Lampret, licensed under the GNU GPL v2 or later"</br>
+</p>
+
+<a name="whatis"></a>
+
+<h2>What is OpenCores.ORG?</h2>
+
+<p>
+    OpenCores is a community that enable engineers to develop open source 
+    hardware, with a similar ethos to the free software movement. Currently 
+    the emphasis is on digital modules called 'cores'  or 'IP Cores'. 
+    All activities is centered around the OpenCores web site
+    http://opencores.org 
+</p>
+<p>
+    There is no formal affiliation between the people contribute to OpenCores.
+    They are a bunch of people who just happen to be walking in the same 
+    direction along a road. This is a dynamic group, people regularly join 
+    and leave. The group today contains of both private individuals as well 
+    commercial individuals.
+</p>
+
+<a name="purpose"></a>
+
+<h2>What is the purpose of this FAQ?</h2>
+
+<p>
+    This FAQ covers all aspects of OpenCores. Use it as the
+    starting point for any FAQ you have. If an aspect of
+    OpenCores maintains their own FAQ, this FAQ will make
+    the appropriate referral.
+</p>
+
+<a name="nomatch"></a>
+
+<h2>My question is not covered in the FAQ, what do I do?</h2>
+
+<p>
+    If your question id not covered in the FAQ, email us your 
+    question (oc-team@opencores.org).
+    You can also post your question on the forum, please use the 
+    "others"-forum for generic questions.
+</p>
+
+
+<a name="whycontribute"></a>
+
+<h2>Why do people contribute to OpenCores?</h2>
+
+<p>
+    A strong reason to release a core as open source is to get help with the
+    verification. And since the verification is a major part within a
+    development project today (~80-90%), this provides a win-win partnership
+    between the original designer and the end-users.
+</p>
+<p>
+    The open source methodology is the only way we can drive the technology to
+    the next level in a cost efficient way, since we share the huge verification
+    effort with the whole open source community.
+</p>
+
+<a name="whocontributes"></a>
+
+<h2>Who contributes to OpenCores?</h2>
+
+<p>
+    All kinds of people: Students, HW Professionals, SW Professionals,
+    Companies, Hobby engineers, Universities, etc. We need all kinds of people
+    contributing with all kinds of different skills.
+</p>
+
+<a name="whereisit"></a>
+
+<h2>Where is OpenCores situated?</h2>
+
+<p>
+    The main server is physically located in Sweden, Europe. 
+</p>
+
+<a name="history"></a>
+
+<h2>History of OpenCores</h2>
+
+<p>
+    OpenCores was founded in October 1999, by Damjan Lampret, as an open source
+    community for development and distribution of VHDL/Verilog IP cores
+    (building blocks of Semiconductor chips). OpenCores soon became world wide
+    known by ASIC and FPGA engineers. 
+</p>
+
+<a name="canyouhelp"></a>
+
+<h2>Can you help me with my school/college/university project?</h2>
+
+<p>
+    In general, no. If you start exploiting opencores to get a
+    school project done, others will rapidly tire of your questions
+    and ignore you. Having said this, many people contribute to
+    opencores in order to teach and learn. You can learn a lot
+    from opencores. This knowledge will make you a better designer
+    and indirectly help with any student projects you may have to do.
+    Valid ways to learn include contributing to an opencores project,
+    or running your own opencores project. Any questions directly
+    related to a school project should be directed towards your
+    supervisor at school.
+</p>
+
+<a name="whatlanguage"></a>
+
+<h2>What language is spoken on the forums/mailing lists?</h2>
+
+<p>
+    The official language for the opencores forums/mailing-lists and web site is
+    English. A subset of pages are translated to Chinese.
+</p>
+
+<a name="spam"></a>
+
+<h2>Is advertising or SPAM allowed on the forum/mailing-lists?</h2>
+
+<p>
+    No. OpenCores reserves the right to charge for advertising or SPAM sent to
+    any mailing list.
+</p>
+
+<a name="designlanguage"></a>
+
+<h2>What design language do you use?</h2>
+
+<p>
+    There is no preferred language and each designer uses their language of
+    choice. Keep in mind that a core written in a seldom used language will not
+    be very useful. Most designers use VHDL, Verilog, SystemVerilog.
+</p>
+
+<a name="socbus"></a>
+
+<h2>What is the preferred System-On-A-Chip (SoC) bus for OpenCores?</h2>
+
+<p>
+    The preferred bus is WISHBONE. This is the only commonly used SoC bus which
+    is truly free. Rudolf Usselmann has analysed the advantages of the common
+    SoC busses. His report is available at the "Wishbone"-page.
+    The Wishbone specification is today maintained jointly between 
+    Michael Unnebäck and Richard Herveille.
+</p>
+
+<a name="anyguidelines"></a>
+
+<h2>Does OpenCores have any coding and interface guidelines?</h2>
+
+<p>
+    The OpenCores RTL coding guidelines are available <a href="http://cdn.opencores.org/downloads/opencores_coding_guidelines.pdf">here</a></p>
+
+<a name="whatlicense"></a>
+
+<h2>What license is used for OpenCores?</h2>
+
+<p>
+    To simplify life for users, developers are strongly encouraged to use an
+    unmodified LGPL (Lesser GPL) license or the modified-BSD license. The
+    modified-BSD license is the original BSD license with the 'advertising
+    clause' removed. 
+</p>
+<p>
+    A modified-BSD style license essentially states that no warranty is given,
+    the core may be distributed in source or binary form and the authors
+    copyright must be acknowledged. 
+</p>
+<p>
+    http://en.wikipedia.org/wiki/Modified_BSD_licence 
+</p>
+<p>
+    The GNU Lesser General Public License (formerly the GNU Library General
+    Public License) or LGPL is a free software license published by the Free
+    Software Foundation (FSF). It was designed as a compromise between the
+    strong-copyleft GNU General Public License or GPL and permissive licenses
+    such as the BSD licenses and the MIT License. The GNU Lesser General Public
+    License was written in 1991 (and updated in 1999, and again in 2007) by
+    Richard Stallman, with legal advice from Eben Moglen.
+</p>
+<p>
+    http://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License
+</p>
+
+<a name="allprojects"></a>
+
+<h2>Where can I see all projects/cores?</h2>
+
+<p>
+    Select the “Projects”-link on the first page. Here is a list of all the available projects at OpenCores. 
+</p>
+
+<a name="sourceforcore"></a>
+
+<h2>How do I get the source for a core?</h2>
+
+<p>
+    There are two main ways to download the code for a project:
+</p>
+<p>
+    1. Via the website: <br />
+    The latest version of the source-code for each project can be 
+    downloaded via the “Project-list” by selecting the “download”-button.
+</p>
+<p>
+    2. Via SVN client: <br />
+    Using a SVN client enables full access to the source-code and all 
+    its history. Instructions how to download (checkout) and 
+    upload (checkin) are available here the “SVN HowTo”-link at 
+    the first page.
+</p>
+
+<a name="contributemore"></a>
+
+<h2>How can I contribute?</h2>
+
+<p>
+    There are lots of ways to contribute, without running your own project. This
+    includes helping with an existing project, both with development and with verification.
+    Helping us improving the web site, or whatever you find interesting. Documentation and
+    testing are especially appreciated. If this sounds interesting, please send
+    an email to oc-team@opencores.org or the project maintainers directly. 
+</p>
+
+<a name="projectis"></a>
+
+<h2>What is a project?</h2>
+
+<p>
+    A project is basically a "unit of work". It can be every thing from a smaller function 
+   (an adder) all the way up to complex function (a processor). Each project has 
+    one of more maintainers. 
+    The maintainer/s are persons who has volunteered to oversee the development and to 
+    make sure that the project gets updated with feedback from the community. 
+    Typically each project corresponds to a single core. 
+</p>
+<p>
+    Each project has its own web page, SVN-repository, statistic-information and bugtracker. 
+    To see the page for a project, click on the "Projects"-link under the "Browse"-menu 
+    on the left side of page. You will be presented with a list of projects. 
+    Click on the name of a project to see its pages.
+</p>
+
+<a name="howtohelp"></a>
+
+<h2>How do I help out on an existing project?</h2>
+
+<p>
+    Send a polite email to the maintainer of that project, asking how you can
+    help. The maintainer will be listed on the web page for that project.
+    If you will not get any response from the maintainer, send us an email and 
+    and we will help you (oc-team@opencores.org).
+</p>
+
+<a name="howtostart"></a>
+
+<h2>How do I start my own project?</h2>
+
+<p>
+    Start by getting an account on OpenCores (as described above). 
+    Before requesting a new project, check if there are any other projects 
+    similar to the one you want to start. If there is, consider joining that 
+    project before starting a new one. It better to have one really good project, 
+    then having ten similar projects. Working together will improve 
+    efficiency and quality.
+</p>
+<p>
+    To start a new project, select the "create project"-link under "My account"-page. 
+</p>
+<p>
+    Please do not set up a project simply to point to files outside 
+    the OpenCores server. We have had so much problems in the past when these external 
+    links disappears after a while. If all files are located at in OpenCores 
+    SVN repositories then we can avoid this problem. All files must be located 
+    on the OpenCores server. 
+</p>
+
+<a name="nomaint"></a>
+
+<h2>I don't want to maintain a project any more. What do I do?</h2>
+
+<p>
+    If you decide to stop working on a project, please send mail
+    to oc-team@opencores.org. We will then announce the project as unmaintained and 
+    ask if anyone within the community want to "take over" the maintainership.
+</p>
+
+<h2>The original maintainers are not contactable, can I become a co-maintainer 
+    and continue to develop and maintain the project?
+</h2>
+
+<p>
+    Yes, we will then try a final time to contact the original maintainers and if 
+    they don't answer within 1-2 weeks, then we can add you as a co-maintainer. 
+    To request this, send an email to oc-team@opencores.org
+</p>
+
+
+<a name="canipublish"></a>
+
+<h2>I have written a core. Can I publish it on the OpenCores web site?</h2>
+
+<p>
+    Yes absolutely, this is the main function of OpenCores. Start reading this 
+    section at the beginning. Read the "How do I start my own project" section 
+    in this FAQ.
+</p>
+
+<a name="ihaveidea"></a>
+
+<h2>I have an idea for a core, but need help to develop it.</h2>
+
+<p>
+    Send mail to the "cores"-forum", describing the project and
+    asking for help. Someone may be interested enough to participate in your 
+    project. It much better to be several maintainers in a project, both from 
+    a technical stand point and it more fun to have "partners" to discuss with 
+    during development. The source for any work developed will have to be 
+    released to the rest of OpenCores under a free or open license.
+</p> 
+
+<a name="howtoedit"></a>
+
+<h2>How do I edit a page on the OpenCores web server?</h2>
+
+<p>
+    First, you need to be logged int to OpenCores. Then you
+    go to the page you want to edit and if you have write access
+    the "EDIT"-image/link will appear on the page or
+    block. By clicking on that image, this section will be edited.
+</p>
+
+<a name="upload"></a>
+
+<h2>How do I upload files to the OpenCores server?</h2>
+
+<p>
+    Files are always related to specific projects. To be able to edit a project
+    you must be it's maintainer and be logged in to OpenCores. Instructions on
+    how to upload and download file are available under "SVN How To"-page under 
+    "HowTo/FAQ"-page on the first page (left column).
+</p>
+
+<a name="personaledit"></a>
+
+<h2>How do I edit my personal page on the opencores web server?</h2>
+
+<p>
+    Login on OpenCores, as described in previous section. Select the "My account"-link.
+    Here you can update some of your personal information. If you want to 
+    information that are not "editable", send this request in an email to oc-team@opencores.org
+</p>
+<p>
+    It is also here you control what subscriptions you want to 
+    subscribe or un-subscribe to (forum, mailing-lists, newsletter).
+</p>
+
+<a name="password"></a>
+
+<h2>How do I change my password?</h2>
+
+<p>
+    Login on OpenCores, as described in previous section. Select the "My account"-link.
+</p>
+
+<a name="editproject"></a>
+
+<h2>How do I edit a project page on the OpenCores web server?</h2>
+
+<p>
+    You must be logged in on OpenCores and you need to be maintainer of the
+    project. Go to the project-page and you will find "Edit"-link for different
+    sections. 
+</p>
+
+<a name="specifications"></a>
+
+<h2>How do I write specification for my core</h2>
+
+<p>
+    We have specification template that you can use. 
+</p>
+<p>
+    Template is available <a href="http://cdn.opencores.org/downloads/specification_template.dot">here</a>    (specification_template.dot) (MS Word Template - 450kB)
+</p>
+
+<a name="getemail"></a>
+
+<h2>How do I get an email address of the form your-user-name@opencores.org?</h2>
+
+<p>
+    Every account holder gets an email alias. You need to register
+    at OpenCores to get an account. This is only a forward-service, meaning 
+    that all your-user-name@opencores.org emails will get forwarded to the email 
+    address that was used during the registration. 
+</p>
+
+<a name="termsproject"></a>
+
+<h2>To create project</h2>
+
+<p>
+    Before you publish your project, you must agree and accept the following T&C's:
+    - Project you put online is not stolen work and you have all the copy rights.
+    <br />
+    - Project is not intentional violating patents.
+    <br />
+    - Code does not contain any intentional bugs but might have limitations and 
+      list of limitations is available.
+    <br />
+    - Project available on third party web site can be published but only in its 
+      entirety and not just as URL link.
+    <br />
+    - Project is complete and not just a snapshot what is available on 
+      third party web site.
+    <br />
+    - Commercial advertising is not allowed without written approval from OpenCores.
+    <br />
+    - Project has valuable information.
+    <br />
+    - Project that doesn't contain enough "value" for the opencores community will 
+      be deleted (ex. Project that is commercial advertising of a third party 
+      product, OpenCores is not a a search/index site).
+    <br />
+    - OPENCORES.ORG reserves rights to refuse, modify or delete project if the 
+      previous terms are not fulfilled
+</p>
+<p>
+    To create a project you need to apply for a project, this is done under the
+    "My account"-page. It's located on the top-right corner under "Shortcuts" (Create project).
+</p>
+
+
+<a name="termsnews"></a>
+
+<h2>To add news</h2>
+
+<p>
+    - News available on third party web site can be published but only in its entirety 
+      and not just as URL link
+    <br />
+    - News is complete and not just a snapshot what is available on third party web site
+    <br />
+    - News has valuable information
+    <br />
+    - News that doesn't contain enough "value" for the opencores community will not be 
+      published (ex. News that is commercial advertising of a third party product, 
+      OpenCores is not a a search/index site)
+    <br />
+    - OpenCores related News can't contain third party web site URLs
+</p>
+
+<a name="termsarticle"></a>
+
+<h2>To add article</h2>
+
+<p>
+    - Article available on third party web site can be published but only in its entirety and not just as URL link
+    <br />
+    - Article is complete and not just a snapshot what is available on third party web site
+    <br />
+    - Article has valuable information
+    <br />
+    - Article that doesn't contain enough "value" for the opencores community will not be published (ex. - Article that is commercial advertising of a third party product, OpenCores is not a a search/index site)
+</p>
+
+<div style="height: 300px;"></div>
+        </div>
+	<div style="clear:both;margin-left:200px;">
+            <!-- 728x90 -->
+            <script type="text/javascript">
+            GA_googleFillSlot("728x90");
+            </script>
+	</div>
+    </div>
+    <div class="bot">
+	&copy; copyright 1999-2016
+OpenCores.org, equivalent to ORSoC AB, all rights reserved. OpenCores&reg;, registered trademark.
+    </div>
+</div>
+
+<!-- Google search -->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("elements", "1", {packages: "transliteration"});</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+<!-- /Google search -->
+
+</body>
+
+<!-- Mirrored from opencores.org/opencores,faq by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:32 GMT -->
+</html>

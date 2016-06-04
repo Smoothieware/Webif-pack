@@ -1,0 +1,535 @@
+
+<!-- Mirrored from reprapme.com/2015/07/z-probing/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!DOCTYPE html>
+
+<!--[if IE 8]>
+<html id="ie8" lang="en-GB">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html lang="en-GB">
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Z probing with Smoothie | </title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://reprapme.com/xmlrpc.php" />
+	<!--[if lt IE 9]>
+	<script src="http://reprapme.com/wp-content/themes/decemberable/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="RepRapMe &raquo; Feed" href="http://reprapme.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="RepRapMe &raquo; Comments Feed" href="http://reprapme.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="RepRapMe &raquo; Z probing with Smoothie Comments Feed" href="http://reprapme.com/2015/07/z-probing/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/reprapme.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='parent-style-css'  href='http://reprapme.com/wp-content/themes/decemberable/style.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='child-style-css'  href='http://reprapme.com/wp-content/themes/decemberable-child/style.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='http://reprapme.com/wp-content/themes/decemberable-child/style.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='http://reprapme.com/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://reprapme.com/wp-content/plugins/jetpack/css/jetpack.css?ver=3.9.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://reprapme.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://reprapme.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://reprapme.com/wp-content/plugins/jetpack/modules/related-posts/related-posts.js?ver=20150408'></script>
+<link rel='https://api.w.org/' href='http://reprapme.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://reprapme.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://reprapme.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='next' title='Sketchup tricks' href='http://reprapme.com/2015/08/sketchup-tricks/' />
+<meta name="generator" content="WordPress 4.4.3" />
+<link rel="canonical" href="http://reprapme.com/2015/07/z-probing/" />
+<link rel='shortlink' href='http://wp.me/p7bO46-O' />
+<link rel="alternate" type="application/json+oembed" href="http://reprapme.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Freprapme.com%2F2015%2F07%2Fz-probing%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://reprapme.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Freprapme.com%2F2015%2F07%2Fz-probing%2F&amp;format=xml" />
+
+<link rel='dns-prefetch' href='http://i0.wp.com/'>
+<link rel='dns-prefetch' href='http://i1.wp.com/'>
+<link rel='dns-prefetch' href='http://i2.wp.com/'>
+<style type='text/css'>img#wpstats{display:none}</style>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>	<style type="text/css">
+			.site-header img {
+			display: block;
+			margin: 1.5em auto 0;
+		}
+			.site-title a,
+		.site-description {
+			color: #e9e0e1 !important;
+		}
+		</style>
+	
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Z probing with Smoothie" />
+<meta property="og:url" content="http://reprapme.com/2015/07/z-probing/" />
+<meta property="og:description" content="Last weekend I finally decided to implement a Z probe on my Mendel90. I frequently swap the mirror I use as a print surface, and I think the wooden frame of the M90 expands and contracts a small am…" />
+<meta property="article:published_time" content="2015-07-27T17:27:15+00:00" />
+<meta property="article:modified_time" content="2015-12-28T22:55:30+00:00" />
+<meta property="og:site_name" content="RepRapMe" />
+<meta property="og:image" content="http://reprapme.com/wp-content/uploads/2015/08/IMG_1501-2-300x224.jpg" />
+<meta property="og:locale" content="en_GB" />
+<meta name="twitter:card" content="summary" />
+</head>
+
+<body class="single single-post postid-50 single-format-standard">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="http://reprapme.com/" title="RepRapMe" rel="home">RepRapMe</a></h1>
+			<h2 class ="site-description">a Blog about RepRap &#8211; the open source 3D printer movement</h2>
+		</hgroup>
+				<a href="http://reprapme.com/" title="RepRapMe" rel="home">
+				<img src="http://reprapme.com/wp-content/uploads/2015/11/Mendel-90-header-with-caption.jpg" width="1024" height="373" alt="" />
+			</a>
+			<nav role="navigation" class="site-navigation main-navigation">
+		<h1 class="assistive-text">Menu</h1>
+		<div class="assistive-text skip-link"><a href="#content" title="Skip to content"</a></div>	
+		<div class="menu"><ul><li ><a href="http://reprapme.com/">Home</a></li><li class="page_item page-item-63"><a href="http://reprapme.com/about/">About</a></li></ul></div>
+		</nav><!-- .site-navigation .main-navigation -->
+	</header><!-- #masthead. site-header -->
+<div id="main" class="site-main"> 
+		<div id="primary" class="content-area">
+			<div id="content" class="site-content" role="main">
+			
+							
+					<nav role="navigation" id="nav-above" class="site-navigation post-navigation">
+		<h1 class="assistive-text">Post navigation</h1>
+	
+		
+				<div class="nav-next"><a href="http://reprapme.com/2015/08/sketchup-tricks/" rel="next">Sketchup tricks <span class="meta-nav">&rarr;</span></a></div>		
+	</nav><!-- #nav-above -->
+					
+				
+<article id="post-50" class="post-50 post type-post status-publish format-standard hentry category-mendel90 category-smoothie">
+	<header class="entry-header">
+		<h1 class="entry-title">Z probing with Smoothie</h1>
+		
+		<div class="entry-meta">
+			Posted on <a href="http://reprapme.com/2015/07/z-probing/" title="el="bookmark"><time class="entry-date" datetime="2015-07-27T18:27:15+00:00" pubdate>27th July 2015</time></a><span class="byline"> by <span class"author vcard"><a class="url fn n " href="http://reprapme.com/author/mint/" title="View all posts by Plankton" rel="author">Plankton</a></span></span>		</div><!-- .entry-meta -->
+	</header>
+	
+	<div class="entry-content">
+		<p>Last weekend I finally decided to implement a Z probe on my Mendel90. I frequently swap the mirror I use as a print surface, and I think the wooden frame of the M90 expands and contracts a small amount as well &#8211; whatever the reason, my Z height does fluctuate slightly and this was my primary motivation, automatically setting the bed plane was a secondary (though welcome) benefit.</p>
+<p>This was supposed to be a quick and dirty implementation, then I could get back to the new printer design &#8211; as ever, the reality turned out to be more involved.</p>
+<p>I had a couple of 9g servos laying around, and mechanical end-switches, so a servo controlled arm seemed the obvious solution. I&#8217;m not an OpenSCAD expert, so modifying NopHeads original file was out of the question in the time I had available. Fortunately I already had a (mostly) completed copy of NopHeads X carriage in Sketchup (I had planed to adapt it for an E3D V6), so adding a bracket for the servo didn&#8217;t take too long, and a simple arm to attach the switch to.</p>
+<p><a href="http://i2.wp.com/reprapme.com/wp-content/uploads/2015/08/J-head-X-carriage-assembly.jpg"><img class=" wp-image-83 alignright" src="http://i2.wp.com/reprapme.com/wp-content/uploads/2015/08/J-head-X-carriage-assembly.jpg?resize=492%2C284" alt="" data-recalc-dims="1" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Just add a servo and switch.</p>
+<p>&nbsp;</p>
+<h2>Build</h2>
+<p>These servos require three electrical connections (you may have different wire colours):</p>
+<ul>
+<li>+5 volts  (red)</li>
+<li>Gnd        (brown)</li>
+<li>PWM      (orange)</li>
+</ul>
+<p>5v and Ground I took direct from my power supply, the PWM signal needs to go to a <a href="https://raw.githubusercontent.com/Bouni/smoothieboard-graphics/master/smoothieboard-pin-capabilities.png" target="_blank">PWM capable pin</a> on the Smoothiboard (in this case 3.25).</p>
+<div id="attachment_72" style="width: 452px" class="wp-caption alignnone"><a href="http://i0.wp.com/reprapme.com/wp-content/uploads/2015/08/IMG_1501-2.jpg"><img class=" wp-image-72" src="http://i0.wp.com/reprapme.com/wp-content/uploads/2015/08/IMG_1501-2.jpg?resize=442%2C330" alt="X carriage" srcset="http://i0.wp.com/reprapme.com/wp-content/uploads/2015/08/IMG_1501-2.jpg?resize=300%2C224 300w, http://i0.wp.com/reprapme.com/wp-content/uploads/2015/08/IMG_1501-2.jpg?resize=1024%2C764 1024w, http://i0.wp.com/reprapme.com/wp-content/uploads/2015/08/IMG_1501-2.jpg?resize=402%2C300 402w" sizes="(max-width: 442px) 100vw, 442px" data-recalc-dims="1" /></a><p class="wp-caption-text">new X carriage with Z probe</p></div>
+<p>Sorry, bad photo from my phone, but you can just make out that my switch has one of those lever arms (with a roller on the end), <del>in theory the lever action should provide greater resolution, so a more accurate measurement. In practice I found the opposite, measuring my Z offset I never got the same figure twice. I can only assume the flat metal arm was bending,</del> I removed the arm and started getting repeatable measurements..</p>
+<p>EDIT</p>
+<p>So I got that the wrong way around, I finally worked out that having a lever just amplifies any variations in the micro switch tipping point (the position where the switch tips from open to closed). Let&#8217;s say that the switch can tip between states within a 0.01 mm window (without using a lever), that means that consecutive measurements using that switch may vary by up to 0.01 mm (most micro switches would be better than that figure), but then you add a lever with a 10:1 advantage, now to move the switch by 0.01 mm the other end of your arm (measuring the position of the heat bed, in this case) has moved 0.1 mm, so your accuracy (or repeatability) just got ten times worse.</p>
+<h2>Configuring Smoothiware</h2>
+<p>Before we can configure the Z probe itself, we need to add a switch module to control the servo&#8230;</p>
+<pre><code># Switch module for servo control
+switch.servo.enable                            true             #
+switch.servo.input_on_command                  M280             # M280 S7.5 would be midway
+switch.servo.input_off_command                 M281             # same as M280 S0 0% duty cycle, effectively off
+switch.servo.output_pin                        3.25             # must be a PWM capable pin
+switch.servo.output_type                       hwpwm            # H/W pwm output settable with S parameter in the input_on_comand
+#switch.servo.pwm_period_ms                    20               # set period to 20ms (50Hz) default is 50Hz</code></pre>
+<p>(<a href="http://smoothieware.org/switch" target="_blank">from the Smoothie Wiki, switch examples</a>)</p>
+<p>Most these small servos turn just over 180 degrees max (some a bit less), the S parameter specifies the pulse width of the PWM signal, that instructs the servo what angle to turn to (S5 = 0 degrees, S10 = 180 degrees)</p>
+<p>So to control the servo, you can use the following G codes (or specify any other S value between 5 and 10).</p>
+<p>M280 S0 &#8211; turn servo off<br />
+M280 S5 &#8211; move to 0 degrees<br />
+M280 S7.5 &#8211; move to 90 degrees<br />
+M280 S10 &#8211; move to 180 degrees</p>
+<p>Or that&#8217;s the theory, at least. When I tried to test this my servo would only move in one direction, whatever I tried. I spent the best part of a day trying different servos, different pins, different configuration settings, before I thought to update my Smoothieboard to the latest edge firmware &#8211; problem solved.</p>
+<blockquote><p>I could have a rant at this point, about the frustrating things that are missing from the otherwise excellent Smoothie documentation, if I did then the lack of any change documentation for the firmware would be near the top of my list!</p></blockquote>
+<p>So with a working servo, now we just enable the Z probe section in the configuration file, mine looks like this:</p>
+<pre># =========================================================================================
+# Z probe
+# =========================================================================================
+
+zprobe.enable true             # set to true to enable a zprobe
+zprobe.probe_pin 1.28^         # pin probe is attached to if NC remove the !
+zprobe.slow_feedrate 1.8       # mm/sec probe feed rate
+#zprobe.debounce_count 100     # set if noisy
+zprobe.fast_feedrate 75        # move feedrate mm/sec
+<span style="color: #0000ff;">zprobe.probe_height 4.96</span>       # how much above bed to start/finish probe
+                               # adjust this figure to tweak final Z height
+
+
+# associated with zprobe the leveling strategy to use
+leveling-strategy.three-point-leveling.enable true                  # a leveling strategy that probes three points to define a plane and keeps the Z parallel to that plane
+leveling-strategy.three-point-leveling.point1 89,184                # the first probe point (x,y) optional may be defined with M557
+leveling-strategy.three-point-leveling.point2 3,5                   # the second probe point (x,y)
+leveling-strategy.three-point-leveling.point3 162,5                 # the third probe point (x,y)
+leveling-strategy.three-point-leveling.home_first true              # home the XY axis before probing
+leveling-strategy.three-point-leveling.tolerance 0.03               # the probe tolerance in mm, anything less that this will be ignored, default is 0.03mm (no, I have no idea what this refers to either)
+leveling-strategy.three-point-leveling.probe_offsets -43.25,12.7,0  # the probe offsets from nozzle, must be x,y,z, (sign is opposite of what you would expect, and don't enter a Z offset here))
+leveling-strategy.three-point-leveling.save_plane false             # set to true to allow the bed plane to be saved with M500 default is false</pre>
+<p>(<span style="color: #0000ff;">see bottom of this post for explanation of zprobe.probe_height</span>)</p>
+<p>The 3 probe points ideally are the 3 corners of an equilateral triangle (the largest you can comfortably fit on your print bed).</p>
+<h1>Usage</h1>
+<p>A manual procedure could be like this (adjust the M280 S values to suite your servo):</p>
+<ul>
+<li>move print head to a suitable Z height (to leave clearance for the probe)</li>
+<li>M280 S8         &#8211; probe down</li>
+<li>G32                &#8211; run the Z probe procedure</li>
+<li>M280 S12       &#8211; probe up</li>
+</ul>
+<p>At this point your Z plane is set, you just need to home to Z, then you&#8217;re good to print, however this needs to be Z height relative to the first probe point. You can do that like this:</p>
+<ul>
+<li>G1 X89 Y184   &#8211; moves head to X,Y coordinates of first probe point</li>
+<li>manually drop nozzle to Z = 0 (use a sheet of paper, or your normal method to get the gap correct)</li>
+<li>M306 Z0           &#8211; sets the current height to Z = 0</li>
+</ul>
+<p>These settings will stay in force until your printer is reset (or you can save the plane to EEPROM with M500).</p>
+<p>A better strategy would be to automate this in your start G code, and probe before every print (it can run while the print bed heats up, so adds no time to a print). The following is my start G code <span style="color: #0000ff;">(Z probe section in blue)</span>:</p>
+<pre>M80        ; PSU on
+G4 P1000   ; wait 1 second for power to stabalise
+M140 S[first_layer_bed_temperature] ; set bed temp and don't wait
+<span style="color: #0000ff;">G1 Z25     ; move up 25mm to ensure room to drop probe
+M280 S8    ; probe down
+G32        ; run Z probe (finish height is set in config file)
+M280 S12   ; probe arm up
+G92 Z16.2  ; set Z (probe offset (11.2) plus probe finish height)
+G4 P1000   ; wait 1 second (see comment below)
+M280 S0    ; probe servo off  <span style="color: #ff0000;">&lt;&lt;&lt; if this immediately follows M280 S12 the servos switches off before the probe retract has finished</span></span>
+M190 S[first_layer_bed_temperature] ; set bed temp and wait
+M104 S[first_layer_temperature]     ; set extruder temp, no wait
+G1 X150 Y0 ; move 150mm along the front edge
+G1 Z0      ; drop nozzle to prevent ooze
+M109 S[first_layer_temperature]     ; set extruder temp and wait
+G1 Z[first_layer_height]            ; move nozzle to print height
+G1 X10 F12000 E7                    ; Wipe (move toward origin as fast as firmware permits, extruding 7mm)</pre>
+<p>So where did that G92 Z16.2 figure come from?</p>
+<p style="padding-left: 30px;">I started with &#8220;zprobe.probe_height 5&#8221; in my config file, so I know that after a G32 command the Z height will be 5mm (you can confirm this with M114), but this is 5mm from Z probe to print bed (not hot-end nozzle to print bed). So perform a manual height adjustment to find your real Z = 0, now the Z height returned by M114 (-11.2 in my case) is your Z offset (the difference in height between the probe, and the hot end). So G92 Zn sets the Z height to value n (11.2 + 5 = 16.2).</p>
+<p style="padding-left: 30px;">In Slic3r I have multiple profiles (different filaments, different print surfaces, etc), so rather than edit every profile it makes sense to make any fine adjustment of Z in one place only (hence in my config file it now says &#8220;zprobe.probe_height 4.96&#8221;)</p>
+<h1></h1>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-50" class="share-twitter sd-button share-icon no-text" href="http://reprapme.com/2015/07/z-probing/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-50" class="share-facebook sd-button share-icon no-text" href="http://reprapme.com/2015/07/z-probing/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-50" class="share-google-plus-1 sd-button share-icon no-text" href="http://reprapme.com/2015/07/z-probing/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>			</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+		This entry was posted in $1$s. Bookmark the <a href="http://reprapme.com/2015/07/z-probing/" title="Permalink to Z probing with Smoothie" rel="bookmark">permalink</a>.		
+			</footer><!-- .entry-meta -->
+</article><!-- #post-50 -->				
+					<nav role="navigation" id="nav-below" class="site-navigation post-navigation">
+		<h1 class="assistive-text">Post navigation</h1>
+	
+		
+				<div class="nav-next"><a href="http://reprapme.com/2015/08/sketchup-tricks/" rel="next">Sketchup tricks <span class="meta-nav">&rarr;</span></a></div>		
+	</nav><!-- #nav-below -->
+					
+				
+
+	<div id="comments" class="comments-area">
+	
+		
+			<h2 class="comments-title">
+			6 thoughts on &ldquo;<span>Z probing with Smoothie</span>&rdquo;		</h2>
+		
+				
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-16">
+		<article id="comment-16" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img src="http://1.gravatar.com/avatar/da98f3dfd04a65d751bfa011039aaf66?s=40&amp;d=mm&amp;r=g" width="40" height="40" alt="" class="avatar avatar-40wp-user-avatar wp-user-avatar-40 alignnone photo avatar-default" />					<cite class="fn">Scott</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+								
+				<div class="comment-meta commentmetadata">
+					<a href="http://reprapme.com/2015/07/z-probing/#comment-16"><time pubdate datetime="2015-10-22T13:50:10+00:00">
+					22nd October 2015 at 1:50 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+			
+			<div class="comment-content"><p>Good writeup.<br />
+I have a queston about the offsets &#8220;leveling-strategy.three-point-leveling.probe_offsets&#8221;.<br />
+If the nozzle is at X0 Y0 and the sensor is at X25 Y25 is the offset negative or positive?</p>
+</div>
+			
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://reprapme.com/2015/07/z-probing/?replytocom=16#respond' onclick='return addComment.moveForm( "comment-16", "16", "respond", "50" )' aria-label='Reply to Scott'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+		
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-mint bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-18">
+		<article id="comment-18" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img src="http://i2.wp.com/reprapme.com/wp-content/uploads/2015/07/plankton-control.jpg?fit=40%2C34" width="40" height="34" alt="Plankton" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 alignnone photo" />					<cite class="fn"><a href='http://thisone/' rel='external nofollow' class='url'>Plankton</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+								
+				<div class="comment-meta commentmetadata">
+					<a href="http://reprapme.com/2015/07/z-probing/#comment-18"><time pubdate datetime="2015-10-31T15:39:54+00:00">
+					31st October 2015 at 3:39 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+			
+			<div class="comment-content"><p>Hey Scott, sorry for the delay &#8211; seems I hadn&#8217;t set WordPress to email me when anyone entered a comment <img src="http://reprapme.com/wp-includes/images/smilies/frownie.png" alt=":-(" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>If I set my nozzle at x=0, my sensor is at x=-43.25<br />
+In &#8220;leveling-strategy.three-point-leveling.probe_offsets&#8221; this is set as a negative offset (-43.25)</p>
+<p>So in your example, with an offset of X25, Y25, Z0, the config file would read:</p>
+<p>leveling-strategy.three-point-leveling.probe_offsets 25,25,0</p>
+</div>
+			
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://reprapme.com/2015/07/z-probing/?replytocom=18#respond' onclick='return addComment.moveForm( "comment-18", "18", "respond", "50" )' aria-label='Reply to Plankton'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+		
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-29">
+		<article id="comment-29" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img src="http://1.gravatar.com/avatar/da98f3dfd04a65d751bfa011039aaf66?s=40&amp;d=mm&amp;r=g" width="40" height="40" alt="" class="avatar avatar-40wp-user-avatar wp-user-avatar-40 alignnone photo avatar-default" />					<cite class="fn">Scott</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+								
+				<div class="comment-meta commentmetadata">
+					<a href="http://reprapme.com/2015/07/z-probing/#comment-29"><time pubdate datetime="2015-11-14T13:03:17+00:00">
+					14th November 2015 at 1:03 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+			
+			<div class="comment-content"><p>Thanks much!<br />
+On my printer leveling tries to work but does not seem to compensate sufficiently for &#8220;out of true&#8221; conditions. Currently I have to offset set to 0,0,0 since it&#8217;s not related to the Z offset. I set Z with G30 Z1.2 after running G32 and returning to the first point used for leveling. On a flat plane the relative compensation should be the same.</p>
+<p>I&#8217;ve gone through the code and may need to break down and get the compiler set up.<br />
+Talked to Arthur about this once but didn&#8217;t get any answers.</p>
+</div>
+			
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://reprapme.com/2015/07/z-probing/?replytocom=29#respond' onclick='return addComment.moveForm( "comment-29", "29", "respond", "50" )' aria-label='Reply to Scott'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+		
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-72">
+		<article id="comment-72" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img src="http://0.gravatar.com/avatar/070e842bfd0a319954183a1647ffc00d?s=40&amp;d=mm&amp;r=g" width="40" height="40" alt="" class="avatar avatar-40wp-user-avatar wp-user-avatar-40 alignnone photo avatar-default" />					<cite class="fn">Refiki</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+								
+				<div class="comment-meta commentmetadata">
+					<a href="http://reprapme.com/2015/07/z-probing/#comment-72"><time pubdate datetime="2016-03-08T21:55:18+00:00">
+					8th March 2016 at 9:55 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+			
+			<div class="comment-content"><p>Hello, I could reallllllly use your help.</p>
+<p>So I have an inductive sensor on my bed and I have a 4 point adjustment heated bed. Will it still work with this method? I get the results:<br />
+SENDING:G32<br />
+DEBUG: P0:-0.0012<br />
+DEBUG: P1:-0.2032<br />
+DEBUG: P2:-1.3205<br />
+DEBUG: plane normal= -0.005586, 0.005071, 0.999972<br />
+Probe completed, bed plane defined<br />
+_______________<br />
+But even with this, for some reason I swear I don&#8217;t see my steppers compensating.</p>
+</div>
+			
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://reprapme.com/2015/07/z-probing/?replytocom=72#respond' onclick='return addComment.moveForm( "comment-72", "72", "respond", "50" )' aria-label='Reply to Refiki'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+		
+	<ul class="children">
+	<li class="comment byuser comment-author-mint bypostauthor even depth-2" id="li-comment-73">
+		<article id="comment-73" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img src="http://i2.wp.com/reprapme.com/wp-content/uploads/2015/07/plankton-control.jpg?fit=40%2C34" width="40" height="34" alt="Plankton" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 alignnone photo" />					<cite class="fn"><a href='http://thisone/' rel='external nofollow' class='url'>Plankton</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+								
+				<div class="comment-meta commentmetadata">
+					<a href="http://reprapme.com/2015/07/z-probing/#comment-73"><time pubdate datetime="2016-03-09T20:25:40+00:00">
+					9th March 2016 at 8:25 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+			
+			<div class="comment-content"><p>The type of sensor, or number of bed leveling points, shouldn&#8217;t affect this. That output looks normal, so try watching your Z stepper(s) during one layer of a print.</p>
+<p>To make it obvious you can put an exaggerated tilt on the bed surface, as a test.</p>
+</div>
+			
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://reprapme.com/2015/07/z-probing/?replytocom=73#respond' onclick='return addComment.moveForm( "comment-73", "73", "respond", "50" )' aria-label='Reply to Plankton'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+		
+	<ul class="children">
+	<li class="comment odd alt depth-3" id="li-comment-101">
+		<article id="comment-101" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img src="http://0.gravatar.com/avatar/070e842bfd0a319954183a1647ffc00d?s=40&amp;d=mm&amp;r=g" width="40" height="40" alt="" class="avatar avatar-40wp-user-avatar wp-user-avatar-40 alignnone photo avatar-default" />					<cite class="fn">Refiki</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+								
+				<div class="comment-meta commentmetadata">
+					<a href="http://reprapme.com/2015/07/z-probing/#comment-101"><time pubdate datetime="2016-03-25T05:15:04+00:00">
+					25th March 2016 at 5:15 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+			
+			<div class="comment-content"><p>I see them moving, but they just don&#8217;t move enough or they move too much. I can see it trying to compensate but no matter what I do I can&#8217;t get uniform first layers. It&#8217;s killing my prints and honestly killing my enthusiasm for anything smoothie&#8230;The wiki doesn&#8217;t really describe well enough how to add multi-point bed leveling which is what I used with ramps and got great results.</p>
+</div>
+			
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://reprapme.com/2015/07/z-probing/?replytocom=101#respond' onclick='return addComment.moveForm( "comment-101", "101", "respond", "50" )' aria-label='Reply to Refiki'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+		
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol><!-- .commentlist -->
+		
+				
+		
+		
+					<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://reprapme.com/2015/07/z-probing/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="http://reprapme.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+					<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='50' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="84fce0d0d1" /></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="71"/></p>				</form>
+					</div><!-- #respond -->
+		
+</div><!-- #comments .comments-area -->				
+						
+			</div><!-- #content .site-content -->
+		</div><!-- #primary .content-area -->
+
+<div id="secondary" class="widget-area" role="complementary">
+				<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+					<li>
+				<a href="http://reprapme.com/2015/11/3drive/">3Drive</a>
+						</li>
+					<li>
+				<a href="http://reprapme.com/2015/08/bar-bending/">Bar Bending</a>
+						</li>
+					<li>
+				<a href="http://reprapme.com/2015/08/sketchup-tricks/">Sketchup tricks</a>
+						</li>
+					<li>
+				<a href="http://reprapme.com/2015/07/z-probing/">Z probing with Smoothie</a>
+						</li>
+				</ul>
+		</aside>		<aside id="recent-comments-2" class="widget widget_recent_comments"><h1 class="widget-title">Recent Comments</h1><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Refiki</span> on <a href="http://reprapme.com/2015/07/z-probing/#comment-101">Z probing with Smoothie</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://thisone/' rel='external nofollow' class='url'>Plankton</a></span> on <a href="http://reprapme.com/2015/07/z-probing/#comment-73">Z probing with Smoothie</a></li><li class="recentcomments"><span class="comment-author-link">Refiki</span> on <a href="http://reprapme.com/2015/07/z-probing/#comment-72">Z probing with Smoothie</a></li><li class="recentcomments"><span class="comment-author-link">Scott</span> on <a href="http://reprapme.com/2015/07/z-probing/#comment-29">Z probing with Smoothie</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://thisone/' rel='external nofollow' class='url'>Plankton</a></span> on <a href="http://reprapme.com/2015/07/z-probing/#comment-18">Z probing with Smoothie</a></li></ul></aside><aside id="archives-2" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+			<li><a href='http://reprapme.com/2015/11/'>November 2015</a></li>
+	<li><a href='http://reprapme.com/2015/08/'>August 2015</a></li>
+	<li><a href='http://reprapme.com/2015/07/'>July 2015</a></li>
+		</ul>
+		</aside><aside id="meta-4" class="widget widget_meta"><h1 class="widget-title">Meta</h1>			<ul>
+						<li><a href="http://reprapme.com/wp-login.php">Log in</a></li>
+			<li><a href="http://reprapme.com/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://reprapme.com/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside></div><!-- #secondary .widget-area -->
+
+<div id="tertiary" class="widget-area" role="supplementary">
+	</div><!-- #tertiary .widget-area -->
+</div><!-- #main .site-main -->
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="site-info">
+				<p>Copyright © 2015, RepRapMe.com</p>
+	</div><!-- .site-info -->		
+</footer><!-- #colophon .site-footer -->
+</div><!-- #page .hfeed .site -->
+
+	<div style="display:none">
+	<div class="grofile-hash-map-da98f3dfd04a65d751bfa011039aaf66">
+	</div>
+	<div class="grofile-hash-map-4b6a9f08ac3727ad63da5436b0b249aa">
+	</div>
+	<div class="grofile-hash-map-070e842bfd0a319954183a1647ffc00d">
+	</div>
+	</div>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"http:\/\/reprapme.com\/2015\/07\/z-probing\/":50};
+	</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+		<script type='text/javascript' src='http://reprapme.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='http://reprapme.com/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201619'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2016Mayaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://reprapme.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.4.3'></script>
+<script type='text/javascript' src='http://reprapme.com/wp-includes/js/comment-reply.min.js?ver=4.4.3'></script>
+<script type='text/javascript' src='http://reprapme.com/wp-content/themes/decemberable/js/navigation.js?ver=20120206'></script>
+<script type='text/javascript' src='http://reprapme.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://reprapme.com/wp-content/plugins/jetpack/modules/sharedaddy/sharing.js?ver=3.9.1'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201619.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.9.1',blog:'106248414',post:'50',tz:'1',srv:'reprapme.com'} ]);
+	_stq.push([ 'clickTrackerInit', '106248414', '50' ]);
+</script>
+
+</body>
+
+<!-- Mirrored from reprapme.com/2015/07/z-probing/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+</html>

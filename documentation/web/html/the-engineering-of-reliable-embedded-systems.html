@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<!-- Mirrored from www.safetty.net/publications/the-engineering-of-reliable-embedded-systems by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>  The Engineering of Reliable Embedded Systems | SafeTTy Systems Ltd</title>
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="http://www.safetty.net/wp-content/themes/TheProfessional/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="SafeTTy Systems Ltd RSS Feed" href="http://www.safetty.net/feed" />
+<link rel="alternate" type="application/atom+xml" title="SafeTTy Systems Ltd Atom Feed" href="http://www.safetty.net/feed/atom" />
+<link rel="pingback" href="http://www.safetty.net/xmlrpc.php" />
+
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://www.safetty.net/wp-content/themes/TheProfessional/css/ie6style.css" />
+	<script type="text/javascript" src="http://www.safetty.net/wp-content/themes/TheProfessional/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript">DD_belatedPNG.fix('img#logo, ul.nav li.backLava, ul.nav li.backLava div.leftLava, #menu, #search-form, #featured, div.slide div.overlay, a#left-arrow, a#right-arrow, div.description, a.readmore, a.readmore span, ul.nav ul li a, #content-bottom, div.service img.service-icon, #controllers, #controllers-top, #controllers-main, #controllers a span.tooltip span.left-arrow, span.overlay, div.hr, #content-top, div.top-alt, div.bottom-alt, #content-bottom, #breadcrumbs span.sep');</script>
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://www.safetty.net/wp-content/themes/TheProfessional/css/ie7style.css" />
+<![endif]-->
+<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://www.safetty.net/wp-content/themes/TheProfessional/css/ie8style.css" />
+<![endif]-->
+
+<script type="text/javascript">
+	document.documentElement.className = 'js';
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="SafeTTy Systems Ltd &raquo; Feed" href="http://www.safetty.net/feed" />
+<link rel="alternate" type="application/rss+xml" title="SafeTTy Systems Ltd &raquo; Comments Feed" href="http://www.safetty.net/comments/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.safetty.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.2"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<meta content="TheProfessional v.3.4" name="generator"/><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='et-shortcodes-css-css'  href='http://www.safetty.net/wp-content/themes/TheProfessional/epanel/shortcodes/css/shortcodes.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='http://www.safetty.net/wp-content/themes/TheProfessional/epanel/page_templates/js/fancybox/jquery.fancybox-1.3.4.css?ver=1.3.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='et_page_templates-css'  href='http://www.safetty.net/wp-content/themes/TheProfessional/epanel/page_templates/page_templates.css?ver=1.8' type='text/css' media='screen' />
+<script type='text/javascript' src='http://www.safetty.net/wp-includes/js/jquery/jquery.js?ver=1.12.3'></script>
+<script type='text/javascript' src='http://www.safetty.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.0'></script>
+<script type='text/javascript' src='http://www.safetty.net/wp-content/plugins/uk-cookie-consent/js/uk-cookie-consent-js.js?ver=4.5.2'></script>
+<link rel='https://api.w.org/' href='http://www.safetty.net/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.safetty.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.safetty.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.5.2" />
+<link rel="canonical" href="http://www.safetty.net/publications/the-engineering-of-reliable-embedded-systems" />
+<link rel='shortlink' href='http://www.safetty.net/?p=1115' />
+<link rel="alternate" type="application/json+oembed" href="http://www.safetty.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.safetty.net%2Fpublications%2Fthe-engineering-of-reliable-embedded-systems" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.safetty.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.safetty.net%2Fpublications%2Fthe-engineering-of-reliable-embedded-systems&amp;format=xml" />
+
+		<style type="text/css" media="screen">
+			#catapult-cookie-bar {
+				display: none;
+				direction: ltr;
+				color: #dddddd;
+				min-height: 30px;
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				z-index: 99999;
+				padding:6px 20px 4px;
+				background-color: #464646;
+				text-align:left;
+			}
+			#catapult-cookie-bar a {
+				color: #dddddd;
+			}
+			button#catapultCookie {
+				margin:0 20px;
+				line-height:20px;
+				background:#556dd6;
+				border:none;
+				color: #dddddd;
+				padding:4px 12px;
+				border-radius: 3px;
+				cursor: pointer;
+				font-size: 13px;
+				font-weight: bold;
+			}
+		</style><link rel="shortcut icon" href="http://www.safetty.net/wp-content/uploads/2013/04/Safetty_TT_small_logo.png" />		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+			<style type="text/css">
+		#et_pt_portfolio_gallery { margin-left: -15px; }
+		.et_pt_portfolio_item { margin-left: 11px; }
+		.et_portfolio_small { margin-left: -3px !important; }
+		.et_portfolio_small .et_pt_portfolio_item { margin-left: 22px !important; }
+		.et_portfolio_large { margin-left: -34px !important; }
+		.et_portfolio_large .et_pt_portfolio_item { margin-left: 13px !important; }
+	</style>
+
+</head>
+<body class="page page-id-1115 page-child parent-pageid-81 page-template page-template-page-full page-template-page-full-php unknown et_fullwidth_view">
+	<div id="container">
+		<div id="header">
+            <span class="logolink">
+                <a href="http://www.safetty.net/">					<img src="http://www.safetty.net/wp-content/uploads/safetty_www_banner_2015d.png" alt="SafeTTy Systems Ltd" id="logo"/></a>
+             </span>
+
+			<div id="menu">
+									<ul class="nav">
+						
+						<li class="page_item page-item-6"><a href="http://www.safetty.net/">Home</a></li>
+<li class="page_item page-item-5073"><a href="http://www.safetty.net/solutions">Solutions</a></li>
+<li class="page_item page-item-28 page_item_has_children"><a href="http://www.safetty.net/technology">Technology</a>
+<ul class='children'>
+	<li class="page_item page-item-8638"><a href="http://www.safetty.net/technology/reliabilitty-technology-licences">ReliabiliTTy® Technology Licences</a></li>
+	<li class="page_item page-item-2681"><a href="http://www.safetty.net/technology/monittor-and-predicttor-technology">MoniTTor® and PredicTTor® technology</a></li>
+	<li class="page_item page-item-5741"><a href="http://www.safetty.net/technology/tt-platforms">TT Platforms</a></li>
+	<li class="page_item page-item-8351"><a href="http://www.safetty.net/technology/simple-tt-platforms">Simple TT platforms</a></li>
+	<li class="page_item page-item-128"><a href="http://www.safetty.net/technology/international_safety_standards">TT platforms and international safety standards</a></li>
+	<li class="page_item page-item-8664"><a href="http://www.safetty.net/technology/design-guide-for-developers-of-reliable-embedded-systems">Design guide for developers of reliable embedded systems</a></li>
+	<li class="page_item page-item-9019"><a href="http://www.safetty.net/technology/tt-design-examples">TT design examples</a></li>
+	<li class="page_item page-item-2696"><a href="http://www.safetty.net/technology/design-example-iec-60730">Washing machine (IEC 60730: Class B)</a></li>
+	<li class="page_item page-item-8472"><a href="http://www.safetty.net/technology/design-example-iec-61508-sil2">Industrial monitor (IEC 61508: SIL 2)</a></li>
+	<li class="page_item page-item-8973"><a href="http://www.safetty.net/technology/radiotherapy-machine-iec-62304-class-c">Radiotherapy machine (IEC 62304, Class C)</a></li>
+	<li class="page_item page-item-3164"><a href="http://www.safetty.net/technology/design-example-iso-26262">Automotive ECU (ISO 26262: ASIL D)</a></li>
+</ul>
+</li>
+<li class="page_item page-item-8629 page_item_has_children"><a href="http://www.safetty.net/consultancy">Consultancy</a>
+<ul class='children'>
+	<li class="page_item page-item-8657"><a href="http://www.safetty.net/consultancy/taster-days">Taster Days</a></li>
+</ul>
+</li>
+<li class="page_item page-item-835 page_item_has_children"><a href="http://www.safetty.net/training">Training</a>
+<ul class='children'>
+	<li class="page_item page-item-383"><a href="http://www.safetty.net/training/tta">TTa: Foundations of Reliable Embedded Systems</a></li>
+	<li class="page_item page-item-3872"><a href="http://www.safetty.net/training/ttb">TTb: The Engineering of Reliable Embedded Systems</a></li>
+	<li class="page_item page-item-1344"><a href="http://www.safetty.net/training/ttc">TTc: The Engineering of Safety-Critical Embedded Systems</a></li>
+	<li class="page_item page-item-8655"><a href="http://www.safetty.net/training/safetty-certified-programme">SafeTTy Certified™ programme</a></li>
+	<li class="page_item page-item-8249"><a href="http://www.safetty.net/training/tt-days">TT Days</a></li>
+	<li class="page_item page-item-271"><a href="http://www.safetty.net/training/beginners">Introductory training materials</a></li>
+	<li class="page_item page-item-7563"><a href="http://www.safetty.net/training/dates-of-public-training-courses">Dates of public courses and related events</a></li>
+	<li class="page_item page-item-1833"><a href="http://www.safetty.net/training/safetty-summer-school">SafeTTy Summer School</a></li>
+	<li class="page_item page-item-8718"><a href="http://www.safetty.net/training/previous-training-courses-and-related-events">Previous training courses and related events</a></li>
+	<li class="page_item page-item-7643"><a href="http://www.safetty.net/training/m01">M01</a></li>
+	<li class="page_item page-item-7647"><a href="http://www.safetty.net/training/t01">T01</a></li>
+	<li class="page_item page-item-7650"><a href="http://www.safetty.net/training/t02">T02</a></li>
+</ul>
+</li>
+<li class="page_item page-item-81 page_item_has_children current_page_ancestor current_page_parent"><a href="http://www.safetty.net/publications">Books</a>
+<ul class='children'>
+	<li class="page_item page-item-8184"><a href="http://www.safetty.net/publications/the-engineering-of-reliable-embedded-systems-second-edition">The Engineering of Reliable Embedded Systems (2nd Edition)</a></li>
+	<li class="page_item page-item-1115 current_page_item"><a href="http://www.safetty.net/publications/the-engineering-of-reliable-embedded-systems">The Engineering of Reliable Embedded Systems</a></li>
+	<li class="page_item page-item-55"><a href="http://www.safetty.net/publications/pttes">Patterns for Time-Triggered Embedded Systems</a></li>
+	<li class="page_item page-item-1109"><a href="http://www.safetty.net/publications/embedded-c">Embedded C</a></li>
+</ul>
+</li>
+<li class="page_item page-item-53 page_item_has_children"><a href="http://www.safetty.net/downloads">Downloads</a>
+<ul class='children'>
+	<li class="page_item page-item-2689"><a href="http://www.safetty.net/downloads/reference-designs">Time-Triggered Reference Designs</a></li>
+	<li class="page_item page-item-3261"><a href="http://www.safetty.net/downloads/tms570">TTRDs for the TMS570</a></li>
+	<li class="page_item page-item-579"><a href="http://www.safetty.net/downloads/lpc1769">TTRDs for the LPC1769</a></li>
+	<li class="page_item page-item-5717"><a href="http://www.safetty.net/downloads/dspic33ev">TTRDs for the dsPIC33EV</a></li>
+	<li class="page_item page-item-5699"><a href="http://www.safetty.net/downloads/c8051fx">TTRDs for the C8051Fx</a></li>
+	<li class="page_item page-item-1117"><a href="http://www.safetty.net/downloads/technical-reports">Technical Reports</a></li>
+</ul>
+</li>
+<li class="page_item page-item-1129 page_item_has_children"><a href="http://www.safetty.net/news">News</a>
+<ul class='children'>
+	<li class="page_item page-item-3525"><a href="http://www.safetty.net/news/previous-news-reports">Previous news reports</a></li>
+</ul>
+</li>
+<li class="page_item page-item-4807 page_item_has_children"><a href="http://www.safetty.net/technical-blog">Blog</a>
+<ul class='children'>
+	<li class="page_item page-item-9025"><a href="http://www.safetty.net/technical-blog/archive2015">Blog (2015)</a></li>
+</ul>
+</li>
+<li class="page_item page-item-9 page_item_has_children"><a href="http://www.safetty.net/contact">Contact</a>
+<ul class='children'>
+	<li class="page_item page-item-2895"><a href="http://www.safetty.net/contact/registered-office">Registered office</a></li>
+</ul>
+</li>
+<li class="page_item page-item-7 page_item_has_children"><a href="http://www.safetty.net/about">About</a>
+<ul class='children'>
+	<li class="page_item page-item-1135"><a href="http://www.safetty.net/about/vacancies">Vacancies</a></li>
+	<li class="page_item page-item-1159"><a href="http://www.safetty.net/about/partners">Partners</a></li>
+	<li class="page_item page-item-1681"><a href="http://www.safetty.net/about/privacy-policy">Privacy policy</a></li>
+	<li class="page_item page-item-1574"><a href="http://www.safetty.net/about/cookie-policy">Cookie Policy</a></li>
+</ul>
+</li>
+											</ul> <!-- end ul.nav -->
+				
+				
+				<div id="search-form">
+					<form method="get" id="searchform" action="http://www.safetty.net/">
+						<input type="text" value="search this site..." name="s" id="searchinput" />
+
+						<input type="image" src="http://www.safetty.net/wp-content/themes/TheProfessional/images/search_btn.png" id="searchsubmit" />
+					</form>
+				</div> <!-- end #search-form -->
+			</div> <!-- end #menu -->
+		</div> <!-- end #header -->
+
+			
+	<div id="content-top"></div>
+	<div id="content" class="clearfix">
+		<div id="content-area">
+					<div id="breadcrumbs">
+
+					<a href="http://www.safetty.net/">Home</a> <span class="sep"></span>
+
+									  The Engineering of Reliable Embedded Systems					
+</div> <!-- end #breadcrumbs -->
+			
+			<div class="entry clearfix post">
+				<h1 class="title">The Engineering of Reliable Embedded Systems</h1>
+
+				
+				<p><img class="alignright size-full wp-image-4509" src="http://www.safetty.net/wp-content/uploads/eres_cover_219.png" alt="eres_cover_219" width="219" height="325" srcset="http://www.safetty.net/wp-content/uploads/eres_cover_219.png 219w, http://www.safetty.net/wp-content/uploads/eres_cover_219-202x300.png 202w" sizes="(max-width: 219px) 100vw, 219px" />The &#8220;Engineering of Reliable Embedded Systems&#8221; (ERES) documents an industry-proven approach to the development of software for reliable, real-time embedded systems, based on the use of <a title="Technology" href="http://www.safetty.net/technology">time-triggered</a> (TT) architectures.</p>
+<ul>
+<li>A comprehensive “Model-Build-Monitor” methodology for TT systems is presented.</li>
+<li>Modelling of TT systems is explored in detail, with numerous worked examples.</li>
+<li>Extensive (and complete) code examples are included.</li>
+<li>Run-time monitoring techniques are described in detail.</li>
+<li>Links to related international safety standards and guidelines are included throughout the text.</li>
+</ul>
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<p><strong>The techniques described in ERES have been applied successfully in designs ranging from household goods to industrial systems.</strong></p>
+<p>These techniques have proved to be of particular benefit to organisations that need to develop systems in compliance with international safety standards, such as IEC 61508, ISO 26262, DO-178C, IEC 62304, ISO 13849, IEC 60335 and IEC 60730, up to &#8220;SIL 2&#8221; level or equivalent.</p>
+<p><strong>Comments from the author</strong></p>
+<p><em>&#8220;I completed work on &#8220;<a title="Patterns for Time-Triggered Embedded Systems" href="http://www.safetty.net/publications/pttes">Patterns for Time-Triggered Embedded Systems</a>&#8221; around 15 years ago. Since then, I&#8217;ve probably worked on or advised on more than 200 &#8216;TT&#8217; projects, and helped around 50 companies to make use of a TT approach for the first time. I&#8217;ve learned a great deal during this process. In &#8220;The Engineering of Reliable Embedded Systems&#8221;, I&#8217;ve done my best to encapsulate my experience in the development of reliable embedded systems using TT architectures.&#8221;</em></p>
+<p>[Michael J. Pont, December 2014.]</p>
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<hr />
+<img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<h3>Pre-order your copy of &#8216;ERES2&#8217; today!</h3>
+<p><a href="http://www.safetty.net/publications/the-engineering-of-reliable-embedded-systems-second-edition" rel="attachment wp-att-9280"><img src="http://www.safetty.net/wp-content/uploads/eres2_front_height_200px.png" alt="eres2_front_height_200px" width="130" height="200" class="alignright size-full wp-image-9280" /></a><br />
+<strong>The second edition of &#8216;ERES&#8217; (&#8216;<a href="http://www.safetty.net/publications/the-engineering-of-reliable-embedded-systems-second-edition">ERES2</a>&#8216;) will be published in June 2016.</strong></p>
+<p>Pont, M.J. (2016) <em>“The Engineering of Reliable Embedded Systems (Second Edition)”</em>, SafeTTy Systems.<br />
+ISBN: 978-0-9930355-3-1. £65.00.</p>
+<p><strong>Pre-order ERES2 on or before 29 April 2016 and pay just £35.00 (plus a delivery charge) for your copy.</strong></p>
+<p><em>This offer applies only to orders that are placed directly with SafeTTy Systems.</em></p>
+<p>Payment can be accepted by PayPal&reg; for book orders (or by bank transfer).</p>
+<p>Please <a href="http://www.safetty.net/contact">contact us</a> for further information or to place your order.</p>
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<hr />
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<h3 id="download">Download sample chapters</h3>
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<p>Sample material from &#8220;ERES&#8221; is available for download <a href="http://www.safetty.net/download/safetty_systems_eres_introduction.pdf">here</a>.</p>
+<p>The extensive sample material includes drafts of the Preface and the first three chapters (in full), plus the detailed Table of Contents.</p>
+<p>[Updated: Friday 23 January 2015.]</p>
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<hr />
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<h3>Download code examples</h3>
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<p>The team at SafeTTy Systems has developed an extensive set of &#8220;<a href="http://www.safetty.net/downloads/reference-designs" title="Time-Triggered Reference Designs">Time-Triggered Reference Designs</a>&#8221; (TTRDs). </p>
+<p>The TTRDs allow developers to implement a range of effective <a href="http://www.safetty.net/technology/tt-platforms">TT Platforms</a>.</p>
+<p>The TTRDs support the creation of effective task schedulers, robust tasks and comprehensive monitoring systems. </p>
+<p>Developers can work with co-operative tasks sets or with designs that require task pre-emption. </p>
+<p>The ERES book describes various TTRDs for the NXP&reg; LPC1769 microcontroller in detail.  These TTRDs target the readily-available (and low cost) <a href="https://www.lpcware.com/lpcxpresso" target="_blank">LPCXpresso</a> platform.  You can download the LPC1769 TTRDs <a href="http://www.safetty.net/downloads/lpc1769">here</a>.</p>
+<p><strong>The techniques described in ERES can be readily applied with numerous other microcontroller families: related TTRDs for devices from Texas Instruments®, STMicroelectronics®, Microchip Technology® and Silicon Laboratories® are available <a href="http://www.safetty.net/downloads/reference-designs">here</a>.</strong></p>
+<p><em>All of our TTRDs are freely available for non-commercial use.</em></p>
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<hr />
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<h3>Table of Contents</h3>
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /><br />
+<em> Definitions</em><br />
+<em> Acronyms and abbreviations</em><br />
+<em> Reference designs</em><br />
+<em> Preface</em></p>
+<h4>PART ONE: INTRODUCTION</h4>
+<p>CHAPTER 1: Introduction<br />
+CHAPTER 2: Creating a simple TTC scheduler<br />
+CHAPTER 3: Initial case study</p>
+<h4>PART TWO: CREATING RELIABLE TTC DESIGNS</h4>
+<p>CHAPTER 4: Modelling system timing characteristics<br />
+CHAPTER 5: Obtaining data for system models<br />
+CHAPTER 6: Timing considerations when designing tasks<br />
+CHAPTER 7: Multi-mode systems<br />
+CHAPTER 8: Task Contracts (Resource Barriers)<br />
+CHAPTER 9: Task Contracts (Time Barriers)<br />
+CHAPTER 10: Monitoring task execution sequences</p>
+<h4>PART THREE: CREATING RELIABLE TTH AND TTP DESIGNS</h4>
+<p>CHAPTER 11: Supporting task pre-emption<br />
+CHAPTER 12: Maximising temporal determinism</p>
+<h4>PART FOUR: COMPLETING THE SYSTEM</h4>
+<p>CHAPTER 13: Working with System Contracts<br />
+CHAPTER 14: Recommended system platforms<br />
+CHAPTER 15: Revisiting the case study</p>
+<h4>PART FIVE: CONCLUSIONS</h4>
+<p>CHAPTER 16: Conclusions</p>
+<h4>APPENDIX</h4>
+<p>APPENDIX 1: LPC1769 test platform<br />
+<em> Full list of references and related publications</em><br />
+<em> Index</em></p>
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<hr />
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<h3>Back cover</h3>
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<p><img class="aligncenter size-full wp-image-6377" src="http://www.safetty.net/wp-content/uploads/eres_1769_backcover.png" alt="eres_1769_backcover" width="568" height="849" srcset="http://www.safetty.net/wp-content/uploads/eres_1769_backcover.png 568w, http://www.safetty.net/wp-content/uploads/eres_1769_backcover-201x300.png 201w" sizes="(max-width: 568px) 100vw, 568px" /></p>
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<hr />
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+<h3>ReliabiliTTy® Technology Licences</h3>
+<p><img class="alignright size-full wp-image-3617" src="http://www.safetty.net/wp-content/uploads/rtl_logo5_257.png" alt="rtl_logo5_257" width="257" height="79" /><br />
+The books in the &#8220;Engineering of Reliable Embedded Systems&#8221; (ERES) series and the related Time-Triggered Reference Designs (<a title="Time-Triggered Reference Designs" href="http://www.safetty.net/downloads/reference-designs">TTRDs</a>) describe patented technology and are subject to copyright and other restrictions.</p>
+<p>The public TTRDs downloaded from this WWW site and the designs and techniques documented<br />
+in the ERES book series may be used without charge: [i] by universities and colleges in courses for which a degree up to and including “MSc” level (or equivalent) is awarded; [ii] for non-commercial projects carried out by individuals and hobbyists.</p>
+<p>Use of the techniques and code examples described in the ERES books in any commercial project (including training courses) or in university research projects (including PhD-level programmes and equivalent) requires purchase of a <a title="ReliabiliTTy®" href="http://www.safetty.net/technology/reliabilitty">ReliabiliTTy® Technology Licence</a>.</p>
+<p><img class="alignright size-full wp-image-170" src="http://www.safetty.net/wp-content/uploads/2013/04/empty_space.png" alt="empty_space" width="12" height="11" /></p>
+								
+			</div> <!-- end .entry -->
+
+            
+							</div> <!-- end #content-area -->
+
+	</div> <!-- end #content -->
+	<div id="content-bottom"></div>
+
+		<div id="footer" class="clearfix">
+			<p id="copyright">Designed by  <a href="http://www.elegantthemes.com/" title="Elegant Themes">Elegant Themes</a> | Powered by  <a href="http://www.wordpress.org/">Wordpress</a></p>
+		</div> <!-- end #footer -->
+
+	</div> <!-- end #container -->
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://www.safetty.net/wp-content/themes/TheProfessional/js/jquery.cycle.all.min.js"></script>
+	<script type="text/javascript" src="http://www.safetty.net/wp-content/themes/TheProfessional/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="http://www.safetty.net/wp-content/themes/TheProfessional/js/superfish.js"></script>
+	<script type="text/javascript" src="http://www.safetty.net/wp-content/themes/TheProfessional/js/jquery.lavalamp.1.3.3-min.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+		jQuery.noConflict();
+
+		jQuery('ul.nav').superfish({
+			delay:       300,                            // one second delay on mouseout
+			animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation
+			speed:       'fast',                          // faster animation speed
+			autoArrows:  true,                           // disable generation of arrow mark-up
+			dropShadows: false                            // disable drop shadows
+		});
+
+		jQuery('ul.nav > li > a.sf-with-ul').parent('li').addClass('sf-ul');
+
+
+		<!---- lavalamp ---->
+		jQuery('ul.nav ul > li').addClass('noLava');
+
+		var startLink = 0;
+
+		jQuery('ul.nav > li.current-cat-parent, ul.nav > li.current-cat, ul.nav > li.current-page-ancestor, ul.nav > li.current_page_parent, ul.nav > li.current_page_item').each(function(){
+			startLink = jQuery(this).prevAll().length;
+		});
+
+		jQuery('ul.nav').lavaLamp({ startItem: startLink });
+		if ( startLink !=0 ) jQuery('ul.nav > li.backLava').animate({left:'+=2'},0);
+
+
+		et_search_bar();
+
+		jQuery(window).load(  et_cycle_integration );
+
+
+		jQuery('#controllers-main a').hover(function(){
+			jQuery(this).find('span.tooltip').animate({ opacity: 'show', left: '-222px' }, 300);
+		},function(){
+			jQuery(this).find('span.tooltip').animate({ opacity: 'hide', left: '-232px' }, 300);
+		});
+
+
+		function et_cycle_integration(){
+			var $featured = jQuery('#featured'),
+				$featured_content = jQuery('#slides'),
+				$controller = jQuery('#controllers'),
+				$slider_control_tab = $controller.find('a');
+
+			if ($featured_content.length) {
+				$controller.css({ opacity : 0, 'display' : 'block' }).find('a img').css("opacity","0.7").end().find('a.active img').css("opacity","1");
+
+				$featured_content.css( 'backgroundImage', 'none' ).cycle({
+					fx: 'fade',
+					timeout: 0,
+					speed: 700,
+					cleartypeNoBg: true
+				});
+
+				if ( $featured_content.find('.slide').length == 1 ){
+					$featured_content.find('.slide').css({'position':'absolute','top':'3px','left':'11px'}).show();
+					jQuery('#featured a#left-arrow, #featured a#right-arrow, #featured #controllers').hide();
+				}
+
+			};
+
+			var pause_scroll = false;
+
+			jQuery('#slides, #controllers').hover(function(){
+				$controller.stop().animate({opacity: 1, top: "30px"},500);
+							}).mouseleave(function(){
+				$controller.stop().animate({opacity: 0, top: "15px"},500);
+							});
+
+			$slider_control_tab.hover(function(){
+				jQuery(this).find('img').stop().animate({opacity: 1},300);
+			}).mouseleave(function(){
+				if (!jQuery(this).hasClass("active")) jQuery(this).find('img').stop().animate({opacity: 0.7},300);
+			});
+
+
+			var ordernum;
+
+			function gonext(this_element){
+				$controller.find("a.active img").stop().animate({opacity: 0.7},300).parent('a').removeClass('active');
+
+				this_element.addClass('active').find('img').stop().animate({opacity: 1},300);
+
+				ordernum = this_element.attr("rel");
+				$featured_content.cycle(ordernum-1);
+
+				if (typeof interval != 'undefined') {
+					clearInterval(interval);
+					auto_rotate();
+				};
+			}
+
+			$slider_control_tab.click(function(){
+				gonext(jQuery(this));
+				return false;
+			});
+
+
+			var $nextArrow = jQuery('a#right-arrow'),
+				$prevArrow = jQuery('a#left-arrow');
+
+			$nextArrow.click(function(){
+				var activeSlide = $controller.find('a.active').attr("rel"),
+					$nextSlide = $controller.find('a:eq('+ activeSlide +')');
+
+				if ($nextSlide.length) gonext($nextSlide)
+				else gonext($controller.find('a:eq(0)'));
+
+				return false;
+			});
+
+			$prevArrow.click(function(){
+				var activeSlide = $controller.find('a.active').attr("rel")-2,
+					$nextSlide = $controller.find('a:eq('+ activeSlide +')');
+
+				if ($nextSlide.length && activeSlide != -1) { gonext($nextSlide); }
+				else {
+					var slidesNum = $slider_control_tab.length - 1;
+					gonext($controller.find('a:eq('+ slidesNum +')'));
+				};
+
+				return false;
+			});
+
+
+			
+			function auto_rotate(){
+				interval = setInterval(function() {
+					if (!pause_scroll) $nextArrow.click();
+				}, 4000);
+			};
+
+		};
+
+
+		<!---- Search Bar Improvements ---->
+		function et_search_bar(){
+			var $searchform = jQuery('#menu div#search-form'),
+				$searchinput = $searchform.find("input#searchinput"),
+				searchvalue = $searchinput.val();
+
+			$searchinput.focus(function(){
+				if (jQuery(this).val() === searchvalue) jQuery(this).val("");
+			}).blur(function(){
+				if (jQuery(this).val() === "") jQuery(this).val(searchvalue);
+			});
+		};
+
+		
+	//]]>
+	</script>		<script type="text/javascript">
+		jQuery(document).ready(function(){
+			if(!catapultReadCookie("catAccCookies")){//If the cookie has not been set
+				jQuery("#catapult-cookie-bar").show();
+				jQuery("html").css("margin-top","0");
+			}
+		});
+	</script>
+Copyright © 2014-2016 SafeTTy Systems Ltd.  All trademarks acknowledged.
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40480985-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1060203149;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1060203149/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!-- Google Code for View more than 1 page Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1060203149;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "5jXyCOaqjF8QjdXF-QM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1060203149/?label=5jXyCOaqjF8QjdXF-QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<script type='text/javascript' src='http://www.safetty.net/wp-includes/js/comment-reply.min.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://www.safetty.net/wp-content/themes/TheProfessional/epanel/page_templates/js/fancybox/jquery.easing-1.3.pack.js?ver=1.3.4'></script>
+<script type='text/javascript' src='http://www.safetty.net/wp-content/themes/TheProfessional/epanel/page_templates/js/fancybox/jquery.fancybox-1.3.4.pack.js?ver=1.3.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_ptemplates_strings = {"captcha":"Captcha","fill":"Fill","field":"field","invalid":"Invalid email"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.safetty.net/wp-content/themes/TheProfessional/epanel/page_templates/js/et-ptemplates-frontend.js?ver=1.1'></script>
+<script type='text/javascript' src='http://www.safetty.net/wp-includes/js/wp-embed.min.js?ver=4.5.2'></script>
+<div id="catapult-cookie-bar">This site uses cookies<button id="catapultCookie" tabindex=1 onclick="catapultAcceptCookies();">OK</button><a tabindex=1 href="http://www.safetty.net/cookie-policy">More info</a></div></body>
+
+<!-- Mirrored from www.safetty.net/publications/the-engineering-of-reliable-embedded-systems by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:20 GMT -->
+</html>

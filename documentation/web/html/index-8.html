@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html itemscope="itemscope" itemtype="http://schema.org/Article" lang="en">
+
+<!-- Mirrored from hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:15:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="dQIcgy2eQ8-zyE6l15aOsCdxiVDUKl84C_zi-lJivYE" />
+<meta name="viewport" content="width=960">
+<title>H-bot style 3D printer moves bed for Z-axis | Hackaday</title>
+<script>document.documentElement.className = "js"</script>
+
+<link rel="shortcut icon" href="https://s0.wp.com/wp-content/themes/vip/hackaday-2/favicon.ico" />
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://hackaday.com/xmlrpc.php">
+<link href="http://google.com/+hackaday" rel="publisher" />
+
+<!--[if lt IE 9]>
+    <script src="https://s0.wp.com/wp-content/themes/vip/hackaday-2/js/html5.js"></script>
+<![endif]-->
+
+		<script src='https://r-login.wordpress.com/remote-login.php?action=js&amp;host=hackaday.com&amp;id=4779443&amp;t=1463138691&amp;back=http%3A%2F%2Fhackaday.com%2F2013%2F04%2F05%2Fh-bot-style-3d-printer-moves-bed-for-z-axis%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="alternate" type="application/rss+xml" title="Hackaday &raquo; Feed" href="http://hackaday.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hackaday &raquo; Comments Feed" href="http://hackaday.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hackaday &raquo; H-bot style 3D printer moves bed for Z-axis Comments Feed" href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+	<link rel='stylesheet' id='all-css-0' href='https://s1.wp.com/_static/??-eJx9jl0OgkAMhC9kbRTCm/Esy1qXQvcn7KLx9haJRqPy0sw033SK1wQ2hkKhoJ8gyeQ4ZBQeKGNPJRk7wMNtbc4b/I3bOJLufTJlJjyd2JCQV2wt5lPzTM2y067VmmtSGto2jZQz6PQ8eSidFn3nljVeOOF82JzMDfaYy01oYRlDLKx4fom1ckcRJFpTOIYPA2cxPK5FR2olOpUOlXqz/57uanQSWyMzcPSHXd3sqmZfNVV/BwcUoN8=' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var SafeCommentsAjax = {"ajaxurl":"http:\/\/hackaday.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyFz10KwjAMAOALWetEhy/iWerMZurS1ibd1NMbRR/EoRAIpF9+asdkMDR9OQBbr3EukK+vNPc8s7+AIeyyE5gThjduYhAI8rAU99iDKQzZdVrTQW2ccCmyEDArmnj9PAnDgDD+ZR4kueZkMjDevqbKEXSfHTDZ1JcOA1t2LahOMYsyImXP/zrvLtq+o221qqvFplrWa38HPh9zrg=='></script>
+<link rel='stylesheet' id='all-css-0' href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621h' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://hackadaycom.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/" />
+<link rel='shortlink' href='http://wp.me/pk3lN-pkk' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fhackaday.com%2F2013%2F04%2F05%2Fh-bot-style-3d-printer-moves-bed-for-z-axis%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fhackaday.com%2F2013%2F04%2F05%2Fh-bot-style-3d-printer-moves-bed-for-z-axis%2F&amp;for=wpcom-auto-discovery" /><link rel='openid.server' href='http://hackadaycom.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://hackadaycom.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://hackaday.com/osd.xml" title="Hackaday" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<meta property="og:title" content="H-bot style 3D printer moves bed for Z-axis" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://hackadaycom.files.wordpress.com/2013/04/h-bot-style-3d-printer-e1416431497991.jpg?w=600&amp;h=600" />
+<meta property="og:url" content="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/" />
+<meta property="og:description" content="Check out this 3D printer (translated) which [Arkadiusz Śpiewak] has been working on. When sending in the tip about his project he made the important distinction that it isn&#039;t finished, but he h..." />
+<meta property="og:site_name" content="Hackaday" />
+
+<link rel="image_src" href="https://hackadaycom.files.wordpress.com/2013/04/h-bot-style-3d-printer-e1416431497991.jpg?w=600&amp;h=600"/>
+<meta itemprop="name" content="H-bot style 3D printer moves bed for Z-axis">
+<meta itemprop="description" content="Check out this 3D printer (translated) which [Arkadiusz Śpiewak] has been working on. When sending in the tip about his project he made the important distinction that it isn&#039;t finished, but he h...">
+<meta itemprop="image" content="https://hackadaycom.files.wordpress.com/2013/04/h-bot-style-3d-printer-e1416431497991.jpg?w=600&amp;h=600">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@hackaday">
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+				<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Hackaday" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Fresh hacks every day" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://hackaday.com/feed/;icon-uri=http://0.gravatar.com/blavatar/4f3e6b6daa090af416a1ba595885efd1?s=16" /><link rel="amphtml" href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/amp/" /><style type="text/css" id="syntaxhighlighteranchor"></style>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s1.wp.com/?custom-css=1&amp;csblog=k3lN&amp;cscache=6&amp;csrev=70" />
+		
+<script src="http://use.typekit.net/mpm6gph.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+<!-- Supplyframe Ads -->
+<!--<script type='text/javascript' src='http://ads.supplyframe.com/openads/www/delivery/spcjs.php?id=31&amp;block=1'></script>-->
+<script type='text/javascript'>
+function OA_show(e){if(typeof OA_output[e]=="undefined"){return}else{document.write(OA_output[e])}}function OA_showpop(e){zones=window.OA_zones?window.OA_zones:false;var t=e;if(typeof window.OA_zones!="undefined"){if(typeof zones[e]=="undefined"){return}t=zones[e]}var n="<"+"script type='text/javascript' ";n+="src='"+OA_p+"?zoneid="+t;n+="&source="+escape(OA_source)+"&r="+OA_r;OA_spc+="&amp%3Bblock=1";if(window.location)n+="&loc="+escape(window.location);if(document.referrer)n+="&referer="+escape(document.referrer);n+="'><"+"/script>";document.write(n)}if(typeof OA_zones!="undefined"){var OA_zoneids="";for(var zonename in OA_zones)OA_zoneids+=escape(zonename+"="+OA_zones[zonename]+"|");OA_zoneids+="&nz=1"}else{var OA_zoneids=escape("426|427|428|429|468")}if(typeof OA_source=="undefined"){OA_source=""}var OA_p=location.protocol=="https:"?"https://ads.supplyframe.com/openads/www/delivery/spc.php":"http://ads.supplyframe.com/openads/www/delivery/spc.php";var OA_r=Math.floor(Math.random()*99999999);OA_output=new Array;var OA_spc="<"+"script type='text/javascript' ";OA_spc+="src='"+OA_p+"?zones="+OA_zoneids;OA_spc+="&source="+escape(OA_source)+"&r="+OA_r;OA_spc+="&amp%3Bblock=1";OA_spc+=document.charset?"&charset="+document.charset:document.characterSet?"&charset="+document.characterSet:"";if(window.location)OA_spc+="&loc="+escape(window.location);if(document.referrer)OA_spc+="&referer="+escape(document.referrer);OA_spc+="'><"+"/script>";document.write(OA_spc);var OA_fo="";OA_fo+="<"+"script type='text/javascript' src='//ads.supplyframe.com/openads/www/delivery/fl.js'><"+"/script>\n";document.write(OA_fo);
+</script>
+
+</head>
+
+<body class="single single-post postid-97360 single-format-standard mp6 customizer-styles-applied group-blog highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+
+    <div id="leaderboard">
+        <script type='text/javascript'>
+            /* [id426] 728x90 */
+            OA_show(426);
+        </script>
+    </div>
+
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header id="masthead" class="site-header" role="banner">
+        <div class="site-branding">
+            <a href="http://hackaday.com/" rel="home">
+                <img src="https://s0.wp.com/wp-content/themes/vip/hackaday-2/img/logo.png" alt="Logo" class="logo-img">
+            </a>
+            <h1 class="site-title">
+                <a href="http://hackaday.com/" rel="home">Hackaday</a>
+            </h1>
+        </div>
+
+        <button class="menu-toggle"><span class="icon icon-navbar-toggle">Primary Menu</span></button>
+
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+            <div class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-90201" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90201"><a href="http://www.hackaday.com/">Home</a></li>
+<li id="menu-item-136904" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-136904"><a href="http://hackaday.com/blog/">Blog</a></li>
+<li id="menu-item-115276" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-115276"><a href="http://hackaday.io/?from=had&amp;utm_source=hackaday&amp;utm_medium=menu&amp;utm_campaign=blog">Hackaday.io</a></li>
+<li id="menu-item-97770" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97770"><a href="http://store.hackaday.com/?from=had&amp;utm_source=hackaday&amp;utm_medium=menu&amp;utm_campaign=blog">Store</a></li>
+<li id="menu-item-136905" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136905"><a title="Build Something that Matters" href="http://hackaday.io/prize">Hackaday Prize</a></li>
+<li id="menu-item-77211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77211"><a href="http://hackaday.com/submit-a-tip/">Submit</a></li>
+<li id="menu-item-101802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101802"><a href="http://hackaday.com/about/">About</a></li>
+</ul></div>		<aside id="hackaday_calendar-2" class="widget widget_hackaday_calendar"><div id="hackaday_calendar_wrap"><label class="calendar_current_time">May 13, 2016</label></div></aside>        </nav><!-- #site-navigation -->
+    </header><!-- #masthead -->
+
+    <div id="content" class="site-content">
+
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+
+        
+            
+<article itemscope itemtype="http://schema.org/Article" id="post-97360" class="post-97360 post type-post status-publish format-standard has-post-thumbnail hentry category-3d-printer-hacks tag-h-bot tag-smoothieboard">
+    <header class="entry-header">
+        <h1 class="entry-title" itemprop="name">H-bot style 3D printer moves bed for Z-axis</h1>
+        <div class="entry-meta">
+            <a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comments" class="comments-counts"><span class="icon-hackaday icon-hackaday-comment"></span>
+                30 Comments            </a>
+            <ul class="meta-authors vcard author">
+                <li>by:</li>
+                <span class="fn"><a href="http://hackaday.com/author/mikehackaday/" title="Posts by Mike Szczys" class="author url fn" rel="author">Mike Szczys</a></span>
+            </ul>
+        </div><!-- .entry-meta -->
+
+        <div class="entry-meta entry-meta-last">
+            <span class="entry-date published updated" itemprop="datePublished" content="April 5, 2013"><a href="http://hackaday.com/2013/04/05/" title="April 5, 2013 - 8:01 am">April 5, 2013</a></span>
+            <ul class="share-post">
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhackaday.com%2F2013%2F04%2F05%2Fh-bot-style-3d-printer-moves-bed-for-z-axis%2F" target="_blank"><span class="icon-hackaday icon-hackaday-facebook"></span></a></li>
+               <li><a href="https://twitter.com/intent/tweet?text=H-bot+style+3D+printer+moves+bed+for+Z-axis%20via%20@hackaday&amp;url=http%3A%2F%2Fhackaday.com%2F2013%2F04%2F05%2Fh-bot-style-3d-printer-moves-bed-for-z-axis%2F" target="_blank"><span class="icon-hackaday icon-hackaday-twitter"></span></a></li>
+                <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fhackaday.com%2F2013%2F04%2F05%2Fh-bot-style-3d-printer-moves-bed-for-z-axis%2F&amp;h1=en-US" target="_blank"><span class="icon-hackaday icon-hackaday-google"></span></a></li>
+            </ul>
+        </div><!-- .entry-meta -->
+
+        <div class="entry-featured-image"><img itemprop="image" content="https://hackadaycom.files.wordpress.com/2013/04/h-bot-style-3d-printer-e1416431497991.jpg?w=600&h=600" src="https://hackadaycom.files.wordpress.com/2013/04/h-bot-style-3d-printer-e1416431497991.jpg?w=800" alt=""></a></div>
+    </header><!-- .entry-header -->
+
+    <div class="entry-content" itemprop="articleBody">
+        <p><a href="http://3d-printers.pl/projekty/hhot/h-bot-pierwszy-wydruk/" target="_blank">Check out this 3D printer</a> (<a href="http://translate.google.com/translate?sl=auto&amp;tl=en&amp;js=n&amp;prev=_t&amp;hl=en&amp;ie=UTF-8&amp;eotf=1&amp;u=http%3A%2F%2F3d-printers.pl%2Fprojekty%2Fhhot%2Fh-bot-pierwszy-wydruk%2F" target="_blank">translated</a>) which [Arkadiusz Śpiewak] has been working on. When sending in the tip about his project he made the important distinction that it isn&#8217;t finished, but he has reached that critical threshold where he has printed items with it.</p>
+<p>He decided to go with a design that is sometimes referred to as an H-bot. If you&#8217;re completely unfamiliar with it, you may find <a href="http://www.edn.com/electronics-blogs/mechatronics-in-design/4368079/So-you-want-to-build-an-H-bot-" target="_blank">this H-bot design article</a> helpful. The gist of it is that this technique makes it so that the motors used to move the extruder along the X and Y axes are themselves stationary. One large timing (toothed) belt makes a circuit around the top of this cube in the shape of the letter H. This is a bit easier to see in [Arkadiusz&#8217;s] rendered image found after the jump along with video of an early print test.</p>
+<p>The Z axis uses two motors mounted along the bottom of the cube. These raise and lower the bead, instead of moving the extruder itself. All-in the printer should have a maximum object size of 30x30x30 centimeters. It&#8217;s being driven by a <a href="http://smoothieware.org/smoothieboard" target="_blank">Smoothieboard</a>, which was mentioned quite a bit when <a href="http://hackaday.com/2012/07/10/ra-3d-printer-controller-board-does-everything-has-disco-lights/">we were discussing using the RA driver board with a 3D printer</a>.</p>
+<p><span id="more-97360"></span></p>
+<p><img class="aligncenter size-large wp-image-97362" alt="hbot-zaxis" src="http://hackadaycom.files.wordpress.com/2013/04/hbot-zaxis.jpg?w=800&amp;h=600"   /></p>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html' width='800' height='480' src='http://www.youtube.com/embed/edFl9tjkxFE?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></p>
+            </div><!-- .entry-content -->
+
+    <footer class="entry-footer">
+        <span class="cat-links">Posted in <a href="http://hackaday.com/category/3d-printer-hacks/" rel="category tag">3d Printer hacks</a></span><span class="tags-links">Tagged <a href="http://hackaday.com/tag/h-bot/" rel="tag">h-bot</a>, <a href="http://hackaday.com/tag/smoothieboard/" rel="tag">smoothieboard</a></span><meta itemprop="url" content="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/"/>    </footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+            	<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+		<div class="nav-links">
+			<div class="nav-previous"><a href="http://hackaday.com/2013/04/05/electric-tricycle-build-log-is-like-hacker-crack/" rel="prev"><span class="meta-nav">&larr;</span>&nbsp;Electric tricycle build log is like hacker crack</a></div><div class="nav-next"><a href="http://hackaday.com/2013/04/05/stapler-hack-fastens-infinitely-large-sheets-of-paper/" rel="next">Stapler hack fastens infinitely large sheets of paper&nbsp;<span class="meta-nav">&rarr;</span></a></div>		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
+            <div class="content-ads-holder">
+                <script type='text/javascript'>
+                    /* [id429] 300x250 */
+                    OA_show(429);
+                </script>
+            </div>
+
+            
+<div id="comments" class="comments-area">
+
+    
+            <h2 class="comments-title">
+            30 thoughts on &ldquo;<span>H-bot style 3D printer moves bed for Z-axis</span>&rdquo;        </h2>
+
+        
+        <ol class="comment-list">
+            	<li id="comment-989621" class="comment even thread-even depth-1 parent  highlander-comment">
+		<article id="div-comment-989621" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">J</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989621">
+						<time datetime="2013-04-05T08:25:14+00:00">
+							April 5, 2013 at 8:25 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Isn&#8217;t this true for most 3D printers? I believe the MakerBot ones move the bed as well?</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989621"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989621', '491c2a479a', 'safe-comments-result-989621');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989621#respond' onclick='return addComment.moveForm( "div-comment-989621", "989621", "respond", "97360" )' aria-label='Reply to J'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-989634" class="comment odd alt depth-2 parent  highlander-comment">
+		<article id="div-comment-989634" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://3d-printers.pl/' rel='external nofollow' class='url'>Wulfnor</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989634">
+						<time datetime="2013-04-05T09:14:06+00:00">
+							April 5, 2013 at 9:14 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Yes, makerbot replicator, ultimaker, tauntillus are moving bed in Z axis. But on replicator you are also moving X motor. And on ultimaker and tauntillus x-y gantry cant take to much load, thats why they are using bowden extruder.<br />
+On h-bot i get both, lght weight x-y gantry, but also enough strenght to have direct drivern extruder, or even dual one.<br />
+Its just diffrent design, it has it good and bad sides.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989634"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989634', '491c2a479a', 'safe-comments-result-989634');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989634#respond' onclick='return addComment.moveForm( "div-comment-989634", "989634", "respond", "97360" )' aria-label='Reply to Wulfnor'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-989674" class="comment even depth-3   highlander-comment">
+		<article id="div-comment-989674" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://www.protospace.nl/' rel='external nofollow' class='url'>Jelle</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989674">
+						<time datetime="2013-04-05T11:13:25+00:00">
+							April 5, 2013 at 11:13 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>The Ultimaker gantry can take quite a load actually. The reason they use a bowden extruder is to keep it light for faster acceleration.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989674"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989674', '491c2a479a', 'safe-comments-result-989674');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989674#respond' onclick='return addComment.moveForm( "div-comment-989674", "989674", "respond", "97360" )' aria-label='Reply to Jelle'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-989720" class="comment odd alt depth-2   highlander-comment">
+		<article id="div-comment-989720" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='https://www.whatsappideal.nl/' rel='external nofollow' class='url'>Bitflusher</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989720">
+						<time datetime="2013-04-05T13:56:46+00:00">
+							April 5, 2013 at 1:56 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>In addition to the consumer/hobbiest 3d printers, most commercial 3d printers move Z instead of everything else.<br />
+The RepRap Mendel (and its many derivatives) uses a bed that is stationary on the Z axis to make it more compact.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989720"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989720', '491c2a479a', 'safe-comments-result-989720');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989720#respond' onclick='return addComment.moveForm( "div-comment-989720", "989720", "respond", "97360" )' aria-label='Reply to Bitflusher'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-989623" class="comment even thread-odd thread-alt depth-1 parent  highlander-comment">
+		<article id="div-comment-989623" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">John</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989623">
+						<time datetime="2013-04-05T08:38:41+00:00">
+							April 5, 2013 at 8:38 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>The smoothieboard site doesn&#8217;t look like it&#8217;s been updated for a while. Anybody know how active the project is?</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989623"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989623', '491c2a479a', 'safe-comments-result-989623');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989623#respond' onclick='return addComment.moveForm( "div-comment-989623", "989623", "respond", "97360" )' aria-label='Reply to John'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-989628" class="comment odd alt depth-2   highlander-comment">
+		<article id="div-comment-989628" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://smoothieware.org/' rel='external nofollow' class='url'>arthur</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989628">
+						<time datetime="2013-04-05T08:51:48+00:00">
+							April 5, 2013 at 8:51 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>The wiki ( documentation ) itself is updated often, but we don&#8217;t use the blog much because it&#8217;s not very convenient to use. I&#8217;ll put some work into that, and start doing more frequent updates.<br />
+The community really revolves around the IRC channel ( #smoothieware @ irc.freenode.net ), the website is just for documentation.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989628"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989628', '491c2a479a', 'safe-comments-result-989628');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989628#respond' onclick='return addComment.moveForm( "div-comment-989628", "989628", "respond", "97360" )' aria-label='Reply to arthur'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-989626" class="comment even thread-even depth-1 parent  highlander-comment">
+		<article id="div-comment-989626" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">Justin</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989626">
+						<time datetime="2013-04-05T08:49:46+00:00">
+							April 5, 2013 at 8:49 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Isn&#8217;t weight distribution an issue in this setup?</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989626"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989626', '491c2a479a', 'safe-comments-result-989626');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989626#respond' onclick='return addComment.moveForm( "div-comment-989626", "989626", "respond", "97360" )' aria-label='Reply to Justin'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-989633" class="comment odd alt depth-2 parent  highlander-comment">
+		<article id="div-comment-989633" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://3d-printers.pl/' rel='external nofollow' class='url'>Wulfnor</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989633">
+						<time datetime="2013-04-05T09:10:56+00:00">
+							April 5, 2013 at 9:10 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>In what way? Mass thats moving on this printer is very low comparet to prusa, on h-bot only x axis and extruders are moving with fast speed. All stepper motors are stationary besides extruder one. Misumi 20&#215;20 profiles are also very rigit.<br />
+Aslo i have ability to use big nema 23 motors, that are cheaper for same or greater torque, and im not addind any payload.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989633"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989633', '491c2a479a', 'safe-comments-result-989633');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989633#respond' onclick='return addComment.moveForm( "div-comment-989633", "989633", "respond", "97360" )' aria-label='Reply to Wulfnor'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-989645" class="comment even depth-3 parent  highlander-comment">
+		<article id="div-comment-989645" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">Justin</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989645">
+						<time datetime="2013-04-05T10:12:00+00:00">
+							April 5, 2013 at 10:12 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Well, if the mass of the object being printed isn&#8217;t centered on the table&#8217;s horizontal axis it&#8217;ll cause a tilt. It&#8217;s a fairly big table on a fairly narrow support.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989645"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989645', '491c2a479a', 'safe-comments-result-989645');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989645#respond' onclick='return addComment.moveForm( "div-comment-989645", "989645", "respond", "97360" )' aria-label='Reply to Justin'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-989669" class="comment odd alt depth-4   highlander-comment">
+		<article id="div-comment-989669" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">chango</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989669">
+						<time datetime="2013-04-05T11:06:09+00:00">
+							April 5, 2013 at 11:06 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Look at that big fat linear slide and extrusion frame for the bed.  It&#8217;s not going anywhere.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989669"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989669', '491c2a479a', 'safe-comments-result-989669');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989669#respond' onclick='return addComment.moveForm( "div-comment-989669", "989669", "respond", "97360" )' aria-label='Reply to chango'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+	<li id="comment-989676" class="comment even depth-4   highlander-comment">
+		<article id="div-comment-989676" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://www.protospace.nl/' rel='external nofollow' class='url'>Jelle</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989676">
+						<time datetime="2013-04-05T11:18:16+00:00">
+							April 5, 2013 at 11:18 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>So what weight were you thinking about? Most 3D printed stuff is around 10-20 grams and takes about half an hour (on an ultimaker) to print. That is never going to move with those (indeed massive overkill) linear slides.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989676"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989676', '491c2a479a', 'safe-comments-result-989676');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989676#respond' onclick='return addComment.moveForm( "div-comment-989676", "989676", "respond", "97360" )' aria-label='Reply to Jelle'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-989673" class="comment odd alt thread-odd thread-alt depth-1   highlander-comment">
+		<article id="div-comment-989673" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">Thomas Thomas</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989673">
+						<time datetime="2013-04-05T11:13:19+00:00">
+							April 5, 2013 at 11:13 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Oooh it moves the bed for the Z axis! Wait didn&#8217;t the RepRap Darwin do that? Oh ya. It is cool not moving the X axis motor though!</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989673"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989673', '491c2a479a', 'safe-comments-result-989673');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989673#respond' onclick='return addComment.moveForm( "div-comment-989673", "989673", "respond", "97360" )' aria-label='Reply to Thomas Thomas'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+	<li id="comment-989700" class="comment even thread-even depth-1 parent  highlander-comment">
+		<article id="div-comment-989700" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">Adrian</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989700">
+						<time datetime="2013-04-05T12:42:06+00:00">
+							April 5, 2013 at 12:42 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I&#8217;ve never seen this H configuration before, its absolutely fascinating. Thanks for exposing me to this new design!</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989700"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989700', '491c2a479a', 'safe-comments-result-989700');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989700#respond' onclick='return addComment.moveForm( "div-comment-989700", "989700", "respond", "97360" )' aria-label='Reply to Adrian'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-989716" class="comment odd alt depth-2   highlander-comment">
+		<article id="div-comment-989716" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://3d-printers.pl/' rel='external nofollow' class='url'>Wulfnor</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989716">
+						<time datetime="2013-04-05T13:41:44+00:00">
+							April 5, 2013 at 1:41 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>No problem, its nice to hear that someone likes this design. Its pretty nice indeed and most fun part is that it needs some figuring out how the hell it works :)</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989716"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989716', '491c2a479a', 'safe-comments-result-989716');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989716#respond' onclick='return addComment.moveForm( "div-comment-989716", "989716", "respond", "97360" )' aria-label='Reply to Wulfnor'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-989703" class="comment even thread-odd thread-alt depth-1 parent  highlander-comment">
+		<article id="div-comment-989703" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">Mr Kaizer</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989703">
+						<time datetime="2013-04-05T12:54:31+00:00">
+							April 5, 2013 at 12:54 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>This H-belt-design looks really interesting. It seems you need less smooth rods for the x-y-axis than for exaple the Ultimaker and less bearings as well.<br />
+Does it have a particular disadvantage?</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989703"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989703', '491c2a479a', 'safe-comments-result-989703');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989703#respond' onclick='return addComment.moveForm( "div-comment-989703", "989703", "respond", "97360" )' aria-label='Reply to Mr Kaizer'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-989715" class="comment odd alt depth-2   highlander-comment">
+		<article id="div-comment-989715" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://3d-printers.pl/' rel='external nofollow' class='url'>Wulfnor</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989715">
+						<time datetime="2013-04-05T13:39:27+00:00">
+							April 5, 2013 at 1:39 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>You need 6 idlers for belt placed in such way that belt is always parralel to smoothbars and itself, so all radiuses have to be exact. All those bends and lenght of belt byitself needs some force to move belt around, so you need more torque, thats why im using nema 23 1Nm motors.<br />
+Other than that o dont se any big disadvantages, its just less comon used design so  had some design problems on the way.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989715"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989715', '491c2a479a', 'safe-comments-result-989715');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989715#respond' onclick='return addComment.moveForm( "div-comment-989715", "989715", "respond", "97360" )' aria-label='Reply to Wulfnor'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-989741" class="comment even thread-even depth-1 parent  highlander-comment">
+		<article id="div-comment-989741" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">drmd</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989741">
+						<time datetime="2013-04-05T15:07:53+00:00">
+							April 5, 2013 at 3:07 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I am working on a similar design for about 6 months now and i can tell you just by looking at your acceleration and speed(very low) in the vid that you have the common bed vibration/shaking problem associated with designing floating Z lift axis.  Let us know if you find a solution to the problem other than software.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989741"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989741', '491c2a479a', 'safe-comments-result-989741');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989741#respond' onclick='return addComment.moveForm( "div-comment-989741", "989741", "respond", "97360" )' aria-label='Reply to drmd'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-989748" class="comment odd alt depth-2   highlander-comment">
+		<article id="div-comment-989748" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://3d-printers.pl/' rel='external nofollow' class='url'>Wulfnor</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989748">
+						<time datetime="2013-04-05T15:38:29+00:00">
+							April 5, 2013 at 3:38 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Low acceleration and speed are not related to mechanical design. Bed isnt shaking or anything like that. I had to lower those values becouse of deacceleration bug that Arthur is now fighting.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989748"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989748', '491c2a479a', 'safe-comments-result-989748');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989748#respond' onclick='return addComment.moveForm( "div-comment-989748", "989748", "respond", "97360" )' aria-label='Reply to Wulfnor'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+	<li id="comment-990052" class="comment even depth-2 parent  highlander-comment">
+		<article id="div-comment-990052" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://smoothieware.org/' rel='external nofollow' class='url'>arthur</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-990052">
+						<time datetime="2013-04-06T11:24:33+00:00">
+							April 6, 2013 at 11:24 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I&#8217;ve used the rails that are on the Z here, they are extremely sturdy, I don&#8217;t expect any bed vibration/shaking.<br />
+The low speed is indeed due to a problem we have in smoothie when combining high speeds and high step rates.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-990052"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '990052', '491c2a479a', 'safe-comments-result-990052');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=990052#respond' onclick='return addComment.moveForm( "div-comment-990052", "990052", "respond", "97360" )' aria-label='Reply to arthur'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-1003106" class="comment byuser comment-author-michaelromney odd alt depth-3   highlander-comment">
+		<article id="div-comment-1003106" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://michaelromney.wordpress.com/' rel='external nofollow' class='url'>michaelromney</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-1003106">
+						<time datetime="2013-05-10T15:25:44+00:00">
+							May 10, 2013 at 3:25 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Have the issues with the H-bot configuration and high speed/high step rates for Smoothieboard been worked out?</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-1003106"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '1003106', '491c2a479a', 'safe-comments-result-1003106');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=1003106#respond' onclick='return addComment.moveForm( "div-comment-1003106", "1003106", "respond", "97360" )' aria-label='Reply to michaelromney'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-989788" class="comment even thread-odd thread-alt depth-1   highlander-comment">
+		<article id="div-comment-989788" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://www.elefu.com/' rel='external nofollow' class='url'>James Howard</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989788">
+						<time datetime="2013-04-05T19:15:00+00:00">
+							April 5, 2013 at 7:15 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>It looks like it will be a nice printer when you get it all done. And thanks for mentioning the RA board in the article. <a href="http://www.elefu.com/index.php?route=product/product&amp;product_id=51" rel="nofollow" target="_blank">http://www.elefu.com/index.php?route=product/product&#038;product_id=51</a></p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989788"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989788', '491c2a479a', 'safe-comments-result-989788');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989788#respond' onclick='return addComment.moveForm( "div-comment-989788", "989788", "respond", "97360" )' aria-label='Reply to James Howard'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+	<li id="comment-989867" class="comment odd alt thread-even depth-1 parent  highlander-comment">
+		<article id="div-comment-989867" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://ah-screwit.blogspot.com/' rel='external nofollow' class='url'>Dan</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-989867">
+						<time datetime="2013-04-06T00:13:46+00:00">
+							April 6, 2013 at 12:13 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Anyone wanting to see a bit more should search for the original inventor Ian Moyer,</p>
+<p>There are two belts not one really long belt.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-989867"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '989867', '491c2a479a', 'safe-comments-result-989867');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=989867#respond' onclick='return addComment.moveForm( "div-comment-989867", "989867", "respond", "97360" )' aria-label='Reply to Dan'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-990257" class="comment byuser comment-author-anthonyvhdotcom even depth-2 parent  highlander-comment">
+		<article id="div-comment-990257" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">anthonyvhdotcom</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-990257">
+						<time datetime="2013-04-07T04:48:09+00:00">
+							April 7, 2013 at 4:48 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>No, there is in fact one large belt. Take a look at CoreXY (<a href="http://corexy.com/" rel="nofollow" target="_blank">http://corexy.com</a>) &amp; FoldaRap2 (<a href="http://www.reprap.org/wiki/FoldaRap2" rel="nofollow" target="_blank">http://www.reprap.org/wiki/FoldaRap2</a>). The advantage of the CoreXY is that it eliminates moment forces in the moving carriage, at the cost of extra mechanical complexity &amp; required belt length.</p>
+<p>I am working on a printer extremely similar to the one presented here. Hopefully I get it moving by the end of next week.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-990257"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '990257', '491c2a479a', 'safe-comments-result-990257');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=990257#respond' onclick='return addComment.moveForm( "div-comment-990257", "990257", "respond", "97360" )' aria-label='Reply to anthonyvhdotcom'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-1020578" class="comment odd alt depth-3 parent  highlander-comment">
+		<article id="div-comment-1020578" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">p</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-1020578">
+						<time datetime="2013-06-28T06:38:14+00:00">
+							June 28, 2013 at 6:38 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>&#8220;No, there is in fact one large belt. Take a look at CoreXY (<a href="http://corexy.com/" rel="nofollow" target="_blank">http://corexy.com</a>) &amp; FoldaRap2 (<a href="http://www.reprap.org/wiki/FoldaRap2" rel="nofollow" target="_blank">http://www.reprap.org/wiki/FoldaRap2</a>). The advantage of the CoreXY is that it eliminates moment forces in the moving carriage, at the cost of extra mechanical complexity &amp; required belt length.&#8221;</p>
+<p>Does CoreXY not use two belts? It looks like two to me&#8230;am I missing something?</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-1020578"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '1020578', '491c2a479a', 'safe-comments-result-1020578');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=1020578#respond' onclick='return addComment.moveForm( "div-comment-1020578", "1020578", "respond", "97360" )' aria-label='Reply to p'>Reply</a></div>		</article><!-- .comment-body -->
+	<ol class="children">
+	<li id="comment-1073695" class="comment even depth-4   highlander-comment">
+		<article id="div-comment-1073695" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://3dbotz.com/' rel='external nofollow' class='url'>Chris</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-1073695">
+						<time datetime="2013-10-11T17:02:30+00:00">
+							October 11, 2013 at 5:02 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>CoreXY uses 2x belts.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-1073695"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '1073695', '491c2a479a', 'safe-comments-result-1073695');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=1073695#respond' onclick='return addComment.moveForm( "div-comment-1073695", "1073695", "respond", "97360" )' aria-label='Reply to Chris'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+	<li id="comment-2894359" class="comment byuser comment-author-keithfromcanada odd alt depth-4   highlander-comment">
+		<article id="div-comment-2894359" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://keithfromcanada.wordpress.com/' rel='external nofollow' class='url'>keithfromcanada</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-2894359">
+						<time datetime="2016-01-22T13:58:22+00:00">
+							January 22, 2016 at 1:58 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>He also built a portable CNC and CNC/3D printer: <a href="http://web.mit.edu/imoyer/www/portfolio/" rel="nofollow" target="_blank">http://web.mit.edu/imoyer/www/portfolio/</a></p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-2894359"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '2894359', '491c2a479a', 'safe-comments-result-2894359');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=2894359#respond' onclick='return addComment.moveForm( "div-comment-2894359", "2894359", "respond", "97360" )' aria-label='Reply to keithfromcanada'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-991672" class="comment even thread-odd thread-alt depth-1   highlander-comment">
+		<article id="div-comment-991672" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://www.ifgot.com/' rel='external nofollow' class='url'>joy</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-991672">
+						<time datetime="2013-04-10T07:40:57+00:00">
+							April 10, 2013 at 7:40 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>3 d printer is a great invention<br />
+I am working on a 3d printer extremely similar to the one presented here. Hopefully I get it moving by the end of next week.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-991672"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '991672', '491c2a479a', 'safe-comments-result-991672');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=991672#respond' onclick='return addComment.moveForm( "div-comment-991672", "991672", "respond", "97360" )' aria-label='Reply to joy'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+	<li id="comment-1073652" class="comment odd alt thread-even depth-1   highlander-comment">
+		<article id="div-comment-1073652" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://3dbotz.com/' rel='external nofollow' class='url'>Chris</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-1073652">
+						<time datetime="2013-10-11T15:32:07+00:00">
+							October 11, 2013 at 3:32 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I built a somewhat simplified version of this printer</p>
+<p><a href="http://3dbotz.com/?product=3dbotz-m2-8x8-diy-kit" rel="nofollow" target="_blank">http://3dbotz.com/?product=3dbotz-m2-8&#215;8-diy-kit</a></p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-1073652"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '1073652', '491c2a479a', 'safe-comments-result-1073652');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=1073652#respond' onclick='return addComment.moveForm( "div-comment-1073652", "1073652", "respond", "97360" )' aria-label='Reply to Chris'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+	<li id="comment-1121137" class="comment even thread-odd thread-alt depth-1   highlander-comment">
+		<article id="div-comment-1121137" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn">carl-f</b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-1121137">
+						<time datetime="2013-12-03T17:45:19+00:00">
+							December 3, 2013 at 5:45 pm						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Love the design, I am making my own H-bot version, but using v-slot with no linear rods and using a 8&#8243;x12&#8243; bed from maker farm.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-1121137"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '1121137', '491c2a479a', 'safe-comments-result-1121137');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=1121137#respond' onclick='return addComment.moveForm( "div-comment-1121137", "1121137", "respond", "97360" )' aria-label='Reply to carl-f'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+	<li id="comment-2225519" class="comment odd alt thread-even depth-1   highlander-comment">
+		<article id="div-comment-2225519" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+										<b class="fn"><a href='http://www.tmctouristservices.com/' rel='external nofollow' class='url'>venus</a></b> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+				<div class="comment-metadata">
+					<a href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#comment-2225519">
+						<time datetime="2014-12-08T08:32:20+00:00">
+							December 8, 2014 at 8:32 am						</time>
+					</a>
+									</div><!-- .comment-metadata -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>3D printer super Love the design, I am making my own H-bot version, but using v-slot with no linear rods and using a 8″x12″ bed from maker farm.</p>
+			</div><!-- .comment-content -->
+			<div class="report-abuse">
+                
+			<span id="safe-comments-result-2225519"><a class="hide-if-no-js" href="javascript:void(0);" onclick="safe_report_comments_flag_comment( '2225519', '491c2a479a', 'safe-comments-result-2225519');">Report comment</a></span>            </div>
+			<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/?replytocom=2225519#respond' onclick='return addComment.moveForm( "div-comment-2225519", "2225519", "respond", "97360" )' aria-label='Reply to venus'>Reply</a></div>		</article><!-- .comment-body -->
+	</li><!-- #comment-## -->
+        </ol><!-- .comment-list -->
+
+        
+    
+    
+    				<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="http://hackaday.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+					<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="d2e8d45b7a" /><input type="hidden" name="_wp_http_referer" value="/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="#" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value="" /></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="#" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="#" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="#" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="#" alt="Google+ photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p><p class="post-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;" tabindex="7"/> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog"  style="display: inline;">Notify me of new posts via email.</label></p></div>
+
+
+
+
+<p class="form-submit"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='97360' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d256c5cfc5" /></p>
+<input type="hidden" name="genseq" value="1463138691" />
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="171"/></p>				</form>
+					</div><!-- #respond -->
+		<div style="clear: both"></div>
+</div><!-- #comments -->
+
+        
+        </main><!-- #main -->
+    </div><!-- #primary -->
+
+
+<div id="secondary" class="widget-area" role="complementary">
+
+    <div class="sidebar-ads-holder">
+        <script type='text/javascript'>
+            /* [id428] 300x250 */
+            OA_show(428);
+        </script>
+    </div>
+
+    <!-- store ad -->
+    <iframe class="sidebar-store-ad" scrolling="no" frameborder="0" align="top" marginwidth="0" marginheight="0" src="http://search.supplyframe.com/partner/31/464/<search term>"></iframe>
+
+    <aside id="search-2" class="widget widget_search"><h1 class="widget-title">Search</h1><form role="search" method="get" class="search-form" action="http://hackaday.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside><aside id="hackadayfollowus-2" class="widget widget-follow-us"><h1 class="widget-title">Never miss a hack</h1>
+			<a href="https://www.facebook.com/pages/Hack-a-Day/136115233068429" target="_blank" class="icon-social icon-facebook">Follow on facebook</a>
+			<a href="https://plus.google.com/+hackaday/posts" target="_blank" class="icon-social icon-plusone">Follow on google+</a>
+			<a href="https://twitter.com/hackaday" target="_blank" class="icon-social icon-twitter">Follow on twitter</a>
+			<a href="https://www.youtube.com/user/hackaday" target="_blank" class="icon-social icon-youtube">Follow on youtube</a>
+			<a href="https://hackaday.com/blog/feed/" target="_blank" class="icon-social icon-rss">Follow on rss</a>
+			<a href="mailto:tips@hackaday.com" class="icon-social icon-contact">Contact us</a>
+		</aside><aside id="hackadaysubscribe-3" class="widget widget-had-subscribe"><h1 class="widget-title">Subscribe</h1>
+            <form role="subscribe" action="http://hackaday.us9.list-manage.com/subscribe/post?u=dfadb71b0b15629cef5abf016&amp;id=f37880df9f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="subscribe-form validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">
+                    <input type="email" value="" name="EMAIL" class="subscribe-field" placeholder="Enter Email Address" id="mce-EMAIL" required>
+                </label>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_dfadb71b0b15629cef5abf016_f37880df9f" tabindex="-1" value=""></div>
+                <input type="submit" class="subscribe-submit" id="mc-embedded-subscribe" value="Subscribe">
+                </div>
+            </form>
+		</aside><aside id="hackadayrecentposts-2" class="widget widget-recent-posts"><h1 class="widget-title">If you missed it</h1>
+	<ul>
+			<li>
+			<a href="http://hackaday.com/2016/05/12/to-see-within-making-medical-x-rays/" class="recent-image">
+						<img src="https://hackadaycom.files.wordpress.com/2016/05/xray-thumb.jpg?w=300&amp;h=300" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="http://hackaday.com/2016/05/12/to-see-within-making-medical-x-rays/">To See Within: Making Medical X-rays</a>
+				</h2>
+				<a href="http://hackaday.com/2016/05/12/to-see-within-making-medical-x-rays//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 28 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="http://hackaday.com/2016/05/12/safety-cleanliness-documentation-and-more-habits-that-make-your-work-better/" class="recent-image">
+						<img src="https://hackadaycom.files.wordpress.com/2016/05/habits-thumb.jpg?w=300&amp;h=300" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="http://hackaday.com/2016/05/12/safety-cleanliness-documentation-and-more-habits-that-make-your-work-better/">Path to Craftsmanship: Safety, Cleanliness, and Documentation as Habits</a>
+				</h2>
+				<a href="http://hackaday.com/2016/05/12/safety-cleanliness-documentation-and-more-habits-that-make-your-work-better//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 43 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="http://hackaday.com/2016/05/11/looking-mains-voltage-in-the-eye-and-surviving-part-1/" class="recent-image">
+						<img src="https://hackadaycom.files.wordpress.com/2016/05/voltage-thumb.jpg?w=300&amp;h=300" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="http://hackaday.com/2016/05/11/looking-mains-voltage-in-the-eye-and-surviving-part-1/">Looking Mains Voltage In The Eye And Surviving</a>
+				</h2>
+				<a href="http://hackaday.com/2016/05/11/looking-mains-voltage-in-the-eye-and-surviving-part-1//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 172 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="http://hackaday.com/2016/05/10/dont-ignore-the-artists-supply-store/" class="recent-image">
+						<img src="https://hackadaycom.files.wordpress.com/2016/04/2016-04-25-13-45-00.jpg?w=300&amp;h=300" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="http://hackaday.com/2016/05/10/dont-ignore-the-artists-supply-store/">Don&#8217;t Ignore the Artist&#8217;s Supply Store</a>
+				</h2>
+				<a href="http://hackaday.com/2016/05/10/dont-ignore-the-artists-supply-store//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 44 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="http://hackaday.com/2016/05/09/drones-what-exactly-do-they-offer-agriculture/" class="recent-image">
+						<img src="https://hackadaycom.files.wordpress.com/2016/05/agriculture-thumb.jpg?w=300&amp;h=300" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="http://hackaday.com/2016/05/09/drones-what-exactly-do-they-offer-agriculture/">The Coming Wide-Spread Use of Drones in Agriculture</a>
+				</h2>
+				<a href="http://hackaday.com/2016/05/09/drones-what-exactly-do-they-offer-agriculture//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 35 Comments				</a>
+			</div>
+		</li>
+		</ul>
+	<a href="http://hackaday.com/category/featured/">More from this category</a>
+	</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1><label class="screen-reader-text" for="cat">Categories</label><select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="114554125">3d Printer hacks</option>
+	<option class="level-0" value="18020710">Android Hacks</option>
+	<option class="level-0" value="18020705">Arduino Hacks</option>
+	<option class="level-0" value="27981650">ARM</option>
+	<option class="level-0" value="33199679">Ask Hackaday</option>
+	<option class="level-0" value="64298109">ATtiny Hacks</option>
+	<option class="level-0" value="25122024">Beer Hacks</option>
+	<option class="level-0" value="12115263">blackberry hacks</option>
+	<option class="level-0" value="422570206">Business</option>
+	<option class="level-0" value="23971598">car hacks</option>
+	<option class="level-0" value="11894719">Cellphone Hacks</option>
+	<option class="level-0" value="35745764">chemistry hacks</option>
+	<option class="level-0" value="24483654">classic hacks</option>
+	<option class="level-0" value="31677810">clock hacks</option>
+	<option class="level-0" value="18755632">cnc hacks</option>
+	<option class="level-0" value="568165">computer hacks</option>
+	<option class="level-0" value="78428">cons</option>
+	<option class="level-0" value="5738">contests</option>
+	<option class="level-0" value="3923181">cooking hacks</option>
+	<option class="level-0" value="2588813">Crowd Funding</option>
+	<option class="level-0" value="422570209">Current Events</option>
+	<option class="level-0" value="10969032">digital audio hacks</option>
+	<option class="level-0" value="10969033">digital cameras hacks</option>
+	<option class="level-0" value="10969034">downloads hacks</option>
+	<option class="level-0" value="107827385">drone hacks</option>
+	<option class="level-0" value="63176382">Engine Hacks</option>
+	<option class="level-0" value="422570207">Engineering</option>
+	<option class="level-0" value="212825112">Fail of the Week</option>
+	<option class="level-0" value="35890">Featured</option>
+	<option class="level-0" value="551890">firefox hacks</option>
+	<option class="level-0" value="53446541">FPGA</option>
+	<option class="level-0" value="18020562">g1 hacks</option>
+	<option class="level-0" value="320557">google hacks</option>
+	<option class="level-0" value="10969036">gps hacks</option>
+	<option class="level-0" value="24535490">green hacks</option>
+	<option class="level-0" value="190105353">Hackaday Columns</option>
+	<option class="level-0" value="27311668">Hackaday links</option>
+	<option class="level-0" value="289711781">Hackaday Store</option>
+	<option class="level-0" value="21755374">Hackerspaces</option>
+	<option class="level-0" value="6310599">HackIt</option>
+	<option class="level-0" value="10969037">handhelds hacks</option>
+	<option class="level-0" value="79">hardware</option>
+	<option class="level-0" value="421979219">History</option>
+	<option class="level-0" value="66307084">Holiday Hacks</option>
+	<option class="level-0" value="10969038">home entertainment hacks</option>
+	<option class="level-0" value="5660882">home hacks</option>
+	<option class="level-0" value="2708">how-to</option>
+	<option class="level-0" value="422570204">Interest</option>
+	<option class="level-0" value="908478">internet hacks</option>
+	<option class="level-0" value="831">Interviews</option>
+	<option class="level-0" value="1416772">iphone hacks</option>
+	<option class="level-0" value="1275163">ipod hacks</option>
+	<option class="level-0" value="4157506">Kindle hacks</option>
+	<option class="level-0" value="46717088">Kinect hacks</option>
+	<option class="level-0" value="10969048">laptops hacks</option>
+	<option class="level-0" value="10969055">laser hacks</option>
+	<option class="level-0" value="18020716">led hacks</option>
+	<option class="level-0" value="10626">lifehacks</option>
+	<option class="level-0" value="729674">linux hacks</option>
+	<option class="level-0" value="20732807">lockpicking hacks</option>
+	<option class="level-0" value="10969060">macs hacks</option>
+	<option class="level-0" value="2377605">major tom</option>
+	<option class="level-0" value="11284667">Medical hacks</option>
+	<option class="level-0" value="139916">Microcontrollers</option>
+	<option class="level-0" value="5611793">misc hacks</option>
+	<option class="level-0" value="18020730">multitouch hacks</option>
+	<option class="level-0" value="22652725">musical hacks</option>
+	<option class="level-0" value="18020722">netbook hacks</option>
+	<option class="level-0" value="6166512">Network Hacks</option>
+	<option class="level-0" value="103">news</option>
+	<option class="level-0" value="1861880">nintendo ds hacks</option>
+	<option class="level-0" value="114555425">nintendo gameboy hacks</option>
+	<option class="level-0" value="18020685">nintendo hacks</option>
+	<option class="level-0" value="4992726">nintendo wii hacks</option>
+	<option class="level-0" value="118011206">Nook Hacks</option>
+	<option class="level-0" value="422570205">Original Art</option>
+	<option class="level-0" value="114556430">palm pre hacks</option>
+	<option class="level-0" value="245123">parts</option>
+	<option class="level-0" value="10969081">peripherals hacks</option>
+	<option class="level-0" value="16325149">phone hacks</option>
+	<option class="level-0" value="10969088">playstation hacks</option>
+	<option class="level-0" value="2060">podcasts</option>
+	<option class="level-0" value="10969096">portable audio hacks</option>
+	<option class="level-0" value="10969099">portable video hacks</option>
+	<option class="level-0" value="588444">psp hacks</option>
+	<option class="level-0" value="23971578">radio hacks</option>
+	<option class="level-0" value="47">rants</option>
+	<option class="level-0" value="69218551">Raspberry Pi</option>
+	<option class="level-0" value="21870780">repair hacks</option>
+	<option class="level-0" value="212824350">Retrotechtacular</option>
+	<option class="level-0" value="309">reviews</option>
+	<option class="level-0" value="10969101">robots hacks</option>
+	<option class="level-0" value="30302">roundup</option>
+	<option class="level-0" value="10969111">security hacks</option>
+	<option class="level-0" value="422570203">Skills</option>
+	<option class="level-0" value="268522">slider</option>
+	<option class="level-0" value="2301">Software Development</option>
+	<option class="level-0" value="3796421">software hacks</option>
+	<option class="level-0" value="10969116">solar hacks</option>
+	<option class="level-0" value="10969121">tablet pcs hacks</option>
+	<option class="level-0" value="3075183">teardown</option>
+	<option class="level-0" value="12936984">Tech Hacks</option>
+	<option class="level-0" value="227104736">The Hackaday Prize</option>
+	<option class="level-0" value="10969130">tool hacks</option>
+	<option class="level-0" value="25277004">toy hacks</option>
+	<option class="level-0" value="10969134">transportation hacks</option>
+	<option class="level-0" value="1">Uncategorized</option>
+	<option class="level-0" value="3184456">video hacks</option>
+	<option class="level-0" value="34942364">Virtual Reality</option>
+	<option class="level-0" value="50802420">weapons hacks</option>
+	<option class="level-0" value="12552193">wearable hacks</option>
+	<option class="level-0" value="39510952">Weekly roundup</option>
+	<option class="level-0" value="4891215">wireless hacks</option>
+	<option class="level-0" value="7079455">xbox hacks</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			location.href = "http://hackaday.com/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</aside><aside id="hackadayrecentposts-3" class="widget widget-recent-posts"><h1 class="widget-title">Our Columns</h1>
+	<ul>
+			<li>
+			<a href="http://hackaday.com/2016/05/11/mike-szczys-ends-8-bit-vs-32-bit-holy-war/" class="recent-image">
+						<img src="https://hackadaycom.files.wordpress.com/2016/05/mike_talk_5_thumbnail1.png?w=300&amp;h=300" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="http://hackaday.com/2016/05/11/mike-szczys-ends-8-bit-vs-32-bit-holy-war/">Mike Szczys Ends 8-Bit vs 32-Bit Holy War!</a>
+				</h2>
+				<a href="http://hackaday.com/2016/05/11/mike-szczys-ends-8-bit-vs-32-bit-holy-war//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 97 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="http://hackaday.com/2016/05/11/open-robots-with-open-roberta/" class="recent-image">
+						<img src="https://hackadaycom.files.wordpress.com/2016/04/roberta_tn.png?w=300&amp;h=300" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="http://hackaday.com/2016/05/11/open-robots-with-open-roberta/">Open Robots with Open Roberta</a>
+				</h2>
+				<a href="http://hackaday.com/2016/05/11/open-robots-with-open-roberta//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 9 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="http://hackaday.com/2016/05/11/peachy-printer-collapses-investor-built-a-house-instead-of-a-printer/" class="recent-image">
+						<img src="https://hackadaycom.files.wordpress.com/2015/02/crowdfunding-thumb.jpg?w=300&amp;h=300" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="http://hackaday.com/2016/05/11/peachy-printer-collapses-investor-built-a-house-instead-of-a-printer/">Peachy Printer Collapses, Investor Built A House Instead Of A Printer</a>
+				</h2>
+				<a href="http://hackaday.com/2016/05/11/peachy-printer-collapses-investor-built-a-house-instead-of-a-printer//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 139 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="http://hackaday.com/2016/05/10/tools-of-the-trade-component-placing/" class="recent-image">
+						<img src="https://hackadaycom.files.wordpress.com/2015/05/dsc_0711.jpg?w=300&amp;h=300" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="http://hackaday.com/2016/05/10/tools-of-the-trade-component-placing/">Tools of the Trade &#8211; Component Placing</a>
+				</h2>
+				<a href="http://hackaday.com/2016/05/10/tools-of-the-trade-component-placing//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 32 Comments				</a>
+			</div>
+		</li>
+			<li>
+			<a href="http://hackaday.com/2016/05/10/new-part-day-a-beaglebone-on-a-chip/" class="recent-image">
+						<img src="https://hackadaycom.files.wordpress.com/2016/05/bga.png?w=300&amp;h=300" alt="">
+			</a>
+			<div class="entry-intro">
+				<h2>
+					<a href="http://hackaday.com/2016/05/10/new-part-day-a-beaglebone-on-a-chip/">New Part Day: A BeagleBone On A Chip</a>
+				</h2>
+				<a href="http://hackaday.com/2016/05/10/new-part-day-a-beaglebone-on-a-chip//#comments" class="comment-link">
+					<span class="icon-hackaday icon-hackaday-comment"></span> 62 Comments				</a>
+			</div>
+		</li>
+		</ul>
+	<a href="http://hackaday.com/category/hackaday-columns/">More from this category</a>
+	</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h1 class="widget-title">Recent comments</h1>				<ul id="recentcomments">
+											<li class="recentcomments">
+							<a href='https://www.facebook.com/app_scoped_user_id/647299788/' rel='external nofollow' class='url'>Timothy Gray</a> on <a href="http://hackaday.com/2016/05/13/tiny-matchbox-wifi-weather-station/#comment-3019431">Tiny Matchbox WiFi Weather Station</a>						</li>
+
+												<li class="recentcomments">
+							Genki on <a href="http://hackaday.com/2016/05/13/solving-isp-problem-with-a-homebrew-lte-yagi/#comment-3019429">Solving ISP problem with a Homebrew LTE Yagi</a>						</li>
+
+												<li class="recentcomments">
+							dave on <a href="http://hackaday.com/2016/05/12/reading-an-ir-thermometer-the-hard-way/#comment-3019424">Reading an IR Thermometer the Hard Way</a>						</li>
+
+												<li class="recentcomments">
+							Drone on <a href="http://hackaday.com/2016/05/10/dont-ignore-the-artists-supply-store/#comment-3019421">Don&#8217;t Ignore the Artist&#8217;s Supply Store</a>						</li>
+
+												<li class="recentcomments">
+							dave on <a href="http://hackaday.com/2016/05/13/tiny-matchbox-wifi-weather-station/#comment-3019420">Tiny Matchbox WiFi Weather Station</a>						</li>
+
+												<li class="recentcomments">
+							makomk on <a href="http://hackaday.com/2016/05/11/hackaday-prize-entry-powering-a-pi-from-a-battery/#comment-3019416">Hackaday Prize Entry: Powering A Pi From A Battery</a>						</li>
+
+												<li class="recentcomments">
+							dave on <a href="http://hackaday.com/2016/05/12/safety-cleanliness-documentation-and-more-habits-that-make-your-work-better/#comment-3019411">Path to Craftsmanship: Safety, Cleanliness, and Documentation as Habits</a>						</li>
+
+												<li class="recentcomments">
+							perry on <a href="http://hackaday.com/2016/05/12/hackaday-prize-entry-forex-display-is-a-well-executed-hack/#comment-3019406">Hackaday Prize Entry: ForEx Display is A Well Executed Hack</a>						</li>
+
+												<li class="recentcomments">
+							dave on <a href="http://hackaday.com/2016/05/12/safety-cleanliness-documentation-and-more-habits-that-make-your-work-better/#comment-3019403">Path to Craftsmanship: Safety, Cleanliness, and Documentation as Habits</a>						</li>
+
+												<li class="recentcomments">
+							Stymie on <a href="http://hackaday.com/2016/05/12/hackaday-prize-entry-forex-display-is-a-well-executed-hack/#comment-3019400">Hackaday Prize Entry: ForEx Display is A Well Executed Hack</a>						</li>
+
+										</ul>
+				</aside><aside id="hackadayfeed-2" class="widget widget-hackaday-feed"><h1 class="widget-title">Now on Hackaday.io</h1>
+			<ul>
+									<li><a href="http://www.hackaday.io/project/6750-ESP8266 Greenhouse monitor#j-discussion-56387">Kopiko wrote a comment on ESP8266 Greenhouse monitor.</a></li>
+										<li><a href="http://www.hackaday.io/project/6750-ESP8266 Greenhouse monitor">Kopiko liked ESP8266 Greenhouse monitor.</a></li>
+										<li><a href="http://www.hackaday.io/project/11512-HariFun#134%20Oscilloscope%20Abuse">Mike Maluk liked HariFun#134 Oscilloscope Abuse.</a></li>
+										<li><a href="http://www.hackaday.io/project/6184-PiClock - A Raspberry Pi Clock &amp; Weather Display">jeevanspark20 liked PiClock - A Raspberry Pi Clock &amp; Weather Display.</a></li>
+										<li><a href="http://www.hackaday.io/project/9034-Schlieren-Videography">jeevanspark20 liked Schlieren-Videography.</a></li>
+										<li><a href="http://www.hackaday.io/event/11173-The 3rd Annual Hackaday MFBA Meetup">jeevanspark20 started following The 3rd Annual Hackaday MFBA Meetup.</a></li>
+										<li><a href="http://www.hackaday.io/project/46-Hackaday.io Project">jeevanspark20 liked Hackaday.io Project.</a></li>
+										<li><a href="http://www.hackaday.io/project/8324-PCB Business Card">Mike Maluk liked PCB Business Card.</a></li>
+										<li><a href="http://www.hackaday.io/project/10579-Retro-futuristic automobile control panel#j-discussion-56386">Yann Guidon / YGDES wrote a reply on Retro-futuristic automobile control panel.</a></li>
+										<li><a href="http://www.hackaday.io/project/10579-Retro-futuristic automobile control panel#j-discussion-56385">L-Warlok wrote a reply on Retro-futuristic automobile control panel.</a></li>
+						</ul>
+	</aside>
+    <div class="sidebar-ads-holder">
+        <script type='text/javascript'>
+            /* [id427] 160x600 */
+            OA_show(427);
+        </script>
+    </div>
+
+</div><!-- #secondary -->
+
+    </div><!-- #content -->
+
+</div><!-- #page -->
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div id="footer" class="site-footer-container">
+
+        <a href="http://hackaday.com/" rel="home">
+            <img src="https://s0.wp.com/wp-content/themes/vip/hackaday-2/img/logo.png" alt="Logo" class="logo-img">
+        </a>
+
+        <div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-141410" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141410"><a href="http://hackaday.com/">Home</a></li>
+<li id="menu-item-141411" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-141411"><a href="http://hackaday.com/blog/">Blog</a></li>
+<li id="menu-item-141412" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-141412"><a href="http://hackaday.io/">Hackaday.io</a></li>
+<li id="menu-item-141413" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-141413"><a href="http://store.hackaday.com/">Store</a></li>
+<li id="menu-item-141414" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-141414"><a title="Build Something that Matters" href="http://hackaday.io/prize">Hackaday Prize</a></li>
+<li id="menu-item-152823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152823"><a href="http://www.youtube.com/user/hackaday/videos">Video</a></li>
+<li id="menu-item-141415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141415"><a href="http://hackaday.com/submit-a-tip/">Submit a tip</a></li>
+<li id="menu-item-141417" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-141417"><a href="https://hackadaycom.wordpress.com/about/">About</a></li>
+<li id="menu-item-141418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141418"><a href="http://hackaday.com/contact-us/">Contact us</a></li>
+</ul></div>
+        <aside id="hackadayfollowus-3" class="widget widget-follow-us"><h1 class="footer-widget-title">Never miss a hack</h1>
+			<a href="https://www.facebook.com/pages/Hack-a-Day/136115233068429" target="_blank" class="icon-social icon-facebook">Follow on facebook</a>
+			<a href="https://plus.google.com/+hackaday/posts" target="_blank" class="icon-social icon-plusone">Follow on google+</a>
+			<a href="https://twitter.com/hackaday" target="_blank" class="icon-social icon-twitter">Follow on twitter</a>
+			<a href="https://www.youtube.com/user/hackaday" target="_blank" class="icon-social icon-youtube">Follow on youtube</a>
+			<a href="https://hackaday.com/blog/feed/" target="_blank" class="icon-social icon-rss">Follow on rss</a>
+			<a href="mailto:tips@hackaday.com" class="icon-social icon-contact">Contact us</a>
+		</aside><aside id="hackadaysubscribe-2" class="widget widget-had-subscribe"><h1 class="footer-widget-title">Subscribe to Newsletter</h1>
+            <form role="subscribe" action="http://hackaday.us9.list-manage.com/subscribe/post?u=dfadb71b0b15629cef5abf016&amp;id=f37880df9f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="subscribe-form validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">
+                    <input type="email" value="" name="EMAIL" class="subscribe-field" placeholder="Enter Email Address" id="mce-EMAIL" required>
+                </label>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_dfadb71b0b15629cef5abf016_f37880df9f" tabindex="-1" value=""></div>
+                <input type="submit" class="subscribe-submit" id="mc-embedded-subscribe" value="Subscribe">
+                </div>
+            </form>
+		</aside>
+        <div class="site-info">
+            Copyright &copy; 2016            <span class="sep"> | </span>
+            <strong>Hackaday, Hack A Day, and the Skull and Wrenches Logo are Trademarks of Hackaday.com</strong>
+            <br />Powered by <a href="https://vip.wordpress.com/?utm_source=vip_powered_wpcom&amp;utm_medium=web&amp;utm_campaign=VIP%20Footer%20Credit" rel="generator nofollow" class="powered-by-wpcom">WordPress.com VIP</a>        </div><!-- .site-info -->
+
+    </div>
+</footer><!-- #colophon -->
+
+<img src="http://analytics.supplyframe.com/trackingservlet/impression?action=pageImpression&amp;zone=HDay_article&amp;extra=title%3DH-bot+style+3D+printer+moves+bed+for+Z-axis" id="hdTrack" class="trackImg"><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42734042-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-cc6zkdHuZwUDM"
+};
+</script>
+<script type="text/javascript"
+src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-cc6zkdHuZwUDM.gif"
+style="display: none;" border="0" height="1" width="1"
+alt="Quantcast"/>
+</noscript>
+
+<!-- wpcom_wp_footer -->
+	<div style="display:none">
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/hackadaycom.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/hackadaycom.wordpress.com\/wp-login.php?action=logout&_wpnonce=d2459b8b0a","homeURL":"http:\/\/hackaday.com\/","postID":"97360","gravDefault":"mystery","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1462457903j'></script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/akismet-3.0/_inc/form.js?m=1404442431h'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcomVipAnalytics = {"is_404":"0","is_home":"0","is_single":"1","is_front_page":"0","is_archive":"0","percentToTrack":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJyNkFuuwjAMRDeEG1FeX+iuJXIMdR5ObpMUunsCSAiBkCr5b87M2FaXBBilkBRlszI0MVK6djav1JsUKiRfzyxZeXaU1X+lSoMW42n8hMtAoSETJzVodNroGfp7uuiJz7pwlMWW7DiBZ3FwilgznPhrt99ez+gW07adNM6dieU5y2tw5PTCWdBX08CmYAyhWWGk5Ocu8NfZb2/t4Z5sHwWgRfu5MOZm+AvH9XZ32PS7/WFrb6/hnlk='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='http://hackaday.com/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="http://stats.wp.com/w.js?52" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'4779443','blog_tz':'-7','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'4779443','v':'wpcom','tz':'-7','user_id':'0','post':'97360','subd':'hackadaycom'}]);
+function st_vt() {var x=document.createElement("img");x.src="http://pixel.wp.com/g.gif?blog=4779443&amp;v=wpcomvt&amp;tz=-7&amp;user_id=0&amp;post=97360&amp;subd=hackadaycom&amp;rand="+Math.random();}
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtib2E/SzdEJm0lUEtbdFU0fFk4cHZvcUFrZT90Tn4yQm1+R3NyNTdkRXFNdWdRL28yNk8rbmNjbWVqU35PYUcuJnk4TU5fX2kmQi9MYTV1SDVnZEVRPVYmQkpKUHx2TmxsODYsSzVyeTU5em40SHhSPUFjQ2ImWEMtMSZ3SVA5Vi5fWU5CVERCJWNUODROP3ZaM2RWTGI1bWxRUEUvfn49VkhQPUE9ZFF0WHw2YjZrNFdBUGtaR281XVBsbVRYfHZwd0EtRjZNSnMzK3lGV0hYM0QmcWFLeCwmZGtEND03fm9mOT1mOUpYQm1NP1FaRk80NltRLFJLR0pMUWNza3NHTUMvNA=='}]);
+_stq.push([ 'clickTrackerInit', '4779443', '97360' ]);
+	</script>
+<noscript><img src="http://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+
+<!-- Mirrored from hackaday.com/2013/04/05/h-bot-style-3d-printer-moves-bed-for-z-axis/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:15:37 GMT -->
+</html>

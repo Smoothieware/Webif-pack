@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/guide-endstops by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Guide Endstops - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="http://www.wikidot.com/default__flow/login__CustomDomainScript?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "guide-endstops";
+        OZONE.request.timestamp = 1463139995;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "guide-endstops";
+        WIKIREQUEST.info.pageId = 22164645;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--javascript/WIKIDOT.combined.js"></script>
+            <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--bootstrap/3.2.0/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--bootstrap/3.2.0/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/bootstrap-base/css/style.css);
+                    @import url(http://chibidibidiwah.wdfiles.com/local--theme/bare/style.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="http://smoothieware.org/local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="http://smoothieware.org/local--favicon/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="http://smoothieware.org/common--images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://smoothieware.org/common--images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://smoothieware.org/common--images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://smoothieware.org/" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/">Documentation</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/smoothieboard">SmoothieBoard</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/blog">Blog</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/gallery">Gallery</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="http://smoothieware.org/irc">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="http://smoothieware.org/forum/c-496918/general">Forum</a></li>
+<li><a href="http://groups.google.com/group/smoothieware-support">Support/Help Mailing list</a></li>
+<li><a href="http://groups.google.com/group/smoothie-dev">Developper Mailing list</a></li>
+<li><a href="https://plus.google.com/communities/111870450664099533727">Google+ Community</a></li>
+<li><a href="https://www.facebook.com/Smoothieware/">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/search">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="http://chibidibidiwah.wdfiles.com/local--files/start/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Guide Endstops</span></div>
+          
+          <div id="page-content">
+
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://www.a2aprinter.ca/image/cache/data/48-600x450.jpg" width="450px" alt="48-600x450.jpg" class="image" /></div>
+<h2 id="toc0"><span><a name="endstops"></a> Endstops</span></h2>
+<p>End-stops are small interrupters that you put at the end of each of your axes. When you boot your machine up, Smoothie has no way of knowing the position of each axis. When it starts a print, Smoothie moves the axis until it touches that interrupter, and when it is hit, it declares that that is position <strong>0</strong> for that axis. And does so for all axes.</p>
+<p>This allows Smoothie to then precisely know where everything is relative to that initial position. It is quite convenient as it saves you the hassle of actually moving the machine into that position when you want to start a print. Automation is great.</p>
+<p>However, end-stops are not necessary, you could do without them. They are just so convenient that most machines use them.</p>
+<p>End-stops can also be used as Limit Switches which prevent the machine from attempting to move beyond the physical limits of the axis (by pausing/stopping movement when triggered), see the <a href="http://smoothieware.org/endstops">Endstops page</a> for details about configuring Smoothie to use End Stops as limit switches.</p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://chibidibidiwah.wdfiles.com/local--files/3d-printer-guide/smoothieboard-endstops.png" width="450px" alt="smoothieboard-endstops.png" class="image" /></div>
+<h3 id="toc1"><span>Endstop Wiring</span></h3>
+<p>This will concentrate on the most common type of end-stops : the mechanical ones. Other types exist like optical or hall-o sensors, see the dedicated appendixes for those.</p>
+<blockquote>
+<p>TODO : Do those appendixes</p>
+</blockquote>
+<p><a href="http://reprap.org/wiki/Mechanical_Endstop">Mechanical end-stops</a> are simple interrupters : when not pressed, they do not let the current pass, when pressed, they let the current pass. By connecting a digital input pin on the Smoothieboard to the interrupter, and connecting the other side of the interrupter to Ground, the Smoothieboard can read whether or not it is connected to Ground, and therefore whether or not the end-stop is pressed.</p>
+<p>Most mechanical end-stops have 3 connection points, to which you have to attach your wires :</p>
+<ul>
+<li><strong>C</strong> : Common</li>
+<li><strong>NO</strong> : Normally Open, meaning it is not connected to <strong>C</strong> when the interrupter is not pressed, and connected to <strong>C</strong> when the interrupter is pressed.</li>
+<li><strong>NC</strong> : Normally Closed, meaning it is connected to <strong>C</strong> when the interrupter is not pressed, and connected not to <strong>C</strong> when the interrupter is pressed.</li>
+</ul>
+<div class="thumbnail"><img src="http://arthurwolf.github.io/smoothieboard-graphics/schematics/endstop-basic.svg" width="100%" alt="endstop-basic.svg" class="image" />
+<h4><span>Wiring a basic NC endstop</span></h4>
+<p>You want to connect the <strong>Signal</strong> ( green in the schematic ) and <strong>Ground</strong> ( blue in the schematic ) pins for the end-stop on the Smoothieboard, to the <strong>C</strong> and <strong>NC</strong> connection points on the end-stop.</p>
+</div>
+<div class="wiki-note">
+<p>For each endstop, we connect C to Signal and NC to Ground because this means the digital input pin ( endstop connector ) will be connected to Ground in it's normal state and cut from Ground when the button is pressed. This approach is less prone to noise than the reverse. See <a href="http://wot.lv/combating-endstop-noise-on-a-reprap.html">here</a> for more information.<br />
+Another positive effect of this approach is, that if a wire breaks for some reason you get the same signal as if the endstop is pressed. That makes sure that even with a damaged wire you are not able to overrun the endstop.</p>
+</div>
+<p>Order is not important as polarity is not important here.</p>
+<div class="bs-callout bs-callout-warning">
+<p>Make absolutely sure that you do not connect VCC ( red ) and GND ( blue ) to a mechanical (microswitch) endstop! Depending on your wiring that may fries your smoothieboard instantly or when the switch gets pressed. There is a wiring where this not happens and you switch the signal between VCC and GND, but if you're not careful enough you damage your board.</p>
+</div>
+<p>You want to connect your X end-stop to the X min pins, Y end-stop to the Y min pins, and Z end-stop to the Z min pins.</p>
+<h3 id="toc2"><span>Testing</span></h3>
+<p>The default configuration most probably already has everything you need : the pins are already correct and the default speeds are reasonable.</p>
+<p>Once they are wired, you can test your end-stops.</p>
+<p>To do this, reset your Smoothieboard, then connect to it using host software like <a href="http://smoothieware.org/pronterface">Pronterface</a> or the <a href="http://smoothieware.org/network">web interface</a>.</p>
+<p>Now connect to your Smoothieboard over the serial interface. Power your machine on by plugging the PSU into the wall.</p>
+<p>Now in Pronterface, home one axis by clicking the small &quot;home&quot; icon for that axis. Begin with X, then Y, then Z.</p>
+<p>If your axis moves until it hits the end-stop, then stops when it hits it, moves a small distance back, then goes a bit slower back to the end-stop and stops, that end-stop is working fine.</p>
+<p>On the other hand, if the axis moves a small distance in the wrong direction, then stops, you have a problem : your Smoothieboard always reads the end-stop as being pressed. So when you ask it to move until the end-stop is hit, it reads it immediately as pressed and stops there.</p>
+<p>Another problem can be that the axis moves and never stops, even after the end-stop is physically hit. This means your Smoothieboard actually never reads the end-stop as being pressed.</p>
+<p>There is a command that allows you to debug this kind of situation : in Pronterface, enter the &quot;<strong>M119</strong>&quot; G-code.</p>
+<p>Smoothie will answer with the status of each endstop like this :</p>
+<div class="code">
+<pre>
+<code>X min:1 Y min:0 Z min:0</code>
+</pre></div>
+<p>This means : X endstop is pressed, Y and Z endstops are not pressed.</p>
+<p>Use a combination of this command, and manually pressing end-stop, to determine what is going on.</p>
+<p>If an end-stop is read as always pressed, or never pressed, even when you press or release it, then you probably have a wiring problem, check everything.</p>
+<p>If an endstop is read as pressed when it is not, and not pressed when it is, then your end-stop is inverted.</p>
+<p>You can fix that situation by inverting the digital input pin in your configuration file. For example if your X min endstop pin is inverted, change :</p>
+<div class="code">
+<pre>
+<code>alpha_min_endstop                            1.28^</code>
+</pre></div>
+<p>To :</p>
+<div class="code">
+<pre>
+<code>alpha_min_endstop                            1.28^!</code>
+</pre></div>
+<p>Here is the exact mapping of pin names to inputs on the Smoothieboard :</p>
+<table class="wiki-content-table">
+<tr>
+<th>Endstop</th>
+<th>X MIN</th>
+<th>X MAX</th>
+<th>Y MIN</th>
+<th>Y MAX</th>
+<th>Z MIN</th>
+<th>Z MAX</th>
+</tr>
+<tr>
+<th>Config value</th>
+<td>alpha_min</td>
+<td>alpha_max</td>
+<td>beta_min</td>
+<td>beta_max</td>
+<td>gamma_min</td>
+<td>gamma_max</td>
+</tr>
+<tr>
+<th>Pin name</th>
+<td>1.24</td>
+<td>1.25</td>
+<td>1.26</td>
+<td>1.27</td>
+<td>1.28</td>
+<td>1.29</td>
+</tr>
+</table>
+<p>More information can be found here. <a href="http://smoothieware.org/endstops">http://smoothieware.org/endstops</a></p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 15, last edited: <span class="odate time_1454013623 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">28 Jan 2016 20:40</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="http://www.wikidot.com/">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/guide-endstops by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+</html>

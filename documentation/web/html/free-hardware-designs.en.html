@@ -1,0 +1,759 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from www.gnu.org/philosophy/free-hardware-designs.en.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:31 GMT -->
+<head>
+<!-- start of server/head-include-1.html -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:webmasters@gnu.org" />
+<link rel="icon" type="image/png" href="https://www.gnu.org/graphics/gnu-head-mini.png" />
+<meta name="ICBM" content="42.355469,-71.058627" />
+<meta name="DC.title" content="gnu.org" />
+<!-- end of server/head-include-1.html -->
+
+<!-- end of server/header.html -->
+
+<!-- Parent-Version: 1.77 -->
+<title>Free Hardware and Free Hardware Designs
+- GNU Project - Free Software Foundation</title>
+ <!-- begin translist file -->
+
+<link rel="alternate" type="text/html" href="https://www.gnu.org/philosophy/free-hardware-designs.html" hreflang="x-default" />
+<link rel="alternate" type="text/html" lang="en" hreflang="en" href="https://www.gnu.org/philosophy/free-hardware-designs.en.html" title="English" />
+<link rel="alternate" type="text/html" lang="fr" hreflang="fr" href="https://www.gnu.org/philosophy/free-hardware-designs.fr.html" title="français" />
+<link rel="alternate" type="text/html" lang="ru" hreflang="ru" href="https://www.gnu.org/philosophy/free-hardware-designs.ru.html" title="русский" />
+<!-- end translist file -->
+
+<!-- start of server/banner.html -->
+<!-- start of head-include-2.html -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.gnu.org/combo.css" media="screen" />
+<link rel="stylesheet" href="https://www.gnu.org/mini.css" media="handheld" />
+<link rel="stylesheet" href="https://www.gnu.org/layout.min.css" media="screen" />
+<link rel="stylesheet" href="https://www.gnu.org/print.min.css" media="print" />
+<style type="text/css" media="print,screen">
+
+
+.crm-amount-fill {
+  background: #f2cd5f;
+  color: black;
+  border-radius: 1em;
+  padding-right: .3em; padding-left: .3em;
+  width: 100%;
+}
+.crm-amount-high {
+  float: right;
+}
+div.donate_btn {
+  float: right;
+}
+</style>
+<style type="text/css" media="print,screen">
+<!--
+div.fundraiser {
+  font-family: "FreeSans", sans-serif;
+  padding: .5em 1.5% .5em 1.5%;
+  background-color: #ced7ff;
+  background: -webkit-linear-gradient(#b4c2ff, white);
+  background: -o-linear-gradient(#b4c2ff, white);
+  background: -moz-linear-gradient(#b4c2ff, white);
+  background: linear-gradient(#b4c2ff, white);
+  border-top: .2em solid #5272fd;
+}
+.fundraiser a {
+  color: black;
+}
+.crm-amount-high {
+  padding: 0 .3em;
+  background-color: #4a5a6a;
+  border-radius: 1em;
+}
+.crm-amount-bar {
+  border-radius: 1em;
+  background-color: #778796;
+  color: white;
+  border: .1em solid #4a5a6a;
+  margin-bottom: .5em;
+}
+div.donate_btn {
+  margin: 1.5em 0 0 1.5em;
+}
+.donate_btn a{
+  display: block;
+  text-decoration: none;
+  font-weight:bold;
+  padding: 0.4em 1em;
+  color: black;
+  background-color: #f2cd5f;
+  text-align: center;
+  border: .1em solid #CCA832;
+  border-radius: 1em;
+}
+@media (max-width: 30em) {
+   .fundraiser {
+    display: none;
+  }
+}
+-->
+</style>
+<!-- end of head-include-2.html -->
+
+</head>
+<body>
+<div class="inner">
+<!-- start of server/body-include-1.html -->
+
+
+
+
+
+<div id="toplinks">
+ <a href="#content">Skip to main text</a>
+ <span class="gnun-split"></span>
+ <a href="https://www.gnu.org/server/select-language.html?callback=/philosophy/free-hardware-designs.en.html" rel="nofollow">
+ Set language
+ <span class="gnun-split"></span>
+ </a>
+</div> <!-- /toplinks -->
+
+<div id="searcher">
+ <form method="get" action="http://www.gnu.org/cgi-bin/estseek.cgi">
+  <div>
+  <input name="phrase" id="phrase" type="text" size="18" accesskey="s"
+         value="Why GNU/Linux?" onfocus="this.value=''" />
+  <input type="submit" value="Search" />
+  </div>
+ </form>
+</div><!-- /searcher -->
+
+<div id="translations">
+<p>
+<span dir="ltr" class="original"><a lang="en" hreflang="en" href="https://www.gnu.org/philosophy/free-hardware-designs.en.html">English</a>&nbsp;[en]</span> &nbsp;
+<span dir="ltr"><a lang="fr" hreflang="fr" href="https://www.gnu.org/philosophy/free-hardware-designs.fr.html">français</a>&nbsp;[fr]</span> &nbsp;
+<span dir="ltr"><a lang="ru" hreflang="ru" href="https://www.gnu.org/philosophy/free-hardware-designs.ru.html">русский</a>&nbsp;[ru]</span> &nbsp;
+</p>
+</div>
+
+<!-- end of server/body-include-1.html -->
+
+<!-- start of server/body-include-2 -->
+
+<div id="header">
+<div id="fsf-frame">
+<p id="join-fsf"><a href="https://www.fsf.org/associate/support_freedom?referrer=4052">JOIN&nbsp;THE&nbsp;FSF</a></p>
+<div id="fssbox">
+<p><a href="http://www.fsf.org/fss">Free Software Supporter</a></p>
+<form action="https://my.fsf.org/civicrm/profile/create?reset=1&amp;gid=31" method="post">
+ <div>
+  <input name="postURL" type="hidden" value="" />
+  <input type="hidden" name="group[25]" value="1" />
+  <input name="cancelURL" type="hidden" value="https://crm.fsf.org/civicrm/profile?reset=1&amp;gid=31" />
+  <input name="_qf_default" type="hidden" value="Edit:cancel" />
+ </div>
+ <p>
+  <input type="text" id="frmEmail" name="email-Primary" size="18" maxlength="80"
+         value="email address" onfocus="this.value=''"/>
+  <input type="submit" name="_qf_Edit_next" value="Sign up" />
+ </p>
+</form>
+</div><!-- /fssbox -->
+</div><!-- /fsf-frame -->
+
+<div id="gnu-banner">
+ <a href="https://www.gnu.org/">
+ <img src="https://www.gnu.org/graphics/heckert_gnu.small.png" alt=" [A GNU head] " /><strong>GNU</strong> Operating System</a>
+</div><!-- /gnu-banner -->
+
+<p id="fsf-support">Sponsored by the <a href="#mission-statement">Free Software Foundation</a></p>
+</div><!-- /header -->
+
+
+<div id="navigation">
+ <ul>
+
+
+
+   <li id="tabAboutGNU"><a href="https://www.gnu.org/gnu/gnu.html">About&nbsp;GNU</a></li>
+
+
+  <li id="tabPhilosophy" class="active">
+     <span class='no-display'>=</span> 
+    <a href="https://www.gnu.org/philosophy/philosophy.html">Philosophy</a>
+    <span class="gnun-split"></span>
+     <span class='no-display'>=</span> 
+  </li>
+
+
+  <li id="tabLicenses"><a href="https://www.gnu.org/licenses/licenses.html">Licenses</a></li>
+
+
+  <li id="tabEducation"><a href="https://www.gnu.org/education/education.html">Education</a></li>
+
+
+  <li id="tabSoftware"><a href="https://www.gnu.org/software/software.html">Software</a></li>
+
+
+  <li id="tabDoc"><a href="https://www.gnu.org/doc/doc.html">Documentation</a></li>
+
+
+  <li id="tabHelp"><a href="https://www.gnu.org/help/help.html">Help&nbsp;GNU</a></li>
+
+ </ul>
+</div><!--  /navigation -->
+
+<!-- end of server/body-include-2 -->
+
+<div id="content">
+<!-- end of server/banner.html -->
+
+<h2>Free Hardware and Free Hardware Designs</h2>
+
+<p>by <a href="http://www.stallman.org/">Richard M. Stallman</a></p>
+
+<!-- rms: I deleted the links because of Wired's announced
+     anti-ad-block system -->
+<blockquote>
+<p>Most of this article was published in two parts in Wired in
+March 2015.</p>
+</blockquote>
+
+<p>To what extent do the ideas of free software extend to hardware?
+Is it a moral obligation to make our hardware designs free, just as it
+is to make our software free?  Does maintaining our freedom require
+rejecting hardware made from nonfree designs?</p>
+
+<h3 id="definitions">Definitions</h3>
+
+<p><em>Free software</em> is a matter of freedom, not price; broadly
+speaking, it means that users are free to use the software and to copy
+and redistribute the software, with or without changes.  More
+precisely, the definition is formulated in terms of <a
+href="https://www.gnu.org/philosophy/free-sw.html">the four essential freedoms</a>.  To
+emphasize that &ldquo;free&rdquo;refers to freedom, not price, we
+often use the French or Spanish word &ldquo;libre&rdquo; along with
+&ldquo;free.&rdquo;</p>
+
+<p>Applying the same concept directly to hardware, <em>free
+hardware</em> means hardware that users are free to use and to copy
+and redistribute with or without changes.  However, there are no
+copiers for hardware, aside from keys, DNA, and plastic objects'
+exterior shapes.  Most hardware is made by fabrication from some sort
+of design.  The design comes before the hardware.</p>
+
+<p>Thus, the concept we really need is that of a <em>free hardware
+design</em>.  That's simple: it means a design that permits users to
+use the design (i.e., fabricate hardware from it) and to copy and
+redistribute it, with or without changes.  The design must provide the
+same four freedoms that define free software.</p>
+
+<p>Then we can refer to hardware made from a free design as
+&ldquo;free hardware,&rdquo; or &ldquo;free-design hardware&rdquo;
+to avoid possible misunderstanding.</p>
+
+<p>People first encountering the idea of free software often think it
+means you can get a copy gratis.  Many free programs are available for
+zero price, since it costs you nothing to download your own copy, but
+that's not what &ldquo;free&rdquo; means here.  (In fact, some spyware
+programs such as <a
+href="https://www.gnu.org/philosophy/proprietary/proprietary-surveillance.html">Flash
+Player and Angry Birds</a> are gratis although they are not free.)
+Saying &ldquo;libre&rdquo; along with &ldquo;free&rdquo; helps clarify
+the point.</p>
+
+<p>For hardware, this confusion tends to go in the other direction;
+hardware costs money to produce, so commercially made hardware won't
+be gratis (unless it is a loss-leader or a tie-in), but that does not
+prevent its design from being free/libre.  Things you make in your own
+3D printer can be quite cheap, but not exactly gratis since you will
+have to pay for the raw materials.  In ethical terms, the freedom
+issue trumps the price issue totally, since a device that denies
+freedom to its users is worth less than nothing.</p>
+
+<p>The terms &ldquo;open hardware&rdquo; and &ldquo;open source
+hardware&rdquo; are used by some with the same concrete meaning as
+&ldquo;free hardware,&rdquo; but those terms downplay freedom as an
+issue.  They were derived from the term &ldquo;open source
+software,&rdquo; which refers more or less to free software but <a
+href="https://www.gnu.org/philosophy/open-source-misses-the-point.html">without talking
+about freedom or presenting the issue as a matter of right or
+wrong</a>.  To underline the importance of freedom, we make a point of
+referring to freedom whenever it is pertinent; since
+&ldquo;open&rdquo; fails to do that, let's not substitute it for
+&ldquo;free.&rdquo;</p>
+
+<h3 id="hw-and-sw">Hardware and Software</h3>
+
+<p>Hardware and software are fundamentally different.  A program, even
+in compiled executable form, is a collection of data which can be
+interpreted as instruction for a computer.  Like any other digital
+work, it can be copied and changed using a computer.  A copy of a
+program has no inherent physical form or embodiment.</p>
+
+<p>By contrast, hardware is a physical structure and its physicality
+is crucial.  While the hardware's design might be represented as data,
+in some cases even as a program, the design is not the hardware.  A
+design for a CPU can't execute a program.  You won't get very far
+trying to type on a design for a keyboard or display pixels on a
+design for a screen.</p>
+
+<p>Furthermore, while you can use a computer to modify or copy the
+hardware design, a computer can't convert the design into the physical
+structure it describes.  That requires fabrication equipment.</p>
+
+<h3 id="boundary">The Boundary between Hardware and Software</h3>
+
+<p>What is the boundary, in digital devices, between hardware and
+software?  It follows from the definitions.  Software is the
+operational part of a device that can be copied and changed in a
+computer; hardware is the operational part that can't be.  This is the
+right way to make the distinction because it relates to the practical
+consequences.</p>
+
+<p>There is a gray area between hardware and software that contains
+firmware that <em>can</em> be upgraded or replaced, but is not meant
+ever to be upgraded or replaced once the product is sold.  In
+conceptual terms, the gray area is rather narrow.  In practice, it is
+important because many products fall in it.  We can treat that
+firmware as hardware with a small stretch.</p>
+
+<p>Some have said that preinstalled firmware programs and
+Field-Programmable Gate Array chips (FPGAs) &ldquo;blur the boundary
+between hardware and software,&rdquo; but I think that is a
+misinterpretation of the facts.  Firmware that is installed during use
+is software; firmware that is delivered inside the device and can't be
+changed is software by nature, but we can treat it as if it were a
+circuit.  As for FPGAs, the FPGA itself is hardware, but the gate
+pattern that is loaded into the FPGA is a kind of firmware.</p>
+
+<p>Running free gate patterns on FPGAs could potentially be a useful
+method for making digital devices that are free at the circuit level.
+However, to make FPGAs usable in the free world, we need free
+development tools for them.  The obstacle is that the format of the
+gate pattern file that gets loaded into the FPGA is secret.  For many
+years there was no model of FPGA for which those files could be
+produced without nonfree (proprietary) tools.</p>
+
+<p>As of 2015, free software tools are available for
+<a href="http://www.clifford.at/icestorm/">programming the Lattice
+iCE40</a>, a common model of FPGA, from input written in a hardware
+description language (HDL).  It is also possible to compile C programs
+and run them on the Xilinx Spartan 6 LX9 FPGA
+with <a href="https://github.com/Wolfgang-Spraul/fpgatools">free
+tools</a>, but those do not support HDL input.  We recommend that you
+reject other FPGA models until they too are supported by free
+tools.</p>
+
+<p>As for the HDL code itself, it can act as software (when it is run
+on an emulator or loaded into an FPGA) or as a hardware design (when
+it is realized in immutable silicon or a circuit board).</p>
+
+<h3 id="ethical-3d-printers">The Ethical Question for 3D Printers</h3>
+
+<p>Ethically, <a
+href="https://www.gnu.org/philosophy/free-software-even-more-important.html">software
+must be free</a>; a nonfree program is an injustice.  Should we take
+the same view for hardware designs?</p>
+
+<p>We certainly should, in the fields that 3D printing (or, more
+generally, any sort of personal fabrication) can handle.  Printer
+patterns to make a useful, practical object (i.e., functional rather
+than decorative) <em>must</em> be free because they are works made for
+practical use.  Users deserve control over these works, just as they
+deserve control over the software they use.  Distributing a nonfree
+functional object design is as wrong as distributing a nonfree
+program.</p>
+
+<p>Be careful to choose 3D printers that work with exclusively free
+software; the Free Software Foundation <a
+href="http://fsf.org/resources/hw/endorsement">endorses such
+printers</a>.  Some 3D printers are made from free hardware designs,
+but <a
+href="http://www.cnet.com/news/pulling-back-from-open-source-hardware-makerbot-angers-some-adherents/">Makerbot's
+hardware designs are nonfree</a>.</p>
+
+<h3 id="reject-nonfree">Must We Reject Nonfree Digital Hardware?</h3>
+
+<p>Is a nonfree digital <a href="#fn1">(*)</a> hardware design an
+injustice?  Must we, for our freedom's sake, reject all digital
+hardware made from nonfree designs, as we must reject nonfree
+software?</p>
+
+<p>Due to the conceptual parallel between hardware designs and
+software source code, many hardware hackers are quick to condemn
+nonfree hardware designs just like nonfree software.  I disagree
+because the circumstances for hardware and software are different.</p>
+
+<p>Present-day chip and board fabrication technology resembles the
+printing press: it lends itself to mass production in a factory.  It
+is more like copying books in 1950 than like copying software
+today.</p>
+
+<p>Freedom to copy and change software is an ethical imperative
+because those activities are feasible for those who use software: the
+equipment that enables you to use the software (a computer) is also
+sufficient to copy and change it.  Today's mobile computers are too
+weak to be good for this, but anyone can find a computer that's
+powerful enough.</p>
+
+<p>Moreover, a computer suffices to download and run a version changed
+by someone else who knows how, even if you are not a programmer.
+Indeed, nonprogrammers download software and run it every day.  This
+is why free software makes a real difference to nonprogrammers.</p>
+
+<p>How much of this applies to hardware?  Not everyone who can use
+digital hardware knows how to change a circuit design, or a chip
+design, but anyone who has a PC has the equipment needed to do so.
+Thus far, hardware is parallel to software, but next comes the big
+difference.</p>
+
+<p>You can't build and run a circuit design or a chip design in your
+computer.  Constructing a big circuit is a lot of painstaking work,
+and that's once you have the circuit board.  Fabricating a chip is not
+feasible for individuals today; only mass production can make them
+cheap enough.  With today's hardware technology, users can't download
+and run John H Hacker's modified version of a digital hardware design,
+as they could run John S Hacker's modified version of a program.
+Thus, the four freedoms don't give users today collective control over
+a hardware design as they give users collective control over a
+program.  That's where the reasoning showing that all software must be
+free fails to apply to today's hardware technology.</p>
+
+<p>In 1983 there was no free operating system, but it was clear that
+if we had one, we could immediately use it and get software freedom.
+All that was missing was the code for one.</p>
+
+<p>In 2014, if we had a free design for a CPU chip suitable for a PC,
+mass-produced chips made from that design would not give us the same
+freedom in the hardware domain.  If we're going to buy a product mass
+produced in a factory, this dependence on the factory causes most of
+the same problems as a nonfree design.  For free designs to give us
+hardware freedom, we need future fabrication technology.</p>
+
+<p>We can envision a future in which our personal fabricators can make
+chips, and our robots can assemble and solder them together with
+transformers, switches, keys, displays, fans and so on.  In that
+future we will all make our own computers (and fabricators and
+robots), and we will all be able to take advantage of modified designs
+made by those who know hardware.  The arguments for rejecting nonfree
+software will then apply to nonfree hardware designs too.</p>
+
+<p>That future is years away, at least.  In the meantime, there is no
+need to reject hardware with nonfree designs on principle.</p>
+
+<hr />
+
+<p id="fn1">* As used here, &ldquo;digital hardware&rdquo; includes
+hardware with some analog circuits and components in addition to
+digital ones.</p>
+
+<h3 id="free-designs">We Need Free Digital Hardware Designs</h3>
+
+<p>Although we need not reject digital hardware made from nonfree
+designs in today's circumstances, we need to develop free designs and
+should use them when feasible.  They provide advantages today, and in
+the future they may be the only way to use free software.</p>
+
+<p>Free hardware designs offer practical advantages.  Multiple
+companies can fabricate one, which reduces dependence on a single
+vendor.  Groups can arrange to fabricate them in quantity.  Having
+circuit diagrams or HDL code makes it possible to study the design to
+look for errors or malicious functionalities (it is known that the NSA
+has procured malicious weaknesses in some computing hardware).
+Furthermore, free designs can serve as building blocks to design
+computers and other complex devices, whose specs will be published and
+which will have fewer parts that could be used against us.</p>
+
+<p>Free hardware designs may become usable for some parts of our
+computers and networks, and for embedded systems, before we are able
+to make entire computers this way.</p>
+
+<p>Free hardware designs may become essential even before we can
+fabricate the hardware personally, if they become the only way to
+avoid nonfree software.  As common commercial hardware is increasingly
+designed to subjugate users, it becomes increasingly incompatible with
+free software, because of secret specifications and requirements for
+code to be signed by someone other than you.  Cell phone modem chips
+and even some graphics accelerators already require firmware to be
+signed by the manufacturer.  Any program in your computer, that
+someone else is allowed to change but you're not, is an instrument of
+unjust power over you; hardware that imposes that requirement is
+malicious hardware.  In the case of cell phone modem chips, all the
+models now available are malicious.</p>
+
+<p>Some day, free-design digital hardware may be the only platform
+that permits running a free system at all.  Let us aim to have the
+necessary free digital designs before then, and hope that we have the
+means to fabricate them cheaply enough for all users.</p>
+
+<p>If you design hardware, please make your designs free.  If you use
+hardware, please join in urging and pressuring companies to make
+hardware designs free.</p>
+
+<h3 id="levels-of-design">Levels of Design</h3>
+
+<p>Software has levels of implementation; a package might include
+libraries, commands and scripts, for instance.  But these levels don't
+make a significant difference for software freedom because it is
+feasible to make all the levels free.  Designing components of a
+program is the same sort of work as designing the code that combines
+them; likewise, building the components from source is the same sort
+of operation as building the combined program from source.  To make
+the whole thing free simply requires continuing the work until we have
+done the whole job.</p>
+
+<p>Therefore, we insist that a program be free at all levels.  For a
+program to qualify as free, every line of the source code that
+composes it must be free, so that you can rebuild the program out of
+free source code alone.</p>
+
+<p>Physical objects, by contrast, are often built out of components
+that are designed and build in a different kind of factory.  For
+instance, a computer is made from chips, but designing (or
+fabricating) chips is very different from designing (or fabricating)
+the computer out of chips.</p>
+
+<p>Thus, we need to distinguish <em>levels</em> in the design of a
+digital product (and maybe some other kinds of products).  The circuit
+that connects the chips is one level; each chip's design is another
+level.  In an FPGA, the interconnection of primitive cells is one
+level, while the primitive cells themselves are another level.  In the
+ideal future we will want the design be free at all levels.  Under
+present circumstances, just making one level free is a significant
+advance.</p>
+
+<p>However, if a design at one level combines free and nonfree parts
+&mdash; for example, a &ldquo;free&rdquo; HDL circuit that
+incorporates proprietary &ldquo;soft cores&rdquo; &mdash; we must
+conclude that the design as a whole is nonfree at that level.
+Likewise for nonfree &ldquo;wizards&rdquo; or &ldquo;macros,&rdquo; if
+they specify part of the interconnections of chips or programmably
+connected parts of chips.  The free parts may be a step towards the
+future goal of a free design, but reaching that goal entails replacing
+the nonfree parts.  They can never be admissible in the free
+world.</p>
+
+<h3 id="licenses">Licenses and Copyright for Free Hardware Designs</h3>
+
+<p>You make a hardware design free by releasing it under a free
+license.  We recommend using the GNU General Public License, version 3
+or later.  We designed GPL version 3 with a view to such use.</p>
+
+<p>Copyleft on circuits, and on nondecorative object shapes, doesn't
+go as far as one might suppose.  The copyright on these designs only
+applies to the way the design is drawn or written.  Copyleft is a way
+of using copyright law, so its effect carries only as far as copyright
+law carries.</p>
+
+<p>For instance, a circuit, as a topology, cannot be copyrighted (and
+therefore cannot be copylefted).  Definitions of circuits written in
+HDL can be copyrighted (and therefore copylefted), but the copyleft
+covers only the details of expression of the HDL code, not the circuit
+topology it generates.  Likewise, a drawing or layout of a circuit can
+be copyrighted, so it can be copylefted, but this only covers the
+drawing or layout, not the circuit topology.  Anyone can legally draw
+the same circuit topology in a different-looking way, or write a
+different HDL definition that produces the same circuit.</p>
+
+<p>Copyright doesn't cover physical circuits, so when people build
+instances of the circuit, the design's license will have no legal
+effect on what they do with the devices they have built.</p>
+
+<p>For drawings of objects, and 3D printer models, copyright doesn't
+cover making a different drawing of the same purely functional object
+shape.  It also doesn't cover the functional physical objects made
+from the drawing.  As far as copyright is concerned, everyone is free
+to make them and use them (and that's a freedom we need very much).
+In the US, copyright does not cover the functional aspects that the
+design describes, but <a
+href="http://www.copyright.gov/title17/92chap13.html#1301">does cover decorative
+aspects</a>.  When one object has decorative aspects and functional
+aspects, you get into tricky ground <a href="#fn2">(*)</a>.</p>
+
+<p>All this may be true in your country as well, or it may not.
+Before producing objects commercially or in quantity, you should
+consult a local lawyer.  Copyright is not the only issue you need to
+be concerned with.  You might be attacked using patents, most likely
+held by entities that had nothing to do with making the design you're
+using, and there may be other legal issues as well.</p>
+
+<p>Keep in mind that copyright law and patent law are totally
+different.  It is a mistake to suppose that they have anything in
+common.  This is why the term &ldquo;<a
+href="https://www.gnu.org/philosophy/not-ipr.html">intellectual property</a>&rdquo; is
+pure confusion and should be totally rejected.</p>
+
+<hr />
+
+<p id="fn2">* An article by Public Knowledge gives useful information
+about this <a
+href="https://www.publicknowledge.org/assets/uploads/documents/3_Steps_for_Licensing_Your_3D_Printed_Stuff.pdf">
+complexity</a>, for the US, though it falls into the common mistake of
+using the bogus concept of &ldquo;intellectual property&rdquo; and the
+propaganda term &ldquo;<a
+href="https://www.gnu.org/philosophy/words-to-avoid.html#Protection">protection</a>.&rdquo;</p>
+
+<h3 id="promoting">Promoting Free Hardware Through Repositories</h3>
+
+<p>The most effective way to push for published hardware designs to be
+free is through rules in the repositories where they are published.
+Repository operators should place the freedom of the people who will
+use the designs above the preferences of people who make the designs.
+This means requiring designs of useful objects to be free, as a
+condition for posting them.</p>
+
+<p>For decorative objects, that argument does not apply, so we don't
+have to insist they must be free.  However, we should insist that they
+be sharable.  Thus, a repository that handles both decorative object
+models and functional ones should have an appropriate license policy
+for each category.</p>
+
+<p>For digital designs, I suggest that the repository insist on GNU
+GPL v3-or-later, Apache 2.0, or CC-0.  For functional 3D designs, the
+repository should ask the design's author to choose one of four
+licenses: GNU GPL v3-or-later, Apache 2.0, CC-SA, CC-BY or CC-0.  For
+decorative designs, it should GNU GPL v3-or-later, Apache 2.0, CC-0,
+or any of the CC licenses.</p>
+
+<p>The repository should require all designs to be published as source
+code, and source code in secret formats usable only by proprietary
+design programs is not really adequate.  For a 3D model, the <a
+href="http://en.wikipedia.org/wiki/STL_(file_format)">STL
+format</a> is not the preferred format for changing the design and
+thus is not source code, so the repository should not accept it,
+except perhaps accompanying real source code.</p>
+
+<p>There is no reason to choose one single format for the source code
+of hardware designs, but source formats that cannot yet be handled
+with free software should be accepted reluctantly at best.</p>
+
+<h3 id="warranties">Free Hardware and Warranties</h3>
+
+<p>In general, the authors of free hardware designs have no moral
+obligation to offer a warranty to those that fabricate the design.
+This is a different issue from the sale of physical hardware, which
+ought to come with a warranty from the seller and/or the
+manufacturer.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>We already have suitable licenses to make our hardware designs
+free.  What we need is to recognize as a community that this is what
+we should do and to insist on free designs when we fabricate objects
+ourselves.</p>
+
+</div><!-- for id="content", starts in the include above -->
+
+              <!-- begin server/footer-text.html -->
+<hr class="no-display" />
+<div id="fsf-links">
+ <ul>
+  <li><a href="https://www.gnu.org/">GNU&nbsp;home&nbsp;page</a></li>
+  <li><a href="http://www.fsf.org/">FSF&nbsp;home&nbsp;page</a></li>
+  <li><a href="https://www.gnu.org/graphics/graphics.html">GNU&nbsp;Art</a></li>
+  <li><a href="https://www.gnu.org/people/people.html">GNU's&nbsp;Who?</a></li>
+  <li><a href="http://directory.fsf.org/">Free&nbsp;Software&nbsp;Directory</a></li>
+  <li><a href="https://h-node.org/">Hardware</a></li>
+  <li><a href="https://www.gnu.org/server/sitemap.html">Site&nbsp;map</a></li>
+ </ul>
+</div><!-- /fsf-links -->
+
+<div id="mission-statement">
+
+<blockquote>
+<p><a href="http://www.fsf.org/"><img id="fsfbanner"
+src="https://www.gnu.org/graphics/fsf-logo-notext-small.png" alt=" [FSF logo] "/></a><strong>&ldquo;Our
+mission is to preserve, protect and promote the freedom to use, study,
+copy, modify, and redistribute computer software, and to defend the
+rights of Free Software users.&rdquo;</strong></p>
+</blockquote>
+
+<p>The <a href="http://www.fsf.org/">Free Software Foundation</a> is
+the principal organizational sponsor of the GNU Operating System.
+<strong>Support GNU and the FSF</strong> by <a
+href="http://shop.fsf.org/">buying manuals and gear</a>, <a
+href="https://my.fsf.org/associate/support_freedom?referrer=4052">
+<strong>joining the FSF</strong></a> as an associate member, or making
+a <strong>donation</strong>, either <a
+href="http://donate.fsf.org/">directly to the FSF</a> or <a
+href="http://flattr.com/thing/313733/gnuproject-on-Flattr">via
+Flattr</a>.</p>
+
+<p id="backtotop"><a href="#header">back to top</a></p>
+
+</div><!-- /mission-statement -->
+<!-- end server/footer-text.html -->
+
+
+<div id="footer">
+<div class="unprintable">
+
+<p>Please send general FSF &amp; GNU inquiries to
+<a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.
+There are also <a href="https://www.gnu.org/contact/">other ways to contact</a>
+the FSF.  Broken links and other corrections or suggestions can be sent
+to <a href="mailto:webmasters@gnu.org">&lt;webmasters@gnu.org&gt;</a>.</p>
+
+<p><!-- TRANSLATORS: Ignore the original text in this paragraph,
+        replace it with the translation of these two:
+
+        We work hard and do our best to provide accurate, good quality
+        translations.  However, we are not exempt from imperfection.
+        Please send your comments and general suggestions in this regard
+        to <a href="mailto:web-translators@gnu.org">
+        &lt;web-translators@gnu.org&gt;</a>.</p>
+
+        <p>For information on coordinating and submitting translations of
+        our web pages, see <a
+        href="/server/standards/README.translations.html">Translations
+        README</a>. -->
+Please see the <a
+href="https://www.gnu.org/server/standards/README.translations.html">Translations
+README</a> for information on coordinating and submitting translations
+of this article.</p>
+</div>
+
+<!-- Regarding copyright, in general, standalone pages (as opposed to
+     files generated as part of manuals) on the GNU web server should
+     be under CC BY-ND 4.0.  Please do NOT change or remove this
+     without talking with the webmasters or licensing team first.
+     Please make sure the copyright date is consistent with the
+     document.  For web pages, it is ok to list just the latest year the
+     document was modified, or published.
+     
+     If you wish to list earlier years, that is ok too.
+     Either "2001, 2002, 2003" or "2001-2003" are ok for specifying
+     years, as long as each year in the range is in fact a copyrightable
+     year, i.e., a year in which the document was published (including
+     being publicly visible on the web or in a revision control system).
+     
+     There is more detail about copyright years in the GNU Maintainers
+     Information document, www.gnu.org/prep/maintain. -->
+
+<p>Copyright &copy; 2015, 2016 Richard Stallman</p>
+
+<p>This page is licensed under a <a rel="license"
+href="http://creativecommons.org/licenses/by-nd/4.0/">Creative
+Commons Attribution-NoDerivatives 4.0 International License</a>.</p>
+
+<!-- start of server/bottom-notes.html -->
+<div id="bottom-notes" class="unprintable">
+<p><a href="http://www.fsf.org/about/dmca-notice">Copyright Infringement Notification</a></p>
+
+
+</div>
+<!-- end of server/bottom-notes.html -->
+
+
+<p class="unprintable">Updated:
+<!-- timestamp start -->
+$Date: 2016/03/23 12:49:16 $
+<!-- timestamp end -->
+</p>
+</div>
+</div>
+</body>
+
+<!-- Mirrored from www.gnu.org/philosophy/free-hardware-designs.en.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:31 GMT -->
+</html>

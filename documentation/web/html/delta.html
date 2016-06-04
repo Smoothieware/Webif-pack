@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/delta by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:44:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Delta - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="login__customdomainscriptf36a.html?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="../images/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = '../images/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "delta";
+        OZONE.request.timestamp = 1463138522;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "delta";
+        WIKIREQUEST.info.pageId = 19155324;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="../images/wikidot.combined.js"></script>
+            <script type="text/javascript" src="../images/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="../images/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(../images/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(../images/style.css);
+                    @import url(../images/style-2.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="../images/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="../images/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="../images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="../images/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="index.html">Documentation</a><br /></li>
+<li><img src="../images/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="smoothieboard.html">SmoothieBoard</a><br /></li>
+<li><img src="../images/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="blog.html">Blog</a><br /></li>
+<li><img src="../images/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="gallery.html">Gallery</a><br /></li>
+<li><img src="../images/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="irc.html">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="general.html">Forum</a></li>
+<li><a href="http://groups.google.com/group/smoothieware-support">Support/Help Mailing list</a></li>
+<li><a href="http://groups.google.com/group/smoothie-dev">Developper Mailing list</a></li>
+<li><a href="111870450664099533727.html">Google+ Community</a></li>
+<li><a href="index-2.html">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="../images/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="search.html">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="../images/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Delta</span></div>
+          <div class="breadcrumbs"><a href="configuring-smoothie.html">Configuring Smoothie</a> &raquo; <a href="motion-control.html">Motion Control</a> &raquo; Delta</div>
+          <div id="page-content">
+
+<div id="toc" class="floatright">
+<div id="toc-action-bar"><a href="javascript:;" onclick="WIKIDOT.page.listeners.foldToc(event)">Fold</a><a style="display: none" href="javascript:;" onclick="WIKIDOT.page.listeners.unfoldToc(event)">Unfold</a></div>
+<div class="title">Table of Contents</div>
+<div id="toc-list">
+<div style="margin-left: 2em;"><a href="#toc0">Configuration</a></div>
+<div style="margin-left: 3em;"><a href="#toc1">Enabling the arm solution</a></div>
+<div style="margin-left: 3em;"><a href="#toc2">Base parameters</a></div>
+<div style="margin-left: 2em;"><a href="#toc3">Homing</a></div>
+<div style="margin-left: 3em;"><a href="#toc4">Gamma max</a></div>
+<div style="margin-left: 3em;"><a href="#toc5">Trim</a></div>
+<div style="margin-left: 4em;"><a href="#toc6">Note for Deltas using M666 to set soft trim</a></div>
+<div style="margin-left: 2em;"><a href="#toc7">Arm parameters</a></div>
+<div style="margin-left: 3em;"><a href="#toc8">It's all relative</a></div>
+<div style="margin-left: 2em;"><a href="#toc9">Height calibration</a></div>
+<div style="margin-left: 3em;"><a href="#toc10">Configuring Z height</a></div>
+<div style="margin-left: 3em;"><a href="#toc11">Automatically finding the bed with a probe</a></div>
+<div style="margin-left: 2em;"><a href="#toc12">Automated calibration</a></div>
+<div style="margin-left: 2em;"><a href="#toc13">Manual Calibration.</a></div>
+<div style="margin-left: 3em;"><a href="#toc14">Manual calibration scripts</a></div>
+<div style="margin-left: 2em;"><a href="#toc15">Advanced settings</a></div>
+</div>
+</div>
+<h2 id="toc0"><span>Configuration</span></h2>
+<p>Linear delta machines such as the <a href="http://reprap.org/wiki/Rostock">Rostock</a> and the <a href="http://reprap.org/wiki/Kossel">Kossel</a> use three linear axes in a triangular configuration, arms, and some clever math to move a tool in three dimensions.</p>
+<p>They can be quite fast due to the low moving mass, in particular in the Z direction, which is usually slower in typical Cartesian 3D printer designs.</p>
+<h3 id="toc1"><span>Enabling the arm solution</span></h3>
+<p>To setup your Smoothieboard for control of a linear delta machine, you must select the linear_delta arm solution ( this is true for all linear delta type bots - older versions of the firmware included separate configurations for Rostock and Kossel printers).</p>
+<div class="bs-callout bs-callout-primary">
+<h4><span>Example file</span></h4>
+<p>You can find an example linear delta configuration on github <a href="https://github.com/Smoothieware/Smoothieware/blob/edge/ConfigSamples/Smoothieboard.delta/config">here</a>.</p>
+<p>It is recommended you start from this example configuration file instead of modifying the default cartesian configuration file.</p>
+</div>
+<p>To modify your configuration file for a linear delta arm solution ( we just said you shouldn't do that ), change/add the following :</p>
+<div class="code">
+<pre>
+<code>arm_solution                                 linear_delta
+arm_length                                   250.0            # this is the length of an arm from hinge to hinge
+arm_radius                                   124.0            # this is the horizontal distance from hinge to hinge when the effector is centered</code>
+</pre></div>
+<h3 id="toc2"><span>Base parameters</span></h3>
+<p>Here is a labelled schematic of a normal linear delta :</p>
+<div class="image-container alignleft"><img src="http://smoothieware.org/local--files/delta/delta.png" alt="delta.png" class="image" /></div>
+<p>The two most important parameters are as follow :&nbsp;</p>
+<p>You need to set <strong><tt>arm_radius</tt></strong> to be the horizontal distance between the joints on the arm rod when in the home position. An incorrect value for <tt>arm_radius</tt> will cause the effector's height above the bed to change as it moves around on the X-Y plane.</p>
+<p>Set <strong><tt>arm_length</tt></strong> to the length between joints of the arms. An incorrect value for <tt>arm_length</tt> will affect the scaling of movements in the X-Y plane - printed parts will come out smaller (<tt>arm_length</tt> needs to be reduced) or larger (<tt>arm_length</tt> needs to be increased) than intended.</p>
+<p>These are the two main parameters you must get right for Smoothie to move your extruder around precisely. Beyond that, precise construction of your delta printer is critical - in particular, the towers need to be 120° apart and perfectly vertical, and the three arms (including their carriages) must all be the same length to the center of the effector platform.</p>
+<div class="bs-callout bs-callout-success">
+<h4><span>Coming from Marlin ?</span></h4>
+<p><a name="marlin"></a></p>
+<p>These two parameters correspond to the following in your Marlin configuration :</p>
+<ul>
+<li><tt>arm_length</tt> is <tt>DELTA_DIAGONAL_ROD</tt></li>
+<li><tt>arm_radius</tt> is <tt>DELTA_RADIUS</tt>, which is calculated as follows : <tt>DELTA_RADIUS</tt> = <tt>DELTA_SMOOTH_ROD_OFFSET</tt> - <tt>DELTA_EFFECTOR_OFFSET</tt> - <tt>DELTA_CARRIAGE_OFFSET</tt></li>
+</ul>
+</div>
+<h2 id="toc3"><span>Homing</span></h2>
+<p>The linear delta arm solution is pretty much useless without homing.</p>
+<p><strong>Do not try to set up a printer without endstops, and do not try to do anything with your printer before you home it.</strong></p>
+<p>Test the endstops with M119, and make sure the X endstop triggers when the endstop on the X tower is activated, and same for Y and Z towers.</p>
+<p>Here is a generic delta homing configuration:</p>
+<div class="code">
+<pre>
+<code># Endstops
+endstops_enable                              true             # the endstop module is enabled by default and can be disabled here
+delta_homing                                 true             # forces all three axis to home a the same time regardless of what is specified in G28
+alpha_min_endstop                            nc               #
+alpha_max_endstop                            1.25^            # add ! to invert pullup if switch is NO to ground
+alpha_homing_direction                       home_to_max      # Home up
+alpha_max                                    0                #
+beta_min_endstop                             nc               #
+beta_max_endstop                             1.27^            #
+beta_homing_direction                        home_to_max      #
+beta_max                                     0                #
+gamma_min_endstop                            nc               #
+gamma_max_endstop                            1.29^            #
+gamma_homing_direction                       home_to_max      #
+gamma_max                                    300              #
+
+alpha_fast_homing_rate_mm_s                  200              # homing feedrates in mm/second
+beta_fast_homing_rate_mm_s                   200              #
+gamma_fast_homing_rate_mm_s                  200              #
+alpha_slow_homing_rate_mm_s                  20               #
+beta_slow_homing_rate_mm_s                   20               #
+gamma_slow_homing_rate_mm_s                  20
+
+alpha_homing_retract_mm                      5                # retract/bounce distance after homing in mm
+beta_homing_retract_mm                       5                #
+gamma_homing_retract_mm                      5                #
+
+alpha_trim                                   0                 # software trim for alpha stepper endstop (in mm) (negative values move endstop down)
+beta_trim                                    0                 # software trim for beta stepper endstop (in mm)
+gamma_trim                                   0                 # software trim for gamma stepper endstop (in mm)</code>
+</pre></div>
+<h3 id="toc4"><span>Gamma max</span></h3>
+<p><strong><tt>gamma_max</tt></strong> is the height the head is above the bed when homed to the top endstops.</p>
+<p>Homing the printer to the endstops establishes your printer's maximum Z position, as well as establishing the origin of the XY plane. Ideally, this should also coincide with the exact center of your printer's physical build surface.</p>
+<p><strong><tt>alpha_max</tt></strong> and <strong><tt>beta_max</tt></strong> should be left at 0.</p>
+<h3 id="toc5"><span>Trim</span></h3>
+<p>The <strong><tt>alpha_trim</tt></strong>, <strong><tt>beta_trim</tt></strong> and <strong><tt>gamma_trim</tt></strong> settings are a way to tweak endstop positions in software and simplify the process of tramming the effector (making sure that moves in the XY plane remain parallel to the print surface).</p>
+<p>The trim values are the distance in millimeters from the point where your endstop is triggered.</p>
+<div class="bs-callout bs-callout-info">
+<p>Note: if you are migrating a printer from Repetier-Firmware, your endstop offsets are defined in terms of steps for your stepper motors. To convert, divide the number of steps by your steps_per_mm for that axis.</p>
+</div>
+<p><tt>M666 Xnnn Ynnn Znnn</tt> allow you to adjust the trim values on a live system.</p>
+<p>You need to home after setting <tt>M666</tt>.</p>
+<p>Negative values adjust the endstops down by that number of mm. Positive values are up.</p>
+<p>When you have found the correct values for your endstop settings (see the suggested workflow near the bottom of this page for one process to adjust the trim values), edit the config file and reboot, or save the <tt>M666</tt> values with <tt>M500</tt>.</p>
+<div class="bs-callout bs-callout-warning">
+<h4 id="toc6"><span>Note for Deltas using M666 to set soft trim</span></h4>
+<p>The latest edge now uses soft trim, this allows positive and negative trim values without crashing your endstops.<br />
+(Note the old suggestion of adding -5 to all your trim values is no longer valid and will do nothing other than lose 5mm from your build height).</p>
+<p>When you home a delta that has non zero trim values, you will find that X and Y are not 0 after homing. This is normal.<br />
+If you want X0 Y0 after homing you can set `move_to_origin_after_home true` in the config (thi sis the default now), this will move the effector to 0,0 after it homes and sets the trim. Note that the carriages will move off the endstops a little bit after homing so the head can move without crashing into the endstops.</p>
+</div>
+<h2 id="toc7"><span>Arm parameters</span></h2>
+<p><strong><tt>arm_length</tt></strong> and <strong><tt>arm_radius</tt></strong> can be set live using :&nbsp;</p>
+<div class="code">
+<pre>
+<code>M665 L340.0 R240.5</code>
+</pre></div>
+<p>Where L is the <strong><tt>arm_length</tt></strong> and R is the <strong><tt>arm_radius</tt></strong></p>
+<p>Home must be called after setting these.</p>
+<p>Simply doing :</p>
+<div class="code">
+<pre>
+<code>M665</code>
+</pre></div>
+<p>On its own will just report the current settings.</p>
+<p>These can also be saved with M500.</p>
+<div class="bs-callout bs-callout-warning">
+<h3 id="toc8"><span>It's all relative</span></h3>
+<p>Changing <tt>arm_radius</tt> actually changes the <em>relative</em> height of the center to the edges, so after changing the <tt>arm_radius</tt> you <strong>MUST</strong> measure both the outer edges and the center, the center alone will appear to not change.</p>
+<p>This is <strong>NOT</strong> a bug.</p>
+<p>A suggested workflow for calibrating <tt>arm_radius</tt> and <tt>gamma_max</tt> when you first set up a delta printer would be:</p>
+<ol>
+<li>Home, then adjust <tt>gamma_max</tt> until the z-height is correct at the center of the print bed (lightly holding down a sheet of paper).</li>
+<li>Re-home, then jog the effector platform near the alpha tower. Adjust <tt>alpha_trim</tt> using M666 or a physical endstop screw, re-home, and repeat until the paper is held down with equal force at Z=0. (tip: you may want to write some G-code snippets to automate this process, or else you may find yourself doing a lot of jogging - sample scripts developed by Gene Buckle (author of the Rostock Max assembly manual) are at the bottom of this page.)</li>
+<li>Repeat step #2 to set <tt>beta_trim</tt> and <tt>gamma_trim</tt> (or physical endstop screws) appropriately near the beta and gamma towers.</li>
+<li>Re-check the z-height at the center of the bed. If the effector is too high, increase <tt>arm_radius</tt> slightly, and return to step 1 of this sequence. If the effector is too low, decrease <tt>arm_radius</tt> slightly, and return to step 1.</li>
+</ol>
+<p>Once the z-height is correct, your printer should be well-calibrated. You should not need to re-do these calibration steps unless you change hardware on your printer.</p>
+</div>
+<h2 id="toc9"><span>Height calibration</span></h2>
+<p>Your printer homes by &quot;seeking&quot; the endstops at the top.</p>
+<p>When that is done, your printer is always at the same position, every time : The Z axis is at it's maximal position, and the X and Y axes are at the center of the work area ( 0,0 ).</p>
+<p>But it doesn't know how high above the bed it is, unless you tell it. And it needs to know this, so that when you tell it to go to Z 0 ( the bed ), it knows how much to move from it's position at the Z maximum.</p>
+<div class="image-container aligncenter"><img src="http://i1.wp.com/builda3dprinter.eu/wp-content/uploads/2014/05/Calibration_Variables_v01.png" alt="Calibration_Variables_v01.png" class="image" /></div>
+<p>There are several ways to tell Smoothie how high the hotend is from the bed after homing :</p>
+<h3 id="toc10"><span>Configuring Z height</span></h3>
+<p>After homing, the machine knows it is at X position 0, Y position 0, and Z maximum position.</p>
+<p>Because of this, it will read the configuration option <tt>gamma_max</tt> and set the current Z position to that value.</p>
+<p>So after homing, the Z position is set to <tt>gamma_max</tt>.</p>
+<p>This means that if your hotend is 300mm above your bed after homing, and you set <tt>gamma_max</tt> to 300, after homing, you can just tell the machine to go to Z position 0, and it will go to the bed's height.</p>
+<p>To find the right value for <tt>gamma_max</tt> do one of the following :&nbsp;</p>
+<div class="bs-callout bs-callout-success">
+<h4><span>Finding gamma_max manually</span></h4>
+<p>First home the machine</p>
+<p><tt>G28</tt></p>
+<p>Then set the current Z position to 0</p>
+<p><tt>G92 Z0</tt></p>
+<p>Then move the head to the bed, using <tt>G0 Z(position)</tt> or <a href="pronterface.html">Pronterface</a> or the web interface.</p>
+<p>Once the head is exactly at the bed, issue this command</p>
+<p><tt>M114</tt></p>
+<p>This will return the position of all axes. The current position of the Z axis is your <tt>gamma_max</tt> value.</p>
+<p>Simply edit the <a href="configuring-smoothie.html">configuration file</a> to set this value, and reset the board.</p>
+<p>Alternatively you can use the <tt>M665 Z(distance)</tt> command to set the value in the <a href="configuring-smoothie.html">config override system</a>, and <tt>M500</tt> to save that value to the SD card.</p>
+<p>The <tt>gamma_max</tt> value in the configuration file is ignored if <tt>M665</tt> is set and saved.</p>
+<p>Next time you home, the machine will know how high above the bed it is.</p>
+<div class="bs-callout bs-callout-success">
+<h4><span>Simplified manual adjustment method</span></h4>
+<p>First home the machine</p>
+<p><tt>G28</tt></p>
+<p>Then move to the point the machine currently thinks is Z 0</p>
+<p><tt>G0&nbsp;Z0</tt></p>
+<p>Then move the head to the bed by jogging, using <a href="pronterface.html">Pronterface</a>'s arrows, the panel or the web interface.</p>
+<p>Finally issue the <tt>M306 Z0</tt> command which will use the current Z position as a homing offset.</p>
+<p>Then save to the SD card with <tt>M500</tt>.</p>
+<p>Next time you home, the machine will know how high above the bed it is.</p>
+</div>
+</div>
+<div class="bs-callout bs-callout-primary">
+<h4><span>Finding gamma_max with a probe</span></h4>
+<p>If you have some sort of probe attached to your head ( or bellow your bed ), which triggers when the hotend gets close to the bed, then you can use this to find your gamma_max value without manually jogging.</p>
+<p>Now there are two different cases here :</p>
+<ul>
+<li>Either when the probe is triggered, the hotend is exactly at bed level</li>
+<li>Or, when the probe is triggered, the hotend is above the bed by a given distance, which we will call the z probe offset.</li>
+</ul>
+<p>First home the machine</p>
+<p><tt>G28</tt></p>
+<p>Then ask the probe to go find the bed</p>
+<p><tt>G30</tt></p>
+<p>This will report the distance travelled by the probe.</p>
+<p>Your <tt>gamma_max</tt> value is that reported distance, plus the z probe offset ( distance between the probe triggering point, and the bed ).</p>
+<p>Simply edit the <a href="configuring-smoothie.html">configuration file</a> to set this value, and reset the board.</p>
+<p>Alternatively you can use the <tt>M665 Z(distance)</tt> command to set the value in the <a href="configuring-smoothie.html">config override system</a>, and <tt>M500</tt> to save that value to the SD card.</p>
+<p>The <tt>gamma_max</tt> value in the configuration file is ignored if <tt>M665</tt> is set and saved.</p>
+<p>Next time you home, the machine will know how high above the bed it is.</p>
+</div>
+<h3 id="toc11"><span>Automatically finding the bed with a probe</span></h3>
+<p>Smoothie allows you to save both the Z height, and the delta calibration data, to the SD card.</p>
+<p>This means you do not need to probe every time you start the machine, you only need to do it once, and save the values, which will then stay valid as long as your machine's geometry doesn't change.</p>
+<p>This means you can have a removable probe that you only connect and attach to the head at the rare occasions when you need it.</p>
+<p>However, if for whatever reason you have a fixed ( or retractable ) probe on your head ( or sensors bellow your bed ), then you might want to automatically probe at the beginning of each print.</p>
+<p>To do so, simply change your slicing program's &quot;beginning of file&quot; G-code sequence, and replace</p>
+<p><tt>G28</tt></p>
+<p>with :&nbsp;</p>
+<p><tt>G28</tt><br />
+<tt>G30 Znnn</tt></p>
+<p>When <tt>nnn</tt> is the distance between your probe's triggering point, and the bed.</p>
+<p>The <tt>G30 Znnn</tt> command moves the head until the probe triggers, then sets the current Z height to <tt>nnn</tt></p>
+<p>So for example if your probe triggers when the hotend is 5mm above the bed, do <tt>G30 Z5</tt>, and if your probe triggers exactly when the hotend touches the bed, do <tt>G30 Z0</tt>.</p>
+<div class="bs-callout bs-callout-danger">
+<h4><span>Old Z height documentation, for temporary storage, please ignore.</span></h4>
+<p>To fine tune the z height ( <tt>gamma_max</tt> parameter ), move to X0 Y0 Z0 then set the head to the desired height above the bed (usually the thickness of paper), then type M306 Z0. then home and G0 Z0 and test the height.</p>
+<div class="bs-callout bs-callout-warning">
+<p><strong>DO NOT USE G92 on a delta</strong><br />
+If you do X and Y must be at 0 for it to work properly.</p>
+</div>
+<p>Alternatively you can use :</p>
+<div class="code">
+<pre>
+<code>M206 Znnn</code>
+</pre></div>
+<p>where nnn is the offset to move Z up or down. Then <tt>M500</tt> will save that offset.</p>
+<p>Yet another method is to home the printer, then jog the Z to where you want Z=0 to be then type <tt>M306 Z0</tt></p>
+<p>This will set the homing offset relative to the current position. Unlike <tt>M206</tt> it is relative to the current position (not absolute) so it can only be issued once after homing.</p>
+<p>As this sets the homing offset it can be saved with <tt>M500</tt>.</p>
+<p>Another way is to permanently set this value to the <strong><tt>gamma_max</tt></strong> value in the config file, <strong><tt>gamma_max</tt></strong> can be set live using</p>
+<div class="code">
+<pre>
+<code>M665 Z432.4</code>
+</pre></div>
+</div>
+<h2 id="toc12"><span>Automated calibration</span></h2>
+<p>See <a href="zprobe.html">ZProbe</a> for how to use zprobe to calibrate a delta.</p>
+<p>Here is a common sequence that you may do to auto calibrate the delta for the first time, this need not be repeated unless the bed changes.</p>
+<div class="code">
+<pre>
+<code>; do endstop and delta radius calibration
+G32
+; Home
+G28
+; move to 5mm above bed
+G0 Z5
+;  then manually jog down until nozzle is on bed or just traps a sheet of thin paper
+; sets the Z homing offset based on current position
+M306 Z0
+G28
+G0 Z1
+; check nozzle is 1mm above bed
+M500
+; saves the results in EEPROM equivalent</code>
+</pre></div>
+<p>Full example configurations ( including zprobe ) can be found at <a href="https://github.com/Smoothieware/Smoothieware/blob/edge/ConfigSamples/Smoothieboard.delta/config">https://github.com/Smoothieware/Smoothieware/blob/edge/ConfigSamples/Smoothieboard.delta/config</a></p>
+<p>See <a href="http://minow.blogspot.com/">http://minow.blogspot.com/</a> for more details of manually calibrating a delta.</p>
+<h2 id="toc13"><span>Manual Calibration.</span></h2>
+<p>After setting gamma_max to 20&#160;mm above bed, home, then move to a point at the edge of the bed in front of tower X. get the head set just right (paper width or whatever) do M306 Z0 then Home.<br />
+Do it again and test it is the same. Then move to the spot in front of tower Y, adjust M666 Ynnn until it is the same height, home between each test and setting of M666.<br />
+Then do the same for the Z tower using M666 Znnn<br />
+Then home and check all three, repeat until they are all the same<br />
+Once they are the same save M666 with M500.<br />
+Then test the edge vs the center<br />
+adjust arm radius (M665 Rnnn) until they are the same, home between each setting. then save with M500.<br />
+Then test the three towerpoints and the center again after homing, repeat above until they are all the same.<br />
+Lastly set the z height at the center with M306 Z0 and save with M500.</p>
+<p>Or use the auto calibration which does exactly that procedure automatically. (Except for the Z height which you still need to do after calibration).</p>
+<h3 id="toc14"><span>Manual calibration scripts</span></h3>
+<p>The following scripts were written for a Rostock Max (280mm diameter bed). If your printer's bed is much larger or smaller than that, adjust the X/Y parameters in each script as needed to put the effector near each tower (so that one arm is nearly vertical). These scripts can be copy/pasted repeatedly into a terminal window, or run from your host program of choice (<a href="pronterface.html">Pronterface</a>, Repetier-Host, Octoprint, etc.)</p>
+<p><strong>Script 1: Center of bed</strong></p>
+<div class="code">
+<pre>
+<code>G28
+G0 Z0 F3500</code>
+</pre></div>
+<p><strong>Script 2: Alpha tower</strong></p>
+<div class="code">
+<pre>
+<code>G28
+G0 Z0 X-77.94 Y-45 F3500</code>
+</pre></div>
+<p><strong>Script 3: Beta tower</strong></p>
+<div class="code">
+<pre>
+<code>G28
+G0 Z0 X77.94 Y-45 F3500</code>
+</pre></div>
+<p><strong>Script 4: Gamma tower</strong></p>
+<div class="code">
+<pre>
+<code>G28
+G0 Z0 X0 Y90 F3500</code>
+</pre></div>
+<p>Here's a manual calibration tutorial video : (NOTE the second video mentioned in this video has a technique which IMO is NOT a good fine tuning method, the one where he measures the first layer thickness, this is not a good way to adjust trim).</p>
+<p><iframe width="100%" height="600px" src="https://www.youtube.com/embed/tDLbqLve128" frameborder="0" allowfullscreen=""></iframe></p>
+<h2 id="toc15"><span>Advanced settings</span></h2>
+<p>The following settings can be set in the config, or via M665. They are used to compensate for a frame that is not perfectly aligned, it is recommended the frame be fixed rather than using these to compensate. Generally speaking adjusting any of these to anything other than 0.0 will fix one thing but throw another thing off. <strong>NOTE</strong> these are usually used with an offline program that calculates the values by doing some form of error minimization.</p>
+<div class="code">
+<pre>
+<code>delta_tower1_offset   
+delta_tower2_offset
+delta_tower3_offset
+delta_tower1_angle
+delta_tower2_angle
+delta_tower3_angle</code>
+</pre></div>
+<p>alternatively the values can be changed live (and saved with M500):-</p>
+<div class="code">
+<pre>
+<code>M665 Axxx Bxxx Cxxx Dxxx Exxx Hxxx</code>
+</pre></div>
+<p>where A is delta_tower1_offset, B is delta_tower2_offset, C is delta_tower3_offset<br />
+where D is delta_tower1_angle, E is delta_tower2_angle, H is delta_tower3_angle</p>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 84, last edited: <span class="odate time_1450216050 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">15 Dec 2015 21:47</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="legal_terms-of-service.html" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="legal_privacy-policy.html" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="index-4.html">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="index-5.html">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="../images/p-edl3gsnujjzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/delta by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:44:50 GMT -->
+</html>

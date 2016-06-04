@@ -1,0 +1,1587 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  
+<!-- Mirrored from github.com/Smoothieware/Smoothieware/commit/e4738895354705de040b42f09758ac072d2ccbb7 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-3c1694fab1568340f2e75b26efa1f55d97c5153364a7357e9e1104c718ff1a2f.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-3e95d73eb454e0099947df00d91ab0dbfc6b10be69dd5daf5de7aeb676580d20.css" media="all" rel="stylesheet" />
+    
+    
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-c4b4365da282e51c06e107368db8502a2ecf82e64094d29d791b797372212de2.css" media="all" rel="stylesheet" />
+    
+
+    <link as="script" href="https://assets-cdn.github.com/assets/frameworks-f8175c23360b42a4eb18b2319fefeae252cfeea482fb804356f4136a52bfddb3.js" rel="preload" />
+    
+    <link as="script" href="https://assets-cdn.github.com/assets/github-1502104f450cb05859f99b57e29782e071e3fb240e237adb8cbf17ebbdb271c7.js" rel="preload" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Use adam greens suggestion to simplify the way the git version string… · Smoothieware/Smoothieware@e473889 · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="https://github.com/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://github.com/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://github.com/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://github.com/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://github.com/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars1.githubusercontent.com/u/22263?v=3&amp;s=200" name="twitter:image:src" /><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Use adam greens suggestion to simplify the way the git version string… · Smoothieware/Smoothieware@e473889" name="twitter:title" /><meta content="… is generated" name="twitter:description" />
+      <meta content="https://avatars1.githubusercontent.com/u/22263?v=3&amp;s=200" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="Use adam greens suggestion to simplify the way the git version string… · Smoothieware/Smoothieware@e473889" property="og:title" /><meta content="https://github.com/Smoothieware/Smoothieware/commit/e4738895354705de040b42f09758ac072d2ccbb7" property="og:url" /><meta content="… is generated" property="og:description" /><meta content="1370598174" property="og:updated_time" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="https://github.com/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_commits" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="55A92EEF:7A04:8D3FFB:5735BD9C" name="octolytics-dimension-request_id" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/commit/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="OTY2MjU1ZGZkYmIxODU4ZmUzZWQxNmYyN2FhZmRiZmY0ZTI5YWZiMzg2MWU5YTYxMThkMWE4NDk4MDI5NTUxYnx7InJlbW90ZV9hZGRyZXNzIjoiODUuMTY5LjQ2LjIzOSIsInJlcXVlc3RfaWQiOiI1NUE5MkVFRjo3QTA0OjhEM0ZGQjo1NzM1QkQ5QyIsInRpbWVzdGFtcCI6MTQ2MzEzOTc0MH0=">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta content="d6013ef313dc33a770980c6e66b5cb1d7130dd9d" name="form-nonce" />
+
+    <meta http-equiv="x-pjax-version" content="22dd3b7ce1aea89995da9e98ee8a9677">
+    
+
+        <link data-pjax-transient="true" href="https://github.com/Smoothieware/Smoothieware/commit/e4738895354705de040b42f09758ac072d2ccbb7.diff" rel="alternate" type="text/plain+diff" />
+  <link data-pjax-transient="true" href="https://github.com/Smoothieware/Smoothieware/commit/e4738895354705de040b42f09758ac072d2ccbb7.patch" rel="alternate" type="text/plain+patch" />
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+      <meta content="noindex, nofollow" name="robots" />
+
+  <meta name="description" content="Smoothieware - Modular, opensource, high performance G-code interpreter and CNC controller written in Object-Oriented C++">
+  <meta name="go-import" content="github.com/Smoothieware/Smoothieware git https://github.com/Smoothieware/Smoothieware.git">
+
+  <meta content="4834224" name="octolytics-dimension-user_id" /><meta content="Smoothieware" name="octolytics-dimension-user_login" /><meta content="2418744" name="octolytics-dimension-repository_id" /><meta content="Smoothieware/Smoothieware" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="2418744" name="octolytics-dimension-repository_network_root_id" /><meta content="Smoothieware/Smoothieware" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/Smoothieware/Smoothieware/commits/e4738895354705de040b42f09758ac072d2ccbb7.atom" rel="alternate" title="Recent Commits to Smoothieware:e4738895354705de040b42f09758ac072d2ccbb7" type="application/atom+xml">
+
+
+  </head>
+
+
+  <body class="logged-out   env-production  vis-public">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"></div>
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+          <header class="site-header js-details-container" role="banner">
+  <div class="container-responsive">
+    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+    </a>
+
+    <button class="btn-link right site-header-toggle js-details-target" type="button" aria-label="Toggle navigation">
+      <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path d="M11.41 9H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1z m0-4H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1zM0.59 11h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1z"></path></svg>
+    </button>
+
+    <div class="site-header-menu">
+      <nav class="site-header-nav site-header-nav-main">
+        <a href="https://github.com/personal" class="js-selected-navigation-item nav-item nav-item-personal" data-ga-click="Header, click, Nav menu - item:personal" data-selected-links="/personal /personal">
+          Personal
+</a>        <a href="https://github.com/open-source" class="js-selected-navigation-item nav-item nav-item-opensource" data-ga-click="Header, click, Nav menu - item:opensource" data-selected-links="/open-source /open-source">
+          Open source
+</a>        <a href="https://github.com/business" class="js-selected-navigation-item nav-item nav-item-business" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/features /business/customers /business">
+          Business
+</a>        <a href="https://github.com/explore" class="js-selected-navigation-item nav-item nav-item-explore" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship /explore">
+          Explore
+</a>      </nav>
+
+      <div class="site-header-actions">
+            <a class="btn btn-primary site-header-actions-btn" href="https://github.com/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+          <a class="btn site-header-actions-btn mr-2" href="https://github.com/login?return_to=%2FSmoothieware%2FSmoothieware%2Fcommit%2Fe4738895354705de040b42f09758ac072d2ccbb7" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+      </div>
+
+        <nav class="site-header-nav site-header-nav-secondary">
+          <a class="nav-item" href="https://github.com/pricing">Pricing</a>
+          <a class="nav-item" href="https://github.com/blog">Blog</a>
+          <a class="nav-item" href="https://help.github.com/">Support</a>
+          <a class="nav-item header-search-link" href="https://github.com/search">Search GitHub</a>
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/Smoothieware/Smoothieware/search" class="js-site-search-form" data-scoped-search-url="/Smoothieware/Smoothieware/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        tabindex="1"
+        autocapitalize="off">
+    </label>
+</form></div>
+
+        </nav>
+    </div>
+  </div>
+</header>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="https://github.com/login?return_to=%2FSmoothieware%2FSmoothieware"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+    Watch
+  </a>
+  <a class="social-count" href="https://github.com/Smoothieware/Smoothieware/watchers">
+    131
+  </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2FSmoothieware%2FSmoothieware"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="https://github.com/Smoothieware/Smoothieware/stargazers">
+      328
+    </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2FSmoothieware%2FSmoothieware"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M8 1c-1.11 0-2 0.89-2 2 0 0.73 0.41 1.38 1 1.72v1.28L5 8 3 6v-1.28c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v1.78l3 3v1.78c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V9.5l3-3V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2zM2 4.2c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3 10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3-10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+        Fork
+      </a>
+
+    <a href="https://github.com/Smoothieware/Smoothieware/network" class="social-count">
+      397
+    </a>
+  </li>
+</ul>
+
+    <h1 class="entry-title public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a href="https://github.com/Smoothieware" class="url fn" rel="author">Smoothieware</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="https://github.com/Smoothieware/Smoothieware" data-pjax="#js-repo-pjax-container">Smoothieware</a></strong>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/Smoothieware/Smoothieware" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /Smoothieware/Smoothieware" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M9.5 3l-1.5 1.5 3.5 3.5L8 11.5l1.5 1.5 4.5-5L9.5 3zM4.5 3L0 8l4.5 5 1.5-1.5L2.5 8l3.5-3.5L4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="https://github.com/Smoothieware/Smoothieware/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /Smoothieware/Smoothieware/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7S10.14 13.7 7 13.7 1.3 11.14 1.3 8s2.56-5.7 5.7-5.7m0-1.3C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7S10.86 1 7 1z m1 3H6v5h2V4z m0 6H6v2h2V10z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">31</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/Smoothieware/Smoothieware/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /Smoothieware/Smoothieware/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 11.28c0-1.73 0-6.28 0-6.28-0.03-0.78-0.34-1.47-0.94-2.06s-1.28-0.91-2.06-0.94c0 0-1.02 0-1 0V0L4 3l3 3V4h1c0.27 0.02 0.48 0.11 0.69 0.31s0.3 0.42 0.31 0.69v6.28c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72z m-1 2.92c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2zM4 3c0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72 0 1.55 0 5.56 0 6.56-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V4.72c0.59-0.34 1-0.98 1-1.72z m-0.8 10c0 0.66-0.55 1.2-1.2 1.2s-1.2-0.55-1.2-1.2 0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2z m-1.2-8.8c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">7</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="https://github.com/Smoothieware/Smoothieware/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /Smoothieware/Smoothieware/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M2 5h4v1H2v-1z m0 3h4v-1H2v1z m0 2h4v-1H2v1z m11-5H9v1h4v-1z m0 2H9v1h4v-1z m0 2H9v1h4v-1z m2-6v9c0 0.55-0.45 1-1 1H8.5l-1 1-1-1H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h5.5l1 1 1-1h5.5c0.55 0 1 0.45 1 1z m-8 0.5l-0.5-0.5H1v9h6V3.5z m7-0.5H8.5l-0.5 0.5v8.5h6V3z"></path></svg>
+      Wiki
+</a>
+
+  <a href="https://github.com/Smoothieware/Smoothieware/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /Smoothieware/Smoothieware/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0V10h3.6L4.5 8.2l0.9 5.4L9 8.5l1.6 1.5H14V8H11.5z"></path></svg>
+    Pulse
+</a>
+  <a href="https://github.com/Smoothieware/Smoothieware/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /Smoothieware/Smoothieware/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M16 14v1H0V0h1v14h15z m-11-1H3V8h2v5z m4 0H7V3h2v10z m4 0H11V6h2v7z"></path></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+<a href="https://github.com/Smoothieware/Smoothieware/commit/e4738895354705de040b42f09758ac072d2ccbb7" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+
+
+
+
+<div class="commit full-commit ">
+  <a href="https://github.com/Smoothieware/Smoothieware/tree/e4738895354705de040b42f09758ac072d2ccbb7" class="btn btn-outline right" title="Browse the repository at this point in the history" rel="nofollow">Browse files</a>
+
+    <p class="commit-title">
+      Use adam greens suggestion to simplify the way the git version string…
+    </p>
+
+    <div class="commit-desc"><pre>… is generated</pre></div>
+
+  <div class="commit-branches">
+    <include-fragment src="https://github.com/Smoothieware/Smoothieware/branch_commits/e4738895354705de040b42f09758ac072d2ccbb7">
+      <svg aria-hidden="true" class="octicon octicon-git-branch" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M10 5c0-1.11-0.89-2-2-2s-2 0.89-2 2c0 0.73 0.41 1.38 1 1.72v0.3c-0.02 0.52-0.23 0.98-0.63 1.38s-0.86 0.61-1.38 0.63c-0.83 0.02-1.48 0.16-2 0.45V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v6.56C0.41 11.63 0 12.27 0 13c0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.53-0.2-1-0.53-1.36 0.09-0.06 0.48-0.41 0.59-0.47 0.25-0.11 0.56-0.17 0.94-0.17 1.05-0.05 1.95-0.45 2.75-1.25s1.2-1.98 1.25-3.02h-0.02c0.61-0.36 1.02-1 1.02-1.73zM2 1.8c0.66 0 1.2 0.55 1.2 1.2s-0.55 1.2-1.2 1.2-1.2-0.55-1.2-1.2 0.55-1.2 1.2-1.2z m0 12.41c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m6-8c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+      <ul class="branches-list">
+        <li class="loading">Loading branch information<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></li>
+      </ul>
+</include-fragment>  </div>
+
+  <div class="commit-meta clearfix">
+    <span class="right">
+      <span class="sha-block" data-pjax>
+        1 parent
+          
+          <a href="https://github.com/Smoothieware/Smoothieware/commit/0833955d9b1dc474c1657080760aad52504d57eb" class="sha" data-hotkey="p">0833955</a>
+      </span>
+      <span class="sha-block">commit <span class="sha user-select-contain">e4738895354705de040b42f09758ac072d2ccbb7</span></span>
+    </span>
+
+    <span class="commit-author-section">
+      <img alt="@wolfmanjm" class="avatar" height="24" src="https://avatars1.githubusercontent.com/u/22263?v=3&amp;s=48" width="24" />
+      <a href="https://github.com/wolfmanjm" class="user-mention" rel="contributor">wolfmanjm</a>
+      
+      committed
+      <relative-time datetime="2013-06-07T09:42:54Z">Jun 7, 2013</relative-time>
+      
+
+    </span>
+  </div>
+</div>
+
+
+
+
+    <a name="diff-stat"></a>
+    <div id="toc" class="details-collapse table-of-contents js-details-container">
+  <div class="btn-group right" data-ga-load="Diff, view, Viewed Unified Diff">
+  <a class="btn btn-sm selected" href="https://github.com/Smoothieware/Smoothieware/commit/e4738895354705de040b42f09758ac072d2ccbb7?diff=unified">
+    Unified
+  </a>
+  <a class="btn btn-sm" href="https://github.com/Smoothieware/Smoothieware/commit/e4738895354705de040b42f09758ac072d2ccbb7?diff=split">
+    Split
+  </a>
+</div>
+
+
+  <div class="toc-diff-stats">
+    <svg aria-hidden="true" class="octicon octicon-diff" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M6 7h2v1H6v2h-1V8H3v-1h2V5h1v2zM3 13h5v-1H3v1z m4.5-11l3.5 3.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h6.5z m2.5 4L7 3H1v12h9V6zM8.5 0S3 0 3 0v1h5l4 4v8h1V4.5L8.5 0z"></path></svg>
+    Showing
+    <button type="button" class="btn-link js-details-target">
+      6 changed files
+    </button>
+    with
+    <strong>11 additions</strong>
+    and <strong>16 deletions</strong>.
+  </div>
+
+  <ol class="content collapse js-transitionable">
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +1
+          </span>
+          <span class="text-diff-deleted">
+            −1
+          </span>
+          <a href="#diff-a084b794bc0759e7a6b77810e01874f2" class="tooltipped tooltipped-s" aria-label="2 lines changed">
+            <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span>
+          </a>
+      </span>
+      <svg aria-hidden="true" class="octicon octicon-diff-modified" height="16" title="modified" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"></path></svg>
+      <a href="#diff-a084b794bc0759e7a6b77810e01874f2">.gitignore</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +0
+          </span>
+          <span class="text-diff-deleted">
+            −8
+          </span>
+          <a href="#diff-2371154e467ad2880d0dc36b255adab8" class="tooltipped tooltipped-s" aria-label="8 lines changed">
+            <span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span>
+          </a>
+      </span>
+      <svg aria-hidden="true" class="octicon octicon-diff-removed" height="16" title="removed" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM11 9H3V7h8v2z"></path></svg>
+      <a href="#diff-2371154e467ad2880d0dc36b255adab8">generate-version.sh</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +0
+          </span>
+          <span class="text-diff-deleted">
+            −6
+          </span>
+          <a href="#diff-cd5dbf3629c558b0104ba8f0937d6816" class="tooltipped tooltipped-s" aria-label="6 lines changed">
+            <span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span>
+          </a>
+      </span>
+      <svg aria-hidden="true" class="octicon octicon-diff-modified" height="16" title="modified" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"></path></svg>
+      <a href="#diff-cd5dbf3629c558b0104ba8f0937d6816">makefile</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +2
+          </span>
+          <span class="text-diff-deleted">
+            −0
+          </span>
+          <a href="#diff-05ecfb47a98351a4a00398d51e3333ad" class="tooltipped tooltipped-s" aria-label="2 lines changed">
+            <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span>
+          </a>
+      </span>
+      <svg aria-hidden="true" class="octicon octicon-diff-added" height="16" title="added" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM6 9H3V7h3V4h2v3h3v2H8v3H6V9z"></path></svg>
+      <a href="#diff-05ecfb47a98351a4a00398d51e3333ad">src/generate-version.sh</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +7
+          </span>
+          <span class="text-diff-deleted">
+            −0
+          </span>
+          <a href="#diff-210e3527f52409b84fd1c50fcea0df2f" class="tooltipped tooltipped-s" aria-label="7 lines changed">
+            <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span>
+          </a>
+      </span>
+      <svg aria-hidden="true" class="octicon octicon-diff-modified" height="16" title="modified" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"></path></svg>
+      <a href="#diff-210e3527f52409b84fd1c50fcea0df2f">src/makefile</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +1
+          </span>
+          <span class="text-diff-deleted">
+            −1
+          </span>
+          <a href="#diff-fe1e38d934712fa3e000901095dbfeb6" class="tooltipped tooltipped-s" aria-label="2 lines changed">
+            <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span>
+          </a>
+      </span>
+      <svg aria-hidden="true" class="octicon octicon-diff-renamed" height="16" title="renamed" version="1.1" viewBox="0 0 14 16" width="14"><path d="M6 9H3V7h3V4l5 4-5 4V9z m8-7v12c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h12c0.55 0 1 0.45 1 1z m-1 0H1v12h12V2z"></path></svg>
+      <a href="#diff-fe1e38d934712fa3e000901095dbfeb6">src/{version.cpp.placeholder → version.cpp}</a>
+    </li>
+  </ol>
+</div>
+
+  <div id="files" class="diff-view ">
+    
+      <a name="diff-a084b794bc0759e7a6b77810e01874f2"></a>
+      <div id="diff-0"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path=".gitignore">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="https://github.com/Smoothieware/Smoothieware/blob/e4738895354705de040b42f09758ac072d2ccbb7/.gitignore" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version e473889 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="1 addition &amp; 1 deletion">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+
+            <span class="user-select-contain" title=".gitignore">
+              .gitignore
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-a084b794bc0759e7a6b77810e01874f2"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/bfe82c6972b1155e3586b99f73432259fb34f694?diff=unified&amp;left_hunk_size=4&amp;mode=100644&amp;next_line_num_left=21&amp;next_line_num_right=21&amp;path=.gitignore&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=4"
+            data-left-range="1-20" data-right-range="1-20">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -21,4 +21,4 @@ debug</td>
+  </tr>
+
+    <tr>
+    <td id="diff-a084b794bc0759e7a6b77810e01874f2L21" data-line-number="21"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a084b794bc0759e7a6b77810e01874f2R21" data-line-number="21"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> /mac_install.log</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a084b794bc0759e7a6b77810e01874f2L22" data-line-number="22"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a084b794bc0759e7a6b77810e01874f2R22" data-line-number="22"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> /win_install.log</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a084b794bc0759e7a6b77810e01874f2L23" data-line-number="23"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a084b794bc0759e7a6b77810e01874f2R23" data-line-number="23"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> /linux_install.log</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a084b794bc0759e7a6b77810e01874f2L24" data-line-number="24"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="x x-first x-last">/src/version.cpp</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a084b794bc0759e7a6b77810e01874f2R24" data-line-number="24"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-2371154e467ad2880d0dc36b255adab8"></a>
+      <div id="diff-1"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="generate-version.sh">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="https://github.com/Smoothieware/Smoothieware/blob/0833955d9b1dc474c1657080760aad52504d57eb/generate-version.sh" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version 0833955 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="0 additions &amp; 8 deletions">8 <span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span></span>
+
+            <span class="user-select-contain" title="generate-version.sh">
+              generate-version.sh
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr data-position="0">
+    <td id="diff-2371154e467ad2880d0dc36b255adab8L0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+    <td id="diff-2371154e467ad2880d0dc36b255adab8R-1" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -1,8 +0,0 @@</td>
+  </tr>
+
+    <tr>
+    <td id="diff-2371154e467ad2880d0dc36b255adab8L1" data-line-number="1"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&quot;</span>#include <span class="pl-cce">\&quot;</span>version.h<span class="pl-cce">\&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-k">&gt;</span> src/version.cpp</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-2371154e467ad2880d0dc36b255adab8L2" data-line-number="2"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&quot;</span>const char *Version::get_build(void) const {<span class="pl-pds">&quot;</span></span> <span class="pl-k">&gt;&gt;</span> src/version.cpp</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-2371154e467ad2880d0dc36b255adab8L3" data-line-number="3"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&quot;</span>    return <span class="pl-cce">\&quot;</span><span class="pl-s"><span class="pl-pds">`</span>git symbolic-ref HEAD <span class="pl-k">2&gt;</span> /dev/null <span class="pl-k">|</span> cut -b 12-<span class="pl-pds">`</span></span>-<span class="pl-s"><span class="pl-pds">`</span>git log --pretty=format:<span class="pl-cce">\&quot;</span>%h<span class="pl-cce">\&quot;</span> -1<span class="pl-pds">`</span></span><span class="pl-cce">\&quot;</span>;<span class="pl-pds">&quot;</span></span> <span class="pl-k">&gt;&gt;</span> src/version.cpp</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-2371154e467ad2880d0dc36b255adab8L4" data-line-number="4"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&quot;</span>}<span class="pl-pds">&quot;</span></span> <span class="pl-k">&gt;&gt;</span> src/version.cpp</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-2371154e467ad2880d0dc36b255adab8L5" data-line-number="5"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&quot;</span>const char *Version::get_build_date(void) const {<span class="pl-pds">&quot;</span></span> <span class="pl-k">&gt;&gt;</span> src/version.cpp</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-2371154e467ad2880d0dc36b255adab8L6" data-line-number="6"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&quot;</span>    return __DATE__ <span class="pl-cce">\&quot;</span> <span class="pl-cce">\&quot;</span> __TIME__;<span class="pl-pds">&quot;</span></span> <span class="pl-k">&gt;&gt;</span> src/version.cpp</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-2371154e467ad2880d0dc36b255adab8L7" data-line-number="7"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">&quot;</span>}<span class="pl-pds">&quot;</span></span> <span class="pl-k">&gt;&gt;</span> src/version.cpp</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-2371154e467ad2880d0dc36b255adab8L8" data-line-number="8"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-</span>
+
+  </td>
+</tr>
+
+
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-cd5dbf3629c558b0104ba8f0937d6816"></a>
+      <div id="diff-2"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="makefile">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="https://github.com/Smoothieware/Smoothieware/blob/e4738895354705de040b42f09758ac072d2ccbb7/makefile" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version e473889 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="0 additions &amp; 6 deletions">6 <span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span></span>
+
+            <span class="user-select-contain" title="makefile">
+              makefile
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-cd5dbf3629c558b0104ba8f0937d6816"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/9a10c9294c6a6d1f0cae458e45378e6e7d1b30fb?diff=unified&amp;left_hunk_size=12&amp;mode=100644&amp;next_line_num_left=4&amp;next_line_num_right=4&amp;path=makefile&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=6"
+            data-left-range="1-3" data-right-range="1-3">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -4,12 +4,6 @@ DIRS = mbed src</td>
+  </tr>
+
+    <tr>
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816L4" data-line-number="4"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816R4" data-line-number="4"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-smi">DIRSCLEAN</span> = <span class="pl-s">$(<span class="pl-c1">addsuffix</span> .clean,<span class="pl-s">$(<span class="pl-smi">DIRS</span>)</span>)</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816L5" data-line-number="5"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816R5" data-line-number="5"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816L6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816R6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-en">all</span>:</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816L7" data-line-number="7"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-k">ifneq</span> &quot;<span class="pl-s">$(<span class="pl-smi">OS</span>)</span>&quot; &quot;Windows_NT&quot;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816L8" data-line-number="8"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-	@./generate-version.sh</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816L9" data-line-number="9"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-k">else</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816L10" data-line-number="10"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-	@xcopy /C /I /Y src/version.cpp.placeholder src/version.cpp</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816L11" data-line-number="11"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-k">endif</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816L12" data-line-number="12"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-	@echo Building mbed SDK</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816L13" data-line-number="13"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816R7" data-line-number="7"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 	@ <span class="pl-s">$(<span class="pl-v">MAKE</span>)</span> -C mbed</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816L14" data-line-number="14"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816R8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 	@<span class="pl-c1">echo</span> Building Smoothie</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816L15" data-line-number="15"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-cd5dbf3629c558b0104ba8f0937d6816R9" data-line-number="9"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 	@ <span class="pl-s">$(<span class="pl-v">MAKE</span>)</span> -C src</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-cd5dbf3629c558b0104ba8f0937d6816"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/Smoothieware/Smoothieware/blob_excerpt/9a10c9294c6a6d1f0cae458e45378e6e7d1b30fb?diff=unified&amp;mode=100644&amp;path=makefile&amp;prev_line_num_left=15&amp;prev_line_num_right=9"
+          data-left-range="16-35"
+          data-right-range="10-35">
+       <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-05ecfb47a98351a4a00398d51e3333ad"></a>
+      <div id="diff-3"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="src/generate-version.sh">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="https://github.com/Smoothieware/Smoothieware/blob/e4738895354705de040b42f09758ac072d2ccbb7/src/generate-version.sh" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version e473889 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="2 additions &amp; 0 deletions">2 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+
+            <span class="user-select-contain" title="src/generate-version.sh">
+              src/generate-version.sh
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr data-position="0">
+    <td id="diff-05ecfb47a98351a4a00398d51e3333adL-1" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+    <td id="diff-05ecfb47a98351a4a00398d51e3333adR0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -0,0 +1,2 @@</td>
+  </tr>
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-05ecfb47a98351a4a00398d51e3333adR1" data-line-number="1"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">`</span>git symbolic-ref HEAD <span class="pl-k">2&gt;</span> /dev/null <span class="pl-k">|</span> cut -b 12-<span class="pl-pds">`</span></span>-<span class="pl-s"><span class="pl-pds">`</span>git log --pretty=format:%h -1<span class="pl-pds">`</span></span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-05ecfb47a98351a4a00398d51e3333adR2" data-line-number="2"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+touch version.cpp</span>
+
+      <span class="no-nl-marker tooltipped tooltipped-n" aria-label="No newline at end of file">
+        <svg aria-hidden="true" class="octicon octicon-no-newline" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M16 5v3c0 0.55-0.45 1-1 1H12v2L9 8l3-3v2h2V5h2zM8 8c0 2.2-1.8 4-4 4S0 10.2 0 8s1.8-4 4-4 4 1.8 4 4zM1.5 9.66l4.16-4.16c-0.48-0.31-1.05-0.5-1.66-0.5-1.66 0-3 1.34-3 3 0 0.61 0.19 1.17 0.5 1.66z m5.5-1.66c0-0.61-0.19-1.17-0.5-1.66L2.34 10.5c0.48 0.31 1.05 0.5 1.66 0.5 1.66 0 3-1.34 3-3z"></path></svg>
+      </span>
+  </td>
+</tr>
+
+
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-210e3527f52409b84fd1c50fcea0df2f"></a>
+      <div id="diff-4"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="src/makefile">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="https://github.com/Smoothieware/Smoothieware/blob/e4738895354705de040b42f09758ac072d2ccbb7/src/makefile" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version e473889 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="7 additions &amp; 0 deletions">7 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span></span>
+
+            <span class="user-select-contain" title="src/makefile">
+              src/makefile
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-210e3527f52409b84fd1c50fcea0df2f"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/aba239098049853e27d1d3a1f4b0b2264bade180?diff=unified&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=39&amp;next_line_num_right=39&amp;path=src%2Fmakefile&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=13"
+            data-left-range="1-38" data-right-range="1-38">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -39,6 +39,13 @@ MRI_BREAK_ON_INIT=0</td>
+  </tr>
+
+    <tr>
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fL39" data-line-number="39"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fR39" data-line-number="39"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-smi">MRI_SEMIHOST_STDIO</span>=0</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fL40" data-line-number="40"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fR40" data-line-number="40"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-k">endif</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fL41" data-line-number="41"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fR41" data-line-number="41"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fR42" data-line-number="42"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-c"># generate a git version string, sorry only on linux and mac osx</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fR43" data-line-number="43"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-k">ifneq</span> &quot;<span class="pl-s">$(<span class="pl-smi">OS</span>)</span>&quot; &quot;Windows_NT&quot;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fR44" data-line-number="44"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-smi">DEFINES</span> += -D__GITVERSIONSTRING__=\&quot;<span class="pl-s">$(<span class="pl-c1">shell</span> ./generate-version.sh)</span>\&quot;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fR45" data-line-number="45"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-k">else</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fR46" data-line-number="46"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-smi">DEFINES</span> += -D__GITVERSIONSTRING__=\&quot;placeholder\&quot;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fR47" data-line-number="47"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-k">endif</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fR48" data-line-number="48"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fL42" data-line-number="42"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fR49" data-line-number="49"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-k">include</span> <span class="pl-s">$(<span class="pl-smi">BUILD_DIR</span>)</span>/build.mk</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fL43" data-line-number="43"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fR50" data-line-number="50"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fL44" data-line-number="44"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-210e3527f52409b84fd1c50fcea0df2fR51" data-line-number="51"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-smi">CONSOLE?</span>=/dev/arduino_A900K10V</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-210e3527f52409b84fd1c50fcea0df2f"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/Smoothieware/Smoothieware/blob_excerpt/aba239098049853e27d1d3a1f4b0b2264bade180?diff=unified&amp;mode=100644&amp;path=src%2Fmakefile&amp;prev_line_num_left=44&amp;prev_line_num_right=51"
+          data-left-range="45-73"
+          data-right-range="52-73">
+       <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-fe1e38d934712fa3e000901095dbfeb6"></a>
+      <div id="diff-5"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="src/version.cpp">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="https://github.com/Smoothieware/Smoothieware/blob/e4738895354705de040b42f09758ac072d2ccbb7/src/version.cpp" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version e473889 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="1 addition &amp; 1 deletion">2 <span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
+
+            <span class="user-select-contain" title="src/version.cpp.placeholder &rarr; src/version.cpp">
+              src/version.cpp.placeholder &rarr; src/version.cpp
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr data-position="0">
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6L0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6R0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -1,6 +1,6 @@</td>
+  </tr>
+
+    <tr>
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6L1" data-line-number="1"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6R1" data-line-number="1"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> #<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>version.h<span class="pl-pds">&quot;</span></span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6L2" data-line-number="2"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6R2" data-line-number="2"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-k">const</span> <span class="pl-k">char</span> *<span class="pl-en">Version::get_build</span>(<span class="pl-k">void</span>) <span class="pl-k">const</span> {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6L3" data-line-number="3"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    return <span class="x x-first x-last">"placeholder"</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6R3" data-line-number="3"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">return</span> <span class="x x-first x-last">__GITVERSIONSTRING__</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6L4" data-line-number="4"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6R4" data-line-number="4"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6L5" data-line-number="5"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6R5" data-line-number="5"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-k">const</span> <span class="pl-k">char</span> *<span class="pl-en">Version::get_build_date</span>(<span class="pl-k">void</span>) <span class="pl-k">const</span> {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6L6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-fe1e38d934712fa3e000901095dbfeb6R6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">return</span> __DATE__ <span class="pl-s"><span class="pl-pds">&quot;</span> <span class="pl-pds">&quot;</span></span> __TIME__;</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-fe1e38d934712fa3e000901095dbfeb6"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/Smoothieware/Smoothieware/blob_excerpt/181df4b53a2446069fa6d1e48a9d9211aec4a854?diff=unified&amp;mode=100644&amp;path=src%2Fversion.cpp&amp;prev_line_num_left=6&amp;prev_line_num_right=6"
+          data-left-range="7-7"
+          data-right-range="7-7">
+       <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+</div>
+
+<button class="js-toggle-all-file-notes" data-hotkey="i" style="display:none">Toggle all file notes</button>
+
+
+<div id="all_commit_comments" class="js-quote-selection-container ">
+
+  <div class="commit-comments-heading">
+    
+<div id="partial-visible-comments-header">
+  <span class="right">
+    
+  </span>
+
+  <h4 class="commit-comment-count">
+    0 comments
+    on commit <code class="commit-sha">e473889</code>
+  </h4>
+
+</div>
+
+
+  </div>
+
+  <div id="comments" class="comment-holder">
+    
+
+<!-- Rendered timeline since 2013-06-07 02:42:54 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="Smoothieware/Smoothieware:commit:e4738895354705de040b42f09758ac072d2ccbb7"
+      data-url="/Smoothieware/Smoothieware/commit/e4738895354705de040b42f09758ac072d2ccbb7/show_partial?partial=commit%2Ftimeline_marker&amp;since=1370598174"
+      data-last-modified="Fri, 07 Jun 2013 09:42:54 GMT">
+
+</div>
+
+  </div>
+
+  
+
+    Please <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FSmoothieware%2FSmoothieware%2Fcommit%2Fe4738895354705de040b42f09758ac072d2ccbb7" rel="nofollow">sign in</a> to comment.
+
+</div>
+
+
+  </div>
+  <div class="modal-backdrop"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com/" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2016 <span title="0.13779s from github-fe144-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com/" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/compat-7db58f8b7b91111107fac755dd8b178fe7db0f209ced51fc339c446ad3f8da2b.js"></script>
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-f8175c23360b42a4eb18b2319fefeae252cfeea482fb804356f4136a52bfddb3.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-1502104f450cb05859f99b57e29782e071e3fb240e237adb8cbf17ebbdb271c7.js"></script>
+      
+      
+      
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="#">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="#">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  </body>
+
+<!-- Mirrored from github.com/Smoothieware/Smoothieware/commit/e4738895354705de040b42f09758ac072d2ccbb7 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:05 GMT -->
+</html>
+

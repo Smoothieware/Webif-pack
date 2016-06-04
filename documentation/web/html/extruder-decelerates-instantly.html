@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/forum/t-1696054/extruder-decelerates-instantly by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:15:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Extruder Decelerates Instantly - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="http://www.wikidot.com/default__flow/login__CustomDomainScript?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474487;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "forum:thread";
+        OZONE.request.timestamp = 1463139116;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "forum:thread";
+        WIKIREQUEST.info.pageId = 7451485;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--javascript/WIKIDOT.combined.js"></script>
+            <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--bootstrap/3.2.0/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--bootstrap/3.2.0/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/bootstrap-base/css/style.css);
+                    @import url(http://chibidibidiwah.wdfiles.com/local--theme/bare/style.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="http://smoothieware.org/local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="http://smoothieware.org/local--favicon/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="http://smoothieware.org/common--images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://smoothieware.org/common--images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://smoothieware.org/common--images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    <link rel="alternate" type="application/rss+xml" title="Posts in the discussion thread &quot;Extruder Decelerates Instantly&quot;" href="http://smoothieware.org/feed/forum/t-1696054.xml"/><script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--modules/js/forum/ForumViewThreadModule.js"></script>
+<script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--modules/js/forum/ForumViewThreadPostsModule.js"></script>
+</head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://smoothieware.org/" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/">Documentation</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/smoothieboard">SmoothieBoard</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/blog">Blog</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/gallery">Gallery</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="http://smoothieware.org/irc">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="http://smoothieware.org/forum/c-496918/general">Forum</a></li>
+<li><a href="http://groups.google.com/group/smoothieware-support">Support/Help Mailing list</a></li>
+<li><a href="http://groups.google.com/group/smoothie-dev">Developper Mailing list</a></li>
+<li><a href="https://plus.google.com/communities/111870450664099533727">Google+ Community</a></li>
+<li><a href="https://www.facebook.com/Smoothieware/">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/search">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="http://chibidibidiwah.wdfiles.com/local--files/start/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Forum Thread</span></div>
+          
+          <div id="page-content">
+
+
+<div class="forum-thread-box "> 
+	<div  class="forum-breadcrumbs">
+		<a href="http://smoothieware.org/forum/start">Forum</a>
+        &raquo; <a href="http://smoothieware.org/forum/c-496918/general">Smoothie Firwmare / General</a>
+		&raquo; Extruder Decelerates Instantly
+	</div>
+	
+	<div class="description-block well">
+		<div class="statistics">
+			Started by: <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/kbranch" onclick="WIKIDOT.page.listeners.userInfo(2729994); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2729994&amp;amp;size=small&amp;amp;timestamp=1463139116" alt="kbranch" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2729994)"/></a><a href="http://www.wikidot.com/user:info/kbranch" onclick="WIKIDOT.page.listeners.userInfo(2729994); return false;" >kbranch</a></span><br/>
+			Date:  <span class="odate time_1461978671 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">30 Apr 2016 01:11</span><br/>
+			Number of posts: 3<br/>
+			<span class="rss-icon"><img src="http://www.wikidot.com/common--theme/base/images/feed/feed-icon-14x14.png" alt="rss icon"/></span>
+			RSS: <a href="http://smoothieware.org/feed/forum/t-1696054.xml">New posts</a>
+		</div>
+									
+	</div>
+	
+	<div class="options">
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.unfoldAll(event)" class="btn btn-default btn-small btn-sm">Unfold All</a> 
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.foldAll(event)" class="btn btn-default btn-small btn-sm">Fold All</a>
+		<a href="javascript:;" id="thread-toggle-options" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.toggleThreadOptions(event)" class="btn btn-default btn-small btn-sm"><i class="icon-plus"></i> More Options</a>
+	</div>
+	<div id="thread-options-2" class="options" style="display: none">
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.editThreadMeta(event)" class="btn btn-default btn-small btn-sm">Edit Title &amp; Description</a>
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.editThreadStickiness(event)" class="btn btn-default btn-small btn-sm">Stickness</a>
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.editThreadBlock(event)" class="btn btn-default btn-small btn-sm">Lock Thread</a>
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.moveThread(event)" class="btn btn-default btn-small btn-sm">Move Thread</a>
+			</div>
+	
+	<div id="thread-action-area" class="action-area well" style="display: none"></div>
+
+    <div id="thread-container" class="thread-container">
+        <div id="thread-container-posts" style="display: none">
+            
+
+
+
+	
+					
+      
+    <div class="post-container" id="fpc-2500887">
+                      
+		<div class="post" id="post-2500887">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2500887)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2500887">
+																		Extruder Decelerates Instantly
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/kbranch" onclick="WIKIDOT.page.listeners.userInfo(2729994); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2729994&amp;amp;size=small&amp;amp;timestamp=1463139116" alt="kbranch" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2729994)"/></a><a href="http://www.wikidot.com/user:info/kbranch" onclick="WIKIDOT.page.listeners.userInfo(2729994); return false;" >kbranch</a></span> <span class="odate time_1461978671 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">30 Apr 2016 01:11</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2500887">
+									
+
+<p>I'm trying to debug an issue I'm having where my extruder makes worrying noises during fast retracts, and I noticed that the extruder stepper seems to ignore acceleration when stopping - it slams to a complete stop instantly. I'm not positive that this is the source of my noise yet, but it seems a bit aggressive once you add the inertia from the second gear and hobbed bolt.</p>
+<p>Is this expected? Is there a way to have it decelerate as slowly as it accelerates?</p>
+<p>This is the result of G1&#160;E+300 F4000 with extruder.hotend.acceleration set to 5: youtu.be (slash) OamXJfZaLJE (forgive the mangled URL, it won't let me post links yet)</p>
+<p>I get the same behavior with the latest stable build and the latest nightly (edge-88e84b2). Here's my full config:</p>
+<div class="collapsible-block">
+<div class="collapsible-block-folded"><a class="collapsible-block-link" href="javascript:;">+&nbsp;show&nbsp;block</a></div>
+<div class="collapsible-block-unfolded" style="display:none">
+<div class="collapsible-block-unfolded-link"><a class="collapsible-block-link" href="javascript:;">–&nbsp;hide&nbsp;block</a></div>
+<div class="collapsible-block-content">
+<div class="code">
+<pre>
+<code># NOTE Lines must not exceed 132 characters
+# Robot module configurations : general handling of movement G-codes and slicing into moves
+default_feed_rate                            4000             # Default rate ( mm/minute ) for G1/G2/G3 moves
+default_seek_rate                            4000             # Default rate ( mm/minute ) for G0 moves
+mm_per_arc_segment                           0.5              # Arcs are cut into segments ( lines ), this is the length for
+                                                              # these segments.  Smaller values mean more resolution,
+                                                              # higher values mean faster computation
+#mm_per_line_segment                          5                # Lines can be cut into segments ( not usefull with cartesian
+                                                              # coordinates robots ).
+
+# Arm solution configuration : Cartesian robot. Translates mm positions into stepper positions
+alpha_steps_per_mm                           160               # Steps per mm for alpha stepper
+beta_steps_per_mm                            160               # Steps per mm for beta stepper
+gamma_steps_per_mm                           1600             # Steps per mm for gamma stepper
+
+# Planner module configuration : Look-ahead and acceleration configuration
+planner_queue_size                           32               # DO NOT CHANGE THIS UNLESS YOU KNOW EXACTLY WHAT YOU ARE DOING
+acceleration                                 800             # Acceleration in mm/second/second.
+z_acceleration                               100              # Acceleration for Z only moves in mm/s^2, 0 uses acceleration which is the default. DO NOT SET ON A DELTA
+acceleration_ticks_per_second                1000             # Number of times per second the speed is updated
+junction_deviation                           0.035            # Similar to the old &quot;max_jerk&quot;, in millimeters,
+                                                              # Lower values mean being more careful, higher values means being
+                                                              # faster and have more jerk
+#z_junction_deviation                        0.0              # for Z only moves, -1 uses junction_deviation, zero disables junction_deviation on z moves DO NOT SET ON A DELTA
+#minimum_planner_speed                       0.0              # sets the minimum planner speed in mm/sec
+
+# Stepper module configuration
+microseconds_per_step_pulse                  1                # Duration of step pulses to stepper drivers, in microseconds
+base_stepping_frequency                      100000           # Base frequency for stepping, higher gives smoother movement
+
+# Cartesian axis speed limits
+x_axis_max_speed                             12000            # mm/min
+y_axis_max_speed                             12000            # mm/min
+z_axis_max_speed                             300              # mm/min
+
+# Stepper module pins ( ports, and pin numbers, appending &quot;!&quot; to the number will invert a pin )
+alpha_step_pin                               2.0              # Pin for alpha stepper step signal
+alpha_dir_pin                                0.5              # Pin for alpha stepper direction
+alpha_en_pin                                 0.4              # Pin for alpha enable pin
+alpha_current                                1.0              # X stepper motor current
+alpha_max_rate                               30000.0          # mm/min
+
+beta_step_pin                                2.1              # Pin for beta stepper step signal
+beta_dir_pin                                 0.11             # Pin for beta stepper direction
+beta_en_pin                                  0.10             # Pin for beta enable
+beta_current                                 1.5              # Y stepper motor current
+beta_max_rate                                30000.0          # mm/min
+
+gamma_step_pin                               2.2              # Pin for gamma stepper step signal
+gamma_dir_pin                                0.20             # Pin for gamma stepper direction
+gamma_en_pin                                 0.19             # Pin for gamma enable
+gamma_current                                0.7              # Z stepper motor current
+gamma_max_rate                               300.0            # mm/min
+
+# Serial communications configuration ( baud rate default to 9600 if undefined )
+uart0.baud_rate                              57600           # Baud rate for the default hardware serial port
+second_usb_serial_enable                     true             # This enables a second usb serial port (to have both pronterface
+                                                              # and a terminal connected)
+#leds_disable                                true             # disable using leds after config loaded
+#play_led_disable                            true             # disable the play led
+pause_button_enable                          true             # Pause button enable
+#pause_button_pin                            2.12             # pause button pin. default is P2.12
+#kill_button_enable                           false            # set to true to enable a kill button
+#kill_button_pin                              2.12             # kill button pin. default is same as pause button 2.12 (2.11 is another good choice)
+#msd_disable                                 false            # disable the MSD (USB SDCARD) when set to true (needs special binary)
+#dfu_enable                                  false            # for linux developers, set to true to enable DFU
+
+# Extruder module configuration
+extruder.hotend.enable                          true             # Whether to activate the extruder module at all. All configuration is ignored if false
+extruder.hotend.steps_per_mm                    840           # Steps per mm for extruder stepper
+extruder.hotend.default_feed_rate               600              # Default rate ( mm/minute ) for moves where only the extruder moves
+extruder.hotend.acceleration                    5              # Acceleration for the stepper motor, as of 0.6, arbitrary ratio
+extruder.hotend.max_speed                       50               # mm/s
+
+extruder.hotend.step_pin                        2.3              # Pin for extruder step signal
+extruder.hotend.dir_pin                         0.22!             # Pin for extruder dir signal
+extruder.hotend.en_pin                          0.21             # Pin for extruder enable signal
+
+# extruder offset
+#extruder.hotend.x_offset                        0                # x offset from origin in mm
+#extruder.hotend.y_offset                        0                # y offset from origin in mm
+#extruder.hotend.z_offset                        0                # z offset from origin in mm
+
+# firmware retract settings when using G10/G11, these are the defaults if not defined, must be defined for each extruder if not using the defaults
+#extruder.hotend.retract_length                  2               # retract length in mm
+#extruder.hotend.retract_feedrate                10              # retract feedrate in mm/sec
+#extruder.hotend.retract_recover_length          0               # additional length for recover
+#extruder.hotend.retract_recover_feedrate        8               # recover feedrate in mm/sec (should be less than retract feedrate)
+#extruder.hotend.retract_zlift_length            0               # zlift on retract in mm, 0 disables
+#extruder.hotend.retract_zlift_feedrate          6000            # zlift feedrate in mm/min (Note mm/min NOT mm/sec)
+
+delta_current                                    0.6            # First extruder stepper motor current
+
+# Second extruder module configuration
+#extruder.hotend2.enable                          true             # Whether to activate the extruder module at all. All configuration is ignored if false
+#extruder.hotend2.steps_per_mm                    140              # Steps per mm for extruder stepper
+#extruder.hotend2.default_feed_rate               600              # Default rate ( mm/minute ) for moves where only the extruder moves
+#extruder.hotend2.acceleration                    500              # Acceleration for the stepper motor, as of 0.6, arbitrary ratio
+#extruder.hotend2.max_speed                       50               # mm/s
+
+#extruder.hotend2.step_pin                        2.8              # Pin for extruder step signal
+#extruder.hotend2.dir_pin                         2.13             # Pin for extruder dir signal
+#extruder.hotend2.en_pin                          4.29             # Pin for extruder enable signal
+
+#extruder.hotend2.x_offset                        0                # x offset from origin in mm
+#extruder.hotend2.y_offset                        25.0             # y offset from origin in mm
+#extruder.hotend2.z_offset                        0                # z offset from origin in mm
+#epsilon_current                              1.5              # Second extruder stepper motor current
+
+# Laser module configuration
+laser_module_enable                          false            # Whether to activate the laser module at all. All configuration is
+                                                              # ignored if false.
+#laser_module_pin                             2.5             # this pin will be PWMed to control the laser. Only P2.0 - P2.5, P1.18, P1.20, P1.21, P1.23, P1.24, P1.26, P3.25, P3.26
+                                                              # can be used since laser requires hardware PWM
+#laser_module_max_power                       0.8             # this is the maximum duty cycle that will be applied to the laser
+#laser_module_tickle_power                    0.0             # this duty cycle will be used for travel moves to keep the laser
+                                                              # active without actually burning
+#laser_module_pwm_period                      20              # this sets the pwm frequency as the period in microseconds
+
+# Hotend temperature control configuration
+temperature_control.hotend.enable            true             # Whether to activate this ( &quot;hotend&quot; ) module at all.
+                                                              # All configuration is ignored if false.
+temperature_control.hotend.thermistor_pin    0.23             # Pin for the thermistor to read
+temperature_control.hotend.heater_pin        1.23              # Pin that controls the heater, set to nc if a readonly thermistor is being defined
+temperature_control.hotend.thermistor        Semitec        
+#temperature_control.hotend.beta             4066             # or set the beta value
+temperature_control.hotend.set_m_code        104              #
+temperature_control.hotend.set_and_wait_m_code 109            #
+temperature_control.hotend.designator        T                #
+temperature_control.hotend.max_temp         295              # Set maximum temperature
+temperature_control.hotend.min_temp         5                # Set minimum temperature - Will prevent heating below if set
+
+temperature_control.hotend.p_factor         15             # permanently set the PID values after an auto pid
+temperature_control.hotend.i_factor         0.75            #
+temperature_control.hotend.d_factor         64               #
+
+#temperature_control.hotend.max_pwm          64               # max pwm, 64 is a good value if driving a 12v resistor with 24v.
+
+# Hotend2 temperature control configuration
+#temperature_control.hotend2.enable            true             # Whether to activate this ( &quot;hotend&quot; ) module at all.
+                                                              # All configuration is ignored if false.
+
+#temperature_control.hotend2.thermistor_pin    0.25             # Pin for the thermistor to read
+#temperature_control.hotend2.heater_pin        1.23             # Pin that controls the heater
+#temperature_control.hotend2.thermistor        EPCOS100K        
+##temperature_control.hotend2.beta             4066             # or set the beta value
+#temperature_control.hotend2.set_m_code        884              #
+#temperature_control.hotend2.set_and_wait_m_code 889            #
+#temperature_control.hotend2.designator        T1               #
+
+#temperature_control.hotend2.p_factor          34.7           # permanently set the PID values after an auto pid
+#temperature_control.hotend2.i_factor          2.735          #
+#temperature_control.hotend2.d_factor          110            #
+
+#temperature_control.hotend2.max_pwm          64               # max pwm, 64 is a good value if driving a 12v resistor with 24v.
+
+temperature_control.bed.enable               true             #
+temperature_control.bed.thermistor_pin       0.24             #
+temperature_control.bed.heater_pin           2.5              #
+temperature_control.bed.thermistor           Honeywell100K    
+#temperature_control.bed.beta                3974             # or set the beta value
+
+temperature_control.bed.set_m_code           140              #
+temperature_control.bed.set_and_wait_m_code  190              #
+temperature_control.bed.designator           B                #
+
+temperature_control.bed.p_factor             290.7557        # permanently set the PID values after an auto pid
+temperature_control.bed.i_factor             6.4078         #
+temperature_control.bed.d_factor             3298.2603        #
+
+temperature_control.bed.bang_bang            true           # set to true to use bang bang control rather than PID
+temperature_control.bed.hysteresis           0.3             # set to the temperature in degrees C to use as hysteresis
+                                                              # when using bang bang
+
+# Switch module for fan control
+switch.fan.enable                            true             #
+switch.fan.input_on_command                  M106             #
+switch.fan.input_off_command                 M107             #
+switch.fan.output_pin                        2.4              #
+switch.fan.output_type                       pwm              # pwm output settable with S parameter in the input_on_comand
+switch.fan.max_pwm                           127              # set max pwm for the pin default is 255
+
+switch.misc.enable                           true             #
+switch.misc.input_on_command                 M42              #
+switch.misc.input_off_command                M43              #
+switch.misc.output_pin                       2.6!             #
+switch.misc.output_type                      digital          # just an on or off pin
+
+# automatically toggle a switch at a specified temperature. Different ones of these may be defined to monitor different temperatures and switch different swithxes
+# useful to turn on a fan or water pump to cool the hotend
+#temperatureswitch.hotend.enable              true             #
+#temperatureswitch.hotend.designator          T                # first character of the temperature control designator to use as the temperature sensor to monitor
+#temperatureswitch.hotend.switch              misc             # select which switch to use, matches the name of the defined switch
+#temperatureswitch.hotend.threshold_temp      60.0             # temperature to turn on (if rising) or off the switch
+#temperatureswitch.hotend.heatup_poll         15               # poll heatup at 15 sec intervals
+#temperatureswitch.hotend.cooldown_poll       60               # poll cooldown at 60 sec intervals
+
+# Switch module for spindle control
+#switch.spindle.enable                        false            #
+
+# Endstops
+endstops_enable                              true             # the endstop module is enabled by default and can be disabled here
+#corexy_homing                               false            # set to true if homing on a hbit or corexy
+alpha_min_endstop                            1.24^!            # add a ! to invert if endstop is NO connected to ground
+alpha_max_endstop                            1.25^            # NOTE set to nc if this is not installed
+alpha_homing_direction                       home_to_min      # or set to home_to_max and set alpha_max
+alpha_min                                    0                # this gets loaded after homing when home_to_min is set
+alpha_max                                    254              # this gets loaded after homing when home_to_max is set
+beta_min_endstop                             1.26^!            #
+beta_max_endstop                             1.27^            #
+beta_homing_direction                        home_to_min      #
+beta_min                                     0                #
+beta_max                                     240              #
+gamma_min_endstop                            1.28^!            #
+gamma_max_endstop                            1.29^            #
+gamma_homing_direction                       home_to_min      #
+gamma_min                                    0                #
+gamma_max                                    250              #
+
+# optional order in which axis will home, default is they all home at the same time,
+# if this is set it will force each axis to home one at a time in the specified order
+#homing_order                                 XYZ              # x axis followed by y then z last
+
+# optional enable limit switches, actions will stop if any enabled limit switch is triggered
+#alpha_limit_enable                          false            # set to true to enable X min and max limit switches
+#beta_limit_enable                           false            # set to true to enable Y min and max limit switches
+#gamma_limit_enable                          false            # set to true to enable Z min and max limit switches
+
+alpha_fast_homing_rate_mm_s                  50               # feedrates in mm/second
+beta_fast_homing_rate_mm_s                   50               # &quot;
+gamma_fast_homing_rate_mm_s                  4                # &quot;
+alpha_slow_homing_rate_mm_s                  25               # &quot;
+beta_slow_homing_rate_mm_s                   25               # &quot;
+gamma_slow_homing_rate_mm_s                  2                # &quot;
+
+alpha_homing_retract_mm                      5                # distance in mm
+beta_homing_retract_mm                       5                # &quot;
+gamma_homing_retract_mm                      1                # &quot;
+
+#endstop_debounce_count                       100              # uncomment if you get noise on your endstops, default is 100
+
+# optional Z probe
+zprobe.enable                                false           # set to true to enable a zprobe
+zprobe.probe_pin                             1.28!^          # pin probe is attached to if NC remove the !
+zprobe.slow_feedrate                         5               # mm/sec probe feed rate
+#zprobe.debounce_count                       100             # set if noisy
+zprobe.fast_feedrate                         100             # move feedrate mm/sec
+zprobe.probe_height                          5               # how much above bed to start probe
+#gamma_min_endstop                           nc              # normally 1.28. Change to nc to prevent conflict,
+
+# associated with zprobe the leveling strategy to use
+#leveling-strategy.three-point-leveling.enable         true        # a leveling strategy that probes three points to define a plane and keeps the Z parallel to that plane
+#leveling-strategy.three-point-leveling.point1         100.0,0.0   # the first probe point (x,y) optional may be defined with M557
+#leveling-strategy.three-point-leveling.point2         200.0,200.0 # the second probe point (x,y)
+#leveling-strategy.three-point-leveling.point3         0.0,200.0   # the third probe point (x,y)
+#leveling-strategy.three-point-leveling.home_first     true        # home the XY axis before probing
+#leveling-strategy.three-point-leveling.tolerance      0.03        # the probe tolerance in mm, anything less that this will be ignored, default is 0.03mm
+#leveling-strategy.three-point-leveling.probe_offsets  0,0,0       # the probe offsets from nozzle, must be x,y,z, default is no offset
+#leveling-strategy.three-point-leveling.save_plane     false       # set to true to allow the bed plane to be saved with M500 default is false
+
+# Panel
+panel.enable                                 false             # set to true to enable the panel code
+panel.lcd                                    smoothiepanel     # set type of panel
+panel.encoder_a_pin                          3.25!^            # encoder pin
+panel.encoder_b_pin                          3.26!^            # encoder pin
+
+# Example for reprap discount GLCD
+# on glcd EXP1 is to left and EXP2 is to right, pin 1 is bottom left, pin 2 is top left etc.
+# +5v is EXP1 pin 10, Gnd is EXP1 pin 9
+#panel.lcd                                   reprap_discount_glcd     #
+#panel.spi_channel                           0                 # spi channel to use  ; GLCD EXP1 Pins 3,5 (MOSI, SCLK)
+#panel.spi_cs_pin                            0.16              # spi chip select     ; GLCD EXP1 Pin 4
+#panel.encoder_a_pin                         3.25!^            # encoder pin         ; GLCD EXP2 Pin 3
+#panel.encoder_b_pin                         3.26!^            # encoder pin         ; GLCD EXP2 Pin 5
+#panel.click_button_pin                      1.30!^            # click button        ; GLCD EXP1 Pin 2
+#panel.buzz_pin                              1.31              # pin for buzzer      ; GLCD EXP1 Pin 1
+#panel.back_button_pin                       2.11!^            # back button         ; GLCD EXP2 Pin 8
+
+# pins used with other panels
+#panel.up_button_pin                         0.1!              # up button if used
+#panel.down_button_pin                       0.0!              # down button if used
+#panel.click_button_pin                      0.18!             # click button if used
+
+panel.menu_offset                            0                 # some panels will need 1 here
+
+panel.alpha_jog_feedrate                     6000              # x jogging feedrate in mm/min
+panel.beta_jog_feedrate                      6000              # y jogging feedrate in mm/min
+panel.gamma_jog_feedrate                     200               # z jogging feedrate in mm/min
+
+panel.hotend_temperature                     185               # temp to set hotend when preheat is selected
+panel.bed_temperature                        60                # temp to set bed when preheat is selected
+
+# Example of a custom menu entry, which will show up in the Custom entry.
+# NOTE _ gets converted to space in the menu and commands, | is used to separate multiple commands
+custom_menu.power_on.enable                true              #
+custom_menu.power_on.name                  Power_on          #
+custom_menu.power_on.command               M80               #
+
+custom_menu.power_off.enable               true              #
+custom_menu.power_off.name                 Power_off         #
+custom_menu.power_off.command              M81               #
+
+# Only needed on a smoothieboard
+currentcontrol_module_enable                 true             #
+
+return_error_on_unhandled_gcode              false            #
+
+# network settings
+network.enable                               false            # enable the ethernet network services
+network.webserver.enable                     true             # enable the webserver
+network.telnet.enable                        true             # enable the telnet server
+network.ip_address                           auto             # use dhcp to get ip address
+# uncomment the 3 below to manually setup ip address
+#network.ip_address                           192.168.3.222    # the IP address
+#network.ip_mask                              255.255.255.0    # the ip mask
+#network.ip_gateway                           192.168.3.1      # the gateway address
+#network.mac_override                         xx.xx.xx.xx.xx.xx  # override the mac address, only do this if you have a conflict
+
+# Drills module 
+# Implement the Canned Drilling Cycles
+# G80-83, G98, G99 in absolute mode only
+# Incremental mode not implemented (L)
+drillingcycles.enable                                false # enable module, default false
+drillingcycles.dwell_units                           S     # dwell units [S = seconds, P = millis], default: S</code>
+</pre></div>
+</div>
+</div>
+</div>
+
+							</div>
+
+								
+							<div class="changes">
+					Last edited on <span class="odate time_1461978689 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">30 Apr 2016 01:11</span>
+					by <span class="printuser"><a href="http://www.wikidot.com/user:info/kbranch" onclick="WIKIDOT.page.listeners.userInfo(2729994); return false;" >kbranch</a></span>
+					<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.showHistory(event,2500887)"><i class="icon-plus"></i> Show more</a>
+				</div>
+				<div class="revisions" style="display: none"></div>
+					
+						<div class="options">
+				
+													<strong><a href="javascript:;" onclick="postReply(event,2500887)" class="btn btn-primary btn-small btn-sm">Reply</a></strong> 
+																	<a href="javascript:;" onclick="togglePostOptions(event,2500887)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2500887" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2500887)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2500887)">Extruder Decelerates Instantly</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/kbranch" onclick="WIKIDOT.page.listeners.userInfo(2729994); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2729994&amp;amp;size=small&amp;amp;timestamp=1463139116" alt="kbranch" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2729994)"/></a><a href="http://www.wikidot.com/user:info/kbranch" onclick="WIKIDOT.page.listeners.userInfo(2729994); return false;" >kbranch</a></span>, <span class="odate time_1461978671 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">30 Apr 2016 01:11</span>
+		</div>
+	</div>
+ 
+                
+        
+                      
+    <div class="post-container" id="fpc-2501506">
+                      
+		<div class="post" id="post-2501506">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2501506)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2501506">
+																		Re: Extruder Decelerates Instantly
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=471107&amp;amp;size=small&amp;amp;timestamp=1463139116" alt="arthurwolf" style="background-image:url(http://www.wikidot.com/userkarma.php?u=471107)"/></a><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span> <span class="odate time_1462006637 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">30 Apr 2016 08:57</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2501506">
+									
+
+<p>Hey</p>
+<p>That is expected, deceleration has never been implemented on extruder, and from the user feedback I hear, for retractation that is actually a good thing.<br />
+You likely want a much much higher acceleration value for your extruder anyway, as much as you can go to without it stalling.</p>
+<p>Cheers.</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+													<strong><a href="javascript:;" onclick="postReply(event,2501506)" class="btn btn-primary btn-small btn-sm">Reply</a></strong> 
+																	<a href="javascript:;" onclick="togglePostOptions(event,2501506)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2501506" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2501506)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2501506)">Re: Extruder Decelerates Instantly</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=471107&amp;amp;size=small&amp;amp;timestamp=1463139116" alt="arthurwolf" style="background-image:url(http://www.wikidot.com/userkarma.php?u=471107)"/></a><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span>, <span class="odate time_1462006637 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">30 Apr 2016 08:57</span>
+		</div>
+	</div>
+ 
+                
+        
+                      
+    <div class="post-container" id="fpc-2501607">
+                      
+		<div class="post" id="post-2501607">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2501607)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2501607">
+																		Re: Extruder Decelerates Instantly
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/kbranch" onclick="WIKIDOT.page.listeners.userInfo(2729994); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2729994&amp;amp;size=small&amp;amp;timestamp=1463139116" alt="kbranch" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2729994)"/></a><a href="http://www.wikidot.com/user:info/kbranch" onclick="WIKIDOT.page.listeners.userInfo(2729994); return false;" >kbranch</a></span> <span class="odate time_1462029933 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">30 Apr 2016 15:25</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2501607">
+									
+
+<p>Thanks, I suspected as much. I'll keep looking for my sound (or, if that's causing my sound, I'll slow my retracts down). And yes, I usually have the extruder acceleration much higher than that, I just turned it way down to emphasize the effect for the video.</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+													<strong><a href="javascript:;" onclick="postReply(event,2501607)" class="btn btn-primary btn-small btn-sm">Reply</a></strong> 
+																	<a href="javascript:;" onclick="togglePostOptions(event,2501607)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2501607" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2501607)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2501607)">Re: Extruder Decelerates Instantly</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/kbranch" onclick="WIKIDOT.page.listeners.userInfo(2729994); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2729994&amp;amp;size=small&amp;amp;timestamp=1463139116" alt="kbranch" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2729994)"/></a><a href="http://www.wikidot.com/user:info/kbranch" onclick="WIKIDOT.page.listeners.userInfo(2729994); return false;" >kbranch</a></span>, <span class="odate time_1462029933 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">30 Apr 2016 15:25</span>
+		</div>
+	</div>
+ 
+                
+        
+            </div>
+ 
+            </div>
+ 
+            </div>
+ 
+
+
+
+        </div>
+    </div>
+
+	<div class="new-post">
+		<a href="javascript:;" id="new-post-button" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.newPost(event,null)" class="btn btn-default">New Post</a>
+	</div>
+	
+	<div style="display:none" id="post-options-template">
+			<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.showPermalink(event,'%POST_ID%')" class="btn btn-default btn-small btn-sm">Permanent Link</a>
+			<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.editPost(event,'%POST_ID%')" class="btn btn-default btn-small btn-sm">Edit</a>
+			<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.deletePost(event,'%POST_ID%')"class="btn btn-danger btn-small btn-sm">Delete</a>
+	</div>
+	
+	<div style="display:none" id="post-options-permalink-template">/forum/t-1696054/extruder-decelerates-instantly#post-</div>
+</div>
+
+<script type="text/javascript">
+	WIKIDOT.forumThreadId = 1696054;
+</script></div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"></div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="http://www.wikidot.com/">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/forum/t-1696054/extruder-decelerates-instantly by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:15:37 GMT -->
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/mri-debugging by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:47:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Crash Debugging - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="login__customdomainscriptf36a.html?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="../images/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = '../images/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "mri-debugging";
+        OZONE.request.timestamp = 1463138538;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "mri-debugging";
+        WIKIREQUEST.info.pageId = 13556571;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="../images/wikidot.combined.js"></script>
+            <script type="text/javascript" src="../images/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="../images/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(../images/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(../images/style.css);
+                    @import url(../images/style-2.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="../images/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="../images/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="../images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="../images/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="index.html">Documentation</a><br /></li>
+<li><img src="../images/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="smoothieboard.html">SmoothieBoard</a><br /></li>
+<li><img src="../images/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="blog.html">Blog</a><br /></li>
+<li><img src="../images/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="gallery.html">Gallery</a><br /></li>
+<li><img src="../images/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="irc.html">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="general.html">Forum</a></li>
+<li><a href="smoothieware-support.html">Support/Help Mailing list</a></li>
+<li><a href="smoothie-dev.html">Developper Mailing list</a></li>
+<li><a href="111870450664099533727.html">Google+ Community</a></li>
+<li><a href="index-2.html">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="../images/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="search.html">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="../images/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Crash Debugging</span></div>
+          
+          <div id="page-content">
+
+<div id="toc" class="floatright">
+<div id="toc-action-bar"><a href="javascript:;" onclick="WIKIDOT.page.listeners.foldToc(event)">Fold</a><a style="display: none" href="javascript:;" onclick="WIKIDOT.page.listeners.unfoldToc(event)">Unfold</a></div>
+<div class="title">Table of Contents</div>
+<div id="toc-list">
+<div style="margin-left: 2em;"><a href="#toc0">Overview</a></div>
+<div style="margin-left: 2em;"><a href="#toc1">Indication of Crash</a></div>
+<div style="margin-left: 2em;"><a href="#toc2">Causing Smoothie to go into MRI&nbsp;mode</a></div>
+<div style="margin-left: 2em;"><a href="#toc3">Connecting GDB to MRI</a></div>
+<div style="margin-left: 4em;"><a href="#toc4">MRI is over UART, not USB</a></div>
+<div style="margin-left: 3em;"><a href="#toc5">Windows</a></div>
+<div style="margin-left: 3em;"><a href="#toc6">OS X and Linux</a></div>
+<div style="margin-left: 2em;"><a href="#toc7">Gathering mini-dump to send for analysis</a></div>
+<div style="margin-left: 2em;"><a href="#toc8">Gathering full dump to send for analysis</a></div>
+<div style="margin-left: 2em;"><a href="#toc9">Sending a mini or full dump to Smoothie community for analysis</a></div>
+<div style="margin-left: 2em;"><a href="#toc10">Turning on full Debug Symbols</a></div>
+<div style="margin-left: 2em;"><a href="#toc11">More Useful GDB Commands</a></div>
+<div style="margin-left: 2em;"><a href="#toc12">More documentation</a></div>
+</div>
+</div>
+<h2 id="toc0"><span>Overview</span></h2>
+<p><strong>If you are using a JTAG debugger with your Smoothie project, you can scroll down to the sections which discuss mini and full dumps since those are applicable to JTAG debugging as well.</strong></p>
+<p>Smoothie contains the Monitor for Remote Inspection, MRI, a debug monitor for the NXP LPC1768 device. This monitor allows the GNU Debugger, GDB, to be connected to the device when a hard fault occurs. It can also be configured to break on start and then used to step through any desired Smoothie source code but this isn't the default configuration in the Smoothie project where it is primarily used for crash analysis.</p>
+<h2 id="toc1"><span>Indication of Crash</span></h2>
+<p>When Smoothie crashes and MRI takes over control of the device, you will see this text dumped to the serial console:</p>
+<div class="code">
+<pre>
+<code>$T0b0c:20430010;0d:e07c0010;0e:a1960000;0f:58410010;</code>
+</pre></div>
+<p>This line is MRI attempting to tell GDB that Smoothie has stopped for some reason. If an unexpected exception was thrown to cause the crash then you will see something like this before the $T packet.</p>
+<div class="code">
+<pre>
+<code>**Hard Fault**
+Status Register: 0x40000000
+Forced
+**Bus Fault**
+Status Register: 0x04
+Imprecise Data Access</code>
+</pre></div>
+<h2 id="toc2"><span>Causing Smoothie to go into MRI&nbsp;mode</span></h2>
+<p>Smoothie will go into MRI&nbsp;mode automatically if a problem occurs.</p>
+<p>But sometimes you want to -put- Smoothie into MRI&nbsp;mode to poke around in it's brain, run code step by step etc.</p>
+<p>If you want to do that, you have two ways to cause Smoothie to enter MRI&nbsp;mode :&nbsp;</p>
+<ul>
+<li>Click on the <tt>ISP</tt> button next to the <tt>Reset</tt> button</li>
+<li>Send the <tt>break</tt> command over any serial interface ( UART, USB/Serial, or Telnet )</li>
+</ul>
+<h2 id="toc3"><span>Connecting GDB to MRI</span></h2>
+<p>GDB should have been installed along with the GCC compiler and other GNU tools used to build the Smoothie source code. From a Terminal or Command Prompt that is able to build Smoothie, you should be able to set the current directory to the root of the Smoothie project which contains main.bin, main.elf, etc and run one of the following commands to launch GDB. The main difference between the OS's is the type of name used for the serial port. You should use the same serial port name and baud rate when launching GDB as you used for the Terminal application in which you saw the $T packet. <strong>Please note:</strong> You must first disconnect your terminal application from Smoothie before attempting to connect GDB to MRI.</p>
+<p>In these following examples, we will assume that you are in the root directory of the Smoothie source tree and that your .ELF file is therefore located in the LPC1768/ subdirectory.</p>
+<div class="bs-callout bs-callout-warning">
+<h4 id="toc4"><span>MRI is over UART, not USB</span></h4>
+<p>You need to connect a USB/UART adapter cable to the UART ( Serial ) 6-pin connector on the Smoothieboard ( next to the USB connector, close to the endstops ). And then use that connection to talk to MRI. <strong>You can not talk to MRI over the USB cable</strong></p>
+</div>
+<h3 id="toc5"><span>Windows</span></h3>
+<div class="code">
+<pre>
+<code>arm-none-eabi-gdb LPC1768\main.elf --baud 115200 -ex &quot;set target-charset ASCII&quot; -ex &quot;set remotelogfile mri.log&quot; -ex &quot;target remote com1&quot;</code>
+</pre></div>
+<h3 id="toc6"><span>OS X and Linux</span></h3>
+<div class="code">
+<pre>
+<code>arm-none-eabi-gdb LPC1768/main.elf --baud 115200 -ex &quot;set target-charset ASCII&quot; -ex &quot;set remotelogfile mri.log&quot; -ex &quot;target remote /dev/tty.usbmodem412&quot;</code>
+</pre></div>
+<h2 id="toc7"><span>Gathering mini-dump to send for analysis</span></h2>
+<p>If you hit a crash in Smoothie, you should obtain a mini-dump and send it to the Smoothie community for analysis. A mini-dump can be created using this sequence of GDB commands:</p>
+<div class="code">
+<pre>
+<code>set pagination off
+set logging on
+bt
+list
+disass
+set var $ptr=$sp
+while $ptr &lt; 0x10008000
+x/4wa $ptr
+set var $ptr+=16
+end
+info registers
+set logging off
+set pagination on</code>
+</pre></div>
+<p>What is all of that doing?</p>
+<ul>
+<li>Turn pagination off so that you don't have to keep pressing Enter to continue the text as it spews to the debug console.</li>
+<li>Ask GDB to save the output from the rest of these commands to a file named <strong>gdb.txt</strong> in the current directory from which GDB was launched. This is one of the files that you will want to send to the Smoothie community for analysis.</li>
+<li>Get a stack 'back trace'.</li>
+<li>List the source code around the line where the debug event occurred.</li>
+<li>Disassemble the function in which the crash occurred.</li>
+<li>Then a debugger variable is used to enter a loop within the debugger itself to dump the stack 4 words at a time from the current stack location to the end of the stack, which is at 0x10008000 on the LPC1768.</li>
+<li>Dump the CPU registers.</li>
+<li>Stop the logging of information to gdb.txt now that we have collected all of the useful information we need.</li>
+<li>Turn pagination back on which is more friendly for interactive debugging.</li>
+</ul>
+<h2 id="toc8"><span>Gathering full dump to send for analysis</span></h2>
+<p>The mini-dump discussed in the previous section only contains the contents of the stack. A full dump will provide a dump of all of the lower 32K of RAM on the CPU. It takes longer to capture this full dump but it provides the community with the contents of all globals and even dynamic allocations from the heap. A full dump can be created using this sequence of GDB commands:</p>
+<div class="code">
+<pre>
+<code>set pagination off
+set logging on
+bt
+list
+disass
+set var $ptr=0x10000000
+while $ptr &lt; 0x10008000
+x/4wa $ptr
+set var $ptr+=16
+end
+info registers
+set logging off
+set pagination on</code>
+</pre></div>
+<p>The only command which is different from the mini-dump is the line which initializes the $ptr variable. Instead of setting it to the current value of the stack pointer, it is instead initialized to the beginning of RAM.</p>
+<h2 id="toc9"><span>Sending a mini or full dump to Smoothie community for analysis</span></h2>
+<p>The above steps will have generated a <strong>gdb.txt</strong> dump file (mini or full) in the current directory from which you launched GDB. You want to send this file along with your corresponding <strong>main.elf</strong> to the Smoothie community. You should also let the community know what version of the Smoothie sources you were using when you encountered this crash.</p>
+<p>Where to send your dump? You can use any <strong>one</strong> of these methods to get your crash information to the community.</p>
+<ul>
+<li>Create a <a href="index-82.html">gist</a> and attach to it your <strong>gdb.txt</strong> and <strong>main.elf</strong> files. Then create an issue at [<a href="issues.html">https://github.com/arthurwolf/Smoothie/issues</a>] and provide a link to your gist. In the issue, you can also give information about what version of the Smoothie sources you were using and anything else about your setup that you think will be interesting to the developer looking into your issue. <em>This is the preferred method since it provides a convenient method to track progress on your crash, assign responsibility to the appropriate developer, and helps ensure that you item doesn't get lost.</em></li>
+<li>If you are already communicating with the Smoothie community on IRC, then you can post a link to your <a href="index-82.html">gist</a> or <a href="index-83.html">pastebin</a> which contains the text of your <strong>gdb.txt</strong>. They will probably request that you send them your corresponding <strong>main.elf</strong> as well if you haven't already attached it to your gist. <em>This approach may give you the quickest response but if it isn't investigated and diagnosed quickly, it could get lost.</em></li>
+<li>E-mail your <strong>gdb.txt</strong> and <strong>main.elf</strong> to <span class="wiki-email">moc.liamg|ruhtra.flow#moc.liamg|ruhtra.flow</span>.</li>
+</ul>
+<h2 id="toc10"><span>Turning on full Debug Symbols</span></h2>
+<p>To get more meaningful use out of GDB the Build should be set to Debug in the src/makefile <tt>BUILD_TYPE=Debug</tt>, however due to the fact all modules are compiled in this will now cause the image to be bigger than flash, so you need to turn some stuff off, the easiest is to do <tt>make NONETWORK=1</tt> which turns off networking and saves a good deal of flash space.</p>
+<h2 id="toc11"><span>More Useful GDB Commands</span></h2>
+<p>A copy of gdb.pdf should have been installed when you installed the GNU tools used to build Smoothie. &quot;Chapter 1 - A Sample GDB Session&quot; of this manual provides an overview of the most useful GDB commands. Here are some of the commands we have found most useful.</p>
+<ul>
+<li><strong>bt</strong> Dump a stack back trace showing the call graph which generated the debug stop.</li>
+<li><strong>list</strong> Lists the source code around the line on which the program stopped.</li>
+<li><strong>p expression</strong> Prints the result of a C/C++ expression. For example &quot;p *kernel&quot; would attempt to dump the object pointed to by a local variable pointer called kernel. <em>Note: The effectiveness of this command won't be perfect when Smoothie is built with optimizations turned on.</em></li>
+<li><strong>up</strong> Changes the context for commands like p to be the next function up in the callstack.</li>
+<li><strong>down</strong> Changes the context for command like p to be the next function down in the callstack.</li>
+</ul>
+<h2 id="toc12"><span>More documentation</span></h2>
+<p>Information about using MRI, as well as a more complete debugging session example, can be found <a href="mri-2.html#mri---monitor-for-remote-inspection">here</a>.</p>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 13, last edited: <span class="odate time_1439198273 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">10 Aug 2015 09:17</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="doc_start.html" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="legal_terms-of-service.html" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="legal_privacy-policy.html" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="index-4.html">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="index-5.html">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="../images/p-edl3gsnujjzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/mri-debugging by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:47:18 GMT -->
+</html>

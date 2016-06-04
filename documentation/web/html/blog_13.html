@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/blog:13 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:48:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Smoothieboard v2 progress update - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="login__customdomainscriptf36a.html?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="../images/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = '../images/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474844;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "blog:13";
+        OZONE.request.timestamp = 1463138542;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "blog:13";
+        WIKIREQUEST.info.pageId = 27934880;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="../images/wikidot.combined.js"></script>
+            <script type="text/javascript" src="../images/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="../images/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(../images/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(../images/style.css);
+                    @import url(../images/style-2.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="../images/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="../images/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="../images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="../images/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="index.html">Documentation</a><br /></li>
+<li><img src="../images/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="smoothieboard.html">SmoothieBoard</a><br /></li>
+<li><img src="../images/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="blog.html">Blog</a><br /></li>
+<li><img src="../images/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="gallery.html">Gallery</a><br /></li>
+<li><img src="../images/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="irc.html">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="general.html">Forum</a></li>
+<li><a href="smoothieware-support.html">Support/Help Mailing list</a></li>
+<li><a href="smoothie-dev.html">Developper Mailing list</a></li>
+<li><a href="111870450664099533727.html">Google+ Community</a></li>
+<li><a href="index-2.html">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="../images/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="search.html">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="../images/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Smoothieboard v2 progress update</span></div>
+          
+          <div id="page-content">
+
+<div class="bs-callout bs-callout-primary">
+<h4><span><a href="blog.html">Blog</a> » Smoothieboard v2 progress update</span></h4>
+<p><span style="color:gray;">posted on <span class="odate time_1445196763 format_%25A%3A%20%25d%20%25B%2C%20%25Y%7Cagohover">18 Oct 2015 19:32</span></span></p>
+</div>
+<p>We really often get asked « When is Smoothieboard v2 coming out ? » lately.</p>
+<p>There is a lot of enthusiasm around the project since it was <a href="bbyuzx2wmkk.html">first announced</a>, enthusiastic people can be impatient, and the fact we refuse to give a deadline ( giving a deadline had bad results for Smoothieboard v1 ) doesn't help.</p>
+<p>So this is an update on what has been going on, where we are, and where we are going.</p>
+<h3><span>Smoothieboard v2, what's that ?</span></h3>
+<p>So first off, in case you are just now catching this train, <a href="smoothieboard.html">Smoothieboard</a> is an Open-Hardware CNC controller board, and the current version ( v1 ) is based on the LPC1769 microcontroller, and has been around for a few years now.</p>
+<div style="text-align: center;"><img src="../images/smoothieboard-fritzing.png" width="600px" alt="smoothieboard-fritzing.png" class="image" /></div>
+<hr />
+<p>We did <strong>a lot</strong> on this platform, we started simple, had a lot of room to grow into, and we took advantage of that to bring you all the awesome features you have come to love Smoothie for.</p>
+<p>With time, we are getting closer and closer to running out of processing power, code storage space, and memory. This is a consequence of doing so much, and doing it so well. Even though Smoothie has been a very nice upgrade compared to the older 8-bit arduino-based controllers, it is now suffering the same fate : if we want to continue making things nicer, we need to move to a more powerful platform, <strong>again</strong>.</p>
+<p>So that's why we are doing Smoothieboard v2. The main reasons for this new projects are :&nbsp;</p>
+<ul>
+<li>Moving to a more powerful microcontroller ( LPC43XX instead of LPC17XX )</li>
+<li>Taking all the things we have learned these past years, all the user feedback, and making an even better design overall</li>
+<li>Trying new and exciting things</li>
+</ul>
+<h3><span>Technical details</span></h3>
+<p>While the main difference is going to be changing the microcontroller, one other exiting thing we are going to do, is doing a &quot;pro&quot; board, the <tt>v2-pro</tt>, which is essentially v2, with rainbows, sparkles, and pure concentrated awesome on top.</p>
+<p>The <tt>v2</tt> version will essentially be the <tt>v1</tt> version with a new microcontroller : LPC4337, which runs at 204 Mhz, has 1MB flash, 136KB RAM, a FPU, a M0 co-processor, SDIO&nbsp;interface and lots of cool features. This is actually going to mean a lot for the board : super fast and more precise everything ( including floating point math ), faster SD card access, faster Ethernet, using a co-processor for step generation.<br />
+And the possibility to add even more cool features, like we have been doing so far.</p>
+<p>The <tt>v2-pro</tt> board is the <tt>v2</tt> board, but with a *lot* of upgrades :&nbsp;a FPGA&nbsp;to do step generation ( think megahertz rates ), beefier XYZ stepper drivers ( 3.5A, 1/256 microstepping ), 4 extruder stepper drivers, 6&nbsp;mosfets, an <a href="edison.html">intel edison</a> port, and many many extension ports.</p>
+<div style="text-align: center;"><a href="../images/smoothieboardhybrid-pre9.png"><img src="../images/smoothieboardhybrid-pre9.png" width="100%" alt="SmoothieboardHybrid-pre9.png" class="image" /></a></div>
+<hr />
+<p>If this is confusing, here is a table for easy reference :</p>
+<table class="wiki-content-table">
+<tr>
+<th>Board</th>
+<th><tt>v1</tt> ( 5XC )</th>
+<th><tt>v2</tt></th>
+<th><tt>v2-pro</tt></th>
+</tr>
+<tr>
+<td><strong>Microcontroller</strong></td>
+<td><a href="512kb-flash-64kb-sram-ethernet-usb-lqfp100-package_lpc1769fbd100.html">LPC1769</a></td>
+<td colspan="2"><a href="high-performance-32-bit-microcontroller-mcu-based-on-arm-cortex-m4-m0-cores_lpc4337fet256.html">LPC4337</a></td>
+</tr>
+<tr>
+<td>Architecture</td>
+<td>32bit ARM&nbsp;Cortex-M3</td>
+<td colspan="2">32bit ARM Cortex-M4 with M0 co-processor</td>
+</tr>
+<tr>
+<td>Frequency</td>
+<td>120 Mhz</td>
+<td>204 Mhz</td>
+</tr>
+<tr>
+<td>RAM</td>
+<td>64&#160;kB</td>
+<td colspan="2">136&#160;kB</td>
+</tr>
+<tr>
+<td>Flash</td>
+<td>512&#160;kB</td>
+<td colspan="2">1024&#160;kB</td>
+</tr>
+<tr>
+<td>Floating Point Unit</td>
+<td>No</td>
+<td colspan="2">Yes</td>
+</tr>
+<tr>
+<td>SD card access</td>
+<td>Slow ( SPI )</td>
+<td colspan="2">Fast ( SDIO )</td>
+</tr>
+<tr>
+<td>Ethernet</td>
+<td colspan="3">Yes</td>
+</tr>
+<tr>
+<td>USB&nbsp;Host</td>
+<td>No</td>
+<td colspan="2">Yes</td>
+</tr>
+<tr>
+<td><strong>FPGA</strong></td>
+<td colspan="2">No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Fastest step generation</td>
+<td>Main microcontroller</td>
+<td>M0 co-processor ( fast )</td>
+<td>FPGA ( super fast )</td>
+</tr>
+<tr>
+<td><strong>XYZ stepper drivers</strong></td>
+<td colspan="2"><a href="a4982-2.html">A4982</a></td>
+<td><a href="tmc262.html">TMC262</a></td>
+</tr>
+<tr>
+<td>Current</td>
+<td colspan="2">2A</td>
+<td>3.5A</td>
+</tr>
+<tr>
+<td>Microstepping</td>
+<td colspan="2">1/16</td>
+<td>1/256</td>
+</tr>
+<tr>
+<td><strong>Extruder stepper drivers</strong></td>
+<td colspan="3"><a href="a4982-2.html">A4982</a></td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>2</td>
+<td>1 + extentions</td>
+<td>4 + extensions</td>
+</tr>
+<tr>
+<td><strong>Mosfets</strong></td>
+<td>6</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td>High power ( heated bed )</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Medium power ( hotend, fan )</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>Thermistor ports</strong></td>
+<td>4</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>Intel Edison port</strong></td>
+<td>No</td>
+<td>Probably</td>
+<td>Yes</td>
+</tr>
+</table>
+<p>These are the main differences. There is some stuff in common that doesn't change ( endstops, free GPIO ). The v2-pro has a few extra &quot;convenience&quot; ports, like servo, DAC and PWM ports.</p>
+<h3><span>Exciting things</span></h3>
+<p>All that new hardware is cool, but what do we plan to do with it ?</p>
+<p>First off, we don't know what *you* will do with it, most of what happened with v1 we couldn't have predicted, and the community did.</p>
+<p>But we have a few ideas what we want to do with v2 :</p>
+<h4><span>Better step generation</span></h4>
+<p>&quot;Smoothie&quot; gets it's name from the fact that it was originally designed to take advantage of it's faster microcontroller to generate smoother movement.</p>
+<p>While we have something pretty neat right now, there is still room for improvement. We want to generate the steps even more precisely, update speed every step instead of on a slower rate, and generate steps faster, which allows for using higher microstepping.</p>
+<p>On the normal <tt>v2</tt> board this will be achieved by using the M0 co-processor for step generation, leaving the main M4 core more power to do other stuff.</p>
+<p>On the <tt>v2-pro</tt> this will be done by the FPGA, which is insanely good at this sort of stuff.</p>
+<p>Both will also benefit from the M4's FPU to do all the planning and delta math for example, faster and more precisely.</p>
+<p>This will result in more precise, faster, and smoother movement all around, while also leaving more power to do things like accessing the SD card, web-interface control, and pretty much any other feature.</p>
+<h4><span>Faster SD card access</span></h4>
+<p>One big complaint about the current Smoothieboard, is that if you want to print a file from the SD card, you first want to drop it there. And if you are using USB or Ethernet ( leaving the SD card in the Smoothieboard ), that is super slow to transfer to. This is a common problem also for other boards, and is due to using SPI to access the card.</p>
+<p>The new M4 chip has a SDIO interface, the same thing your camera or phone uses, which is way faster, and will result in a lot of added comfort when transfering files.</p>
+<h4><span>USB host</span></h4>
+<p>This will allow you to plug USB things <strong>into</strong> smoothie, like USB Storage drives, or keyboards. There is no code for it now, but there will be hardware to make it possible.</p>
+<h4><span>Edison port</span></h4>
+<p>The Intel Edison is essentially a <strong>minuscule</strong> computer. It's even smaller than the Raspberry Pi, and it plugs right into your Smoothieboard, allowing you to do things like running Octoprint, and accessing the board over WiFi.</p>
+<h4><span>Extruder board</span></h4>
+<p>Ok so don't get too excited about this one, we are looking into whether or not it is possible to do, working out a plan etc. It's not ready yet, but we really want to do it, and so far it looks like it's possible. But not making any promises.</p>
+<p>If we made a board that supports 4 extruders, people would want a board that supports 5 extruders &#8230; Talking from experience.</p>
+<p>So one solution we are looking into, is making a system that allows for as many as you want :&nbsp;chainable boards, that control one extruder and one hotend each.</p>
+<p><strong>Infinite extruders !</strong></p>
+<p>The system would be implemented using RS485. Each board could control a 2A stepper motor driver, would have a fan output, two thermistor inputs ( with an optional thermocouple input ), and a mosfet to control a heater.</p>
+<p>It could be extended to support different extruder boards, laser boards, spindle boards etc &#8230;</p>
+<h4><span>Refactors</span></h4>
+<p>There are several refactors of the code planned as part of the v2 upgrade. Things we have been planning for long, but didn't want to break the v1 code with. These will mostly mean saner code, less likely to break when adding things, and that will make it possible to add even more features to Smoothie.</p>
+<h4><span>Plenty more</span></h4>
+<p>It's getting late, I'm forgetting stuff :) There is *a lot* that is going to happen.</p>
+<h3><span>Current status</span></h3>
+<p>So where are we at now with this project ?</p>
+<p>First, we have several prototype boards ( of the <tt>v2-pro</tt> ). There are a few problems that were identified with them, and a second prototype version is being worked on. But they are overall pretty good.</p>
+<p>They are good enough to actually run code, so work on the v2 firmware has started.</p>
+<p>The code is on github at <a href="smoothie2.html">https://github.com/Smoothieware/Smoothie2</a></p>
+<p>It's actually going pretty well, a bit faster than was expected, but there is still a lot to do. We have the core system working, planning/step generation working in theory, the switch module ported, and several other modules are pretty close to being ported.</p>
+<p>All in all, the big parts that are missing right now, and that will require a lot of work, are USB, Ethernet, and SD card access.</p>
+<p>We hope to make some proto boards, ship them to friendly people, and get help from the community implementing those.</p>
+<h3><span>« So when is it coming out ? »</span></h3>
+<p>No idea. Stop asking (ノಠ益ಠ)ノ彡┻━┻</p>
+<p>More seriously, it's going to depend <strong>a lot</strong> on how much the community helps.</p>
+<p>Do not expect it to come out in the weeks or months to come : this is a <strong>huge</strong> project, you will be getting something really awesome when it comes out, but that means a lot of work for us and the community, and a lot of patience for those that want to try it.</p>
+<h3><span>« Can I help ? »</span></h3>
+<p>A lot of you have offered help. Thanks a lot that's awesome !</p>
+<p>Unfortunately, until we have prototype boards to ship to people, there is not much that can be done without any hardware.</p>
+<p>But please, if you are interested in helping, be it code, testing, documentation ( but as always, mostly code ), please email <span class="wiki-email">moc.liamg|ruhtra.flow#moc.liamg|ruhtra.flow</span> and we will chat.</p>
+<h3><span>Comments</span></h3>
+<p><iframe src="index-100.html" allowtransparency="true" frameborder="0" class="html-block-iframe"></iframe></p>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 13, last edited: <span class="odate time_1445202615 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">18 Oct 2015 21:10</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="doc_start.html" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="legal_terms-of-service.html" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="legal_privacy-policy.html" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="index-4.html">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="index-5.html">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="../images/p-edl3gsnujjzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/blog:13 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:49:06 GMT -->
+</html>

@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html xmlns="//www.w3.org/1999/xhtml">
+<!-- Mirrored from contact.nxp.com/Subscription-Center by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+
+
+<!-- TITLE - - SHOULD MATCH EMAIL SUBJECT LINE -->
+<title>NXP Subscription Center</title>
+
+
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+
+
+
+<link type="text/css" href="http://style.nxp.com/shared/stylesheets/nxp-common.min.css" rel="stylesheet">
+
+
+<!--[if lte IE 9]>
+<link rel="stylesheet" href="//style.nxp.com/shared/stylesheets/nxp-common-ie.min.css" type="text/css" />
+  <script src="//style.nxp.com/v1.32/files/js/html5shiv.js"></script>
+<!--[endif]----> 
+
+<!--[if lt IE 9]> 
+  <script src="//style.nxp.com/v1.32/files/js/placeholders.min.js"></script>
+  <script src="//style.nxp.com/v1.32/shared/js/respond.min.js"></script>
+  <link type="text/css" href="//style.nxp.com/shared/stylesheets/nxp-common-ie8.min.css" rel="stylesheet" />
+<!--[endif]---->
+
+
+<style media="screen" type="text/css">
+  body{margin:1rem auto}
+  #nxp-sub-ctr{margin:0 auto;max-width:650px;padding:1rem}
+  #field0{max-width:60rem}
+  .tb-margin-0{margin-top:0 !important;margin-bottom:0 !important}
+  .t-margin-0{margin-top:0 !important}
+  .b-margin-0{margin-bottom:0 !important}
+  .checkbox{line-height:20px}
+  .checkbox input{height:20px;width:20px;margin-top:0;margin-right:10px}
+  .row,.row .row{margin-left:0}
+  input.b-margin-10{margin-bottom:10px !important}
+  h2{color:#646464}
+</style>
+
+<script src="http://style.nxp.com/shared/js/jquery/jquery-1.10.2.js"></script>
+  
+<!-- Function to check global opt in if all boxes checked -->
+<script type='text/javascript'>
+function global_opt_in_check(){  
+  if ($('input:checkbox:checked').length > 30 ){
+     $('#global-opt-in').prop("checked",true);
+  }
+}
+</script>
+  
+<script type="text/javascript">
+    var _elqQ = _elqQ || [];
+    _elqQ.push(['elqSetSiteId', '1764']);
+		 _elqQ.push(['elqTrackPageView']);
+    
+    (function () {
+        function async_load() {
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+            s.src = 'http://img.en25.com/i/elqCfg.min.js';
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        }
+        if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+        else if (window.attachEvent) window.attachEvent('onload', async_load); 
+    })();
+</script>
+
+<!-- START COMPANY CODE -->
+<script type='text/javascript'>
+
+var extended_lookup_complete = false;
+  
+function SetElqContent(){
+  
+  //call the contact group lookup the 2nd time SetElqContent is run
+  if(extended_lookup_complete == true){
+    //alert('contact group lookup');
+    if (this.GetElqGroupMembershipStatus){
+      // Global Opt out
+      if (GetElqGroupMembershipStatus('{dc3571ed-f033-4a32-b611-356210d0ec59}')){
+        $('#global-opt-out').attr('checked','checked');
+      }
+      
+      else{
+        // NXP Newsletter English
+        if (GetElqGroupMembershipStatus('{387660b2-92b1-452b-9f15-4b37fe7e792c}')){
+            $('#nxp-news-en').attr('checked','checked');
+        }
+				// NXP Newsletter Chinese
+        if (GetElqGroupMembershipStatus('{77b4151b-4868-45c3-9d72-8e5a0ef38b23}')){
+            $('#nxp-news-zh').attr('checked','checked');
+        }
+				// Automotive Lighting Newsletter English
+        if (GetElqGroupMembershipStatus('{33f2450f-9cc4-42f6-9807-979112ca58f9}')){
+            $('#auto-lighting-news-en').attr('checked','checked');
+        }
+				// MCU Newsletter Chinese
+        if (GetElqGroupMembershipStatus('{a24795bc-c72d-40df-9131-e1786fcc7487}')){
+            $('#mcu-news-zh').attr('checked','checked');
+        }
+				// Logic Product Newsletter
+        if (GetElqGroupMembershipStatus('{5403ab0f-7278-4e83-aa46-d3e83c3948e2}')){
+            $('#logic-prods-news-en').attr('checked','checked');
+        }
+				// NXP Portfolio Snapshot
+        if (GetElqGroupMembershipStatus('{1a9ccead-6692-4c1f-859c-e8746f4b4785}')){
+            $('#nxp-portfolio-snapshot-news-en').attr('checked','checked');
+        }
+				// Small-signal MOSFETs for Portables - English
+        if (GetElqGroupMembershipStatus('{2c632407-9b47-4d37-935e-7fcab38eae45}')){
+            $('#sm-sig-mosfets-news-en').attr('checked','checked');
+        }
+				// Small-signal MOSFETs for Portables - Chinese
+        if (GetElqGroupMembershipStatus('{86570903-7186-4c24-a290-bfb43e273328}')){
+            $('#sm-sig-mosfets-news-zh').attr('checked','checked');
+        }
+				// ARM Processors
+        if (GetElqGroupMembershipStatus('{cd4d5a7b-50ee-4ff3-92c7-73da1d573e72}')){
+            $('#arm').attr('checked','checked');
+        }
+				// Kinetis
+        if (GetElqGroupMembershipStatus('{55741963-827b-449e-bf3d-ad0fce21ead3}')){
+            $('#kinetis').attr('checked','checked');
+        }
+				// LPC Microcontrollers
+        if (GetElqGroupMembershipStatus('{a75d6b3e-7483-4174-99d1-96740835214a}')){
+            $('#lpc').attr('checked','checked');
+        }
+				// i.MX
+        if (GetElqGroupMembershipStatus('{0e8c5430-e06a-48d2-b3ed-3d93289e3326}')){
+            $('#imx').attr('checked','checked');
+        }
+				// QorIQ Multicore Processors
+        if (GetElqGroupMembershipStatus('{b298d8c5-5c3c-48bc-b3f7-5c30f2c0fd2f}')){
+            $('#qoriq').attr('checked','checked');
+        }
+				// Power Arch
+        if (GetElqGroupMembershipStatus('{deb83738-7a46-46da-8c69-a8c7e15ed0bf}')){
+            $('#power-arch').attr('checked','checked');
+        }
+				// Discrete & Logic
+        if (GetElqGroupMembershipStatus('{b99e3fe7-4fbf-4848-bab6-7ee3db68fc41}')){
+            $('#discrete-logic').attr('checked','checked');
+        }
+				// Bipolar Transistors
+        if (GetElqGroupMembershipStatus('{1682a42c-e0d4-461c-9b38-04ae20a3bfb3}')){
+            $('#bipolar-transistors').attr('checked','checked');
+        }
+	    // Diodes
+        if (GetElqGroupMembershipStatus('{d22061b0-2eaf-40e9-b528-690a6d36e469}')){
+            $('#diodes').attr('checked','checked');
+        }
+				// ESD Protection
+        if (GetElqGroupMembershipStatus('{cf1bed8b-7c7f-4e18-aef7-1dee87fac795}')){
+            $('#esd-protection').attr('checked','checked');
+        }
+				// Logic
+        if (GetElqGroupMembershipStatus('{964f07a2-0e2d-4aeb-8f12-4ff9a9850721}')){
+            $('#logic').attr('checked','checked');
+        }
+				// MOSFETs
+        if (GetElqGroupMembershipStatus('{03514086-965b-42e6-9213-b9aa508aeeaf}')){
+            $('#mosfets').attr('checked','checked');
+        }
+				// Identification & Security
+        if (GetElqGroupMembershipStatus('{015779bc-ebbe-42e6-8815-4bc3c39dc97f}')){
+            $('#id-sec').attr('checked','checked');
+        }
+				// NFC
+        if (GetElqGroupMembershipStatus('{38ade861-e111-4706-aa6e-94efee62d45c}')){
+            $('#nfc').attr('checked','checked');
+        }
+				// Interface and Connectivity
+        if (GetElqGroupMembershipStatus('{8c11dadd-0d46-4c1a-8ff8-74ca5a3f6148}')){
+            $('#interface-conn').attr('checked','checked');
+        }
+				// Media and Audio Processing
+        if (GetElqGroupMembershipStatus('{11bf91cf-60e5-4d78-acd7-db767613d7e0}')){
+            $('#media-audio-proc').attr('checked','checked');
+        }
+	      // Power Management
+        if (GetElqGroupMembershipStatus('{16fa264e-e253-487b-865f-70722e241f72}')){
+            $('#power-mgmt').attr('checked','checked');
+        }
+				// RF
+        if (GetElqGroupMembershipStatus('{ef93ea0e-6d64-476a-85ca-e9f6206f7413}')){
+            $('#rf').attr('checked','checked');
+        }
+				// Sensors
+        if (GetElqGroupMembershipStatus('{d4f44f7b-afc0-4921-bffc-9f8aa2f0f93c}')){
+            $('#sensors').attr('checked','checked');
+        }
+        // Automotive MCUs
+        if (GetElqGroupMembershipStatus('{a38745db-b338-4962-af4e-12914a64b1ac}')){
+            $('#auto-prods').attr('checked','checked');
+        }
+        // CAN/LIN/FlexRay Transceivers
+        if (GetElqGroupMembershipStatus('{89bfd48c-3e82-4276-bc95-87bdc7a07ade}')){
+            $('#can-lin-flexray').attr('checked','checked');
+        }
+        // S12 MagniV Microcontrollers
+        if (GetElqGroupMembershipStatus('{8e18db49-e406-4221-85e1-404f5d4a4fa1}')){
+            $('#s12-magniv').attr('checked','checked');
+        }
+        // S32 MCUs/MPUs
+        if (GetElqGroupMembershipStatus('{e2ff455b-b92c-4efb-ac67-09e3a878c162}')){
+            $('#s32').attr('checked','checked');
+        }
+      global_opt_in_check();
+      } // End of the Global Opt Out Else statement
+    } // End of GetElqGroupMembershipStatus
+  } // End of extended_lookup_complete == true
+  
+  //call this the 1st time SetElqContent is run
+  else{
+    if (this.GetElqContentPersonalizationValue){
+      //alert('email address lookup');
+      var em_address = GetElqContentPersonalizationValue('V_Email_Address');
+      //alert(em_address);
+      //Fill in email address returned
+      $('#field0').val(em_address);
+     
+      //Set value so 2nd run of SetElqContent will run the contact group lookup only
+      extended_lookup_complete = true;
+     
+      //Perform the contact group lookup
+     _elqQ.push(['elqDataLookup', escape('8a0a99e561d745628297ad407633da47'),'<C_EmailAddress>' + em_address + '</C_EmailAddress>']);
+    }
+  }
+  
+     
+}
+</script>
+
+<!-- END COMPANY CODE -->
+
+
+<script type="text/javascript">
+
+    //Perform Extended Visitor Lookup. 
+  _elqQ.push(['elqDataLookup', escape('f05203cbd1174563829702e876a756e7'),'']);
+
+
+</script>
+
+<script type="text/javascript">
+function getQueryStringParamValue(strQStrParam, strUrlParam) {
+        var defaultValue = null;
+        var strURL = document.location.href;
+		if ( typeof ( strUrlParam ) == 'string' && strUrlParam.length > 0 )
+			strURL = strUrlParam;
+        var strQStrParamValue = '';
+        if (strURL.indexOf('?') != -1) {
+            strQStrParamValue = strURL.substr(strURL.indexOf('?') + 1);
+            var idx = strQStrParamValue.indexOf("&" + strQStrParam + "=");
+                    if ( idx == -1 )
+                                idx = strQStrParamValue.indexOf(strQStrParam + "=");
+            if (idx != -1) {
+                strQStrParamValue = strQStrParamValue.substr(idx);
+                strQStrParamValue = strQStrParamValue.substr(strQStrParamValue.indexOf('=') + 1);
+                if (strQStrParamValue.indexOf('&') != -1)
+                    strQStrParamValue = strQStrParamValue.substr(0, strQStrParamValue.indexOf('&'));
+                return unescape(strQStrParamValue);
+            } else {
+                strQStrParamValue = defaultValue;
+                return strQStrParamValue;
+            }
+        } else {
+            strQStrParamValue = defaultValue;
+            return strQStrParamValue;
+        }
+    }
+</script>
+
+<!-- START ADOBE CODE DAY 1 -->
+<script src="http://style.nxp.com/files/abstract/misc/WEBANALYTICS_3RDPARTY.js">
+</script>
+<script>
+  includeEbizJs(false);
+</script>
+<!-- END ADOBE CODE DAY 1 -->
+
+
+
+</head>
+<body>
+
+<!-- START ADOBE CODE DAY 1 -->  
+<script>
+  includeAdobeJs();
+  wa_pageNamePrefix='Eloqua: ';
+  wa_pageType='Subscription Form';
+  wa_pageChannel='Eloqua';
+  wa_engTitle ='Subscription Form';
+  wa_language = 'en';
+  trackAnalyticsPageViewFormStart('Eloqua Subscription Form');
+</script>
+<!-- END ADOBE CODE DAY 1 -->
+
+<!-- ########## CHANGELOG DURING DEVELOPMENT - - t.d. ########## 
+removed ' value = on ' from all inputs with type = checkbox
+removed all div class = ' field-wrapper '
+removed all div class = ' _100 '
+-->
+
+
+<div class="container" id="nxp-sub-ctr">
+  <div class="row">
+
+    <div class="col-xs-12">
+      <!-- SPACER --><div class="Spacer-10px"></div>
+
+      <!-- LOGO -->
+      <!-- <p><img src="http://www.nxp.com/shared/images/NXP_logo.png"></p> -->
+      <p><img src="http://image.nxp.com/files/graphic/logo_external/NXP_logo.png"></p>
+
+      <!-- SPACER --><div class="Spacer-10px"></div>
+    </div><!-- /.col-xs-12 -->
+
+    <div class="col-xs-12">
+  
+      <h1>Subscription Center</h1>
+
+      <!-- SPACER --><div class="Spacer-10px"></div>
+      
+        <p class="large">Opt-in to receive NXP email updates for products, training, and technical information.</p>
+      <!-- Skip link hidden unless rdr parameter is present -->
+      <div class="show_on_rdr">
+      <p class="large">If you would like to skip this step, <a href="https://www.nxp.com/webapp/merger/redirectToTheSendBackPage.sp?elqaid=902&amp;elqat=2&amp;elqTrackId=77edf69b5f7143009ca7d81b510b95a1">click here</a>.</p>
+</div>
+      <!-- SPACER --><div class="Spacer-10px"></div><div class="Spacer-10px"></div>
+    </div><!-- /.col-xs-12 -->
+
+    <div class="col-xs-12">
+  
+      <form class="elq-form container-fluid" id="form927" onsubmit="setTimeout(function(){if(document.querySelector){var s=document.querySelector('form#form927 input[type=submit]');if(s){s.disabled=true;}}},100);return true;" action="https://s1764.t.eloqua.com/e/f2" name="DAY1_SUB_CENTER" method="post" role="form">
+      <input type="hidden" name="elqFormName" value="DAY1_SUB_CENTER"><input type="hidden" name="elqSiteId" value="1764"><input type="hidden" name="elqCampaignId">
+      <input type="hidden" id="language" name="language" value="English">
+<input type="hidden" id="redirURL" name="redirURL" value="https://www.nxp.com/ruhp/myFreescale.html">
+
+        <div class="form-group col-xs-12" id="formElement0">
+          <label for="field0">E-mail Address</label>
+          <input type="email" value="" name="email-address" id="field0" class="form-control">
+        </div>
+
+        <!-- SPACER --><div class="Spacer-10px"></div>
+
+        <h2>Newsletters</h2>
+        <h4>NXP Newsletter</h4>
+        <p class="small intro">Receive technical news, training invitations, and documentation and tool updates.</p>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-5">
+            <div class="row">
+              <div class="checkbox col-xs-5 col-xs-offset-1 col-sm-5 tb-margin-0" id="formElement3">
+                <label class="small">
+                  <input type="checkbox" name="nxp-news-en" id="nxp-news-en"> English
+                </label>
+              </div><!-- /.checkbox .col-xs-5 .col-xs-offset-1 .col-sm-4 .col-md-5 .tb-margin-0 -->
+              <div class="checkbox col-xs-6 tb-margin-0" id="formElement4">
+                <label class="small">
+                  <input type="checkbox" name="nxp-news-zh" id="nxp-news-zh"> Chinese
+                </label>
+              </div><!-- /.checkbox .col-xs-6 .tb-margin-0 -->
+            </div><!-- /.row -->
+          </div><!-- /.col-xs-12 .col-sm-4 -->
+        </div><!-- /.row -->
+
+        <!-- SPACER --><div class="Spacer-10px"></div>
+
+        <p class="intro">You might also be interested in these product and application newsletters:
+
+        </p><div class="row">
+          <div class="col-sm-5">
+
+            <h4>Automotive Lighting Newsletter</h4>
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1" id="formElement5">
+                <label class="small">
+                  <input type="checkbox" name="auto-lighting-news-en" id="auto-lighting-news-en"> English
+                </label>
+              </div><!-- /.checkbox .col-sm-5 -->
+            </div><!-- /.row -->
+
+            <h4>Logic Products Newsletter</h4>
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1" id="formElement6">
+                <label class="small">
+                  <input type="checkbox" name="logic-prods-news-en" id="logic-prods-news-en"> English
+                </label>
+              </div><!-- /.checkbox .col-sm-5 -->
+            </div><!-- /.row -->
+
+            <h4>MCU Newsletter</h4>
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1" id="formElement7">
+                <label class="small">
+                  <input type="checkbox" name="mcu-news-zh" id="mcu-news-zh"> Chinese
+                </label>
+              </div><!-- /.checkbox .col-sm-5 -->
+            </div><!-- /.row -->
+
+          </div><!-- /.col-sm-4 -->
+
+          <div class="col-sm-6">
+
+            <h4>NXP Portfolio Snapshot</h4>
+  
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1" id="formElement8">
+                <label class="small">
+                  <input type="checkbox" name="nxp-portfolio-snapshot-news-en" id="nxp-portfolio-snapshot-news-en"> English
+                </label>
+              </div>
+            </div><!-- /.row -->
+
+            <h4>Small-Signal MOSFETs for Portables</h4>
+
+            <!-- SPACER --><div class="Spacer-10px"></div>
+
+            <div class="row">
+              <div class="checkbox col-xs-5 col-xs-offset-1 col-sm-4 tb-margin-0" id="formElement9">
+                <label class="small">
+                  <input type="checkbox" name="sm-sig-mosfets-news-en" id="sm-sig-mosfets-news-en"> English
+                </label>
+              </div>
+              <div class="checkbox col-xs-6 tb-margin-0" id="formElement10">
+                <label class="small">
+                  <input type="checkbox" name="sm-sig-mosfets-news-zh" id="sm-sig-mosfets-news-zh"> Chinese
+                </label>
+              </div>
+            </div><!-- /.row -->
+          </div><!-- /.col-sm-6 -->
+        </div><!-- /.row -->
+
+        <!-- SPACER --><div class="Spacer-10px"></div>
+
+        <h2>Tell us what you are interested in:</h2>
+
+        <div class="row">
+          <div class="col-sm-5">
+
+            <div class="row">
+              <div class="checkbox col-xs-12" id="formElement11">
+                <label>
+                  <input type="checkbox" name="arm" id="arm"> ARM® Processors
+                </label>
+              </div><!-- /.checkbox.col-xs-12 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1 tb-margin-0" id="formElement12">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="kinetis" id="kinetis"> Kinetis Cortex®-M Microcontrollers
+                </label>
+              </div><!-- /.checkbox.col-xs-11.col-xs-offset-1.tb-margin-0 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1 tb-margin-0" id="formElement13">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="lpc" id="lpc"> LPC Microcontrollers
+                </label>
+              </div><!-- /.checkbox.col-xs-11.col-xs-offset-1.tb-margin-0 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1 tb-margin-0" id="formElement14">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="imx" id="imx"> i.MX Applications Processors
+                </label>
+              </div><!-- /.checkbox.col-xs-11.col-xs-offset-1.tb-margin-0 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1 tb-margin-0" id="formElement15">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="qoriq" id="qoriq"> QorIQ Multicore Processors
+                </label>
+              </div><!-- /.checkbox.col-xs-11.col-xs-offset-1.tb-margin-0 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-12" id="formElement16">
+                <label>
+                  <input type="checkbox" name="power-arch" id="power-arch"> Power Architecture® Processors
+                </label>
+              </div><!-- /.checkbox.col-xs-12 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-12" id="formElement17">
+                <label>
+                  <input type="checkbox" name="discrete-logic" id="discrete-logic"> Discrete &amp; Logic
+                </label>
+              </div><!-- /.checkbox.col-xs-12 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1 tb-margin-0" id="formElement18">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="bipolar-transistors" id="bipolar-transistors"> Bipolar Transistors
+                </label>
+              </div><!-- /.checkbox.col-xs-11.col-xs-offset-1.tb-margin-0 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1 tb-margin-0" id="formElement19">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="diodes" id="diodes"> Diodes
+                </label>
+              </div><!-- /.checkbox.col-xs-11.col-xs-offset-1.tb-margin-0 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1 tb-margin-0" id="formElement20">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="esd-protection" id="esd-protection"> ESD Protection
+                </label>
+              </div><!-- /.checkbox.col-xs-11.col-xs-offset-1.tb-margin-0 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1 tb-margin-0" id="formElement21">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="logic" id="logic"> Logic
+                </label>
+              </div><!-- /.checkbox.col-xs-11.col-xs-offset-1.tb-margin-0 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1 tb-margin-0" id="formElement22">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="mosfets" id="mosfets"> MOSFETs
+                </label>
+              </div><!-- /.checkbox.col-xs-11.col-xs-offset-1.tb-margin-0 -->
+            </div><!-- /.row -->
+
+          </div><!-- /.col-sm-5 -->
+          <div class="col-sm-5">
+
+            <div class="row">
+              <div class="checkbox col-xs-12" id="formElement23">
+                <label>
+                  <input type="checkbox" name="id-sec" id="id-sec"> Identification &amp; Security
+                </label>
+              </div><!-- /.checkbox.col-xs-12 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1 tb-margin-0" id="formElement24">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="nfc" id="nfc"> NFC
+                </label>
+              </div><!-- /.checkbox.col-xs-11.col-xs-offset-1.tb-margin-0 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-12" id="formElement25">
+                <label>
+                  <input type="checkbox" name="interface-conn" id="interface-conn"> Interface &amp; Connectivity
+                </label>
+              </div><!-- /.checkbox.col-xs-12 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-12" id="formElement26">
+                <label>
+                <input type="checkbox" name="media-audio-proc" id="media-audio-proc"> Media &amp; Audio Processing
+                </label>
+              </div><!-- /.checkbox.col-xs-12 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-12" id="formElement27">
+                <label>
+                  <input type="checkbox" name="power-mgmt" id="power-mgmt"> Power Management
+                </label>
+              </div><!-- /.checkbox.col-xs-12 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-12" id="formElement28">
+                <label>
+                  <input type="checkbox" name="rf" id="rf"> RF
+                </label>
+              </div><!-- /.checkbox.col-xs-12 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-12" id="formElement29">
+                <label>
+                  <input type="checkbox" name="sensor" id="sensors"> Sensors
+                </label>
+              </div><!-- /.checkbox.col-xs-12 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-12" id="formElement30">
+                <label>
+                  <input type="checkbox" name="auto-prods" id="auto-prods"> Automotive Products
+                </label>
+              </div><!-- /.checkbox.col-xs-12 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1 tb-margin-0" id="formElement31">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="can-lin-flexray" id="can-lin-flexray"> CAN/LIN/FlexRay Transceivers
+                </label>
+              </div><!-- /.checkbox.col-xs-11.col-xs-offset-1.tb-margin-0 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1 tb-margin-0" id="formElement32">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="s12-magniv" id="s12-magniv"> S12 MagniV Microcontrollers
+                </label>
+              </div><!-- /.checkbox.col-xs-11.col-xs-offset-1.tb-margin-0 -->
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="checkbox col-xs-11 col-xs-offset-1 tb-margin-0" id="formElement33">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="s32" id="s32"> S32 MCUs/MPUs
+                </label>
+              </div><!-- /.checkbox.col-xs-11.col-xs-offset-1.tb-margin-0 -->
+            </div><!-- /.row -->
+
+          </div><!-- /.col-sm-6 -->
+        </div><!-- /.row -->
+
+        
+
+        <!-- SPACER --><div class="Spacer-10px"></div>
+
+        <h2>Global Opt-In</h2>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="checkbox col-xs-12" id="formElement1">
+                <label>
+                  <input type="checkbox" name="global-opt-in" id="global-opt-in"> Subscribe to all
+                </label>
+              </div><!-- /.checkbox.col-xs-12 -->
+            </div><!-- /.row -->
+          </div><!-- /.col-xs-12 -->
+        </div><!-- /.row -->
+
+        <h2>Global Opt-Out</h2>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="checkbox col-xs-12" id="formElement2">
+                <label>
+                  <input type="checkbox" class="b-margin-10" name="global-opt-out" id="global-opt-out"> Unsubscribe me from all NXP marketing emails
+                </label>
+              </div><!-- /.checkbox.col-xs-12 -->
+            </div><!-- /.row -->
+          </div><!-- /.col-xs-12 -->
+        </div><!-- /.row -->
+
+        <!-- SPACER --><div class="Spacer-10px"></div><div class="Spacer-10px"></div>
+
+        <div class="row">
+
+          <div class="form-group" id="formElement74">
+            <input type="submit" class="btn btn-orange btn-lg col-xs-7 col-xs-offset-1 col-sm-4" value="Submit" name="submit" id="submit">
+          </div>
+
+        </div><!-- /.row -->
+
+
+<!-- ########## START - - UNUSED ON DAY 1 ##########
+<div id="formElement36" class="checkbox"><label>Single Checkbox 16</label><input name="singleCheckbox16" type="checkbox"></div><div id="formElement37" class="checkbox"><label>Single Checkbox 17</label><input name="singleCheckbox17" type="checkbox"></div><div id="formElement38" class="checkbox"><label>Single Checkbox 18</label><input name="singleCheckbox18" type="checkbox"></div><div id="formElement39" class="checkbox"><label>Single Checkbox 19</label><input name="singleCheckbox19" type="checkbox"></div><div id="formElement40" class="checkbox"><label>Single Checkbox 20</label><input name="singleCheckbox20" type="checkbox"></div><div id="formElement41" class="checkbox"><label>Single Checkbox 21</label><input name="singleCheckbox21" type="checkbox"></div><div id="formElement42" class="checkbox"><label>Single Checkbox 22</label><input name="singleCheckbox22" type="checkbox"></div><div id="formElement43" class="checkbox"><label>Single Checkbox 23</label><input name="singleCheckbox23" type="checkbox"></div><div id="formElement44" class="checkbox"><label>Single Checkbox 24</label><input name="singleCheckbox24" type="checkbox"></div><div id="formElement45" class="checkbox"><label>Single Checkbox 25</label><input name="singleCheckbox25" type="checkbox"></div><div id="formElement46" class="checkbox"><label>Single Checkbox 26</label><input name="singleCheckbox26" type="checkbox"></div><div id="formElement47" class="checkbox"><label>Single Checkbox 27</label><input name="singleCheckbox27" type="checkbox"></div><div id="formElement48" class="checkbox"><label>Single Checkbox 28</label><input name="singleCheckbox28" type="checkbox"></div><div id="formElement49" class="checkbox"><label>Single Checkbox 29</label><input name="singleCheckbox29" type="checkbox"></div><div id="formElement50" class="checkbox"><label>Single Checkbox 30</label><input name="singleCheckbox30" type="checkbox"></div><div id="formElement51" class="checkbox"><label>Single Checkbox 31</label><input name="singleCheckbox31" type="checkbox"></div><div id="formElement52" class="checkbox"><label>Single Checkbox 32</label><input name="singleCheckbox32" type="checkbox"></div><div id="formElement53" class="checkbox"><label>Single Checkbox 33</label><input name="singleCheckbox33" type="checkbox"></div><div id="formElement54" class="checkbox"><label>Single Checkbox 34</label><input name="singleCheckbox34" type="checkbox"></div><div id="formElement55" class="checkbox"><label>Single Checkbox 35</label><input name="singleCheckbox35" type="checkbox"></div><div id="formElement56" class="checkbox"><label>Single Checkbox 36</label><input name="singleCheckbox36" type="checkbox"></div><div id="formElement57" class="checkbox"><label>Single Checkbox 37</label><input name="singleCheckbox37" type="checkbox"></div><div id="formElement58" class="checkbox"><label>Single Checkbox 38</label><input name="singleCheckbox38" type="checkbox"></div><div id="formElement59" class="checkbox"><label>Single Checkbox 39</label><input name="singleCheckbox39" type="checkbox"></div><div id="formElement60" class="checkbox"><label>Single Checkbox 40</label><input name="singleCheckbox40" type="checkbox"></div><div id="formElement61" class="checkbox"><label>Single Checkbox 41</label><input name="singleCheckbox41" type="checkbox"></div><div id="formElement62" class="checkbox"><label>Single Checkbox 42</label><input name="singleCheckbox42" type="checkbox"></div><div id="formElement63" class="checkbox"><label>Single Checkbox 43</label><input name="singleCheckbox43" type="checkbox"></div><div id="formElement64" class="checkbox"><label>Single Checkbox 44</label><input name="singleCheckbox44" type="checkbox"></div><div id="formElement65" class="checkbox"><label>Single Checkbox 45</label><input name="singleCheckbox45" type="checkbox"></div><div id="formElement66" class="checkbox"><label>Single Checkbox 46</label><input name="singleCheckbox46" type="checkbox"></div><div id="formElement67" class="checkbox"><label>Single Checkbox 47</label><input name="singleCheckbox47" type="checkbox"></div><div id="formElement68" class="checkbox"><label>Single Checkbox 48</label><input name="singleCheckbox48" type="checkbox"></div><div id="formElement69" class="checkbox"><input name="singleCheckbox49" type="checkbox"><label>Single Checkbox 49</label></div><div id="formElement70" class="checkbox"><label>Single Checkbox 50</label><input name="singleCheckbox50" type="checkbox"></div><div id="formElement71" class="checkbox"><label>Vybrid, 8-bit MCUs, 16-bit MCUs, DSCs (DEPRECATED, DO NOT USE)</label><input name="other-mcu-products-DEPRECATED" type="checkbox"></div><div id="formElement72" class="checkbox"><label>Software and Tools (DEPRECATED, DO NOT USE)</label><input name="software-n-tools-DEPRECATED" type="checkbox"></div><div id="formElement73" class="checkbox"><label>Freescale Design News (DEPRECATED, DO NOT USE)</label><input name="newsletter-DEPRECATED" type="checkbox"></div>
+########## END - - UNUSED ON DAY 1 ########## -->
+
+      </form>
+  
+    </div><!-- /.col-xs-12 -->
+
+    <script src="https://img.en25.com/i/livevalidation_standalone.compressed.js"></script>
+    <script>
+      var dom0 = document.querySelector('#form927 #field0');
+        var field0 = new LiveValidation(dom0, {validMessage: "", onlyOnBlur: true});
+        field0.add(Validate.Format, {pattern: /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, failureMessage: "A valid email address is required."});
+        field0.add(Validate.Length, {tooShortMessage:"Invalid length for field value", tooLongMessage: "Invalid length for field value",  minimum: 5, maximum: 225});
+      var dom34 = document.querySelector('#form927 #field34');
+        var field34 = new LiveValidation(dom34, {validMessage: "", onlyOnBlur: true});
+        var dom35 = document.querySelector('#form927 #field35');
+      var field35 = new LiveValidation(dom35, {validMessage: "", onlyOnBlur: true});
+      function resetSubmitButton(e){ var submitButtons = e.target.form.getElementsByClassName('submit-button'); for(var i=0;i<submitButtons.length;i++){  submitButtons[i].disabled = false; }  }function addChangeHandler(elements){  for(var i=0; i<elements.length; i++){   elements[i].addEventListener('change', resetSubmitButton); }  }var form = document.getElementById('form927'); addChangeHandler(form.getElementsByTagName('input')); addChangeHandler(form.getElementsByTagName('select')); addChangeHandler(form.getElementsByTagName('textarea'));
+    </script>
+
+    <!-- SPACER --><div class="Spacer-10px"></div><div class="Spacer-10px"></div><div class="Spacer-10px"></div><div class="Spacer-10px"></div>
+
+    <div class="col-xs-12">
+      <p style="margin:0;text-align:left">Please refer to our <a target="_blank" href="https://s1764.t.en25.com/e/er?s=1764&amp;lid=10708&amp;elq=00000000000000000000000000000000&amp;elqaid=902&amp;elqat=2&amp;elqTrackId=babcc88885774bb4a7397c14f0078225">Privacy Policy</a> and <a target="_blank" href="https://s1764.t.en25.com/e/er?s=1764&amp;lid=10706&amp;elq=00000000000000000000000000000000&amp;elqaid=902&amp;elqat=2&amp;elqTrackId=84d94d72d21d43a6acfb8556db01a7d2">Terms of Use</a>, or <a target="_blank" href="https://s1764.t.en25.com/e/er?s=1764&amp;lid=10707&amp;elq=00000000000000000000000000000000&amp;elqaid=902&amp;elqat=2&amp;elqTrackId=edc9260f79a94ef8b6be0aca37403727">contact us</a> for more details.
+    </p></div><!-- /.col-xs-12 -->
+
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+<script type="text/javascript" src="http://cache.nxp.com/shared/js/bootstrap.min.js"></script>
+  
+<!-- START Jquery checkbox logic-->
+<script type='text/javascript'>
+  $(document).ready(function() {
+    
+    //if rdr parameter is present, show the skip link
+    $("div.show_on_rdr").toggle(document.URL.indexOf("rdr=1") !== -1);
+
+    //If User does a global opt out, uncheck all boxes
+    $('#global-opt-out').click(function() {
+	  $('input:checkbox').not(this).prop("checked", false);
+	});
+
+    //Global Opt-In Clicks  
+    $('#global-opt-in').click(function() {
+     // If user has globally opted-in, check all boxes
+      if ($(this).prop("checked") == true){
+	    $('input:checkbox').not(this).prop("checked", true);
+      }
+     // If user has unchecked global opt-in, uncheck all boxes
+      if ($(this).prop("checked") == false){
+	    $('input:checkbox').not(this).prop("checked", false);
+      }
+    // Global opt out should be unchecked
+      $('#global-opt-out').prop("checked",false);
+	});
+
+  //All clicks to boxes EXCEPT global opt-out
+  $('input:checkbox').not('#global-opt-out').click(function() {
+      //Uncheck global opt-out
+      $('#global-opt-out').prop("checked",false);
+
+      // If box is unchecked, uncheck the global opt-in box
+      if ($(this).prop("checked") == false){
+        $('#global-opt-in').prop("checked",false);  
+      }
+			
+			//If any of the ARM children are checked, mark ARM as checked, (unless parent is being unchecked)
+			if ( ($('#kinetis').prop("checked") == true) || ($('#lpc').prop("checked") == true) || ($('#imx').prop("checked") == true) || ($('#qoriq').prop("checked") == true) ){
+			  if ($(this).attr('id') != 'arm'){ 
+				  $('#arm').prop("checked",true);
+					}
+			}
+			
+			//If any of the Discrete & Logic children are checked, mark Discrete & Logic as checked (unless parent is being unchecked)
+			if ( ($('#bipolar-transistors').prop("checked") == true) || ($('#diodes').prop("checked") == true) || ($('#esd-protection').prop("checked") == true) || ($('#logic').prop("checked") == true) || ($('#mosfets').prop("checked") == true) ){
+			  if ($(this).attr('id') != 'discrete-logic'){ 
+				  $('#discrete-logic').prop("checked",true);
+				}
+			}
+			
+		  //If any of the Identification & Security children are checked, mark Identification & Security as checked (unless parent is being unchecked)
+			if ($('#nfc').prop("checked") == true){
+			  if ($(this).attr('id') != 'id-sec'){ 
+			    $('#id-sec').prop("checked",true);
+				} 
+			}
+			
+			//If any of the Automotive Products children are checked, mark Automotive Products as checked (unless parent is being unchecked)
+			if ( ($('#can-lin-flexray').prop("checked") == true) || ($('#s12-magniv').prop("checked") == true) || ($('#s32').prop("checked") == true) ){
+			  if ($(this).attr('id') != 'auto-prods'){ 
+				  $('#auto-prods').prop("checked",true);
+				}
+			}
+
+      //If box is checked and global opt-in is unchecked
+      if ( ($(this).prop("checked") == true) && ($('#global-opt-in').prop("checked") == false )){
+
+       //If the number of boxes checked are more than 30, check the global opt-in box
+        if ($('input:checkbox:checked').length > 30 ){
+          $('#global-opt-in').prop("checked",true);
+        }
+      }
+
+  });
+	
+	//ARM Parent click function
+  $('#arm').click(function() {
+	  //Get the state (checked or unchecked) of the parent checkbox
+	  var checkbox_status = $(this).prop("checked");
+		
+		//When the parent is clicked, set each child's state to the same as the parent
+		$('#kinetis').prop("checked",checkbox_status);
+		$('#lpc').prop("checked",checkbox_status);
+		$('#imx').prop("checked",checkbox_status);
+		$('#qoriq').prop("checked",checkbox_status);
+		//If the number of boxes checked are more than 30, check the global opt-in box
+        global_opt_in_check();
+  }); //End of ARM Parent click
+	
+	//Discrete & Logic Parent click function
+  $('#discrete-logic').click(function() {
+    //Get the state (checked or unchecked) of the parent checkbox
+	  var checkbox_status = $(this).prop("checked");
+		
+		//When the parent is clicked, set each child's state to the same as the parent
+		$('#bipolar-transistors').prop("checked",checkbox_status);
+		$('#diodes').prop("checked",checkbox_status);
+		$('#esd-protection').prop("checked",checkbox_status);
+		$('#logic').prop("checked",checkbox_status);
+		$('#mosfets').prop("checked",checkbox_status);
+		//If the number of boxes checked are more than 30, check the global opt-in box
+        global_opt_in_check();
+  });//End of Discrete & Logic Parent click
+	
+	//Identification & Security Parent click function
+  $('#id-sec').click(function() {
+    //Get the state (checked or unchecked) of the parent checkbox
+	  var checkbox_status = $(this).prop("checked");
+		
+		//When the parent is clicked, set each child's state to the same as the parent
+		$('#nfc').prop("checked",checkbox_status);
+		//If the number of boxes checked are more than 30, check the global opt-in box
+        global_opt_in_check();
+  });//End of Identification & Security Parent click
+
+	//Automotive Products Parent click function
+  $('#auto-prods').click(function() {
+    //Get the state (checked or unchecked) of the parent checkbox
+	  var checkbox_status = $(this).prop("checked");
+		
+		//When the parent is clicked, set each child's state to the same as the parent
+		$('#can-lin-flexray').prop("checked",checkbox_status);
+		$('#s12-magniv').prop("checked",checkbox_status);
+		$('#s32').prop("checked",checkbox_status);
+		//If the number of boxes checked are more than 30, check the global opt-in box
+        global_opt_in_check();
+  });//End of Automotive Products Parent click
+	
+	
+	
+  // On Submit, do not allow blank email addresses
+  // Make sure at least one checkbox is checked  
+  $('#submit').on('click',function(event){
+    //adobe day 1 code START
+    var preventDefault = false;
+    //adobe day 1 code END
+    if ($('input:checkbox:checked').length == 0 ){
+      alert("Please make a selection.");
+      event.preventDefault(); 
+      //adobe day 1 code START
+      preventDefault = true;
+      //adobe day 1 code END
+    }
+    if ($.trim($('#field0').val()).length==0){
+      alert("Please enter an email address");
+      event.preventDefault(); 
+      //adobe day 1 code START
+      preventDefault = true;
+      //adobe day 1 code END
+    }
+//adobe day 1 code START
+    if(!preventDefault){
+      trackAnalyticsFormCompletion("Eloqua Subscription Form");
+    }
+    //adobe day 1 code END
+    
+    //Set landing page based on presence rdr redirect query parameter
+       
+	var redirect_URL = getQueryStringParamValue("rdr");
+
+    if (redirect_URL == 1){
+      document.getElementById("redirURL").value="https://www.nxp.com/webapp/merger/redirectToTheSendBackPage.sp";
+    }  else{
+        var lang_cd;
+        
+        switch (document.getElementById("language").value){
+        case 'English':
+            lang_cd ="en";
+            break;
+        case 'Chinese':
+            lang_cd ="zh-Hans";
+            break;
+        case 'Japanese':
+            lang_cd ="ja";
+            break;
+        case 'Korean':
+            lang_cd ="ko";
+            break;
+        } //END SWITCH
+        
+        document.getElementById("redirURL").value="https://www.nxp.com/ruhp/myFreescale.html?lang_cd=" + lang_cd;
+    } //END ELSE
+
+    
+  }); 
+}); //End document ready function
+  </script>
+  
+  
+  <!--[if lt IE 7]>
+<script src='https://img.en25.com/i/IE7.js'></script><script type='text/javascript'>var elements = document.all;var len = elements.length;for(var i = 0; i<len; i+=1){IE7.Layout.fixRight(elements[i]);IE7.Layout.fixBottom(elements[i]);}</script>
+<![endif]-->
+</body>
+<!-- Mirrored from contact.nxp.com/Subscription-Center by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:49 GMT -->
+</html>
+<script type="text/javascript">
+<!--
+if (navigator.appName == 'Netscape' || navigator.appName == 'Opera'){
+     document.write('<layer hidden=true><img src="https://s1764.t.eloqua.com/visitor/v200/svrGP?pps=60&siteid=1764&PURLSiteID=9&optin=disabled&PURLSiteAlternateDNSID=0&LandingPageID=902&PURLRecordID=0&PURLGUID=B63036B232CA476A9CB5180B15835D09&UseRelativePath=True&elq={00000000-0000-0000-0000-000000000000}&ref=http%3a%2f%2fwww.nxp.com%2fproducts%2fmicrocontrollers-and-processors%2farm-processors%2flpc-cortex-m-mcus%2flpc-cortex-m3-mcus%2flpc1300-cortex-m3-mcus%2f512kb-flash-64kb-sram-ethernet-usb-lqfp100-package%3aLPC1769FBD100&elq_ck=0" border=0 width=1 height=1 alt="" ><\/layer>');
+}else{
+     document.write('<img style="display:none" src="https://s1764.t.eloqua.com/visitor/v200/svrGP?pps=60&siteid=1764&PURLSiteID=9&optin=disabled&PURLSiteAlternateDNSID=0&LandingPageID=902&PURLRecordID=0&PURLGUID=B63036B232CA476A9CB5180B15835D09&UseRelativePath=True&elq={00000000-0000-0000-0000-000000000000}&ref=http%3a%2f%2fwww.nxp.com%2fproducts%2fmicrocontrollers-and-processors%2farm-processors%2flpc-cortex-m-mcus%2flpc-cortex-m3-mcus%2flpc1300-cortex-m3-mcus%2f512kb-flash-64kb-sram-ethernet-usb-lqfp100-package%3aLPC1769FBD100&elq_ck=0" border=0 width=1 height=1 alt="">');
+}
+
+-->
+</script>

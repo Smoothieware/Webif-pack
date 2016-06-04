@@ -1,0 +1,766 @@
+
+
+
+
+
+
+
+<html>
+     
+<!-- Mirrored from www.halfbakery.com/idea/Open_20Source_20Hardware_20Initiative by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
+<head>
+            <title>Halfbakery: Open Source Hardware Initiative</title>
+            <META NAME="YahooSeeker" CONTENT="NOINDEX, NOFOLLOW"><style name="text/css"><!--
+/* Eric A. Meyer's reset, via
+   http://meyerweb.com/eric/tools/css/reset/index.html
+*/
+/* v1.0 | 20080212 */
+/* lightly modified: remove table vertical align,
+don't reset ul, li, ol, dt, dd --jutta */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	/* vertical-align: baseline; */
+	/* background: transparent; */
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Eric A. Meyer's reset. */
+
+	textarea {
+		margin-right: 20px;
+		margin-bottom: 10px;
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+		font-size: 90%;
+	}
+	a.category {
+		background-color: #CBCBB2;
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+                font-size: 90%;
+		padding-left: 0.2em;
+		padding-right: 0.2em;
+		text-decoration: none;
+	}
+	a.oldidea {
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+		text-decoration: none;
+	}
+	a.newidea {
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	a.noul {
+		text-decoration: none;
+	}
+	td.mainpanel
+	{
+		vertical-align: top;
+	}
+
+	table.ideacategory
+	{
+		margin-top: 1.5em;
+	}
+	td.sectiontitle
+	{
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+		text-decoration: none;
+		padding-bottom: 0.3em;
+	}
+	td.catlist
+	{
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+		text-decoration: none;
+		font-size: 90%;
+	}
+	td.ideaincat
+	{
+		padding-bottom: 0.1em;
+		padding-right: 0.2em;
+		font-size: 90%;
+	}
+	td.catincat
+	{
+		padding-bottom: 0.1em;
+		padding-left: 0.2em;
+	}
+	td.viewtable
+	{
+		padding-bottom: 0.2em;
+		padding-right: 0.2em;
+		font-size: 90%;
+	}
+	p.controlgroup
+	{
+		width: 117px;
+		margin-top: 1em;
+		text-align: left;
+	}
+	span.controlheader
+	{
+		font-family: Impact, Arial, Helvetica;
+		font-size: 100%;
+		font-weight: normal;
+	}
+	span.blackout
+	{
+		background-color: #000000;
+	} 
+	span.controlbody
+	{
+                font-family: Trebuchet MS, Arial, Helvetica;
+                font-size: 90%;
+	}
+	div.viewtitle
+	{
+		margin-bottom: 1em;
+	}
+	div.ideaownercontrols
+	{
+		float: right;
+	}
+	td.controls
+	{
+		font-size: 90%;
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+	} 
+	td.colheader
+	{
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+		background-color: #CBCBB2;
+	} 
+	div.catscape
+	{
+		margin-bottom: 2em;
+		margin-top: 2em;
+		line-height: 1.5em;
+		text-align: center;
+		width: 100%;
+	}
+	span.fhxl
+	{
+		font-family: Impact, Arial, Helvetica;
+		font-size: 2em;
+		font-weight: normal;
+	}
+	span.fhl
+	{
+		font-family: Impact, Arial, Helvetica;
+		font-weight: normal;
+		font-size: 1.2em;
+		padding-bottom: 0.2em;
+	}
+	h1
+	{
+		font-family: Impact, Arial, Helvetica;
+		font-size: 2em;
+		font-weight: normal;
+		padding-bottom: 0.2em;
+	}
+	h2
+	{
+		font-family: Impact, Arial, Helvetica;
+		font-size: 2em;
+		font-weight: normal;
+	}
+	h3
+	{
+		font-family: Impact, Arial, Helvetica;
+		font-size: 1.3em;
+		font-weight: normal;
+	}
+	p
+	{
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+	div.tagline
+	{
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+                font-size: 70%;
+		width: 147px;
+	}
+	div.copy
+	{
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+                font-size: 90%;
+	}
+	table.controlbody
+	{
+                font-family: Trebuchet MS, Arial, Helvetica;
+	}
+	div.smallspace {
+		margin-top: 5px;
+	}
+	div.listgroup {
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+		font-size: 90%;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	a.fcxs {
+		font-size: 10pt;
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+	}
+	font.fcxs {
+		font-size: 70%;
+	}
+	span.fcxs {
+		font-size: 70%;
+	}
+	a.fcsul {
+		font-size: 90%;
+                font-family: Trebuchet MS, Arial, Helvetica;
+	}
+	a.ideaowner {
+		font-size: 90%;
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+	}
+	a.fcmul {
+		font-size: 90%;
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+	}
+
+	.fhm
+	{
+		font-family: Impact, Arial, Helvetica;
+		font-weight: normal;
+	}
+	.fcs {
+		font-size: 90%;
+                font-family:  Trebuchet MS, Arial, Helvetica;
+	}
+	.fcm {
+		font-size: 90%;
+                font-family:  Trebuchet MS, Arial, Helvetica;
+	}
+	.fcl {
+		font-size: 108%;
+                font-family: Trebuchet MS, Arial, Helvetica;
+	}
+	.fcxl {
+		font-size: 120%;
+                font-family: Trebuchet MS, Arial, Helvetica;
+	}
+
+	input#login {
+		background-color: #ffffff;
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+		font-size: 100%;
+		text-decoration: underline;
+		padding: 0px;
+		margin-left: 0px;
+		border-left: 0px solid #cccccc;
+		border-top: 0px solid #cccccc;
+		border-bottom: 0px solid #cccccc;
+		border-right: 0px solid #cccccc;
+	}
+	input.logintext {
+		background-color: #ffffff;
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+		font-size: 90%;
+		width: 60px;
+	}
+	input.closeok {
+		background-color: #ffffff;
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+		font-size: 12pt;
+		padding-right: 0.5em;
+		padding-left: 0.5em;
+		margin-right: 20px;
+		margin-left: 0px;
+		margin-top: 1px;
+		border-left: 1px solid #cccccc;
+		border-top: 1px solid #cccccc;
+		border-bottom: 1px solid #cccccc;
+		border-right: 1px solid #cccccc;
+	}
+	input.ok {
+		background-color: #ffffff;
+                font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
+		font-size: 12pt;
+		padding-right: 0.5em;
+		padding-left: 0.5em;
+		margin-right: 20px;
+		margin-left: 0px;
+		margin-top: 10px;
+		border-left: 1px solid #cccccc;
+		border-top: 1px solid #cccccc;
+		border-bottom: 1px solid #cccccc;
+		border-right: 1px solid #cccccc;
+	}
+	body {
+		margin: 1.2em;
+	}
+	--></style>
+	    
+         </head>
+         <body bgcolor=#ffffff link=#000000 vlink=#AA2200 alink=#AA2200 onload><form action="http://www.halfbakery.com/idea/Open_20Source_20Hardware_20Initiative" method=POST><table cellspacing=0 cellpadding=0 border=0 width="100%"><tr><td width="157" valign="top" align="center"><div class="croissant" style="width: 100%; text-decoration: none; vertical-align:top"><a href="http://www.halfbakery.com/" name="top_of_page"><img src="http://www.halfbakery.com/img/hc.gif" alt="Half a croissant, on a plate, with a sign in front of it saying '50c'" width=157 height=105 vspace=4></a></div><div style="width: 100%"><span class="fhl">h a l f b a k e r y</span><br><div class="tagline">We don't have enough art &amp; classy shit around here.</div></div></div><table width=117 cellspacing=0 cellpadding=0><tr><td><p class="controlgroup"><span class="controlheader">idea:</span>
+	<span class="controlbody"><a href="http://www.halfbakery.com/addidea.html?categories=Computer%3a%20Chip">add</a>, <a href="http://www.halfbakery.com/search.html">search</a>, <a href=http://www.halfbakery.com/idea/Open_20Source_20Hardware_20Initiative/addnote#addnote>annotate</a>, <a href=http://www.halfbakery.com/idea/Open_20Source_20Hardware_20Initiative/addlink#addlink>link</a>, view, <a href="http://www.halfbakery.com/index.html">overview</a>, <a href="http://www.halfbakery.com/index-recent-by-date.html">recent</a>, <a href="http://www.halfbakery.com/index-by-name.html">by name</a>, <a href="http://www.halfbakery.com/random-idea.html">random</a>
+	</span></p><p class="controlgroup"><span class="controlheader">meta:</span>
+	<span class="controlbody"><a href="http://www.halfbakery.com/editorial/whatsnew.html#crumb">news</a>, <a href="http://www.halfbakery.com/editorial/help.html">help</a>, <a href="http://www.halfbakery.com/editorial/about.html">about</a>, <a href="http://www.halfbakery.com/editorial/links.html">links</a>, <a href="mailto:bakesperson@gmail.com">report a problem</a>
+	</span></p><p class="controlgroup">
+        <span class="controlheader">account:</span>
+        <span class="controlbody">
+
+		browse anonymously,
+		or get an account
+		and write.
+
+         <br /><br /><table cellpadding=0 cellspacing=0 class="controlbody" width="117px">
+	  <tr>
+	    <td class="loginprompt">user: </td><td><input type="text" name="username" class="logintext" size=8></td>
+	  </tr>
+	  <tr>
+	    <td class="loginprompt">pass: </td><td><input type="password" name="password" class="logintext" size=8></td></tr></table><a href="http://www.halfbakery.com/editorial/signup.html">register</a>,
+        <input type="SUBMIT" id="login" value="login" name="login">
+        
+
+      </span>
+      </p>
+
+      <p><br></td></tr></table></td><td valign=top colspan=2 width=20><a name="1279528292">&nbsp;</a>
+			  <a name="207686">&nbsp;</a>
+  <a name="207687">&nbsp;</a>
+  <a name="207688">&nbsp;</a>
+  <a name="207689">&nbsp;</a>
+  <a name="207691">&nbsp;</a>
+  <a name="207692">&nbsp;</a>
+  <a name="207693">&nbsp;</a>
+  <a name="207694">&nbsp;</a>
+  <a name="207695">&nbsp;</a>
+  <a name="207696">&nbsp;</a>
+  <a name="369837">&nbsp;</a>
+  <a name="369849">&nbsp;</a>
+  <a name="569478">&nbsp;</a>
+  <a name="586172">&nbsp;</a>
+  <a name="586196">&nbsp;</a>
+  <a name="586241">&nbsp;</a>
+  <a name="612643">&nbsp;</a>
+  <a name="689108">&nbsp;</a>
+			  <a name="http%3a%2f%2fwww%2estatskontoret%2ese%2fpdf%2f200308eng%2epdf">&nbsp;</a>
+     <a name="http%3a%2f%2fopencollector%2eorg%2fWhyfree%2f">&nbsp;</a>
+     <a name="http%3a%2f%2flinuxtoday%2ecom%2fnews_story%2ephp3%3fltsn%3d1999-06-22-005-05-NW-LF">&nbsp;</a>
+     <a name="http%3a%2f%2fwww%2eembedded%2ecom%2fstory%2fOEG20020524S0078">&nbsp;</a>
+     <a name="http%3a%2f%2fwww%2egeda%2eseul%2eorg%2f">&nbsp;</a>
+     <a name="http%3a%2f%2fbach%2eece%2ejhu%2eedu%2f%7etim%2fprograms%2fxcircuit%2f">&nbsp;</a>
+     <a name="http%3a%2f%2foshd%2esunsite%2edk%2f">&nbsp;</a>
+     <a name="http%3a%2f%2fwww%2elarkencnc%2ecom%2fcam15%2findex%2eshtml">&nbsp;</a>
+     <a name="http%3a%2f%2fnews%2ezdnet%2eco%2euk%2fhardware%2f0%2c1000000091%2c39117465%2c00%2ehtm">&nbsp;</a>
+     <a name="http%3a%2f%2fwww%2eexpresspcb%2ecom%2f">&nbsp;</a>
+     <a name="http%3a%2f%2fapcircuits%2ecom%2f">&nbsp;</a>
+     <a name="http%3a%2f%2fwww%2eopencapitalist%2eorg">&nbsp;</a>
+			</td><td valign="top" colspan="2" class="mainpanel"><div align=right>
+	<table cellspacing=0 cellpadding=0 border=0 class="ideacategory"><tr><td valign=top align=right><table><tr><td align=right class="ideaincat"><a class="oldidea" href="http://www.halfbakery.com/idea/5-volt_20pseudo-RS232_20port#1213194423">5-volt pseudo-RS232 port</a></td><td><nobr><img width=9 height=15 src="http://www.halfbakery.com/img/score9x15_2.gif" alt="(+6)"></nobr></td></tr>
+<tr><td align=right class="ideaincat"><a class="oldidea" href="http://www.halfbakery.com/idea/Circuit_20Sandwiches#1203753644">Circuit Sandwiches</a></td><td><nobr><img width=9 height=15 src="http://www.halfbakery.com/img/score9x15_4.gif" alt="(+1, -5)"></nobr></td></tr>
+<tr><td align=right class="ideaincat"><a class="oldidea" href="http://www.halfbakery.com/idea/Compute_20with_20Light#1300929896">Compute with Light</a></td><td><nobr><img width=9 height=15 src="http://www.halfbakery.com/img/score9x15_3.gif" alt="(-2)"></nobr></td></tr>
+<tr><td align=right class="ideaincat"><a class="oldidea" href="http://www.halfbakery.com/idea/Critical_20temperature_20programmable_20logic#1123617967">Critical temperature programmable logic</a></td><td><nobr><img width=9 height=15 src="http://www.halfbakery.com/img/score9x15_1.gif" alt="(+4, -1)"></nobr></td></tr>
+<tr><td align=right class="ideaincat"><a class="oldidea" href="http://www.halfbakery.com/idea/Diffraction_20mask_20for_20semiconductor_20manufacture#1110815576">Diffraction mask for semiconductor manufacture</a></td><td><nobr><img width=9 height=15 src="http://www.halfbakery.com/img/score9x15_3.gif" alt="(-1)"></nobr></td></tr>
+<tr><td align=right class="ideaincat"><a class="oldidea" href="http://www.halfbakery.com/idea/FPGA_20coprocessor#1290504877">FPGA coprocessor</a></td><td><nobr><img width=9 height=15 src="http://www.halfbakery.com/img/score9x15_1.gif" alt="(+3, -1)"></nobr></td></tr>
+<tr><td align=right class="ideaincat"><a class="oldidea" href="http://www.halfbakery.com/idea/HDMI_20drive#1294413438">HDMI drive</a></td><td><nobr><img width=9 height=15 src="http://www.halfbakery.com/img/score9x15_2.gif" alt="(+6)"></nobr></td></tr>
+<tr><td align=right class="ideaincat"><a class="oldidea" href="http://www.halfbakery.com/idea/Open_20Source_20Hardware_20Initiative#1279528292">Open Source Hardware Initiative</a></td><td><nobr><img width=9 height=15 src="http://www.halfbakery.com/img/score9x15_2.gif" alt="(+12)"><img width=9 height=15 src="http://www.halfbakery.com/img/score9x15_1.gif" alt="(+12)"></nobr></td></tr>
+<tr><td align=right class="ideaincat"><a class="oldidea" href="http://www.halfbakery.com/idea/photodielectric_20effect_20makes_20better_20chips#1255377763">photodielectric effect makes better chips</a></td><td><nobr><img width=9 height=15 src="http://www.halfbakery.com/img/score9x15_1.gif" alt="(+3)"></nobr></td></tr>
+<tr><td align=right class="ideaincat"><a class="oldidea" href="http://www.halfbakery.com/idea/usb_20enabled_20AVR_20programming#1434189943">usb enabled AVR programming</a></td><td><nobr><img width=9 height=15 src="http://www.halfbakery.com/img/score9x15_1.gif" alt="(+2, -1)"></nobr></td></tr></table></td><td valign=top class="catincat"><nobr><a class="category" href="http://www.halfbakery.com/category/Computer">computer:</a><a href="http://www.halfbakery.com/category/Computer_3a_20Chip" class="category">chip</a>&nbsp;</nobr></td></tr></table>
+	</div>
+	<table cellspacing=0 cellpadding=0 border=0 align=left width=350><tr><td><table cellspacing=0 cellpadding=0 border=0><tr><td valign=bottom>
+	    		<a name="idea"><h1>Open Source Hardware Initiative</h1></a>
+			<font face="Trebuchet MS, Arial, Helvetica" class="fcl">How open source electronics and hardware can be feasible, reproducible, and implementable</font></td><td valign=bottom class="controls"><table cellspacing=0 cellpadding=0 border=0><tr>
+		    <td width=7>&nbsp;</td>
+		    <td valign=top align=center><nobr><img width=15 height=25 src="http://www.halfbakery.com/img/score15x25_2.gif" alt="(+12)"><img width=15 height=25 src="http://www.halfbakery.com/img/score15x25_1.gif" alt="(+12)"></nobr><br><nobr>(+12)</nobr>
+		    </td><td width=7>&nbsp;</td><td>
+		      [vote
+				<a accesskey="f" href=http://www.halfbakery.com/idea/Open_20Source_20Hardware_20Initiative?op=aye>for</a>,<br>
+				<a accesskey="g" href=http://www.halfbakery.com/idea/Open_20Source_20Hardware_20Initiative?op=nay>against</a>]
+			</td>
+		 </tr></table></td></tr></table><br><div class="copy">As both an electrical engineer and professional software developer, I'd like to start an open source hardware movement similar to the open source software movement that has currently been happening.  I've seen ideas similar to this from other people before, although not well thought out nor articulated
+correctly, and definitely not the same thoughts I have about the subject.  This (somewhat long) post is a summary of my ideas, hoping to get some feedback from other people.<p>
+
+THE TOOL IS THE ISSUE<p>
+
+Open source software has been around for awhile.  We've all seen it: Linux is the biggest example. Why does open source software exist?  Because it is easily copied, reproducible, and editable almost for free, and because many software developers like have a hand in it.  Drop a couple hundred to thousands of dollars buying a computer, and anybody with the knowledge to do so could be running and developing open source software.  A computer is, essentially, the tool to develop and use open source software.<p>
+
+Open source hardware obviously has different requirements. You can't just download and compile a physical circuit.  The key issue is this: users lack a tool to do develop open source hardware. I believe that, just as a computer is the physical tool to develop open source software, a PCB router would be the first key to developing open source hardware.<p>
+
+CAN'T JUMP TO IC'S AT FIRST<p>
+
+Many people believe that open source hardware has to be all about integrated circuits (IC's) on chips. It cannot start out this way, simply because developing a single IC's costs hundreds of thousands of dollars, plus the cost of a manufacturing plant and everybody's time involved.  Instead, open source hardware developers and users  should rely on existing IC's and develop full working circuits using a home-built (read: cheap) or inexpensively purchased circuit fabrication tool (note that you can get free samples of just about any IC shipped to you from almost any IC manufacturer online - and they do a good job reacting to the market).  FPGA's and simple microcontrollers can do a fine job of emulating many (any?) IC packages.<p>
+
+REPRODUCIBILITY OF HARDWARE<p>
+
+Now that the whole IC issue is out of the way, back to the PCB router.  A tool like a router would be critical to developing hardware - and not just for circuitry (although the subject I'm focused on is the circuitry design - this can also be to do woodworking, plastic shaping, aluminum cutting, etc.).  Why?  Because a PCB router is *reproducible*.  Once you have one made, it can make another one, more accurate and stronger.  Once you have version 2 made, it can produce version 3 - even more accurately.  You can make these desktop PCB routers for your friends, given that somebody supplies you with the materials (and possible monetary compensation for your time).  PCB routers normally cost thousands of dollars.  Again, ask yourself, why is this?  Because they are made for industry - they're made for people who throw around thousands of dollars at a time and require precision tools for mass production.  These things are souped up with vacuums and all kinds of unnecessary gadgets that wouldn't be needed in a home or school environment.  <p>
+
+I've already built a PCB router myself from scratch using a couple broken printers and a broken scanner, and from my experience, it should cost no more than a new printer (although I built my version 1.0 for $12 - the cost of a unipolar stepper motor and its driver when my bipolar motor got shot).  It would be beneficial for people who are into this stuff to have PCB routers on their desk like they do printers.  And for those of you who don't know how it works, you get a double-sided copper plated board at RadioShack, stick it in the machine, and hitting a Print button on some circuit layout software.  Viola - the circuit layout is etched into the board.<p>
+
+OBTAINING A PCB ROUTER<p>
+
+The users can get a desktop PCB router by either <p>
+
+1) Downloading open source plans for the router and building it himself.<p>
+
+2) Having his/her friend who already built one build a replicate.<p>
+
+3) Buying an inexpensive one developed by someone in the open source hardware community.<p>
+
+Again, once the user as a single PCB router, depending on how much money they put into their tool (just like people put more money into souping up their computers) they too can have a really souped up router.  I'm planning on making my version 2.0 router not only develop circuit boards but also be strong enough to carve three-dimensional surfaces on aluminum and plastic housings (cases for my projects).  I'm actually using my first, cheap version of the PCB router to build this more powerful second version.<p>
+
+OPEN SOURCE CIRCUIT DEVELOPMENT<p>
+
+As for circuit development, projects can be created and people can collaborate online.  Because software is needed to develop, simulate, and layout circuitry, the open source software community could get involved to develop the necessary programs. In this case, hardware development relies on the software available - not vice versa as it used to be.  <p>
+
+When a user wants a new circuit, he/she can download the plans online, load it up in the open source software, alter it to his standards and then hit print.  The PCB router goes to work for a minute, carves out the circuit on the board, and then it's up to the user to populate the board with the necessary components using on-screen schematics, pictures, or instructions. That's our way of &quot;compiling&quot; the project.  If changes are made, the project can be re-submitted to the project server, with a description of the changes, for others to view and download.  The online project server would be responsible for remember all the variants of the circuitry so users can decide what type of functionality they want to download.<p>
+
+It doesn't have to stop there though - because the router can reproduce itself (and can, itself, be a living open source project), it has the capability of evolving into more advanced tools that may not require users to populate the board themselves.  Give the device the right parts and have it populate for you.  A device like this, of course, would be developed by the open source hardware community and fabricated using the &quot;deprecated&quot; router.  One version builds the next.<p>
+
+I believe that it is also possible to write software for kiddie hackers to develop both *analog* and digital circuitry (not just VHDL or Verilog) by communicating simply the constraints of such a circuit to the computer, and having a neural network, swarm intelligence, distributed computing, etc. produce a working circuit - but I'll save that complete thought for another day.<p>
+
+CONCLUSION<p>
+
+Open source hardware is feasible, reproducible, and implementable so long as users develop or get a hold of a tool to develop open source hardware.  That tool is essentially a router, which can evolve, reproduce, as well as build other projects.  Open source hardware must be backed by the open source software community to develop the tools necessary for building, testing, and laying out circuitry to be printed on the PCB router.  In the future, we should (and will) be able to download projects for whatever you need online, and print those electronics for use in your own home.<p>
+
+Sorry for writing a huge essay here.  Hope nobody mods this idea down for being so long..  :)</div>
+		<div align=right>
+				<table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcm"><a href=http://www.halfbakery.com/user/ee_5fmoss>ee_moss</a>,
+			Apr 14 2004</td></tr></table></div><br><font size=2 class="fcm" face="Trebuchet MS, Arial, Helvetica"><a href="http://www.statskontoret.se/pdf/200308eng.pdf">Free and Open Source Software Study</a></font>
+	    <font face="Trebuchet MS, Arial, Helvetica" class="fcs"><nobr>http://www.statskon...e/pdf/200308eng.pdf</nobr><br>Feasibility study of free and open source software. [<a href=http://www.halfbakery.com/user/ee_5fmoss>ee_moss</a>, Oct 04 2004]
+		<br></font><br><font size=2 class="fcm" face="Trebuchet MS, Arial, Helvetica"><a href="http://opencollector.org/Whyfree/">Writings on Open Source Hardware</a></font>
+	    <font face="Trebuchet MS, Arial, Helvetica" class="fcs"><nobr>http://opencollector.org/Whyfree/</nobr><br>A collection of information on open source hardware ideas. [<a href=http://www.halfbakery.com/user/ee_5fmoss>ee_moss</a>, Oct 04 2004]
+		<br></font><br><font size=2 class="fcm" face="Trebuchet MS, Arial, Helvetica"><a href="http://linuxtoday.com/news_story.php3?ltsn=1999-06-22-005-05-NW-LF">Richard Stallman -- On &quot;Free Hardware&quot;</a></font>
+	    <font face="Trebuchet MS, Arial, Helvetica" class="fcs"><nobr>http://linuxtoday.c...-06-22-005-05-NW-LF</nobr><br>Richard Stallman's take (somewhat limited, I believe) on developing free and open source hardware. [<a href=http://www.halfbakery.com/user/ee_5fmoss>ee_moss</a>, Oct 04 2004]
+		<br></font><br><font size=2 class="fcm" face="Trebuchet MS, Arial, Helvetica"><a href="http://www.embedded.com/story/OEG20020524S0078">Explaination of why open source IC's aren't feasible.</a></font>
+	    <font face="Trebuchet MS, Arial, Helvetica" class="fcs"><nobr>http://www.embedded...ry/OEG20020524S0078</nobr><br>Why you can't start out in IC fabrication - yet, basic circuits and projects using available IC's are completely feasible [<a href=http://www.halfbakery.com/user/ee_5fmoss>ee_moss</a>, Oct 04 2004]
+		<br></font><br><font size=2 class="fcm" face="Trebuchet MS, Arial, Helvetica"><a href="http://www.geda.seul.org/">EDA - Electronic Design Automation (open source software)</a></font>
+	    <font face="Trebuchet MS, Arial, Helvetica" class="fcs"><nobr>http://www.geda.seul.org/</nobr><br>Open source software backing future open source hardware developments [<a href=http://www.halfbakery.com/user/ee_5fmoss>ee_moss</a>, Oct 04 2004]
+		<br></font><br><font size=2 class="fcm" face="Trebuchet MS, Arial, Helvetica"><a href="http://bach.ece.jhu.edu/~tim/programs/xcircuit/">XCircuit</a></font>
+	    <font face="Trebuchet MS, Arial, Helvetica" class="fcs"><nobr>http://bach.ece.jhu.../programs/xcircuit/</nobr><br>Another open source software project, focused on developing circuitry - could be used for open source hardware development. [<a href=http://www.halfbakery.com/user/ee_5fmoss>ee_moss</a>, Oct 04 2004]
+		<br></font><br><font size=2 class="fcm" face="Trebuchet MS, Arial, Helvetica"><a href="http://oshd.sunsite.dk/">Open Source Hardware Development</a></font>
+	    <font face="Trebuchet MS, Arial, Helvetica" class="fcs"><nobr>http://oshd.sunsite.dk/</nobr><br>This site offers project plans, but lacks the key concept of replicability using the tools I propose above. [<a href=http://www.halfbakery.com/user/ee_5fmoss>ee_moss</a>, Oct 04 2004]
+		<br></font><br><font size=2 class="fcm" face="Trebuchet MS, Arial, Helvetica"><a href="http://www.larkencnc.com/cam15/index.shtml">This is what I'm saving up for</a></font>
+	    <font face="Trebuchet MS, Arial, Helvetica" class="fcs"><nobr>http://www.larkencn...m/cam15/index.shtml</nobr><br>It's $6k, but I can't imagine life without it! [<a href=http://www.halfbakery.com/user/1st2know>1st2know</a>, Oct 04 2004]
+		<br></font><br><font size=2 class="fcm" face="Trebuchet MS, Arial, Helvetica"><a href="http://news.zdnet.co.uk/hardware/0,1000000091,39117465,00.htm">Printing Chips on paper</a></font>
+	    <font face="Trebuchet MS, Arial, Helvetica" class="fcs"><nobr>http://news.zdnet.c...091,39117465,00.htm</nobr><br>This was (and may still be) being developed at Xerox and other Universities. This might just be the technology to make open source IC's viable. [<a href=http://www.halfbakery.com/user/dannystaple>dannystaple</a>, Feb 20 2008]
+		<br></font><br><font size=2 class="fcm" face="Trebuchet MS, Arial, Helvetica"><a href="http://www.expresspcb.com/">Express PCB</a></font>
+	    <font face="Trebuchet MS, Arial, Helvetica" class="fcs"><nobr>http://www.expresspcb.com/</nobr><br>3 boards for $51 and free capture and layout tools [<a href=http://www.halfbakery.com/user/csea>csea</a>, Jun 10 2008]
+		<br></font><br><font size=2 class="fcm" face="Trebuchet MS, Arial, Helvetica"><a href="http://apcircuits.com/">APC Circuits</a></font>
+	    <font face="Trebuchet MS, Arial, Helvetica" class="fcs"><nobr>http://apcircuits.com/</nobr><br>Excellent, 24 hour PCB fab I've used for years. Located in Canada, with many different prototype services. I've tried some others, but didn't like the other's tin plating - it didn't cover the edge of the traces. Since I usually have a cheapo board for proto, there's no solder mask. APC has tin that covers the edge of the copper trace, which cuts down on corrosion. [<a href=http://www.halfbakery.com/user/rickyrockrat>rickyrockrat</a>, Jan 17 2009]
+		<br></font><br><font size=2 class="fcm" face="Trebuchet MS, Arial, Helvetica"><a href="http://www.opencapitalist.org/">Open Capitalist</a></font>
+	    <font face="Trebuchet MS, Arial, Helvetica" class="fcs"><nobr>http://www.opencapitalist.org</nobr><br>Provides a framework to fund open source projects. [<a href=http://www.halfbakery.com/user/DVandervort>DVandervort</a>, Jul 18 2010]
+		<br></font><br><font face="Trebuchet MS, Arial, Helvetica" class="fcs">[<a accesskey="l" href="http://www.halfbakery.com/idea/Open_20Source_20Hardware_20Initiative/addlink#addlink">link</a>]</font><p><br></td></tr></table>
+
+	<br>
+	<br>
+	<br>
+	<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">I'm not even remotely qualified to comment on the technical merits of this idea but I like the concept so + from me.</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/DrBob>DrBob</a>,
+			Apr 14 2004</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">Ah.  I was hoping this was for hammer and nails and things.  (I don't sort by category.)</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/DrCurry>DrCurry</a>,
+			Apr 14 2004</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">This should happen - if motherboard designs were freeley available (in CAD/CAM format)  I would imagine the noosphere homesteaders would start expressing themselves in hardware. </font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">
+I remember reading an article by Stan Veit about how he modified a pen plotter to trace the lays of a PCB. This was 15+ years ago, so my memory of it is fragmented, but it was a two step process - he would put an Exacto knife in the plotter to score the board, then use a conductive ink pen to fill the lays. Back then, a boom pen plotter cost about $2000US - thats about how much an entry level CNC router goes for today.</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">
+[+] and I am sure this will be baked in the next 2-5 years - we cannot be denied our slice of the noosphere!</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/1st2know>1st2know</a>,
+			Apr 14 2004</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">In response to [willien]:</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">&quot;Are not traditional motherboards made up of many layers of traces? It sounds like you're proposing a single or maybe double-sided board. It would likely take massive amounts of PCB real estate to make the interconnections between the chips.&quot;</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">Yes, traditional boards do have many layers. I've dealt with up to four layers, but it can extend beyond that.  You are right in that as complexity increases, the real estate increases on a two-layer board (two level is minimum).  However, for people starting out building devices like this, a two layer board is enough to accomplish quite a bit. I've built some neat circuitry using only two layer boards.</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">&quot;Do you forsee this CPU emulation being even roughly equivalent to even a bottom-of-the-line CPU?&quot;</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">Open source hardware cannot attack the CPU or IC industry, simply for manufacturing reasons.  I wouldn't even attempt IC's or CPU's in open source hardware (even though full schematics and plans are available online for free for many processors).  But the trick is, many many things are possible with circuits.  Cordless phones, stereos, everyday gizmos.  For example, want a device to sense when you enter a room and turn on the stereo for you?  Just download and print out the layout.  This would be strictly kept to simple, everyday circuitry at first - and possibly extend into the IC industry as manufacturing technology advances. But that's way off.</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/ee_5fmoss>ee_moss</a>,
+			Apr 14 2004</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">The biggest impediment to having an open source hardware movement is the expense of materials consumed during the development cycle.  With software this isn't an issue because recompiling  source code costs only time, assuming compilation in the background on a machine which would be running partially idle anyway.  Even after counting the price of electricity, the cost of recompiling is negligible.  Now contrast this with the hardware world.  Every iteration requires fresh stock material in the form of copper clad board, solder, wire, and various electronic devices.  These materials carry significant cost relative to the typical individual's budget.</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">Where software encourages experimantal development by allowing incremental changes being tested at each step, hardware discourages it through the high cost of building prototypes for testing.</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">While I'm on the soapbox, I'll go ahead and point out that there's no reason to limit yourself to open-source tools for designing and building open-source hardware, if you happen to already have them available.  As long as the design documents are maintained in a format that conforms to some open standard, then you are free to use proprietary tools to help you improve the design all you want.</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/BigBrother>BigBrother</a>,
+			Apr 14 2004</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">[BigBrother]: &quot;The biggest impediment to having an open source hardware movement is the expense of materials consumed during the development cycle.&quot;</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">You are very correct in this.  I agree with you completely - paying for materials is a problem in the development cycle.  However, circuit design and simulation software also exists to do most of the design work on a computer without any materials.  I've actually designed many analog circuits on PSpice, simulated it and programmed it to get the results I wanted, and then immediately built an actual circuit from that design that acted almost identical in the real world.  However, for high speed precision analog applications, PSpice tends to fall short. In that case, a lot of iterations do need to be done in the real world.  But this only requires one person to do those iterations and designs at a time - as soon as one person finishes his design on the project, he can share those results with other people online, and it decreases the total amount of materials everyone has to use to get to a finished product.</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">A large portion of this problem of wasted iterations and used materials can be overcome through the use of software simulations, where you can tweak a value and see its effects - prototype the entire circuit in software. There's actually an entire open source software idea in itself that can go along with this, but it's too big to write here so that's saved for another day :)</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/ee_5fmoss>ee_moss</a>,
+			Apr 14 2004</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">eeMoss;
+Could you post a link to your design for the PCB router you designed? So that I can attempt to create one as well? Also is the design scalable to create a larger table version? Also do you know of where I could find opensource/shareware software for creating 2D layers from 3D design , simular to that which is used in rapid prototyping machine?</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/MySoulWanders>MySoulWanders</a>,
+			Apr 20 2004</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">Sure thing - this shows a much older version of what I built, but it worked and I'm currently in the process of upgrading and making it bigger and stronger.  Originally, I put together this &quot;router&quot; using a sharpie to draw the circuit on the board.  The permanent marker acts as an acid resist, so then you dip the board in the acid and the lines you drew using the machine remain.  The page below will take you through the steps and design considerations in building your own very cheap router:</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">http://www.u.arizona.edu/~dmoss/PCBProject/index.html</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">It covers the hardware electronics design &amp; schematics, wirewrapping tips, external logic needed to drive motors, explainations of stepper motors and how they work, building the mechanical stuff, code (written in C and compiled using the open source C compiler GCC for the HC11 microcontroller).</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">Not sure of where to find any open source software like you're referring to though</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/ee_5fmoss>ee_moss</a>,
+			Apr 21 2004</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">To make dreams come true, this must be done, I believe.  The specified specifications are not defined.  Therefore you must remember not to hint of a solution in your problem statement.</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/tito>tito</a>,
+			Apr 28 2004</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">EE, a wonderful idea.</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">There is a smaller project that doesn't go back to square one - they don't start with a router.  MegaSguirt is a built-it-yourself  fuel injection for your car.  You can't accuse them of not being ambitious.  They have successful builders, are up to version 2.2 and have related projects.</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">It was done by Bowling and Grippo and can be seen at 
+www.bgsofles.com/megasguirt.html</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/liberty1>liberty1</a>,
+			Jul 05 2004</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">Hey... I've got an old plotter at my parents' house... I think. Came with an IBM XT and still works. Now there's a thought. If I combined it with a Dremel... sod this, I'll pick it up next time I go see my parents.</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/david_5fscothern>david_scothern</a>,
+			May 05 2005</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">The implications of this idea would be wonderful.  A CNC router however, is not the von Neumann machine you make it out to be.  PCB routers will have a hard time trying to manufacture anything other than PCBs, and certainly will not be able to manufacture themselves, as a lathe is required for a good portion of it.</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">I am also very interested in creating my own router from an inkjet printer, but the link to your page is broken.  Care to post a working one?</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/Aq_5fBi>Aq_Bi</a>,
+			May 05 2005</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">I didn't read this properly until now.  
+The key feature of this (if I understand 
+correctly) is the construction of cheap 
+router that can create PCBs, yes?</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">Well, OK, but I don't see that per se as a 
+significant aspect of &quot;open source 
+hardware&quot;.  Making a PCB (at least up to 
+two layers) is usually the least 
+problematic part of creating a piece of 
+hardware.  It is not at all difficult to do 
+it by the old-fashioned 
+photolithographic method, and all you 
+need for that is a good regular printer, 
+a basic UV source and a couple of tanks 
+of very cheap chemicals (OK, and a pair 
+of gloves).  The graphics files can be 
+exchanged electronically, as could the 
+programs for your router.</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">Your router sounds ingenious, and all 
+power to you, but I don't think it alone 
+is going to bring on an era of open 
+source hardware.</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/MaxwellBuchanan>MaxwellBuchanan</a>,
+			Feb 20 2008</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">Are you mad that a four year old post has been brought back?</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/n81641>n81641</a>,
+			Jun 10 2008</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">Gee, since about 2003, I have been using PCBs from quick turn suppliers - some provide free schematic capture and board layout tools, and &quot;3 boards in 3 days for $51&quot; is common. [link]</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">Agreed, a NC router can do a faster job, but can it do 0.010&quot; features?  I also like to get some spare boards for future prototyping use.</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/csea>csea</a>,
+			Jun 10 2008</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">I think there is a huge difference in the frustration factor surrounding hardware development verses software development: </font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">If you download some Open source software, manage to get it compiled, and it works, then even a non programmer can change some things and see what happens.  </font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">If you download a CAD file for a circuit, make a PCB, load it, and power it up, a tiny mistake, like a diode in backwards, can destroy many components, leaving you with, at best,  a diagnostics challenge, or you have to start all over.</font></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table><br><table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">Not only are the tools a barrier to entry for Open Source hardware, but the level of difficulty.</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/n81641>n81641</a>,
+			Jun 10 2008</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">I think cost of materials during development is much less of a problem than cost of equipment for production. The main advantages of open source software is that it is free. It is free despite the considerable cost in time for developing OS software. OS software works with standard operating systems that make it easy for one person to write a program that nearly all computer users can use. OS hardware projects are much less accessible, because individuals do not own the means of production needed for making the hardware designs into usable goods. I think standardized robotic manufacturing equipment in many homes is needed to make OS hardware work.</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/sninctown>sninctown</a>,
+			Jan 17 2009</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+			<br>
+			<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><font face="Trebuchet MS, Arial, Helvetica" class="fcs">The problem with hardware is that nobody can really say 
+what it is. 
+I can clang a few stones against the anvil 'just right' to 
+make a sort of circuit out of the ionic discharges and have 
+them translate into some sort of computed effort upon a 
+detection screen (if i 
+were, say, god) but does that make it reproducible 
+hardware? Maybe I'm missing the point. Didn't read it all, 
+sorry.</font><div align=right><table cellspacing=0 cellpadding=0 border=0><tr><td valign=top>&mdash;</td><td class="fcs"><a href=http://www.halfbakery.com/user/daseva>daseva</a>,
+			Jul 19 2010</td></tr></table>
+
+  </div></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+	<table cellspacing=0 cellpadding=0 border=0><tr>
+			<td width=60>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><br><font face="Trebuchet MS, Arial, Helvetica" class="fcs">[<a href="http://www.halfbakery.com/idea/Open_20Source_20Hardware_20Initiative/addnote#addnote" accesskey="a">annotate</a>]</font><br></td>
+			<td width=30>&nbsp;&nbsp;</td></tr></table>
+	<br>
+	<br></td><td width=20>&nbsp;</td>
+		  </tr><tr>
+			<td width="157" valign=bottom align="center"><p class="controlgroup">
+	<span class="controlheader">back:</span>
+	<span class="controlbody"><a href="http://www.halfbakery.com/">main index</a></span></p>
+</td>
+		  </tr></table>
+	     </form>
+
+	     <center>
+	       <div class="catscape"><nobr><a href="http://www.halfbakery.com/category/Business" class="category">business</a>&nbsp;</nobr>
+  <nobr><a href="http://www.halfbakery.com/category/Computer" class="category">computer</a>&nbsp;</nobr>
+  <nobr><a href="http://www.halfbakery.com/category/Culture" class="category">culture</a>&nbsp;</nobr>
+  <nobr><a href="http://www.halfbakery.com/category/Fashion" class="category">fashion</a>&nbsp;</nobr>
+  <nobr><a href="http://www.halfbakery.com/category/Food" class="category">food</a>&nbsp;</nobr>
+  <nobr><a href="http://www.halfbakery.com/category/Halfbakery" class="category">halfbakery</a>&nbsp;</nobr>
+  <nobr><a href="http://www.halfbakery.com/category/Home" class="category">home</a>&nbsp;</nobr>
+  <nobr><a href="http://www.halfbakery.com/category/Other" class="category">other</a>&nbsp;</nobr>
+  <nobr><a href="http://www.halfbakery.com/category/Product" class="category">product</a>&nbsp;</nobr>
+  <nobr><a href="http://www.halfbakery.com/category/Public" class="category">public</a>&nbsp;</nobr>
+  <nobr><a href="http://www.halfbakery.com/category/Science" class="category">science</a>&nbsp;</nobr>
+  <nobr><a href="http://www.halfbakery.com/category/Sport" class="category">sport</a>&nbsp;</nobr>
+  <nobr><a href="http://www.halfbakery.com/category/Vehicle" class="category">vehicle</a>&nbsp;</nobr></div>
+	     </center></body>
+     
+<!-- Mirrored from www.halfbakery.com/idea/Open_20Source_20Hardware_20Initiative by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:32 GMT -->
+</html>
+

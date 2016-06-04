@@ -1,0 +1,69 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xml:lang='nb_NO' itemscope='' itemtype='http://schema.org/'>	
+<!-- Mirrored from dank.bengler.no/-/page/print/5470_grbl by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Dank : Grbl</title>
+    <script src="http://media1.origo.no/javascripts/_base_6644e3f28979228f21a9e8ba01f5f88d37aab77a.js?6644e3f28979228f21a9e8ba01f5f88d37aab77a" type="text/javascript"></script>            <script src="http://media1.origo.no/javascripts/locale/nb_NO/LC_MESSAGES/origo.mo.js?6644e3f28979228f21a9e8ba01f5f88d37aab77a" type="text/javascript"></script>    
+    <link href="http://media1.origo.no/stylesheets/_base_6644e3f28979228f21a9e8ba01f5f88d37aab77a.css?6644e3f28979228f21a9e8ba01f5f88d37aab77a" media="all" rel="stylesheet" type="text/css" />	  
+    <link href="http://media1.origo.no/stylesheets/_management_6644e3f28979228f21a9e8ba01f5f88d37aab77a.css?6644e3f28979228f21a9e8ba01f5f88d37aab77a" media="all" rel="stylesheet" type="text/css" />	  
+    <link href="http://media1.origo.no/stylesheets/print/print.css?6644e3f28979228f21a9e8ba01f5f88d37aab77a" media="all" rel="stylesheet" type="text/css" />
+	</head>
+	<body id="page_print_page" class="print_page">
+    
+
+
+<div class="post print"><h3><a href="http://dank.bengler.no/-/page/show/5470_grbl">Grbl</a></h3><div class="body"><div class='text textile'><p><strong>Grbl is a free, open source, high performance <span class="caps">CNC</span> milling controller written in optimized C that will run on a straight Arduino.</strong></p>
+<p><a href="http://github.com/grbl/grbl">Get the code at Github</a> | <a href="https://twitter.com/grblcnc">Follow Grbl on Twitter</a></p>
+<p><iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/jNbhgQ5_p_Y" frameborder="0" allowfullscreen=""></iframe></p>
+<p><a href="http://arduino.cc/blog/2011/05/20/mtm-snap-a-snap-together-arduino-powered-desktop-cnc-milling-machine/"><img src="http://farm6.static.flickr.com/5148/5688670014_dbd2635d02.jpg" alt="" /></a></p>
+<p><a href="http://arduino.cc/blog/2011/05/20/mtm-snap-a-snap-together-arduino-powered-desktop-cnc-milling-machine/"><span class="caps">MIT</span> Center for Bits and Atoms designed a beautifyl snap fit <span class="caps">CNC</span> machine controlled by Grbl.</a></p>
+<p><a href="http://labs.nortd.com/lasersaur/"><img src="http://farm7.staticflickr.com/6225/6366889949_a039fbf4fb_z.jpg" alt="" /></a></p>
+<p><a href="http://labs.nortd.com/lasersaur/">Nortd Labs runs their open source laser cutters with a Grbl-based firmware</a></p>
+<h4>Who shoud use Grbl</h4>
+<ul>
+	<li>Makers who do milling and need a nice, simple controller for their system (and who can handle the lack of a user friendly, graphical client)</li>
+	<li>People who loathe to clutter their space with legacy PC-towers just for the parallel-port</li>
+	<li>Tinkerers who need a controller written in tidy, modular C as a basis for their project.</li>
+</ul>
+<h4>Nice features</h4>
+<p>Grbl is ready for light duty production. We use it for all our milling here at Dank running it from our laptops using a simple console script (included) to stream the G-code. It is written in optimized C utilizing all the clever features of the Atmega168*/328-chips to achieve precise timing and asynchronous operation. It is able to maintain more than 30kHz step rate and delivers a clean, jitter free stream of control pulses.</p>
+<p>The G-code interpreter impements a subset of the rs274/ngc standard and is tested with the output of a number of <span class="caps">CAM</span>-tools with no issues. Linear, circular and helical motion are all fully supported.</p>
+<p>Most configuration options can be set at runtime and is saved in eeprom between sessions and even retained between different versions of Grbl as you upgrade the firmware.</p>
+<h4>Acceleration management</h4>
+<p>The most requested feature that we really wanted to have was a nice and advanced look-ahead accelleration manager. Some users were not able to run their CNCs at full speed without some kind of easing. It proved complicated to get this feature just the way we wanted it (simple yet optimal) so it took more than a year, but finally I think we got it: Grbl&#8217;s full acceleration-management with look ahead planner will ease into the fastest feed rates and brake (just enough) before sharp corners for fast yet jerk free operation.</p>
+<h4>Limitations by design</h4>
+<p>At this time we have no nice desktop client for Grbl. If you want one anytime soon, you&#8217;ll probably have to contribute one yourself. With Grbl you&#8217;ll have to be comfortable in a terminal window as all our client tools are simple (yet nice) text based scripts. (We do try to stay compatible with the RepRap software, so you might get stuff like <a href="http://replicat.org/">ReplicatorG</a> to control it, but last time we tried it was so buggy on the Mac that we gave up.)</p>
+<p>We have limited g-code-support by design. Grbl support all the common operations encountered in output from <span class="caps">CAM</span>-tools, but leave human g-coders frustrated. No variables, no tool offsets, no functions, no arithmetic and no control structures. Just the basic machine operations. We have yet to find a <span class="caps">CAM</span>-generated file that failed to run, though.</p>
+<p>Grbl is for three axis machines. No rotation axes – just x, y and z.</p>
+<h4>Coming attractions</h4>
+<p>End stops, emergency stop, spindle control, autodetection of client baud-rate, support for alphanumeric read-outs and headless mode via SD-card.</p>
+<p><a href="http://dank.bengler.no/-/page/show/5471_gettinggrbl">Next: Getting Grbl</a></p>
+<p>&#8212;<br />
+_*) Grbl 0.6 fits in the limited code space of the atmega168 only by dropping the circle/arc code. 168-people who needs their circles please use version 0.51 which has no acceleration management, yet is still maintained in <a href="http://is.gd/VT6uDw">this branch</a></p>
+<p><strong>Grbl</strong> is licenced under the <a href="http://www.gnu.org/licenses/quick-guide-gplv3.html"><span class="caps">GNU</span> General Public License</a> and developed at Dank by Simen Svale Skogsrud.</p></div></div><div class='clear'></div>
+<div class="byline secondary_colour">
+  <div class="byline_content">
+    
+              <span class="timestamp secondary_colour">
+
+            Opprettet          
+          
+            14.06.2010 19.57 
+          
+            - Sist oppdatert             onsdag 25. april 2012 kl 23            
+          
+        </span>
+      
+    
+    
+    
+            
+  </div>
+  <div class="clear"></div>
+</div>
+</div>
+    <iframe src='http://dank.bengler.no/global.html/-/page/print/5470_grbl' style='width:0px;height:0px' frameborder='0'></iframe>    
+  </body>
+
+<!-- Mirrored from dank.bengler.no/-/page/print/5470_grbl by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:02 GMT -->
+</html>

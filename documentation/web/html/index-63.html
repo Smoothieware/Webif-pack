@@ -1,0 +1,334 @@
+
+<!doctype html>
+
+<html  xmlns="http://www.w3.org/1999/xhtml" prefix="" lang="en-US">
+
+
+<!-- Mirrored from www.simplify3d.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+<meta charset="UTF-8" />
+
+<meta name="generator" content="Emulate 1.1.7" />
+
+
+<meta name="generator" content="Twoot ToolKit 1.1.2" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>3D Printing Slicing Software | Simplify3D</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+
+<link rel="pingback" href="https://www.simplify3d.com/xmlrpc.php" />
+
+
+<!-- For favicon-->
+
+<link rel="shortcut icon" type="image/x-icon" href="https://www.simplify3d.com/wp-content/themes/emulate/_s3d/img/simplify3D.ico" />
+
+<link rel="icon" type="image/x-icon" href="https://www.simplify3d.com/wp-content/themes/emulate/_s3d/img/simplify3D.ico" />
+
+
+
+
+
+
+
+<!-- BEGIN Metadata added by the Add-Meta-Tags WordPress plugin -->
+<meta name="description" content="Simplify the process of 3D printing and improve your 3D printed results with Simplify3D. This software offers the fastest 3D slicer, the best support generation, and many more features." />
+<!-- END Metadata added by the Add-Meta-Tags WordPress plugin -->
+
+<link rel="alternate" type="application/rss+xml" title="Simplify3D &raquo; Feed" href="https://www.simplify3d.com/feed/" />
+
+<!-- All in One Webmaster plugin by Crunchify.com --><meta name="google-site-verification" content="MaFEp3oqkNXw-ll7164mxNSZYGtHQjqFoG9WZbPsK00" /> 
+<meta name="msvalidate.01" content="0B166DC55D41D28FDF07A6DF647454BB" />
+<!-- /All in One Webmaster plugin -->
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/www.simplify3d.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='layerslider-css'  href='https://www.simplify3d.com/wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ls-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900|Open+Sans:300|Indie+Flower:regular|Oswald:300,regular,700&amp;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.simplify3d.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic&amp;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='common-css'  href='https://www.simplify3d.com/wp-content/themes/emulate/css/common.css?ver=1.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='icon-fonts-css'  href='https://www.simplify3d.com/wp-content/themes/emulate/css/icon-fonts.css?ver=1.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='plugins-css'  href='https://www.simplify3d.com/wp-content/themes/emulate/css/plugins.css?ver=1.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='js-composer-animate-css'  href='https://www.simplify3d.com/wp-content/themes/emulate/css/js-composer-animate.css?ver=1.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='js-composer-front-css'  href='https://www.simplify3d.com/wp-content/themes/emulate/css/js-composer-front.css?ver=1.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='https://www.simplify3d.com/wp-content/themes/emulate/css/jquery.fancybox.css?ver=1.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-thumbs-css'  href='https://www.simplify3d.com/wp-content/themes/emulate/css/jquery.fancybox-thumbs.css?ver=1.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://www.simplify3d.com/wp-content/themes/emulate/style.css?ver=1.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='fonts-css'  href='https://www.simplify3d.com/wp-content/themes/emulate/css/fonts.css?ver=1.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='skin-css'  href='https://www.simplify3d.com/wp-content/themes/emulate/css/skin-green.css?ver=1.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='cache-css'  href='https://www.simplify3d.com/wp-content/themes/emulate/cache/custom.css?ver=1.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css'  href='https://www.simplify3d.com/wp-content/themes/emulate/css/responsive.css?ver=1.1.7' type='text/css' media='screen' />
+<link rel='stylesheet' id='custom-css'  href='https://www.simplify3d.com/wp-content/themes/emulate-child/custom.css?ver=1.1.7' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.simplify3d.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js?ver=5.1.1'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/plugins/LayerSlider/static/js/greensock.js?ver=1.11.2'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js?ver=5.1.1'></script>
+<link rel='https://api.w.org/' href='https://www.simplify3d.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.simplify3d.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.simplify3d.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.4.2" />
+<link rel="canonical" href="https://www.simplify3d.com/" />
+<link rel='shortlink' href='https://www.simplify3d.com/' />
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script type="text/javascript" charset="utf-8" src="https://www.simplify3d.com/wp-content/themes/emulate-child/javascript.js"></script>
+
+
+</head>
+
+<body class="home page page-id-4280 page-template page-template-template-builder page-template-template-builder-php wide has-not-sidebar sticky-header wpb-js-composer js-comp-ver-3.6.14.1 vc_responsive">
+
+<div id="page" class="wrapper">
+
+<div class="rows">
+
+
+
+
+
+
+<header class="site-header">
+
+	<section class="container">
+
+	<div class="inner clearfix">
+
+		<div id="logo"><h1 class="title"><a href="https://www.simplify3d.com/" title="Simplify3D" rel="nofollow"><img src="https://www.simplify3d.com/wp-content/uploads/2014/12/Simplify3D_logo_r.jpg" class="standard-logo" /></a></h1></div>
+		<nav id="top-menu"><ul class="sf-menu clearfix"><li id="menu-item-4292" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4280 current_page_item menu-item-4292"><a href="https://www.simplify3d.com/">Home</a></li>
+<li id="menu-item-953" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-953"><a href="https://www.simplify3d.com/software/">Software</a>
+<ul class="sub-menu">
+	<li id="menu-item-997" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-997"><a href="https://www.simplify3d.com/software">Features</a></li>
+	<li id="menu-item-956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-956"><a href="https://www.simplify3d.com/software/supported-printers/">Supported Printers</a></li>
+	<li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a href="https://www.simplify3d.com/software/changelog/">Changelog</a></li>
+</ul>
+</li>
+<li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"><a href="https://www.simplify3d.com/buy-now/">Buy Now</a></li>
+<li id="menu-item-918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-918"><a href="https://www.simplify3d.com/support/">Support</a></li>
+<li id="menu-item-819" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-819"><a href="https://www.simplify3d.com/blog/">Blog</a></li>
+<li id="menu-item-844" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-844"><a href="https://forum.simplify3d.com/">Community</a></li>
+<li id="menu-item-3652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3652"><a href="https://cloud.simplify3d.com/account">Account</a></li>
+</ul></nav>
+		<div class="responsive-menu-switch-wrap"><a href="#" class="responsive-menu-switch icon open" id="toggle-top-responsive-menu"></a></div>
+	</div>
+
+	</section>
+
+</header>
+
+<div class="responsive-menu top-responsive-menu hide"><ul><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4280 current_page_item menu-item-4292"><a href="https://www.simplify3d.com/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-953"><a href="https://www.simplify3d.com/software/">Software</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-997"><a href="https://www.simplify3d.com/software">Features</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-956"><a href="https://www.simplify3d.com/software/supported-printers/">Supported Printers</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a href="https://www.simplify3d.com/software/changelog/">Changelog</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"><a href="https://www.simplify3d.com/buy-now/">Buy Now</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-918"><a href="https://www.simplify3d.com/support/">Support</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-819"><a href="https://www.simplify3d.com/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-844"><a href="https://forum.simplify3d.com/">Community</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3652"><a href="https://cloud.simplify3d.com/account">Account</a></li>
+</ul></div>
+<div class="clear"></div>
+
+<!--end #header-->
+
+
+
+ <script type="text/javascript">var lsjQuery = jQuery;</script><script type="text/javascript"> lsjQuery(document).ready(function() { if(typeof lsjQuery.fn.layerSlider == "undefined") { lsShowNotice('layerslider_12','jquery'); } else { lsjQuery("#layerslider_12").layerSlider({responsive: false, responsiveUnder: 960, layersContainer: 960, randomSlideshow: true, twoWaySlideshow: true, skin: 'fullwidth', autoPlayVideos: false, lazyLoad: false, skinsPath: 'https://www.simplify3d.com/wp-content/plugins/LayerSlider/static/skins/'}) } }); </script><div class="ls-wp-fullwidth-container"><div class="ls-wp-fullwidth-helper"><div id="layerslider_12" class="ls-wp-container" style="width:100%;height:400px;margin:0 auto;margin-bottom: 0px;"><div class="ls-slide" data-ls=" transition2d: all;"><img src="https://www.simplify3d.com/wp-content/plugins/LayerSlider/static/img/blank.gif" data-src="https://www.simplify3d.com/wp-content/uploads/2016/01/blue-bg-flat-with-triangles.png" class="ls-bg" alt="Slide background" /><h2 class="ls-l" style="top:73px;left:8px;text-align:left; font-weight:normal !important;width:500px;padding-top:10px;padding-right:150px;padding-bottom:10px;padding-left:20px;font-size:32px;color:#ffffff;background:rgba(255, 255, 255, 0);" data-ls="durationin:0;fadein:false;durationout:0;fadeout:false;">Improve your print quality with powerful 3D printing software</h2><p class="ls-l" style="top:188px;left:30px;font-weight:normal !important;font-size:18px;color:#ffffff;white-space: nowrap;" data-ls="durationin:0;durationout:0;">Expand your 3D printer’s capabilities for amazing results.</p><img class="ls-l" style="top:40px;left:487px;height:325px;white-space: nowrap;" data-ls="durationin:0;durationout:0;" src="https://www.simplify3d.com/wp-content/plugins/LayerSlider/static/img/blank.gif" data-src="https://www.simplify3d.com/wp-content/uploads/2016/01/monitor-with-screenshot-smaller.png" alt=""><a href="https://www.simplify3d.com/buy-now" target="_self" class="ls-l" style="top:280px;left:30px;" data-ls="durationin:0;fadein:false;durationout:0;fadeout:false;"><h2 class="shortcode-button button button-green button-none button-large" style="text-transform:uppercase; font-weight:normal;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;white-space: nowrap;">Purchase</h2></a><a href="https://www.simplify3d.com/software" target="_self" class="ls-l" style="top:280px;left:178px;" data-ls="durationin:0;fadein:false;durationout:0;fadeout:false;"><h2 class="shortcode-button button button-dark button-none button-large" style="text-transform:uppercase; font-weight:normal;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;white-space: nowrap;">See Features</h2></a></div></div></div></div>
+
+<div id="post-4280" class="post-4280 page type-page status-publish hentry">
+<div class="site-content clearfix">
+
+<article id="primary-wrapper" class="twelve">
+<div class="inner">
+
+<div class="post-content">
+	<div class="outer"><div class="wpb_row home-201510"><div class="container clearfix"><div class="column vc_span12 wpb_column column_container"><div class="inner"><div class="wpb_text_column wpb_content_element" style="padding-top:30px;padding-bottom:20px;"><div class="wpb_wrapper clearfix">
+<h2>THE EXPERTS AGREE: SOFTWARE MATTERS</h2>
+</div></div><div class="wpb_row outer clearfix"><div class="column vc_span6 wpb_column column_container"><div class="inner"><div class="wpb_text_column wpb_content_element verticalCenter"><div class="wpb_wrapper clearfix">
+<p><a href="https://www.simplify3d.com/wp-content/uploads/2016/01/3dprinter4.png"><img class="alignnone wp-image-4493 size-large" src="https://www.simplify3d.com/wp-content/uploads/2016/01/3dprinter4.png" alt="" width="1024" height="506" /></a></p>
+</div></div></div></div><div class="column vc_span6 wpb_column column_container" style="padding-top:30px;"><div class="inner"><div class="wpb_text_column wpb_content_element"><div class="wpb_wrapper clearfix">
+<h4><strong>3D printing slicing software controls every aspect of your 3D print.<br />
+</strong><strong><br />
+</strong>It translates 3D models into instructions your printer understands. Better instructions mean better prints, so a simple software upgrade makes all the difference in the world.</h4>
+<h4>In fact, more than 90% of experts agree that <strong>3D printing software has the greatest impact on print quality</strong>, even more so than the 3D printer itself! <sup>1</sup></h4>
+</div></div></div></div></div></div></div></div></div><div class="wpb_row"><div class="container clearfix"><div class="column vc_span12 wpb_column column_container"><div class="inner"><div class="shortcode-hr" style="margin-bottom:30px;"></div>
+</div></div></div></div><div class="wpb_row" style="padding-bottom:30px;"><div class="container clearfix"><div class="column vc_span4 wpb_column column_container"><div class="inner"><div class="shortcode-team-member clearfix"><div class="avatar img-preload img-hover"><img src="https://www.simplify3d.com/wp-content/uploads/2016/01/Noe_and_Pedro_together_A.png" /><div class="overlay"></div><div class="name item-title"></div></div><div class="role">Noe &amp; Pedro Ruiz</div><div class="content">
+<strong>Adafruit Industries</strong></p>
+<p>&#8220;Simplify3D is an invaluable asset to our production workflow, allowing us to take our projects to the next level.”</p>
+</div></div></div></div><div class="column vc_span4 wpb_column column_container"><div class="inner"><div class="shortcode-team-member clearfix"><div class="avatar img-preload img-hover"><img src="https://www.simplify3d.com/wp-content/uploads/2016/01/Joel-Telling-final.png" /><div class="overlay"></div><div class="name item-title"></div></div><div class="role">Joel Telling</div><div class="content"><strong>The 3D Printing Nerd</strong></p>
+<p>“My 3D printer got my toes wet; Simplify3D taught me how to swim.”</p>
+</div></div></div></div><div class="column vc_span4 wpb_column column_container"><div class="inner"><div class="shortcode-team-member clearfix"><div class="avatar img-preload img-hover"><img src="https://www.simplify3d.com/wp-content/uploads/2016/01/Jeremy-Simon-final.png" /><div class="overlay"></div><div class="name item-title"></div></div><div class="role">Jeremy Simon</div><div class="content"><strong>3D Universe</strong></p>
+<p>&#8220;Simplify3D is my preferred option for 3D printing. If you&#8217;re really serious about doing advanced projects, you should take a look at Simplify3D.”</p>
+</div></div></div></div></div></div><div class="wpb_row home-201510" style="padding-bottom:20px;background-color:#3b3838;color:#ffffff;"><div class="container clearfix"><div class="column vc_span12 wpb_column column_container"><div class="inner"><div class="wpb_text_column wpb_content_element" style="padding-top:30px;padding-bottom:20px;"><div class="wpb_wrapper clearfix">
+<h2 style="color: #ffffff;">Compatible with Hundreds of 3D printers</h2>
+</div></div><div class="wpb_row outer clearfix"><div class="column vc_span8 wpb_column column_container"><div class="inner"><div class="wpb_text_column wpb_content_element"><div class="wpb_wrapper clearfix">
+<p><img class="imgLoadtrigger alignnone size-full wp-image-4375" src="https://www.simplify3d.com/wp-content/uploads/2016/01/software-page-printer-icons.png" alt="software-page-printer-icons" width="966" height="504" /></p>
+</div></div></div></div><div class="column vc_span4 wpb_column column_container verticalCenter"><div class="inner"><div class="wpb_text_column wpb_content_element"><div class="wpb_wrapper clearfix">
+<h4><span style="color: #ffffff;">Simplify3D is compatible with more 3D printers than any other software available. Chances are, your printer is supported!</span></h4>
+<h4><span style="color: #ffffff;">Click below to confirm compatibility with your 3D printer.</span></h4>
+</div></div><div class="wpb_text_column wpb_content_element"><div class="wpb_wrapper clearfix">
+<h4><a class="shortcode-button button button-green button-none button-medium" href="https://www.simplify3d.com/software/supported-printers/">See Supported Printers</a></h4>
+</div></div></div></div></div></div></div></div></div><div class="wpb_row home-201510"><div class="container clearfix"><div class="column vc_span12 wpb_column column_container"><div class="inner"><div class="wpb_row outer clearfix"><div class="column vc_span6 wpb_column column_container"><div class="inner"><div class="wpb_text_column wpb_content_element" style="padding-top:30px;padding-bottom:20px;"><div class="wpb_wrapper clearfix">
+<h2 style="text-align: left;">GREAT SOFTWARE MAKES YOUR 3D PRINTER BETTER</h2>
+</div></div><div class="wpb_text_column wpb_content_element"><div class="wpb_wrapper clearfix">
+<h4>You invested a lot of time and money into your 3D printer – in fact, most people spend more than 80 hours researching their first 3D printer! <sup>2</sup></h4>
+<h4>Isn&#8217;t it worth spending five minutes learning how to <strong>optimize your printer with Simplify3D</strong>, the most powerful 3D printing software?</h4>
+<p>&nbsp;</p>
+<p><span style="color: #999999;"><sup>1, 2: Open Survey of 3D Printing Users, September 2015</sup></span></div></div></div></div><div class="column vc_span6 wpb_column column_container"><div class="inner"><div class="wpb_text_column wpb_content_element verticalCenter" style="padding-top:30px;"><div class="wpb_wrapper clearfix">
+<p><a href="https://www.simplify3d.com/wp-content/uploads/2016/01/filament-frogs.png"><img class="aligncenter wp-image-4527 size-full" src="https://www.simplify3d.com/wp-content/uploads/2016/01/filament-frogs.png" alt="" width="600" height="289" /></a></p>
+</div></div></div></div></div></div></div></div></div><div class="wpb_row home-201510" style="padding-bottom:30px;background-color:#595959;color:#ffffff;"><div class="container clearfix"><div class="column vc_span12 wpb_column column_container"><div class="inner"><div class="wpb_text_column wpb_content_element" style="padding-top:30px;padding-bottom:20px;"><div class="wpb_wrapper clearfix">
+<h2 style="text-align: center; color: #ffffff; text-transform: none;">Total control means amazing 3D prints.<br />
+The power can be yours.</h2>
+</div></div><div class="wpb_row outer clearfix" style="padding-bottom:10px;"><div class="column vc_span12 wpb_column column_container"><div class="inner"><div class="wpb_text_column wpb_content_element"><div class="wpb_wrapper clearfix">
+<p style="text-align: center;"><a class="shortcode-button button button-green button-none button-medium" href="https://www.simplify3d.com/buy-now/" target="_self">See Pricing</a> <a class="shortcode-button button button-light button-medium" href="https://www.simplify3d.com/software" target="_self">See Features</a></p>
+</div></div></div></div></div></div></div></div></div>
+</div></div>
+
+</div>
+</article>
+<!--end #primary-->
+
+</div>
+</div>
+<!--end #content-->
+
+
+<div class="site-footer clear-fixed">
+
+
+<footer class="site-bottom">
+	</section>
+
+</footer>
+
+</div>
+
+<!--end #footer-->
+
+
+
+</div>
+
+</div><!--end #warpper-->
+
+
+
+
+
+
+
+<div id="gotop"><i class="icon-up-open-big"></i></div>
+
+
+
+
+
+
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"https:\/\/www.simplify3d.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.4.2'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/themes/emulate/js/jquery.superfish.js?ver=1.7.3'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/themes/emulate/js/jquery.preload.js?ver=1.0'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/themes/emulate/js/jquery.fitvids.js?ver=1.0'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/themes/emulate/js/jquery.bxslider.js?ver=4.1'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/themes/emulate/js/jquery.isotope.min.js?ver=1.5.25'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/themes/emulate/js/jquery.placeholder.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/themes/emulate/js/jquery.mousewheel.min.js?ver=3.0.6'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/themes/emulate/js/jquery.fancybox.pack.js?ver=2.1.5'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/themes/emulate/js/jquery.fancybox-media.js?ver=1.0.5'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/themes/emulate/js/jquery.fancybox-thumbs.js?ver=1.0.7'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/themes/emulate/js/jquery.easing.min.js?ver=1.3'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/themes/emulate/js/jquery.animation.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-content/themes/emulate/js/theme-init.js?ver=1.1.7'></script>
+<script type='text/javascript' src='https://www.simplify3d.com/wp-includes/js/wp-embed.min.js?ver=4.4.2'></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38410808-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- FOXYCART -->
+    <script src="http://cdn.foxycart.com/simplify3d/loader.js" async defer></script>
+<!-- /FOXYCART -->
+
+
+	<section class="container">
+
+	<div class="inner clearfix">
+
+		
+			<div id="bottom-copy">Copyright © 2016 <a href="https://www.simplify3d.com/">Simplify3D</a>, All rights reserved.</div>
+
+		
+		<nav id="bottom-menu"><ul class="clearfix"><li id="menu-item-2012" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2012"><a href="https://www.simplify3d.com/terms-and-conditions/">Terms</a></li>
+<li id="menu-item-2011" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2011"><a href="https://www.simplify3d.com/privacy-policy/">Privacy</a></li>
+<li id="menu-item-4223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4223"><a href="https://www.simplify3d.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-4011" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4011"><a href="https://www.simplify3d.com/reseller-information/">Resellers</a></li>
+<li id="menu-item-4246" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4246"><a href="https://www.simplify3d.com/education/">Education</a></li>
+<li id="menu-item-3978" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3978"><a href="https://www.simplify3d.com/careers/">Careers</a></li>
+</ul></nav>
+	</div>
+	<script>
+        jQuery(document).ready(function(){
+            //console.log("dr:"+ jQuery(".site-header").height());
+        });
+        jQuery(window).load(function(){//201603-move to hash/anchor
+            //console.log("wl:"+jQuery(".site-header").height());
+
+            if(window.location.hash.length > 0) {
+                //var h = jQuery(".site-header").height();
+				var x = 0;
+                var gridReady = setInterval(function(){
+					x += 1;
+                    var c = jQuery(".the-grid-list ul.filter-items.isotope").length;
+					if (x > 60 || c > 0){ //grid complete or 1 second
+						clearInterval(gridReady);
+						setTimeout(function(){window.scrollTo(0, jQuery(window.location.hash).offset().top);},0);
+                    }
+                }, 50);
+            }
+        });
+    </script>
+</body>
+
+
+<!-- Mirrored from www.simplify3d.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:15 GMT -->
+</html>

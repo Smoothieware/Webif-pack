@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/queue-refactor by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:57:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Queue Refactor - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="login__customdomainscriptf36a.html?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="../images/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = '../images/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "queue-refactor";
+        OZONE.request.timestamp = 1463138554;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "queue-refactor";
+        WIKIREQUEST.info.pageId = 24365699;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="../images/wikidot.combined.js"></script>
+            <script type="text/javascript" src="../images/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="../images/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(../images/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(../images/style.css);
+                    @import url(../images/style-2.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="../images/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="../images/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="../images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="../images/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="index.html">Documentation</a><br /></li>
+<li><img src="../images/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="smoothieboard.html">SmoothieBoard</a><br /></li>
+<li><img src="../images/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="blog.html">Blog</a><br /></li>
+<li><img src="../images/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="gallery.html">Gallery</a><br /></li>
+<li><img src="../images/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="irc.html">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="general.html">Forum</a></li>
+<li><a href="http://groups.google.com/group/smoothieware-support">Support/Help Mailing list</a></li>
+<li><a href="http://groups.google.com/group/smoothie-dev">Developper Mailing list</a></li>
+<li><a href="111870450664099533727.html">Google+ Community</a></li>
+<li><a href="index-2.html">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="../images/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="search.html">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="../images/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Queue Refactor</span></div>
+          
+          <div id="page-content">
+
+<h2 id="toc0"><span>Queue refactor documentation</span></h2>
+<p>The goal of this document is to describe the current problem with the queue, propose a possible solution, and describe it's implementation ( called the queue refactor )</p>
+<p>Writing a document is much less work than actually coding the refactor, and it allows discution before implementation ( avoiding having to do more refactors later ).</p>
+<p>If you are interested in helping with this refactor, please don't hesitate to join the discution here, or contact me at <span class="wiki-email">moc.liamg|ruhtra.flow#moc.liamg|ruhtra.flow</span></p>
+<h2 id="toc1"><span>The problem with the queue</span></h2>
+<p>So essentially, Smoothie was originally coded with no consideration whatsoever for RAM&nbsp;usage. Yes. Sue me.</p>
+<p>It ended up not too bad, but still very very far from optimal.</p>
+<p>I guess we can start by explaining the problem the queue tries to solve before explaining the problem with the way we currently do it.</p>
+<p>A pretty good explanation can be found here :&nbsp;<a href="howitworks.html">howitworks</a></p>
+<h3 id="toc2"><span>How it now works</span></h3>
+<p>In short, when we get say, a G-code for a movement, the following happens ( oversimplified ) :&nbsp;</p>
+<ul>
+<li>Robot interprets the G-code and makes a line from it</li>
+<li>The line is added to the Queue ( it is then called a &quot;Block&quot; )</li>
+<li>Acceleration/Deceleraction parameters are re-computed for all of the Queue's Blocks</li>
+</ul>
+<p>This last step is the main reason for the Queue : we have a list of Blocks &quot;buffered&quot; in advance, so we can &quot;look into the future&quot; and compute acceleration in an optimal fashion.</p>
+<p>Now, we add Blocks at one end of the Queue, and another process ( the Conveyor ) pops Blocks from the other end of the Queue, and actually executes them.</p>
+<p>The process is :</p>
+<ul>
+<li>Pop Block off the Queue</li>
+<li>Inform all modules that they should execute this Block</li>
+<li>Wait for all modules to have done what they want to do with this Block</li>
+<li>Go to first step</li>
+</ul>
+<p>Now what this means for a module is there are two different processes/loops :&nbsp;</p>
+<ul>
+<li>The one in which you receive an instruction</li>
+<li>The one in which you have to execute an instruction</li>
+</ul>
+<p>Instructions are not immediately executed when they are received, that's the main thing we are dealing with here.</p>
+<p>Now this is for &quot;Blocks&quot;, which describe movements of the Robot ( XYZ movement ).</p>
+<p>But say you have a module that must emit a &quot;beep&quot; in response to the <tt>G123</tt> G-code.</p>
+<p>It can't emit the &quot;beep&quot; when the G-code is received, as that would violate the order of execution : because G-codes are not executed when they are received, it is very possible ( actually extremely likely ) that the G-code received before <tt>G123</tt> has not been executed, and is still in the Queue, waiting to be executed.</p>
+<p>Emitting the &quot;beep&quot; now would mean emitting it too early and out of order.</p>
+<p>So what this module needs to do is wait for the right time to emit the &quot;beep&quot;.</p>
+<p>The way we do this is that when we receive a G-code, we attach the string for that G-code to the latest Block added to the queue.</p>
+<p>Then when the Conveyor pops a Block from the queue, for each of the G-code strings attached to it, in order, an event is called, and all the modules ( that want to ) get a chance to recognize this G-code as something they care about, and act accordingly.</p>
+<p>And because this event is called when the Block is popped off the Queue ( about to be actually executed ), the &quot;beep&quot; is now executed at the right time.</p>
+<h3 id="toc3"><span>What's wrong with that ?</span></h3>
+<p>Well it's extremely wasteful.</p>
+<p>Pretty much, <strong>every</strong> G-code is pushed onto the queue. That's a huge waste of RAM.</p>
+<p>For example the G-code :</p>
+<p><tt>G1 X23.43 Y12.34 E22.33</tt> is 23 bytes.</p>
+<p>But because we already store the XYZ target coordinates in the Block, those are redundant.</p>
+<p>And the E ( Extruder ) coordinates can be stored as an offset from the current position, in step, which fits fine in 2 bytes.</p>
+<p>Meaning here we are wasting 21 bytes.</p>
+<p>There is also overhead from storing a string and from having a vector attached to the block and storing the string as a G-code object, all of which also take additional RAM.</p>
+<p>And then there is the cost in computing power of having to pass the G-code to each module for them to see if they are interested in it, which wastes a lot of time, at moments where we shouldn't be wasting any.</p>
+<p>Also because we use std::vector, new, std::string, etc to store all of this, and pop/push it on/off the queue, it adds lots of complexity to keep it sane, and can potentially add danger.</p>
+<p>All of these are good reasons to do things differently.</p>
+<p>For those interrested in more details on how things work now, you can look at the <a href="https://github.com/Smoothieware/Smoothieware/blob/edge/src/modules/robot/Block.h">Block</a>, <a href="https://github.com/Smoothieware/Smoothieware/blob/edge/src/modules/robot/Conveyor.cpp">Conveyor</a> and <a href="https://github.com/Smoothieware/Smoothieware/blob/edge/src/modules/robot/Conveyor.h#L51">Queue</a>.</p>
+<h2 id="toc4"><span>A&nbsp;proposed solution</span></h2>
+<p>So the idea then is to store things in a much more compact fashion.</p>
+<p>We do not store G-code strings anymore.</p>
+<p>Modules decide exactly what information they want to store in the Queue, and only that in stored.</p>
+<p>Then when the time comes, they get that information back.</p>
+<p>This has so many advantages :&nbsp;</p>
+<ul>
+<li>Much lower RAM&nbsp;usage</li>
+<li>Can be about as simple to the coder as we do now</li>
+<li>Much faster</li>
+<li>Fixed-size ( in bytes not Blocks ) Queue for <strong>all</strong> the data ( including non-movement data ), for easier RAM management</li>
+</ul>
+<p>Here is the proposed format for the new Blocks ( now called &quot;Actions&quot; to differentiate them from the movement Blocks ( which become just another kind of Action ) ) :&nbsp;</p>
+<ul>
+<li>1 byte : Owner module ID</li>
+<li>1 byte :&nbsp;Length in bytes <tt>n</tt></li>
+<li><tt>n</tt> bytes : Data</li>
+</ul>
+<p>The queue is composed of a series of those Actions. When a module tries to add an Action to the Queue, and the Queue does not have enough room, we wait until there is room ( similar to what the current movement queue does ).</p>
+<p>Example queue ( random non-real-life actions ) :&nbsp;</p>
+<table class="wiki-content-table">
+<tr>
+<th>Byte</th>
+<th>Length</th>
+<th>Value</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>0</td>
+<td>uint8</td>
+<td>2</td>
+<td>Action owner ID&nbsp;2 :&nbsp;Laser module</td>
+</tr>
+<tr>
+<td>1</td>
+<td>uint8</td>
+<td>1</td>
+<td>1 byte long Action</td>
+</tr>
+<tr>
+<td>2</td>
+<td>uint8</td>
+<td>127</td>
+<td>Laser module understands this as : set laser power to 50%</td>
+</tr>
+<tr>
+<td>3</td>
+<td>uint8</td>
+<td>5</td>
+<td>Action owner ID 5 : Extruder module</td>
+</tr>
+<tr>
+<td>4</td>
+<td>uint8</td>
+<td>1</td>
+<td>1 byte long Action</td>
+</tr>
+<tr>
+<td>5</td>
+<td>uint8</td>
+<td>3</td>
+<td>Extruder module understands this as :&nbsp;Extruder action ID 3 :&nbsp;do unretract</td>
+</tr>
+<tr>
+<td>6</td>
+<td>uint8</td>
+<td>5</td>
+<td>Action owner ID 5 : Extruder module</td>
+</tr>
+<tr>
+<td>7</td>
+<td>uint8</td>
+<td>3</td>
+<td>3 bytes long Action</td>
+</tr>
+<tr>
+<td>8</td>
+<td>uint8</td>
+<td>2</td>
+<td>Extruder module understands this as : Extruder action ID 2 : Solo move</td>
+</tr>
+<tr>
+<td>9-10</td>
+<td>int16</td>
+<td>160</td>
+<td>Extruder module understands this as : Solo move must move 160 steps in the positive direction</td>
+</tr>
+<tr>
+<td>11</td>
+<td>uint8</td>
+<td>7</td>
+<td>Action owner ID 7 : Stepper module</td>
+</tr>
+<tr>
+<td>12</td>
+<td>uint8</td>
+<td>42</td>
+<td>42 bytes long Action</td>
+</tr>
+<tr>
+<td>13-55</td>
+<td><a href="https://github.com/Smoothieware/Smoothieware/blob/edge/src/modules/robot/Block.h">Block</a></td>
+<td>127</td>
+<td>Stepper unpacks this into a Block object and executes it</td>
+</tr>
+<tr>
+<td>56</td>
+<td>uint8</td>
+<td>5</td>
+<td>Action owner ID 5 : Extruder module</td>
+</tr>
+<tr>
+<td>57</td>
+<td>uint8</td>
+<td>3</td>
+<td>3 bytes long Action</td>
+</tr>
+<tr>
+<td>58</td>
+<td>uint8</td>
+<td>1</td>
+<td>Extruder module understands this as : Extruder action ID 1 : Follow move</td>
+</tr>
+<tr>
+<td>59-60</td>
+<td>int16</td>
+<td>67</td>
+<td>Extruder module understands this as : Follow move must move 67 steps in the positive direction along with the previous movement block</td>
+</tr>
+</table>
+<p>Now compared to the current system, this is extremely compact !</p>
+<h2 id="toc5"><span>Implementing</span></h2>
+<p>Here is the general idea of how things would work in the new system. We'll follow the life of our &quot;beep&quot; action from above :</p>
+<ul>
+<li><tt>G123 S2</tt> is received from the Serial line ( meaning &quot;make beep, with tone 2khz&quot; )</li>
+<li>Gcodedispatch calls the <tt>on_gcode_received</tt> event with this G-code as a parameter</li>
+<li>Our Beeper module gets it's <tt>on_gcode_received</tt> event called with this G-code as a parameter</li>
+<li>It recognizes this as a G-code it wants executed later</li>
+<li>It makes a new Action, looking like this : <tt>17</tt> ( 1 byte, module ID ), <tt>1</tt> ( 1 byte, action data size ), <tt>2</tt> ( 1 byte, action data, the tone )</li>
+<li>It asks the Conveyor to append this Action to the Queue</li>
+<li>When there is enough room in the Queue, the Action is added</li>
+</ul>
+<p>And it sleeps there for a while, until, in another context :&nbsp;</p>
+<ul>
+<li>All Actions in the queue have been executed up to our Action</li>
+<li>Conveyor pops this Action from the Queue</li>
+<li>It finds the Beeper module in it's array of targets as module with ID <tt>17</tt> ( from the Action's first byte )</li>
+<li>It finds that the Action's data is 1 byte long</li>
+<li>It gathers this 1 byte of data, and calls the Beeper module's <tt>action_execute</tt> method, passing the data ( <tt>2</tt> ) as a parameter</li>
+<li>The Beeper module executes the beep at 2khz</li>
+<li>The Conveyor deletes this Action from the Queue</li>
+</ul>
+<p>And done !</p>
+<h2 id="toc6"><span>For each module</span></h2>
+<p>Now the logic of moving from the current Queue to Action Queue is not so hard. What makes this so complicated is that pretty much <strong>all</strong> the modules must change the way they work.</p>
+<p>This is a list of the modules that need to change, and in what way they need to change.</p>
+<p>This is what <tt>ack-grep :on_gcode_execute *</tt> gives us :</p>
+<div class="code">
+<pre>
+<code>src/modules/robot/Stepper.cpp
+112:void Stepper::on_gcode_execute(void *argument)
+src/modules/tools/spindle/Spindle.cpp
+204:void Spindle::on_gcode_execute(void* argument)
+src/modules/tools/extruder/Extruder.cpp
+385:void Extruder::on_gcode_execute(void *argument)
+src/modules/tools/temperaturecontrol/TemperatureControl.cpp
+294:void TemperatureControl::on_gcode_execute(void *argument)
+src/modules/tools/switch/Switch.cpp
+156:void Switch::on_gcode_execute(void *argument)
+src/modules/tools/laser/Laser.cpp
+95:void Laser::on_gcode_execute(void* argument){
+src/libs/SlowTicker.cpp
+160:void SlowTicker::on_gcode_execute(void* argument){
+src/libs/Module.cpp
+20:    &amp;Module::on_gcode_execute,</code>
+</pre></div>
+<p>So now, per module, here is what needs to change :&nbsp;</p>
+<h3 id="toc7"><span>Planner</span></h3>
+<p>Planner adds Actions ( Blocks ) to the Queue, but does not consume them himself, it's Stepper that consumes them.</p>
+<p>Currently what we do is <a href="https://github.com/Smoothieware/Smoothieware/blob/edge/src/modules/robot/Planner.cpp#L62">here</a> we get an old Block from the Queue, and we recycle it to use as a new Block.</p>
+<p>With the Action queue we would make a new Block, and then add it to the Queue as an Action.</p>
+<p>What we have now :</p>
+<div class="code">
+<pre>
+<code>block = queue-&gt;recycle_old_block()
+set all of the block's properties
+mark the block as complete</code>
+</pre></div>
+<p>What we would do in action queue</p>
+<div class="code">
+<pre>
+<code>block = new Block();
+set all of the block's properties
+queue-&gt;add_action(the block's data)</code>
+</pre></div>
+<h3 id="toc8"><span>Stepper</span></h3>
+<p>Right now Stepper gets a new Block <a href="https://github.com/Smoothieware/Smoothieware/blob/edge/src/modules/robot/Stepper.cpp#L145">this way</a></p>
+<p>This would simply need to be changed to getting Block-type Actions, that's pretty much it</p>
+<p>There is another thing in Stepper : <a href="https://github.com/Smoothieware/Smoothieware/blob/edge/src/modules/robot/Stepper.cpp#L112">There is a useless on_gcode_execute event</a> in it.</p>
+<p>This can be replaced by a <tt>on_gcode_received</tt> event, and waiting for the queue to empty before turning the stepper motor drivers on or off.</p>
+<h3 id="toc9"><span>SlowTicker</span></h3>
+<p>As with Stepper, SlowTicker is another example of a place where <tt>on_gcode_execute</tt> is used uselessly</p>
+<div class="code">
+<pre>
+<code>on_gcode_execute{
+    do_stuff
+}</code>
+</pre></div>
+<p>can here too be replaced with :&nbsp;</p>
+<div class="code">
+<pre>
+<code>on_gcode_received{
+    wait_for_queue_to_empty
+    do_stuff
+}</code>
+</pre></div>
+<h3 id="toc10"><span>Spindle</span></h3>
+<p><a href="https://github.com/Smoothieware/Smoothieware/blob/edge/src/modules/tools/spindle/Spindle.cpp">This one</a> is a good example of how trivial the move to Action Queue can be.</p>
+<p>There are only two possible actions ( Spindle ON, Spindle OFF ), and one bit of data ( Spindle Speed )</p>
+<p>So the action data is, for a Spindle OFF event :&nbsp;</p>
+<ul>
+<li><tt>0x0</tt> ( 1&nbsp;byte )</li>
+</ul>
+<p>For a Spindle ON event :</p>
+<ul>
+<li><tt>0x1</tt> ( 1 byte )</li>
+</ul>
+<p>And for a Spindle set speed :&nbsp;</p>
+<ul>
+<li><tt>0x2</tt> ( 1 byte )</li>
+<li><tt>1234.21</tt> ( 1 float )</li>
+</ul>
+<p>Those are simply added to the action queue <a href="https://github.com/Smoothieware/Smoothieware/blob/edge/src/modules/tools/spindle/Spindle.cpp#L198">Here</a></p>
+<p>Then <a href="https://github.com/Smoothieware/Smoothieware/blob/edge/src/modules/tools/spindle/Spindle.cpp#L204">on_gcode_execute</a> becomes simply :&nbsp;</p>
+<div class="code">
+<pre>
+<code>on_action_execute( data ){
+    if( data[0] == 0 ){ turn spindle off }
+    if( data[0] == 1 ){ turn spindle on }
+    if( data[0] == 2 ){ set spindle speed to (float)data[1-4] }
+}</code>
+</pre></div>
+<h3 id="toc11"><span>TemperatureControl</span></h3>
+<p>Another one where <tt>on_gcode_execute</tt> is used uselessly</p>
+<div class="code">
+<pre>
+<code>on_gcode_execute{
+    do_stuff
+}</code>
+</pre></div>
+<p>can here too be replaced with :</p>
+<div class="code">
+<pre>
+<code>on_gcode_received{
+    wait_for_queue_to_empty
+    do_stuff
+}</code>
+</pre></div>
+<p>The code to replace is <a href="https://github.com/Smoothieware/Smoothieware/blob/edge/src/modules/tools/temperaturecontrol/TemperatureControl.cpp#L294">here</a></p>
+<p>Note : If you don't find a on_gcode_execute there, wolfmanjm was faster than you.</p>
+<h3 id="toc12"><span>Laser</span></h3>
+<p>This one is pretty much exactly the same as Spindle above, with spindle speed replaced with laser power ( which is a float too ), no reason to repeat it</p>
+<h3 id="toc13"><span>Switch</span></h3>
+<p>This is again extremely similar : on, off, pwm value</p>
+<h3 id="toc14"><span>Extruder</span></h3>
+<p>This is probably the hardest one ( second hardest being Stepper/Planner ) as it's the most complicated, and does both lead and follow actions.</p>
+<h2 id="toc15"><span>Lead or Follow Actions</span></h2>
+<p>There are two types of actions : Lead actions and Follow actions.</p>
+<p>Lead actions are things that take time, and must be executed one after the other.</p>
+<p>Follow actions are actions that are executed in parralel with a lead action, and several of which can be executed at the same time.</p>
+<p>Lead actions include :</p>
+<ul>
+<li>Stepper movement</li>
+<li>Extruder solo movement</li>
+<li>Extruder retract/unretract</li>
+</ul>
+<p>Follow actions include :</p>
+<ul>
+<li>Spindle actions</li>
+<li>Laser actions</li>
+<li>Switch actions</li>
+<li>Extruder follow movements</li>
+</ul>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 19, last edited: <span class="odate time_1419887057 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">29 Dec 2014 21:04</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="legal_terms-of-service.html" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="legal_privacy-policy.html" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="index-4.html">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="index-5.html">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="../images/p-edl3gsnujjzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/queue-refactor by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:57:40 GMT -->
+</html>

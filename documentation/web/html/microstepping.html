@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from www.zaber.com/wiki/Tutorials/Microstepping by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Microstepping Tutorial - ZaberWiki</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.19.0" />
+<link rel="canonical" href="http://www.zaber.com/wiki/Microstepping_Tutorial" />
+<link rel="shortcut icon" href="http://www.zaber.com/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.zaber.com/w/opensearch_desc.php" title="ZaberWiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://www.zaber.com/w/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="ZaberWiki Atom feed" href="http://www.zaber.com/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://www.zaber.com/w/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.monobook&amp;only=styles&amp;skin=monobook&amp;*" />
+<!--[if IE 6]><link rel="stylesheet" href="/w/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/w/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://www.zaber.com/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: zaberwiki:resourceloader:filter:minify-css:7:c88e2bcd56513749bec09a7e29cb3ffa */
+</style>
+
+<script src="http://www.zaber.com/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Microstepping_Tutorial","wgTitle":"Microstepping Tutorial","wgCurRevisionId":7228,"wgArticleId":397,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgRelevantPageName":"Microstepping_Tutorial","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Tutorials/Microstepping"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":
+0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function($){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+
+/* cache key: zaberwiki:resourceloader:filter:minify-js:7:74a832f2292f1f4d40d425d223444e78 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Microstepping_Tutorial skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading"><span dir="auto">Microstepping Tutorial</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From ZaberWiki</div>
+		<div id="contentSub">(Redirected from <a href="http://www.zaber.com/w/index.php?title=Tutorials/Microstepping&amp;redirect=no" title="Tutorials/Microstepping">Tutorials/Microstepping</a>)</div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>A redirect has been set up for this page, which sends visitors to Zaber's website here: [<a rel="nofollow" class="external text" href="http://zaber.com/applications/?tab=Technical%20Articles&amp;article=microstepping%20tutorial">Microstepping Tutorial</a>]
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Microstepping_Theory"><span class="tocnumber">1</span> <span class="toctext">Microstepping Theory</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Sources_of_error_in_microstepping_systems"><span class="tocnumber">2</span> <span class="toctext">Sources of error in microstepping systems</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Quantization_Error"><span class="tocnumber">2.1</span> <span class="toctext">Quantization Error</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Detent_Error"><span class="tocnumber">2.2</span> <span class="toctext">Detent Error</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Motor_Pole_placement_error"><span class="tocnumber">2.3</span> <span class="toctext">Motor Pole placement error</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Leadscrew_pitch_error"><span class="tocnumber">2.4</span> <span class="toctext">Leadscrew pitch error</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Sticktion_and_Backlash_Error"><span class="tocnumber">2.5</span> <span class="toctext">Sticktion and Backlash Error</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Sources_of_failure_in_microstepping_systems"><span class="tocnumber">3</span> <span class="toctext">Sources of failure in microstepping systems</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Microstepping_Theory"> Microstepping Theory </span></h2>
+<p>A bipolar stepper motor has two windings. The current through each winding is varied in order to rotate the stepper motor. When considering stepper motor drive techniques, a "phase diagram" is a useful visualization tool. The current through one winding I<sub>a</sub> is plotted against the current through the other winding I<sub>b</sub>. Modes of operation such as full stepping, half stepping, microstepping, and operation at different current limits can be easily visualized on such a diagram. In addition, it is possible to visualize changes in both power consumption and torque as a function of angular position.
+</p><p>Simple stepper motor controllers are only capable of driving a winding with full positive current, no current, or full negative current. Given these available outputs it is only possible to implement full stepping, half stepping, or wave stepping. 
+</p>
+<table class="wikitable" style="width: 100%;">
+
+<tr valign="top">
+<th>Full stepping
+</th>
+<th>Half stepping
+</th>
+<th>Wave stepping
+</th></tr>
+<tr valign="top">
+<td> In full stepping operation, the current required in each winding is either -Imax or +Imax. A step sequence of 4 full steps makes up one complete step cycle. Note that these full step positions are the same as the odd numbered positions from the half stepping sequence.
+</td>
+<td> In a half stepping operation, the current required in each winding is either -Imax, 0, or +Imax. A step sequence of 8 half steps makes up one complete step cycle.
+</td>
+<td> Wave stepping is another method of full stepping, but with reduced power requirements (and corresponding torque output) since only one winding is powered at a time. The current required in each winding is either -Imax, 0 or +Imax. A step sequence of 4 full steps makes up one complete step cycle. Note that these full step positions are the same as the even numbered positions from the half stepping sequence.
+</td></tr>
+<tr valign="top">
+<td>Phase diagram: <a href="http://www.zaber.com/wiki/File:Microstepping_phase_diagram_full_stepping.png" class="image" title="Full stepping"><img alt="Full stepping" src="http://www.zaber.com/w/images/thumb/a/af/Microstepping_phase_diagram_full_stepping.png/300px-Microstepping_phase_diagram_full_stepping.png" width="300" height="249" /></a>
+</td>
+<td>Phase diagram: <a href="http://www.zaber.com/wiki/File:Microstepping_phase_diagram_half_stepping.png" class="image" title="Full stepping"><img alt="Full stepping" src="http://www.zaber.com/w/images/thumb/6/60/Microstepping_phase_diagram_half_stepping.png/300px-Microstepping_phase_diagram_half_stepping.png" width="300" height="249" /></a>
+</td>
+<td>Phase diagram: <a href="http://www.zaber.com/wiki/File:Microstepping_phase_diagram_wave_stepping.png" class="image" title="Full stepping"><img alt="Full stepping" src="http://www.zaber.com/w/images/thumb/9/9d/Microstepping_phase_diagram_wave_stepping.png/300px-Microstepping_phase_diagram_wave_stepping.png" width="300" height="249" /></a>
+</td></tr>
+<tr valign="top">
+<td>Timing diagram: <a href="http://www.zaber.com/wiki/File:Microstepping_timing_diagram_full_stepping.png" class="image" title="Full stepping"><img alt="Full stepping" src="http://www.zaber.com/w/images/thumb/e/e0/Microstepping_timing_diagram_full_stepping.png/300px-Microstepping_timing_diagram_full_stepping.png" width="300" height="167" /></a>
+</td>
+<td>Timing diagram: <a href="http://www.zaber.com/wiki/File:Microstepping_timing_diagram_half_stepping.png" class="image" title="Half stepping"><img alt="Half stepping" src="http://www.zaber.com/w/images/thumb/c/c0/Microstepping_timing_diagram_half_stepping.png/300px-Microstepping_timing_diagram_half_stepping.png" width="300" height="167" /></a>
+</td>
+<td>Timing diagram: <a href="http://www.zaber.com/wiki/File:Microstepping_timing_diagram_wave_stepping.png" class="image" title="Wave stepping"><img alt="Wave stepping" src="http://www.zaber.com/w/images/thumb/0/05/Microstepping_timing_diagram_wave_stepping.png/300px-Microstepping_timing_diagram_wave_stepping.png" width="300" height="167" /></a>
+</td></tr></table>
+<p>The arrows in each phase diagram are called a "phasors". The angle theta that the phasor moves from one position to the next is the step or microstep angle. On a phase diagram, 90° corresponds to one full step and 360° corresponds to a "full step sequence". A full step sequence is a sequence of steps or microsteps which, when repeated, will produce continuous rotation of the motor. Assuming adequate torque, any continuous path which traverses the 4 quadrants of the phase diagram with at least one point per quadrant will suffice to rotate the stepper motor.
+</p><p>If the controller is designed with the capability to control the magnitude of the current in each winding, then microstepping can be implemented. The phase diagrams below all show different implementations of "divide by 4" microstepping. Note that it is the phasor angle (not it's length) that determines the microstep position. The phasor length affects power consumption and available torque as we will see later.
+</p>
+<table class="wikitable" style="width: 100%;">
+
+<tr valign="top">
+<th>Microstepping - square path
+</th>
+<th>Microstepping - circular path
+</th>
+<th>Microstepping - arbitrary path
+</th></tr>
+<tr valign="top">
+<td> This method of microstepping provides the highest peak torque if you are limited by available supply voltage.
+</td>
+<td> This method is also referred to as sine cosine microstepping and is usually what people are referring to when they talk about microstepping, though in fact it is only one method.
+</td>
+<td> There would be little reason to use a method such as this. It is presented only to illustrate the possibilities. Although it looks very strange compared to the other two methods, in theory it will produce the same angular rotation of an ideal motor. Only the available thrust would differ.
+</td></tr>
+<tr valign="valign">
+<td>Phase diagram: <a href="http://www.zaber.com/wiki/File:Microstepping_phase_diagram_square_phase_microstepping.png" class="image" title="Microstepping - square phase"><img alt="Microstepping - square phase" src="http://www.zaber.com/w/images/thumb/a/a9/Microstepping_phase_diagram_square_phase_microstepping.png/300px-Microstepping_phase_diagram_square_phase_microstepping.png" width="300" height="249" /></a>
+</td>
+<td>Phase diagram: <a href="http://www.zaber.com/wiki/File:Microstepping_phase_diagram_circular_phase_microstepping.png" class="image" title="Microstepping - circular phase"><img alt="Microstepping - circular phase" src="http://www.zaber.com/w/images/thumb/3/3d/Microstepping_phase_diagram_circular_phase_microstepping.png/300px-Microstepping_phase_diagram_circular_phase_microstepping.png" width="300" height="249" /></a>
+</td>
+<td>Phase diagram: <a href="http://www.zaber.com/wiki/File:Microstepping_phase_diagram_arbitrary_microstepping.png" class="image" title="Microstepping - arbitrary path"><img alt="Microstepping - arbitrary path" src="http://www.zaber.com/w/images/thumb/b/b1/Microstepping_phase_diagram_arbitrary_microstepping.png/300px-Microstepping_phase_diagram_arbitrary_microstepping.png" width="300" height="249" /></a>
+</td></tr>
+<tr valign="valign">
+<td>Timing diagram: <a href="http://www.zaber.com/wiki/File:Microstepping_timing_diagram_square_phase_microstepping.png" class="image" title="Microstepping - square phase"><img alt="Microstepping - square phase" src="http://www.zaber.com/w/images/thumb/9/9d/Microstepping_timing_diagram_square_phase_microstepping.png/300px-Microstepping_timing_diagram_square_phase_microstepping.png" width="300" height="167" /></a>
+</td>
+<td>Timing diagram: <a href="http://www.zaber.com/wiki/File:Microstepping_timing_diagram_circular_phase_microstepping.png" class="image" title="Microstepping - circular phase"><img alt="Microstepping - circular phase" src="http://www.zaber.com/w/images/thumb/b/b7/Microstepping_timing_diagram_circular_phase_microstepping.png/300px-Microstepping_timing_diagram_circular_phase_microstepping.png" width="300" height="167" /></a>
+</td>
+<td>Timing diagram: <a href="http://www.zaber.com/wiki/File:Microstepping_timing_diagram_arbitrary_microstepping.png" class="image" title="Microstepping - arbitrary path"><img alt="Microstepping - arbitrary path" src="http://www.zaber.com/w/images/thumb/8/8f/Microstepping_timing_diagram_arbitrary_microstepping.png/300px-Microstepping_timing_diagram_arbitrary_microstepping.png" width="300" height="167" /></a>
+</td></tr></table>
+<p><br />
+While it is convenient to think of the I<sub>a</sub> and I<sub>b</sub> axes as representing full step positions, it should be recognized that this is an arbitrary choice and any 4 positions in the phase diagram that are 90° apart from each other could be considered full step positions. However, for the sake of simplicity, let us consider the positive I<sub>a</sub> axis to represent theta = 0°. As theta increases, the phasor moves counter-clockwise from this position. At theta = 90° the phasor lies along the positive I<sub>b</sub> axis, one full step from it's starting position. Any angle theta between 0 and 90° represents a possible microstep position (a position between full step positions). If you wish to implement "divide by 10" microstepping, then you must generate values of Ia and Ib that correspond to values of theta equal to 0, 9, 18, 27 ... 81, 90°, etc. Mathematically theta is related to I<sub>a</sub> and I<sub>b</sub> by the formula:
+</p>
+<pre>theta = Tan<sup>-1</sup>(I<sub>b</sub>/I<sub>a</sub>)
+</pre>
+<p>There are many values of Ia and Ib that could be chosen to produce the same phasor angle theta. The choice of phasor length is typically decided based on the motor power rating and the application's torque requirements. Power and torque are both related to phasor length. The power draw at any given angular position is given by the formula:
+</p>
+<pre>power = I<sub>a</sub><sup>2</sup>R + I<sub>b</sub><sup>2</sup>R
+where R is the winding resistance (both windings should have the same resistance)
+</pre>
+<p>The length of the phasor is given by the formula:
+</p>
+<pre>phasor_length = Sqrt(I<sub>a</sub><sup>2</sup> + I<sub>b</sub><sup>2</sup>) = Sqrt(Power/R)
+</pre>
+<p>Thus the phasor length gives an indication of the power draw at each microstep angle. Torque is directly proportional to current (assuming magnetic saturation is not reached). Thus the available torque is directly proportional to phasor length, and the phase diagram gives an indication of how torque may vary with microstep position. <i>Aside: note that phasor length is proportion to torque and to Sqrt(Power). Therefore torque is proportional to Sqrt(Power). In other words, a 2x increase in torque requires a 4x increase in power (assuming magnetic saturation is not reached).</i>
+</p><p><br />
+A phasor of constant length is typically used for smoothest operation (minimum torque ripple) and constant power output. This results in a circular path around the phase diagram, the phasor length being the radius of the circle. This technique is referred to as "sine cosine microstepping" because the target values for Ib and Ia are proportional to sin(theta) and cos(theta) respectively. In practice, the term microstepping usually refers to sine cosine microstepping, but in theory, sine cosine microstepping is only one method of microstepping. As mentioned above, a functioning microstepping algorithm may be designed around any arbitrary path which traverses the 4 quadrants of the phase diagram and has at least one point per quadrant.
+</p><p><br />
+The maximum continuous power output of a motor is usually specified by the manufacturer. This places an upper limit on phasor length, sqrt(I<sub>a</sub><sup>2</sup> + I<sub>b</sub><sup>2</sup>). The effective limit that this places on I<sub>a</sub> and I<sub>b</sub> will depend on the geometry of the path chosen around the phase diagram. 
+</p><p><br />
+One must also consider the limitations of the power supply being used to drive the motor. In voltage controlled products, the maximum values of Ia and Ib may be limited by the power supply voltage (I=V/R). In this case, using a square phase profile is a way to achieve higher torque without requiring a higher voltage power supply. 
+</p><p><br />
+In some Zaber products, the user may select between square phase mode and circular phase mode, in addition to specifying the current limit (the value of I<sub>a</sub> at theta = 0). Square phase mode offers about 40% higher torque for the same current limit. However there is a price to pay and that is torque ripple. You can see that as you move around the phase diagram along a square path, the torque (proportional to the length of the phasor) will be constantly increasing and decreasing. This result in less smoothness of operation and less microstepping accuracy. Generally it is easier to achieve higher torque simply by increasing the current limit. However, sometimes your maximum current limit is restricted by your supply voltage, or the capabilities of your controller. In this case, reduced smoothness and accuracy may be an acceptable compromise for additional torque.
+</p>
+<h2> <span class="mw-headline" id="Sources_of_error_in_microstepping_systems"> Sources of error in microstepping systems </span></h2>
+<p>Stepper motor control systems are usually open loop. That is the controller does not have position feedback and therefore is not aware of the "actual" position of the motor. Therefore it is important to be aware of possible sources of error that will result in the actual position being different from the calculated position.
+</p>
+<h3> <span class="mw-headline" id="Quantization_Error"> Quantization Error </span></h3>
+<p>In any digital controller, it is impossible to achieve infinitely variable I<sub>a</sub> and/or I<sub>b</sub>. Only discrete or "quantized" values are possible. The number of discrete values depends on the resolution achievable by the controller. For example, if the maximum current output of the controller is 1A and the controller has a resolution of 0.1A then there are 10 possible current values for Ia and/or Ib not including 0. The number of discrete values possible determines how close mathematically the phasor can be set to a particular length and microstep angle. The error between the desired phasor angle and the actual phasor angle achieved is the quantization error.
+</p><p>A maximum quantization error equivalent to 0.5 microsteps is a typical design requirement in any microstepping control algorithm. Note that by adusting the phasor end point to a nearby Ia,Ib point rather than sticking to a strictly circular or square profile can often reduce the quantization error, but may add some torque ripple. Thus the current resolution you require for Ia and Ib will be determined by the number of microsteps per step you want to achieve, the quantization error you can tolerate, and the torque ripply you can tolerate.
+</p><p>In Zaber's stepper motor control algorithm our design requirements were 128 microsteps per step with a quantization error less than 0.5 microsteps and a torque ripple less than 2.5%. Determining how many discrete current values are required for Ia and Ib is a task best left to a spreadsheet application such as Excel. Even then it requires a certain degree of trial and error. As it turns out, 80 discrete current settings (between 0 and the running current) are required to achieve 128 microsteps per step with a quantization error less than 0.5 microsteps and a torque ripple less than 2.5%. The resulting quantization error at each microstep position is plotted below.
+</p>
+<center><a href="http://www.zaber.com/wiki/File:Microstepping_quantization_error.png" class="image" title="Zaber microstepping control algorithm quantization error"><img alt="Zaber microstepping control algorithm quantization error" src="http://www.zaber.com/w/images/b/bf/Microstepping_quantization_error.png" width="846" height="295" /></a></center>
+<h3> <span class="mw-headline" id="Detent_Error"> Detent Error </span></h3>
+<p>Detent torque is the maximum torque that can be applied to an unenergized stepper motor without causing continuous rotation. If you plotted torque vs shaft angle as you slowly rotate the stepper motor with no current in either winding, then you would find that the torque is approximately sinusoidal with shaft angle. The detent torque is just the amplitude of the sine curve. In an ideal motor, the torque curve would be perfectly sinusoidal. What is commonly referred to as "detent error" isn't due to the existence of the detent torque per se but due to the non-sinusoidal component of the detent torque. The shape of the torque curve is affected by motor pole geometry. In that sense, detent error is really pole geometry error. Because different motor manufacturers use different pole geometries, this error can vary from one manufacturer to another as well as from one motor to another.
+</p>
+<h3> <span class="mw-headline" id="Motor_Pole_placement_error"> Motor Pole placement error </span></h3>
+<p>Motor pole placement error results in a varying step size. There is typically an error that repeats every 4 steps (one complete step cycle), as well as an error that repeats every full revolution. This has an obvious effect on microstepping. The microstep size within large steps will be proportionally larger than the microstep size in small steps. Pole placement error in a typical motor is less than 0.5 steps of cumulative error over half a revolution of the motor. Given that a typical motor has 200 steps per revolution, that translates to an error in step size of roughly +/- 0.5%. It is possible to eliminate pole placement error in any application simply by moving in increments of one full revolution of the motor. If that is not possible, then some error can be eliminated by moving in increments of 4 steps. However, moving in increments of 4 steps or full revolutions is clearly not microstepping. Therefore, all microstepping applications invariably suffer from some pole placement error.
+</p>
+<h3> <span class="mw-headline" id="Leadscrew_pitch_error"> Leadscrew pitch error </span></h3>
+<p>Many motorized systems convert rotary motion to linear motion via leadscrew. Stepper motor applications are no exception. In these types of systems, any error in the leadscrew pitch will contribute to the total system error.
+</p>
+<h3> <span class="mw-headline" id="Sticktion_and_Backlash_Error"> Sticktion and Backlash Error </span></h3>
+<p>In microstepping systems, mechanical sticktion and backlash are frequently much larger than the microstep resolution. There are many systems on the market capable of microstepping at 256 microsteps per step, but there is little point to this if mechanical sticktion in the system will be on on the order of 5 to 10 microsteps at that microstep resolution.
+</p>
+<h2> <span class="mw-headline" id="Sources_of_failure_in_microstepping_systems"> Sources of failure in microstepping systems </span></h2>
+<p>This discussion has centred on the challenges of designing a microstepping system, but there are also challenges when implementing a system. If the load on a stepper motor exceeds its maximum torque, then the motor poles will not follow the changing magnetic field and the motor stalls. To avoid this type of failure, microstepping systems must either keep the load below the maximum torque, or include position sensors to detect and compensate for stalls.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 31/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key zaberwiki:pcache:idhash:397-0!*!*!!en!2!* and timestamp 20160512143828 -->
+</div><div class="printfooter">
+Retrieved from "<a href="http://www.zaber.com/w/index.php?title=Microstepping_Tutorial&amp;oldid=7228">http://www.zaber.com/w/index.php?title=Microstepping_Tutorial&amp;oldid=7228</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="http://www.zaber.com/wiki/Microstepping_Tutorial" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://www.zaber.com/w/index.php?title=Talk:Microstepping_Tutorial&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://www.zaber.com/w/index.php?title=Microstepping_Tutorial&amp;action=edit" primary="1" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="http://www.zaber.com/w/index.php?title=Special:UserLogin&amp;returnto=Tutorials%2FMicrostepping" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+<a href="http://www.zaber.com/wiki/Main_Page" style="background-image: url(http://www.zaber.com/images/misc/logo_zaber_wiki.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Zaber_Wiki">
+		<h5>Zaber Wiki</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Main-Page"><a href="http://www.zaber.com/wiki/Main_Page">Main Page</a></li>
+				<li id="n-Wiki-User.27s-Guide"><a href="http://meta.wikimedia.org/wiki/Help:Contents" rel="nofollow">Wiki User's Guide</a></li>
+				<li id="n-Admin"><a href="http://www.zaber.com/wiki/ZaberWiki:Admin">Admin</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Zaber_Website">
+		<h5>Zaber Website</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="http://www.zaber.com/" rel="nofollow">Home</a></li>
+				<li id="n-Contact"><a href="http://zaber.com/contact/" rel="nofollow">Contact</a></li>
+				<li id="n-About-Us"><a href="http://www.zaber.com/home/about.php" rel="nofollow">About Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="http://www.zaber.com/w/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search ZaberWiki [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://www.zaber.com/wiki/Special:WhatLinksHere/Microstepping_Tutorial" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://www.zaber.com/wiki/Special:RecentChangesLinked/Microstepping_Tutorial" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="http://www.zaber.com/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li><a href="http://www.zaber.com/w/index.php?title=Microstepping_Tutorial&amp;printable=yes" rel="alternate">Printable version</a></li>
+				<li id="t-permalink"><a href="http://www.zaber.com/w/index.php?title=Microstepping_Tutorial&amp;oldid=7228" title="Permanent link to this revision of the page">Permanent link</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer">
+	<div id="f-poweredbyico">
+		<a href="http://www.mediawiki.org/"><img src="http://www.zaber.com/w/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 19 August 2014, at 05:59.</li>
+		<li id="viewcount">This page has been accessed 80,628 times.</li>
+		<li id="privacy"><a href="http://www.zaber.com/wiki/ZaberWiki:Privacy_policy" title="ZaberWiki:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="http://www.zaber.com/wiki/ZaberWiki:About" title="ZaberWiki:About">About ZaberWiki</a></li>
+		<li id="disclaimer"><a href="http://www.zaber.com/wiki/ZaberWiki:General_disclaimer" title="ZaberWiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready"], null, true);
+}</script>
+<script src="http://www.zaber.com/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-317842-1");
+pageTracker._trackPageview();
+</script><!-- Served in 0.236 secs. --></body>
+<!-- Mirrored from www.zaber.com/wiki/Tutorials/Microstepping by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:53 GMT -->
+</html>

@@ -1,0 +1,8 @@
+http://smoothieware.org/ -N2 -%e1 -c40
+File generated automatically on Fri, 13 May 2016 13:21:35, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+

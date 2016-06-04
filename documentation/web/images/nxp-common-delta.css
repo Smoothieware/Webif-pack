@@ -1,0 +1,124 @@
+/*
+#auvp-overview-tab {margin-top: 155px;}
+
+
+.profservices {
+    width:221px;
+    padding:1px 20px 20px 24px;
+	position: relative;
+	left:-246px;
+	bottom: 498px;
+	background-color: #e7eaeb;
+}
+
+
+@-moz-document url-prefix() {
+   .profservices {
+    width:221px;
+    padding:1px 20px 20px 24px;
+	position: relative;
+	left:-246px;
+	bottom: 500px;
+	background-color: #e7eaeb;
+}
+}
+
+
+.mainswc {
+    height: 842px;
+    width: 730px;
+    padding: 0px;
+    margin: 0px;
+    float: none;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    margin-top: 52px;
+}
+
+
+#psp-jsp-id #targetApps{
+	display:none;
+}
+
+
+.show-more, .show-less {padding-right: 25px;}
+
+.filterMenu {background-color: inherit;}
+
+.filterMenu .btn {   margin: 0px; }
+
+#accordion .ui-icon-triangle-1-e, .accordion .ui-icon-triangle-1-e { 
+    background-position:initial;
+    background-image: none;
+  color:#979799;
+  text-indent: 0px;
+}
+#accordion .ui-icon-triangle-1-e:before, .accordion .ui-icon-triangle-1-e:before { 
+    font-family: icomoon;
+    content: "\e3b5";
+}
+
+#accordion .ui-state-hover .ui-icon-triangle-1-e, .accordion .ui-state-hover .ui-icon-triangle-1-e {
+    background-position: initial;
+    background-image: none;
+    color:#646464;
+    text-indent: 0px;
+}
+
+
+#accordion .ui-icon-triangle-1-s, .accordion .ui-icon-triangle-1-s {
+    background-position: initial;
+    background-image: none;
+    color:#646464;
+    text-indent: 0px;
+}
+
+#accordion .ui-icon-triangle-1-s:before, .accordion .ui-icon-triangle-1-s:before {
+ font-family: icomoon;
+    content: "\e3b6";
+}
+
+#accordion .ui-state-hover .ui-icon-triangle-1-s, .accordion .ui-state-hover .ui-icon-triangle-1-s {
+    background-position: initial;
+    background-image: none;
+    color:#646464;
+    text-indent: 0px;
+}
+
+.panel-group.accordion .panel-title a span.icon-arrow-right6:before {
+  content: "\e3b6";
+}
+
+.panel-group.accordion .panel-title a.collapsed span.icon-arrow-right6:before {
+  content: "\e3b5";
+}
+
+#contextnav label {margin-bottom: 0px; }
+
+
+
+.videoThumbnail .overlay {
+  background-image: url("//style.nxp.com/videostore/images/overlay2.png");
+  background-repeat: repeat;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.simple-warning {    color: #e31b23 !important;}
+
+.warning-box {
+    color: #e31b23;
+    border: 1px solid red;
+    padding: 3px
+}
+*/
+
+
+#image .container{
+	width: auto;
+	min-width:990px;
+	max-width:1200px;
+}

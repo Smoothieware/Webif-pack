@@ -1,0 +1,1931 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  
+<!-- Mirrored from github.com/kliment/Printrun by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-3c1694fab1568340f2e75b26efa1f55d97c5153364a7357e9e1104c718ff1a2f.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-3e95d73eb454e0099947df00d91ab0dbfc6b10be69dd5daf5de7aeb676580d20.css" media="all" rel="stylesheet" />
+    
+    
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-c4b4365da282e51c06e107368db8502a2ecf82e64094d29d791b797372212de2.css" media="all" rel="stylesheet" />
+    
+
+    <link as="script" href="https://assets-cdn.github.com/assets/frameworks-f8175c23360b42a4eb18b2319fefeae252cfeea482fb804356f4136a52bfddb3.js" rel="preload" />
+    
+    <link as="script" href="https://assets-cdn.github.com/assets/github-1502104f450cb05859f99b57e29782e071e3fb240e237adb8cbf17ebbdb271c7.js" rel="preload" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>GitHub - kliment/Printrun: Pronterface, Pronsole, and Printcore - Pure Python 3d printing host software</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="https://github.com/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://github.com/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://github.com/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://github.com/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://github.com/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars2.githubusercontent.com/u/228211?v=3&amp;s=400" name="twitter:image:src" /><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="kliment/Printrun" name="twitter:title" /><meta content="Printrun - Pronterface, Pronsole, and Printcore - Pure Python 3d printing host software" name="twitter:description" />
+      <meta content="https://avatars2.githubusercontent.com/u/228211?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="kliment/Printrun" property="og:title" /><meta content="https://github.com/kliment/Printrun" property="og:url" /><meta content="Printrun - Pronterface, Pronsole, and Printcore - Pure Python 3d printing host software" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="https://github.com/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="55A92EEF:7A03:1A8D019:5735BE9C" name="octolytics-dimension-request_id" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" name="analytics-location" />
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="YWMyZmFmMzU0M2FlNDZmMzA2MDI3NDI5YTZhYzNlOWVlODYxY2RkZGI2MTA1MzAwY2Y4NDg4YzA4MDNjMGVkMXx7InJlbW90ZV9hZGRyZXNzIjoiODUuMTY5LjQ2LjIzOSIsInJlcXVlc3RfaWQiOiI1NUE5MkVFRjo3QTAzOjFBOEQwMTk6NTczNUJFOUMiLCJ0aW1lc3RhbXAiOjE0NjMxMzk5OTZ9">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta content="d6013ef313dc33a770980c6e66b5cb1d7130dd9d" name="form-nonce" />
+
+    <meta http-equiv="x-pjax-version" content="22dd3b7ce1aea89995da9e98ee8a9677">
+    
+
+      
+  <meta name="description" content="Printrun - Pronterface, Pronsole, and Printcore - Pure Python 3d printing host software">
+  <meta name="go-import" content="github.com/kliment/Printrun git https://github.com/kliment/Printrun.git">
+
+  <meta content="228211" name="octolytics-dimension-user_id" /><meta content="kliment" name="octolytics-dimension-user_login" /><meta content="1726797" name="octolytics-dimension-repository_id" /><meta content="kliment/Printrun" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="1726797" name="octolytics-dimension-repository_network_root_id" /><meta content="kliment/Printrun" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/kliment/Printrun/commits/master.atom" rel="alternate" title="Recent Commits to Printrun:master" type="application/atom+xml">
+
+
+      <link rel="canonical" href="https://github.com/kliment/Printrun" data-pjax-transient>
+  </head>
+
+
+  <body class="logged-out   env-production  vis-public">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"></div>
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+          <header class="site-header js-details-container" role="banner">
+  <div class="container-responsive">
+    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+    </a>
+
+    <button class="btn-link right site-header-toggle js-details-target" type="button" aria-label="Toggle navigation">
+      <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path d="M11.41 9H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1z m0-4H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1zM0.59 11h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1z"></path></svg>
+    </button>
+
+    <div class="site-header-menu">
+      <nav class="site-header-nav site-header-nav-main">
+        <a href="https://github.com/personal" class="js-selected-navigation-item nav-item nav-item-personal" data-ga-click="Header, click, Nav menu - item:personal" data-selected-links="/personal /personal">
+          Personal
+</a>        <a href="https://github.com/open-source" class="js-selected-navigation-item nav-item nav-item-opensource" data-ga-click="Header, click, Nav menu - item:opensource" data-selected-links="/open-source /open-source">
+          Open source
+</a>        <a href="https://github.com/business" class="js-selected-navigation-item nav-item nav-item-business" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/features /business/customers /business">
+          Business
+</a>        <a href="https://github.com/explore" class="js-selected-navigation-item nav-item nav-item-explore" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship /explore">
+          Explore
+</a>      </nav>
+
+      <div class="site-header-actions">
+            <a class="btn btn-primary site-header-actions-btn" href="https://github.com/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+          <a class="btn site-header-actions-btn mr-2" href="https://github.com/login?return_to=%2Fkliment%2FPrintrun" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+      </div>
+
+        <nav class="site-header-nav site-header-nav-secondary">
+          <a class="nav-item" href="https://github.com/pricing">Pricing</a>
+          <a class="nav-item" href="https://github.com/blog">Blog</a>
+          <a class="nav-item" href="https://help.github.com/">Support</a>
+          <a class="nav-item header-search-link" href="https://github.com/search">Search GitHub</a>
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/kliment/Printrun/search" class="js-site-search-form" data-scoped-search-url="/kliment/Printrun/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        tabindex="1"
+        autocapitalize="off">
+    </label>
+</form></div>
+
+        </nav>
+    </div>
+  </div>
+</header>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fkliment%2FPrintrun"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+    Watch
+  </a>
+  <a class="social-count" href="https://github.com/kliment/Printrun/watchers">
+    148
+  </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fkliment%2FPrintrun"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="https://github.com/kliment/Printrun/stargazers">
+      834
+    </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2Fkliment%2FPrintrun"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M8 1c-1.11 0-2 0.89-2 2 0 0.73 0.41 1.38 1 1.72v1.28L5 8 3 6v-1.28c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v1.78l3 3v1.78c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V9.5l3-3V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2zM2 4.2c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3 10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3-10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+        Fork
+      </a>
+
+    <a href="https://github.com/kliment/Printrun/network" class="social-count">
+      522
+    </a>
+  </li>
+</ul>
+
+    <h1 class="entry-title public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a href="https://github.com/kliment" class="url fn" rel="author">kliment</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="https://github.com/kliment/Printrun" data-pjax="#js-repo-pjax-container">Printrun</a></strong>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/kliment/Printrun" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /kliment/Printrun" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M9.5 3l-1.5 1.5 3.5 3.5L8 11.5l1.5 1.5 4.5-5L9.5 3zM4.5 3L0 8l4.5 5 1.5-1.5L2.5 8l3.5-3.5L4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="https://github.com/kliment/Printrun/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /kliment/Printrun/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7S10.14 13.7 7 13.7 1.3 11.14 1.3 8s2.56-5.7 5.7-5.7m0-1.3C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7S10.86 1 7 1z m1 3H6v5h2V4z m0 6H6v2h2V10z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">122</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/kliment/Printrun/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /kliment/Printrun/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 11.28c0-1.73 0-6.28 0-6.28-0.03-0.78-0.34-1.47-0.94-2.06s-1.28-0.91-2.06-0.94c0 0-1.02 0-1 0V0L4 3l3 3V4h1c0.27 0.02 0.48 0.11 0.69 0.31s0.3 0.42 0.31 0.69v6.28c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72z m-1 2.92c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2zM4 3c0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72 0 1.55 0 5.56 0 6.56-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V4.72c0.59-0.34 1-0.98 1-1.72z m-0.8 10c0 0.66-0.55 1.2-1.2 1.2s-1.2-0.55-1.2-1.2 0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2z m-1.2-8.8c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">4</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+
+  <a href="https://github.com/kliment/Printrun/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /kliment/Printrun/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0V10h3.6L4.5 8.2l0.9 5.4L9 8.5l1.6 1.5H14V8H11.5z"></path></svg>
+    Pulse
+</a>
+  <a href="https://github.com/kliment/Printrun/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /kliment/Printrun/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M16 14v1H0V0h1v14h15z m-11-1H3V8h2v5z m4 0H7V3h2v10z m4 0H11V6h2v7z"></path></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+<div class="repository-meta js-details-container">
+  <span class="repository-meta-content">
+        <span itemprop="about"> Pronterface, Pronsole, and Printcore - Pure Python 3d printing host software</span>
+  </span>
+
+</div>
+
+
+<div class="overall-summary overall-summary-bottomless">
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+    <div class="stats-switcher-wrapper">
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax href="https://github.com/kliment/Printrun/commits/master">
+            <svg aria-hidden="true" class="octicon octicon-history" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M8 13H6V6h5v2H8v5zM7 1c-2.19 0-4.13 1.02-5.41 2.59L0 2v4h4l-1.5-1.5c1.05-1.33 2.67-2.2 4.5-2.2 3.14 0 5.7 2.56 5.7 5.7S10.14 13.7 7 13.7 1.3 11.14 1.3 8c0-0.34 0.03-0.67 0.09-1H0.08c-0.05 0.33-0.08 0.66-0.08 1 0 3.86 3.14 7 7 7s7-3.14 7-7S10.86 1 7 1z"></path></svg>
+            <span class="num text-emphasized">
+              2,444
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax href="https://github.com/kliment/Printrun/branches">
+          <svg aria-hidden="true" class="octicon octicon-git-branch" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M10 5c0-1.11-0.89-2-2-2s-2 0.89-2 2c0 0.73 0.41 1.38 1 1.72v0.3c-0.02 0.52-0.23 0.98-0.63 1.38s-0.86 0.61-1.38 0.63c-0.83 0.02-1.48 0.16-2 0.45V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v6.56C0.41 11.63 0 12.27 0 13c0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.53-0.2-1-0.53-1.36 0.09-0.06 0.48-0.41 0.59-0.47 0.25-0.11 0.56-0.17 0.94-0.17 1.05-0.05 1.95-0.45 2.75-1.25s1.2-1.98 1.25-3.02h-0.02c0.61-0.36 1.02-1 1.02-1.73zM2 1.8c0.66 0 1.2 0.55 1.2 1.2s-0.55 1.2-1.2 1.2-1.2-0.55-1.2-1.2 0.55-1.2 1.2-1.2z m0 12.41c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m6-8c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+          <span class="num text-emphasized">
+            4
+          </span>
+          branches
+        </a>
+      </li>
+
+      <li>
+        <a data-pjax href="https://github.com/kliment/Printrun/releases">
+          <svg aria-hidden="true" class="octicon octicon-tag" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M6.73 2.73c-0.47-0.47-1.11-0.73-1.77-0.73H2.5C1.13 2 0 3.13 0 4.5v2.47c0 0.66 0.27 1.3 0.73 1.77l6.06 6.06c0.39 0.39 1.02 0.39 1.41 0l4.59-4.59c0.39-0.39 0.39-1.02 0-1.41L6.73 2.73zM1.38 8.09c-0.31-0.3-0.47-0.7-0.47-1.13V4.5c0-0.88 0.72-1.59 1.59-1.59h2.47c0.42 0 0.83 0.16 1.13 0.47l6.14 6.13-4.73 4.73L1.38 8.09z m0.63-4.09h2v2H2V4z"></path></svg>
+          <span class="num text-emphasized">
+            9
+          </span>
+          releases
+        </a>
+      </li>
+
+      <li>
+          <a href="https://github.com/kliment/Printrun/graphs/contributors">
+  <svg aria-hidden="true" class="octicon octicon-organization" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M4.75 4.95c0.55 0.64 1.34 1.05 2.25 1.05s1.7-0.41 2.25-1.05c0.34 0.63 1 1.05 1.75 1.05 1.11 0 2-0.89 2-2s-0.89-2-2-2c-0.41 0-0.77 0.13-1.08 0.33C9.61 1 8.42 0 7 0S4.39 1 4.08 2.33c-0.31-0.2-0.67-0.33-1.08-0.33-1.11 0-2 0.89-2 2s0.89 2 2 2c0.75 0 1.41-0.42 1.75-1.05z m5.2-1.52c0.2-0.38 0.59-0.64 1.05-0.64 0.66 0 1.2 0.55 1.2 1.2s-0.55 1.2-1.2 1.2-1.17-0.53-1.19-1.17c0.06-0.19 0.11-0.39 0.14-0.59zM7 0.98c1.11 0 2.02 0.91 2.02 2.02s-0.91 2.02-2.02 2.02-2.02-0.91-2.02-2.02S5.89 0.98 7 0.98zM3 5.2c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2c0.45 0 0.84 0.27 1.05 0.64 0.03 0.2 0.08 0.41 0.14 0.59-0.02 0.64-0.53 1.17-1.19 1.17z m10 0.8H1c-0.55 0-1 0.45-1 1v3c0 0.55 0.45 1 1 1v2c0 0.55 0.45 1 1 1h1c0.55 0 1-0.45 1-1v-1h1v3c0 0.55 0.45 1 1 1h2c0.55 0 1-0.45 1-1V12h1v1c0 0.55 0.45 1 1 1h1c0.55 0 1-0.45 1-1V11c0.55 0 1-0.45 1-1V7c0-0.55-0.45-1-1-1zM3 13h-1V10H1V7h2v6z m7-2h-1V9h-1v6H6V9h-1v2h-1V7h6v4z m3-1h-1v3h-1V7h2v3z"></path></svg>
+    <span class="num text-emphasized">
+      71
+    </span>
+    contributors
+</a>
+
+      </li>
+    </ul>
+
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="https://github.com/kliment/Printrun/search?l=python"  data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#3572A5;"></span>
+                <span class="lang">Python</span>
+                <span class="percent">99.8%</span>
+              </a>
+          </li>
+          <li>
+              <span class="other">
+                <span class="color-block language-color" style="background-color:#ededed;"></span>
+                <span class="lang">Other</span>
+                <span class="percent">0.2%</span>
+              </span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details" data-ga-click="Repository, language bar stats toggle, location:repo overview">
+    <span class="language-color" aria-label="Python 99.8%" style="width:99.8%; background-color:#3572A5;" itemprop="keywords">Python</span>
+    <span class="language-color" aria-label="Other 0.2%" style="width:0.2%; background-color:#ededed;" itemprop="keywords">Other</span>
+  </div>
+
+
+  <div class="file-navigation in-mid-page">
+  <div class="right">
+    <div class="btn-group">
+      
+  <button class="btn btn-sm disabled tooltipped tooltipped-n" aria-label="You must be signed in to make or propose changes" type="button">
+      New file
+  </button>
+
+
+
+      <a href="https://github.com/kliment/Printrun/find/master"
+        class="btn btn-sm empty-icon right js-pjax-capture-input"
+        data-pjax
+        data-hotkey="t"
+        data-ga-click="Repository, find file, location:repo overview">
+        Find file
+      </a>
+    </div>
+      <div class="file-navigation-options" data-multiple>
+
+        <div class="file-navigation-option">
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/users/set_protocol" class="js-set-user-protocol-preference" data-form-nonce="d6013ef313dc33a770980c6e66b5cb1d7130dd9d" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="qVUO7ecQGnhbETQkMkbTccup9hXpLNPkEER86l+6bYrF3tLPly3xbqg1lWYKXWFGwjiPC8LCMpMe72uNZBJVbQ==" /></div>
+            <input type="hidden" name="protocol_type" value="clone">
+
+            <div class="select-menu js-menu-container js-select-menu">
+              <div class="input-group js-select-button js-zeroclipboard-container">
+                <div class="input-group-button">
+  <button type="button" class="btn btn-sm select-menu-button js-menu-target" data-ga-click="Repository, clone HTTPS, location:repo overview">
+    HTTPS
+  </button>
+</div>
+<input type="text" class="form-control input-monospace input-sm js-zeroclipboard-target js-url-field" value="https://github.com/kliment/Printrun.git" aria-label="Clone this repository at https://github.com/kliment/Printrun.git" readonly>
+<div class="input-group-button">
+  <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M2 12h4v1H2v-1z m5-6H2v1h5v-1z m2 3V7L6 10l3 3V11h5V9H9z m-4.5-1H2v1h2.5v-1zM2 11h2.5v-1H2v1z m9 1h1v2c-0.02 0.28-0.11 0.52-0.3 0.7s-0.42 0.28-0.7 0.3H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h3C4 0.89 4.89 0 6 0s2 0.89 2 2h3c0.55 0 1 0.45 1 1v5h-1V5H1v9h10V12zM2 4h8c0-0.55-0.45-1-1-1h-1c-0.55 0-1-0.45-1-1s-0.45-1-1-1-1 0.45-1 1-0.45 1-1 1h-1c-0.55 0-1 0.45-1 1z"></path></svg></button>
+</div>
+
+              </div>
+
+              <div class="select-menu-modal-holder">
+                <div class="select-menu-modal js-menu-content" aria-hidden="true">
+                  <div class="select-menu-header">
+                    <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+                    <span class="select-menu-title">Choose a clone URL</span>
+                  </div>
+
+                  <div class="select-menu-list js-navigation-container" role="menu">
+                      <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                        <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+                        <div class="select-menu-item-text">
+                          <input type="radio" name="protocol_selector" value="http" checked>
+                          <span class="select-menu-item-heading">
+                            HTTPS
+                            (recommended)
+                          </span>
+                            <span class="description">
+                              Clone with Git or checkout with SVN using the repository's web address.
+                            </span>
+                          <span class="js-select-button-text hidden-select-button-text">
+                            <div class="input-group-button">
+  <button type="button" class="btn btn-sm select-menu-button js-menu-target" data-ga-click="Repository, clone HTTPS, location:repo overview">
+    HTTPS
+  </button>
+</div>
+<input type="text" class="form-control input-monospace input-sm js-zeroclipboard-target js-url-field" value="https://github.com/kliment/Printrun.git" aria-label="Clone this repository at https://github.com/kliment/Printrun.git" readonly>
+<div class="input-group-button">
+  <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M2 12h4v1H2v-1z m5-6H2v1h5v-1z m2 3V7L6 10l3 3V11h5V9H9z m-4.5-1H2v1h2.5v-1zM2 11h2.5v-1H2v1z m9 1h1v2c-0.02 0.28-0.11 0.52-0.3 0.7s-0.42 0.28-0.7 0.3H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h3C4 0.89 4.89 0 6 0s2 0.89 2 2h3c0.55 0 1 0.45 1 1v5h-1V5H1v9h10V12zM2 4h8c0-0.55-0.45-1-1-1h-1c-0.55 0-1-0.45-1-1s-0.45-1-1-1-1 0.45-1 1-0.45 1-1 1h-1c-0.55 0-1 0.45-1 1z"></path></svg></button>
+</div>
+
+                          </span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="select-menu-list" role="menu">
+                    <a class="select-menu-item select-menu-action" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank">
+                      <svg aria-hidden="true" class="octicon octicon-question select-menu-item-icon" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M6 10h2v2H6V10z m4-3.5c0 2.14-2 2.5-2 2.5H6c0-0.55 0.45-1 1-1h0.5c0.28 0 0.5-0.22 0.5-0.5v-1c0-0.28-0.22-0.5-0.5-0.5h-1c-0.28 0-0.5 0.22-0.5 0.5v0.5H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7S10.14 13.7 7 13.7 1.3 11.14 1.3 8s2.56-5.7 5.7-5.7m0-1.3C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7S10.86 1 7 1z"></path></svg>
+                      <div class="select-menu-item-text">
+                        Learn more about clone URLs
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+</form>        </div>
+
+        <div class="file-navigation-option">
+</div>
+
+
+        <div class="file-navigation-option">
+          <a href="https://github.com/kliment/Printrun/archive/master.zip"
+             class="btn btn-sm"
+             rel="nofollow"
+             data-ga-click="Repository, download zip, location:repo overview">
+            Download ZIP
+          </a>
+        </div>
+      </div>
+  </div>
+
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    title="master"
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="https://github.com/kliment/Printrun/tree/gh-pages"
+               data-name="gh-pages"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="gh-pages">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="https://github.com/kliment/Printrun/tree/master"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="master">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="https://github.com/kliment/Printrun/tree/py3"
+               data-name="py3"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="py3">
+                py3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="https://github.com/kliment/Printrun/tree/stable"
+               data-name="stable"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="stable">
+                stable
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="https://github.com/kliment/Printrun/tree/printrun-20150310"
+              data-name="printrun-20150310"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="printrun-20150310">
+                printrun-20150310
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="https://github.com/kliment/Printrun/tree/printrun-20140801"
+              data-name="printrun-20140801"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="printrun-20140801">
+                printrun-20140801
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="https://github.com/kliment/Printrun/tree/printrun-20140730"
+              data-name="printrun-20140730"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="printrun-20140730">
+                printrun-20140730
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="https://github.com/kliment/Printrun/tree/printrun-20140406"
+              data-name="printrun-20140406"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="printrun-20140406">
+                printrun-20140406
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="https://github.com/kliment/Printrun/tree/printrun-20140328"
+              data-name="printrun-20140328"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="printrun-20140328">
+                printrun-20140328
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="https://github.com/kliment/Printrun/tree/printrun-20140126"
+              data-name="printrun-20140126"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="printrun-20140126">
+                printrun-20140126
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="https://github.com/kliment/Printrun/tree/printrun-20131019"
+              data-name="printrun-20131019"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="printrun-20131019">
+                printrun-20131019
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="https://github.com/kliment/Printrun/tree/printrun-20130711"
+              data-name="printrun-20130711"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="printrun-20130711">
+                printrun-20130711
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="https://github.com/kliment/Printrun/tree/printrun-20130604"
+              data-name="printrun-20130604"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="printrun-20130604">
+                printrun-20130604
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+      <button type="button" class="btn btn-sm btn-primary disabled tooltipped tooltipped-n new-pull-request-btn" aria-label="You must be signed in to create a pull request">
+        New pull request
+      </button>
+
+  <div class="breadcrumb">
+    
+  </div>
+</div>
+
+
+
+
+
+  <div class="commit-tease js-details-container">
+    <span class="right">
+      Latest commit
+      <a class="commit-tease-sha" href="https://github.com/kliment/Printrun/commit/0657d73f82f02121772c0341fb5199381c7199d5" data-pjax>
+        0657d73
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2016-05-07T08:36:10Z">May 7, 2016</relative-time></span>
+    </span>
+
+
+    <span class="commit-author-section">
+      <img alt="@iXce" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/1085885?v=3&amp;s=40" width="20" />
+      <a href="https://github.com/iXce" class="user-mention" rel="contributor">iXce</a>
+    </span>
+
+        <a href="https://github.com/kliment/Printrun/commit/0657d73f82f02121772c0341fb5199381c7199d5" class="message" data-pjax="true" title="Merge pull request #744 from diametric/cmdlineopts
+
+Restore command line arguments pass-thru.">Merge pull request</a> <a href="https://github.com/kliment/Printrun/pull/744" class="issue-link js-issue-link" data-url="https://github.com/kliment/Printrun/issues/744" data-id="153572309" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#744</a> <a href="https://github.com/kliment/Printrun/commit/0657d73f82f02121772c0341fb5199381c7199d5" class="message" data-pjax="true" title="Merge pull request #744 from diametric/cmdlineopts
+
+Restore command line arguments pass-thru.">from diametric/cmdlineopts</a>
+          <span class="hidden-text-expander inline">
+            <button type="button" class="ellipsis-expander js-details-target">&hellip;</button>
+          </span>
+    </span>
+
+      <div class="commit-desc"><pre class="text-small">Restore command line arguments pass-thru.</pre></div>
+  </div>
+
+
+<div class="file-wrap">
+
+  <a href="https://github.com/kliment/Printrun/tree/0657d73f82f02121772c0341fb5199381c7199d5" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 4H7v-1c0-0.66-0.31-1-1-1H1c-0.55 0-1 0.45-1 1v10c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V5c0-0.55-0.45-1-1-1z m-7 0H1v-1h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/tree/master/images" class="js-navigation-open" id="59b514174bffe4ae402b3d63aad79fe0-a5b9edb46c57af6daab9b88b69307cc27297ef4e" title="images">images</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/104948d6ca14a58c7cbdc972fab3ab9c81036e15" class="message" data-pjax="true" title="Also update mini controls">Also update mini controls</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-10-16T14:16:39Z">Oct 16, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 4H7v-1c0-0.66-0.31-1-1-1H1c-0.55 0-1 0.45-1 1v10c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V5c0-0.55-0.45-1-1-1z m-7 0H1v-1h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/tree/master/locale" class="js-navigation-open" id="fb216d9e8791e63c8d12bdc420956839-7aeff50193a4fce09f5ce4fe50f21e4b692ed842" title="locale">locale</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/bd896e916aec76b624b054a9449e96b7da0d4d6f" class="message" data-pjax="true" title="Restore plater.pot that was accidentally renamed by a translator">Restore plater.pot that was accidentally renamed by a translator</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-04-21T17:11:12Z">Apr 21, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 4H7v-1c0-0.66-0.31-1-1-1H1c-0.55 0-1 0.45-1 1v10c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V5c0-0.55-0.45-1-1-1z m-7 0H1v-1h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/tree/master/printrun" class="js-navigation-open" id="feba237ce256e9b88d62900ee24685ef-607b794002bac49c38c48be8a0b075569d0a47fe" title="printrun">printrun</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/de535f11b38b254ce3a71cbe8a04413e582501dd" class="message" data-pjax="true" title="When multiple extruders are used, report material use for each extruder">When multiple extruders are used, report material use for each extruder</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-04-30T12:41:15Z">Apr 30, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 4H7v-1c0-0.66-0.31-1-1-1H1c-0.55 0-1 0.45-1 1v10c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V5c0-0.55-0.45-1-1-1z m-7 0H1v-1h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/tree/master/screenshots" class="js-navigation-open" id="4b3cdc4cb815dfa317ae58526612f4b8-dae29d9cb9e78ffbd2ca7a982b76826babba0af5" title="screenshots">screenshots</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/0c3570fbb32686a02b2acd567ccc297b952a6cdd" class="message" data-pjax="true" title="Add Pronsole AppData file and screenshot">Add Pronsole AppData file and screenshot</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2013-12-27T19:33:37Z">Dec 27, 2013</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 4H7v-1c0-0.66-0.31-1-1-1H1c-0.55 0-1 0.45-1 1v10c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V5c0-0.55-0.45-1-1-1z m-7 0H1v-1h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/tree/master/testfiles" class="js-navigation-open" id="1f8520a7bcb78ad0895b3688e28002b3-979e67e763ca962198460bb9261689066fdf00a7" title="testfiles">testfiles</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/7360540cab740eba2688fed8e49caaecdb27cf80" class="message" data-pjax="true" title="Import testfiles/grid.svg">Import testfiles/grid.svg</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2013-05-30T13:23:52Z">May 30, 2013</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 4H7v-1c0-0.66-0.31-1-1-1H1c-0.55 0-1 0.45-1 1v10c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V5c0-0.55-0.45-1-1-1z m-7 0H1v-1h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/tree/master/testtools" class="js-navigation-open" id="690d68206c8aba20c4896a61528b6cd0-a4a2c74b14c8d3329faabcb3bfcf2e0a1fa218fa" title="testtools">testtools</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/ad4acb5073d24fe8bba2c05fd82c2668ea9c636d" class="message" data-pjax="true" title="Fix sys.path trick in gcodeviewer.py">Fix sys.path trick in gcodeviewer.py</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2013-08-08T21:40:12Z">Aug 8, 2013</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/.gitignore" class="js-navigation-open" id="a084b794bc0759e7a6b77810e01874f2-ecb3bfd79df7fe60072692bff161d0f7a7b765a5" title=".gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/b505dca06a497f0509a8b4ebb6753629ae251c6e" class="message" data-pjax="true" title="Update .gitignore">Update .gitignore</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-26T10:34:37Z">Mar 26, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/COPYING" class="js-navigation-open" id="7116ef0705885343c9e1b2171a06be0e-94a9ed024d3859793618152ea559a168bbcbb5e2" itemprop="license" title="COPYING">COPYING</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/fa9ec49858987adcd59212806f9c49e9cff8d698" class="message" data-pjax="true" title="Added the GNU GPL text as the licese itselfs demands.">Added the GNU GPL text as the licese itselfs demands.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2012-09-23T23:01:21Z">Sep 24, 2012</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/NEWS.md" class="js-navigation-open" id="8312ad0561ef661716b48d09478362f3-d0182135e757b26babe14c700196eec1e0790833" title="NEWS.md">NEWS.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/06d131ec79acdcb587ce9b04ad14dd57fb0218ce" class="message" data-pjax="true" title="Add NEWS.md">Add NEWS.md</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-04-06T16:51:58Z">Apr 6, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/README.cleanup" class="js-navigation-open" id="01ed8edf011efe641b5e6dc224590afa-0f9d8db60c6d12b8e55275f7238fa24673f9d7bc" title="README.cleanup">README.cleanup</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/0259f299892b31eca5b7208fa8054a6dc85d91cb" class="message" data-pjax="true" title="flake8 cleanup on projectlayer">flake8 cleanup on projectlayer</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-04-03T09:15:59Z">Apr 3, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/README.i18n" class="js-navigation-open" id="6a1b8580647de371b30a596e15230b8f-964bac7860075d6d9b7d5be39bccbbacc1683339" title="README.i18n">README.i18n</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/5f87709f30c29608f70f6123d8986f49cb45c5e3" class="message" data-pjax="true" title="Update po &amp; pot files, update README.i18n">Update po &amp; pot files, update README.i18n</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-30T12:38:56Z">Mar 30, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/README.md" class="js-navigation-open" id="04c6e90faac2675aa89e2176d2eec7d8-2abb613c3d53dd8c9d56f703307617f79b43309a" title="README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/1a65c0dca0b413fb90696f7b27389da5f3f6fdb4" class="message" data-pjax="true" title="README: yet another Python module">README: yet another Python module</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-02-21T13:29:20Z">Feb 21, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/TODO" class="js-navigation-open" id="b7b1e314614cf326c6e2b6eba1540682-a076cd4f13bf32858e1c7bcfb2b8f72b79b90e84" title="TODO">TODO</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/ff8e57df89df9a617436ecc1a789520f8ff4f27e" class="message" data-pjax="true" title="Update TODO list">Update TODO list</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2013-11-07T20:06:46Z">Nov 7, 2013</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/auth.config" class="js-navigation-open" id="e2fab4b5491a7b3d13309146773c75f5-17a02cf543dca039a907213d732e777c83c4e4dd" title="auth.config">auth.config</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/9692593f5ef8f36a24bff511341236b93db8be62" class="message" data-pjax="true" title="Added Authentication and updated status xml format">Added Authentication and updated status xml format</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2012-05-31T17:26:14Z">May 31, 2012</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/calibrateextruder.py" class="js-navigation-open" id="0b4d2c05a223f027421b534cd24fb113-c3d5349ea60fecb9f1bc78ea710c62d56d144664" title="calibrateextruder.py">calibrateextruder.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/d6bd9e75bde71c70bbc3cc82b6b7671ad497f61a" class="message" data-pjax="true" title="Flake8 cleanup">Flake8 cleanup</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-04-03T09:04:22Z">Apr 3, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/custombtn.txt" class="js-navigation-open" id="733fb1ee2bf459e51d8c1d159cbb01a8-bc56492bf8befa283395585f8d3e20a6b34696a1" title="custombtn.txt">custombtn.txt</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/8078f72a70b80d419ec23a58d21294e5a973fe4d" class="message" data-pjax="true" title="Move monitor checkbox, add M84 and M105 buttons, make more space for custom buttons on top">Move monitor checkbox, add M84 and M105 buttons, make more space for …</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2011-06-30T07:09:53Z">Jun 30, 2011</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/dot.pronsolerc.example" class="js-navigation-open" id="74504f327cb05fcfb9c68eccf47b6af8-59cff0a1b6c66084007756c7840511d55882f04d" title="dot.pronsolerc.example">dot.pronsolerc.example</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/24e2fa936c87ac41d3feb62907d3022d6d7356f2" class="message" data-pjax="true" title="Remove the &quot;loud&quot; macro from the .pronsolerc example.
+
+As this is now part of the standard interface, it&#39;s pointless
+to list it as possible extension code.">Remove the "loud" macro from the .pronsolerc example.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2012-08-13T14:36:43Z">Aug 13, 2012</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/gcodeplater.py" class="js-navigation-open" id="66422258e9808a7e02d16ad6967545ec-0e30969cebe1fab544bdab770e3494b8007976c0" title="gcodeplater.py">gcodeplater.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/0301ad792bab2b2f31504236279528a514547070" class="message" data-pjax="true" title='Fix #534: add a "Tabbed with platers" mode'>Fix</a> <a href="https://github.com/kliment/Printrun/issues/534" class="issue-link js-issue-link" data-url="https://github.com/kliment/Printrun/issues/534" data-id="33117326" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#534</a><a href="https://github.com/kliment/Printrun/commit/0301ad792bab2b2f31504236279528a514547070" class="message" data-pjax="true" title='Fix #534: add a "Tabbed with platers" mode'>: add a "Tabbed with platers" mode</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-10-22T21:05:29Z">Oct 22, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/plater.appdata.xml" class="js-navigation-open" id="f83a1dd83c2989740a8f037dcb44c130-8cb300b2c515122ac0eab9c6a57369a590605dd7" title="plater.appdata.xml">plater.appdata.xml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/ad5e172d2d0d7eceea4c7a6048859b50be88489b" class="message" data-pjax="true" title="Add Plater AppData file and screenshot">Add Plater AppData file and screenshot</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2013-12-27T19:25:54Z">Dec 27, 2013</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/plater.desktop" class="js-navigation-open" id="140fcf835dc664c8302402155f6ddbec-d858f1c48120333966101a6251fa722ded415b73" title="plater.desktop">plater.desktop</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/039806c72155ebc98778c2bcfb867993d6d60957" class="message" data-pjax="true" title="Use and install PNG icons instead of ICO, rename P-face to pronterface
+ * PNG icons are smaller and there is no advantage in ICO files containing only one resolution
+ * It&#39;s coomon to name the icon after the app">Use and install PNG icons instead of ICO, rename P-face to pronterface</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-19T17:02:08Z">Mar 19, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/plater.ico" class="js-navigation-open" id="03a68617879a29b9ce7aba55975b0701-47ed4faeb585d31d2b2c7495983b4bf363447899" title="plater.ico">plater.ico</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/fe29da5bbeeb6627c1959cd2cc660d5aad9365ee" class="message" data-pjax="true" title="Add icons for plater and pronsole">Add icons for plater and pronsole</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2011-08-02T15:44:13Z">Aug 2, 2011</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/plater.png" class="js-navigation-open" id="a067eaac231340cb50f35508e39fb98c-a4ef9e5e121e6056981b46c5031917905cfddbce" title="plater.png">plater.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/b0cb2b07811a5428257bdf09189fd517131430ea" class="message" data-pjax="true" title="Added icon files ad PNGs.">Added icon files ad PNGs.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2013-02-17T21:11:01Z">Feb 17, 2013</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/plater.py" class="js-navigation-open" id="e0c5e3900e37ae327bc831a2a3409758-854a872432bc8327e1f1836034923cab009490b0" title="plater.py">plater.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/3ef393e94c3516ade8e20c539441c274649f538f" class="message" data-pjax="true" title="Add or fix help messages for main scripts">Add or fix help messages for main scripts</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-03-13T10:21:56Z">Mar 13, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/printcore.py" class="js-navigation-open" id="706ae5bd7b9ba88046f39ea466701348-8a5998ff27a760b348e48bbf88568eb83354c58d" title="printcore.py">printcore.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/3ef393e94c3516ade8e20c539441c274649f538f" class="message" data-pjax="true" title="Add or fix help messages for main scripts">Add or fix help messages for main scripts</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-03-13T10:21:56Z">Mar 13, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/pronsole.appdata.xml" class="js-navigation-open" id="767bc752784436d7fcb50c2c19f298c8-0052f6188d1da1c77736d0ea13872d0e0bcd24bf" title="pronsole.appdata.xml">pronsole.appdata.xml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/0c3570fbb32686a02b2acd567ccc297b952a6cdd" class="message" data-pjax="true" title="Add Pronsole AppData file and screenshot">Add Pronsole AppData file and screenshot</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2013-12-27T19:33:37Z">Dec 27, 2013</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/pronsole.desktop" class="js-navigation-open" id="502b5f6d985b325d26f19ec51160c846-e6c636188920c65b821b20276c5435aa4f50a7ba" title="pronsole.desktop">pronsole.desktop</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/039806c72155ebc98778c2bcfb867993d6d60957" class="message" data-pjax="true" title="Use and install PNG icons instead of ICO, rename P-face to pronterface
+ * PNG icons are smaller and there is no advantage in ICO files containing only one resolution
+ * It&#39;s coomon to name the icon after the app">Use and install PNG icons instead of ICO, rename P-face to pronterface</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-19T17:02:08Z">Mar 19, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/pronsole.ico" class="js-navigation-open" id="5d3e85165b9ddc151be50cd2d6c60631-96a991da3e99c98cf634a7010a6da4aaac894ad9" title="pronsole.ico">pronsole.ico</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/fe29da5bbeeb6627c1959cd2cc660d5aad9365ee" class="message" data-pjax="true" title="Add icons for plater and pronsole">Add icons for plater and pronsole</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2011-08-02T15:44:13Z">Aug 2, 2011</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/pronsole.png" class="js-navigation-open" id="13de15108e1b71cf8ece7a641abaddef-d0c745d6153ec7d9457079c93904731d65d509d5" title="pronsole.png">pronsole.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/b0cb2b07811a5428257bdf09189fd517131430ea" class="message" data-pjax="true" title="Added icon files ad PNGs.">Added icon files ad PNGs.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2013-02-17T21:11:01Z">Feb 17, 2013</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/pronsole.py" class="js-navigation-open" id="91abb243c2c0503e565587a986dd0779-fc8fb48e4b1f8874ece354dc6f62bd0202d6b36a" title="pronsole.py">pronsole.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/3ef393e94c3516ade8e20c539441c274649f538f" class="message" data-pjax="true" title="Add or fix help messages for main scripts">Add or fix help messages for main scripts</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-03-13T10:21:56Z">Mar 13, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/pronterface.appdata.xml" class="js-navigation-open" id="505698176dec89e2978d6158b5003064-59a25f57bbc4b5245bba8ee3385d1c85385c105f" title="pronterface.appdata.xml">pronterface.appdata.xml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/88d7aca0750464e310437dc1c1065287c527e203" class="message" data-pjax="true" title="Add Pronterface AppData file and screenshots">Add Pronterface AppData file and screenshots</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2013-12-27T19:25:14Z">Dec 27, 2013</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/pronterface.desktop" class="js-navigation-open" id="b17943594865145d2787a3e1c4e10fdd-e9bd5b73d7ccff2984da4e03fb48aea3a3cbad81" title="pronterface.desktop">pronterface.desktop</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/039806c72155ebc98778c2bcfb867993d6d60957" class="message" data-pjax="true" title="Use and install PNG icons instead of ICO, rename P-face to pronterface
+ * PNG icons are smaller and there is no advantage in ICO files containing only one resolution
+ * It&#39;s coomon to name the icon after the app">Use and install PNG icons instead of ICO, rename P-face to pronterface</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-19T17:02:08Z">Mar 19, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/pronterface.ico" class="js-navigation-open" id="b51b16050edc2d925deab5cf0d4a1b91-5ef74fc7b1b149abb25c71526c9e860fc99967b9" title="pronterface.ico">pronterface.ico</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/039806c72155ebc98778c2bcfb867993d6d60957" class="message" data-pjax="true" title="Use and install PNG icons instead of ICO, rename P-face to pronterface
+ * PNG icons are smaller and there is no advantage in ICO files containing only one resolution
+ * It&#39;s coomon to name the icon after the app">Use and install PNG icons instead of ICO, rename P-face to pronterface</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-19T17:02:08Z">Mar 19, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/pronterface.png" class="js-navigation-open" id="9da7e14831e28d9b6b3581fbf19b4ce2-1adcb1400fe3a13bb9db8d59c9dc8f0c67174e08" title="pronterface.png">pronterface.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/039806c72155ebc98778c2bcfb867993d6d60957" class="message" data-pjax="true" title="Use and install PNG icons instead of ICO, rename P-face to pronterface
+ * PNG icons are smaller and there is no advantage in ICO files containing only one resolution
+ * It&#39;s coomon to name the icon after the app">Use and install PNG icons instead of ICO, rename P-face to pronterface</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-19T17:02:08Z">Mar 19, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/pronterface.py" class="js-navigation-open" id="6dda1096074585e2f2fd697aaf2c037a-ce993c23774d3db3d311f1db2b6dc37fa8af548f" title="pronterface.py">pronterface.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/500b76afd4dc51dd371569ec6bef9dedda9d34d1" class="message" data-pjax="true" title="Restored command line arguments lost in commit 3ef393e94c3516ade8e20c539441c274649f538f.">Restored command line arguments lost in commit</a> <a href="https://github.com/kliment/Printrun/commit/3ef393e94c3516ade8e20c539441c274649f538f" class="commit-link"><tt>3ef393e</tt></a><a href="https://github.com/kliment/Printrun/commit/500b76afd4dc51dd371569ec6bef9dedda9d34d1" class="message" data-pjax="true" title="Restored command line arguments lost in commit 3ef393e94c3516ade8e20c539441c274649f538f.">.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-05-07T04:09:10Z">May 7, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/release_windows.bat" class="js-navigation-open" id="a387e47265f96773944e9b2d18a40278-bf3c7546ced8ffaca1fb9c132e8700e71282363e" title="release_windows.bat">release_windows.bat</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/065300f0e65bb81add8af9ce79306987c9bc2334" class="message" data-pjax="true" title="Import release scripts for Windows from Kliment">Import release scripts for Windows from Kliment</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-20T18:56:28Z">Mar 20, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/requirements.txt" class="js-navigation-open" id="b4ef698db8ca845e5845c4618278f29a-4ba8d9d838aa45620146144ef677642c95bc0033" title="requirements.txt">requirements.txt</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/f9980b9f0ceaa9ff1ac737994b0c967c34d0346e" class="message" data-pjax="true" title="Add psutil&gt;=2.0 to requirements.txt">Add psutil&gt;=2.0 to requirements.txt</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-27T23:08:49Z">Mar 28, 2014</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/setup.py" class="js-navigation-open" id="2eeaed663bd0d25b7e608891384b7298-d8df37f637da3f546619dd79d5b5681376ee136e" title="setup.py">setup.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/f443224efab2345d05b8e07e685563885da2e454" class="message" data-pjax="true" title="setup typo
+
+Fix ValueError path cannot end with / on Windows">setup typo</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-11-04T07:12:16Z">Nov 4, 2015</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/kliment/Printrun/blob/master/setup_win.py" class="js-navigation-open" id="2c9c3f17921c6284d09c0068abd1b871-375a2bf1ce5465205eed8410ee47281ac25e839c" title="setup_win.py">setup_win.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/kliment/Printrun/commit/065300f0e65bb81add8af9ce79306987c9bc2334" class="message" data-pjax="true" title="Import release scripts for Windows from Kliment">Import release scripts for Windows from Kliment</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2014-03-20T18:56:28Z">Mar 20, 2014</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+    <h3>
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M2 5h4v1H2v-1z m0 3h4v-1H2v1z m0 2h4v-1H2v1z m11-5H9v1h4v-1z m0 2H9v1h4v-1z m0 2H9v1h4v-1z m2-6v9c0 0.55-0.45 1-1 1H8.5l-1 1-1-1H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h5.5l1 1 1-1h5.5c0.55 0 1 0.45 1 1z m-8 0.5l-0.5-0.5H1v9h6V3.5z m7-0.5H8.5l-0.5 0.5v8.5h6V3z"></path></svg>
+      README.md
+    </h3>
+
+      <article class="markdown-body entry-content" itemprop="text"><p>Printrun consists of printcore, pronsole and pronterface, and a small collection of helpful scripts.</p>
+
+<ul>
+<li>printcore.py is a library that makes writing reprap hosts easy</li>
+<li>pronsole.py is an interactive command-line host software with tabcompletion goodness</li>
+<li>pronterface.py is a graphical host software with the same functionality as pronsole</li>
+</ul>
+
+<h1><a id="user-content-getting-printrun" class="anchor" href="#getting-printrun" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>GETTING PRINTRUN</h1>
+
+<p>This section suggests using precompiled binaries, this way you get everything bundled into one single package for an easy installation.</p>
+
+<p>If you want the newest, shiniest features, you can run Printrun from source using the instructions further down this README.</p>
+
+<h2><a id="user-content-windows" class="anchor" href="#windows" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Windows</h2>
+
+<p>A precompiled version is available at <a href="http://koti.kapsi.fi/~kliment/printrun/">http://koti.kapsi.fi/~kliment/printrun/</a></p>
+
+<h2><a id="user-content-mac-os-x" class="anchor" href="#mac-os-x" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Mac OS X</h2>
+
+<p>A precompiled version is available at <a href="http://koti.kapsi.fi/~kliment/printrun/">http://koti.kapsi.fi/~kliment/printrun/</a></p>
+
+<h2><a id="user-content-linux" class="anchor" href="#linux" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Linux</h2>
+
+<h3><a id="user-content-ubuntudebian" class="anchor" href="#ubuntudebian" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Ubuntu/Debian</h3>
+
+<p>You can run Printrun directly from source, as there are no packages available yet. Fetch and install the dependencies using</p>
+
+<ol>
+<li><code>sudo apt-get install python-serial python-wxgtk2.8 python-pyglet python-numpy cython python-libxml2 python-gobject python-dbus python-psutil python-cairosvg git</code></li>
+</ol>
+
+<p>Clone the repository</p>
+
+<p><code>git clone https://github.com/kliment/Printrun.git</code></p>
+
+<p>and you can start using Printrun from the Printrun directory created by the git clone command.</p>
+
+<h3><a id="user-content-chrome-os" class="anchor" href="#chrome-os" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Chrome OS</h3>
+
+<p>You can use Printrun via crouton ( <a href="https://github.com/dnschneid/crouton">https://github.com/dnschneid/crouton</a> ). Assuming you want Ubuntu Trusty, you used probably <code>sudo sh -e ~/Downloads/crouton -r trusty -t xfce</code> to install Ubuntu. Fetch and install dependencies with the line given above for Ubuntu/Debian, and obtain the source via git clone.</p>
+
+<p>By default you have no access to the serial port under Chrome OS crouton, so you cannot connect to your 3D printer. Add yourself to the serial group within the linux environment to fix this</p>
+
+<p><code>sudo usermod -G serial -a &lt;username&gt;</code> </p>
+
+<p>where <code>&lt;username&gt;</code> should be your username. Log out and in to make this group change active and allow communication with your printer. </p>
+
+<h3><a id="user-content-fedora" class="anchor" href="#fedora" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Fedora</h3>
+
+<p>You can install Printrun from official packages. Install the whole package using</p>
+
+<p><code>sudo yum install printrun</code></p>
+
+<p>Or get only apps you need by</p>
+
+<p><code>sudo yum install pronsole</code> or <code>pronterface</code> or <code>plater</code></p>
+
+<p>Adding <code>--enablerepo updates-testing</code> option to <code>yum</code> might give you newer packages (but also not very tested).</p>
+
+<p>You can also run Printrun directly from source, if the packages are too old for you. Fetch and install the dependencies using</p>
+
+<ol>
+<li><code>sudo yum install pyserial wxPython python-pyglet python-cairosvg</code></li>
+</ol>
+
+<p>Optional: <code>sudo yum install skeinforge simarrange</code></p>
+
+<h3><a id="user-content-archlinux" class="anchor" href="#archlinux" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Archlinux</h3>
+
+<p>Packages are available in AUR. Just run</p>
+
+<p><code>yaourt printrun</code></p>
+
+<p>and enjoy the <code>pronterface</code>, <code>pronsole</code>, ... commands directly.</p>
+
+<h2><a id="user-content-running-from-source" class="anchor" href="#running-from-source" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>RUNNING FROM SOURCE</h2>
+
+<p>Run Printrun for source if you want to test out the latest features.</p>
+
+<h3><a id="user-content-dependencies" class="anchor" href="#dependencies" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Dependencies</h3>
+
+<p>To use pronterface, you need:</p>
+
+<ul>
+<li>python (ideally 2.6.x or 2.7.x),</li>
+<li>pyserial (or python-serial on ubuntu/debian)</li>
+<li>pyreadline (not needed on Linux) and</li>
+<li>argparse (installed by default with python &gt;= 2.7)</li>
+<li>wxPython (some features such as Tabbed mode work better with wx 2.9)</li>
+<li>pyglet</li>
+<li>numpy (for 3D view)</li>
+<li>pycairo (to use Projector feature)</li>
+<li>cairosvg (to use Projector feature)</li>
+<li>dbus (to inhibit sleep on some Linux systems)</li>
+</ul>
+
+<p>Please see specific instructions for Windows and Mac OS X below. Under Linux, you should use your package manager directly (see the "GETTING PRINTRUN" section), or pip:</p>
+
+<p><code>pip install -r requirements.txt</code></p>
+
+<h3><a id="user-content-cython-based-g-code-parser" class="anchor" href="#cython-based-g-code-parser" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Cython-based G-Code parser</h3>
+
+<p>Printrun default G-Code parser is quite memory hungry, but we also provide a much lighter one which just needs an extra build-time dependency (Cython), plus compiling the extension with:</p>
+
+<pre><code>python setup.py build_ext --inplace
+</code></pre>
+
+<p>The warning message</p>
+
+<pre><code>WARNING:root:Memory-efficient GCoder implementation unavailable: No module named gcoder_line
+</code></pre>
+
+<p>means that this optimized G-Code parser hasn't been compiled. To get rid of it and benefit from the better implementation, please install Cython and run the command above.</p>
+
+<h3><a id="user-content-windows-1" class="anchor" href="#windows-1" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Windows</h3>
+
+<p>Download the following, and install in this order:</p>
+
+<ol>
+<li><a href="http://python.org/ftp/python/2.7.2/python-2.7.2.msi">http://python.org/ftp/python/2.7.2/python-2.7.2.msi</a></li>
+<li><a href="http://pypi.python.org/packages/any/p/pyserial/pyserial-2.5.win32.exe">http://pypi.python.org/packages/any/p/pyserial/pyserial-2.5.win32.exe</a></li>
+<li><a href="http://downloads.sourceforge.net/wxpython/wxPython2.8-win32-unicode-2.8.12.0-py27.exe">http://downloads.sourceforge.net/wxpython/wxPython2.8-win32-unicode-2.8.12.0-py27.exe</a></li>
+<li><a href="https://pypi.python.org/packages/any/p/pyreadline/pyreadline-1.7.1.win32.exe">https://pypi.python.org/packages/any/p/pyreadline/pyreadline-1.7.1.win32.exe</a></li>
+<li><a href="http://pyglet.googlecode.com/files/pyglet-1.1.4.zip">http://pyglet.googlecode.com/files/pyglet-1.1.4.zip</a></li>
+</ol>
+
+<p>For the last one, you will need to unpack it, open a command terminal, 
+go into the the directory you unpacked it in and run
+<code>python setup.py install</code></p>
+
+<h3><a id="user-content-mac-os-x-lion" class="anchor" href="#mac-os-x-lion" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Mac OS X Lion</h3>
+
+<ol>
+<li>Ensure that the active Python is the system version. (<code>brew uninstall python</code> or other appropriate incantations)</li>
+<li>Download an install [wxPython2.8-osx-unicode] matching to your python version (most likely 2.7 on Lion, 
+    check with: python --version) from: <a href="http://wxpython.org/download.php#stable">http://wxpython.org/download.php#stable</a>
+Known to work PythonWX: <a href="http://superb-sea2.dl.sourceforge.net/project/wxpython/wxPython/2.8.12.1/wxPython2.8-osx-unicode-2.8.12.1-universal-py2.7.dmg">http://superb-sea2.dl.sourceforge.net/project/wxpython/wxPython/2.8.12.1/wxPython2.8-osx-unicode-2.8.12.1-universal-py2.7.dmg</a></li>
+<li>Download and unpack pyserial from <a href="http://pypi.python.org/packages/source/p/pyserial/pyserial-2.5.tar.gz">http://pypi.python.org/packages/source/p/pyserial/pyserial-2.5.tar.gz</a></li>
+<li>In a terminal, change to the folder you unzipped to, then type in: <code>sudo python setup.py install</code></li>
+<li>Repeat 4. with http://<a href="http://pyglet.googlecode.com/files/pyglet-1.1.4.zip">http://pyglet.googlecode.com/files/pyglet-1.1.4.zip</a></li>
+</ol>
+
+<p>The tools will probably run just fine in 64bit on Lion, you don't need to mess
+with any of the 32bit settings. In case they don't, try </p>
+
+<ol>
+<li>export VERSIONER_PYTHON_PREFER_32_BIT=yes
+in a terminal before running Pronterface</li>
+</ol>
+
+<h3><a id="user-content-mac-os-x-pre-lion" class="anchor" href="#mac-os-x-pre-lion" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Mac OS X (pre Lion)</h3>
+
+<p>A precompiled version is available at <a href="http://koti.kapsi.fi/~kliment/printrun/">http://koti.kapsi.fi/~kliment/printrun/</a></p>
+
+<ol>
+<li>Download and install <a href="http://downloads.sourceforge.net/wxpython/wxPython2.8-osx-unicode-2.8.12.0-universal-py2.6.dmg">http://downloads.sourceforge.net/wxpython/wxPython2.8-osx-unicode-2.8.12.0-universal-py2.6.dmg</a></li>
+<li>Grab the source for pyserial from <a href="http://pypi.python.org/packages/source/p/pyserial/pyserial-2.5.tar.gz">http://pypi.python.org/packages/source/p/pyserial/pyserial-2.5.tar.gz</a></li>
+<li><p>Unzip pyserial to a folder. Then, in a terminal, change to the folder you unzipped to, then type in:</p>
+
+<p><code>defaults write com.apple.versioner.python Prefer-32-Bit -bool yes</code></p>
+
+<p><code>sudo python setup.py install</code></p></li>
+</ol>
+
+<p>Alternatively, you can run python in 32 bit mode by setting the following environment variable before running the setup.py command:</p>
+
+<p>This alternative approach is confirmed to work on Mac OS X 10.6.8. </p>
+
+<p><code>export VERSIONER_PYTHON_PREFER_32_BIT=yes</code></p>
+
+<p><code>sudo python setup.py install</code></p>
+
+<p>Then repeat the same with http://<a href="http://pyglet.googlecode.com/files/pyglet-1.1.4.zip">http://pyglet.googlecode.com/files/pyglet-1.1.4.zip</a></p>
+
+<h1><a id="user-content-using-printrun" class="anchor" href="#using-printrun" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>USING PRINTRUN</h1>
+
+<h2><a id="user-content-using-pronterface" class="anchor" href="#using-pronterface" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>USING PRONTERFACE</h2>
+
+<p>When you're done setting up Printrun, you can start pronterface.py in the directory you unpacked it.
+Select the port name you are using from the first drop-down, select your baud rate, and hit connect.
+Load an STL (see the note on skeinforge below) or GCODE file, and you can upload it to SD or print it directly.
+The "monitor printer" function, when enabled, checks the printer state (temperatures, SD print progress) every 3 seconds.
+The command box recognizes all pronsole commands, but has no tabcompletion.</p>
+
+<p>If you want to load stl files, you need to install a slicing program such as Slic3r and add its path to the settings.
+See the Slic3r readme for more details on integration.</p>
+
+<h2><a id="user-content-using-pronsole" class="anchor" href="#using-pronsole" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>USING PRONSOLE</h2>
+
+<p>To use pronsole, you need:</p>
+
+<ul>
+<li>python (ideally 2.6.x or 2.7.x),</li>
+<li>pyserial (or python-serial on ubuntu/debian) and</li>
+<li>pyreadline (not needed on Linux)</li>
+</ul>
+
+<p>Start pronsole and you will be greeted with a command prompt. Type help to view the available commands.
+All commands have internal help, which you can access by typing "help commandname", for example "help connect"</p>
+
+<p>If you want to load stl files, you need to put a version of skeinforge (doesn't matter which one) in a folder called "skeinforge".
+The "skeinforge" folder must be in the same folder as pronsole.py</p>
+
+<h2><a id="user-content-using-printcore" class="anchor" href="#using-printcore" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>USING PRINTCORE</h2>
+
+<p>To use printcore you need python (ideally 2.6.x or 2.7.x) and pyserial (or python-serial on ubuntu/debian)
+See pronsole for an example of a full-featured host, the bottom of printcore.py for a simple command-line
+sender, or the following code example:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-c">#to send a file of gcode to the printer</span>
+<span class="pl-k">from</span> printrun.printcore <span class="pl-k">import</span> printcore
+<span class="pl-k">from</span> printrun <span class="pl-k">import</span> gcoder
+p<span class="pl-k">=</span>printcore(<span class="pl-s"><span class="pl-pds">'</span>/dev/ttyUSB0<span class="pl-pds">'</span></span>,<span class="pl-c1">115200</span>) <span class="pl-c"># or p.printcore('COM3',115200) on Windows</span>
+gcode<span class="pl-k">=</span>[i.strip() <span class="pl-k">for</span> i <span class="pl-k">in</span> <span class="pl-c1">open</span>(<span class="pl-s"><span class="pl-pds">'</span>filename.gcode<span class="pl-pds">'</span></span>)] <span class="pl-c"># or pass in your own array of gcode lines instead of reading from a file</span>
+gcode <span class="pl-k">=</span> gcoder.LightGCode(gcode)
+p.startprint(gcode) <span class="pl-c"># this will start a print</span>
+
+<span class="pl-c">#If you need to interact with the printer:</span>
+p.send_now(<span class="pl-s"><span class="pl-pds">"</span>M105<span class="pl-pds">"</span></span>) <span class="pl-c"># this will send M105 immediately, ahead of the rest of the print</span>
+p.pause() <span class="pl-c"># use these to pause/resume the current print</span>
+p.resume()
+p.disconnect() <span class="pl-c"># this is how you disconnect from the printer once you are done. This will also stop running prints.</span></pre></div>
+
+<h2><a id="user-content-platers" class="anchor" href="#platers" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>PLATERS</h2>
+
+<p>Printrun provides two platers: a STL plater (<code>plater.py</code>) and a G-Code plater (<code>gcodeplater.py</code>).</p>
+
+<h2><a id="user-content-3d-viewer-controls" class="anchor" href="#3d-viewer-controls" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>3D VIEWER CONTROLS</h2>
+
+<p>When the 3D viewer is enabled, the controls are the following:</p>
+
+<ul>
+<li>Mousewheel: zoom (Control reduces the zoom change steps)</li>
+<li>Shift+mousewheel: explore layers (in print gcode view ; Control key makes layer change by increments of 10 instead of 1) or rotate object (in platers)</li>
+<li>Left-click dragging: rotate view</li>
+<li>Right-click dragging: pan view</li>
+<li>Shift + left-click dragging: move object (in platers)</li>
+<li>Page up/down keys: zoom (Control reduces the zoom change steps)</li>
+<li>Up/down keys: explore layers</li>
+<li>R key: reset view</li>
+<li>F key: fit view to display entire print</li>
+<li>C key: toggle "display current layer only" mode (in print gcode view)</li>
+</ul>
+
+<h2><a id="user-content-rpc-server" class="anchor" href="#rpc-server" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>RPC SERVER</h2>
+
+<p><code>pronterface</code> and <code>pronsole</code> start a RPC server, which runs by default
+on localhost port 7978, which provides print progress information.
+Here is a sample Python script querying the print status:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-k">import</span> xmlrpclib
+
+rpc <span class="pl-k">=</span> xmlrpclib.ServerProxy(<span class="pl-s"><span class="pl-pds">'</span>http://localhost:7978<span class="pl-pds">'</span></span>)
+<span class="pl-c1">print</span> rpc.status()</pre></div>
+
+<h2><a id="user-content-configuration" class="anchor" href="#configuration" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>CONFIGURATION</h2>
+
+<h3><a id="user-content-build-dimensions" class="anchor" href="#build-dimensions" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Build dimensions</h3>
+
+<p>Build dimensions can be specified using the build_dimensions option (which can
+be graphically edited in Pronterface settings). This option is formed of 9 parameters:
+3 for the build volume dimensions, 3 for the build volume coordinate system
+offset minimum, 3 for the endstop positions.</p>
+
+<p>The default value is <code>200x200x100+0+0+0+0+0+0</code>, which corresponds to a
+200x200mm (width x height) bed with 100mm travel in Z (there are the first
+three numbers) and no offset. The absolute coordinates system origin (0,0,0) is
+at the bottom left corner on the bed surface, and the top right corner on the
+bed surface is (200,200,0).</p>
+
+<p>A common practice is to have the origin of the coordinate system (0,0,0) at the
+center of the bed surface. This is achieved by using the next three parameters,
+for instance with <code>200x200x100-100-100+0+0+0+0</code>.
+In this case, the bottom left corner of the bed will be at (-100,-100,0) and
+the top right one at (100,100,0).</p>
+
+<p>These two sets of settings should be sufficient for most people. However, for
+some specific complicated setups and GCodes and some features, we might also
+need the endstops positions for perfect display. These positions (which are
+usually 0,0,0, so if you don't know you probably have a standard setup) are
+specified in absolute coordinates, so if you have your bed starting at
+(-100,-100,0) and your endstops are 10mm away from the bed left and right and
+the Z endstop 5mm above the bed, you'll want to set the endstops positions to
+(-110,-110,5) for this option.</p>
+
+<h2><a id="user-content-using-macros-and-custom-buttons" class="anchor" href="#using-macros-and-custom-buttons" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>USING MACROS AND CUSTOM BUTTONS</h2>
+
+<h3><a id="user-content-macros-in-pronsole-and-pronterface" class="anchor" href="#macros-in-pronsole-and-pronterface" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Macros in pronsole and pronterface</h3>
+
+<p>To send simple G-code (or pronsole command) sequence is as simple as entering them one by one in macro definition.
+If you want to use parameters for your macros, substitute them with {0} {1} {2} ... etc.</p>
+
+<p>All macros are saved automatically immediately after being entered.</p>
+
+<p>Example 1, simple one-line alias:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-c1">PC</span><span class="pl-k">&gt;</span> macro where <span class="pl-c1">M114</span></pre></div>
+
+<p>Instead of having to remember the code to query position, you can query the position:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-c1">PC</span><span class="pl-k">&gt;</span> where
+<span class="pl-c1">X</span>:<span class="pl-c1">25.</span><span class="pl-ii">00Y</span>:<span class="pl-c1">11.</span><span class="pl-ii">43Z</span>:<span class="pl-c1">5.</span><span class="pl-ii">11E</span>:<span class="pl-c1">0.00</span></pre></div>
+
+<p>Example 2 - macros to switch between different slicer programs, using "set" command to change options:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-c1">PC</span><span class="pl-k">&gt;</span> macro use_slicer
+Enter macro using indented lines, end <span class="pl-k">with</span> empty line
+..<span class="pl-k">&gt;</span> <span class="pl-c1">set</span> sliceoptscommand Slic3r<span class="pl-k">/</span>slic3r.exe <span class="pl-ii">--</span>load slic3r.ini
+..<span class="pl-k">&gt;</span> <span class="pl-c1">set</span> slicecommand Slic3r<span class="pl-k">/</span>slic3r.exe <span class="pl-ii">$</span>s <span class="pl-ii">--</span>load slic3r.ini <span class="pl-ii">--</span>output <span class="pl-ii">$</span>o
+Macro <span class="pl-s"><span class="pl-pds">'</span>use_slicer<span class="pl-pds">'</span></span> defined
+<span class="pl-c1">PC</span><span class="pl-k">&gt;</span> macro use_sfact
+..<span class="pl-k">&gt;</span> <span class="pl-c1">set</span> sliceoptscommand python skeinforge<span class="pl-k">/</span>skeinforge_application<span class="pl-k">/</span>skeinforge.py
+..<span class="pl-k">&gt;</span> <span class="pl-c1">set</span> slicecommand python skeinforge<span class="pl-k">/</span>skeinforge_application<span class="pl-k">/</span>skeinforge_utilities<span class="pl-k">/</span>skeinforge_craft.py <span class="pl-ii">$</span>s
+Macro <span class="pl-s"><span class="pl-pds">'</span>use_sfact<span class="pl-pds">'</span></span> defined</pre></div>
+
+<p>Example 3, simple parametric macro:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-c1">PC</span><span class="pl-k">&gt;</span> macro move_down_by
+Enter macro using indented lines, end <span class="pl-k">with</span> empty line
+..<span class="pl-k">&gt;</span> <span class="pl-c1">G91</span>
+..<span class="pl-k">&gt;</span> <span class="pl-c1">G1</span> <span class="pl-c1">Z</span><span class="pl-k">-</span>{<span class="pl-c1">0</span>}
+..<span class="pl-k">&gt;</span> <span class="pl-c1">G92</span>
+..<span class="pl-k">&gt;</span></pre></div>
+
+<p>Invoke the macro to move the printhead down by 5 millimeters:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-c1">PC</span><span class="pl-k">&gt;</span> move_down_by <span class="pl-c1">5</span></pre></div>
+
+<p>For more powerful macro programming, it is possible to use python code escaping using ! symbol in front of macro commands.
+Note that this python code invocation also works in interactive prompt:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-c1">PC</span><span class="pl-k">&gt;</span> <span class="pl-ii">!</span><span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">"</span>Hello, printer!<span class="pl-pds">"</span></span>
+Hello printer!
+
+<span class="pl-c1">PC</span><span class="pl-k">&gt;</span> macro debug_on <span class="pl-ii">!</span><span class="pl-v">self</span>.p.loud <span class="pl-k">=</span> <span class="pl-c1">1</span>
+Macro <span class="pl-s"><span class="pl-pds">'</span>debug_on<span class="pl-pds">'</span></span> defined
+<span class="pl-c1">PC</span><span class="pl-k">&gt;</span> debug_on
+<span class="pl-c1">PC</span><span class="pl-k">&gt;</span> <span class="pl-c1">M114</span>
+<span class="pl-c1">SENT</span>:  <span class="pl-c1">M114</span>
+<span class="pl-c1">X</span>:<span class="pl-c1">0.</span><span class="pl-ii">00Y</span>:<span class="pl-c1">0.</span><span class="pl-ii">00Z</span>:<span class="pl-c1">0.</span><span class="pl-ii">00E</span>:<span class="pl-c1">0.00</span> Count <span class="pl-c1">X</span>:<span class="pl-c1">0.</span><span class="pl-ii">00Y</span>:<span class="pl-c1">0.</span><span class="pl-ii">00Z</span>:<span class="pl-c1">0.00</span>
+<span class="pl-c1">RECV</span>:  <span class="pl-c1">X</span>:<span class="pl-c1">0.</span><span class="pl-ii">00Y</span>:<span class="pl-c1">0.</span><span class="pl-ii">00Z</span>:<span class="pl-c1">0.</span><span class="pl-ii">00E</span>:<span class="pl-c1">0.00</span> Count <span class="pl-c1">X</span>:<span class="pl-c1">0.</span><span class="pl-ii">00Y</span>:<span class="pl-c1">0.</span><span class="pl-ii">00Z</span>:<span class="pl-c1">0.00</span>
+<span class="pl-c1">RECV</span>:  ok</pre></div>
+
+<p>You can use macro command itself to create simple self-modify or toggle functionality:</p>
+
+<p>Example: swapping two macros to implement toggle:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-c1">PC</span><span class="pl-k">&gt;</span> macro toggle_debug_on
+Enter macro using indented lines, end <span class="pl-k">with</span> empty line
+..<span class="pl-k">&gt;</span> <span class="pl-ii">!</span><span class="pl-v">self</span>.p.loud <span class="pl-k">=</span> <span class="pl-c1">1</span>
+..<span class="pl-k">&gt;</span> <span class="pl-ii">!</span><span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">"</span>Diagnostic information ON<span class="pl-pds">"</span></span>
+..<span class="pl-k">&gt;</span> macro toggle_debug toggle_debug_off
+..<span class="pl-k">&gt;</span>
+Macro <span class="pl-s"><span class="pl-pds">'</span>toggle_debug_on<span class="pl-pds">'</span></span> defined
+<span class="pl-c1">PC</span><span class="pl-k">&gt;</span> macro toggle_debug_off
+Enter macro using indented lines, end <span class="pl-k">with</span> empty line
+..<span class="pl-k">&gt;</span> <span class="pl-ii">!</span><span class="pl-v">self</span>.p.loud <span class="pl-k">=</span> <span class="pl-c1">0</span>
+..<span class="pl-k">&gt;</span> <span class="pl-ii">!</span><span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">"</span>Diagnostic information OFF<span class="pl-pds">"</span></span>
+..<span class="pl-k">&gt;</span> macro toggle_debug toggle_debug_on
+..<span class="pl-k">&gt;</span>
+Macro <span class="pl-s"><span class="pl-pds">'</span>toggle_debug_off<span class="pl-pds">'</span></span> defined
+<span class="pl-c1">PC</span><span class="pl-k">&gt;</span> macro toggle_debug toggle_debug_on
+Macro <span class="pl-s"><span class="pl-pds">'</span>toggle_debug<span class="pl-pds">'</span></span> defined</pre></div>
+
+<p>Now, each time we invoke "toggle_debug" macro, it toggles debug information on and off:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-c1">PC</span><span class="pl-k">&gt;</span> toggle_debug
+Diagnostic information <span class="pl-c1">ON</span>
+
+<span class="pl-c1">PC</span><span class="pl-k">&gt;</span> toggle_debug
+Diagnostic information <span class="pl-c1">OFF</span></pre></div>
+
+<p>When python code (using ! symbol) is used in macros, it is even possible to use blocks/conditionals/loops.
+It is okay to mix python code with pronsole commands, just keep the python indentation.
+For example, following macro toggles the diagnostic information similarily to the previous example:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-ii">!</span><span class="pl-k">if</span> <span class="pl-v">self</span>.p.loud:
+  <span class="pl-ii">!</span><span class="pl-v">self</span>.p.loud <span class="pl-k">=</span> <span class="pl-c1">0</span>
+  <span class="pl-ii">!</span><span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">"</span>Diagnostic information OFF<span class="pl-pds">"</span></span>
+<span class="pl-ii">!</span><span class="pl-k">else</span>:
+  <span class="pl-ii">!</span><span class="pl-v">self</span>.p.loud <span class="pl-k">=</span> <span class="pl-c1">1</span>
+  <span class="pl-ii">!</span><span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">"</span>Diagnostic information ON<span class="pl-pds">"</span></span></pre></div>
+
+<p>Macro parameters are available in '!'-escaped python code as locally defined list variable: arg[0] arg[1] ... arg[N]</p>
+
+<p>All python code is executed in the context of the pronsole (or PronterWindow) object, 
+so it is possible to use all internal variables and methods, which provide great deal of functionality.
+However the internal variables and methods are not very well documented and may be subject of change, as the program is developed.
+Therefore it is best to use pronsole commands, which easily contain majority of the functionality that might be needed.</p>
+
+<p>Some useful python-mode-only variables:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-ii">!</span><span class="pl-v">self</span>.settings <span class="pl-k">-</span> contains <span class="pl-c1">all</span> settings, e.g. 
+  port (<span class="pl-ii">!</span><span class="pl-v">self</span>.settings.port), baudrate, xy_feedrate, e_feedrate, slicecommand, final_command, build_dimensions
+  You can <span class="pl-c1">set</span> them also via pronsole command <span class="pl-s"><span class="pl-pds">"</span>set<span class="pl-pds">"</span></span>, but you can query the values only via python code.
+<span class="pl-ii">!</span><span class="pl-v">self</span>.p <span class="pl-k">-</span> printcore <span class="pl-c1">object</span> (see <span class="pl-c1">USING</span> <span class="pl-c1">PRINTCORE</span> section <span class="pl-k">for</span> using printcore <span class="pl-c1">object</span>)
+<span class="pl-ii">!</span><span class="pl-v">self</span>.cur_button <span class="pl-k">-</span> <span class="pl-k">if</span> macro was invoked via custom button, the number of the custom button, e.g. <span class="pl-k">for</span> usage <span class="pl-k">in</span> <span class="pl-s"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span> command
+<span class="pl-ii">!</span><span class="pl-v">self</span>.gwindow <span class="pl-k">-</span> wx graphical interface <span class="pl-c1">object</span> <span class="pl-k">for</span> pronterface (highly risky to use because the <span class="pl-c1">GUI</span> implementation details may change a lot between versions)</pre></div>
+
+<p>Some useful methods:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-ii">!</span><span class="pl-v">self</span>.onecmd <span class="pl-k">-</span> invokes raw command, e.g. 
+    <span class="pl-ii">!</span><span class="pl-v">self</span>.onecmd(<span class="pl-s"><span class="pl-pds">"</span>move x 10<span class="pl-pds">"</span></span>)
+    <span class="pl-ii">!</span><span class="pl-v">self</span>.onecmd(<span class="pl-s"><span class="pl-pds">"</span>!print self.p.loud<span class="pl-pds">"</span></span>)
+    <span class="pl-ii">!</span><span class="pl-v">self</span>.onecmd(<span class="pl-s"><span class="pl-pds">"</span>button <span class="pl-pds">"</span></span><span class="pl-k">+</span><span class="pl-v">self</span>.cur_button<span class="pl-k">+</span><span class="pl-s"><span class="pl-pds">"</span> fanOFF /C cyan M107<span class="pl-pds">"</span></span>)
+<span class="pl-ii">!</span><span class="pl-v">self</span>.project <span class="pl-k">-</span> invoke Projector</pre></div>
+
+<h2><a id="user-content-using-host-commands" class="anchor" href="#using-host-commands" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>USING HOST COMMANDS</h2>
+
+<p>Pronsole and the console interface in Pronterface accept a number of commands
+which you can either use directly or inside your G-Code. To run a host command
+from inside a G-Code, simply prefix it with <code>;@</code>.</p>
+
+<p>List of available commands:</p>
+
+<ul>
+<li><code>pause</code>: pauses the print until the user resumes it</li>
+<li><code>run_script scriptname [arg1 ...]</code>: runs a custom script or program on the
+host computer. This can for instance be used to produce a sound to warn the
+user (e.g. <code>run_script beep -r 2</code> on machines were the <code>beep</code> util is
+available), or to send an email or text message at the end of a print. The $s
+token can be used in the arguments to get the current gcode file name</li>
+<li><code>run_gcode_script scripname [arg1 ...]</code>: same as <code>run_script</code>, except that
+all lines displayed by the script will be interpreted in turn (so that G-Code
+lines will be immediately sent to the printer)</li>
+<li><code>shell pythoncommand</code>: run a python command (can also be achieved by doing
+<code>!pythoncommand</code>)</li>
+<li><code>set option value</code>: sets the value of an option, e.g. <code>set mainviz 3D</code></li>
+<li><code>connect</code></li>
+<li><code>block_until_online</code>: wait for the printer to be online. For instance you can
+do <code>python pronsole.py -e "connect" -e "block_until_online" -e "upload
+object.gcode"</code> to start pronsole, connect for the printer, wait for it to be
+online to start uploading the <code>object.gcode</code> file.</li>
+<li><code>disconnect</code></li>
+<li><code>load gcodefile</code></li>
+<li><code>upload gcodefile target.g</code>: upload <code>gcodefile</code> to <code>target.g</code> on the SD card</li>
+<li><code>slice stlfile</code>: slice <code>stlfile</code> and load the produced G-Code</li>
+<li><code>print</code>: print the currently loaded file</li>
+<li><code>sdprint target.g</code>: start a SD print</li>
+<li><code>ls</code>: list files on SD card</li>
+<li><code>eta</code>: display remaining print time</li>
+<li><code>gettemp</code>: get current printer temperatures</li>
+<li><code>settemp</code>: set hotend target temperature</li>
+<li><code>bedtemp</code>: set bed target temperature</li>
+<li><code>monitor</code>: monitor printer progress during a print</li>
+<li><code>tool K</code>: switch to tool K</li>
+<li><code>move xK</code>: move along <code>x</code> axis (works with other axes too)</li>
+<li><code>extrude length [speed]</code></li>
+<li><code>reverse length [speed]</code></li>
+<li><code>home [axis]</code></li>
+<li><code>off</code>: turns off fans, motors, extruder, heatbed, power supply</li>
+<li><code>exit</code></li>
+</ul>
+
+<h1><a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>LICENSE</h1>
+
+<pre><code>Printrun is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Printrun is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Printrun.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+</code></pre>
+
+<p>All scripts should contain this license note, if not, feel free to ask us. Please note that files where it is difficult to state this license note (such as images) are distributed under the same terms.</p>
+</article>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com/" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2016 <span title="0.07325s from github-fe127-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com/" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/compat-7db58f8b7b91111107fac755dd8b178fe7db0f209ced51fc339c446ad3f8da2b.js"></script>
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-f8175c23360b42a4eb18b2319fefeae252cfeea482fb804356f4136a52bfddb3.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-1502104f450cb05859f99b57e29782e071e3fb240e237adb8cbf17ebbdb271c7.js"></script>
+      
+      
+      
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="#">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="#">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  </body>
+
+<!-- Mirrored from github.com/kliment/Printrun by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+</html>
+

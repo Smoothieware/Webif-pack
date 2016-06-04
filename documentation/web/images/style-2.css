@@ -1,0 +1,258 @@
+/* Nice looking commands and config options */
+tt {
+    font-family: monospace,monospace;
+    font-size: 1em;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    background-color: #333;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) inset;
+    color: #fff;
+    font-size: 90%;
+    padding: 2px 4px;
+}
+/* Change the padding in the home page lists */
+.homepage-col {
+padding-left: -50px;
+padding-right: 20px;
+}
+.homepage-col ul {
+margin: 0;
+padding: 0;
+}
+.homepage-col ul {
+padding-left: 25px;
+list-style-type: disclosure-closed;
+}
+/* Hide the "fold" link in the table of contents */
+#toc-action-bar a {
+display:none;
+}
+/* New heading padding */
+.main-content {
+padding-left: 50px;
+}
+.main-content h1, h2, h3, h4, h5 {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.breadcrumbs {
+margin-left: -50px;
+margin-bottom: 20px;
+}
+.main-content h1 {
+margin-left: -50px;
+}
+.main-content h2 {
+margin-left: -40px;
+}
+.main-content h3 {
+margin-left: -30px;
+}
+.main-content h5 {
+margin-left: -20px;
+}
+
+
+/* Fixed navbar needs padding */
+body { padding-top: 60px; }
+
+/* Navbar height was wrong */
+.navbar li {
+  height: 50px;
+}
+
+/* Navbar text is not readable enough */
+.navbar-inverse .navbar-text {
+    color: #BBB;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #BBB;
+}
+
+/* Get tables to display correctly */
+table {
+    background-color: transparent;
+}
+th {
+    text-align: left;
+}
+.wiki-content-table {
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
+}
+.wiki-content-table > thead > tr > th, .wiki-content-table > tbody > tr > th, .wiki-content-table > tfoot > tr > th, .wiki-content-table > thead > tr > td, .wiki-content-table > tbody > tr > td, .wiki-content-table > tfoot > tr > td {
+    border-top: 1px solid #ddd;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+}
+.wiki-content-table > thead > tr > th {
+    border-bottom: 2px solid #ddd;
+    vertical-align: bottom;
+}
+.wiki-content-table > caption + thead > tr:first-child > th, .wiki-content-table > colgroup + thead > tr:first-child > th, .wiki-content-table > thead:first-child > tr:first-child > th, .wiki-content-table > caption + thead > tr:first-child > td, .wiki-content-table > colgroup + thead > tr:first-child > td, .wiki-content-table > thead:first-child > tr:first-child > td {
+    border-top: 0 none;
+}
+.wiki-content-table > tbody + tbody {
+    border-top: 2px solid #ddd;
+}
+.wiki-content-table .wiki-content-table {
+    background-color: #fff;
+}
+.wiki-content-table-condensed > thead > tr > th, .wiki-content-table-condensed > tbody > tr > th, .wiki-content-table-condensed > tfoot > tr > th, .wiki-content-table-condensed > thead > tr > td, .wiki-content-table-condensed > tbody > tr > td, .wiki-content-table-condensed > tfoot > tr > td {
+    padding: 5px;
+}
+.wiki-content-table-bordered {
+    border: 1px solid #ddd;
+}
+.wiki-content-table-bordered > thead > tr > th, .wiki-content-table-bordered > tbody > tr > th, .wiki-content-table-bordered > tfoot > tr > th, .wiki-content-table-bordered > thead > tr > td, .wiki-content-table-bordered > tbody > tr > td, .wiki-content-table-bordered > tfoot > tr > td {
+    border: 1px solid #ddd;
+}
+.wiki-content-table-bordered > thead > tr > th, .wiki-content-table-bordered > thead > tr > td {
+    border-bottom-width: 2px;
+}
+.wiki-content-table-striped > tbody > tr:nth-child(2n+1) > td, .wiki-content-table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #f9f9f9;
+}
+.wiki-content-table-hover > tbody > tr:hover > td, .wiki-content-table-hover > tbody > tr:hover > th {
+    background-color: #f5f5f5;
+}
+table col[class*="col-"] {
+    display: table-column;
+    float: none;
+    position: static;
+}
+table td[class*="col-"], table th[class*="col-"] {
+    display: table-cell;
+    float: none;
+    position: static;
+}
+.wiki-content-table > thead > tr > td.active, .wiki-content-table > tbody > tr > td.active, .wiki-content-table > tfoot > tr > td.active, .wiki-content-table > thead > tr > th.active, .wiki-content-table > tbody > tr > th.active, .wiki-content-table > tfoot > tr > th.active, .wiki-content-table > thead > tr.active > td, .wiki-content-table > tbody > tr.active > td, .wiki-content-table > tfoot > tr.active > td, .wiki-content-table > thead > tr.active > th, .wiki-content-table > tbody > tr.active > th, .wiki-content-table > tfoot > tr.active > th {
+    background-color: #f5f5f5;
+}
+.wiki-content-table-hover > tbody > tr > td.active:hover, .wiki-content-table-hover > tbody > tr > th.active:hover, .wiki-content-table-hover > tbody > tr.active:hover > td, .wiki-content-table-hover > tbody > tr:hover > .active, .wiki-content-table-hover > tbody > tr.active:hover > th {
+    background-color: #e8e8e8;
+}
+.wiki-content-table > thead > tr > td.success, .wiki-content-table > tbody > tr > td.success, .wiki-content-table > tfoot > tr > td.success, .wiki-content-table > thead > tr > th.success, .wiki-content-table > tbody > tr > th.success, .wiki-content-table > tfoot > tr > th.success, .wiki-content-table > thead > tr.success > td, .wiki-content-table > tbody > tr.success > td, .wiki-content-table > tfoot > tr.success > td, .wiki-content-table > thead > tr.success > th, .wiki-content-table > tbody > tr.success > th, .wiki-content-table > tfoot > tr.success > th {
+    background-color: #dff0d8;
+}
+.wiki-content-table-hover > tbody > tr > td.success:hover, .wiki-content-table-hover > tbody > tr > th.success:hover, .wiki-content-table-hover > tbody > tr.success:hover > td, .wiki-content-table-hover > tbody > tr:hover > .success, .wiki-content-table-hover > tbody > tr.success:hover > th {
+    background-color: #d0e9c6;
+}
+.wiki-content-table > thead > tr > td.info, .wiki-content-table > tbody > tr > td.info, .wiki-content-table > tfoot > tr > td.info, .wiki-content-table > thead > tr > th.info, .wiki-content-table > tbody > tr > th.info, .wiki-content-table > tfoot > tr > th.info, .wiki-content-table > thead > tr.info > td, .wiki-content-table > tbody > tr.info > td, .wiki-content-table > tfoot > tr.info > td, .wiki-content-table > thead > tr.info > th, .wiki-content-table > tbody > tr.info > th, .wiki-content-table > tfoot > tr.info > th {
+    background-color: #d9edf7;
+}
+.wiki-content-table-hover > tbody > tr > td.info:hover, .wiki-content-table-hover > tbody > tr > th.info:hover, .wiki-content-table-hover > tbody > tr.info:hover > td, .wiki-content-table-hover > tbody > tr:hover > .info, .wiki-content-table-hover > tbody > tr.info:hover > th {
+    background-color: #c4e3f3;
+}
+.wiki-content-table > thead > tr > td.warning, .wiki-content-table > tbody > tr > td.warning, .wiki-content-table > tfoot > tr > td.warning, .wiki-content-table > thead > tr > th.warning, .wiki-content-table > tbody > tr > th.warning, .wiki-content-table > tfoot > tr > th.warning, .wiki-content-table > thead > tr.warning > td, .wiki-content-table > tbody > tr.warning > td, .wiki-content-table > tfoot > tr.warning > td, .wiki-content-table > thead > tr.warning > th, .wiki-content-table > tbody > tr.warning > th, .wiki-content-table > tfoot > tr.warning > th {
+    background-color: #fcf8e3;
+}
+.wiki-content-table-hover > tbody > tr > td.warning:hover, .wiki-content-table-hover > tbody > tr > th.warning:hover, .wiki-content-table-hover > tbody > tr.warning:hover > td, .wiki-content-table-hover > tbody > tr:hover > .warning, .wiki-content-table-hover > tbody > tr.warning:hover > th {
+    background-color: #faf2cc;
+}
+.wiki-content-table > thead > tr > td.danger, .wiki-content-table > tbody > tr > td.danger, .wiki-content-table > tfoot > tr > td.danger, .wiki-content-table > thead > tr > th.danger, .wiki-content-table > tbody > tr > th.danger, .wiki-content-table > tfoot > tr > th.danger, .wiki-content-table > thead > tr.danger > td, .wiki-content-table > tbody > tr.danger > td, .wiki-content-table > tfoot > tr.danger > td, .wiki-content-table > thead > tr.danger > th, .wiki-content-table > tbody > tr.danger > th, .wiki-content-table > tfoot > tr.danger > th {
+    background-color: #f2dede;
+}
+.wiki-content-table-hover > tbody > tr > td.danger:hover, .wiki-content-table-hover > tbody > tr > th.danger:hover, .wiki-content-table-hover > tbody > tr.danger:hover > td, .wiki-content-table-hover > tbody > tr:hover > .danger, .wiki-content-table-hover > tbody > tr.danger:hover > th {
+    background-color: #ebcccc;
+}
+
+/* Bootstrap callouts */
+
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #777;
+}
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
+
+/* Make code boxes callouts */
+.code pre {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    border-left-color: #428bca;
+}
+
+/* Make editors monospace */
+#edit-page-textarea {
+  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+  font-size: 80%;
+  width:100%;
+}
+
+/* smoothieboard page carousel */
+#u-smoothieboard-carousel {
+    height:420px;
+}
+
+#u-smoothieboard-carousel img {
+    height:420px;
+}
+
+#u-smoothieboard-carousel .carousel-control {
+    display:none;
+}
+
+/* Make collapsible inline blocks instead of divs */
+
+.collapsible-block, .collapsible-block-folded, .collapsible-block-unfolded{
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+}

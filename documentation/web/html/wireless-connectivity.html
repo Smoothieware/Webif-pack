@@ -1,0 +1,2675 @@
+<!DOCTYPE html><!--[if IE 8]> <html class="ie8" lang="en"><![endif]--><!--[if IE 9]> <html class="ie9" lang="en"><![endif]--><!--[if gt IE 9]><!--> <html lang="en"> <!--><![endif]-->
+<!-- Mirrored from community.freescale.com/community/wireless-connectivity by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><title>Space: Wireless Connectivity | NXP Community</title><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="Welcome to the Wireless Connectivity online forum. We are pleased to provide our developer community a place to share, discuss, and help others with issues regarding the Wireless Connectivity solutions, both hardware and software. Our support team also monitors these forums in order to provide answers and take your feedback. Anyone can read messages, but only registered community members can post either questions or responses."><meta name="keywords" content="zigbee, ble, keil, kw2x, iar, mqx"><meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script><!--[if IE]><link rel="stylesheet" href="/2016.1.0.1f7ee12/styles/jive.ie.css" type="text/css" media="all"/><![endif]--><!--[if !IE]> --><link rel="stylesheet" href="https://community.freescale.com/2016.1.0.1f7ee12/styles/jive.css" type="text/css" media="all"/><!-- <![endif]--><link rel="stylesheet" href="https://community.freescale.com/2016.1.0.1f7ee12/styles/jive-visor.css" type="text/css" media="all"/><link rel="stylesheet" href="https://community.freescale.com/plugins/extendedApis/resources/styles/sharepoint-icon.css" type="text/css" media="all" /><link rel="search" href="https://community.freescale.com/opensearch.xml" title="NXP Community" type="application/opensearchdescription+xml"/><link rel="shortcut icon" type="image/x-icon" href="https://community.freescale.com/resources/images/palette-1013/faviconImage-1456513950206-favicon.ico" /><!--[if lt IE 9]><script src="/2016.1.0.1f7ee12/resources/scripts/vendor/html5shiv/html5shiv.js"></script><![endif]--><!--[if IE]><script>
+            // Avoid 'console' errors in browsers that lack a console.
+            (function() {
+               var method;
+               var noop = function () {};
+               var methods = [
+                   'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+                   'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+                   'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+                   'timeStamp', 'trace', 'warn'
+               ];
+               var length = methods.length;
+               var console = (window.console = window.console || {});
+
+               while (length--) {
+                   method = methods[length];
+
+                   // Only stub undefined methods.
+                   if (!console[method]) {
+                       console[method] = noop;
+                   }
+               }
+            }());
+        </script><![endif]--><script>(function() {var prepareUrl = function(url) {if (url.indexOf(";") > 0) {url = url.substring(0, url.indexOf(";"));}if (url.charAt(url.length - 1) == 'https://community.freescale.com/') {url = url.substring(0, url.length - 1);}return url;}; if (typeof(window._jive_base_url) == "undefined") {window._jive_base_url = prepareUrl("#\/")}if (typeof(window._jive_base_absolute_url) == "undefined") {window._jive_base_absolute_url = prepareUrl("https://community.freescale.com/community/wireless-connectivity\/\/community.freescale.com")}if (typeof(window._jive_resource_url) == "undefined") {window._jive_resource_url = prepareUrl("#\/2016.1.0.1f7ee12\/")}if (typeof(window._jive_theme_url) == "undefined") {window._jive_theme_url = prepareUrl("#\/themes\/\/")}if (typeof(window._jive_current_user) == "undefined") {window._jive_current_user = {anonymous: true, partner: false, visible: true, username: 'ANONYMOUS', ID: '-1', enabled: true, avatarID: '1034', displayName: 'ANONYMOUS'};}})(); var _jive_effective_user_id = "-1"; var _jive_auth_token ="no-user"; var _jive_locale = "en"; var _jive_translation_language = "en"; var _jive_display_language = "en"; var _jive_browser_event = {"providers":["activityStream.poll","appAlert.create","inboxCount.poll"],"since":1463141384396}; var _jive_browser_event_polling_delay =  300000.0 ; var _jive_socket_events = {"socketEvents":["activityStream.push","tiledata.push"]}; var _jive_realtime_push_enabled =  false ; var _jive_allstream_counts_enabled =  false ;var _jive_timezoneoffset =  -7.0 ; var _jive_server_timezoneoffset =  -7.0 ; var _jive_timezone_id = 'America\/Phoenix'; var _jive_enable_browserdb =  false ; var jive = jive || {}; jive.global = jive.global || {}; jive.global.instanceID = '52391d11-e1e0-4c7e-aeb6-a255e3c17340'; jive.global.containerType = '14'; jive.global.containerID = '11235';jive.global.containerBrowseId = '145838';jive.global.subdomain = {}; jive.global.subdomain.mode = 'single'; jive.global.subdomain.template = 'https://community.freescale.com/community/wireless-connectivity\/\/app-community.freescale.com%path%'; jive.global.extensions = {"8116bcf8-061b-4f31-9b9a-0fcd2228b769":"7b10402577","13780580-b4f8-4bcd-8189-a5d48414cb5d":"62c518a21c"}; window.SPELL_LANGS = "English (Canada)\x3den_ca,English (United Kingdom)\x3den_gb,+English (United States)\x3den_us,French\x3dfr,French (Canada)\x3dfr_ca,German\x3dde,Italian\x3dit,Spanish\x3des"; window.CS_BASE_URL = ""; window.CS_RESOURCE_BASE_URL = "\/2016.1.0.1f7ee12";window.tinyMCEPreInit = {suffix : "_src", base : CS_BASE_URL + "/resources/scripts/tiny_mce3"};if (typeof(_jive_project_i18n) == "undefined") {var _jive_project_i18n = new Array(); _jive_project_i18n['project.calendar.task'] = "Task"; _jive_project_i18n['project.calendar.tasks'] = "Tasks"; _jive_project_i18n['project.calendar.checkpoint'] = "Checkpoint"; _jive_project_i18n['project.calendar.checkpoints'] = "Checkpoints"; _jive_project_i18n['global.edit'] = "Edit"; _jive_project_i18n['global.delete'] = "Delete"; _jive_project_i18n['project.task.mark.complete'] = "Mark complete"; _jive_project_i18n['project.task.assign.to.me'] = "Assign to me"; _jive_project_i18n['task.incomplete.link'] = "Incomplete"; _jive_project_i18n['project.checkPoint.create.link'] = "Create a checkpoint"; _jive_project_i18n['project.task.create.link'] = "Create a task";}</script><script src="https://community.freescale.com/2016.1.0.1f7ee12/resources/scripts/gen/main.js?salt=1462413638"></script><script>requirejs.config({baseUrl: '/2016.1.0.1f7ee12/resources/scripts/', paths: {'jiveCoreApiV3': '/resources/scripts/gen/v3/1896345f45bb7d2672dfa176a275d32d','plugins': '/2016.1.0.1f7ee12/plugins', 'shindig': '/gadgets/js/jive-core-container:container:core:rpc:open-views:selection:actions.js?c=1&container=default'},bundles: {'gen/soy/eae/common': [ 'soy!jive.eae.common.activityAuthor', 'soy!jive.eae.common.activityAuthorAndOnBehalfOfNoVerb', 'soy!jive.eae.common.activityAuthorNoVerb', 'soy!jive.eae.common.activityContainer', 'soy!jive.eae.common.activityContainerJoSubject', 'soy!jive.eae.common.activityContentCommon', 'soy!jive.eae.common.activityContentText', 'soy!jive.eae.common.activityHeadingHref', 'soy!jive.eae.common.activityHeadingHrefWithReferringUser', 'soy!jive.eae.common.activityHelpfulCounts', 'soy!jive.eae.common.activityNavActions', 'soy!jive.eae.common.collapsedExcerptText', 'soy!jive.eae.common.contentTypeClassName', 'soy!jive.eae.common.contentTypeDisplayName', 'soy!jive.eae.common.contentTypeParentPreviewStylingClassName', 'soy!jive.eae.common.currentCountText', 'soy!jive.eae.common.digestSubItem', 'soy!jive.eae.common.displayParentAuthor', 'soy!jive.eae.common.embeddedPreview', 'soy!jive.eae.common.entryRepost', 'soy!jive.eae.common.formatMediaLinkUrl', 'soy!jive.eae.common.formatMediaLinkUrl__C2bf6', 'soy!jive.eae.common.generateUserMetaData', 'soy!jive.eae.common.groupedUsers', 'soy!jive.eae.common.jsI18nHelper', 'soy!jive.eae.common.loadingSpinner', 'soy!jive.eae.common.microRTEContainer', 'soy!jive.eae.common.parentPreviewLinks', 'soy!jive.eae.common.parentPreviewLinksInline', 'soy!jive.eae.common.readingPaneBottomReplyLinkKey', 'soy!jive.eae.common.renderStreamAttachments', 'soy!jive.eae.common.repliedToIcon', 'soy!jive.eae.common.replyCountText', 'soy!jive.eae.common.replyingToText', 'soy!jive.eae.common.repostModal', 'soy!jive.eae.common.repostModalSuccess', 'soy!jive.eae.common.rtePanel', 'soy!jive.eae.common.rteTextArea', 'soy!jive.eae.common.sharedVia', 'soy!jive.eae.common.streamImage', 'soy!jive.eae.common.subactivity' ]},urlArgs: 'salt=' + '1462413638',locale: 'en', config: {'l10n': {locale: 'en'}, 'soy': {baseUrl: '/2016.1.0.1f7ee12/resources/scripts/'}}});</script><script>requirejs.config({config: {'application/config': {'allStreamCountsEnabled':  false , 'anyAppsEnabled':  false , 'appsAvailable':  false , 'authToken': 'no-user', 'browserDbEnabled':  false , 'browserEventQuery': JSON.parse('{\x22providers\x22:[\x22activityStream.poll\x22,\x22appAlert.create\x22,\x22inboxCount.poll\x22],\x22since\x22:1463141384396}'), 'browserEventsPollingDelay': '300000', 'containerBrowseId': '145838', 'containerId': '11235', 'containerType': '14', 'currentUser': JSON.parse('{\x22type\x22:3,\x22link\x22:\x22\/people\/ANONYMOUS\x22,\x22subject\x22:\x22ANONYMOUS\x22,\x22iconCss\x22:\x22jive-icon-profile\x22,\x22archetype\x22:\x22people\x22,\x22thumbnailTemplate\x22:\x22jive.browse.user.thumbnailUserItem\x22,\x22detailTemplate\x22:\x22jive.browse.user.detailUserItem\x22,\x22objectTypeName\x22:null,\x22objectTypeFeatureName\x22:null,\x22displayExternallyVisibleVisualCue\x22:false,\x22prop\x22:{\x22isVisibleToPartner\x22:false,\x22search\x22:{\x22defaultEnabled\x22:true},\x22avatarID\x22:\x221034\x22,\x22profile\x22:{\x22company\x22:null,\x22mobilePhoneNumber\x22:null,\x22primaryPhoneNumber\x22:null,\x22initialLoginDate\x22:null,\x22title\x22:null,\x22primaryEmailAddressVisible\x22:false,\x22alternateEmailAddress\x22:null,\x22homePhoneNumber\x22:null,\x22alternatePhoneNumber\x22:null,\x22expertise\x22:null,\x22lastLoggedInDate\x22:null,\x22hireOrJoinDate\x22:null,\x22occupation\x22:null,\x22primaryURL\x22:null,\x22homeAddress\x22:null,\x22faxNumber\x22:null,\x22primaryEmailAddress\x22:null,\x22department\x22:null,\x22strictJoinDate\x22:null,\x22biography\x22:null,\x22pagerNumber\x22:null,\x22joinDate\x22:null,\x22address\x22:null,\x22location\x22:null,\x22url\x22:null,\x22timeZone\x22:null},\x22profileImage\x22:{\x22url\x22:\x22\/images\/jive-profile-default-portrait.png\x22,\x22viewingSelf\x22:false,\x22default\x22:true},\x22presence\x22:{\x22userExternalID\x22:null,\x22online\x22:false,\x22jsObject\x22:\x22null\x22}},\x22username\x22:\x22ANONYMOUS\x22,\x22displayName\x22:\x22ANONYMOUS\x22,\x22initialLoginDate\x22:null,\x22anonymous\x22:true,\x22enabled\x22:true,\x22external\x22:false,\x22partner\x22:false,\x22email\x22:null,\x22entitled\x22:true,\x22visible\x22:true,\x22avatarID\x22:\x221034\x22,\x22id\x22:\x22-1\x22,\x22objectType\x22:3,\x22modificationDate\x22:null,\x22unmodified\x22:true,\x22modificationTime\x22:null,\x22creationTime\x22:null,\x22creationDate\x22:null}'), 'instanceId': '52391d11-e1e0-4c7e-aeb6-a255e3c17340', 'locale': 'en', 'onboardingEnabled':  false , 'realtimeCommunicationsEnabled':  false , 'realtimeEnabled':  false , 'realtimePushEnabled':  false , 'realtimeStatsEnabled':  false , 'serverTimeZoneOffset':  -7.0 , 'socketEvents': JSON.parse('{\x22socketEvents\x22:[\x22activityStream.push\x22,\x22tiledata.push\x22]}'), 'timezoneId': 'America\/Phoenix', 'timezoneOffset':  -7.0 , 'translationLanguage': 'en', 'tinymce4Enabled':  false , 'groupMembershipEvolutionEnabled':  false ,'jsPageController': 'page/places/group','baseUrl': '/', 'absoluteBaseUrl': 'https://community.freescale.com/', 'resourceUrl': '/2016.1.0.1f7ee12/', 'themeUrl': '/themes/', 'cssUrl': '/2016.1.0.1f7ee12/styles/'}}});</script><script>require(['main']);</script><script>require(['apps/tips/main', 'domReady!'], function() {var tipsApp = new jive.Tips.Main({tipGroups:[], skippedTipGroupIDs: []});});</script><link rel="stylesheet" href="https://community.freescale.com/2016.1.0.1f7ee12/styles/jive-customization-controls.css" type="text/css" media="all" /><link rel="stylesheet" href="https://community.freescale.com/2016.1.0.1f7ee12/styles/jive-places.css" type="text/css" media="all" /><style class="headerStyle js-headerStyle place-background-image" data-header-settings="{&quot;bgType&quot;:&quot;preset&quot;,&quot;staticResourcesEnabled&quot;:false,&quot;bgColor&quot;:&quot;cccccc&quot;,&quot;bgRepeat&quot;:&quot;cover&quot;,&quot;bgPresetImageUrl&quot;:&quot;https://community.freescale.com/resources/statics/1000/NXP-public-space-banner-1.png?a=1449505093224&quot;,&quot;bgPosition&quot;:&quot;left top&quot;,&quot;textColor&quot;:&quot;ffffff&quot;}">.j-body-place #jive-body .j-page-header {background-image: url("https://community.freescale.com/2016.1.0.1f7ee12/resources/statics/1000/NXP-public-space-banner-1.png?a=1449505093224");background-color:   #cccccc   ;background-size:cover;background-position: left top;}.j-placeHeaderInner, .j-placeTitle a.j-placeName {color:  #ffffff;}</style><link rel="stylesheet" href="https://community.freescale.com/2016.1.0.1f7ee12/styles/jive-widgets.css" type="text/css" media="all" /><link rel="stylesheet" href="https://community.freescale.com/2016.1.0.1f7ee12/styles/jive-responsive.css" type="text/css" media="all" /><link rel="stylesheet" href="https://community.freescale.com/2016.1.0.1f7ee12/plugins/gamification_2016.1.7/resources/styles/n4jive.concat.css" type="text/css" media="all"/><link class="j-custom-theme" rel="stylesheet" href="https://community.freescale.com/resources/styles/palette-1013/1456513981217.css" type="text/css"  media="all"/><link rel="stylesheet" href="https://community.freescale.com/2016.1.0.1f7ee12/resources/styles/exobjects-icons/jive-exobjects-icons.css" type="text/css" media="all"/></head><body class="j-body-place j-header-mode-custom  j-simple-homepage"><a id="top"></a><a href="#j-main" class="j-508-label">Skip navigation</a><div id="j-header-wrap" data-company-name="Freescale Semiconductor, Inc. - Cloud" data-no-user-bar="false" role="banner" ><header id="j-compact-header" class="clearfix"><!-- Customer generated HTML --><div id="j-cust-head" class="clearfix"><div id="hd" style="padding-top:22px; padding-left:8px;">
+    <a href="http://www.nxp.com/">
+      <img alt="NXP Community" src="https://community.freescale.com/resources/images/palette-1013/nxp-logo-112x41.png?=20150421"></img>
+    </a>  
+    <div style="font-size:.9rem; float:right; padding-top:40px">
+      <a class="jive-link-external-small" href="http://www.nxp.com/support/communities:COMMUNITIES" target="_blank">
+        <strong>Additional Communities</strong>
+      </a> | 
+      <a class="jive-link-external-small" href="http://www.nxp.com/" target="_blank">
+        <strong>nxp.com </strong>
+      </a>
+    </div>
+  </div></div><!-- Navigational buttons/links --><nav id="j-globalNav-bg" role="navigation" aria-label="Jive" data-mode="custom"><ul id="j-globalNav" role="menubar" class="j-globalNav"><li id="mobile-menu" class="mobile-tool"><a class="j-globalNavLink" href="#"></a></li><li class="j-simple-nav-logo j-globalNav-li"><a class="j-simple-logo js-logo j-globalNavLink" href="https://community.freescale.com/"><img src="https://community.freescale.com/2016.1.0.1f7ee12/resources/images/palette-1013/customNavLogoImage-1456513950137-community-logo.png"></a></li><li id="jive-nav-link-home"class=" j-globalNav-li j-ui-elem"><a  href="https://community.freescale.com/welcome"  class="j-globalNavLink j-ui-elem " role="menuitem"><span class="nav-link  ">Home</span></a></li><li id="jive-navbar-link-news"class=" j-globalNav-li j-ui-elem"><a  href="https://community.freescale.com/news"  class="j-globalNavLink j-ui-elem " role="menuitem"><span class="nav-link  ">News</span></a></li><li id="jive-nav-link-work"class=" j-globalNav-li j-ui-elem"><a  href="https://community.freescale.com/content"  class="j-globalNavLink j-ui-elem " role="menuitem"><span class="nav-link  ">Content</span></a></li><li id="jive-nav-link-conx"class=" j-globalNav-li j-ui-elem"><a  href="https://community.freescale.com/people"  class="j-globalNavLink j-ui-elem " role="menuitem"><span class="nav-link  ">People</span></a></li><li id="jive-nav-link-places"class=" j-globalNav-li j-ui-elem"><a  href="https://community.freescale.com/places"  class="j-globalNavLink j-ui-elem " role="menuitem"><span class="nav-link  ">Places</span></a></li></ul><div id="j-links"><ul class="j-globalNav"><li class="j-nav-create j-nav-user j-globalNav-li js-satellite-nav-container" aria-haspopup="true"><ul id="j-satNav"><li class="login"><a href="#" class="login" id="navLogin" title="Log in">Log in</a></li></ul><div id="j-satNav-menu" class="clearfix" style="display:none;"></div><span data-count="0" tabindex="-1" aria-label="nav.bar.inbox.count.label" class="j-js-update-indicator j-update-count zero  j-navbadge-count j-ui-elem"style="display:none;">0</span></li><li id="j-nav-search-li" class="j-nav-open-visor j-globalNav-li js-nav-open-visor-container j-nav-create" aria-haspopup="true"><label for="j-nav-search" class="j-508-label">Search</label><a href="#" id="j-nav-search" class="j-globalNavLink j-ui-elem" role="menuitem" data-hideviews="bookmarks default history" data-hidetypes="" ><span class="nav-link j-ui-elem"><i class="icon-search"></i></span></a></li><li id="mobile-search" class="j-globalNav-li mobile-tool"><a class="j-globalNavLink" href="#"></a></li></ul><div id="j-spotlight-search" role="search" data-mode="custom"><span class="j-ui-elem j-search-left"><span id="searchpopupanchor" ></span></span><span><label for="autosearch" class="j-508-label">Search</label><input data-spotlight-enabled="false" id="autosearch" class="j-ui-elem" data-component="autosearch" data-popup-anchor="searchpopupanchor" placeholder="Search" type="text" role="combobox" aria-labelledby="autosearch" aria-expanded="false" data-hidetypes="bookmarks frequent recent " data-community-name="NXP Community" data-filters="" data-origin="spotlight"aria-hidden="true" aria-busy="true" /><a href="#" id="mob-spotlight-cancel" title="Cancel"><span class="j-508-label">Cancel</span><span class="jive-icon-glyph icon-close-med"></span></a></span><span class="j-ui-elem j-search-right"></span><span class="jive-icon-sml jive-glyph-delete" data-component="button" data-type="clear" data-field="autosearch"></span></script></div></div></nav></header><noscript><div style="color:red" align="center">Error: You don't have JavaScript enabled. This tool uses JavaScript and much of it will not work correctly without it enabled. Please turn JavaScript back on and reload this page.</div></noscript></div><div id="mobile-overlay"></div><div id="j-main-wrapper"><section id="j-main" class="clearfix"><div id="jive-body" class="clearfix"><div class="customize-message clearfix" id="customize-message" style="display: none"><h5>Edit Place Overview Page</h5><p class="welcome-message">Choose a layout and drag widgets onto your Overview Page to customize it.  Widgets placed on the page below can be configured by selecting the <span class="widget-menu-button"></span> symbol.</p><div class="customize-display clearfix"><a href="#" id="dismiss-link" class="j-btn-global">OK</a><label for="dont-display-message"><input type="checkbox" id="dont-display-message">Don't show me this again.</label></div></div><header class="j-page-header"><div class="j-placeHdImg"><div class="placeImg" style="background-image: url('https://community.freescale.com/community/image/11235/2.png?a=365420');"></div><img src="https://community.freescale.com/community/image/11235/2.png?a=365420" alt="" border="0" class="placeImg"></div><div class="j-placeHeaderWrap"><div class="j-placeHeaderInner noParent"><h1 class="j-placeTitle"><a href="https://community.freescale.com/community/wireless-connectivity" class="font-color-white j-placeName">Wireless Connectivity</a> <a href="#" id="js-place-parents-link" class="j-nav-more jive-icon-glyph icon-angle-down" title="Where is this place located?"></a><div id="js-place-parents-container" class="j-pop-main j-menu j-quick-menu j-breadcrumb-popover" style="display: none"><ul class="j-icon-list"><li><a href="https://community.freescale.com/" class="noIcon"><span class="lnk">NXP Community</span></a></li><li><a href="https://community.freescale.com/places" class="noIcon"><span class="lnk">All Places</span></a><ul><li><a href="https://community.freescale.com/community/wireless-connectivity" class="last-child"><span class="jive-icon-med jive-icon-space"></span><span class="lnk">Wireless Connectivity</span></a></li></ul></li></ul></div><span id="js-place-link-breadcrumb" data-place-link-count="0"data-place="true"data-parents="true"></span></h1><div id="j-place-header-actions" class="j-placeHdActions" data-ann="[]"></div></div></div><div class="j-placeNavWrap"><!-- BEGIN browse place tabs --><nav id="j-placeNav" class="j-placeNav clearfix" role="navigation" aria-label="Place"><div class="j-placeNavBg"></div><a id="mobile-place-menu" href="#"><span>More</span></a><ul id="j-placeMainNav" class="j-placeMainNav j-placeLinks"><li id="jive-place-link-overview-tab" data-id="jive-place-link-overview" class="j-tab-selected active j-ui-elem"><a id="jive-place-link-overview" href="https://community.freescale.com/community/wireless-connectivity/overview" class=" j-ui-elem"><span class="lnk">Overview</span></a></li><li id="jive-place-link-content-tab" data-id="jive-place-link-content"><a id="jive-place-link-content" href="https://community.freescale.com/community/wireless-connectivity/content" class=""><span class="lnk">Content</span></a></li><li id="jive-place-link-people-tab" data-id="jive-place-link-people"><a id="jive-place-link-people" href="https://community.freescale.com/community/wireless-connectivity/people" class=""><span class="lnk">People</span></a></li><li id="jive-place-link-imageandvideo-tab" data-id="jive-place-link-imageandvideo"><a id="jive-place-link-imageandvideo" href="https://community.freescale.com/community/wireless-connectivity/imageandvideos" class=""><span class="lnk">Images</span></a></li><li id="jive-place-link-places-tab" data-id="jive-place-link-places"><a id="jive-place-link-places" href="https://community.freescale.com/community/wireless-connectivity/places" class=""><span class="lnk">Subspaces and Projects</span></a></li><li id="jive-place-link-calendar-tab" data-id="jive-place-link-calendar"><a id="jive-place-link-calendar" href="https://community.freescale.com/community/place-calendar.jspa?container=11235&amp;containerType=14" class=""data-container-type="14"><span class="lnk">Calendar</span></a></li><li href="#" id="place-main-nav-more" class="j-place-main-nav-more"><a href="#"><span class="lnk">More</span><span class="j-nav-more jive-icon-glyph icon-arrow-down2"></span></a></li></ul><ul id="j-placeActions" class="j-placeActions j-placeLinks"><li id="jive-place-link-actions-tab"><a id="jive-place-link-actions" href="#">Actions<span class="j-nav-more jive-icon-glyph icon-arrow-down2"></span></a></li><li><a id="jive-place-link-about" class="j-placeAboutLink" role="navigation" data-modalizer-url="about-place.jspa?&amp;containerType=14&amp;containerID=11235" href="#" >About</a></li><li><a href="#" class="share-link j-meta-control lnk j-button-share" title="Quickly share this content with a person or group of people" data-command="share" data-object-type="14" data-object-id="11235">Share</a></li></ul></nav><div id="j-pp-main-nav-menu-pop" class="j-quick-menu j-menu" style="display:none;"></div><script>require([ 'jquery' ], function($j) {var $upMenu = $j('#j-placeMainNav'), $menuItems = $upMenu.find('li'), $moreBtn = $j('#place-main-nav-more'), upMenuWidth = $upMenu.outerWidth(true), createMenuItemsTotalWidth = 0; $menuItems.each(function() {createMenuItemsTotalWidth += $j(this).outerWidth(true); $j(this).data("width", createMenuItemsTotalWidth);}); var moreWidth = $moreBtn.outerWidth(); $menuItems.not($moreBtn).each(function() {var width = $j(this).data("width"); if (width > upMenuWidth - moreWidth) {$j(this).hide(); $moreBtn.show();} else {$j(this).show(); $moreBtn.hide();}});})();</script></div></header><!-- Display guest tip if unauthenticated --><div class="j-guest-tip jive-info-box j-rc5"><a id="jive-guest-link-auth" href="https://community.freescale.com/login.jspa">Log in</a> to follow, share, and participate in this community.</div><!-- END browse place tabs --><div id="j-place-actions-container" class="j-quick-menu j-choose-type j-small-view j-menu" style="display: none"><strong class="j-menu-quick-sectionlabel font-color-meta-light">More</strong><ul class="j-place-actions-links j-icon-list"><li><a id="jive-place-link-actions-rss" href="https://community.freescale.com/community/feeds?community=11235" class=""><span class="jive-icon-glyph icon-feed jive-icon-med"></span><span class="lnk">Feeds</span></a></li></ul></div><div id="j-place-manage-container" class="j-menu" style="display: none"><ul class="j-place-manage-links"></ul></div><div class="j-layout j-contained j-rc4 clearfix" data-jive-view="apps/socialgroup/customize" data-container-id="11235" data-container-type="14" data-customize-message-seen="false" ><div id="jive-widgets-panel-loading" style="display: none"><p class="font-color-meta-light"><img src="https://community.freescale.com/images/jive-image-loading.gif" alt=""/>Loading...</p></div><div id="jive-widget-container"><div id="jive-widget-content" class="clearfix"><div id="jive-body-layout-ls">
+    <div class="jive-body-layout-l">
+        <div id="jive-widget-container_1" class="jive-widget-container jive-widget-container-large">
+         <div id="jive-widgetframe_166755"
+     data-widget-id="166755"
+     class="jive-widget jive-box j-rc5 jive-widget-formattedtextwidget jive-widget-formattedtext "
+     role="complementary" aria-labelledby="jive-widgetframe-title_166755">
+    <div id="jive-widgetsize_166755" class="jive-widgetsize-large">
+        <div id="jive-widgetframe-header_166755"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header  "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_166755">
+                        Formatted Text
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_166755" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_166755" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-large">
+        <script type="text/javascript">
+            require([
+                'jquery',
+                'apps/getVideoDataAndRender',
+                '!domReady'
+            ], function($, getVideoDataAndRender) {
+                $('.jive-widget-formatted-body').find('div.jive-content-video[data-video-id]').each(function (index, element) {
+                    var $element = $(element);
+
+                    if ($element.attr('data-video-id') && !$element.attr('data-video-rendered')) {
+                        var objectType = $element.attr('data-object-type');
+                        var objectID = $element.attr('data-object-id');
+                        var videoID = $element.attr('data-video-id');
+                        var divID = $element.attr("id");
+                        $element.attr("data-video-rendered", "true");
+                        getVideoDataAndRender(divID, videoID, objectType, objectID);
+                    }
+                });
+            });
+        </script>
+    <div class="jive-widget-formatted-body"><!-- [DocumentBodyStart:186efb8b-f8b9-4acf-ad63-949cdc5a258e] --><div class="jive-rendered-content"><p><a href="https://community.freescale.com/servlet/JiveServlet/showImage/73-122787-144094/public-spaces-logo.png"><img alt="public-spaces-logo.png" class="image-1 jive-image" height="109" src="https://community.freescale.com/servlet/JiveServlet/downloadImage/73-122787-144094/145-109/public-spaces-logo.png" style="" width="145"/></a>Welcome to the Wireless Connectivity online forum. We are pleased to provide our developer community a place to share, ask, discuss, and help others with issues regarding the Wireless Connectivity solutions, both hardware and software. Our support team also monitors these forums in order to provide answers and take your feedback.</p><p>Anyone can read messages, but only registered community members can post either questions or responses.</p><p>Before you ask a question, please search the community to find if someone has already offered a solution. If you don&#8217;t see a solution, then <a class="" href="https://community.freescale.com/discussion/create.jspa?suppressMarkQuestion=true&amp;question=true&amp;containerType=14&amp;containerID=11235">ask the community</a> your question</p></div><!-- [DocumentBodyEnd:186efb8b-f8b9-4acf-ad63-949cdc5a258e] --></div></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_166757"
+     data-widget-id="166757"
+     class="jive-widget jive-box j-rc5 jive-widget-recentcontentwidget  "
+     role="complementary" aria-labelledby="jive-widgetframe-title_166757">
+    <div id="jive-widgetsize_166757" class="jive-widgetsize-large">
+        <div id="jive-widgetframe-header_166757"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header jive-widget-header-refresh "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_166757">
+                        Recent Content
+                </span>
+            </h4>
+                <span class="jive-widget-refresh" id="jive-widgetframe-refresh_166757"
+                      >
+                    <a href="javascript:void(0)" id="jive-widgetframe-refresh-link_166757" data-widget-frame-id="166757"
+                       title="Refresh this widget" class="font-color-meta-light"><span class="jive-icon-glyph icon-spinner"></span></a>
+                </span>
+        </div>
+        <div id="jive-widgetframe-loading_166757" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_166757" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-large">
+
+
+<div class="widget-container" id="widget-166757">
+
+<!-- Parameters that have to be defined before including this ftl-->
+<!-- tagSets is a collection of TagSet-->
+<!-- Specialize ContentFilterHandler if there is a frameID since there could be multiple instances in a single document.-->
+
+
+    <div class="jive-widget-filter jive-content-filter widgetclass_166757 clearfix">
+            <a class="jive-content-filter-toggle jive-content-filter-show widgetclass_166757" href="#" onClick="ContentFilterHandler_166757.toggleCategories(); return false;">Filter by Categories & Tags <span class="jive-icon-sml jive-icon-arrow-generic-down widgetclass_166757"></span></a> <span style="display: none;" class="jive-content-filtered-message widgetclass_166757">Currently filtered by <span class='category'>category <span id="jive-content-filter-tagset-name_166757">X</span> </span><span class='and'> </span><span class='tag'>tag <span id="jive-content-filter-tag-name_166757">Y</span> </span>(<a href="#" onclick="return ContentFilterHandler_166757.clearFilteredCategoryMessage();">clear</a>)</span>
+            <a class="jive-content-filter-toggle jive-content-filter-hide widgetclass_166757" href="#" onClick="ContentFilterHandler_166757.toggleCategories(); return false;" style="display: none;">Filter by Categories & Tags <span class="jive-icon-sml jive-icon-arrow-generic-up widgetclass_166757"></span></a>
+
+            <div style="display: none;"  class="jive-content-filter-body widgetclass_166757">
+                <div class="jive-content-filter-categories widgetclass_166757">
+                    <h5><span class="jive-icon-med jive-icon-folder widgetclass_166757"></span>Categories <em>Filter the content list below by selecting a category.</em></h5>
+                    <table>
+                        <tbody>
+                            <tr>
+
+
+
+
+                                <td>
+                                    <a href="#"  onClick="ContentFilterHandler_166757.onCategoryClick(3871); return false;" title="8 items use this category" id="cat1667573871" href="#">&lt;1GHz&nbsp;<span>(8)</span></a>
+                                    <a href="#"  onClick="ContentFilterHandler_166757.onCategoryClick(3870); return false;" title="30 items use this category" id="cat1667573870" href="#">2.4 GHz&nbsp;<span>(30)</span></a>
+                                    <a href="#"  onClick="ContentFilterHandler_166757.onCategoryClick(3873); return false;" title="21 items use this category" id="cat1667573873" href="#">Bluetooth Low Energy&nbsp;<span>(21)</span></a>
+                                    <a href="#"  onClick="ContentFilterHandler_166757.onCategoryClick(3874); return false;" title="7 items use this category" id="cat1667573874" href="#">IPv6 / 6LoWPAN&nbsp;<span>(7)</span></a>
+                                    <a href="#"  onClick="ContentFilterHandler_166757.onCategoryClick(3872); return false;" title="11 items use this category" id="cat1667573872" href="#">Thread&nbsp;<span>(11)</span></a>
+                                </td><td>
+                                    <a href="#"  onClick="ContentFilterHandler_166757.onCategoryClick(3877); return false;" title="0 items use this category" id="cat1667573877" href="#">Wireless M-Bus&nbsp;<span>(0)</span></a>
+                                    <a href="#"  onClick="ContentFilterHandler_166757.onCategoryClick(3875); return false;" title="20 items use this category" id="cat1667573875" href="#">ZigBee &amp; RF4CE&nbsp;<span>(20)</span></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="tags-all166757" class="jive-content-filter-tags widgetclass_166757" >
+                    <h5><span class="jive-icon-sml jive-icon-tag widgetclass_166757"></span>Popular Tags <em>Filter the content list below by selecting a tag.</em></h5>
+                    <ul class="jive-content-filter-tags-popular clearfix widgetclass_166757">
+                            <li class="jive-tagset-popularity2 widgetclass_166757"><a id="tag1667571322" href="#"  onClick="ContentFilterHandler_166757.onTagClick(1322); return false;">802.15.4</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag1667572578" href="#"  onClick="ContentFilterHandler_166757.onTagClick(2578); return false;">adc</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag16675717394" href="#"  onClick="ContentFilterHandler_166757.onTagClick(17394); return false;">beacon</a></li>
+                            <li class="jive-tagset-popularity1 widgetclass_166757"><a id="tag1667574832" href="#"  onClick="ContentFilterHandler_166757.onTagClick(4832); return false;">beekit</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag1667574741" href="#"  onClick="ContentFilterHandler_166757.onTagClick(4741); return false;">beestack</a></li>
+                            <li class="jive-tagset-popularity4 widgetclass_166757"><a id="tag1667571655" href="#"  onClick="ContentFilterHandler_166757.onTagClick(1655); return false;">ble</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag16675746149" href="#"  onClick="ContentFilterHandler_166757.onTagClick(46149); return false;">bluetooth low energy</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag16675726093" href="#"  onClick="ContentFilterHandler_166757.onTagClick(26093); return false;">bluetooth smart</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag16675746330" href="#"  onClick="ContentFilterHandler_166757.onTagClick(46330); return false;">bluetooth stack</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag16675734791" href="#"  onClick="ContentFilterHandler_166757.onTagClick(34791); return false;">connectivity software</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag1667573311" href="#"  onClick="ContentFilterHandler_166757.onTagClick(3311); return false;">download</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag1667571652" href="#"  onClick="ContentFilterHandler_166757.onTagClick(1652); return false;">i.mx6</a></li>
+                            <li class="jive-tagset-popularity1 widgetclass_166757"><a id="tag1667572203" href="#"  onClick="ContentFilterHandler_166757.onTagClick(2203); return false;">i2c</a></li>
+                            <li class="jive-tagset-popularity2 widgetclass_166757"><a id="tag1667573210" href="#"  onClick="ContentFilterHandler_166757.onTagClick(3210); return false;">iar</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag1667576477" href="#"  onClick="ContentFilterHandler_166757.onTagClick(6477); return false;">ipv6</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag16675746997" href="#"  onClick="ContentFilterHandler_166757.onTagClick(46997); return false;">jn5168-m05 high power problem</a></li>
+                            <li class="jive-tagset-popularity1 widgetclass_166757"><a id="tag16675725999" href="#"  onClick="ContentFilterHandler_166757.onTagClick(25999); return false;">kds 3.0.0</a></li>
+                            <li class="jive-tagset-popularity3 widgetclass_166757"><a id="tag1667573052" href="#"  onClick="ContentFilterHandler_166757.onTagClick(3052); return false;">keil</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag1667571123" href="#"  onClick="ContentFilterHandler_166757.onTagClick(1123); return false;">kinetis</a></li>
+                            <li class="jive-tagset-popularity2 widgetclass_166757"><a id="tag16675713037" href="#"  onClick="ContentFilterHandler_166757.onTagClick(13037); return false;">kw2x</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag16675738384" href="#"  onClick="ContentFilterHandler_166757.onTagClick(38384); return false;">kw40z</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag16675713036" href="#"  onClick="ContentFilterHandler_166757.onTagClick(13036); return false;">mkw2x</a></li>
+                            <li class="jive-tagset-popularity2 widgetclass_166757"><a id="tag1667571213" href="#"  onClick="ContentFilterHandler_166757.onTagClick(1213); return false;">mqx</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag1667571878" href="#"  onClick="ContentFilterHandler_166757.onTagClick(1878); return false;">security</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag1667572215" href="#"  onClick="ContentFilterHandler_166757.onTagClick(2215); return false;">smac</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag16675714954" href="#"  onClick="ContentFilterHandler_166757.onTagClick(14954); return false;">sub-1ghz</a></li>
+                            <li class="jive-tagset-popularity1 widgetclass_166757"><a id="tag16675710481" href="#"  onClick="ContentFilterHandler_166757.onTagClick(10481); return false;">thread</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag1667572302" href="#"  onClick="ContentFilterHandler_166757.onTagClick(2302); return false;">tool</a></li>
+                            <li class="jive-tagset-popularity0 widgetclass_166757"><a id="tag1667571149" href="#"  onClick="ContentFilterHandler_166757.onTagClick(1149); return false;">wireless</a></li>
+                            <li class="jive-tagset-popularity9 widgetclass_166757"><a id="tag1667571332" href="#"  onClick="ContentFilterHandler_166757.onTagClick(1332); return false;">zigbee</a></li>
+                    </ul>
+                </div>
+                <div  style="display: none;"  id="tags-cat1667573871" class="jive-content-filter-tags widgetclass_166757">
+                    <h5><span class="jive-icon-sml jive-icon-tag widgetclass_166757"></span>Popular Tags in &lt;1GHz <em>The following tags are frequently used with this category.</em></h5>
+                    <ul class="jive-content-filter-tags-popular clearfix widgetclass_166757">
+                    </ul>
+                </div>
+                <div  style="display: none;"  id="tags-cat1667573870" class="jive-content-filter-tags widgetclass_166757">
+                    <h5><span class="jive-icon-sml jive-icon-tag widgetclass_166757"></span>Popular Tags in 2.4 GHz <em>The following tags are frequently used with this category.</em></h5>
+                    <ul class="jive-content-filter-tags-popular clearfix widgetclass_166757">
+                    </ul>
+                </div>
+                <div  style="display: none;"  id="tags-cat1667573873" class="jive-content-filter-tags widgetclass_166757">
+                    <h5><span class="jive-icon-sml jive-icon-tag widgetclass_166757"></span>Popular Tags in Bluetooth Low Energy <em>The following tags are frequently used with this category.</em></h5>
+                    <ul class="jive-content-filter-tags-popular clearfix widgetclass_166757">
+                    </ul>
+                </div>
+                <div  style="display: none;"  id="tags-cat1667573874" class="jive-content-filter-tags widgetclass_166757">
+                    <h5><span class="jive-icon-sml jive-icon-tag widgetclass_166757"></span>Popular Tags in IPv6 / 6LoWPAN <em>The following tags are frequently used with this category.</em></h5>
+                    <ul class="jive-content-filter-tags-popular clearfix widgetclass_166757">
+                    </ul>
+                </div>
+                <div  style="display: none;"  id="tags-cat1667573872" class="jive-content-filter-tags widgetclass_166757">
+                    <h5><span class="jive-icon-sml jive-icon-tag widgetclass_166757"></span>Popular Tags in Thread <em>The following tags are frequently used with this category.</em></h5>
+                    <ul class="jive-content-filter-tags-popular clearfix widgetclass_166757">
+                    </ul>
+                </div>
+                <div  style="display: none;"  id="tags-cat1667573877" class="jive-content-filter-tags widgetclass_166757">
+                    <h5><span class="jive-icon-sml jive-icon-tag widgetclass_166757"></span>Popular Tags in Wireless M-Bus <em>The following tags are frequently used with this category.</em></h5>
+                    <ul class="jive-content-filter-tags-popular clearfix widgetclass_166757">
+                    </ul>
+                </div>
+                <div  style="display: none;"  id="tags-cat1667573875" class="jive-content-filter-tags widgetclass_166757">
+                    <h5><span class="jive-icon-sml jive-icon-tag widgetclass_166757"></span>Popular Tags in ZigBee &amp; RF4CE <em>The following tags are frequently used with this category.</em></h5>
+                    <ul class="jive-content-filter-tags-popular clearfix widgetclass_166757">
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+<form class="status-morecontent-form" action="https://community.freescale.com/community/recent-updates!moreContentResults.jspa">
+    <input type="hidden" name="containerID" value="11235"/>
+    <input type="hidden" name="containerType" value="14"/>
+    <input type="hidden" name="recursive" value="false"/>
+    <input type="hidden" name="visibleTypes" value="800|1|109016030|3|102|3227383|38|1100|18|1464927464|602|96891546|-960826044"/>
+    <input type="hidden" name="filterEnabled" value="true"/>
+    <input type="hidden" name="start"  value="15"/>
+    <input type="hidden" name="numResults" value="15"/>
+    <input type="hidden" name="containerSize" value="LARGE"/>
+    <input type="hidden" name="root" value="false"/>
+    <input type="hidden" name="zeroItem" value="392060-1"/>
+    <input type="hidden" name="showProjectContent" value="false"/>
+</form>
+<div class="jive-table jive-table-widget jive-table-recentcontent">
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/392060">
+            <span             class="jive-icon-med jive-icon-discussion"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/392060">
+                Thread statck with KW40Z/41Z
+            </a>
+                        <span>
+                        <strong>
+                            20 hours ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/sensenthuran"
+data-externalId=""
+data-username="sensenthuran"
+data-avatarId="1034"
+id="jive-2814525986616537243373"
+data-userId="281452"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Sen Senthuran</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/sensenthuran"
+   data-externalId=""
+   data-username="sensenthuran"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="281452"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/sensenthuran/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="sensenthuran"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="Sen Senthuran"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/391630">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/391630">
+                ECC Library
+            </a>
+                        <span>
+                        <strong>
+                            1 day ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/craigogawa"
+data-externalId=""
+data-username="craigogawa"
+data-avatarId="1034"
+id="jive-2286865986616539487397"
+data-userId="228686"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Craig Ogawa</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/craigogawa"
+   data-externalId=""
+   data-username="craigogawa"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="228686"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/craigogawa/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="craigogawa"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="Craig Ogawa"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/391977">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/391977">
+                FXTH87's PA output impedance
+            </a>
+                        <span>
+                        <strong>
+                            1 day ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/yapingwang"
+data-externalId=""
+data-username="yapingwang"
+data-avatarId="1034"
+id="jive-2746295986616541154725"
+data-userId="274629"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Yaping Wang</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/yapingwang"
+   data-externalId=""
+   data-username="yapingwang"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="274629"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/yapingwang/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="yapingwang"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="Yaping Wang"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/391974">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/391974">
+                Zigbee - Coordinator does not start unless the router is already up, why?
+            </a>
+                        <span>
+                        <strong>
+                            2 days ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/freshmango90"
+data-externalId=""
+data-username="freshmango90"
+data-avatarId="1034"
+id="jive-2704805986616542875787"
+data-userId="270480"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>freshmango90</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/freshmango90"
+   data-externalId=""
+   data-username="freshmango90"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="270480"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/freshmango90/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="freshmango90"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="freshmango90"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/391973">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/391973">
+                Zigbee - Is there any reason for a router to leave?
+            </a>
+                        <span>
+                        <strong>
+                            2 days ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/freshmango90"
+data-externalId=""
+data-username="freshmango90"
+data-avatarId="1034"
+id="jive-2704805986616544887955"
+data-userId="270480"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>freshmango90</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/freshmango90"
+   data-externalId=""
+   data-username="freshmango90"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="270480"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/freshmango90/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="freshmango90"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="freshmango90"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/391559">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/391559">
+                KW40Z_Connectivity_Software_1.0.1 serial interface type
+            </a>
+                        <span>
+                        <strong>
+                            2 days ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/seanwu"
+data-externalId=""
+data-username="seanwu"
+data-avatarId="26869"
+id="jive-2094505986616546738231"
+data-userId="209450"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>seanwu</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/seanwu"
+   data-externalId=""
+   data-username="seanwu"
+   data-avatarId="26869"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="209450"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/seanwu/avatar/22.png?a=26869"
+                data-avatarId="26869"
+            data-username="seanwu"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="seanwu"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/391878">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/391878">
+                NFC tags certification / Regulatory test
+            </a>
+                        <span>
+                        <strong>
+                            2 days ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/thomasklatte"
+data-externalId=""
+data-username="thomasklatte"
+data-avatarId="1034"
+id="jive-2814425986616548488164"
+data-userId="281442"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Thomas Klatte</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/thomasklatte"
+   data-externalId=""
+   data-username="thomasklatte"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="281442"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/thomasklatte/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="thomasklatte"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="Thomas Klatte"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/391740">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/391740">
+                Unsupported ELF flags in MAC library from MKW2xD MCR20A Connectivity Software
+            </a>
+                        <span>
+                        <strong>
+                            2 days ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/jorisvergeer"
+data-externalId=""
+data-username="jorisvergeer"
+data-avatarId="1034"
+id="jive-2705355986616550159070"
+data-userId="270535"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Joris Vergeer</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/jorisvergeer"
+   data-externalId=""
+   data-username="jorisvergeer"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="270535"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/jorisvergeer/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="jorisvergeer"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="Joris Vergeer"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/391791">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/391791">
+                Zigbee HA Profile for JN5168 in NCP mode
+            </a>
+                        <span>
+                        <strong>
+                            3 days ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/dhavalvachhani"
+data-externalId=""
+data-username="dhavalvachhani"
+data-avatarId="1034"
+id="jive-2813685986616552036556"
+data-userId="281368"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Dhaval Vachhani</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/dhavalvachhani"
+   data-externalId=""
+   data-username="dhavalvachhani"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="281368"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/dhavalvachhani/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="dhavalvachhani"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="Dhaval Vachhani"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/384729">
+            <span             class="jive-icon-med jive-icon-discussion-correct"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/384729">
+                zigbee communication
+            </a>
+                        <span>
+                        <strong>
+                            4 days ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/syed.idris"
+data-externalId=""
+data-username="syed.idris"
+data-avatarId="1034"
+id="jive-2700135986616554051011"
+data-userId="270013"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>syed idris</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/syed.idris"
+   data-externalId=""
+   data-username="syed.idris"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="270013"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/syed.idris/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="syed.idris"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="syed idris"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/391720">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/391720">
+                How to do auto reporting on end device?
+            </a>
+                        <span>
+                        <strong>
+                            4 days ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/randolfhu"
+data-externalId=""
+data-username="randolfhu"
+data-avatarId="1034"
+id="jive-2687315986616555891643"
+data-userId="268731"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Randolf Hu</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/randolfhu"
+   data-externalId=""
+   data-username="randolfhu"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="268731"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/randolfhu/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="randolfhu"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="Randolf Hu"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/391631">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/391631">
+                Hi, I want to use NXP's JN5168
+            </a>
+                        <span>
+                        <strong>
+                            4 days ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/wasifalikhan"
+data-externalId=""
+data-username="wasifalikhan"
+data-avatarId="1034"
+id="jive-2812525986616557677047"
+data-userId="281252"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Wasif Ali Khan</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/wasifalikhan"
+   data-externalId=""
+   data-username="wasifalikhan"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="281252"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/wasifalikhan/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="wasifalikhan"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="Wasif Ali Khan"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/391591">
+            <span             class="jive-icon-med jive-icon-discussion-correct"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/391591">
+                Bluetooth
+            </a>
+                        <span>
+                        <strong>
+                            7 days ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/shinezen"
+data-externalId=""
+data-username="shinezen"
+data-avatarId="1034"
+id="jive-2807225986616559560437"
+data-userId="280722"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>&amp;#21129; &amp;#27427;&amp;#23637;</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/shinezen"
+   data-externalId=""
+   data-username="shinezen"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="280722"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/shinezen/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="shinezen"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="&amp;#21129; &amp;#27427;&amp;#23637;"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/385821">
+            <span             class="jive-icon-med jive-icon-discussion-correct"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/385821">
+                What's the difference for each data requests: NLDE vs APSDE vs AF
+            </a>
+                        <span>
+                        <strong>
+                            7 days ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/freshmango90"
+data-externalId=""
+data-username="freshmango90"
+data-avatarId="1034"
+id="jive-2704805986616561490841"
+data-userId="270480"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>freshmango90</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/freshmango90"
+   data-externalId=""
+   data-username="freshmango90"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="270480"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/freshmango90/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="freshmango90"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="freshmango90"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="https://community.freescale.com/thread/390537">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="https://community.freescale.com/thread/390537">
+                How do I secure a ZigBee network payload?
+            </a>
+                        <span>
+                        <strong>
+                            7 days ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="https://community.freescale.com/people/andrewfitzsimons"
+data-externalId=""
+data-username="andrewfitzsimons"
+data-avatarId="1034"
+id="jive-2413485986616564299762"
+data-userId="241348"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Andrew Fitzsimons</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="https://community.freescale.com/people/andrewfitzsimons"
+   data-externalId=""
+   data-username="andrewfitzsimons"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="241348"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/andrewfitzsimons/avatar/22.png?a=1034"
+                data-avatarId="1034"
+            data-username="andrewfitzsimons"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="Andrew Fitzsimons"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+        </tbody>
+    </table>
+</div>
+
+    <div class="more-status-content">
+        <span class="jive-whats-new-more">
+            <a href="#" class="jive-icon-link-forward-content jive-more-content">More</a>   
+        </span>
+    </div>
+     <div class="jive-box-footer">
+                <a href="https://community.freescale.com/community/feeds/allcontent?community=11235&amp;showProjectContent=false&amp;recursive=false" class="statusrss font-color-meta-light" title="Get a feed of this content">
+                    <span class="jive-icon-glyph icon-feed"></span>
+Get a feed of this content                </a>
+     </div>
+</div>
+</div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_166756"
+     data-widget-id="166756"
+     class="jive-widget jive-box j-rc5 jive-widget-askaquestionwidget  "
+     role="complementary" aria-labelledby="jive-widgetframe-title_166756">
+    <div id="jive-widgetsize_166756" class="jive-widgetsize-large">
+        <div id="jive-widgetframe-header_166756"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header  "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_166756">
+                        Ask Wireless Connectivity
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_166756" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_166756" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-large"><div class="ask-a-question-container"><form action="https://community.freescale.com/discussion/create.jspa" method="GET" class="j-form"><input type="hidden" name="chooseContainer" value="true" /><input type="text" aria-required="true" required class="ask-a-question-search" autocomplete="off" placeholder="Type your question" /><button type="submit">Ask it</button></form></div></div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="jive-body-layout-s">
+         <div id="jive-widget-container_2" class="jive-widget-container jive-widget-container-small">
+<div id="jive-widgetframe_166758"
+     data-widget-id="166758"
+     class="jive-widget jive-box j-rc5 jive-widget-taggroupwidget  "
+     role="complementary" aria-labelledby="jive-widgetframe-title_166758">
+    <div id="jive-widgetsize_166758" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_166758"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header  "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_166758">
+                        Categories
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_166758" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_166758" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-small">
+    <!-- BEGIN tag groups list -->
+
+        <ul class="j-icon-list">
+                <li>
+                    <a href="https://community.freescale.com/community/wireless-connectivity/content?filterID=contentstatus%5Bpublished%5D~category%5B1ghz%5D"><span class="jive-icon-med jive-icon-folder"></span>&lt;1GHz</a>
+                </li>
+                <li>
+                    <a href="https://community.freescale.com/community/wireless-connectivity/content?filterID=contentstatus%5Bpublished%5D~category%5B24-ghz%5D"><span class="jive-icon-med jive-icon-folder"></span>2.4 GHz</a>
+                </li>
+                <li>
+                    <a href="https://community.freescale.com/community/wireless-connectivity/content?filterID=contentstatus%5Bpublished%5D~category%5Bbluetooth-low-energy%5D"><span class="jive-icon-med jive-icon-folder"></span>Bluetooth Low Energy</a>
+                </li>
+                <li>
+                    <a href="https://community.freescale.com/community/wireless-connectivity/content?filterID=contentstatus%5Bpublished%5D~category%5Bipv6-6lowpan%5D"><span class="jive-icon-med jive-icon-folder"></span>IPv6 / 6LoWPAN</a>
+                </li>
+                <li>
+                    <a href="https://community.freescale.com/community/wireless-connectivity/content?filterID=contentstatus%5Bpublished%5D~category%5Bthread%5D"><span class="jive-icon-med jive-icon-folder"></span>Thread</a>
+                </li>
+                <li>
+                    <a href="https://community.freescale.com/community/wireless-connectivity/content?filterID=contentstatus%5Bpublished%5D~category%5Bwireless-m-bus%5D"><span class="jive-icon-med jive-icon-folder"></span>Wireless M-Bus</a>
+                </li>
+                <li>
+                    <a href="https://community.freescale.com/community/wireless-connectivity/content?filterID=contentstatus%5Bpublished%5D~category%5Bzigbee-rf4ce%5D"><span class="jive-icon-med jive-icon-folder"></span>ZigBee &amp; RF4CE</a>
+                </li>
+        </ul>
+
+    <!-- END tag groups list -->
+
+</div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_166759"
+     data-widget-id="166759"
+     class="jive-widget jive-box j-rc5 jive-widget-communityactionswidget jive-widget-actions jive-box-actions "
+     role="complementary" aria-labelledby="jive-widgetframe-title_166759">
+    <div id="jive-widgetsize_166759" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_166759"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header  "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_166759">
+                        Actions
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_166759" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_166759" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-small">
+<div id="js-comm-actions-vpsLOm" data-jive-view="apps/socialgroup/actions">
+
+        
+        <ul class="j-icon-list ">
+
+
+
+
+
+
+
+
+                <li id="receive-rss-link" style=""
+                ><a href="https://community.freescale.com/community/feeds?community=11235"
+                        rel="nofollow"
+                        onclick=""
+                        title="">
+                    <span class="jive-icon-glyph icon-feed"></span>
+                    View feeds
+                    </a></li>
+
+
+
+
+
+
+        </ul>
+
+</div></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_166760"
+     data-widget-id="166760"
+     class="jive-widget jive-box j-rc5 jive-widget-popularcontentwidget  "
+     role="complementary" aria-labelledby="jive-widgetframe-title_166760">
+    <div id="jive-widgetsize_166760" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_166760"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header  "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_166760">
+                        Popular Content
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_166760" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_166760" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-small">
+
+
+        <ul class="j-icon-list">
+                <li class="clearfix"><a href="https://community.freescale.com/message/644502" id="2-644502">
+            <span             class="jive-icon-sml jive-icon-discussion"
+             title=""
+ ></span>
+ Thread statck with KW40Z/41Z </a></li>
+                <li class="clearfix"><a href="https://community.freescale.com/docs/DOC-330719" id="102-330719">
+            <span             class="jive-icon-sml jive-icon-document"
+             title=""
+ ></span>
+ Kinetis KW01 for TPMS Over-the-Air Software Update </a></li>
+                <li class="clearfix"><a href="https://community.freescale.com/message/642326" id="2-642326">
+            <span             class="jive-icon-sml jive-icon-discussion-correct"
+             title=""
+ ></span>
+ Bluetooth  </a></li>
+                <li class="clearfix"><a href="https://community.freescale.com/message/621630" id="2-621630">
+            <span             class="jive-icon-sml jive-icon-discussion"
+             title=""
+ ></span>
+ Access to murata-imx group </a></li>
+                <li class="clearfix"><a href="https://community.freescale.com/message/641100" id="2-641100">
+            <span             class="jive-icon-sml jive-icon-discussion"
+             title=""
+ ></span>
+ Beacon question at KW40 </a></li>
+        </ul>
+
+</div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_166761"
+     data-widget-id="166761"
+     class="jive-widget jive-box j-rc5 jive-widget-topmemberswidget  "
+     role="complementary" aria-labelledby="jive-widgetframe-title_166761">
+    <div id="jive-widgetsize_166761" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_166761"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header  "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_166761">
+                        Top Participants
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_166761" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_166761" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-small">        <!-- BEGIN sidebar box 'top participants' -->
+
+                <ul class="j-people-list jive-sidebar-topmembers">
+                        <li class="jive-sidebar-topmembers-row-odd clearfix">
+
+
+<a href="https://community.freescale.com/people/freshmango90"
+   data-externalId=""
+   data-username="freshmango90"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="270480"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/freshmango90/avatar/32.png?a=1034"
+                data-avatarId="1034"
+            data-username="freshmango90"
+
+        border="0" height="32" data-height="32" width="32"
+        alt="freshmango90"
+        />
+    </a>
+                            <span><a href="https://community.freescale.com/people/freshmango90"
+data-externalId=""
+data-username="freshmango90"
+data-avatarId="1034"
+id="jive-2704805986616614125734"
+data-userId="270480"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>freshmango90</a></span>
+
+                        </li>
+                        <li class="jive-sidebar-topmembers-row-even clearfix">
+
+
+<a href="https://community.freescale.com/people/gj35"
+   data-externalId=""
+   data-username="gj35"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="280834"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/gj35/avatar/32.png?a=1034"
+                data-avatarId="1034"
+            data-username="gj35"
+
+        border="0" height="32" data-height="32" width="32"
+        alt="Grant Juel"
+        />
+    </a>
+                            <span><a href="https://community.freescale.com/people/gj35"
+data-externalId=""
+data-username="gj35"
+data-avatarId="1034"
+id="jive-2808345986616615120812"
+data-userId="280834"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Grant Juel</a></span>
+
+                        </li>
+                        <li class="jive-sidebar-topmembers-row-odd clearfix">
+
+
+<a href="https://community.freescale.com/people/antonioconcio"
+   data-externalId=""
+   data-username="antonioconcio"
+   data-avatarId="1024"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="210200"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/antonioconcio/avatar/32.png?a=1024"
+                data-avatarId="1024"
+            data-username="antonioconcio"
+
+        border="0" height="32" data-height="32" width="32"
+        alt="antonioconcio"
+        />
+    </a>
+                            <span><a href="https://community.freescale.com/people/antonioconcio"
+data-externalId=""
+data-username="antonioconcio"
+data-avatarId="1024"
+id="jive-2102005986616616462308"
+data-userId="210200"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>antonioconcio</a>
+<img src="https://community.freescale.com/resources/statics/rolebadges/roleBadge-4-1031-1456851681122.png?a=1456851681127" title="Employee" alt="Employee" height="16" width="16" class="j-role-badge"></span>
+
+                        </li>
+                        <li class="jive-sidebar-topmembers-row-even clearfix">
+
+
+<a href="https://community.freescale.com/people/seanwu"
+   data-externalId=""
+   data-username="seanwu"
+   data-avatarId="26869"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="209450"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/seanwu/avatar/32.png?a=26869"
+                data-avatarId="26869"
+            data-username="seanwu"
+
+        border="0" height="32" data-height="32" width="32"
+        alt="seanwu"
+        />
+    </a>
+                            <span><a href="https://community.freescale.com/people/seanwu"
+data-externalId=""
+data-username="seanwu"
+data-avatarId="26869"
+id="jive-2094505986616618937546"
+data-userId="209450"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>seanwu</a></span>
+
+                        </li>
+                        <li class="jive-sidebar-topmembers-row-odd clearfix">
+
+
+<a href="https://community.freescale.com/people/lyncheese"
+   data-externalId=""
+   data-username="lyncheese"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="280387"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/lyncheese/avatar/32.png?a=1034"
+                data-avatarId="1034"
+            data-username="lyncheese"
+
+        border="0" height="32" data-height="32" width="32"
+        alt="Charles Charles"
+        />
+    </a>
+                            <span><a href="https://community.freescale.com/people/lyncheese"
+data-externalId=""
+data-username="lyncheese"
+data-avatarId="1034"
+id="jive-2803875986616619800725"
+data-userId="280387"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Charles Charles</a></span>
+
+                        </li>
+                        <li class="jive-sidebar-topmembers-row-even clearfix">
+
+
+<a href="https://community.freescale.com/people/syed.idris"
+   data-externalId=""
+   data-username="syed.idris"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="270013"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/syed.idris/avatar/32.png?a=1034"
+                data-avatarId="1034"
+            data-username="syed.idris"
+
+        border="0" height="32" data-height="32" width="32"
+        alt="syed idris"
+        />
+    </a>
+                            <span><a href="https://community.freescale.com/people/syed.idris"
+data-externalId=""
+data-username="syed.idris"
+data-avatarId="1034"
+id="jive-2700135986616620600660"
+data-userId="270013"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>syed idris</a></span>
+
+                        </li>
+                        <li class="jive-sidebar-topmembers-row-odd clearfix">
+
+
+<a href="https://community.freescale.com/people/juangonzalez"
+   data-externalId=""
+   data-username="juangonzalez"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="280942"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/juangonzalez/avatar/32.png?a=1034"
+                data-avatarId="1034"
+            data-username="juangonzalez"
+
+        border="0" height="32" data-height="32" width="32"
+        alt="Juan Gonzalez"
+        />
+    </a>
+                            <span><a href="https://community.freescale.com/people/juangonzalez"
+data-externalId=""
+data-username="juangonzalez"
+data-avatarId="1034"
+id="jive-2809425986616621446741"
+data-userId="280942"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Juan Gonzalez</a></span>
+
+                        </li>
+                        <li class="jive-sidebar-topmembers-row-even clearfix">
+
+
+<a href="https://community.freescale.com/people/jeannemeier"
+   data-externalId=""
+   data-username="jeannemeier"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="275070"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/jeannemeier/avatar/32.png?a=1034"
+                data-avatarId="1034"
+            data-username="jeannemeier"
+
+        border="0" height="32" data-height="32" width="32"
+        alt="Jeanne Meier"
+        />
+    </a>
+                            <span><a href="https://community.freescale.com/people/jeannemeier"
+data-externalId=""
+data-username="jeannemeier"
+data-avatarId="1034"
+id="jive-2750705986616622251184"
+data-userId="275070"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Jeanne Meier</a></span>
+
+                        </li>
+                        <li class="jive-sidebar-topmembers-row-odd clearfix">
+
+
+<a href="https://community.freescale.com/people/georgecapraru"
+   data-externalId=""
+   data-username="georgecapraru"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="222964"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/georgecapraru/avatar/32.png?a=1034"
+                data-avatarId="1034"
+            data-username="georgecapraru"
+
+        border="0" height="32" data-height="32" width="32"
+        alt="George-Lucian Capraru"
+        />
+    </a>
+                            <span><a href="https://community.freescale.com/people/georgecapraru"
+data-externalId=""
+data-username="georgecapraru"
+data-avatarId="1034"
+id="jive-2229645986616623474079"
+data-userId="222964"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>George-Lucian Capraru</a>
+<img src="https://community.freescale.com/resources/statics/rolebadges/roleBadge-4-1031-1456851681122.png?a=1456851681127" title="Employee" alt="Employee" height="16" width="16" class="j-role-badge"></span>
+
+                        </li>
+                        <li class="jive-sidebar-topmembers-row-even clearfix">
+
+
+<a href="https://community.freescale.com/people/dhavalvachhani"
+   data-externalId=""
+   data-username="dhavalvachhani"
+   data-avatarId="1034"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="281368"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="https://community.freescale.com/people/dhavalvachhani/avatar/32.png?a=1034"
+                data-avatarId="1034"
+            data-username="dhavalvachhani"
+
+        border="0" height="32" data-height="32" width="32"
+        alt="Dhaval Vachhani"
+        />
+    </a>
+                            <span><a href="https://community.freescale.com/people/dhavalvachhani"
+data-externalId=""
+data-username="dhavalvachhani"
+data-avatarId="1034"
+id="jive-2813685986616625857695"
+data-userId="281368"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>Dhaval Vachhani</a></span>
+
+                        </li>
+                </ul>
+                <div class="jive-sidebar-viewall">
+                </div>
+
+        <!-- END sidebar box 'top participants' -->
+
+</div>
+        </div>
+    </div>
+</div>
+         </div>
+    </div>
+</div>
+</div></div></div></div></section><div id="j-footer-wrap" class="j-js-footer-wrap"><footer id="j-cust-foot" class="clearfix" role="contentinfo"><div class="nxp-nav container" id="footer">
+    <div class="row">
+      <div class="col-sm-2 col-xs-6 dtmFooter">
+        <h4>ABOUT NXP</h4>
+        <ul class="list-unstyled">
+          <li class="paddingtop5">
+            <a href="http://investors.nxp.com/phoenix.zhtml?c=209114&amp;p=irol-irhome">Investors</a>
+          </li>
+          <li class="paddingtop5">
+            <a href="http://www.nxp.com/webapp/connect/memberDirSearch.sp">Partners</a>
+          </li>
+          <li class="paddingtop5">
+            <a href="http://www.nxp.com/about/careers-at-nxp:CAREERS">Careers</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 col-xs-6 dtmFooter">
+        <h4>RESOURCES</h4>
+        <ul class="list-unstyled">
+          <li class="paddingtop5">
+            <a href="http://www.nxp.com/about/nxp-mobile-applications:MOBILE">Mobile Apps</a>
+          </li>
+          <li class="paddingtop5">
+            <a href="http://media.nxp.com/">Press, News, Blogs</a>
+          </li>
+          <li class="paddingtop5">
+            <a href="http://www.nxp.com/pages/contact-us:CONTACTUS">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3 col-xs-12 dtmFooter">
+        <h4>FOLLOW US</h4>
+        <ul class="list-inline paddingtop5" id="footer-social">
+          <li class="twitter">
+            <a href="https://twitter.com/NXP" target="_blank" title="Follow NXP on Twitter">
+              <span class="icon-twitter22"></span>
+            </a>
+          </li>
+          <li class="linkedin">
+            <a href="http://www.linkedin.com/company/nxp-semiconductors" target="_blank" title="Follow NXP on Linked In">
+              <span class="icon-linkedin"></span>
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="https://www.facebook.com/NXPsemi" target="_blank" title="Follow NXP on Facebook">
+              <span class="icon-facebook"></span>
+            </a>
+          </li>
+          <!--li class="youtube"><a href="https://www.youtube.com/nxpsemiconductors" title="Follow NXP on Youtube" target="_blank" data-content-finding="Footer" data-content-subfinding="FOLLOW US"><span class="icon-youtube-square2"></span></a></li-->
+          <li class="email">
+            <a href="https://contact.nxp.com/Subscription-Center" target="_blank" title="Subscription Center">
+              <span class="icon-mail2"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-5 col-xs-12">
+        <div id="newsContainer">
+          <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 370px; height: 84px; margin: 0px; overflow: hidden;">
+            <div id="news" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 30710px; height: 84px; z-index: auto; opacity: 1;">
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">11 Jan 2016</span>
+                </h5>
+                <p>Photo Advisory -- US Secretary of Transportation, Anthony Foxx, Meets With NXP CEO Rick Clemmer at CES 2016</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2128276" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">11 Jan 2016</span>
+                </h5>
+                <p>NXP Semiconductors Announces Conference Call to Review Full-Year and Fourth Quarter 2015 Financial Results</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2128087" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">9 Jan 2016</span>
+                </h5>
+                <p>The smart home of the future is on our doorstep</p>
+                <a class="readmore" href="http://blog.nxp.com/internet-of-things-2/the-smart-home-of-the-future-is-on-our-doorstep/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">7 Jan 2016</span>
+                </h5>
+                <p>NXP "Smarter World Tour" Begins Its European Journey</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2127124" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">7 Jan 2016</span>
+                </h5>
+                <p>NXP “Smarter World Tour” Begins Its European Journey</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2127123" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">6 Jan 2016</span>
+                </h5>
+                <p>NXP and BRAGI Demonstrate World’s First Smart, Truly Wireless Earphones at CES 2016</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2126782" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">4 Jan 2016</span>
+                </h5>
+                <p>Bluetooth Low Energy for the Internet of Things</p>
+                <a class="readmore" href="http://blog.nxp.com/portable-wearable/bluetooth-low-energy-for-the-internet-of-things/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">4 Jan 2016</span>
+                </h5>
+                <p>NXP Radar Technology Accelerates ADAS Adoption</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2125903" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">4 Jan 2016</span>
+                </h5>
+                <p>NXP Introduces Industry’s Most Comprehensive Smart Home Automation Solutions</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2125901" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">4 Jan 2016</span>
+                </h5>
+                <p>NXP Launches World’s Most Power Efficient Bluetooth Low Energy Chip for Wearable Devices</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2125898" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">28 Dec 2015</span>
+                </h5>
+                <p>NXP Announces Beginning of New Era in NFC Technology</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2125103" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">22 Dec 2015</span>
+                </h5>
+                <p>NXP Receives China UnionPay Secure Product Certification</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2124572" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">21 Dec 2015</span>
+                </h5>
+                <p>NFC is everywhere at CES</p>
+                <a class="readmore" href="http://blog.nxp.com/corporate/nfc-is-everywhere-at-ces/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">17 Dec 2015</span>
+                </h5>
+                <p>CES 2016: Preparing for the revolution ahead</p>
+                <a class="readmore" href="http://blog.nxp.com/events-featured/ces-2016-preparing-for-the-revolution-ahead/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">16 Dec 2015</span>
+                </h5>
+                <p>Girlstart Announced as Beneficiary of NXP Fundraising Efforts at 2016 Austin Marathon</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2123195" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">15 Dec 2015</span>
+                </h5>
+                <p>MIFARE® brings Villanova’s Wildcard to life</p>
+                <a class="readmore" href="http://blog.nxp.com/security/mifare-brings-villanovas-wildcard-to-life/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">14 Dec 2015</span>
+                </h5>
+                <p>Experience the future of smart homes and smart mobility at CES 2016</p>
+                <a class="readmore" href="http://blog.nxp.com/events-featured/experience-the-future-of-smart-homes-and-smart-mobility-at-ces-2016/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">10 Dec 2015</span>
+                </h5>
+                <p>Stella Lux shows the future of green mobility in Shanghai</p>
+                <a class="readmore" href="http://blog.nxp.com/connected-car/stella-lux-shows-the-future-of-green-mobility-in-shanghai/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">10 Dec 2015</span>
+                </h5>
+                <p>NXP Semiconductors Obtains Improved Credit Ratings From S&amp;P and Moody's</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2121599" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">7 Dec 2015</span>
+                </h5>
+                <p>We are the new NXP</p>
+                <a class="readmore" href="http://blog.nxp.com/featured/we-are-the-new-nxp/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">7 Dec 2015</span>
+                </h5>
+                <p>NXP and Freescale Announce Completion of Merger</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2120582" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">3 Dec 2015</span>
+                </h5>
+                <p>Copper-wire bonding takes gold with latest AEC addendum</p>
+                <a class="readmore" href="http://blog.nxp.com/tech-in-depth/copper-wire-bonding-takes-gold-with-latest-aec-addendum/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">1 Dec 2015</span>
+                </h5>
+                <p>Living in a Smarter World: From Privacy to Control</p>
+                <a class="readmore" href="http://blog.nxp.com/security/living-in-a-smarter-world-from-privacy-to-control/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">26 Nov 2015</span>
+                </h5>
+                <p>The perfect wireless communication system</p>
+                <a class="readmore" href="http://blog.nxp.com/automotive/the-perfect-wireless-communication-system/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">24 Nov 2015</span>
+                </h5>
+                <p>Streamlining Board Designs with NXP’s Mini Logic Portfolio</p>
+                <a class="readmore" href="http://blog.nxp.com/tech-in-depth/streamlining-board-designs-with-nxps-mini-logic-portfolio/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">19 Nov 2015</span>
+                </h5>
+                <p>Saying no to traffic delays in Istanbul</p>
+                <a class="readmore" href="http://blog.nxp.com/tech-in-depth/saying-no-to-traffic-delays-in-istanbul/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">18 Nov 2015</span>
+                </h5>
+                <p>6 ways NFC helps healthcare</p>
+                <a class="readmore" href="http://blog.nxp.com/iot/6-ways-nfc-helps-healthcare/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">17 Nov 2015</span>
+                </h5>
+                <p>NXP at IoT World Forum 2015, London – Security in IoT: How Secure is Smart?</p>
+                <a class="readmore" href="http://blog.nxp.com/iot/nxp-at-iot-world-forum-2015-london-security-in-iot-how-secure-is-smart/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">12 Nov 2015</span>
+                </h5>
+                <p>The accidental thermal engineer: Can we know Tj by looking at Tcase?</p>
+                <a class="readmore" href="http://blog.nxp.com/tech-in-depth/the-accidental-thermal-engineer-can-we-know-tj-by-looking-at-tcase/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">10 Nov 2015</span>
+                </h5>
+                <p>What’s next for your wearables design? WaRP 7</p>
+                <a class="readmore" href="http://blog.nxp.com/iot/whats-next-for-your-wearables-design-warp-7/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">10 Nov 2015</span>
+                </h5>
+                <p>7 playful uses for NFC in gaming</p>
+                <a class="readmore" href="http://blog.nxp.com/iot/7-playful-uses-for-nfc-in-gaming/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">6 Nov 2015</span>
+                </h5>
+                <p>Meet an NFC innovator: Speech Code</p>
+                <a class="readmore" href="http://blog.nxp.com/iot/meet-an-nfc-innovator-speech-code/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">5 Nov 2015</span>
+                </h5>
+                <p>What you can do with Sensor Data Analytics, from babies to horses</p>
+                <a class="readmore" href="http://blog.nxp.com/sensors/babies-to-horses-what-you-can-do-with-sensor-data-analytics/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">3 Nov 2015</span>
+                </h5>
+                <p>Playroom 2.0: Made possible by NFC</p>
+                <a class="readmore" href="http://blog.nxp.com/iot/playroom-2-0-made-possible-by-nfc/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">19 Jan 2016</span>
+                </h5>
+                <p>NXP and Guala Closures Bring Smart-Security NFC Closure Solutions to Wine and Spirits Market</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2130073" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">18 Jan 2016</span>
+                </h5>
+                <p>The accidental thermal engineer: Can we know Tj by looking at Tcase? (Part 2)</p>
+                <a class="readmore" href="http://blog.nxp.com/tech-in-depth/the-accidental-thermal-engineer-can-we-know-tj-by-looking-at-tcase-part-2/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">14 Jan 2016</span>
+                </h5>
+                <p>Can we trust new mobility systems?</p>
+                <a class="readmore" href="http://blog.nxp.com/automotive/can-we-trust-new-mobility-systems/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">14 Jan 2016</span>
+                </h5>
+                <p>CES 2016</p>
+                <a class="readmore" href="http://blog.nxp.com/events/ces-2016/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">12 Jan 2016</span>
+                </h5>
+                <p>How NFC is taking mobile payments in bold new directions</p>
+                <a class="readmore" href="http://blog.nxp.com/near-field-communication/how-nfc-is-taking-mobile-payments-in-bold-new-directions/" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">12 Jan 2016</span>
+                </h5>
+                <p>NXP Hosts Future Secure Connected Car Showcase in Silicon Valley</p>
+                <a class="readmore" href="http://phx.corporate-ir.net/phoenix.zhtml?c=254228&amp;p=irol-newsArticle&amp;cat=news&amp;id=2128675" target="_blank">Read More</a>
+              </div>
+              <div class="newsItem">
+                <h5>NEWS  
+                  <span class="newsdate">11 Jan 2016</span>
+                </h5>
+                <p>Security, Privacy and Mobility: CES 2016 Discussion</p>
+                <a class="readmore" href="http://blog.nxp.com/events-featured/security-privacy-and-mobility-ces-2016-discussion/" target="_blank">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div id="newsDirection">
+            <a class="" href="#left" id="newsLeft" style="display: inline;">
+              <span class="icon-angle-left"></span>
+            </a>  
+            <a class="" href="#right" id="newsRight" style="display: inline;">
+              <span class="icon-angle-right"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row legal paddingtop5">
+      <div class="col-sm-7 paddingleft35 dtmFooter">
+        <ul class="list-inline vertical">
+          <li>
+            <a href="http://www.nxp.com/about/privacy:PRIVACYPRACTICES">Privacy</a>
+          </li>
+          <li>
+            <a href="http://www.nxp.com/about/terms-of-use:TERMSOFUSE">Terms of Use</a>
+          </li>
+          <li>
+            <a href="http://www.nxp.com/about/our-standard-terms-and-conditions-of-sale-counter-offer:TERMSCONDITIONSSALE">Terms of Sale</a>
+          </li>
+          <li>
+            <a href="#stay_here" id="stay_here" name="stay_here">Feedback</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-5 pull-right" style="margin-top:6px;">
+        <span class="pull-right nxp-gray-text small">©2006-2016 NXP Semiconductors. All rights reserved.</span>
+      </div>
+    </div>
+  </div></footer><footer id="j-footer" role="contentinfo" ><div id="j-footer-poweredBy"><a class="font-color-meta-light j-copyright" href="http://www.jivesoftware.com/poweredby/" target="_blank"><span class="lnk">&copy; 2016 Jive Software</span></a><span class="j-pipe"> | </span><a href="http://www.jivesoftware.com/poweredby/" target="_blank" title="Jive Software Version: 2016.1.0.0 , revision: 20160412161809.1f7ee12.release_2016.1.7" class="j-powered-by"><span class="lnk">Powered by</span> <span class="jive-icon-glyph icon-jivelogo"></span></a></div><div class="j-footer-nav font-color-meta"><a class="j-footer-nav-link" href="https://community.freescale.com/">Home</a><span class="j-pipe j-footer-nav-link"> | </span><a class="j-footer-nav-link" href="#top">Top of page</a><span class="j-pipe j-footer-nav-link"> | </span><a class="j-footer-nav-link" href="http://docs.jivesoftware.com/cloud_ext/end_user/jive.help.core">Help</a></div><div class="j-footer-jiveVersion font-color-meta">Jive Software Version: 2016.1.0.0 , revision: 20160412161809.1f7ee12.release_2016.1.7</div><span id='speakSpan' class='j-508-label' role='marquee' aria-live='assertive' aria-relevant='all'></span><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+ 
+ 
+  ga('create', 'UA-42380235-1', 'freescale.com');
+  ga('send', 'pageview');
+</script>
+<script src="http://www.freescale.com/files/abstract/misc/jivecommunity_fslanalytics.js"></script>
+                    <script>require([ 'ui-modules/spotlight/scripts/main', 'domReady!' ], function(spotlight){spotlight.init();});</script></footer></div></div><div id="jiveTT-note" class="jive-tooltip2 notedefault snp-mouseoffset" role="tooltip"><div class="jive-tooltip2-mid j-mini-modal j-mini-modal-place"><div class="jive-tooltip2-mid-padding j-modal-content clearfix j-js-note-body" id="jive-note-body"></div></div></div><div id="jiveTT-note-additems" class="jive-tooltip2 notedefault snp-mouseoffset"  ><div class="jive-tooltip2-mid j-mini-modal"><div class="jive-tooltip2-mid-padding j-modal-content clearfix" id="jive-note-additems-body"></div></div></div><div id="jiveTT-note-checkpoint" class="jive-tooltip2 notedefault snp-mouseoffset"  ><div class="jive-tooltip2-mid j-mini-modal"><div class="jive-tooltip2-mid-padding j-modal-content" id="jive-note-checkpoint-body"></div></div></div><div id="jiveTT-note-tasks" class="jive-tooltip2 notedefault snp-mouseoffset"  ><div class="jive-tooltip2-mid j-mini-modal"><div class="jive-tooltip2-mid-padding j-modal-content" id="jive-note-tasks-body"></div></div></div><div id="jiveTT-note-playbox" class="jive-tooltip2 notedefault snp-mouseoffset"  ><div class="jive-tooltip2-mid j-mini-modal"><div class="jive-tooltip2-mid-padding j-modal-content" id="jive-note-playbox-body"></div></div></div><script type="application/ld+json">{"@context": "http://schema.org", "@type": "WebSite", "url": "https://community.freescale.com", "potentialAction": {"@type": "SearchAction", "target": "https://community.freescale.com/search.jspa?q={search_term_string}", "query-input": "required name=search_term_string"}}</script><div class="j-alert-container" role="alert" aria-live="polite" aria-atomic="true"></div><span id="j-speak-accessibility" class="j-508-label" role="status" aria-live="polite" aria-relevant="all" aria-atomic="true"></span><script>require(['apps/shared/models/user_relationship_list_source', 'apps/shared/models/user_relationship_source' ]);</script><script>require([ 'apps/follows/main', 'apps/follows/user/views/follow_user_link', 'apps/follows/user/main' ]);</script><script>require([ 'jive/urlcleaner' ]);</script><script>var containerShortUrl = "\/container-short.jspa"; var videoShortUrl = "\/view-video-short.jspa"; var profileShortUrl = "\/profile-short.jspa"; var profileLoadingTooltip = "Loading user profile"; var profileErrorTooltip = "There was an error loading that profile information."; var followErrorMessage = "An internal error occurred while following the object."; var ajaxErrorMessage = "An unexpected error has occurred. Please make sure that your session did not expire while viewing this page."; var ajaxNotFoundMessage = "The specified item was not found."; var ajaxUnauthorizedMessage = "You are not authorized to perform this operation. If you are not logged in please log in and try again.";
+        require([
+            'jquery'
+        ], function($) {
+            var originalWrite = document.write;
+            document.write = function() {
+                if(typeof $ != 'undefined' && $.isReady) {
+                    console.warn("document.write called after document was loaded: ", arguments);
+                } else {
+                    return Function.prototype.apply.call(originalWrite, document, arguments);
+                }
+            }
+        });
+        </script><script>require(['places-autocomplete']);</script><script>window.appsMarketEnabled =  false ; window.anyAppsEnabled =  false ; window.appsAvailable =  false ; window.appUUIDs = ""; require([ 'jive/app/core_container/event_relay' ], function() {require([ 'osapi' ], function(osapi) {require([ 'jive/app/app-feature-disabled' ], function(AppsDisabled) {window.appsDisabled = new AppsDisabled({apps_feature_disabled: "You may not be able to view this content as Apps have been disabled for this system. Please consult your System Administrator for more information."},{disabled: true});});});require([ 'jive/app/containerDeferred', 'jive/app/syntheticContainerDeferred', 'jive/app/core_container/mock', 'jive/app/core_container/tile_app' ], function(containerDeferred, syntheticContainerDeferred, Mock, TileApp) {var mockContainer = new Mock(); containerDeferred.resolve(mockContainer); var tileApp = TileApp(); tileApp.initActionLinkContext({coreAPIType: 'osapi.jive.core.Space', id:  11235.0   }); syntheticContainerDeferred.resolve(tileApp);});});</script><script>
+                require(['jquery'], function($) { $.migrateMute = true; });
+            </script><script src="https://community.freescale.com/2016.1.0.1f7ee12/resources/scripts/gen/cf98c7717b28a4a942cf60c7304f3609.js"></script>
+<script>
+require([ 'jive/rte/defaultStyles' ], function(defaultStyles) {defaultStyles = ["\/2016.1.0.1f7ee12\/plugins\/gamification_2016.1.7\/resources\/styles\/n4jive.concat.css"];require(['jiverscripts/conc/observable'], function(observable) {jive.observable = observable;}); require([ 'jive/rte/externalLinkModal' ], function(externalLinkModal) {jive.rte.mobileUI = false;externalLinkModal("true", "" );});}); jive.global.typeToNumeric = {"embedded_video":1100,"webhook":1224013431,"placeTemplateEntity":1567134318,"dm":109016030,"project":600,"discussion":1,"poll":18,"profileImage":501,"blog":37,"space":14,"post":38,"announcement":22,"group":700,"2901":2901,"image":111,"placeTemplateCategory":955999628,"static":1140061448,"securityGroup":4,"externalStreamInstance":1094237539,"task":602,"system":-2,"slide":1606291040,"person":3,"extprop":-1840153649,"extStreamActivity":-960826044,"page":-2106121635,"contentVersion":120,"favorite":800,"remoteDocument":9876,"streamEntry":1501,"idea":3227383,"document":102,"update":1464927464,"video":1100,"carousel":1527402675,"mention":550,"file":102,"attachment":13,"stream":-891990144,"share":109400031,"tileInstance":1094237539,"profileField":500,"event":96891546,"outcome":2700,"tileDefinition":1803367074,"photo":102,"message":2,"url":801,"collaboration":2800,"privateprop":987082157,"interaction":2801,"comment":105,"invite":350,"user":2020,"extStreamDefinition":1803367074}; jive.global.typeToMacroName = {"embedded_video":"videolink","idea":"idea","document":"document","project":"project","update":"microblog","photo":"document","discussion":"thread","poll":"polls","video":"videolink","blog":"blog","message":"message","space":"community","url":"external-site","task":"task","file":"document","post":"blogpost","person":"user","extStreamActivity":"tilestream","event":"event","group":"group"};
+
+require(['jive/bundles/zapatec'], function(Calendar) {Calendar._TT["DEF_DATE_FORMAT"] = "%m\/%d\/%Y";});
+
+require([ 'jquery', 'apps/follows/user/views/follow_user_link', 'apps/follows/user/main', 'jquery-plugin/jquery.placeheld', 'domReady!' ], function($, ProfileFollowView, FollowUserApp) {var followView = new ProfileFollowView({i18n: {startFollowingMessage: '<p>You are now following {0}.</p>', stopFollowingMessage:  '<p>You have stopped following {0}.</p>', pendingConnectionMessage: '<p>Note: {0} will need to approve your request</p>'}, bidirectional: false}); var jiveUserFollow = new FollowUserApp({followView: followView}); $("input[placeholder]").placeHeld();});
+
+</script>
+<script>var containerType = '14'; var containerID = '11235';var spotlightSearchURL = "https://community.freescale.com/community/spotlight-search";</script><script>window._jive_images_enabled = false; window._jive_video_module_enabled = false; require([ 'jive/rte/main', 'jive/rte/macro', 'jive/rte/emote', 'jive/rte/syntax/syntaxhighlightmacro' ], function(RTE, Macro) {if(typeof(tinyMCE) != "undefined"){tinyMCE.addI18n('en.jivemacros',{"unused.jive.key" : "nothing."});}
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("color","","TEXT", true, false, [], [{name: "0",value: ""},{name: "__default_attr",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("size","","TEXT", true, false, [], [{name: "0",value: ""},{name: "__default_attr",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("font","","TEXT", true, false, [], [{name: "0",value: ""},{name: "__default_attr",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("toc","","IMAGE", true, true, [], [], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("code","","TEXT", false, true, [{ name: "java", deleteAll: true, params: [{ name: "__default_attr", value :"java"} ]},{ name: "plain", deleteAll: true, params: [{ name: "__default_attr", value :"plain"} ]},{ name: "xml", deleteAll: true, params: [{ name: "__default_attr", value :"xml"} ]},{ name: "html", deleteAll: true, params: [{ name: "__default_attr", value :"html"} ]},{ name: "sql", deleteAll: true, params: [{ name: "__default_attr", value :"sql"} ]}], [{name: "__default_attr",value: ["java","plain","xml","html","sql"]}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("noformat","","TEXT", true, false, [], [], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("thread","https://community.freescale.com/community/thread/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("message","https://community.freescale.com/community/message/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("external-site","https://community.freescale.com/community/bookmarks/","INLINE", false, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("document","https://community.freescale.com/community/docs/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("tag","https://community.freescale.com/community/tags/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""},{name: "tag",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("microblog","https://community.freescale.com/community/status/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("polls","https://community.freescale.com/community/polls/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("blogpost","https://community.freescale.com/community/blogs/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("blog","https://community.freescale.com/community/blogs/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""},{name: "name",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("community","https://community.freescale.com/community/community/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("space","https://community.freescale.com/community/community/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("user","https://community.freescale.com/community/people/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""},{name: "username",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("project","https://community.freescale.com/community/project/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("task","view-task.jspa?task=","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("group","https://community.freescale.com/community/groups/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("quote","","TEXT", false, true, [], [{name: "title",value: ""},{name: "__default_attr",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("alert","","TEXT", false, true, [{ name: "success", deleteAll: true, params: [{ name: "__default_attr", value :"success"} ,{ name: "alert", value :"success"} ]},{ name: "info", deleteAll: true, params: [{ name: "__default_attr", value :"info"} ,{ name: "alert", value :"info"} ]},{ name: "warning", deleteAll: true, params: [{ name: "__default_attr", value :"warning"} ,{ name: "alert", value :"warning"} ]},{ name: "danger", deleteAll: true, params: [{ name: "__default_attr", value :"danger"} ,{ name: "alert", value :"danger"} ]}], [{name: "__default_attr",value: ""},{name: "alert",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("flag","","INLINE", false, true, [{ name: "new", deleteAll: true, params: [{ name: "flag", value :"new"} ]},{ name: "updated", deleteAll: true, params: [{ name: "flag", value :"updated"} ]}], [], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("vimeo","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("veoh","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("dailymotion","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("youtube","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("kaltura","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""},{name: "playerKey",value: ""},{name: "playerID",value: ""},{name: "partnerID",value: ""},{name: "playerColor",value: "#FFFFFF"},{name: "sourcedomain",value: ""}], false,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("brightcove","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""},{name: "playerKey",value: ""},{name: "playerID",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("showandshare","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""},{name: "playerColor",value: "#000000"},{name: "sourcedomain",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("videomacro","","IMAGE", true, false, [], [{name: "__default_attr",value: ""},{name: "videoid",value: ""},{name: "imageURL",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("videolink","https://community.freescale.com/community/thread/","INLINE", true, false, [], [{name: "id",value: ""},{name: "0",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("application","","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "__title",value: ""},{name: "__view",value: ""},{name: "__params",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("appEmbeddedView","","INLINE", true, false, [], [{name: "_default_attr",value: ""},{name: "_appuuid",value: ""},{name: "_title",value: ""},{name: "_view",value: ""},{name: "_context",value: ""},{name: "_url",value: ""},{name: "_previewimage",value: ""},{name: "_icon",value: ""},{name: "_action_id",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("tilestream","https://community.freescale.com/community/external/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("event","","INLINE", true, false, [{ name: "default", deleteAll: true, params: [{ name: "id", value :""} ,{ name: "__default_attr", value :""} ,{ name: "title", value :""} ]}], [{name: "id",value: ""},{name: "title",value: ""},{name: "__default_attr",value: ""}], true,false));});
+require(['jive/rte/macro'], function() {jive.rte.macros.push(new jive.rte.Macro("idea","","INLINE", true, false, [{ name: "default", deleteAll: true, params: [{ name: "id", value :""} ,{ name: "__default_attr", value :""} ,{ name: "title", value :""} ]}], [{name: "id",value: ""},{name: "title",value: ""},{name: "__default_attr",value: ""}], true,false));});
+window.tinyMCE_GZ = { loaded: true };});</script><script src="https://community.freescale.com/2016.1.0.1f7ee12/resources/scripts/gen/68a7d1a781f95fa8a14bcbb159af70c6.js"></script>
+<script src="https://community.freescale.com/2016.1.0.1f7ee12/resources/scripts/i18n/keys/en/bundle_en.js?h=4f5fa63f5bb0b531d0bf1298c3342914"></script><script>
+require(['jive/i18n'], function() { jive.i18n.addMsgs({'p254':'Reports','p878':'Calendar','p879':'Events','k2a38':'Images','k29fe':'Content','k2a90':'People','k3309':'Tasks','p8b1':'Remote Docs','p51a':'Reports','place.places.link.space.subspaces':'Subspaces','k2a8c':'Overview','k29f8':'Activity'}); });
+
+    require(['jive/widget/recent-content'], function(RecentContentApp) {
+        var containerSelector = "#widget-166757";
+        var i18n = {
+            loading: "Loading..."
+        };
+        var recentContent = new RecentContentApp(containerSelector, i18n);
+    });
+
+
+            require([
+                'jquery',
+                'apps/pager/main',
+                'domReady!'
+            ], function($j, PagerMain) {
+                var pager = new PagerMain($j('#widget-166757'),
+                                                "/community/render-widget!execute.jspa #widget-166757 > *",
+                                                {
+                                                    frameID: 166757,
+                                                    widgetType: 3,
+                                                    widgetID: 1002,
+                                                    container: 11235,
+                                                    containerType: 14,
+                                                    per_page: 15,
+                                                    idPrefix: '166757',
+                                                    size: 2
+                                                },
+
+                                                {
+                                                    updateLocation: false
+                                                });
+                if (typeof(ContentFilterHandler_166757) != 'undefined') {
+                    ContentFilterHandler_166757.contentLoader = pager;
+                }
+            });
+
+
+        require([
+            'jquery'
+        ], function($) {
+            if (typeof(ContentFilterHandler_166757) === "undefined") {
+                ContentFilterHandler_166757 = {
+                    params : { tag : null, tagSet : null },
+                    contentLoader: { setStart: function(){}},
+                    updateCategoryFilterCollapsedMessage: function(params) {
+                        if(params.tagSet != null){
+                            var id = "cat166757" + params.tagSet;
+                            $('.jive-content-filtered-message.widgetclass_166757 .category').show();
+                            var catval = $('#' + id).text();
+                            catval = catval.substr(0, catval.lastIndexOf("("));
+                            $('.jive-content-filtered-message.widgetclass_166757 .category span').text(catval);
+                        }else{
+                            $('.jive-content-filtered-message.widgetclass_166757 .category').hide();
+                        }
+                        if(params.tag != null){
+                            var id = "tag166757" + params.tag;
+                            $('.jive-content-filtered-message.widgetclass_166757 .tag').show();
+                            var tagval = $('#' + id).text();
+                            $('.jive-content-filtered-message.widgetclass_166757 .tag span').text(tagval);
+                        }else{
+                            $('#jive-content-filter-tag-name_166757').text('');
+                            $('.jive-content-filtered-message.widgetclass_166757 .tag').hide();
+                        }
+                        if(params.tagSet != null && params.tag != null){
+                            $('.jive-content-filtered-message.widgetclass_166757 .and').show();
+                        }else{
+                            $('.jive-content-filtered-message.widgetclass_166757 .and').hide();
+                        }
+                    },
+                    toggleCategories : function() {
+                            if ( $('.widgetclass_166757.jive-content-filter-body').is(':visible') ) {
+                                this.closeCategoryFilter();
+                            } else {
+                                this.openCategoryFilter();
+                            }
+                            return false;
+                        },
+                    openCategoryFilter : function(){
+                        $('.widgetclass_166757.jive-content-filtered-message').hide();
+                        $('.widgetclass_166757.jive-content-filter-body').slideDown('fast');
+                        $('.widgetclass_166757.jive-content-filter-hide').show();
+                        $('.widgetclass_166757.jive-content-filter-show').hide();
+                    },
+                    closeCategoryFilter : function(){
+                        this.updateCategoryFilterCollapsedMessage(this.params);
+                        $('.widgetclass_166757.jive-content-filter-body').slideUp('fast');
+                        $('.widgetclass_166757.jive-content-filter-hide').hide();
+                        if ( $('.widgetclass_166757.jive-content-filter-body a').hasClass('jive-content-filter-highlight') ) {
+                            $('.widgetclass_166757.jive-content-filtered-message').show();
+                        }
+                        $('.widgetclass_166757.jive-content-filter-show').show();
+                    },
+                    clearFilteredCategoryMessage : function() {
+                            $('.widgetclass_166757.jive-content-filtered-message').hide();
+                            $('.widgetclass_166757.jive-content-filter-body a').removeClass('jive-content-filter-highlight');
+                            $(".widgetclass_166757.jive-content-filter-tags").hide();
+                            $("#tags-all166757").show();
+                            this.setContentParameters({ tagSet: null, tag: null });
+                            this.closeCategoryFilter();
+                            return false;
+                        },
+                    onCategoryClick : function(tagSetID) {
+                        this.selectCategory(tagSetID);
+                        return false;
+                    },
+                    selectCategory : function(tagSetID){
+                        var id = "cat166757" + tagSetID;
+                        if ( $('#' + id).hasClass('jive-content-filter-highlight') ) {
+                            // Deselected a category
+                            $('#' + id).removeClass('jive-content-filter-highlight');
+                            $('.widgetclass_166757.jive-content-filter-tags a').removeClass('jive-content-filter-highlight');
+                            $(".widgetclass_166757.jive-content-filter-tags").hide();
+                            $('.widgetclass_166757.jive-table-row').show();
+                            $('.widgetclass_166757.hidden').hide();
+                            $("#tags-all166757").show();
+                            this.setContentParameters({ tagSet: null, tag: null });
+                        } else {
+                            // Selected a category, highlight it and unhighlight any others
+                            $('.widgetclass_166757.jive-content-filter-categories a').removeClass('jive-content-filter-highlight');
+                            $('.widgetclass_166757.jive-content-filter-tags a').removeClass('jive-content-filter-highlight');
+                            $('#' + id).addClass('jive-content-filter-highlight');
+                            $(".widgetclass_166757.jive-content-filter-tags").hide();
+                            $("#tags-" + id).show();
+                            $("#tags-" + id).effect("highlight", {color: '#e4e9f3'}, 500);
+                            $('.widgetclass_166757.jive-table-row').hide();
+                            $(".widgetclass_166757.jive-table-recentcontent tbody tr").removeClass("jive-table-row-even");
+
+                            $(".row-" + this.id).show();
+                            $(".jive-table-recentcontent tbody tr.row-" + this.id + ":odd").addClass("jive-table-row-even");
+                            this.setContentParameters({ tagSet: tagSetID, tag: null });
+                        }
+                        $("input[name='tag']").attr("value", "");
+                    },
+                    onTagClick: function(tag) {
+                        var id = "tag166757" + tag
+                        if (this.params.tagSet) {
+                            id = id + this.params.tagSet;
+                        }
+                        if ( $("#" + id).hasClass('jive-content-filter-highlight') ) {
+                            $("#" + id).removeClass('jive-content-filter-highlight');
+                            this.setContentParameters({ tag: null, tagSet: this.params.tagSet });
+                        } else {
+                            $('.widgetclass_166757.jive-content-filter-tags-popular a').removeClass('jive-content-filter-highlight');
+                            $("#" + id).addClass('jive-content-filter-highlight');
+                            this.setContentParameters({ tag: tag, tagSet: this.params.tagSet });
+                        }
+                        return false;
+                    },
+                    // The new jive.Pager app accepts content parameters directly
+                    // instead of reading from form input values.  However the form
+                    // input and `setStart()` APIs need to be kept for
+                    // compatibility for the time being.
+                    setContentParameters: function(params) {
+                        var k;
+                        params = this.params = $.extend(this.params, params);
+                        if (typeof(this.contentLoader.set_parameters) == 'function') {
+                            this.contentLoader.set_parameters(params);
+                        } else {
+                            for (k in params) {
+                                $('input[name=' + k + ']').attr('value', params[k] || '-1');
+                            }
+                            this.contentLoader.reloadListener = function(that){ return function(){
+                                if (typeof(that.contentLoader.get_parameters) == 'function') {
+                                    params = that.contentLoader.get_parameters();
+                                }
+                                this.updateCategoryFilterCollapsedMessage(this.params);
+                            }}(this);
+                            this.contentLoader.setStart(0);
+                        }
+                    }
+                };
+            }
+        });
+
+
+require([ 'apps/ask_a_question/main', 'domReady!' ], function(AskAQuestion) {new AskAQuestion({containerType: 14, containerID: 11235, widgetFrameID: 166756, wholeCommunityScope: false, numResults: 5, postSingle: true, displayThreadResults: false, displayAnsweredQuestionResults: false, displayDocumentResults: false, searchContainer: {"id":11235,"type":14,"locale":null,"jiveObjectURL":"/community/wireless-connectivity","name":"Wireless Connectivity","systemContainer":false,"restrictedGroup":false,"visibleToPartner":false,"jiveObjectCSS":"jive-icon-med jive-icon-space"}, postContainer: {"id":11235,"type":14,"locale":null,"jiveObjectURL":"/community/wireless-connectivity","name":"Wireless Connectivity","systemContainer":false,"restrictedGroup":false,"visibleToPartner":false,"jiveObjectCSS":"jive-icon-med jive-icon-space"}, postContainers: [{"id":11235,"type":14,"locale":null,"jiveObjectURL":"/community/wireless-connectivity","name":"Wireless Connectivity","systemContainer":false,"restrictedGroup":false,"visibleToPartner":false,"jiveObjectCSS":"jive-icon-med jive-icon-space"}], displayQuestionsOnly: true});});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+require([ 'apps/places/actions/main', 'apps/places/manage/main', 'apps/modalizer/main' ], function(Actions, Manage, Modalizer) {var manage = new Manage({"objectType":14,"browseID":145838,"displayParent":false,"parentID":0,"parentType":0,"parentName":null,"parentUrl":null,"name":"Wireless Connectivity","description":"Welcome to the Wireless Connectivity online forum. We are pleased to provide our developer community a place to share, discuss, and help others with issues regarding the Wireless Connectivity solutions, both hardware and software. Our support team also monitors these forums in order to provide answers and take your feedback. Anyone can read messages, but only registered community members can post either questions or responses.","parent":false,"type":{"typeID":5,"name":"COMMUNITY","jiveObjectTypeID":14,"followedPlace":false},"objectURL":"/community/wireless-connectivity","iconCssClass":"jive-icon-space","onClickJs":null,"disabledPlace":false,"viewableByUser":false,"placeTypeName":"Space","placeI18nKeyPrefix":"community","canCreateByEmail":false,"followed":false,"streamsAssociatedCount":0,"trackable":false,"tracked":false,"membershipSupported":false,"canJoinPlace":false,"socialGroupMember":true,"canLeavePlace":false,"archived":false,"canArchive":false,"feedsEnabled":true,"blogName":null,"blogUrl":null,"feedUrl":"/community/feeds?community=11235","tab":"jive-place-link-overview","watched":false,"watchingEnabled":true,"visibleToPartner":false,"extendedAuthorsEnabled":false,"contentPlaceRelationshipsExist":false,"bulkUrl":null,"startDate":null,"dueDate":null,"ownerBean":null,"coreObjectTypeName":null,"parentBrowseID":null,"partner":false,"guest":true,"draft":false,"id":11235}, {canManageAnnouncements: false, canCreateByEmail: false, canManageCategories: false, canMoveContainer: false, canManageContainer: false, i18n: {"stopFollowing":null,"startFollowing":null,"followError":null}, staticResourcesEnabled : false, availableDefaultBannerImages: null}); new Actions({"objectType":14,"browseID":145838,"displayParent":false,"parentID":0,"parentType":0,"parentName":null,"parentUrl":null,"name":"Wireless Connectivity","description":"Welcome to the Wireless Connectivity online forum. We are pleased to provide our developer community a place to share, discuss, and help others with issues regarding the Wireless Connectivity solutions, both hardware and software. Our support team also monitors these forums in order to provide answers and take your feedback. Anyone can read messages, but only registered community members can post either questions or responses.","parent":false,"type":{"typeID":5,"name":"COMMUNITY","jiveObjectTypeID":14,"followedPlace":false},"objectURL":"/community/wireless-connectivity","iconCssClass":"jive-icon-space","onClickJs":null,"disabledPlace":false,"viewableByUser":false,"placeTypeName":"Space","placeI18nKeyPrefix":"community","canCreateByEmail":false,"followed":false,"streamsAssociatedCount":0,"trackable":false,"tracked":false,"membershipSupported":false,"canJoinPlace":false,"socialGroupMember":true,"canLeavePlace":false,"archived":false,"canArchive":false,"feedsEnabled":true,"blogName":null,"blogUrl":null,"feedUrl":"/community/feeds?community=11235","tab":"jive-place-link-overview","watched":false,"watchingEnabled":true,"visibleToPartner":false,"extendedAuthorsEnabled":false,"contentPlaceRelationshipsExist":false,"bulkUrl":null,"startDate":null,"dueDate":null,"ownerBean":null,"coreObjectTypeName":null,"parentBrowseID":null,"partner":false,"guest":true,"draft":false,"id":11235}); new Modalizer({liveTriggers:['#jive-place-link-about'], width: 'wide'});});
+
+require([ 'jquery' ], function($j) {if (!window['inviteApp']) {$j('.js-link-invite').on('click.inviteApp', function() {require(['apps/invitation/main'], function(InviteMain) {window['inviteApp'] = new InviteMain(11235, "14", true, '.js-link-invite', '' );}); $j('.js-link-invite').off('.inviteApp');}); if (false) {$j('.js-link-invite').click();}}});
+
+requirejs.config({config: {'page/places/group': {placeID: 11235, placeType: 14, widgetTypeID: 3, customizeNow: false, customizeMessageSeen: false, customizeUrl: 'customize-container.jspa?containerType=14&containerID=11235', renderUrl: 'render-widget.jspa', bridgeAction : 'bridge-widgets.jspa', bridgeLoginAction : 'bridge-widgets!login.jspa', bridgeLogoutAction : 'bridge-widgets!logout.jspa',}}});
+
+require([ 'jquery', 'breadcrumb', 'jive/contentplace_relationship' ]);
+
+require([ 'apps/places/nav/place_nav_main', 'domReady!' ], function(PlacesNavMain) {var placeNav = new PlacesNavMain({menuData: [{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"k2a8c","url":"/community/wireless-connectivity/overview","titleKey":null,"urlParams":null,"label":null,"visible":true,"appActionLink":false,"id":"jive-place-link-overview"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"k29f8","url":"/community/wireless-connectivity/activity","titleKey":null,"urlParams":null,"label":null,"visible":false,"appActionLink":false,"id":"jive-place-link-activity"},{"iconCss":"jive-icon-task","icon":null,"linkCss":null,"itemCss":null,"nameKey":"k3309","url":"/community/wireless-connectivity/tasks","titleKey":null,"urlParams":null,"label":null,"visible":false,"appActionLink":false,"id":"jive-place-link-tasks"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"k29fe","url":"/community/wireless-connectivity/content","titleKey":null,"urlParams":null,"label":null,"visible":true,"appActionLink":false,"id":"jive-place-link-content"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"k2a90","url":"/community/wireless-connectivity/people","titleKey":null,"urlParams":null,"label":null,"visible":true,"appActionLink":false,"id":"jive-place-link-people"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"k2a38","url":"/community/wireless-connectivity/imageandvideos","titleKey":null,"urlParams":null,"label":null,"visible":true,"appActionLink":false,"id":"jive-place-link-imageandvideo"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"place.places.link.space","url":"/community/wireless-connectivity/places","titleKey":null,"urlParams":null,"label":null,"visible":true,"appActionLink":false,"id":"jive-place-link-places"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"p51a","url":"/community/wireless-connectivity/group-reports.jspa?containerID=11235&containerType=14","titleKey":"p519","urlParams":null,"label":null,"visible":false,"appActionLink":false,"id":"group-analytics"},{"iconCss":"jive-icon-task","icon":null,"linkCss":null,"itemCss":null,"nameKey":"p8b1","url":"/community/wireless-connectivity/remotedocuments?itemView=detail","titleKey":null,"urlParams":null,"label":null,"visible":false,"appActionLink":false,"id":"spdocslist"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"p878","url":"place-calendar.jspa","titleKey":null,"urlParams":{"container":"11235","containerType":"14"},"label":null,"visible":true,"appActionLink":false,"id":"jive-place-link-calendar"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"p879","url":"/community/wireless-connectivity/events-list","titleKey":null,"urlParams":null,"label":null,"visible":false,"appActionLink":false,"id":"jive-place-link-event-list"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"p254","url":"/community/wireless-connectivity/community-reports.jspa?containerID=11235&containerType=14","titleKey":"p253","urlParams":null,"label":null,"visible":false,"appActionLink":false,"id":"community-analytics"}], placeTab: 'jive-place-link-overview'}); placeNav.postRender();});
+
+require([ 'sso/google-oidc-login', 'domReady!' ], function(GoogleOidcLogin) {window.jiveGoogleOidcLogin = new GoogleOidcLogin({jiveTokenName: "jive.googleoidc.login", jiveTokenGUID: "1463141372354-MPIU0HUHZKG9JF9P1EEKPMHRKK5DTIFX", clientID: "null", openIDRealm: "null", redirectURI: "https://community.freescale.com/googleoidc/sso"});});
+
+
+                        require(['jquery'], function($) {
+                            $('#navLogin').on('click', function(e) {
+                                var fragment = '';
+                                if (window.location.hash.length > 1){
+                                    fragment = "?fragment=" + window.location.hash.substring(1);
+                                }
+                                $('#navLogin').attr("href", window._jive_base_url + '/login.jspa' + fragment);
+                           });
+                        });
+                        
+
+
+            require(['apps/autosearch/autosearch_main']);
+            
+
+require([ 'apps/activity_stream/activity_notifier', 'apps/activity_stream/models/activity_stream_source', 'apps/shared/controllers/switchboard', 'domReady!', 'jive/responsive' ], function(ActivityNotifier, ActivityStreamSource) {}); require([ 'domReady!' ], function() {jive.onLoadEventComplete = true;});
+
+require([ 'apps/authentication/main', 'apps/authentication/models/authentication_source', 'apps/userregistration/main' ], function(Authentication, AuthenticationSource, UserRegistration) {var authSource = new AuthenticationSource({forceSecure: false});});
+
+require(['jive/app/app-feature-disabled', 'jiveCoreApiV3'], function() {require(['gadgets', 'shindig', 'osapi']);});
+
+</script>
+<!-- plugin javascript --><!-- end plugin javascript --><script src="https://community.freescale.com/2016.1.0.1f7ee12/resources/scripts/gen/40475b48a5560f75bedea2b8cfb03941.js"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"e1336a1f47","agent":"","beacon":"bam.nr-data.net","applicationTime":28,"applicationID":"9120693","transactionName":"b1xUN0YHXEVRWxIMWFYWYxFdSVFZXVUTC15MQBlJ","queueTime":0}</script></body>
+<!-- Mirrored from community.freescale.com/community/wireless-connectivity by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:46 GMT -->
+</html>

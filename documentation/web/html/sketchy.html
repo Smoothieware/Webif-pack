@@ -1,0 +1,263 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+
+
+<!-- Mirrored from www.jarkman.co.uk/catalog/robots/sketchy.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:23 GMT -->
+<head>
+<title>Sketchy</title>
+</head>
+
+<body>
+<h1>Sketchy</h1> <p> (9/10)</p>
+
+<p></p>
+
+<p>Sketchy is an Android->Bluetooth->Arduino portrait drawing machine, built as part of
+<a href="http://www.dorkbot.org/dorkbotbristol/"> Dorkbot Bristol</a> and <a href="#"http://www.todraw.org/>Draw's</a> mark-making project in November 2011.</p>
+
+<p>It uses an Android phone to capture images and process them, and a simple <a href="http://www.jarkman.co.uk/catalog/robots/drawingdelta.htm">Arduino-powered delta robot</a> wielding a brushpen to sketch them.</p>
+
+
+<p><img src="http://www.jarkman.co.uk/catalog/robots/sketchy4.jpg"></p>
+
+<p><img src="http://www.jarkman.co.uk/catalog/robots/sketchy5.jpg"></p>
+
+<p>Sketchy has had several outings by now, and drawn hundreds of portraits. Here's a quick CV:<br><br>
+September 2010: <a href="http://www.verydesignersblock.com/2009/category/db-london-2010/">Designersblock, as part of the London Design Festival</a><br><br>
+November 2010: <a href="http://www.dorkbot.org/dorkbotbristol/?p=220">Dorkbot/Draw in Stoke's Croft</a> <a href="http://picasaweb.google.com/jarkman/101013_dorkbot_draw#">(Photos)</a><br><br>
+December 2010: <a href="http://www.iheartrobotics.com/2010/12/playback-this-month-in-delta-robots.html">iheartrobotics.com's "Best DIY Delta Robot and Delta Robot of the Year"</a><br><br>
+May 2011: <a href="http://vimeo.com/25022370">Dorkbot Cardiff</a><br><br>
+June 2011:  BV Studios/Windmill Hill City Farm's street party<br><br>
+August 2011: <a href="http://www.puppetplace.org/festival/index.html">Puppet Place Open Doors Day</a> as part of the Bristol Festival of Puppetry -
+		video is <a href="http://www.youtube.com/watch?v=tEpNJOxnOCU">here</a><br><br>
+March 2013: <a href="http://makerfairebristol.com/">Bristol Mini Maker Faire</a><br><br>
+June 2013: <a href="http://www.pmstudio.co.uk/">An outing to the Pervasive Media Studio</a><br><br>
+September 2013: <a href="http://www.kwmc.org.uk/index.php?article=803/">The KWMC Make It! Festival</a><br><br>
+December 2013: <a href="http://www.modelengineershow.co.uk/">The 2013 Model Engineer Exhibition At Sandown Park</a><br><br>
+
+</p>
+
+<p>This is Sketchy's first day out at Dorkbot Bristol. Thanks to Dan for the video, and Adam for the use of his likeness.</p>
+
+<p>
+<object width="640" height="505"><param name="movie" value="http://www.youtube.com/v/_gtaddt2nbg?fs=1&amp;hl=en_GB&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/_gtaddt2nbg?fs=1&amp;hl=en_GB&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="505"></embed></object>
+</p>
+
+<p>And at <a href="http://picasaweb.google.com/jarkman/101013_dorkbot_draw#">100 Stoke's Croft, with Dorkbot and Draw:</a></p>
+<p>
+<object width="640" height="385"><param name="movie" value="http://www.youtube.com/v/nk0IQ2WiSk4?fs=1&amp;hl=en_GB&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/nk0IQ2WiSk4?fs=1&amp;hl=en_GB&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object>
+</p>
+
+<p>
+<object width="640" height="385"><param name="movie" value="http://www.youtube.com/v/iZbPpES1HCc?fs=1&amp;hl=en_GB&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/iZbPpES1HCc?fs=1&amp;hl=en_GB&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object>
+</p>
+
+<p><img src="http://www.jarkman.co.uk/catalog/robots/sketchy1.jpg"></p>
+
+<p><img src="http://www.jarkman.co.uk/catalog/robots/sketchy2.jpg"></p>
+
+<h1>Build notes</h1>
+
+<p>All the information you need to build a Sketchy (or, preferably, to use Sketchy as the basis of an even more wonderful machine) should be here. Code, parts lists, and so on.
+If there's anything more you need to know, please send me a mail. And if you use this, or make your own delta after seeing Sketchy, definitely let me know: <a href="mailto:richard@jarkman.co.uk">richard@jarkman.co.uk</a><p>
+
+<h2>Parts:</h2>
+<p>Android phone (I used a Nexus One)</p>
+<p><a href="http://www.coolcomponents.co.uk/catalog/product_info.php?products_id=376">RN41 Bluetooth module</a></p>
+<p><a href="http://www.coolcomponents.co.uk/catalog/product_info.php?cPath=50_74&amp;products_id=115">Arduino Duemilanove </a> (any Arduino with a 328 will do)</p>
+<p><a href="http://arduiniana.org/libraries/newsoftserial/">NewSoftSerial</a> library for Arduino</p>
+<p><a href="http://www.jarkman.co.uk/catalog/robots/drawingdelta.htm">Drawing delta robot</a></p>
+
+
+
+<h2>Source and downloadable app</h2>
+<p>
+Here's the current <a href="https://github.com/jarkman/sketchy">Arduino and Android source in github</a>.
+And for posterity's sake, the 2013 pre-github <a href="http://www.jarkman.co.uk/catalog/robots/sketchy_android.zip">Android source</a>  and the <a href="http://www.jarkman.co.uk/catalog/robots/sketchy200913.zip">Arduino source (20/9/2013 - updated to Arduino 1.0.5, fixed quiff bug)</a>
+</p>
+<p>
+And here's the original <a href="http://www.jarkman.co.uk/catalog/robots/Sketchy.apk">Android app APK, which you can run on any (sufficiently recent) Android phone:</a>
+</p>
+
+<p>
+And the new build we made for Giant Sketchy: <a href="http://www.jarkman.co.uk/catalog/robots/giantsketchy.apk">Android app APK</a>
+</p>
+
+<p>
+<img src="http://www.jarkman.co.uk/catalog/robots/sketchy_qrcode.png" >
+</p>
+
+
+<h2>How it works</h2>
+<p>The lifecycle goes like this:<br>
+ - Pick a picture from the Android photo album<br>
+ - Run a <a href="http://en.wikipedia.org/wiki/Canny_edge_detector">Canny edge-finder</a> on it to get
+ to a black bitmap with white lines on the edges of the original picture.
+ I used a <a href="http://www.tomgibara.com/computer-vision/canny-edge-detector">splendid implementation by Tom Gibara</a><br>
+ - Run a vectoriser on that, to generate vectors along those lines. I couldn't find one I liked, so I write one, which was easier that I expected.<br>
+ - Simplify the vectors - discard very short vectors, and replace straightish bits with straight lines. The Arduino can only store 300 points,
+ so we have a strong incentive to optimise the vectors to within an inch of their lives.<br>
+ - Package the vectors up and send them over Bluetooth to the Arduino<br>
+ - Wait for the drawing !<br>
+
+<p>For speed, I'm working with very low-resolution bitmaps - 128 pixels square by default.
+That's all the resolution the delta robot can use, so we lose no useful information as a result. The image size, along with various
+parameters for the Canny and vectorisation algorithms, can be adjusted from the Settings UI in the Andoid app.
+</p>
+
+<h2>Sample images</h2>
+<p>Source image:</p>
+<p><img src="http://www.jarkman.co.uk/catalog/robots/sketchy_p1.png"></p>
+
+<p>Output of Canny edge detection:</p>
+
+<p><img src="http://www.jarkman.co.uk/catalog/robots/sketchy_p2.png"></p>
+
+<p>Simplified vectors (over a pale source image, so we can see the alignment):</p>
+
+<p><img src="http://www.jarkman.co.uk/catalog/robots/sketchy_p3.png"></p>
+
+<p>Which draws something like this (actually from a different run, so the lines are different in detail):</p>
+
+<p><img src="http://www.jarkman.co.uk/catalog/robots/sketchy_p3a.png"></p>
+
+
+<p>This is what you get with closer Canny thresholds and a smaller Gaussian width</p>
+
+<p><img src="http://www.jarkman.co.uk/catalog/robots/sketchy_p4.png"></p>
+
+<p>And with a shorter short-line limit and less simplification of the vectors (this is actually on the 300-point limit, so this is as complex a picture as the Arduino will currently draw):</p>
+
+<p><img src="http://www.jarkman.co.uk/catalog/robots/sketchy_p5.png"></p>
+
+<p>I really want to get better drawings out of this. That means (at least) four things:<br>
+ - Controlling the lighting and backgrounds to get strong shadows on the faces of our subjects<br>
+ - Tuning the Canny and vectoriser parameters to pick out the edges we most want<br>
+ - Adding face-specific works to the algorithm - trying to pick out eyes and mouth, or at least provide more detail in those areas<br>
+ - Improve the delta's drawing behaviour, with better motion control on low-angle corners to reduce mechanical wobble, and perhaps a stiffer frame too<br>
+</p>
+
+<h2>Construction notes - Bluetooth</h2>
+
+<p>The physical robot is <a href="http://www.jarkman.co.uk/catalog/robots/drawingdelta.htm">documented here</a>. Shouldn't take more than an afternoon and £50 of parts to put one together.
+Please ask me if there's any constructional detail missing, or if I can help. All the motion and path
+code described there is included in (and used in) the Arduino source above.</p>
+
+<p>
+The part that I spent most time thinking about was the Bluetooth connection. In the end, getting it going was not painful,
+Here's the sequence I went through to bring it up:
+</p>
+<p>
+The <a href="http://www.rovingnetworks.com/products/RN41">RN41</a> seems to be
+the module used in the £40 Bluetooth modules that Sparkfun and Cool Components sell. But it costs half as much.
+The downside is that it's tiny, and it has 3.3v logic levels. I was apprehensive about this bit.
+But, I managed to solder it OK, using a reasonably pointy soldering iron and an OptiVisor. I only needed four connections:
+</p>
+<p>
+<p><img src="http://www.jarkman.co.uk/catalog/robots/sketchy3.jpg"></p>
+</p>
+
+<p>Complete wiring is:<br>
+RN41 pin 11 (VDD) to Arduino 3.3V out<br>
+RN41 pin 12 to Arduino ground<br>
+RN41 pin 13 (UART_RX) to Arduino TX on pin 3, via a 10k/20k divider to convert the 5v output to 3.3 (see RN41 datasheet, 'typical application circuit')<br>
+RN41 pin 14 (UART_TX) to Arduino RX on pin 2<br>
+Rowan used the same wiring and had no end of trouble with  Arduino RX, which we put down to a disagreement at power-up time. He added a 10k resistor between RN41 pin 14 and Arduino pin 2,
+which fixed it, presumably by limiting the current that flows when both pins are driven.
+</p>
+<p>In 2013, Sketchy died, which in the end proved to be a sickly half-functional Bluetooth module. I added a status LED to GPIO5 on pin 21,
+as suggested in the <a href="http://www.rovingnetworks.com/resources/download/18/RN_41">data sheet</a>, which made debugging easier, and a
+switch to GPIO4 to let me reset it to factory defaults. I still had to replace the RN41, though.</p>
+
+<p>
+Having soldered it to a handy proto-shield, I powered it up (it uses the 3.3v line from the Aruino for power), and fired
+up the Bluetooth manager app on my laptop.
+That reported it as FireFly, paired with it quite happily, without needing a PIN. The module default is 1234, if you need it.
+The Bluetooth manager made it a COM port. Note the number of the port it gives you.
+</p>
+<p>
+One lovely thing about the RN41 is that is can be configured from the Bluetooth side, not just the serial side. You have 60 seconds from when you
+power it up to send it the magic sequence, $$$, to put it into command mode. If you don't do that, it acts as a simple serial pipe.
+So, I powered up the Arduino and module, started a terminal emulator (Hyperterm, sadly), set it to that com port
+(and 115200 baud N81), and typed the command sequence, which is $$$.
+The module replies with CMD to indicate that it is in command mode. Note that the module does not echo your typing, so type carefully!
+</p>
+<p>
+Then, I typed
+SN,Sketchy
+which sets the device name, and
+SU,96
+which sets the baud rate of the UART to 9600. I set it slow because I plan to use the software serial port on the Arduino.
+</p>
+<p>
+The command 'D'
+tells you the general config of the module.
+</p>
+<p>After replacing the RN41 in 2013, I couldn't get the Hyperterm route to work at all. The module seemed to connect but I never saw any reply from it.
+I ened up using a Mac, which paired happily with it (though I had to tell it not to use a passcode). The quickest way to get a serial terminal was to
+get Terminal up, then type <i>screen /dev/tty.FireFly.blahblahblah 115200</i> (find the tty name with ls /dev/tty* and look for the FireFly).</p>
+<p>Then type <i>$$$ return</i>, see the prompt from the module, and carry on as above.</p>
+
+<p>
+The command set is <a href="http://www.sparkfun.com/datasheets/Wireless/Bluetooth/rn-bluetooth-um.pdf">documented here</a>.
+</p>
+
+<h2>Android bringup</h2>
+
+<p>
+I built the Android Chat sample from the SDK (which is, more or less, a terminal with two-way serial comms). That would not talk to the RN41 to start with, but
+following the advice here:
+</p>
+<p>
+http://groups.google.com/group/android-developers/browse_thread/thread/b2b609862188458a/426014f6bac285af?#426014f6bac285af
+</p>
+<p>
+I changed the UUID in BluetoothChatService.java to this:
+    private static final UUID MY_UUID =
+     	UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
+</p>
+<p>
+I believe that's the UUID of the Bluetooth serial profile (SPP). And SPP is what the RN41 does.
+</p>
+<p>
+With that change, I could type $$$ in BluetoothChat and have the module reply with CMD. So, that's Android->RN41 taken care of.
+</p>
+<p>
+Next, I wired the RN41 to the Arduino pins 2 & 3 (using the resistor divider as specified in the spec sheet) and added NewSoftSerial code to echo my typing
+Once again, I connected via my hacked BluetoothChat, and saw my typing echo!
+</p>
+
+
+
+<p>
+After that, I wrote a bit of image-processing code and built a simple binary protocol between Android and Arduino.
+NewSoftSerial is a bit slow, so I send the data one byte at a time over Bluetooth.
+It also turns off the interrupts, which means the servos don't work right, so I turn off the servos when listening to
+Bluetooth and turn off my NewSoftSerial port when driving the servos.
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="http://www.jarkman.co.uk/index.htm"><img src="http://www.jarkman.co.uk/images/smca.gif" align=center border=0 ></a>
+
+<a href="http://www.jarkman.co.uk/index.htm">Home</a> | <a href="http://www.jarkman.co.uk/catalog/index.htm">Artefacts</a>| <a href="http://www.jarkman.co.uk/catalog/robots/index.htm">Robots</a></p>
+</body>
+
+
+<!-- Mirrored from www.jarkman.co.uk/catalog/robots/sketchy.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:23 GMT -->
+</html>

@@ -1,0 +1,646 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+
+<!-- Mirrored from brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Arduino PID Autotune Library &laquo;  Project  Blog</title>
+
+<link rel="stylesheet" href="http://brettbeauregard.com/blog/wp-content/themes/default/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Project  Blog RSS Feed" href="http://brettbeauregard.com/blog/feed/" />
+<link rel="alternate" type="application/atom+xml" title="Project  Blog Atom Feed" href="http://brettbeauregard.com/blog/feed/atom/" />
+<link rel="pingback" href="http://brettbeauregard.com/blog/xmlrpc.php" />
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://brettbeauregard.com/blog/wp-content/themes/default/images/kubrickbgwide.jpg") repeat-y top; border: none; }
+
+</style>
+
+
+
+            <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.3 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-9013272-1']);
+				            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+			<link rel="alternate" type="application/rss+xml" title="Project  Blog &raquo; Arduino PID Autotune Library Comments Feed" href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/brettbeauregard.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.2"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='thingiverse_style-css'  href='http://brettbeauregard.com/blog/wp-content/plugins/thingiverse-embed/style.css?ver=4.5.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://brettbeauregard.com/blog/wp-includes/js/jquery/jquery.js?ver=1.12.3'></script>
+<script type='text/javascript' src='http://brettbeauregard.com/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.0'></script>
+<link rel='https://api.w.org/' href='http://brettbeauregard.com/blog/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://brettbeauregard.com/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://brettbeauregard.com/blog/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Collapsible Knitting Needle' href='http://brettbeauregard.com/blog/2012/01/collapsible-knitting-needle/' />
+<link rel='next' title='Knitting' href='http://brettbeauregard.com/blog/2012/03/knitting/' />
+<meta name="generator" content="WordPress 4.5.2" />
+<link rel="canonical" href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/" />
+<link rel='shortlink' href='http://brettbeauregard.com/blog/?p=1893' />
+<link rel="alternate" type="application/json+oembed" href="http://brettbeauregard.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fbrettbeauregard.com%2Fblog%2F2012%2F01%2Farduino-pid-autotune-library%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://brettbeauregard.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fbrettbeauregard.com%2Fblog%2F2012%2F01%2Farduino-pid-autotune-library%2F&amp;format=xml" />
+<link rel="payment" type="text/html" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=br3ttb&amp;popout=1&amp;url=http%3A%2F%2Fbrettbeauregard.com%2Fblog%2F2012%2F01%2Farduino-pid-autotune-library%2F&amp;language=en_GB&amp;category=text&amp;title=Arduino+PID+Autotune+Library&amp;description=Project+updates+and...+um...&amp;tags=Autotune%2CosPID%2CPID%2Cblog" />
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+<body>
+<div id="page">
+
+
+<div id="header">
+	<div id="headerimg">
+		<h1><a href="http://brettbeauregard.com/blog/">Project  Blog</a></h1>
+		<div class="description">Project updates and&#8230; um&#8230;</div>
+	</div>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://brettbeauregard.com/blog/2012/01/collapsible-knitting-needle/" rel="prev">Collapsible Knitting Needle</a></div>
+			<div class="alignright"><a href="http://brettbeauregard.com/blog/2012/03/knitting/" rel="next">Knitting</a> &raquo;</div>
+		</div>
+
+		<div class="post-1893 post type-post status-publish format-standard hentry category-coding category-pid tag-autotune tag-ospid tag-pid author-admin" id="post-1893">
+			<h2>Arduino PID Autotune Library</h2>
+
+			<div class="entry">
+				<p>At long last, I&#8217;ve released an <a href="http://arduino.cc/playground/Code/PIDAutotuneLibrary">Autotune Library</a> to compliment the <a href="http://arduino.cc/playground/Code/PIDLibrary">Arduino PID Library</a>. When I released the current version of the PID Library, I did an insanely extensive <a href="http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/">series of posts</a> to get people comfortable with what was going on inside. </p>
+<p>While not nearly as in-depth, that&#8217;s the goal of this post.  I&#8217;ll explain what the Autotune Library is trying to accomplish, and how it goes about its business.<br />
+<span id="more-1893"></span></p>
+<h3> Attribution </h3>
+<p>For A couple years I&#8217;ve wanted to have an Autotune Library, but due to an agreement with my employer, I wasn&#8217;t able to write one.  BUT! when I found the <a href="http://www.mathworks.com/matlabcentral/fileexchange/4652-autotunerpid-toolkit">AutotunerPID Toolkit</a> by William Spinelli I was good to go; My company had no problem with me porting and augmenting and existing open source project. </p>
+<p>I converted the code from matlab, made some tweaks to the peak identification code, and switched it from the Standard form (Kc, Ti, Td) to the Ideal form (Kp, Ki, Kd.)  Other than that, all credit goes to Mr. Spinelli.</p>
+<h3>The Theory</h3>
+<p>The best tuning parameters (Kp, Ki, Kd,) for a PID controller are going to depend on what that controller is driving.  The best tunings for a toaster oven are going to be different than the best tunings for a sous-vide cooker.</p>
+<p>Autotuners attempt to figure out the nature of what the controller is driving, then back-calculate tuning parameters from that.  There are various methods of doing this, but most involve changing the PID Output in some way then observing how the Input responds.  </p>
+<p>The method used in the library is known as the relay method. here&#8217;s how it works:</p>
+<p><a href="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/00-ideal.png"><img src="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/00-ideal.png" alt="" title="00-ideal" width="451" height="453" class="alignnone size-full wp-image-1964" srcset="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/00-ideal.png 451w, http://brettbeauregard.com/blog/wp-content/uploads/2012/01/00-ideal-150x150.png 150w, http://brettbeauregard.com/blog/wp-content/uploads/2012/01/00-ideal-298x300.png 298w" sizes="(max-width: 451px) 100vw, 451px" /></a></p>
+<p>Starting at steady state (both Input and Output are steady,) the Output is stepped in one direction by some distance D. When the Input crosses a trigger line, the output changes to the other direction by distance D.  </p>
+<p>By analyzing how far apart the peaks are, and how big they are in relation to the output changes, the Autotuner can tell the difference between one type of process and another.  As a result, different systems will get custom tuning parameters:</p>
+<p><a href="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/01-Correlations.png"><img src="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/01-Correlations.png" alt="" title="01-Correlations" width="399" height="81" class="aligncenter size-full wp-image-1966" srcset="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/01-Correlations.png 399w, http://brettbeauregard.com/blog/wp-content/uploads/2012/01/01-Correlations-300x60.png 300w" sizes="(max-width: 399px) 100vw, 399px" /></a></p>
+<h2>The Implementation</h2>
+<p>  This works well in theory, but real-world data isn&#8217;t very cooperative.  The input signal is usually noisy, which causes two main problems.</p>
+<h3>Problem #1: When to step?</h3>
+<p> Since a noisy signal is choppy, it&#8217;s likely that the trigger line will be crossed several times as the Input moves past it.  This can cause mild chatter in the output, or if severe, can completely destroy things:</p>
+<p><a href="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/02-noise.png"><img src="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/02-noise.png" alt="" title="02-noise" width="450" height="453" class="aligncenter size-full wp-image-1970" srcset="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/02-noise.png 450w, http://brettbeauregard.com/blog/wp-content/uploads/2012/01/02-noise-150x150.png 150w, http://brettbeauregard.com/blog/wp-content/uploads/2012/01/02-noise-298x300.png 298w" sizes="(max-width: 450px) 100vw, 450px" /></a><br />
+The way I chose to side-step this issue was to have the user specify a noise band.  In effect, this creates two trigger lines.  Since the distance between them is equal to the noise (if properly set) it&#8217;s less likely that multiple crossings will occur due to signal chatter.</p>
+<p><a href="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/03-noise-fixed.png"><img src="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/03-noise-fixed.png" alt="" title="03-noise fixed" width="451" height="453" class="aligncenter size-full wp-image-1971" srcset="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/03-noise-fixed.png 451w, http://brettbeauregard.com/blog/wp-content/uploads/2012/01/03-noise-fixed-150x150.png 150w, http://brettbeauregard.com/blog/wp-content/uploads/2012/01/03-noise-fixed-298x300.png 298w" sizes="(max-width: 451px) 100vw, 451px" /></a></p>
+<h3> Problem #2: Peak Identification</h3>
+<p>In a simulated world, identifying the peaks is easy: when the Input signal changes direction, that&#8217;s a minimum or a maximum (depending an which change occured.)  In a noisy world however,  this method fails:</p>
+<p><a href="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/04-peakID.png"><img src="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/04-peakID.png" alt="" title="04-peakID" width="451" height="289" class="aligncenter size-full wp-image-1978" srcset="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/04-peakID.png 451w, http://brettbeauregard.com/blog/wp-content/uploads/2012/01/04-peakID-300x192.png 300w" sizes="(max-width: 451px) 100vw, 451px" /></a></p>
+<p>Every noise blip is a direction change.  To deal with this issue I added a &#8220;look-back time&#8221; parameter.  It&#8217;s an awful name.  If you can think of something better let me know.</p>
+<p>At any rate, the user defines some window, say 10 seconds.  The Library then compares the current point to the last ten seconds of data.  If it is a min or a max, it gets flagged as a possible peak.</p>
+<p>When the flagged point switches from being a max to a min, or vice versa, the previously flagged point is confirmed as a peak.</p>
+<p><a href="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/05-peakIDfixed.png"><img src="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/05-peakIDfixed.png" alt="" title="05-peakIDfixed" width="451" height="289" class="aligncenter size-full wp-image-1979" srcset="http://brettbeauregard.com/blog/wp-content/uploads/2012/01/05-peakIDfixed.png 451w, http://brettbeauregard.com/blog/wp-content/uploads/2012/01/05-peakIDfixed-300x192.png 300w" sizes="(max-width: 451px) 100vw, 451px" /></a></p>
+<p>Another way of explaining the look-back time is that a point will be identified as a peak if it is the largest (or smallest) value within one look-back into the future or past. Like I said: awful name.</p>
+<h2> You should also know&#8230; </h2>
+<ul>
+<li>The number of cycles performed will vary between 3 and 10.  The algorithm waits until the last 3 maxima have been within 5% of each other.  This is trying to ensure that we&#8217;ve reached a stable oscillation and there&#8217;s no external strangeness happening.  This leads me to&#8230;
+</li>
+<li>I&#8217;m not the biggest fan of Autotune.  I&#8217;ve often said, and still believe, that a moderately trained person will beat an Autotuner every day of the week.  There&#8217;s just so much that can go wrong without the algorithm knowing about it.  That being said, Autotune is a valuable tool to help the novice get into the ballpark.
+</li>
+</ul>
+<p class="wp-flattr-button"><a href="http://brettbeauregard.com/blog/?flattrss_redirect&amp;id=1893&amp;md5=26a154e2b209e4289ebb93e9e425e3a7" title="Flattr" target="_blank"><img src="http://brettbeauregard.com/blog/wp-content/plugins/flattr/img/flattr-badge-large.png" alt="flattr this!"/></a></p>
+								<p>Tags: <a href="http://brettbeauregard.com/blog/tag/autotune/" rel="tag">Autotune</a>, <a href="http://brettbeauregard.com/blog/tag/ospid/" rel="tag">osPID</a>, <a href="http://brettbeauregard.com/blog/tag/pid/" rel="tag">PID</a></p>
+				<p class="postmetadata alt">
+					<small>
+						This entry was posted
+												on Saturday, January 28th, 2012 at 2:41 pm						and is filed under <a href="http://brettbeauregard.com/blog/category/pid/coding/" rel="category tag">Coding</a>, <a href="http://brettbeauregard.com/blog/category/pid/" rel="category tag">PID</a>.
+						You can follow any responses to this entry through the <a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/feed/">RSS 2.0</a> feed.
+
+													You can <a href="#respond">leave a response</a>, or <a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/trackback/" rel="trackback">trackback</a> from your own site.
+
+						
+					</small>
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">21 Responses to &#8220;Arduino PID Autotune Library&#8221;</h3>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<ol class="commentlist">
+			<li class="comment even thread-even depth-1" id="comment-33327">
+				<div id="div-comment-33327" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/a22ad29f96f7c0af61af857ed09848b6?s=32&amp;d=mm&amp;r=g' srcset='http://1.gravatar.com/avatar/a22ad29f96f7c0af61af857ed09848b6?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://kennethfinnegan.blogspot.com/' rel='external nofollow' class='url'>Kenneth Finnegan</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-33327">
+			January 28, 2012 at 8:47 pm</a>		</div>
+
+		<p>I think I&#8217;ve learned more useful stuff from your half-a-dozen blog posts than I did last year in two quarters of MechE controls classes at the university.  They just refuse to talk about inconveniences like actual real-world data.</p>
+<p>You wouldn&#8217;t happen to know about some outstanding textbook on the subject?  My Controls text by Nise is pretty useless when you try to actually do anything with it.</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-33328">
+				<div id="div-comment-33328" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/a549e72ed66e1c1e512afcc0f8c14f51?s=32&amp;d=mm&amp;r=g' srcset='http://1.gravatar.com/avatar/a549e72ed66e1c1e512afcc0f8c14f51?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Brett</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-33328">
+			January 28, 2012 at 9:18 pm</a>		</div>
+
+		<p>Yeah I got lucky in college.  My controls professor didn&#8217;t talk about laplace transforms until near the end of the semester, preferring to teach us using real world simulations.  Hands down the reason I&#8217;m a controls engineer today.  </p>
+<p>You&#8217;ll want to read his entire website: <a href="http://controlguru.com/" rel="nofollow">http://controlguru.com/</a>  It&#8217;s formatted like it&#8217;s 2004, but it&#8217;s solid gold. If you think you&#8217;re learning something from me, that site will be like superfly TNT.</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-33359">
+				<div id="div-comment-33359" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/18a7554abf6a5e30a20cde13e3cfbd12?s=32&amp;d=mm&amp;r=g' srcset='http://1.gravatar.com/avatar/18a7554abf6a5e30a20cde13e3cfbd12?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Jean-François Théorêt</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-33359">
+			January 29, 2012 at 11:21 am</a>		</div>
+
+		<p>Thanks again for a great post! </p>
+<p>As for:  &#8220;It’s an awful name. If you can think of something better let me know.&#8221;</p>
+<p>How about hysteresis time?</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-33960">
+				<div id="div-comment-33960" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/682157bbfc6d0ea27fd8cef529995da8?s=32&amp;d=mm&amp;r=g' srcset='http://0.gravatar.com/avatar/682157bbfc6d0ea27fd8cef529995da8?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">pid_hobby</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-33960">
+			February 6, 2012 at 8:47 am</a>		</div>
+
+		<p>i learn from this blog very much!!!</p>
+<p>i am chinese engineer. if someone need chinese version of &#8220;improving the beginner&#8217;s PID-introduction&#8221;  ,  drop me a mail &#8220;lijian0222#163.com&#8221;   #-&gt;@   🙂    </p>
+<p>i have translated this   veryyyyyyyyyyyyyyyyyyyyyy  good blog!!</p>
+<p>Brett&#8217;s blog is  superfly TNT!!!!   🙂  Sorry for my poor english~~</p>
+<p>BTW:</p>
+<p>KU =  4 * D / A*PI    (why???)   may be i can find the answer from matlab source!!!</p>
+<p>i  forgot  how to use matlab.  in my collage, i use this magic math tools .<br />
+but when i go to work.  i forgot how to use matlab anymore.</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-37409">
+				<div id="div-comment-37409" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/1df6a43f6134fdf179713b8b2355fc03?s=32&amp;d=mm&amp;r=g' srcset='http://1.gravatar.com/avatar/1df6a43f6134fdf179713b8b2355fc03?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Max</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-37409">
+			March 11, 2012 at 5:53 am</a>		</div>
+
+		<p>Thanks  for a great post!<br />
+Sorry for my bad English but I have few questions for you.<br />
+Could you explain peak identification in more detail maner? I looked at your  source code and many things not clear for me. For example why &#8220;peakCount++&#8221; only in isMin branch&#8230;</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-37422">
+				<div id="div-comment-37422" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/1df6a43f6134fdf179713b8b2355fc03?s=32&amp;d=mm&amp;r=g' srcset='http://1.gravatar.com/avatar/1df6a43f6134fdf179713b8b2355fc03?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Max</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-37422">
+			March 11, 2012 at 7:00 am</a>		</div>
+
+		<p>I also suppose that nLookBack is a need to be replaced by initCount in this piece of code:</p>
+<p>if(nLookBack&lt;9)<br />
+{  //we don&#039;t want to trust the maxes or mins until the inputs array has been filled<br />
+	initCount++;<br />
+	return 0;<br />
+	}</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-41864">
+				<div id="div-comment-41864" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/a465b3c2f38d33721425856c2071a309?s=32&amp;d=mm&amp;r=g' srcset='http://1.gravatar.com/avatar/a465b3c2f38d33721425856c2071a309?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">leo</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-41864">
+			April 10, 2012 at 5:56 am</a>		</div>
+
+		<p>hello brett, </p>
+<p>I&#8217;ve read your posts on the PID library (Improving the Beginner&#8217;s PID) and found them really resourceful!</p>
+<p>I have a question regarding the implementation of the PID Autotune though. First off, I&#8217;m no expert at programming. </p>
+<p>I am trying to use the PID Autotune to control the hovering of my quadcopter. The thing is, I don&#8217;t know what Kp, Ki and Kd values to use for the control.  Long story short, when I use the Autotune library and its functions, is it necessary for me to initialise the Kp, Ki and Kd values? I don&#8217;t know what the values should be though.  And it cannot be any value, right?</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-44932">
+				<div id="div-comment-44932" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/25fbd9e3f998b27136e5f97c83f103b1?s=32&amp;d=mm&amp;r=g' srcset='http://2.gravatar.com/avatar/25fbd9e3f998b27136e5f97c83f103b1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://tomprice.net/' rel='external nofollow' class='url'>tom</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-44932">
+			April 25, 2012 at 11:25 pm</a>		</div>
+
+		<p>Hi Brett. I love your projects and blog. A couple of comments.</p>
+<p>Looks like the default value for the hysteresis in the library is beta = 0.5/30 = 0.016. Am I right in thinking that is pretty aggressive?</p>
+<p>Would it be a good idea to use some kind of low pass filter on the measurements? The better to estimate period and amplitude free of noise.</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-44993">
+				<div id="div-comment-44993" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/a549e72ed66e1c1e512afcc0f8c14f51?s=32&amp;d=mm&amp;r=g' srcset='http://1.gravatar.com/avatar/a549e72ed66e1c1e512afcc0f8c14f51?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Brett</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-44993">
+			April 26, 2012 at 7:00 am</a>		</div>
+
+		<p>@tom  there are many, many improvements that could be done do this code, both in signal processing and in pulse generation.  As I said, because I work for a pid tuning company, I felt squeamish just making the additions that I did.  The beauty of open source, however, is that someone who knows what they&#8217;re doing can make a branch on github and improve the heck out of this thing!  (those improvements would be rolled into the osPID firmware, with attribution of course)</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-45061">
+				<div id="div-comment-45061" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/25fbd9e3f998b27136e5f97c83f103b1?s=32&amp;d=mm&amp;r=g' srcset='http://2.gravatar.com/avatar/25fbd9e3f998b27136e5f97c83f103b1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://tomprice.net/' rel='external nofollow' class='url'>tom</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-45061">
+			April 26, 2012 at 2:05 pm</a>		</div>
+
+		<p>OK, I might try porting a little bit more of the original MATLAB code.</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-46150">
+				<div id="div-comment-46150" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/25fbd9e3f998b27136e5f97c83f103b1?s=32&amp;d=mm&amp;r=g' srcset='http://2.gravatar.com/avatar/25fbd9e3f998b27136e5f97c83f103b1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://tomprice.net/' rel='external nofollow' class='url'>tom</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-46150">
+			May 2, 2012 at 11:03 am</a>		</div>
+
+		<p>I forked the code and added some stuff. I&#8217;m afraid I don&#8217;t really know how to use Github so I hope I didn&#8217;t mess up.</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-46152">
+				<div id="div-comment-46152" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/a549e72ed66e1c1e512afcc0f8c14f51?s=32&amp;d=mm&amp;r=g' srcset='http://1.gravatar.com/avatar/a549e72ed66e1c1e512afcc0f8c14f51?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Brett</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-46152">
+			May 2, 2012 at 11:18 am</a>		</div>
+
+		<p>@tom dither!  neat.  one thing:  on the .h you have SetDither(double), but in the cpp it&#8217;s an int.  I&#8217;m surprised that compiled for you.</p>
+<p>I also see you put it some of the additional tuning correlations.  also cool!  can&#8217;t wait to see what else you add!</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-46182">
+				<div id="div-comment-46182" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/25fbd9e3f998b27136e5f97c83f103b1?s=32&amp;d=mm&amp;r=g' srcset='http://2.gravatar.com/avatar/25fbd9e3f998b27136e5f97c83f103b1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn"><a href='http://tomprice.net/' rel='external nofollow' class='url'>tom</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-46182">
+			May 2, 2012 at 2:48 pm</a>		</div>
+
+		<p>Thanks Brett, ahem it didn&#8217;t compile so I just changed it. 🙂</p>
+<p>Figured I need the dither because I am measuring using a DS18B20 accurate to about 0.1 oC and it tends to hunt around the set temperature. I&#8217;ve added some similar code to the PID library.</p>
+<p>I am looking at coding low pass filters for the input (to avoid aliasing) and the derivative (to limit gain).</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-48252">
+				<div id="div-comment-48252" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/19c9f63336052e170325a22b3c43d6f6?s=32&amp;d=mm&amp;r=g' srcset='http://1.gravatar.com/avatar/19c9f63336052e170325a22b3c43d6f6?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">jazz</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-48252">
+			May 13, 2012 at 9:41 am</a>		</div>
+
+		<p>Thanks for all the great work in both libraries, I&#8217;ll rewrite it in assembly for the msp430 together with hardware design . Nice project</p>
+<p>jazz,Saigon</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-48254">
+				<div id="div-comment-48254" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/19c9f63336052e170325a22b3c43d6f6?s=32&amp;d=mm&amp;r=g' srcset='http://1.gravatar.com/avatar/19c9f63336052e170325a22b3c43d6f6?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">jazz</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-48254">
+			May 13, 2012 at 10:07 am</a>		</div>
+
+		<p>wow&#8230;i had not seen your ospid project, so you really materialized it 🙂<br />
+great</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-54885">
+				<div id="div-comment-54885" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/9695522f9262944202e6cb8a0e498ff7?s=32&amp;d=mm&amp;r=g' srcset='http://0.gravatar.com/avatar/9695522f9262944202e6cb8a0e498ff7?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">gadg</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-54885">
+			June 12, 2012 at 3:00 pm</a>		</div>
+
+		<p>Brett thank you so much for this library it has helped me out sooo much</p>
+<p>saved me a lot of work and fantastic it comes from a pid professional</p>
+<p>i think you could write a book on pid !</p>
+<p>i have actually decided to stick with arduino as a hardware platform because this library is so good. </p>
+<p>can the code be ported to netduino or gadgeteer ?</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-57857">
+				<div id="div-comment-57857" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/3ce6eea45dd7012b1ba6b231dc773ba8?s=32&amp;d=mm&amp;r=g' srcset='http://0.gravatar.com/avatar/3ce6eea45dd7012b1ba6b231dc773ba8?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">yoyomikeyc</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-57857">
+			June 24, 2012 at 8:19 pm</a>		</div>
+
+		<p>Hi, Thanks for this great code.</p>
+<p>Question:  Wont the following code run off the end of the lastInputs Array?</p>
+<p>nLookBack could potentially be 100, in which case &#8216;i&#8217; starts at 99, the end of the array, only for lastInputs[100] to eventually be updated.  I would think the array should be declared of size 101 to fix this, yes?</p>
+<p>for(int8_t i=nLookBack-1;i&gt;=0;i&#8211;)<br />
+  {<br />
+    double val = lastInputs[i];<br />
+    if(isMax) isMax = refVal&gt;val;<br />
+    if(isMin) isMin = refVal&lt;val;<br />
+    lastInputs[i+1] = lastInputs[i];<br />
+  }</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-57983">
+				<div id="div-comment-57983" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/a549e72ed66e1c1e512afcc0f8c14f51?s=32&amp;d=mm&amp;r=g' srcset='http://1.gravatar.com/avatar/a549e72ed66e1c1e512afcc0f8c14f51?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Brett</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-57983">
+			June 25, 2012 at 8:02 am</a>		</div>
+
+		<p>good catch.  added it as an issue to github: <a href="https://github.com/br3ttb/Arduino-PID-AutoTune-Library/issues/4" rel="nofollow">https://github.com/br3ttb/Arduino-PID-AutoTune-Library/issues/4</a></p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-61107">
+				<div id="div-comment-61107" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/3ce6eea45dd7012b1ba6b231dc773ba8?s=32&amp;d=mm&amp;r=g' srcset='http://0.gravatar.com/avatar/3ce6eea45dd7012b1ba6b231dc773ba8?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">yoyomikeyc</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-61107">
+			July 7, 2012 at 10:13 pm</a>		</div>
+
+		<p>Oh cool. It was a bug&#8211; My programming isnt as rusty as I thought.</p>
+<p>I had another question that admittedly stems from my poor controls background.  🙂</p>
+<p>When looking at the autotune algorithm, wouldn&#8217;t it technically be more correct to compute an AbsMax &amp; AbsMin  that comes from the data of the last two peaks/temp cycles?  That is, say the algorithm ran for a total of 9 peaks and eventually had an average separation that was sufficiently small, and thus computed Kp, Ki, and Kd.  To do so, it would currently use an AbsMax and AbsMin that potentially came from the first or second cycle, which the algorithm decided wasnt close enough in amplitude to each other.  Wont that technically lead to somewhat inaccurate results? (does that make sense?)</p>
+<p>I ask this because in my system, for reasons that aren&#8217;t necessary to explain here, the first cycle always has a lot of &#8216;momentum&#8217; and thus the first peak is always extremely high, and then all subsequent peaks are roughly the same height.  When the algorithm eventually finishes on the 3rd peak, it uses an AbsMax that came from the first peak/first cycle and was thus extremely high.  It would seem that for me, my &#8220;AbsMax-AbsMin&#8221; in FinishUp() would be too large.</p>
+<p>Would you say that it would be more correct to compute an AbsMax and AbsMin after the algo is done, based on the final 2 peaks and troughs?</p>
+<p>(sorry, I hope that makes sense)<br />
+(thanks again for this great code)</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-71890">
+				<div id="div-comment-71890" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/27dfdb12549756846efdd1e54c83c102?s=32&amp;d=mm&amp;r=g' srcset='http://2.gravatar.com/avatar/27dfdb12549756846efdd1e54c83c102?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Nicholas Spencer</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-71890">
+			September 6, 2012 at 2:08 pm</a>		</div>
+
+		<p>Hi Brett,<br />
+Do you think running a analysis of a series of step functions is more accurate than this method (especially with an asymmetric &#8216;A&#8217; value)? I&#8217;m happy to add to the code library but just looking for your opinion on the matter. </p>
+<p>Nick</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-73107">
+				<div id="div-comment-73107" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/a549e72ed66e1c1e512afcc0f8c14f51?s=32&amp;d=mm&amp;r=g' srcset='http://1.gravatar.com/avatar/a549e72ed66e1c1e512afcc0f8c14f51?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />			<cite class="fn">Brett</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#comment-73107">
+			September 13, 2012 at 7:13 pm</a>		</div>
+
+		<p>@Nigholas, Autotuning isn&#8217;t really my area of expertise so I don&#8217;t think I can speak with any authority on that.  how would you analyze the data?  if this is to be run on a microprocessor, doing regressive models or something might be a bit computationally intensive.</p>
+
+		
+				</div>
+		</li><!-- #comment-## -->
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+<div id="respond">
+
+<h3>Leave a Reply</h3>
+
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+<form action="http://brettbeauregard.com/blog/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
+<label for="author"><small>Name (required)</small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
+<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type='hidden' name='comment_post_ID' value='1893' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="97565292e8" /></p>
+</form>
+
+</div>
+
+
+	
+	</div>
+ 	<div id="sidebar">
+		<ul>
+						<li>
+				<form role="search" method="get" id="searchform" class="searchform" action="http://brettbeauregard.com/blog/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form>			</li>
+
+			<!-- Author information is disabled per default. Uncomment and fill in your details if you want to use it.
+			<li><h2>Author</h2>
+			<p>A little something about you, the author. Nothing lengthy, just an overview.</p>
+			</li>
+			-->
+
+			
+		
+
+			
+				<li id="linkcat-3" class="linkcat"><h2>Links</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://groups.google.com/group/diy-pid-control/" title="PID Control Google Group"><img src="http://brettbeauregard.com/blog/wp-content/uploads/2012/05/diy-pid-control-link.jpg"  alt="DIY PID Control"  title="PID Control Google Group" /></a></li>
+<li><a href="http://www.ospid.com/blog/" title="osPID: The Open-Source PID controller"><img src="http://brettbeauregard.com/blog/wp-content/uploads/2012/05/osPID-Link.jpg"  alt="osPID"  title="osPID: The Open-Source PID controller" /></a></li>
+<li><a href="http://www.thingiverse.com/br3ttb" title="My Thingiverse Profile"><img src="http://brettbeauregard.com/blog/wp-content/uploads/2012/05/printed_portrait-small.jpg"  alt="Thingiverse Profile"  title="My Thingiverse Profile" /></a></li>
+
+	</ul>
+</li>
+<li id="linkcat-8" class="linkcat"><h2>This Site</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://brettbeauregard.com/about.html">About</a></li>
+<li><a href="http://brettbeauregard.com/projects/" rel="me">Project Index</a></li>
+
+	</ul>
+</li>
+
+	
+			
+
+			<li class="categories"><h2>Categories</h2><ul>	<li class="cat-item cat-item-7"><a href="http://brettbeauregard.com/blog/category/pid/" >PID</a> (23)
+<ul class='children'>
+	<li class="cat-item cat-item-31"><a href="http://brettbeauregard.com/blog/category/pid/coding/" >Coding</a> (11)
+</li>
+	<li class="cat-item cat-item-33"><a href="http://brettbeauregard.com/blog/category/pid/front-end/" >Front End</a> (2)
+</li>
+	<li class="cat-item cat-item-35"><a href="http://brettbeauregard.com/blog/category/pid/showcase/" >Showcase</a> (4)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://brettbeauregard.com/blog/category/projects/" >Projects</a> (40)
+<ul class='children'>
+	<li class="cat-item cat-item-19"><a href="http://brettbeauregard.com/blog/category/projects/craft/" >Craft</a> (6)
+</li>
+	<li class="cat-item cat-item-16"><a href="http://brettbeauregard.com/blog/category/projects/electronic/" >Electronic</a> (12)
+</li>
+	<li class="cat-item cat-item-17"><a href="http://brettbeauregard.com/blog/category/projects/mechanical/" >Mechanical</a> (26)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://brettbeauregard.com/blog/category/uncategorized/" >Uncategorized</a> (5)
+</li>
+</ul></li><li><h2>Archives</h2>
+				<ul>
+					<li><a href='http://brettbeauregard.com/blog/2012/11/'>November 2012</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2012/09/'>September 2012</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2012/07/'>July 2012</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2012/06/'>June 2012</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2012/04/'>April 2012</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2012/03/'>March 2012</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2012/01/'>January 2012</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2011/12/'>December 2011</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2011/10/'>October 2011</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2011/09/'>September 2011</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2011/08/'>August 2011</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2011/07/'>July 2011</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2011/06/'>June 2011</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2011/05/'>May 2011</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2011/04/'>April 2011</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2010/09/'>September 2010</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2010/08/'>August 2010</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2010/07/'>July 2010</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2010/03/'>March 2010</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2009/11/'>November 2009</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2009/10/'>October 2009</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2009/09/'>September 2009</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2009/08/'>August 2009</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2009/07/'>July 2009</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2009/06/'>June 2009</a></li>
+	<li><a href='http://brettbeauregard.com/blog/2009/05/'>May 2009</a></li>
+				</ul>
+			</li>
+					</ul>
+	</div>
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
+	<p>
+		Project  Blog is proudly powered by
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="http://brettbeauregard.com/blog/feed/">Entries (RSS)</a>
+		and <a href="http://brettbeauregard.com/blog/comments/feed/">Comments (RSS)</a>.
+		<!-- 50 queries. 0.368 seconds. -->
+	</p>
+</div>
+</div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<script type='text/javascript' src='http://brettbeauregard.com/blog/wp-includes/js/comment-reply.min.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://brettbeauregard.com/blog/wp-includes/js/wp-embed.min.js?ver=4.5.2'></script>
+</body>
+
+<!-- Mirrored from brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from www.wikidot.com/doc:api by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Wikidot API - Wikidot - Free and Pro Wiki Hosting</title>
+    
+    
+    
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "www.wikidot.com";
+        WIKIREQUEST.info.siteId = 648902;
+        WIKIREQUEST.info.siteUnixName = "www";
+        WIKIREQUEST.info.categoryId = 4388016;
+        WIKIREQUEST.info.themeId = 192065;
+        WIKIREQUEST.info.requestPageName = "doc:api";
+        OZONE.request.timestamp = 1463140674;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "doc:api";
+        WIKIREQUEST.info.pageId = 22129646;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--javascript/WIKIDOT.combined.js"></script>
+            <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--bootstrap/3.0.0/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--bootstrap/3.0.0/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/bootstrap-base/css/style.css);
+                    @import url(http://www.wdfiles.com/local--theme/wikidot-3-0-content/style.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+            <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--javascript/skrollr.min.js"></script>
+        
+    <link rel="shortcut icon" href="http://www.wikidot.com/local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="http://www.wikidot.com/local--favicon/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="http://www.wikidot.com/common--images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://www.wikidot.com/common--images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://www.wikidot.com/common--images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<script type="text/javascript"> 
+                    jQuery(document).ready(function() {
+                        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+                            var s = skrollr.init();
+                        }
+                        
+                    });
+                </script>
+                
+
+<div class="topbar">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".wikidot-menu-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <div class="site-name">
+                    <a class="navbar-brand" href="http://www.wikidot.com/"></a>
+                </div>
+
+                <div class="site-subtitle">
+                    your place on the web
+                </div>
+                
+                <div class="loginStatus">
+                    <a href="javascript:;" onclick="WIKIDOT.page.listeners.createAccount(event)" class="login-status-create-account btn">Create account</a> <span>or</span> <a href="javascript:;" onclick="WIKIDOT.page.listeners.loginClick(event)" class="login-status-sign-in btn btn-primary">Sign in</a> 
+                </div>
+            </div>
+            
+            <div class="collapse navbar-collapse wikidot-menu-collapse">
+                
+
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Documentation <span class="caret"><span style="white-space: pre-wrap;">&nbsp;</span></span><br /></a>
+<ul class="dropdown-menu">
+<li><a href="http://www.wikidot.com/doc-wiki-syntax:start">Wiki syntax</a></li>
+<li><a href="http://www.wikidot.com/doc:quick-reference">Quick reference</a></li>
+<li><a href="http://www.wikidot.com/doc-modules:start">Modules</a></li>
+<li><a href="http://www.wikidot.com/doc-data-forms:start">Data forms</a></li>
+<li><a href="http://www.wikidot.com/doc:embedding">Embedding services</a></li>
+<li><a href="http://www.wikidot.com/doc:templates">Templates</a></li>
+<li><a href="http://www.wikidot.com/doc:searching">Searching</a></li>
+<li><a href="http://www.wikidot.com/doc:site-structure">Site structure</a></li>
+<li><a href="http://www.wikidot.com/doc:users">Managing users</a></li>
+<li><a href="http://www.wikidot.com/doc:layout-reference">Layout reference</a></li>
+<li><a href="http://www.wikidot.com/doc:video">Video tutorials</a></li>
+<li><a href="http://www.wikidot.com/doc:advertising">Advertising</a></li>
+<li><a href="http://www.wikidot.com/doc:api">Wikidot API</a></li>
+</ul>
+</li>
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Community sites <span class="caret"><span style="white-space: pre-wrap;">&nbsp;</span></span></a>
+<ul class="dropdown-menu">
+<li><a href="http://community.wikidot.com/">Wikidot Community</a></li>
+<li><a href="http://handbook.wikidot.com/">Wikidot Handbook</a></li>
+<li><a href="http://snippets.wikidot.com/">Code snippets</a></li>
+</ul>
+</li>
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">FAQ <span class="caret"><span style="white-space: pre-wrap;">&nbsp;</span></span></a>
+<ul class="dropdown-menu">
+<li><a href="http://www.wikidot.com/faq:user-accounts">User accounts</a></li>
+<li><a href="http://www.wikidot.com/faq:upgrades">Upgrades</a></li>
+<li><a href="http://www.wikidot.com/faq:site-features">Site features</a></li>
+<li><a href="http://www.wikidot.com/faq:private-sites">Private Sites</a></li>
+<li><a href="http://www.wikidot.com/faq:editing-pages">Editing Pages</a></li>
+<li><a href="http://www.wikidot.com/faq:technical">Technical</a></li>
+<li><a href="http://www.wikidot.com/faq:watching">Watching</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+            
+        <div class="horizontal-scrollbar" data-start="width: 0%;" data-end="width: 100%"></div>
+    </nav>
+</div>
+
+<div class="content-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="search-box">
+                    <div id="search-top-box" class="form-search">
+    <form id="search-top-box-form" action="http://www.wikidot.com/dummy" class="input-append">
+        <input id="search-top-box-input" class="text empty search-query" type="text" size="15" name="query" value="Search this site" onfocus="if(YAHOO.util.Dom.hasClass(this, 'empty')){YAHOO.util.Dom.removeClass(this,'empty'); this.value='';}"/><input class="button btn" type="submit" name="search" value="Search"/>
+    </form>
+</div>
+                 </div>
+                 
+                    <nav role="navigation">
+                        <div class="container">
+                            <div class="navbar-header docs-navigation">
+                                <a type="button" class="btn btn-default navbar-toggle docs-navigation-toggle" data-toggle="collapse" data-target=".doc-menu-collapse">
+                                    Table of Contents
+                                </a>
+                            </div>        
+                    
+                            <div class="collapse navbar-collapse doc-menu-collapse doc-navigation-sidebar">
+                            
+
+<h4 ><span>Documentation pages</span></h4>
+<ul>
+<li><a href="http://www.wikidot.com/doc-wiki-syntax:start">Wiki syntax</a></li>
+<li><a href="http://www.wikidot.com/doc:quick-reference">Quick reference</a></li>
+<li><a href="http://www.wikidot.com/doc:modules">Modules</a></li>
+<li><a href="http://www.wikidot.com/doc:data-forms">Data forms</a></li>
+<li><a href="http://www.wikidot.com/doc:embedding">Embedding other services</a></li>
+<li><a href="http://www.wikidot.com/doc:templates">Templates</a></li>
+<li><a href="http://www.wikidot.com/doc:searching">Searching</a></li>
+<li><a href="http://www.wikidot.com/doc:site-structure">Site structure</a></li>
+<li><a href="http://www.wikidot.com/doc:users">Users</a></li>
+<li><a href="http://www.wikidot.com/doc:layout-reference">Layout reference</a></li>
+<li><a href="http://www.wikidot.com/doc:thumbnails">Thumbnails</a></li>
+<li><a href="http://www.wikidot.com/doc:video">Video Tutorials</a></li>
+<li><a href="http://www.wikidot.com/doc:advertising">Advertising</a></li>
+<li><a href="http://www.wikidot.com/doc:api">Wikidot API</a></li>
+<li><a href="http://www.wikidot.com/doc:expressions">Expressions</a></li>
+</ul>
+<h4 ><span>FAQ (Frequently Asked Questions)</span></h4>
+<ul>
+<li><a href="http://www.wikidot.com/faq:upgrades">Upgrades and Plans</a></li>
+<li><a href="http://www.wikidot.com/faq:user-accounts">User accounts</a></li>
+<li><a href="http://www.wikidot.com/faq:site-features">Site features</a></li>
+<li><a href="http://www.wikidot.com/faq:private-sites">Private sites</a></li>
+<li><a href="http://www.wikidot.com/faq:editing-pages">Editing pages</a></li>
+<li><a href="http://www.wikidot.com/faq:watching">Watching changes</a></li>
+<li><a href="http://www.wikidot.com/faq:technical">Technical</a></li>
+</ul>
+
+                            </div>
+                        </div>
+                    </nav>
+                
+            </div>
+        
+            <div class="col-md-9">
+                <div class="page-title">
+                    Wikidot API
+                </div>
+
+                
+                    <div class="breadcrumb">
+                        <a href="http://www.wikidot.com/doc:start">Documentation</a> &raquo; Wikidot API
+                    </div>
+                
+
+                <div id="page-content">
+
+<p>The main concept of naming is as follows:</p>
+<ul>
+<li>namespace is type of object you work with</li>
+<li>select methods return array of names</li>
+<li>get methods return array of all data of matched objects</li>
+<li>get_one methods return array of all data of one matched object</li>
+</ul>
+<p>The list will grow as the methods are added. The methods are discussed <a href="http://developer.wikidot.com/forum/t-257156">here</a>.</p>
+<p>XML-RPC api is limited to 240 req/min (per user).</p>
+<h2 id="toc0"><span>categories.select</span></h2>
+<p>Select all categories from given site</p>
+<ul>
+<li>argument keys:
+<ul>
+<li><strong>site</strong>: site to get pages from, e.g. &quot;my-site&quot;</li>
+</ul>
+</li>
+<li>returns: list of category names</li>
+</ul>
+<div class="code">
+<div class="hl-main">
+<pre>
+<span class="hl-code">&gt;&gt;&gt; </span><span class="hl-identifier">s</span><span class="hl-code">.</span><span class="hl-identifier">categories</span><span class="hl-code">.</span><span class="hl-identifier">select</span><span class="hl-brackets">(</span><span class="hl-code">{</span><span class="hl-quotes">&quot;</span><span class="hl-string">site</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">my-site</span><span class="hl-quotes">&quot;</span><span class="hl-code">}</span><span class="hl-brackets">)</span><span class="hl-code">
+</span><span class="hl-brackets">[</span><span class="hl-quotes">&quot;</span><span class="hl-string">_default</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">admin</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">forum</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">system</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">blog</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">]</span>
+</pre></div>
+</div>
+<h2 id="toc1"><span>files.select</span></h2>
+<p>Get names of files attached to page</p>
+<ul>
+<li>argument keys:
+<ul>
+<li><strong>site</strong>: what site we ask about</li>
+<li><strong>page</strong>: what page (full name) we ask about</li>
+</ul>
+</li>
+<li>returns: list of file names</li>
+</ul>
+<h2 id="toc2"><span>files.get_meta</span></h2>
+<p>Get meta data of given files</p>
+<ul>
+<li>argument keys:
+<ul>
+<li><strong>site</strong>: what site we ask about</li>
+<li><strong>page</strong>: what page (full name) we ask about</li>
+<li><strong>files</strong>: name of files to get meta data of &#8212; max 10 of them</li>
+</ul>
+</li>
+<li>returns: dictionary of files. File name is key of each item in it. The value is a dictionary of:
+<ul>
+<li><em>size</em> &#8212; size in bytes</li>
+<li><em>comment</em></li>
+<li><em>mime_type</em></li>
+<li><em>mime_description</em></li>
+<li><em>uploaded_by</em></li>
+<li><em>uploaded_at</em></li>
+<li><em>download_url</em> &#8212; URL to download the file from. For private sites, the URL contains authorization token <tt>?ukey=<span style="white-space: pre-wrap;">..</span>.</tt> valid for about 5 minutes.</li>
+</ul>
+</li>
+</ul>
+<h2 id="toc3"><span>files.get_one</span></h2>
+<div class="wiki-note">
+<p>This method works for small files only (max 6MB).</p>
+</div>
+<p>Get file attached to page (alternatively you can use download_url from get_meta method above)</p>
+<ul>
+<li>argument keys:
+<ul>
+<li><strong>site</strong>: site to get page from</li>
+<li><strong>page</strong>: page to get file from</li>
+<li><strong>file</strong>: name of file to get</li>
+</ul>
+</li>
+<li>returns: dictionary with the same keys as files.get_meta and additionally:
+<ul>
+<li><em>content</em> &#8212; base64-encoded file contents</li>
+</ul>
+</li>
+</ul>
+<h2 id="toc4"><span>files.save_one</span></h2>
+<div class="wiki-note">
+<p>With this method you can attach files not bigger than 50MB. Other file size limits also apply:</p>
+<ul>
+<li>site storage &#8212; can't upload file bigger than current unused file storage for site</li>
+<li>maximum file size depending on free/Pro Wikidot plan</li>
+</ul>
+</div>
+<p>Attaches file to page</p>
+<ul>
+<li>argument keys:
+<ul>
+<li><strong>site</strong>: site of page to attach file to</li>
+<li><strong>page</strong>: page to attach file to</li>
+<li><strong>file</strong>: name of file to attach</li>
+<li><strong>comment</strong> (optional): file description</li>
+<li><strong>save_mode</strong> (optional): allowed mode of operation
+<ul>
+<li>create &#8212; only allow creating new objects (exception thrown if object with this name already exists)</li>
+<li>update &#8212; only allow updating objects (exception thrown if no object with this name exists)</li>
+<li>create_or_update (default) &#8212; allow both creating and updating object</li>
+</ul>
+</li>
+<li><strong>content</strong>: base64-encoded file content</li>
+<li><strong>notify_watchers</strong> (optional):
+<ul>
+<li>true: notify watchers about the edit (as if it was done with the web interface)</li>
+<li>false (default): don't notify watchers</li>
+</ul>
+</li>
+<li><strong>revision_comment</strong> (optional): revision comment (displayed in history)</li>
+</ul>
+</li>
+<li>returns: the newly uploaded file information as dictionary the same to what files.get_meta return for each file</li>
+</ul>
+<h2 id="toc5"><span>tags.select</span></h2>
+<p>Select all tags from pages from given site or page or category</p>
+<ul>
+<li>argument keys:
+<ul>
+<li>site: site to get pages to get tags from, e.g. &quot;my-site&quot;</li>
+<li>categories (optional): list of names of categories to get pages to get tags from</li>
+<li>pages (optional): list of full names of pages to get tags from &#8212; max 10 of them</li>
+</ul>
+</li>
+<li>returns: list of tags</li>
+</ul>
+<h2 id="toc6"><span>pages.select</span></h2>
+<p>Select pages that match given criteria</p>
+<ul>
+<li>argument keys (if not stated otherwise, possible values documented in <a href="http://www.wikidot.com/doc:listpages-module">ListPages module</a>):
+<ul>
+<li><strong>site</strong>: site to get pages from, e.g. &quot;my-site&quot;</li>
+<li><strong>pagetype</strong> (optional): default &quot;*&quot;</li>
+<li><strong>categories</strong> (optional): list of category names to pull pages from, default: all categories</li>
+<li><strong>tags_any</strong> (optional): list of tags, page must have at least one of them</li>
+<li><strong>tags_all</strong> (optional): list of tags, page must have all of them</li>
+<li><strong>tags_none</strong> (optional): list of tags, page must have none of them</li>
+<li><strong>parent</strong> (optional): single page name or &quot;-&quot; for pages with no parent</li>
+<li><strong>created_by</strong> (optional): single user name</li>
+<li><strong>rating</strong> (optional)</li>
+<li><strong>order</strong> (optional)</li>
+</ul>
+</li>
+<li>returns: list of page full names</li>
+</ul>
+<div class="code">
+<div class="hl-main">
+<pre>
+<span class="hl-code">&gt;&gt;&gt; </span><span class="hl-identifier">s</span><span class="hl-code">.</span><span class="hl-identifier">pages</span><span class="hl-code">.</span><span class="hl-identifier">select</span><span class="hl-brackets">(</span><span class="hl-code">{</span><span class="hl-quotes">&quot;</span><span class="hl-string">site</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">my-site</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">categories</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-brackets">[</span><span class="hl-quotes">&quot;</span><span class="hl-string">blog</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">news</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">]</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">tags_none</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-brackets">[</span><span class="hl-quotes">&quot;</span><span class="hl-string">_draft</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">]</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">order</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">created_at desc</span><span class="hl-quotes">&quot;</span><span class="hl-code">}</span><span class="hl-brackets">)</span><span class="hl-code">
+</span><span class="hl-brackets">[</span><span class="hl-quotes">&quot;</span><span class="hl-string">blog:last-post</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">blog:second-post</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">blog:first-post</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">blog:_template</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">]</span>
+</pre></div>
+</div>
+<h2 id="toc7"><span>pages.get_meta</span></h2>
+<p>Get a bunch of pages and returns (some of) their meta data</p>
+<ul>
+<li>argument keys:
+<ul>
+<li><strong>site</strong>: site to list pages from, eg. &quot;my-site&quot;</li>
+<li><strong>pages</strong>: list of page full names to list (maximum 10 pages)</li>
+</ul>
+</li>
+<li>returns dictionary of pages. For each page there will be item in the dictionary with page name as key and dictionary of the following page properties as value:
+<ul>
+<li><em>fullname</em></li>
+<li><em>created_at</em></li>
+<li><em>created_by</em></li>
+<li><em>updated_at</em></li>
+<li><em>updated_by</em></li>
+<li><em>title</em></li>
+<li><em>parent_fullname</em></li>
+<li><em>tags</em> &#8212; list of all tags (including those starting with underscore)</li>
+<li><em>rating</em></li>
+<li><em>revisions</em></li>
+<li><strong>[PLANNED]</strong> <em>comments</em> &#8212; number of comments</li>
+<li><strong>[PLANNED]</strong> <em>files</em> &#8212; number of files attached to the page</li>
+<li><strong>[PLANNED]</strong> <em>children</em> &#8212; number of children pages</li>
+</ul>
+</li>
+</ul>
+<div class="code">
+<div class="hl-main">
+<pre>
+<span class="hl-code">&gt;&gt;&gt; </span><span class="hl-identifier">s</span><span class="hl-code">.</span><span class="hl-identifier">pages</span><span class="hl-code">.</span><span class="hl-identifier">meta</span><span class="hl-brackets">(</span><span class="hl-code">{</span><span class="hl-quotes">&quot;</span><span class="hl-string">site</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">my-site</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">pages</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-brackets">[</span><span class="hl-quotes">&quot;</span><span class="hl-string">blog:last-post</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">blog:second-post</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">]</span><span class="hl-code">}</span><span class="hl-brackets">)</span><span class="hl-code">
+{
+ </span><span class="hl-quotes">&quot;</span><span class="hl-string">blog:last-post</span><span class="hl-quotes">&quot;</span><span class="hl-code">: {</span><span class="hl-quotes">&quot;</span><span class="hl-string">fullname</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">blog:last-post</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">created_at</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">2010-08-04T23:20:50Z</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">created_by</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">Gabrys</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">updated_at</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">2010-08-04T23:23:31Z</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">updated_by</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">Gabrys</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">title</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">Last Post</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">parent_fullname</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-reserved">None</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">tags</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-brackets">[</span><span class="hl-quotes">&quot;</span><span class="hl-string">blog</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">last</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">]</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">rating</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-number">8</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">revisions</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-number">2</span><span class="hl-code">},
+ </span><span class="hl-quotes">&quot;</span><span class="hl-string">blog:second-post</span><span class="hl-quotes">&quot;</span><span class="hl-code">: {</span><span class="hl-quotes">&quot;</span><span class="hl-string">fullname</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">blog:second-post</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">created_at</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">2010-08-03T22:52:10Z</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">created_by</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">Gabrys</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">updated_at</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">2010-08-03T22:52:10Z</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">updated_by</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">Gabrys</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">title</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">Second Post</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">parent_fullname</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-reserved">None</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">tags</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-brackets">[</span><span class="hl-quotes">&quot;</span><span class="hl-string">blog</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">second</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">]</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">rating</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-number">1</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">revisions</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-number">1</span><span class="hl-code">}
+}</span>
+</pre></div>
+</div>
+<h2 id="toc8"><span>pages.get_one</span></h2>
+<p>Gets one page and returns all its properties</p>
+<ul>
+<li>argument keys:
+<ul>
+<li><strong>site</strong>: site to get a page from, e.g. &quot;my-site&quot;</li>
+<li><strong>page</strong>: page full name to get, e.g. &quot;start&quot; or &quot;blog:first-post&quot;</li>
+</ul>
+</li>
+<li>returns: page properties as dictionary (consult documentation of <a href="http://www.wikidot.com/doc:listpages-module">ListPages module</a>)
+<ul>
+<li>all those listed in <tt>pages.get_meta</tt> plus:</li>
+<li><em>parent_title</em></li>
+<li><em>children</em></li>
+<li><em>content</em> &#8212; page content, if page is assigned a form it's in YAML format</li>
+<li><em>html</em> &#8212; generated HTML of the page (as seen from browser excluding navigational bars etc)</li>
+<li><em>comments</em> &#8212; number of comments</li>
+<li><em>commented_at</em></li>
+<li><em>commented_by</em></li>
+</ul>
+</li>
+</ul>
+<div class="code">
+<div class="hl-main">
+<pre>
+<span class="hl-code">&gt;&gt;&gt; </span><span class="hl-identifier">s</span><span class="hl-code">.</span><span class="hl-identifier">pages</span><span class="hl-code">.</span><span class="hl-identifier">get_one</span><span class="hl-brackets">(</span><span class="hl-code">{</span><span class="hl-quotes">&quot;</span><span class="hl-string">site</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">my-site</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">page</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">blog:last-post</span><span class="hl-quotes">&quot;</span><span class="hl-code">}</span><span class="hl-brackets">)</span><span class="hl-code">
+{</span><span class="hl-quotes">&quot;</span><span class="hl-string">created_at</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">2010-08-04T23:20:50Z</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">created_by</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">Gabrys</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">updated_at</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">2010-08-04T23:23:31Z</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">updated_by</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">Gabrys</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">title</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">Last Post</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">parent_fullname</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-reserved">None</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">tags</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-brackets">[</span><span class="hl-quotes">&quot;</span><span class="hl-string">blog</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">last</span><span class="hl-quotes">&quot;</span><span class="hl-brackets">]</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">rating</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-number">8</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">revisions</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-number">2</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">parent_title</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-reserved">None</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">children</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">content</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">Test blog post</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">html</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-quotes">&quot;</span><span class="hl-string">&lt;p&gt;Test blog post&lt;/p&gt;</span><span class="hl-quotes">&quot;</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">comments</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">commented_at</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-reserved">None</span><span class="hl-code">, </span><span class="hl-quotes">&quot;</span><span class="hl-string">commented_by</span><span class="hl-quotes">&quot;</span><span class="hl-code">: </span><span class="hl-reserved">None</span><span class="hl-code">}</span>
+</pre></div>
+</div>
+<h2 id="toc9"><span>pages.save_one</span></h2>
+<p>Save page. Site and page keys of argument array are required. Set specific keys to update the properties, omit to keep current values.</p>
+<ul>
+<li>argument keys:
+<ul>
+<li><strong>site</strong>: site to save page to</li>
+<li><strong>page</strong>: page full name to save</li>
+<li><strong>title</strong> (optional): title to set</li>
+<li><strong>content</strong> (optional): page content &#8212; wiki source</li>
+<li><strong>tags</strong> (optional): array of tags to set</li>
+<li><strong>parent_fullname</strong> (optional): parent page full name, &quot;-&quot; to reset</li>
+<li><strong>save_mode</strong> (optional): allowed mode of operation
+<ul>
+<li>create &#8212; only allow creating new objects (exception thrown if object with this name already exists)</li>
+<li>update &#8212; only allow updating objects (exception thrown if no object with this name exists)</li>
+<li>create_or_update (default) &#8212; allow both creating and updating object</li>
+</ul>
+</li>
+<li><strong>rename_as</strong> (optional): rename the page (in addition to possible other changes in source etc)</li>
+<li><strong>revision_comment</strong> (optional): revision comment (displayed in history)</li>
+<li><strong>notify_watchers</strong> (optional):
+<ul>
+<li>true: notify watchers about the edit (as if it was done with the web interface)</li>
+<li>false (default): don't notify watchers</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>returns: saved page (as in page.get_one)</li>
+</ul>
+<div class="wiki-note">
+<p>We only want to make API for comments currently, but it will be expanded to both comments and forum. That's why the namespace is <tt>posts</tt> and not <tt>comments</tt>.</p>
+<p><strong>Note the API for <tt>posts</tt> namespace is not yet stable. This means it may change in the future without notice and break compatibility.</strong></p>
+</div>
+<h2 id="toc10"><span>posts.select</span></h2>
+<p>Select post/comments on given site, page, thread and/or in reply to other comment.</p>
+<ul>
+<li>argument keys:
+<ul>
+<li><strong>site</strong>: site to get pages to get comments from, e.g. &quot;my-site&quot;</li>
+<li><strong>page</strong> (optional): page to get comments from</li>
+<li><strong>thread</strong> (optional): thread to get posts from &#8212; not yet implemented</li>
+<li><strong>reply_to</strong> (optional): only select comments/posts that are direct replies to this one (&quot;-&quot; means not replies to other posts/comments)</li>
+<li><strong>created_by</strong> (optional): select posts by this user</li>
+</ul>
+</li>
+<li>returns: list of post/comments IDs sorted by date posted</li>
+</ul>
+<h2 id="toc11"><span>posts.get</span></h2>
+<ul>
+<li>argument keys:
+<ul>
+<li><strong>site</strong>: site to get comments from, e.g. &quot;my-site&quot;</li>
+<li><strong>posts</strong>: list of IDs of posts/comments to get (max 10 of them)</li>
+</ul>
+</li>
+<li>returns dictionary of posts/comments. For each post/comment there will be item in the dictionary with post/comment ID as key and and dictionary of the following post properties as value:
+<ul>
+<li><em>id</em> &#8212; ID of post/comment</li>
+<li><em>fullname</em> &#8212; fullname of page to which comment belongs</li>
+<li><em>reply_to</em> &#8212; ID of comment which this post/comment replies to</li>
+<li><em>title</em> &#8212; title of the post/comment</li>
+<li><em>content</em> &#8212; post/comment body (wiki syntax)</li>
+<li><em>html</em> &#8212; post/comment body as HTML</li>
+<li><em>created_by</em> &#8212; user that posted post/comment</li>
+<li><em>created_at</em> &#8212; time post/comment was posted</li>
+<li><em>replies</em> &#8212; number of replies to given post/comment &#8212; not yet implemented</li>
+</ul>
+</li>
+</ul>
+<h2 id="toc12"><span>users.get_me</span></h2>
+<ul>
+<li>argument keys:
+<ul>
+<li>no arguments needed, pass an empty dictionary or array</li>
+</ul>
+</li>
+<li>returns dictionary of user (the one that API key belongs to) properties:
+<ul>
+<li>name: URL version of user name, for example &quot;john-smith&quot; for &quot;John Smith&quot;</li>
+<li>title: full name of user, for example &quot;John Smith&quot;</li>
+<li>id: ID number of user, for example &quot;12345&quot;</li>
+</ul>
+</li>
+</ul>
+<h2 id="toc13"><span>Deleted methods</span></h2>
+<p>The following methods are deleted and don't work anymore:</p>
+<ul>
+<li>site.pages</li>
+<li>site.categories</li>
+<li>page.get</li>
+<li>page.files</li>
+<li>page.save</li>
+<li>user.sites</li>
+</ul>
+</div><div id="action-area" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="page-options-container container">
+            
+        </div>
+    
+</div>
+
+<div class="footer">
+    <div class="container">
+        
+
+<div class="row">
+<div class="col-sm-6"><img src="https://www.wikidot.com/common--theme/wikidot30/images/amazon.png" alt="amazon.png" class="image" /></div>
+<div class="col-sm-3">
+<p><a href="http://blog.wikidot.com/">Official Wikidot blog</a></p>
+<p><a href="http://community.wikidot.com/">Community</a></p>
+<p><a href="http://www.wikidot.com/doc">Documentation</a></p>
+</div>
+<div class="col-sm-3">
+<p><a href="http://www.wikidot.com/about">About Wikidot</a></p>
+<p><a href="http://shop.wikidot.com/">Gift Shop</a></p>
+<p><a href="http://www.wikidot.com/legal:terms-of-service">Terms of Service</a></p>
+<p><a href="http://www.wikidot.com/legal:privacy-policy">Privacy policy</a></p>
+</div>
+</div>
+
+    </div>
+    <div class="container license-area">
+        Copyright © All Rights Reserved, Wikidot Inc. 2016
+    </div>
+</div>
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+    </div>
+</body>
+
+<!-- Mirrored from www.wikidot.com/doc:api by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:25 GMT -->
+</html>

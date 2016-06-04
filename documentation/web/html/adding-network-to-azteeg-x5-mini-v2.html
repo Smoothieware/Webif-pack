@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/forum/t-1638130/adding-network-to-azteeg-x5-mini-v2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:15:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Adding network to Azteeg X5 Mini V2 - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="http://www.wikidot.com/default__flow/login__CustomDomainScript?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474487;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "forum:thread";
+        OZONE.request.timestamp = 1463139123;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "forum:thread";
+        WIKIREQUEST.info.pageId = 7451485;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--javascript/WIKIDOT.combined.js"></script>
+            <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--bootstrap/3.2.0/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--bootstrap/3.2.0/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/bootstrap-base/css/style.css);
+                    @import url(http://chibidibidiwah.wdfiles.com/local--theme/bare/style.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="http://smoothieware.org/local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="http://smoothieware.org/local--favicon/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="http://smoothieware.org/common--images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://smoothieware.org/common--images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://smoothieware.org/common--images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    <link rel="alternate" type="application/rss+xml" title="Posts in the discussion thread &quot;Adding network to Azteeg X5 Mini V2&quot;" href="http://smoothieware.org/feed/forum/t-1638130.xml"/><script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--modules/js/forum/ForumViewThreadModule.js"></script>
+<script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--modules/js/forum/ForumViewThreadPostsModule.js"></script>
+</head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://smoothieware.org/" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/">Documentation</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/smoothieboard">SmoothieBoard</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/blog">Blog</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/gallery">Gallery</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="http://smoothieware.org/irc">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="http://smoothieware.org/forum/c-496918/general">Forum</a></li>
+<li><a href="http://groups.google.com/group/smoothieware-support">Support/Help Mailing list</a></li>
+<li><a href="http://groups.google.com/group/smoothie-dev">Developper Mailing list</a></li>
+<li><a href="https://plus.google.com/communities/111870450664099533727">Google+ Community</a></li>
+<li><a href="https://www.facebook.com/Smoothieware/">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/search">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="http://chibidibidiwah.wdfiles.com/local--files/start/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Forum Thread</span></div>
+          
+          <div id="page-content">
+
+
+<div class="forum-thread-box "> 
+	<div  class="forum-breadcrumbs">
+		<a href="http://smoothieware.org/forum/start">Forum</a>
+        &raquo; <a href="http://smoothieware.org/forum/c-496918/general">Smoothie Firwmare / General</a>
+		&raquo; Adding network to Azteeg X5 Mini V2
+	</div>
+	
+	<div class="description-block well">
+		<div class="statistics">
+			Started by: <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/scott-berfield" onclick="WIKIDOT.page.listeners.userInfo(2606998); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2606998&amp;amp;size=small&amp;amp;timestamp=1463139123" alt="Scott Berfield" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2606998)"/></a><a href="http://www.wikidot.com/user:info/scott-berfield" onclick="WIKIDOT.page.listeners.userInfo(2606998); return false;" >Scott Berfield</a></span><br/>
+			Date:  <span class="odate time_1457389004 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">07 Mar 2016 22:16</span><br/>
+			Number of posts: 4<br/>
+			<span class="rss-icon"><img src="http://www.wikidot.com/common--theme/base/images/feed/feed-icon-14x14.png" alt="rss icon"/></span>
+			RSS: <a href="http://smoothieware.org/feed/forum/t-1638130.xml">New posts</a>
+		</div>
+									<div class="head">Summary:</div>
+				There are pins on the Axteeg Mini X5 V2 for network - has anyone successfully used them and if so, what did you use?
+							
+	</div>
+	
+	<div class="options">
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.unfoldAll(event)" class="btn btn-default btn-small btn-sm">Unfold All</a> 
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.foldAll(event)" class="btn btn-default btn-small btn-sm">Fold All</a>
+		<a href="javascript:;" id="thread-toggle-options" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.toggleThreadOptions(event)" class="btn btn-default btn-small btn-sm"><i class="icon-plus"></i> More Options</a>
+	</div>
+	<div id="thread-options-2" class="options" style="display: none">
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.editThreadMeta(event)" class="btn btn-default btn-small btn-sm">Edit Title &amp; Description</a>
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.editThreadStickiness(event)" class="btn btn-default btn-small btn-sm">Stickness</a>
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.editThreadBlock(event)" class="btn btn-default btn-small btn-sm">Lock Thread</a>
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.moveThread(event)" class="btn btn-default btn-small btn-sm">Move Thread</a>
+			</div>
+	
+	<div id="thread-action-area" class="action-area well" style="display: none"></div>
+
+    <div id="thread-container" class="thread-container">
+        <div id="thread-container-posts" style="display: none">
+            
+
+
+
+	
+					
+      
+    <div class="post-container" id="fpc-2469084">
+                      
+		<div class="post" id="post-2469084">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2469084)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2469084">
+																		Adding network to Azteeg X5 Mini V2
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/scott-berfield" onclick="WIKIDOT.page.listeners.userInfo(2606998); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2606998&amp;amp;size=small&amp;amp;timestamp=1463139123" alt="Scott Berfield" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2606998)"/></a><a href="http://www.wikidot.com/user:info/scott-berfield" onclick="WIKIDOT.page.listeners.userInfo(2606998); return false;" >Scott Berfield</a></span> <span class="odate time_1457389004 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">07 Mar 2016 22:16</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2469084">
+									
+
+<p>Bought the Azteeg since it was in stock and so far it is working well. They say they have net pinout on the board - anyone actually successfully added networking to it? If added, would it be compatible with the net support in Smoothieware?</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+													<strong><a href="javascript:;" onclick="postReply(event,2469084)" class="btn btn-primary btn-small btn-sm">Reply</a></strong> 
+																	<a href="javascript:;" onclick="togglePostOptions(event,2469084)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2469084" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2469084)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2469084)">Adding network to Azteeg X5 Mini V2</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/scott-berfield" onclick="WIKIDOT.page.listeners.userInfo(2606998); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2606998&amp;amp;size=small&amp;amp;timestamp=1463139123" alt="Scott Berfield" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2606998)"/></a><a href="http://www.wikidot.com/user:info/scott-berfield" onclick="WIKIDOT.page.listeners.userInfo(2606998); return false;" >Scott Berfield</a></span>, <span class="odate time_1457389004 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">07 Mar 2016 22:16</span>
+		</div>
+	</div>
+ 
+                
+        
+                      
+    <div class="post-container" id="fpc-2470182">
+                      
+		<div class="post" id="post-2470182">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2470182)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2470182">
+																		Re: Adding network to Azteeg X5 Mini V2
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/chris-kochan" onclick="WIKIDOT.page.listeners.userInfo(2612154); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2612154&amp;amp;size=small&amp;amp;timestamp=1463139123" alt="Chris Kochan" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2612154)"/></a><a href="http://www.wikidot.com/user:info/chris-kochan" onclick="WIKIDOT.page.listeners.userInfo(2612154); return false;" >Chris Kochan</a></span> <span class="odate time_1457552648 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">09 Mar 2016 19:44</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2470182">
+									
+
+<p>I had the same questions, so I dropped Panucatt an email. The response I got back was that they're working on a daughterboard that would provide the ethernet interface, but there was no timeline as to when it would drop.</p>
+<p>Based on the published wiring diagram and the pin usage table published (<a href="http://smoothieware.org/lpc1769-pin-usage">lpc1769-pin-usage</a>), the board would connect to J7 on the X5 v2. In theory, between those two sources of information, there's enough to go on there to wire up a home-brew plug.</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+													<strong><a href="javascript:;" onclick="postReply(event,2470182)" class="btn btn-primary btn-small btn-sm">Reply</a></strong> 
+																	<a href="javascript:;" onclick="togglePostOptions(event,2470182)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2470182" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2470182)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2470182)">Re: Adding network to Azteeg X5 Mini V2</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/chris-kochan" onclick="WIKIDOT.page.listeners.userInfo(2612154); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2612154&amp;amp;size=small&amp;amp;timestamp=1463139123" alt="Chris Kochan" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2612154)"/></a><a href="http://www.wikidot.com/user:info/chris-kochan" onclick="WIKIDOT.page.listeners.userInfo(2612154); return false;" >Chris Kochan</a></span>, <span class="odate time_1457552648 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">09 Mar 2016 19:44</span>
+		</div>
+	</div>
+ 
+                
+        
+                      
+    <div class="post-container" id="fpc-2470667">
+                      
+		<div class="post" id="post-2470667">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2470667)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2470667">
+																		Re: Adding network to Azteeg X5 Mini V2
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/scott-berfield" onclick="WIKIDOT.page.listeners.userInfo(2606998); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2606998&amp;amp;size=small&amp;amp;timestamp=1463139123" alt="Scott Berfield" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2606998)"/></a><a href="http://www.wikidot.com/user:info/scott-berfield" onclick="WIKIDOT.page.listeners.userInfo(2606998); return false;" >Scott Berfield</a></span> <span class="odate time_1457646432 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">10 Mar 2016 21:47</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2470667">
+									
+
+<p>Thanks, I had pinged them but not heard back. I may have to do some playing around to see if I cna jury rig something for fun while I wait for the real solution.</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+																					<a href="javascript:;" onclick="togglePostOptions(event,2470667)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2470667" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2470667)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2470667)">Re: Adding network to Azteeg X5 Mini V2</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/scott-berfield" onclick="WIKIDOT.page.listeners.userInfo(2606998); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2606998&amp;amp;size=small&amp;amp;timestamp=1463139123" alt="Scott Berfield" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2606998)"/></a><a href="http://www.wikidot.com/user:info/scott-berfield" onclick="WIKIDOT.page.listeners.userInfo(2606998); return false;" >Scott Berfield</a></span>, <span class="odate time_1457646432 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">10 Mar 2016 21:47</span>
+		</div>
+	</div>
+ 
+                
+        
+            </div>
+ 
+                      
+    <div class="post-container" id="fpc-2497082">
+                      
+		<div class="post" id="post-2497082">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2497082)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2497082">
+																		Re: Adding network to Azteeg X5 Mini V2
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/lerche" onclick="WIKIDOT.page.listeners.userInfo(2723669); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2723669&amp;amp;size=small&amp;amp;timestamp=1463139123" alt="Lerche" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2723669)"/></a><a href="http://www.wikidot.com/user:info/lerche" onclick="WIKIDOT.page.listeners.userInfo(2723669); return false;" >Lerche</a></span> <span class="odate time_1461517735 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">24 Apr 2016 17:08</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2497082">
+									
+
+<p>V2.0 has a breakout called J7. This is ethermet, unfortunately V1.0 and V1.1 hasn't.</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+													<strong><a href="javascript:;" onclick="postReply(event,2497082)" class="btn btn-primary btn-small btn-sm">Reply</a></strong> 
+																	<a href="javascript:;" onclick="togglePostOptions(event,2497082)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2497082" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2497082)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2497082)">Re: Adding network to Azteeg X5 Mini V2</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/lerche" onclick="WIKIDOT.page.listeners.userInfo(2723669); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2723669&amp;amp;size=small&amp;amp;timestamp=1463139123" alt="Lerche" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2723669)"/></a><a href="http://www.wikidot.com/user:info/lerche" onclick="WIKIDOT.page.listeners.userInfo(2723669); return false;" >Lerche</a></span>, <span class="odate time_1461517735 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">24 Apr 2016 17:08</span>
+		</div>
+	</div>
+ 
+                
+        
+            </div>
+ 
+            </div>
+ 
+            </div>
+ 
+
+
+
+        </div>
+    </div>
+
+	<div class="new-post">
+		<a href="javascript:;" id="new-post-button" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.newPost(event,null)" class="btn btn-default">New Post</a>
+	</div>
+	
+	<div style="display:none" id="post-options-template">
+			<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.showPermalink(event,'%POST_ID%')" class="btn btn-default btn-small btn-sm">Permanent Link</a>
+			<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.editPost(event,'%POST_ID%')" class="btn btn-default btn-small btn-sm">Edit</a>
+			<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.deletePost(event,'%POST_ID%')"class="btn btn-danger btn-small btn-sm">Delete</a>
+	</div>
+	
+	<div style="display:none" id="post-options-permalink-template">/forum/t-1638130/adding-network-to-azteeg-x5-mini-v2#post-</div>
+</div>
+
+<script type="text/javascript">
+	WIKIDOT.forumThreadId = 1638130;
+</script></div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"></div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="http://www.wikidot.com/">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/forum/t-1638130/adding-network-to-azteeg-x5-mini-v2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:15:38 GMT -->
+</html>

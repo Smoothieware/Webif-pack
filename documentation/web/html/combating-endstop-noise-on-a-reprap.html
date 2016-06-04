@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from wot.lv/combating-endstop-noise-on-a-reprap.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:12 GMT -->
+<head>
+	<link rel="stylesheet" type="text/css" href="http://wot.lv/theme/css/style.css">
+	<!--<link rel="stylesheet/less" type="text/css" href="/theme/css/style.less">-->
+	<!--<script src="/theme/js/less.js" type="text/javascript"></script>-->
+	<link rel="stylesheet" type="text/css" href="http://wot.lv/theme/css/pygments.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400,300|Inconsolata' rel='stylesheet' type='text/css'>
+
+	<link href="http://wot.lv/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Wide Open Throttle ATOM Feed" />
+			<link href="http://wot.lv/rss.xml" type="application/atom+xml" rel="alternate" title="Wide Open Throttle RSS Feed" />
+	
+	    <title>        Combating endstop noise on a RepRap -         misc -                 Wide Open Throttle</title>
+		<meta charset="utf-8" />
+	</head>
+<body>
+	<section id="sidebar">
+
+		<div class="user_meta">
+			<h1 id="user"><a href="http://wot.lv/" class="">Reinis Veips (fest)</a></h1>
+			<h2></h2>
+			<ul>
+																			<li><a href="http://wot.lv/pages/portfolio-projects.html">Portfolio || projects</a></li>
+									
+									<li><a href="http://wot.lv/category/rpi-carpc.html">RPi carpc</a></li>
+									<li class="active"><a href="http://wot.lv/category/misc.html">misc</a></li>
+											</ul>
+
+			                <div class="social">
+                        <ul>
+                                                    <li><a href="http://github.com/festlv">github/festlv</a></li>
+                                                    <li><a href="http://twitter.com/festlv">twitter/festlv</a></li>
+                                                    <li><a href="http://www.linkedin.com/pub/reinis-veips/6/268/33a">linkedin/Reinis Veips</a></li>
+                        
+                            <li><a href="http://wot.lv/rss.xml" type="rss+xml">RSS</a></li>
+                        </ul>
+
+                </div><!-- /.social -->
+        		</div>
+		<footer>
+			<address>
+				Contact me at: <a href="mailto:reinis.veips&#64;wot.lv">reinis.veips&#64;wot.lv</a>
+			</address>
+			<p>Looking for the <a href="http://arhivs.wot.lv/">archive?</a>.
+
+		</footer>
+	</section>
+
+	<section id="posts">
+			<header>
+		<h1>Reinis Veips (fest)'s blog</h1>
+		<h3>Posted C  06 marts 2014</h3>
+	</header>
+	<article>
+		<h1 id="title">
+			<a href="http://wot.lv/combating-endstop-noise-on-a-reprap.html" rel="bookmark"
+				title="Permalink to Combating endstop noise on a RepRap">Combating endstop noise on a RepRap</a>
+		</h1>
+		<p>While assembling my new toy - a larger, RepRap-based 3D printer, I experienced strong 
+noise on endstop inputs.</p>
+<p>Endstops on my machine are pure mechanical switches, and the wires to endstops are in 
+the same cable where wires to stepper motor are (unshielded, of course).</p>
+<p>I wasn't surprised to see some noise, but when I hooked up oscilloscope to endstop 
+input line on microcontroller (Arduino Mega + RAMPS 1.4 shield), I was surprised to see
+a noise of such magnitude (ignore CH2- I was planning to hook it up to motor wire but didn't quite get to it):</p>
+<p><img alt="Endstop noise" src="http://wot.lv/static/images/endstop_noise.png" /></p>
+<p>This trace show the moment, when stepper motor, which shares the cable with probed 
+endstop input is engaged. More than 4 volts of noise. Ouch.</p>
+<p>I also wasn't too much surprised, to see that noise consists of mostly 50kHz 
+frequency component- the same frequency stepper motor drivers (Allegro A4988 based) 
+chop their outputs.</p>
+<p>Initially I wanted to place ferrite rings on endstop signal lines, but couldn't find
+a suitable ferrites in my lab, so I tried a simple low-pass RC filter instead:</p>
+<p><img alt="Low-pass filter" src="http://wot.lv/static/images/endstop_lpf1.jpg" /></p>
+<p>This resulted in much better waveform (captured while the same motor was running):</p>
+<p><img alt="Low-pass filter waveform" src="http://wot.lv/static/images/endstop_lpf1_waveform.png" /></p>
+<p>I didn't like the time it took for signal to rise after switch was deactivated though- 
+it rose too slow for my liking:</p>
+<p><img alt="Low-pass filter waveform while homing" src="http://wot.lv/static/images/endstop_lpf1_rise.png" /></p>
+<p>The waveform above shows what happens when axis goes to home position- first the 
+endstop is triggered, and after some delay axis backs up, until the endstop no longer 
+is triggered. Since that is considered the 0 position for that axis, I wanted the signal
+to rise faster.</p>
+<p>To achieve that, I placed a 3.3kOhm pullup resistor:</p>
+<p><img alt="Low-pass filter with pullup" src="http://wot.lv/static/images/endstop_lpf2.jpg" /></p>
+<p>This resulted in a waveform which I found a lot better:</p>
+<p><img alt="Low-pass filter waveform while homing" src="http://wot.lv/static/images/endstop_lpf2_rise.png" /></p>
+<p>There is significant bouncing while the switch is being closed, but I don't think it 
+does affect anything, since there is a delay after the falling edge, and axis backs up
+only after the signal is stable.</p>
+<p>That's it for now, off to fix a broken Z-probe servo :(</p>
+
+		<div id="article_meta">
+							Category:
+					<a href="http://wot.lv/category/misc.html">misc</a>
+								</div>
+	</article>
+
+	<footer>
+		<a href="http://wot.lv/" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;Back to blog</a>
+	</footer>
+
+    	<div id="comments">
+		<h2>Comments</h2>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+            var disqus_identifier = "http://wot.lv/combating-endstop-noise-on-a-reprap.html";
+            var disqus_url = "http://wot.lv/combating-endstop-noise-on-a-reprap.html";
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = 'http://wotlv.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view <a href="http://disqus.com/?ref_noscript">comments</a>.</noscript>
+	</div>
+	
+	</section>
+
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-5808332-1");
+			pageTracker._trackPageview();
+		} catch(err) {}</script>
+</body>
+
+<!-- Mirrored from wot.lv/combating-endstop-noise-on-a-reprap.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:12 GMT -->
+</html>

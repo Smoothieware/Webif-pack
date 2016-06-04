@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/Smoothieware/Smoothieware/commits/edge</id>
+  <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commits/edge"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/Smoothieware/Smoothieware/commits/edge.atom"/>
+  <title>Recent Commits to Smoothieware:edge</title>
+  <updated>2016-04-29T15:38:53-07:00</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b6c3b76890b377244f9509e25c89c7e1f758e22f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/b6c3b76890b377244f9509e25c89c7e1f758e22f"/>
+    <title>
+        Merge pull request #920 from wolfmanjm/upstreamedge
+    </title>
+    <updated>2016-04-29T15:38:53-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/22263?v=3&amp;s=30"/>
+    <author>
+      <name>wolfmanjm</name>
+      <uri>https://github.com/wolfmanjm</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Merge pull request #920 from wolfmanjm/upstreamedge
+
+add designator to motordriver messages&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/63b7731d1e9e3ce7845587ae8164cb33e09c9433</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/63b7731d1e9e3ce7845587ae8164cb33e09c9433"/>
+    <title>
+        add designator to motordriver messages
+    </title>
+    <updated>2016-04-29T15:37:56-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/22263?v=3&amp;s=30"/>
+    <author>
+      <name>wolfmanjm</name>
+      <uri>https://github.com/wolfmanjm</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>add designator to motordriver messages&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/88e84b2304e5b2455e76b63062528e0534544a3b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/88e84b2304e5b2455e76b63062528e0534544a3b"/>
+    <title>
+        update firmware.bin
+    </title>
+    <updated>2016-04-22T15:53:46-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://2.gravatar.com/avatar/a9b3b6f3ea2e49d18d5bb14dbc0a1e13?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=x&amp;s=30"/>
+    <author>
+      <name></name>
+      <email>wolfmanjm@gmail.com</email>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>update firmware.bin&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3332442f94b68f409962239aebd9130102d36e1a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/3332442f94b68f409962239aebd9130102d36e1a"/>
+    <title>
+        Merge pull request #917 from wolfmanjm/upstreamedge
+    </title>
+    <updated>2016-04-22T15:36:31-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/22263?v=3&amp;s=30"/>
+    <author>
+      <name>wolfmanjm</name>
+      <uri>https://github.com/wolfmanjm</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Merge pull request #917 from wolfmanjm/upstreamedge
+
+ignore M0, as setting feed hold in non grbl mode basically stalls eve…&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/20ed51b786f4bce3c627ba0cbd763631e04ae835</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/20ed51b786f4bce3c627ba0cbd763631e04ae835"/>
+    <title>
+        ignore M0, as setting feed hold in nom grbl mode basically stalls everything as trhere is not way to release it
+    </title>
+    <updated>2016-04-22T15:35:25-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/22263?v=3&amp;s=30"/>
+    <author>
+      <name>wolfmanjm</name>
+      <uri>https://github.com/wolfmanjm</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>ignore M0, as setting feed hold in nom grbl mode basically stalls everything as trhere is not way to release it&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/25c2685a1467e0fe57a74fb9956af2cf635f15c1</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/25c2685a1467e0fe57a74fb9956af2cf635f15c1"/>
+    <title>
+        Merge pull request #916 from wolfmanjm/upstreamedge
+    </title>
+    <updated>2016-04-21T01:20:51-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/22263?v=3&amp;s=30"/>
+    <author>
+      <name>wolfmanjm</name>
+      <uri>https://github.com/wolfmanjm</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Merge pull request #916 from wolfmanjm/upstreamedge
+
+remove on_gcode_execute from Stepper&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/62790e0c9784ea9a6d230c826fd9c887e8131a13</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/62790e0c9784ea9a6d230c826fd9c887e8131a13"/>
+    <title>
+        remove on_gcode_execute from Stepper
+    </title>
+    <updated>2016-04-21T01:18:41-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/22263?v=3&amp;s=30"/>
+    <author>
+      <name>wolfmanjm</name>
+      <uri>https://github.com/wolfmanjm</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>remove on_gcode_execute from Stepper&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b0a1f3b6a190bbbc9283c3344249af99c8f7c19c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/b0a1f3b6a190bbbc9283c3344249af99c8f7c19c"/>
+    <title>
+        Merge pull request #915 from lautr3k/fix/http_upload
+    </title>
+    <updated>2016-04-19T00:27:50-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/22263?v=3&amp;s=30"/>
+    <author>
+      <name>wolfmanjm</name>
+      <uri>https://github.com/wolfmanjm</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Merge pull request #915 from lautr3k/fix/http_upload
+
+Fix/http upload&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bc132e45403bfe66b8088ace76cf600e22de98b6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/bc132e45403bfe66b8088ace76cf600e22de98b6"/>
+    <title>
+        add an header sent with all request and removed which is not necessary in http_header_preflight
+    </title>
+    <updated>2016-04-18T11:50:10+02:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/796149?v=3&amp;s=30"/>
+    <author>
+      <name>lautr3k</name>
+      <uri>https://github.com/lautr3k</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>add an header sent with all request and removed which is not necessary in http_header_preflight&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/087897f6aaad8923cba1dc9b0dbfbda01f08b680</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/087897f6aaad8923cba1dc9b0dbfbda01f08b680"/>
+    <title>
+        Merge remote-tracking branch &#39;refs/remotes/Smoothieware/edge&#39; into fix/http_upload
+    </title>
+    <updated>2016-04-18T10:47:59+02:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/796149?v=3&amp;s=30"/>
+    <author>
+      <name>lautr3k</name>
+      <uri>https://github.com/lautr3k</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Merge remote-tracking branch &#39;refs/remotes/Smoothieware/edge&#39; into fix/http_upload&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4075cc562defe79cdae2854ffc683c55470593e6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/4075cc562defe79cdae2854ffc683c55470593e6"/>
+    <title>
+        remove unused strings and useless shtml extension
+    </title>
+    <updated>2016-04-18T10:47:29+02:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/796149?v=3&amp;s=30"/>
+    <author>
+      <name>lautr3k</name>
+      <uri>https://github.com/lautr3k</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>remove unused strings and useless shtml extension&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/804489cef811c352f12a9e38b58cf83f1e0f731d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/804489cef811c352f12a9e38b58cf83f1e0f731d"/>
+    <title>
+        Merge pull request #913 from lautr3k/fix/http_upload
+    </title>
+    <updated>2016-04-17T11:01:34-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/22263?v=3&amp;s=30"/>
+    <author>
+      <name>wolfmanjm</name>
+      <uri>https://github.com/wolfmanjm</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Merge pull request #913 from lautr3k/fix/http_upload
+
+Allow remote file upload (CORS)&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fb0b4a31014b23e9342092147759f4d07cb444d3</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/fb0b4a31014b23e9342092147759f4d07cb444d3"/>
+    <title>
+        Allow remote files upload (CORS)
+    </title>
+    <updated>2016-04-17T16:15:34+02:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/796149?v=3&amp;s=30"/>
+    <author>
+      <name>lautr3k</name>
+      <uri>https://github.com/lautr3k</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Allow remote files upload (CORS)
+
+Implement preflighted requests (OPTIONS) to allow remote files upload
+(CORS).
+
+-
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS#Preflighted_requests
+
+- https://www.w3.org/TR/cors/&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/29746399cb5d5eae2ee5b9490b9eac40c8489ef5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/29746399cb5d5eae2ee5b9490b9eac40c8489ef5"/>
+    <title>
+        Allow remote upload (preflighted requests)
+    </title>
+    <updated>2016-04-17T16:13:39+02:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/796149?v=3&amp;s=30"/>
+    <author>
+      <name>lautr3k</name>
+      <uri>https://github.com/lautr3k</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Allow remote upload (preflighted requests)
+
+Implement preflighted requests (OPTIONS) to allow remote file upload
+(CORS).
+
+-
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS#Preflighted_requests
+
+- https://www.w3.org/TR/cors/&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/12cfaeae5ea1cf9ffcc1035eb6a81d08c61b4437</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/12cfaeae5ea1cf9ffcc1035eb6a81d08c61b4437"/>
+    <title>
+        set &quot;Access-Control-Allow-Origin&quot; in all headers
+    </title>
+    <updated>2016-04-17T13:00:06+02:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/796149?v=3&amp;s=30"/>
+    <author>
+      <name>lautr3k</name>
+      <uri>https://github.com/lautr3k</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>set &quot;Access-Control-Allow-Origin&quot; in all headers&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/06fd9377124d2f461bfe0bb6ddd0413b8a155fd0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/06fd9377124d2f461bfe0bb6ddd0413b8a155fd0"/>
+    <title>
+        Merge pull request #911 from wolfmanjm/upstreamedge
+    </title>
+    <updated>2016-04-16T15:30:44-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/22263?v=3&amp;s=30"/>
+    <author>
+      <name>wolfmanjm</name>
+      <uri>https://github.com/wolfmanjm</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Merge pull request #911 from wolfmanjm/upstreamedge
+
+add option to save G92 on M500&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3aad33c78279969e53c1d4fbb1d44a633109868f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/3aad33c78279969e53c1d4fbb1d44a633109868f"/>
+    <title>
+        add option to save G92 on M500
+    </title>
+    <updated>2016-04-16T15:29:44-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/22263?v=3&amp;s=30"/>
+    <author>
+      <name>wolfmanjm</name>
+      <uri>https://github.com/wolfmanjm</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>add option to save G92 on M500&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/100e5055156f7fbe9f7b57fccdc4bfd0784bc728</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/100e5055156f7fbe9f7b57fccdc4bfd0784bc728"/>
+    <title>
+        Merge pull request #909 from wolfmanjm/upstreamedge
+    </title>
+    <updated>2016-04-11T17:27:03-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/22263?v=3&amp;s=30"/>
+    <author>
+      <name>wolfmanjm</name>
+      <uri>https://github.com/wolfmanjm</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Merge pull request #909 from wolfmanjm/upstreamedge
+
+attempt to make M501 use less stack.&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c0b50fa80aea8db5942178f49c4e491f81f56db3</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/c0b50fa80aea8db5942178f49c4e491f81f56db3"/>
+    <title>
+        attempt to make M501 use less stack.
+    </title>
+    <updated>2016-04-11T17:24:31-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/22263?v=3&amp;s=30"/>
+    <author>
+      <name>wolfmanjm</name>
+      <uri>https://github.com/wolfmanjm</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>attempt to make M501 use less stack.
+  refactor to where and when it is processed, and make it use on_gcode event&lt;/pre>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/693ab47e83b8c295faacaf302ea00b85e043ece2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Smoothieware/Smoothieware/commit/693ab47e83b8c295faacaf302ea00b85e043ece2"/>
+    <title>
+        Merge pull request #906 from wolfmanjm/refactor/network-build
+    </title>
+    <updated>2016-04-10T14:53:08-07:00</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/22263?v=3&amp;s=30"/>
+    <author>
+      <name>wolfmanjm</name>
+      <uri>https://github.com/wolfmanjm</uri>
+    </author>
+    <content type="html">
+      &lt;pre style='white-space:pre-wrap;width:81ex'>Merge pull request #906 from wolfmanjm/refactor/network-build
+
+make plan9 optional build, not built by default use make PLAN9=1 to b…&lt;/pre>
+    </content>
+  </entry>
+</feed>

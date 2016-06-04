@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" >
+	
+<!-- Mirrored from www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc262 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+		  <base  />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Super User" />
+  <meta name="description" content="Trinamic Motion Control - Stepper Motors, Stepper Drivers, Stepper Power Drivers, Motion Controllers, BLDC Motors, BLDC Modules" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>TMC262</title>
+  <link href="http://www.trinamic.com/templates/trinamic_v01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="http://www.trinamic.com/media/tabs/css/style.min.css" type="text/css" />
+  <script src="http://www.trinamic.com/media/jui/js/jquery.min.js" type="text/javascript"></script>
+  <script src="http://www.trinamic.com/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+  <script src="http://www.trinamic.com/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+  <script src="http://www.trinamic.com/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="http://www.trinamic.com/media/jui/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="http://www.trinamic.com/media/tabs/js/script.min.js" type="text/javascript"></script>
+  <script src="http://www.trinamic.com/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="http://www.trinamic.com/media/system/js/core.js" type="text/javascript"></script>
+  <script src="http://www.trinamic.com/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+var nn_tabs_urlscroll = 0; var nn_tabs_use_hash = 1;
+</script>
+
+		<link rel="stylesheet" href="http://www.trinamic.com/templates/trinamic_v01/css/template.css" type="text/css" />
+		<link rel="stylesheet" href="http://www.trinamic.com/templates/trinamic_v01/css/tmcChrome.css" type="text/css" />
+		<link rel="stylesheet" href="http://www.trinamic.com/templates/trinamic_v01/css/tmcLayout.css" type="text/css" />
+		<link rel="stylesheet" href="http://www.trinamic.com/templates/trinamic_v01/css/tmcDownloads.css" type="text/css" />
+		<link rel="stylesheet" href="http://www.trinamic.com/templates/trinamic_v01/css/tmcLinking.css" type="text/css" />
+		<link rel="stylesheet" href="http://www.trinamic.com/templates/trinamic_v01/css/tmcDistributors.css" type="text/css" />
+		<link rel="stylesheet" href="http://www.trinamic.com/templates/trinamic_v01/css/tmcProducts.css" type="text/css" />		
+		<link rel="stylesheet" href="http://www.trinamic.com/templates/trinamic_v01/css/tmcLogin.css" type="text/css" />		
+		<link rel="stylesheet" href="http://www.trinamic.com/templates/trinamic_v01/css/tmcContentSearch.css" type="text/css" />		
+		<link rel="stylesheet" href="http://www.trinamic.com/templates/trinamic_v01/css/tmcDistriSearch.css" type="text/css" />		
+		<link rel="stylesheet" href="http://www.trinamic.com/templates/trinamic_v01/css/tmcLoginBar.css" type="text/css" />
+		<link rel="stylesheet" href="http://www.trinamic.com/templates/trinamic_v01/css/tmcDirectBuy.css" type="text/css" />				
+	
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-34380483-1', 'trinamic.com');
+		  ga('send', 'pageview');
+		</script>
+
+
+		<script type="text/javascript" src="http://www.trinamic.com/templates/trinamic_v01/js/template.js"></script>
+	</head>
+	<body>
+		<p style='padding:0px; margin:0px;display:none;'></p>
+		<div class='mainContainer'>
+			
+			<table id='layoutTable' class='layoutTable'>			
+								<tr>
+					<td colspan='2'  class='fullSpan'>				
+								<div class="mainMenu">
+			<div class='m'>
+				<div class='l'>
+					<div class='r'>
+						<div class='content'>
+							<!-- The class on the root UL tag was changed to match the Blueprint nav style -->
+<ul class="joomla-nav">
+<li class="item101"><a href="http://www.trinamic.com/" >Home</a></li><li class="item103"><a href="http://www.trinamic.com/products/integrated-circuits" >Products</a></li><li class="item317"><a href="http://www.trinamic.com/sample-buy/distribution" >Sample &amp; Buy</a></li><li class="item381"><a href="http://www.trinamic.com/software-tools" >Technologies &amp; Tools</a></li><li class="item320"><a href="http://www.trinamic.com/support/support-request" >Support</a></li><li class="item109"><a href="http://www.trinamic.com/company" >Company</a></li><li class="item111"><a href="http://www.trinamic.com/languages" ><img src="http://www.trinamic.com/images/TMC/_pageImg/speaches.png" alt="Languages" /></a></li></ul>
+			
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+					</td>
+				</tr>
+				 			
+								<tr>
+					<td colspan='2'>
+						<div class='topRow'>
+							<!--<div class='l'>
+								<div class='r'>
+							-->		<div class='m'>
+										<div class='cl'>
+											<div class='cr'>												
+												<div class='content'>													
+													
+<div class="breadcrumbs">
+<span class="showHere">You are here: </span><a href="http://www.trinamic.com/" class="pathway">Home</a> <img src="http://www.trinamic.com/media/system/images/arrow.png" alt="" /> <a href="http://www.trinamic.com/products/integrated-circuits" class="pathway">Products</a> <img src="http://www.trinamic.com/media/system/images/arrow.png" alt="" /> <a href="http://www.trinamic.com/products/integrated-circuits" class="pathway">Integrated Circuits</a> <img src="http://www.trinamic.com/media/system/images/arrow.png" alt="" /> <a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver" class="pathway">Stepper Power Driver</a> <img src="http://www.trinamic.com/media/system/images/arrow.png" alt="" /> <span>TMC262</span></div>
+
+													
+													
+																										
+												</div>
+											</div>
+										</div>
+									</div>
+							<!--	</diV>
+							</div> -->
+						</div>
+					</td>
+				</tr>
+				 				
+				 
+				<tr>
+					<td class='leftSpan'>
+						<div class='homeLogo'>
+							 		<div class="box">
+			<div class='l'>
+				<div class='r'>
+					<div class='t'>
+						<div class='b'>	
+							<div class='lt'>	
+								<div class='rt'>	
+									<div class='lb'>	
+										<div class='rb'>
+											<div class='content'>
+																								<!-- The class on the root UL tag was changed to match the Blueprint nav style -->
+<ul class="joomla-nav">
+<li class="item102"><a href="http://www.trinamic.com/" ><img src="http://www.trinamic.com/images/TMC/_pageImg/tmc_logo.jpg" alt="Trinamic" /></a></li></ul>
+			
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	 						</div>
+						<div class='subMenus'>
+							 		<div class="box">
+			<div class='l'>
+				<div class='r'>
+					<div class='t'>
+						<div class='b'>	
+							<div class='lt'>	
+								<div class='rt'>	
+									<div class='lb'>	
+										<div class='rb'>
+											<div class='content'>
+																						
+													<span class='title'>All Products</span>
+																								<!-- The class on the root UL tag was changed to match the Blueprint nav style -->
+<ul class="joomla-nav">
+<li class="selected parent item144"><a href="http://www.trinamic.com/products/integrated-circuits" >Integrated Circuits</a><ul><li class="item145"><a href="http://www.trinamic.com/products/integrated-circuits/bldc-driver" >BLDC Driver</a></li><li class="item147"><a href="http://www.trinamic.com/products/integrated-circuits/evalboards" >Evalboards</a></li><li class="item161"><a href="http://www.trinamic.com/products/integrated-circuits/integrated-motion-controller-stepper-driver" >Integrated Motion Controller &amp; Stepper Driver</a></li><li class="item165"><a href="http://www.trinamic.com/products/integrated-circuits/mosfets" >MOSFETs</a></li><li class="item168"><a href="http://www.trinamic.com/products/integrated-circuits/motion-interface-controller" >Motion &amp; Interface Controller</a></li><li class="selected parent item173"><a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver" >Stepper Power Driver</a><ul><li class="item398"><a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc2100" >TMC2100</a></li><li class="item399"><a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc2130" >TMC2130</a></li><li class="item174"><a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc236" >TMC236</a></li><li class="item175"><a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc239" >TMC239</a></li><li class="item176"><a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc246" >TMC246</a></li><li class="item177"><a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc248" >TMC248</a></li><li class="item178"><a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc249" >TMC249</a></li><li class="item179"><a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc260" >TMC260</a></li><li class="item180"><a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc261" >TMC261</a></li><li id="current" class="selected item181"><a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc262" >TMC262</a></li><li class="item331"><a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc2660" >TMC2660</a></li><li class="item182"><a href="http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc389" >TMC389</a></li></ul></li></ul></li><li class="item428"><a href="http://www.trinamic.com/products/motioncookies" >motionCookie™</a></li><li class="item183"><a href="http://www.trinamic.com/products/interfaces" >Interfaces</a></li><li class="item187"><a href="http://www.trinamic.com/products/modules" >Modules</a></li><li class="item236"><a href="http://www.trinamic.com/products/motors" >Motors</a></li><li class="item257"><a href="http://www.trinamic.com/products/pandrives" >PANdrives</a></li><li class="item247"><a href="http://www.trinamic.com/products/on-demand-products" >On Demand Products</a></li><li class="item115"><a href="http://www.trinamic.com/products/discontinued-products" >Discontinued Products</a></li></ul>
+			
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	 							  																				</div>
+					</td>
+					<td class='rightSpan'>
+						<div id='specialBars'>
+							
+		<div id='loginBar'>
+			<div class='box'>
+				<div class='mt'>
+					<div class='mb'>
+						<div class='lm'>
+							<div class='rm'>
+								<div class='lt'>
+									<div class='lb'>
+										<div class='rt'>
+											<div class='rb'>
+												<div class='container'>
+													
+		<form id='loginBar_form' action='#' method='post'>
+			<input id='loginBar_button' type='submit' value='Login'>
+			<input type='hidden' name='return' 	value='aHR0cDovL3d3dy50cmluYW1pYy5jb20vcHJvZHVjdHMvaW50ZWdyYXRlZC1jaXJjdWl0cy9zdGVwcGVyLXBvd2VyLWRyaXZlci90bWMyNjI=' />
+			<input type='hidden' name='option' 	value='com_users' />
+			<input type='hidden' name='view' 	value='login' />
+			<input type="hidden" name="e84fc70c33afa0e6c7b46727a5a97adc" value="1" />
+		</form>	
+														
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div id='productSearch'>
+			<div class='box'>
+				<div class='mt'>
+					<div class='mb'>
+						<div class='lm'>
+							<div class='rm'>
+								<div class='lt'>
+									<div class='lb'>
+										<div class='rt'>
+											<div class='rb'>
+												<div class='container'>
+													<form class='productSearchForm' action='http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/?psr=0' method='post'>
+														<input class='empty' 	name='productSearchKey' id='productSearchKey' value=''>
+														<input class='search' 	type='submit' value=''>													
+													</form>
+													<div id='productSearchResults'>
+																												
+														
+													</div>													
+													<div id='productSearchResults_list'>														
+														
+													</div>													
+													
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script type='text/javascript' src='http://www.trinamic.com/modules/mod_TMCProductSearch/mod_TMCProductSearch.js'></script>
+	
+							
+						</div>
+						
+												
+																		
+						 
+
+ <div class="item-page" itemscope itemtype="http://schema.org/Article">
+	<meta itemprop="inLanguage" content="en-GB" />
+	
+		
+						
+	
+	
+		
+								<div itemprop="articleBody">
+		<h1 style="text-align: center;">TMC262</h1>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td style="text-align: left;">
+<table class='TMCDownloadList'>
+
+				<thead>
+					<tr>
+						<th colspan='2'>
+							 Datasheet 
+						</th>
+					</tr>
+				</thead>
+			
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/pdf256.png'>
+						</td>
+						<td class='col_name'>
+							<span class='fileTitle'></span><br />
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2Fproducts%2Fintegrated-circuits%2Ftmc262%2F_datasheet%2FTMC262_datasheet.pdf'>TMC262_datasheet.pdf</a>
+							
+							<br />
+							<span class='line_fileSize'>(1.43MB</span>
+							<span class='line_fileMod'>27-Oct-15)</span>
+						</td>
+					</tr>
+				
+			</table>
+		</td>
+<td style="text-align: right;">
+				<div id='TMCDirectBuy'>
+					<div id='TMCDirectBuy_box'>
+						<div class='l'>
+							<div class='r'>
+								<div class='t'>
+									<div class='b'>
+										<div class='lt'>
+											<div class='rt'>
+												<div class='lb'>
+													<div class='rb'> 
+														<a class='closer' href='javascript: TMCDirectBuy.hide();'></a>
+														<div class='content'>
+															
+					<div class='buyOption'>
+						
+<table>
+<tr class='row_0 oddRow'>
+	<td class='col_0 oddCol'>
+	<img class='logo' src='http://www.trinamic.com/_articles/sample-buy/_images/logos/digi-key.png' style='width:98px; height:50px;'>
+</td><td class='col_1 evenCol'>
+	
+					<div class='productDetails'>
+						<table class='productDetails'>
+						  <tbody>
+							<tr>
+		           				<th class='col_name'>TMC262-LA</th>
+		           				<th class='col_name'>Stock</th>
+		           				<th class='col_name'>Buy</th>
+	    					</tr>
+							<tr class='row_0 oddRow'>
+	<td class='col_0 oddCol'>
+	<a href='http://www.digikey.com/product-detail/en/TMC262-LA/1460-1044-ND' title='http://www.digikey.com/product-detail/en/TMC262-LA/1460-1044-ND' target='_blank'>TMC262-LA</a>
+</td><td class='col_1 evenCol'>
+	10547
+</td><td class='col_2 oddCol'>
+	<form target='_blank' action='http://www.trinamic.com/plugins/content/TMCDirectBuy/buy_digikey.php' method='post'>
+									<input type='hidden' name='product' value=1460-1044-ND>
+								 	<input type='number' name='quantity' style='width:100px' min='1'>
+									<input type='submit' value='Buy'>
+								</form>
+</td>
+</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<div class='productDetails'>
+						<table class='productDetails'>
+						  <tbody>
+							<tr>
+		           				<th class='col_name'>TMC262-LA</th>
+		           				<th class='col_name'></th>
+		           				<th class='col_name'></th>
+	    					</tr>
+							<tr class='row_0 oddRow'>
+	<td class='col_0 oddCol'>
+	<a href='http://www.digikey.com/product-detail/en/TMC262-LA-T/1460-1069-6-ND' title='http://www.digikey.com/product-detail/en/TMC262-LA-T/1460-1069-6-ND' target='_blank'>TMC262-LA-T</a>
+</td><td class='col_1 evenCol'>
+	2171
+</td><td class='col_2 oddCol'>
+	<form target='_blank' action='http://www.trinamic.com/plugins/content/TMCDirectBuy/buy_digikey.php' method='post'>
+									<input type='hidden' name='product' value=1460-1069-6-ND>
+								 	<input type='number' name='quantity' style='width:100px' min='1'>
+									<input type='submit' value='Buy'>
+								</form>
+</td>
+</tr><tr class='row_1 evenRow'>
+	<td class='col_0 oddCol'>
+	<a href='http://www.digikey.com/product-detail/en/TMC262-LA-T/1460-1069-1-ND' title='http://www.digikey.com/product-detail/en/TMC262-LA-T/1460-1069-1-ND' target='_blank'>TMC262-LA-T</a>
+</td><td class='col_1 evenCol'>
+	2171
+</td><td class='col_2 oddCol'>
+	<form target='_blank' action='http://www.trinamic.com/plugins/content/TMCDirectBuy/buy_digikey.php' method='post'>
+									<input type='hidden' name='product' value=1460-1069-1-ND>
+								 	<input type='number' name='quantity' style='width:100px' min='1'>
+									<input type='submit' value='Buy'>
+								</form>
+</td>
+</tr><tr class='row_2 oddRow'>
+	<td class='col_0 oddCol'>
+	<a href='http://www.digikey.com/product-detail/en/TMC262-LA-T/1460-1069-2-ND' title='http://www.digikey.com/product-detail/en/TMC262-LA-T/1460-1069-2-ND' target='_blank'>TMC262-LA-T</a>
+</td><td class='col_1 evenCol'>
+	2000
+</td><td class='col_2 oddCol'>
+	<form target='_blank' action='http://www.trinamic.com/plugins/content/TMCDirectBuy/buy_digikey.php' method='post'>
+									<input type='hidden' name='product' value=1460-1069-2-ND>
+								 	<input type='number' name='quantity' style='width:100px' min='1'>
+									<input type='submit' value='Buy'>
+								</form>
+</td>
+</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<div class='productDetails'>
+						<table class='productDetails'>
+						  <tbody>
+							<tr>
+		           				<th class='col_name'>TMC429+TMC26x-EVAL</th>
+		           				<th class='col_name'></th>
+		           				<th class='col_name'></th>
+	    					</tr>
+							<tr class='row_0 oddRow'>
+	<td class='col_0 oddCol'>
+	<a href='http://www.digikey.com/product-detail/en/TMC429+TMC26x-EVAL/1460-1004-ND' title='http://www.digikey.com/product-detail/en/TMC429%2BTMC26x-EVAL/1460-1004-ND' target='_blank'>TMC429+TMC26X-EVAL</a>
+</td><td class='col_1 evenCol'>
+	7
+</td><td class='col_2 oddCol'>
+	<form target='_blank' action='http://www.trinamic.com/plugins/content/TMCDirectBuy/buy_digikey.php' method='post'>
+									<input type='hidden' name='product' value=1460-1004-ND>
+								 	<input type='number' name='quantity' style='width:100px' min='1'>
+									<input type='submit' value='Buy'>
+								</form>
+</td>
+</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<div class='productDetails'>
+						<table class='productDetails'>
+						  <tbody>
+							<tr>
+		           				<th class='col_name'>TMCM-1110</th>
+		           				<th class='col_name'></th>
+		           				<th class='col_name'></th>
+	    					</tr>
+							<tr class='row_0 oddRow'>
+	<td class='col_0 oddCol'>
+	<a href='http://www.digikey.com/product-detail/en/TMCM-1110/1460-1010-ND' title='http://www.digikey.com/product-detail/en/TMCM-1110/1460-1010-ND' target='_blank'>TMCM-1110 STEPROCKER</a>
+</td><td class='col_1 evenCol'>
+	32
+</td><td class='col_2 oddCol'>
+	<form target='_blank' action='http://www.trinamic.com/plugins/content/TMCDirectBuy/buy_digikey.php' method='post'>
+									<input type='hidden' name='product' value=1460-1010-ND>
+								 	<input type='number' name='quantity' style='width:100px' min='1'>
+									<input type='submit' value='Buy'>
+								</form>
+</td>
+</tr>
+						</tbody>
+						</table>
+					</div>
+					
+</td>
+</tr>
+</table>
+
+					</div>
+				</div>												
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class='buyNow' href='javascript:TMCDirectBuy.show();'></a>
+					<script type='text/javascript' src='http://www.trinamic.com/plugins/content/TMCDirectBuy/TMCDirectBuy.js'></script>
+				</div>
+			</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td style="vertical-align: top;">
+				<div class='tmcLinking'>
+			
+					<span class='topic'>					
+						<a href='#HEAD_Downloads' target=''>Downloads</a>
+					</span>
+					
+				
+					<ul>
+				
+						<li>
+							<a href='#HEAD_Downloads_Application+Notes' target='_self'>Application Notes</a>
+						</li>
+					
+						<li>
+							<a href='#HEAD_Downloads_App+Notes' target='_self'>App Notes</a>
+						</li>
+					
+						<li>
+							<a href='#HEAD_Downloads_Datasheet' target='_self'>Datasheet</a>
+						</li>
+					
+						<li>
+							<a href='#HEAD_Downloads_Documentation' target='_self'>Documentation</a>
+						</li>
+					
+						<li>
+							<a href='#HEAD_Downloads_Tools' target='_self'>Tools</a>
+						</li>
+					
+					</ul>
+				
+					<span class='topic'>					
+						<a href='#HEAD_Product+Details' target=''>Product Details</a>
+					</span>
+					
+				
+					<ul>
+				
+						<li>
+							<a href='#HEAD_Product+Details_Description' target='_self'>Description</a>
+						</li>
+					
+						<li>
+							<a href='#HEAD_Product+Details_TMC262-LA' target='_self'>TMC262-LA</a>
+						</li>
+					
+					</ul>
+				
+				</div>
+			</td>
+<td style="vertical-align: top;"> 
+				<div class='tmcLinking'>
+			
+					<span class='topic'>					
+						Evaluation Board
+					</span>
+					
+				
+					<ul>
+				
+						<li>
+							<a href='http://www.trinamic.com/products/integrated-circuits/evalboards/tmc262-eval' target='_blank'>TMC262-EVAL</a>
+						</li>
+					
+						<li>
+							<a href='http://www.trinamic.com/products/integrated-circuits/evalboards/tmc429-tmc26x-eval' target='_blank'>TMC429+TMC26x-EVAL</a>
+						</li>
+					
+					</ul>
+				
+					<span class='topic'>					
+						Modules
+					</span>
+					
+				
+					<ul>
+				
+						<li>
+							<a href='http://www.trinamic.com/products/modules/controller-driver-stepper/tmcm-1110' target='_blank'>TMCM-1110</a>
+						</li>
+					
+					</ul>
+				
+				</div>
+			</td>
+</tr>
+</tbody>
+</table>
+<a name='HEAD_Product+Details'><h2>Product Details</h2></a>
+<a name='HEAD_Product+Details_Description'><h3>Description</h3></a>
+<p>The TMC262 is the first energy efficient high current high precision microstepping driver IC for bipolar stepper motors. The unique high resolution sensorless load detection stallGuard2™ is used to for the world’s first integrated load dependent current control feature called coolStep™ The ability to read out the load and detect an overload makes the TMC262 an optimum choice for drives where a high reliability is desired at a low cost. The new patented spreadCycle PWM mixed decay chopper scheme ensures best zero crossing performance as well as high speed operation. The TMC262 can be driven with Step &amp; Direction signals as well as by serial SPI™ interface. Using the microPlyer allows to operate the motor with highest 256 µStep smoothness reducing the input frequency to 16 ?Steps. A full set of protection and diagnostic features makes this device very rugged. It directly drives external MOSFETs for currents of up to 8A. This way it reaches highest energy efficiency and allows driving of a high motor current without cooling measures even at high environment temperatures.</p>
+<p><div class='productDetails'>
+
+<table>
+<tr class='head Row'>
+	<td class='colLable rowLable Col'>
+	
+</td><td class='col_0 oddCol'>
+	<img class='logo' src='http://www.trinamic.com/_articles/products/integrated-circuits/tmc262/_images/tmc262-la.png'><a name='HEAD_Product+Details_TMC262-LA'><h3>TMC262-LA</h3></a>
+</td>
+</tr><tr class='row_0 oddRow'>
+	<td class='rowLable oddCol'>
+	Product State:
+</td><td class='col_0 oddCol'>
+	active
+</td>
+</tr><tr class='row_1 evenRow'>
+	<td class='rowLable oddCol'>
+	Interfaces:
+</td><td class='col_0 oddCol'>
+	SPI, Step / Direction
+</td>
+</tr><tr class='row_2 oddRow'>
+	<td class='rowLable evenCol'>
+	No. Axes:
+</td><td class='col_0 oddCol'>
+	1
+</td>
+</tr><tr class='row_3 evenRow'>
+	<td class='rowLable oddCol'>
+	Supported Motor Type:
+</td><td class='col_0 oddCol'>
+	Stepper
+</td>
+</tr><tr class='row_4 oddRow'>
+	<td class='rowLable evenCol'>
+	stallGuard2™
+</td><td class='col_0 oddCol'>
+	<span class='hasFeature'></span>
+</td>
+</tr><tr class='row_5 evenRow'>
+	<td class='rowLable oddCol'>
+	coolStep™
+</td><td class='col_0 oddCol'>
+	<span class='hasFeature'></span>
+</td>
+</tr><tr class='row_6 oddRow'>
+	<td class='rowLable evenCol'>
+	spreadCycle™
+</td><td class='col_0 oddCol'>
+	<span class='hasFeature'></span>
+</td>
+</tr><tr class='row_7 evenRow'>
+	<td class='rowLable oddCol'>
+	Logic Supply:
+</td><td class='col_0 oddCol'>
+	3.3...5V
+</td>
+</tr><tr class='row_8 oddRow'>
+	<td class='rowLable evenCol'>
+	Motor Supply:
+</td><td class='col_0 oddCol'>
+	9...60V
+</td>
+</tr><tr class='row_9 evenRow'>
+	<td class='rowLable oddCol'>
+	Package:
+</td><td class='col_0 oddCol'>
+	QFN32 (5x5)
+</td>
+</tr>
+</table>
+
+</div></p>
+
+
+<div class="nn_tabs color_inactive_handles outline_handles outline_content align_left top">
+<a name="nn_tabs-scrollto_1" class="anchor nn_tabs-scroll"></a>
+<ul class="nav nav-tabs" id="set-nn_tabs-1">
+<li class="nn_tabs-tab active">
+<a href="#block-diagram" class="nn_tabs-toggle" data-toggle="tab" data-id="block-diagram"><span class="nn_tabs-toggle-inner">Block Diagram</span></a>
+</li>
+<li class="nn_tabs-tab">
+<a href="#tmc262-la-pinout" class="nn_tabs-toggle" data-toggle="tab" data-id="tmc262-la-pinout"><span class="nn_tabs-toggle-inner">TMC262-LA Pinout</span></a>
+</li>
+<li class="nn_tabs-tab">
+<a href="#coolstep™" class="nn_tabs-toggle" data-toggle="tab" data-id="coolstep™"><span class="nn_tabs-toggle-inner">coolstep™</span></a>
+</li>
+<li class="nn_tabs-tab">
+<a href="#tmc262-eval" class="nn_tabs-toggle" data-toggle="tab" data-id="tmc262-eval"><span class="nn_tabs-toggle-inner">TMC262-EVAL</span></a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane nn_tabs-pane active" id="block-diagram">
+<a name='HEAD_Block+Diagram'><h2 class="nn_tabs-title"><a name="block-diagram" class="anchor"></a>Block Diagram</h2></a>
+<table style="text-align: center;" border="0" width="100%">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="http://www.trinamic.com/_articles/products/integrated-circuits/tmc262/_images/tmc262-diagram.jpg" alt="yes" width="90%" border="0" /></td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+<div class="tab-pane nn_tabs-pane" id="tmc262-la-pinout">
+<a name='HEAD_TMC262-LA+Pinout'><h2 class="nn_tabs-title"><a name="tmc262-la-pinout" class="anchor"></a>TMC262-LA Pinout</h2></a>
+<table style="text-align: center;" border="0" width="100%">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="http://www.trinamic.com/_articles/products/integrated-circuits/tmc262/_images/tmc262-la-qfn32-pinout.jpg" alt="yes" height="400px;" border="0" /></td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+<div class="tab-pane nn_tabs-pane" id="coolstep™">
+<a name='HEAD_coolstep%E2%84%A2'><h2 class="nn_tabs-title"><a name="coolstep™" class="anchor"></a>coolstep™</h2></a>
+<table border="0">
+<tbody>
+<tr>
+<td>
+<p>The TMC262-EVAL allows you to explore all functions of the TMC262. The evaluation board comes with a PC software which gives you access to every function of the driver. It comes along with a Step&amp;Direction interface, a RS232 and a USB port. The TMC262-Eval is a complete "plug and play" solution, additionally only a motor, a PC and a power supply are required!</p>
+</td>
+<td><img src="http://www.trinamic.com/_articles/products/integrated-circuits/tmc262/_images/coolstep.png" alt="coolStep" height="200px" border="0" /></td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+<div class="tab-pane nn_tabs-pane" id="tmc262-eval">
+<a name='HEAD_TMC262-EVAL'><h2 class="nn_tabs-title"><a name="tmc262-eval" class="anchor"></a>TMC262-EVAL</h2></a>
+<table border="0">
+<tbody>
+<tr>
+<td>
+<p>The evaluation board <a title="TMC429+TMC26x-EVAL" href="http://www.trinamic.com/products/integrated-circuits/evalboards/tmc429-tmc26x-eval" target="_self">TMC429+TMC26x-EVAL</a> provides an excellent, simple and cost efficient device to explore the latest generation of TRINAMIC stepper motor chipsets. The board contains the 3-axes motion controller TMC429, the three coolStep™ stepper motor drivers TMC260, TMC261 and TMC262 as well as the incremental encoder interface TMC424.</p>
+<p>You will learn everything about the usage and features of the chipset (coolStep™, stallGuard2™, 256x µstepping, spreadCycle chopper, etc.) and get the possibility to explore your stepper motor motion control application. The evaluation PC-software gives access to every single bit of the chipset. Communication is possible either via USB (virtual COM port) or via RS232.</p>
+<p>The TMC429+TMC26x-EVAL is a complete “plug and play” solution. It comes with the evaluation software, a USB cable and all relevant pluggable screw connectors. Additionally only a PC, one to three stepper motors and a power supply are required.</p>
+</td>
+<td><img style="padding: 10px;" src="http://www.trinamic.com/_articles/products/integrated-circuits/tmc262/_images/tmc262-eval.jpg" alt="" height="150px" border="0" /></td>
+</tr>
+</tbody>
+</table>
+</div></div></div>
+<a name='HEAD_Downloads'><h2>Downloads</h2></a>
+<p>
+<table class='TMCDownloadTable'>
+
+				<thead>
+					<tr>
+						<td colspan='4' class='tablename'>
+							<a name='HEAD_Downloads_Application+Notes'><h3>Application Notes</h3></a>
+						</td>
+					</tr>
+					<tr>
+						<th class='col_fileIcon'>
+							&nbsp;
+						</th>
+						<th class='col_name'>
+							File
+						</th>
+						<th class='col_fileSize'>
+							Size
+						</th>
+						<th class='col_description'>
+							Modified
+						</th>
+					</tr>
+				</thead>
+			
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/pdf24.png'>
+						</td>
+						<td class='col_name'>							
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2Fproducts%2Fintegrated-circuits%2Ftmc262%2F_appnotes%2FAN005_PCB_Guidelines_TRINAMIC_packages_Rev1.02.pdf' target='_blank'>AN005_PCB_Guidelines_TRINAMIC_packages_Rev1.02.pdf</a>
+						</td>
+						<td class='col_fileSize'>
+							1.21MB
+						</td>
+						<td class='col_fileMod'>
+							23-Dec-14
+						</td>
+					</tr>
+				
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/pdf24.png'>
+						</td>
+						<td class='col_name'>							
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2Fproducts%2Fintegrated-circuits%2Ftmc262%2F_appnotes%2FAN009_tuning_coolStep_stallGuard_low_vel.pdf' target='_blank'>AN009_tuning_coolStep_stallGuard_low_vel.pdf</a>
+						</td>
+						<td class='col_fileSize'>
+							331.49kB
+						</td>
+						<td class='col_fileMod'>
+							23-Jun-15
+						</td>
+					</tr>
+				
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/pdf24.png'>
+						</td>
+						<td class='col_name'>							
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2Fproducts%2Fintegrated-circuits%2Ftmc262%2F_appnotes%2FAN011_Good_Ground_Connection.pdf' target='_blank'>AN011_Good_Ground_Connection.pdf</a>
+						</td>
+						<td class='col_fileSize'>
+							188.1kB
+						</td>
+						<td class='col_fileMod'>
+							23-Dec-14
+						</td>
+					</tr>
+				
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/pdf24.png'>
+						</td>
+						<td class='col_name'>							
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2Fproducts%2Fintegrated-circuits%2Ftmc262%2F_appnotes%2FAppnote_TMC260_replacing_TMC236.pdf' target='_blank'>Appnote_TMC260_replacing_TMC236.pdf</a>
+						</td>
+						<td class='col_fileSize'>
+							79.72kB
+						</td>
+						<td class='col_fileMod'>
+							23-Dec-14
+						</td>
+					</tr>
+				
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/pdf24.png'>
+						</td>
+						<td class='col_name'>							
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2Fproducts%2Fintegrated-circuits%2Ftmc262%2F_appnotes%2FAppnote_spreadCycle.pdf' target='_blank'>Appnote_spreadCycle.pdf</a>
+						</td>
+						<td class='col_fileSize'>
+							606.02kB
+						</td>
+						<td class='col_fileMod'>
+							23-Dec-14
+						</td>
+					</tr>
+				
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/pdf24.png'>
+						</td>
+						<td class='col_name'>							
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2Fproducts%2Fintegrated-circuits%2Ftmc262%2F_appnotes%2FAppnote_stallGuard2.pdf' target='_blank'>Appnote_stallGuard2.pdf</a>
+						</td>
+						<td class='col_fileSize'>
+							498.27kB
+						</td>
+						<td class='col_fileMod'>
+							23-Dec-14
+						</td>
+					</tr>
+				
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/pdf24.png'>
+						</td>
+						<td class='col_name'>							
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2Fproducts%2Fintegrated-circuits%2Ftmc262%2F_appnotes%2FCW_CCW_to_StepDir_Converter.pdf' target='_blank'>CW_CCW_to_StepDir_Converter.pdf</a>
+						</td>
+						<td class='col_fileSize'>
+							6.12kB
+						</td>
+						<td class='col_fileMod'>
+							23-Dec-14
+						</td>
+					</tr>
+				
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/xls24.png'>
+						</td>
+						<td class='col_name'>							
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2Fproducts%2Fintegrated-circuits%2Ftmc262%2F_appnotes%2Ftmc262_calculations.xls' target='_blank'>tmc262_calculations.xls</a>
+						</td>
+						<td class='col_fileSize'>
+							36.5kB
+						</td>
+						<td class='col_fileMod'>
+							23-Dec-14
+						</td>
+					</tr>
+				
+				<tr>
+					<td class='devider' colspan='4'>&nbsp; </td>
+				</tr>
+			
+				<thead>
+					<tr>
+						<td colspan='4' class='tablename'>
+							<a name='HEAD_Downloads_App+Notes'><h3>App Notes</h3></a>
+						</td>
+					</tr>
+					<tr>
+						<th class='col_fileIcon'>
+							&nbsp;
+						</th>
+						<th class='col_name'>
+							File
+						</th>
+						<th class='col_fileSize'>
+							Size
+						</th>
+						<th class='col_description'>
+							Modified
+						</th>
+					</tr>
+				</thead>
+			
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/pdf24.png'>
+						</td>
+						<td class='col_name'>							
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2F_common%2F_download%2Fspreadcycle%2FAppnote_spreadCycle.pdf' target='_blank'>Appnote_spreadCycle.pdf</a>
+						</td>
+						<td class='col_fileSize'>
+							582.84kB
+						</td>
+						<td class='col_fileMod'>
+							18-Feb-15
+						</td>
+					</tr>
+				
+				<tr>
+					<td class='devider' colspan='4'>&nbsp; </td>
+				</tr>
+			
+				<thead>
+					<tr>
+						<td colspan='4' class='tablename'>
+							<a name='HEAD_Downloads_Datasheet'><h3>Datasheet</h3></a>
+						</td>
+					</tr>
+					<tr>
+						<th class='col_fileIcon'>
+							&nbsp;
+						</th>
+						<th class='col_name'>
+							File
+						</th>
+						<th class='col_fileSize'>
+							Size
+						</th>
+						<th class='col_description'>
+							Modified
+						</th>
+					</tr>
+				</thead>
+			
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/pdf24.png'>
+						</td>
+						<td class='col_name'>							
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2Fproducts%2Fintegrated-circuits%2Ftmc262%2F_datasheet%2FTMC262_datasheet.pdf' target='_blank'>TMC262_datasheet.pdf</a>
+						</td>
+						<td class='col_fileSize'>
+							1.43MB
+						</td>
+						<td class='col_fileMod'>
+							27-Oct-15
+						</td>
+					</tr>
+				
+				<tr>
+					<td class='devider' colspan='4'>&nbsp; </td>
+				</tr>
+			
+				<thead>
+					<tr>
+						<td colspan='4' class='tablename'>
+							<a name='HEAD_Downloads_Documentation'><h3>Documentation</h3></a>
+						</td>
+					</tr>
+					<tr>
+						<th class='col_fileIcon'>
+							&nbsp;
+						</th>
+						<th class='col_name'>
+							File
+						</th>
+						<th class='col_fileSize'>
+							Size
+						</th>
+						<th class='col_description'>
+							Modified
+						</th>
+					</tr>
+				</thead>
+			
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/pdf24.png'>
+						</td>
+						<td class='col_name'>							
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2Fproducts%2Fintegrated-circuits%2Ftmc262%2F_documentation%2FTMC262_ShortSpec.pdf' target='_blank'>TMC262_ShortSpec.pdf</a>
+						</td>
+						<td class='col_fileSize'>
+							417.76kB
+						</td>
+						<td class='col_fileMod'>
+							23-Dec-14
+						</td>
+					</tr>
+				
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/pdf24.png'>
+						</td>
+						<td class='col_name'>							
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2Fproducts%2Fintegrated-circuits%2Ftmc262%2F_documentation%2FTMC262_datasheet.pdf' target='_blank'>TMC262_datasheet.pdf</a>
+						</td>
+						<td class='col_fileSize'>
+							1.45MB
+						</td>
+						<td class='col_fileMod'>
+							23-Dec-14
+						</td>
+					</tr>
+				
+				<tr>
+					<td class='devider' colspan='4'>&nbsp; </td>
+				</tr>
+			
+				<thead>
+					<tr>
+						<td colspan='4' class='tablename'>
+							<a name='HEAD_Downloads_Tools'><h3>Tools</h3></a>
+						</td>
+					</tr>
+					<tr>
+						<th class='col_fileIcon'>
+							&nbsp;
+						</th>
+						<th class='col_name'>
+							File
+						</th>
+						<th class='col_fileSize'>
+							Size
+						</th>
+						<th class='col_description'>
+							Modified
+						</th>
+					</tr>
+				</thead>
+			
+					<tr>
+						<td class='col_fileIcon'>
+							<img class='fileIcon' src='http://www.trinamic.com/_articles/_common/_images/fileIcons/exe24.png'>
+						</td>
+						<td class='col_name'>							
+							<a class='title' href='http://www.trinamic.com/_scripts/download.php?file=_articles%2Fproducts%2Fintegrated-circuits%2Ftmc262%2F_tools%2FTMC26x_CONFIG.exe' target='_blank'>TMC26x_CONFIG.exe</a> (v1.0.1.0)
+						</td>
+						<td class='col_fileSize'>
+							1.1MB
+						</td>
+						<td class='col_fileMod'>
+							23-Dec-14
+						</td>
+					</tr>
+				
+				<tr>
+					<td class='devider' colspan='4'>&nbsp; </td>
+				</tr>
+			
+			</table>
+		</p>
+<p></p><script type='text/javascript' src='http://www.trinamic.com/plugins/content/TMCDirectBuy/TMCDirectBuy.js'></script>	</div>
+
+	
+						</div>
+
+																	</td>
+				</tr>
+				
+				<tr>
+					<td colspan='2'  class='fullSpan'>									
+						
+						
+						
+						
+						<div class='copyright'>
+									<div class='content'>
+													
+				<span class='title'>Copyright © 2016 TRINAMIC. All Rights Reserved.</span>
+						<!-- The class on the root UL tag was changed to match the Blueprint nav style -->
+<ul class="joomla-nav">
+<li class="item104"><a href="http://www.trinamic.com/company/impressum" >Legal/Impressum</a></li><li class="item105"><a href="http://www.trinamic.com/contact" >Contact</a></li></ul>
+			
+		</div>
+	
+						</div>
+						
+						<div class='attachedFiles'>
+													</div>
+					</td>
+				</tr>				
+			</table>
+		</div>
+		<link rel="stylesheet" href="http://www.trinamic.com/templates/trinamic_v01/css/tmcMaqma.css" type="text/css" />
+		
+		
+		
+		<script type="text/javascript" language="javascript">llactid=25486</script> 
+		<script type="text/javascript" language="javascript" src="http://t2.trackalyzer.com/trackalyze.js"></script> 
+		
+		<!--VISISTAT SNIPPET//-->
+		<script type="text/javascript">
+			//<![CDATA[
+				var DID=238173;
+				var pcheck=(window.location.protocol == "http://www.trinamic.com/products/integrated-circuits/stepper-power-driver/https:") ? "https://sniff.visistat.com/live.js":"http://stats.visistat.com/live.js";
+				document.writeln('<scr'+'ipt src="'+pcheck+'" type="text\/javascript"><\/scr'+'ipt>');
+			//]]>
+		</script>
+		<!--VISISTAT SNIPPET//-->
+<script type="text/javascript">
+	while(document.getElementsByTagName("p")[0].firstChild) document.getElementsByTagName("p")[0].removeChild(document.getElementsByTagName("p")[0].firstChild);
+</script>
+	</body>
+
+<!-- Mirrored from www.trinamic.com/products/integrated-circuits/stepper-power-driver/tmc262 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:18 GMT -->
+</html>

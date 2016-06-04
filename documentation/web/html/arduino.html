@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from en.wikipedia.org/wiki/Arduino by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Arduino - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Arduino","wgTitle":"Arduino","wgCurRevisionId":719319763,"wgRevisionId":719319763,"wgArticleId":5389424,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with obsolete information from October 2015","All Wikipedia articles in need of updating","Articles needing additional references from May 2013","All articles needing additional references","Articles containing potentially dated statements from 2016","All articles containing potentially dated statements","All articles with unsourced statements","Articles with unsourced statements from September 2015","Commons category with local link same as on Wikidata","Official website different in Wikidata and Wikipedia","Arduino","Open hardware electronic devices","Microcontrollers","2005 introductions","Internet of Things","Robotics hardware"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Arduino","wgRelevantArticleId":5389424,"wgRequestId":"VzXBxgpAEEgAADCmnDcAAAIG","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSAcceptLanguageList":["en","*"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCentralAuthMobileDomain":false,"wgWikibaseItemId":"Q175957","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","ext.centralNotice.bannerController","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.pygments%2CwikimediaBadges%7Cext.tmh.thumbnail.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.page.gallery.styles%7Cmediawiki.raggett%2CsectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector"/>
+<script async="" src="https://en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.28.0-wmf.1"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="https://en.wikipedia.org/wiki/android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Arduino"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit"/>
+<link rel="apple-touch-icon" href="https://en.wikipedia.org/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="https://en.wikipedia.org/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Arduino"/>
+<link rel="dns-prefetch" href="http://meta.wikimedia.org/" />
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Arduino rootpage-Arduino skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Arduino</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div role="note" class="hatnote">For other uses, see <a href="https://en.wikipedia.org/wiki/Arduino_(disambiguation)" title="Arduino (disambiguation)" class="mw-disambig">Arduino (disambiguation)</a>.</div>
+<table class="infobox hproduct vevent" style="width:22em">
+<caption class="fn summary">Arduino</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="https://en.wikipedia.org/wiki/File:Arduino_Logo.svg" class="image"><img alt="Arduino Logo.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/50px-Arduino_Logo.svg.png" width="50" height="34" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/75px-Arduino_Logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/100px-Arduino_Logo.svg.png 2x" data-file-width="720" data-file-height="490" /></a></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><a href="https://en.wikipedia.org/wiki/File:Arduino_Uno_-_R3.jpg" class="image"><img alt="Arduino Uno - R3.jpg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Uno_-_R3.jpg/220px-Arduino_Uno_-_R3.jpg" width="220" height="220" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Uno_-_R3.jpg/330px-Arduino_Uno_-_R3.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Uno_-_R3.jpg/440px-Arduino_Uno_-_R3.jpg 2x" data-file-width="600" data-file-height="600" /></a>
+<div>"Arduino Uno" SMD Revision 3</div>
+</td>
+</tr>
+<tr>
+<th scope="row">Type</th>
+<td><a href="https://en.wikipedia.org/wiki/Single-board_microcontroller" title="Single-board microcontroller">Single-board microcontroller</a></td>
+</tr>
+<tr>
+<th scope="row"><a href="https://en.wikipedia.org/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td>None</td>
+</tr>
+<tr>
+<th scope="row"><a href="https://en.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">CPU</a></th>
+<td>AVR, ARM Cortex, Intel Quark</td>
+</tr>
+<tr>
+<th scope="row">Memory</th>
+<td>SRAM</td>
+</tr>
+<tr>
+<th scope="row">Storage</th>
+<td>Flash Memory, EEPROM</td>
+</tr>
+<tr>
+<th scope="row">Graphics</th>
+<td>None</td>
+</tr>
+<tr>
+<th scope="row">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://www.arduino.cc/">www<wbr />.arduino<wbr />.cc</a></span></td>
+</tr>
+</table>
+<p><b>Arduino</b> is a software company, project, and user community that designs and manufactures computer <a href="https://en.wikipedia.org/wiki/Open-source_hardware" title="Open-source hardware">open-source hardware</a>, <a href="https://en.wikipedia.org/wiki/Open-source_software" title="Open-source software">open-source software</a>, and <a href="https://en.wikipedia.org/wiki/Microcontroller" title="Microcontroller">microcontroller</a>-based kits for building digital devices and interactive objects that can sense and control physical devices.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p>The project is based on microcontroller board designs, produced by several vendors, using various microcontrollers. These systems provide sets of digital and analog <a href="https://en.wikipedia.org/wiki/I/O" title="I/O" class="mw-redirect">I/O</a> pins that can interface to various expansion boards (termed <i>shields</i>) and other circuits. The boards feature serial communication interfaces, including Universal Serial Bus (<a href="https://en.wikipedia.org/wiki/USB" title="USB">USB</a>) on some models, for loading programs from personal computers. For programming the microcontrollers, the Arduino project provides an <a href="https://en.wikipedia.org/wiki/Integrated_development_environment" title="Integrated development environment">integrated development environment</a> (IDE) based on a programming language named <i><a href="https://en.wikipedia.org/wiki/Processing_(programming_language)" title="Processing (programming language)">Processing</a></i>, which also supports the languages <a href="https://en.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="https://en.wikipedia.org/wiki/C++" title="C++">C++</a>.</p>
+<p>The first Arduino was introduced in 2005, aiming to provide a low cost, easy way for novices and professionals to create devices that interact with their environment using <a href="https://en.wikipedia.org/wiki/Sensor" title="Sensor">sensors</a> and <a href="https://en.wikipedia.org/wiki/Actuator" title="Actuator">actuators</a>. Common examples of such devices intended for beginner hobbyists include simple <a href="https://en.wikipedia.org/wiki/Robot" title="Robot">robots</a>, <a href="https://en.wikipedia.org/wiki/Thermostat" title="Thermostat">thermostats</a>, and motion detectors.</p>
+<p>Arduino boards are available commercially in preassembled form, or as <a href="https://en.wikipedia.org/wiki/Do-it-yourself" title="Do-it-yourself" class="mw-redirect">do-it-yourself</a> kits. The hardware design specifications are openly available, allowing the Arduino boards to be produced by anyone. <a href="https://en.wikipedia.org/wiki/Adafruit_Industries" title="Adafruit Industries">Adafruit Industries</a> estimated in mid-2011 that over 300,000 official Arduinos had been commercially produced,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> and in 2013 that 700,000 official boards were in users' hands.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Hardware"><span class="tocnumber">2</span> <span class="toctext">Hardware</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Official_boards"><span class="tocnumber">2.1</span> <span class="toctext">Official boards</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Shields"><span class="tocnumber">2.2</span> <span class="toctext">Shields</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Software"><span class="tocnumber">3</span> <span class="toctext">Software</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Sample_program"><span class="tocnumber">3.1</span> <span class="toctext">Sample program</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Development"><span class="tocnumber">4</span> <span class="toctext">Development</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Applications"><span class="tocnumber">5</span> <span class="toctext">Applications</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Recognitions"><span class="tocnumber">6</span> <span class="toctext">Recognitions</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Trademark_dispute"><span class="tocnumber">7</span> <span class="toctext">Trademark dispute</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Notes"><span class="tocnumber">9</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Further_reading"><span class="tocnumber">11</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Colombian student Hernando Barragán created the development platform <i><a href="https://en.wikipedia.org/wiki/Wiring_(development_platform)" title="Wiring (development platform)">Wiring</a></i> as his Master's thesis project in 2004 at the <a href="https://en.wikipedia.org/wiki/Interaction_Design_Institute_Ivrea" title="Interaction Design Institute Ivrea">Interaction Design Institute Ivrea</a> in <a href="https://en.wikipedia.org/wiki/Ivrea" title="Ivrea">Ivrea</a>, Italy. Massimo Banzi and Casey Reas (known for his work on <a href="https://en.wikipedia.org/wiki/Processing_(programming_language)" title="Processing (programming language)">Processing</a>) were supervisors for his thesis. The goal was to create low cost, simple tools for non-engineers to create digital projects. The Wiring platform consisted of a hardware PCB with an ATmega128 microcontroller, an integrated development environment (IDE) based on Processing and library functions to easily program the microcontroller.<sup id="cite_ref-:0_4-0" class="reference"><a href="#cite_note-:0-4">[4]</a></sup></p>
+<p>In 2005, Massimo Banzi, with David Mellis (then an IDII student) and David Cuartielles, added support for the cheaper ATmega8 microcontroller to Wiring. But instead of continuing the work on Wiring, they forked (or copied) the Wiring source code and started running it as a separate project, called Arduino.<sup id="cite_ref-:0_4-1" class="reference"><a href="#cite_note-:0-4">[4]</a></sup></p>
+<p>The Arduino's initial core team consisted of Massimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino, and David Mellis.<sup id="cite_ref-spectrum.ieee.org_5-0" class="reference"><a href="#cite_note-spectrum.ieee.org-5">[5]</a></sup></p>
+<p>The name <i>Arduino</i> comes from a bar in Ivrea, where some of the founders of the project used to meet. The bar was named after <a href="https://en.wikipedia.org/wiki/Arduin_of_Ivrea" title="Arduin of Ivrea">Arduin of Ivrea</a>, who was the margrave of the <a href="https://en.wikipedia.org/wiki/March_of_Ivrea" title="March of Ivrea">March of Ivrea</a> and <a href="https://en.wikipedia.org/wiki/King_of_Italy" title="King of Italy">King of Italy</a> from 1002 to 1014.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<p>Following the completion of the Wiring platform, its lighter, lower cost versions<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> were created and made available to the open-source community. Associated researchers, including David Cuartielles, promoted the idea.<sup id="cite_ref-spectrum.ieee.org_5-1" class="reference"><a href="#cite_note-spectrum.ieee.org-5">[5]</a></sup></p>
+<h2><span class="mw-headline" id="Hardware">Hardware</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=2" title="Edit section: Hardware">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="metadata plainlinks ambox ambox-content ambox-Update" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="https://en.wikipedia.org/wiki/File:Ambox_current_red.svg" class="image"><img alt="Ambox current red.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Ambox_current_red.svg/42px-Ambox_current_red.svg.png" width="42" height="34" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/98/Ambox_current_red.svg/63px-Ambox_current_red.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/98/Ambox_current_red.svg/84px-Ambox_current_red.svg.png 2x" data-file-width="360" data-file-height="290" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section's <b><a href="https://en.wikipedia.org/wiki/Wikipedia:Accuracy_dispute" title="Wikipedia:Accuracy dispute">factual accuracy</a> may be compromised due to out-of-date information</b>. <span class="hide-when-compact">Please update this article to reflect recent events or newly available information.</span> <small><i>(October 2015)</i></small></span></td>
+</tr>
+</table>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="https://en.wikipedia.org/wiki/File:Question_book-new.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="262" data-file-height="204" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>needs additional citations for <a href="https://en.wikipedia.org/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit">improve this article</a> by <a href="https://en.wikipedia.org/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(May 2013)</i></small> <small class="hide-when-compact"><i>(<a href="https://en.wikipedia.org/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="https://en.wikipedia.org/wiki/File:Arduino316.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Arduino316.jpg/220px-Arduino316.jpg" width="220" height="153" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Arduino316.jpg/330px-Arduino316.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Arduino316.jpg/440px-Arduino316.jpg 2x" data-file-width="1293" data-file-height="900" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="https://en.wikipedia.org/wiki/File:Arduino316.jpg" class="internal" title="Enlarge"></a></div>
+An early Arduino board<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> with an <a href="https://en.wikipedia.org/wiki/RS-232" title="RS-232">RS-232</a> <a href="https://en.wikipedia.org/wiki/Serial_communication" title="Serial communication">serial communication</a> interface (upper left) and an Atmel ATmega8 microcontroller chip (black, lower right); the 14 digital I/O pins are located at the top and the six analog input pins at the lower right.</div>
+</div>
+</div>
+<p>An Arduino board historically consists of an <a href="https://en.wikipedia.org/wiki/Atmel" title="Atmel">Atmel</a> 8-, 16- or 32-bit AVR <a href="https://en.wikipedia.org/wiki/Microcontroller" title="Microcontroller">microcontroller</a> (although since 2015 other makers' microcontrollers have been used) with complementary components that facilitate programming and incorporation into other circuits. An important aspect of the Arduino is its standard connectors, which let users connect the CPU board to a variety of interchangeable add-on modules termed <i>shields</i>. Some shields communicate with the Arduino board directly over various pins, but many shields are individually addressable via an <a href="https://en.wikipedia.org/wiki/I²C" title="I²C">I²C</a> <a href="https://en.wikipedia.org/wiki/Serial_bus" title="Serial bus" class="mw-redirect">serial bus</a>—so many shields can be stacked and used in parallel. Before 2015, Official Arduinos had used the Atmel <a href="https://en.wikipedia.org/wiki/MegaAVR" title="MegaAVR" class="mw-redirect">megaAVR</a> series of chips, specifically the <a href="https://en.wikipedia.org/w/index.php?title=ATmega8&amp;action=edit&amp;redlink=1" class="new" title="ATmega8 (page does not exist)">ATmega8</a>, <a href="https://en.wikipedia.org/w/index.php?title=ATmega168&amp;action=edit&amp;redlink=1" class="new" title="ATmega168 (page does not exist)">ATmega168</a>, <a href="https://en.wikipedia.org/wiki/ATmega328" title="ATmega328">ATmega328</a>, <a href="https://en.wikipedia.org/w/index.php?title=ATmega1280&amp;action=edit&amp;redlink=1" class="new" title="ATmega1280 (page does not exist)">ATmega1280</a>, and <a href="https://en.wikipedia.org/w/index.php?title=ATmega2560&amp;action=edit&amp;redlink=1" class="new" title="ATmega2560 (page does not exist)">ATmega2560</a>. In 2015, units by other producers were added. A handful of other processors have also been used by Arduino compatible devices. Most boards include a 5 V <a href="https://en.wikipedia.org/wiki/Linear_regulator" title="Linear regulator">linear regulator</a> and a 16&#160;MHz <a href="https://en.wikipedia.org/wiki/Crystal_oscillator" title="Crystal oscillator">crystal oscillator</a> (or <a href="https://en.wikipedia.org/wiki/Ceramic_resonator" title="Ceramic resonator">ceramic resonator</a> in some variants), although some designs such as the LilyPad run at 8&#160;MHz and dispense with the onboard voltage regulator due to specific form-factor restrictions. An Arduino's microcontroller is also pre-programmed with a <a href="https://en.wikipedia.org/wiki/Boot_loader" title="Boot loader" class="mw-redirect">boot loader</a> that simplifies uploading of programs to the on-chip <a href="https://en.wikipedia.org/wiki/Flash_memory" title="Flash memory">flash memory</a>, compared with other devices that typically need an external <a href="https://en.wikipedia.org/wiki/Programmer_(hardware)" title="Programmer (hardware)">programmer</a>. This makes using an Arduino more straightforward by allowing the use of an ordinary computer as the programmer. Currently, optiboot bootloader is the default bootloader installed on Arduino UNO.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup></p>
+<p>At a conceptual level, when using the Arduino integrated development environment, all boards are programmed over a serial connection. Its implementation varies with the hardware version. Some serial Arduino boards contain a level shifter circuit to convert between <a href="https://en.wikipedia.org/wiki/RS-232" title="RS-232">RS-232</a> logic levels and <a href="https://en.wikipedia.org/wiki/Transistor–transistor_logic" title="Transistor–transistor logic">transistor–transistor logic</a> (TTL) level signals. Current Arduino boards are programmed via <a href="https://en.wikipedia.org/wiki/Universal_Serial_Bus" title="Universal Serial Bus" class="mw-redirect">Universal Serial Bus</a> (USB), implemented using USB-to-serial adapter chips such as the <a href="https://en.wikipedia.org/wiki/FTDI" title="FTDI">FTDI</a> FT232. Some boards, such as later-model Uno boards, substitute the FTDI chip with a separate AVR chip containing USB-to-serial firmware, which is reprogrammable via its own ICSP header. Other variants, such as the Arduino Mini and the unofficial Boarduino, use a detachable USB-to-serial adapter board or cable, <a href="https://en.wikipedia.org/wiki/Bluetooth" title="Bluetooth">Bluetooth</a> or other methods, when used with traditional microcontroller tools instead of the Arduino IDE, standard AVR <a href="https://en.wikipedia.org/wiki/In-system_programming" title="In-system programming">in-system programming</a> (ISP) programming is used.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="https://en.wikipedia.org/wiki/File:UnoConnections.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/UnoConnections.jpg/220px-UnoConnections.jpg" width="220" height="157" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9d/UnoConnections.jpg/330px-UnoConnections.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9d/UnoConnections.jpg/440px-UnoConnections.jpg 2x" data-file-width="856" data-file-height="610" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="https://en.wikipedia.org/wiki/File:UnoConnections.jpg" class="internal" title="Enlarge"></a></div>
+An official Arduino Uno Revision 2 with descriptions of the I/O locations</div>
+</div>
+</div>
+<p>The Arduino board exposes most of the microcontroller's I/O pins for use by other circuits. The Diecimila<sup id="cite_ref-N10000_10-0" class="reference"><a href="#cite_note-N10000-10">[a]</a></sup>, Duemilanove<sup id="cite_ref-N2009_11-0" class="reference"><a href="#cite_note-N2009-11">[b]</a></sup>, and current Uno<sup id="cite_ref-N1_12-0" class="reference"><a href="#cite_note-N1-12">[c]</a></sup> provide 14 digital I/O pins, six of which can produce <a href="https://en.wikipedia.org/wiki/Pulse-width_modulation" title="Pulse-width modulation">pulse-width modulated</a> signals, and six analog inputs, which can also be used as six digital I/O pins. These pins are on the top of the board, via female 0.1-inch (2.54 mm) headers. Several plug-in application shields are also commercially available. The Arduino Nano, and Arduino-compatible Bare Bones Board<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[10]</a></sup> and Boarduino<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[11]</a></sup> boards may provide male header pins on the underside of the board that can plug into <a href="https://en.wikipedia.org/wiki/Solderless_breadboard" title="Solderless breadboard" class="mw-redirect">solderless breadboards</a>.</p>
+<p>Many Arduino-compatible and Arduino-derived boards exist. Some are functionally equivalent to an Arduino and can be used interchangeably. Many enhance the basic Arduino by adding output drivers, often for use in school-level education, to simplify making buggies and small robots. Others are electrically equivalent but change the form factor, sometimes retaining compatibility with shields, sometimes not. Some variants use different processors, of varying compatibility.</p>
+<h3><span class="mw-headline" id="Official_boards">Official boards</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=3" title="Edit section: Official boards">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote">Further information: <a href="https://en.wikipedia.org/wiki/List_of_Arduino_boards_and_compatible_systems" title="List of Arduino boards and compatible systems">List of Arduino boards and compatible systems</a></div>
+<p>The original Arduino hardware was produced by the Italian company Smart Projects.<sup id="cite_ref-smartprojects_15-0" class="reference"><a href="#cite_note-smartprojects-15">[12]</a></sup> Some Arduino-branded boards have been designed by the American companies <a href="https://en.wikipedia.org/wiki/SparkFun_Electronics" title="SparkFun Electronics">SparkFun Electronics</a> and <a href="https://en.wikipedia.org/wiki/Adafruit_Industries" title="Adafruit Industries">Adafruit Industries</a>.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[13]</a></sup> As of 2016<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit">[update]</a></sup>, 17 versions of the Arduino hardware had been commercially produced.</p>
+<ul class="gallery mw-gallery-traditional">
+<li class='gallerycaption'>Example Arduino boards</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:30px auto;"><a href="https://en.wikipedia.org/wiki/File:Arduino_Diecimila_6.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Arduino_Diecimila_6.jpg/120px-Arduino_Diecimila_6.jpg" width="120" height="90" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Arduino_Diecimila_6.jpg/180px-Arduino_Diecimila_6.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/96/Arduino_Diecimila_6.jpg/240px-Arduino_Diecimila_6.jpg 2x" data-file-width="2816" data-file-height="2112" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Arduino Diecimila in Stoicheia</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:30px auto;"><a href="https://en.wikipedia.org/wiki/File:Arduino_Duemilanove_2009b.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Arduino_Duemilanove_2009b.jpg/120px-Arduino_Duemilanove_2009b.jpg" width="120" height="90" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Arduino_Duemilanove_2009b.jpg/180px-Arduino_Duemilanove_2009b.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/05/Arduino_Duemilanove_2009b.jpg/240px-Arduino_Duemilanove_2009b.jpg 2x" data-file-width="2272" data-file-height="1704" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Arduino Duemilanove (rev 2009b)</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:35px auto;"><a href="https://en.wikipedia.org/wiki/File:Arduino_UNO_unpacked.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Arduino_UNO_unpacked.jpg/120px-Arduino_UNO_unpacked.jpg" width="120" height="80" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Arduino_UNO_unpacked.jpg/180px-Arduino_UNO_unpacked.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Arduino_UNO_unpacked.jpg/240px-Arduino_UNO_unpacked.jpg 2x" data-file-width="5184" data-file-height="3456" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Arduino UNO</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:35px auto;"><a href="https://en.wikipedia.org/wiki/File:Arduino_Leonardo.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Leonardo.jpg/120px-Arduino_Leonardo.jpg" width="120" height="80" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Leonardo.jpg/180px-Arduino_Leonardo.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Leonardo.jpg/240px-Arduino_Leonardo.jpg 2x" data-file-width="5184" data-file-height="3456" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Arduino Leonardo</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:30px auto;"><a href="https://en.wikipedia.org/wiki/File:Arduino_Mega.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Arduino_Mega.jpg/120px-Arduino_Mega.jpg" width="120" height="90" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/01/Arduino_Mega.jpg/180px-Arduino_Mega.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/01/Arduino_Mega.jpg/240px-Arduino_Mega.jpg 2x" data-file-width="1597" data-file-height="1197" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Arduino Mega</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:30px auto;"><a href="https://en.wikipedia.org/wiki/File:Arduino_MEGA_2560_R3,_front_side.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Arduino_MEGA_2560_R3%2C_front_side.jpg/120px-Arduino_MEGA_2560_R3%2C_front_side.jpg" width="120" height="90" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/80/Arduino_MEGA_2560_R3%2C_front_side.jpg/180px-Arduino_MEGA_2560_R3%2C_front_side.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/80/Arduino_MEGA_2560_R3%2C_front_side.jpg/240px-Arduino_MEGA_2560_R3%2C_front_side.jpg 2x" data-file-width="1024" data-file-height="768" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Arduino MEGA 2560 R3 (front side)<sup id="cite_ref-MEGA-2560-R3_18-0" class="reference"><a href="#cite_note-MEGA-2560-R3-18">[d]</a></sup></p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:30px auto;"><a href="https://en.wikipedia.org/wiki/File:Arduino_MEGA_2560_R3,_back_side.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Arduino_MEGA_2560_R3%2C_back_side.jpg/120px-Arduino_MEGA_2560_R3%2C_back_side.jpg" width="120" height="90" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Arduino_MEGA_2560_R3%2C_back_side.jpg/180px-Arduino_MEGA_2560_R3%2C_back_side.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Arduino_MEGA_2560_R3%2C_back_side.jpg/240px-Arduino_MEGA_2560_R3%2C_back_side.jpg 2x" data-file-width="1024" data-file-height="768" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Arduino MEGA 2560 R3 (back side)<sup id="cite_ref-MEGA-2560-R3_18-1" class="reference"><a href="#cite_note-MEGA-2560-R3-18">[d]</a></sup></p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:15px auto;"><a href="https://en.wikipedia.org/wiki/File:Arduino_Nano.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Arduino_Nano.jpg/55px-Arduino_Nano.jpg" width="55" height="120" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Arduino_Nano.jpg/83px-Arduino_Nano.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Arduino_Nano.jpg/111px-Arduino_Nano.jpg 2x" data-file-width="397" data-file-height="855" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Arduino Nano</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:43px auto;"><a href="https://en.wikipedia.org/wiki/File:ArduinoDue_Front.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/ArduinoDue_Front.jpg/120px-ArduinoDue_Front.jpg" width="120" height="64" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/36/ArduinoDue_Front.jpg/180px-ArduinoDue_Front.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/36/ArduinoDue_Front.jpg/240px-ArduinoDue_Front.jpg 2x" data-file-width="1024" data-file-height="546" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Arduino Due<br />
+(<a href="https://en.wikipedia.org/wiki/ARM_Cortex-M3" title="ARM Cortex-M3" class="mw-redirect">ARM Cortex-M3</a> core)</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:30px auto;"><a href="https://en.wikipedia.org/wiki/File:LilyPad_Arduino_Main_Board.JPG" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/LilyPad_Arduino_Main_Board.JPG/120px-LilyPad_Arduino_Main_Board.JPG" width="120" height="90" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/LilyPad_Arduino_Main_Board.JPG/180px-LilyPad_Arduino_Main_Board.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ec/LilyPad_Arduino_Main_Board.JPG/240px-LilyPad_Arduino_Main_Board.JPG 2x" data-file-width="2311" data-file-height="1734" /></a></div>
+</div>
+<div class="gallerytext">
+<p>LilyPad Arduino (rev 2007)</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:30px auto;"><a href="https://en.wikipedia.org/wiki/File:ArduinoYun.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/ArduinoYun.jpg/120px-ArduinoYun.jpg" width="120" height="90" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1d/ArduinoYun.jpg/180px-ArduinoYun.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1d/ArduinoYun.jpg/240px-ArduinoYun.jpg 2x" data-file-width="600" data-file-height="450" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Arduino Yun</p>
+</div>
+</div>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Shields">Shields</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=4" title="Edit section: Shields">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Arduino and Arduino-compatible boards use printed circuit expansion boards called <i>shields</i>, which plug into the normally supplied Arduino pin headers. Shields can provide motor controls, <a href="https://en.wikipedia.org/wiki/Global_Positioning_System" title="Global Positioning System">Global Positioning System</a> (GPS), Ethernet, <a href="https://en.wikipedia.org/wiki/Liquid_crystal_display" title="Liquid crystal display" class="mw-redirect">liquid crystal display</a> (LCD), or <a href="https://en.wikipedia.org/wiki/Breadboard" title="Breadboard">breadboarding</a> (prototyping). Several shields can also be made <a href="https://en.wikipedia.org/wiki/Do_it_yourself" title="Do it yourself">do it yourself</a> (DIY).<sup id="cite_ref-AutoF7-35_19-0" class="reference"><a href="#cite_note-AutoF7-35-19">[15]</a></sup><sup id="cite_ref-AutoF7-36_20-0" class="reference"><a href="#cite_note-AutoF7-36-20">[16]</a></sup><sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[17]</a></sup></p>
+<ul class="gallery mw-gallery-traditional">
+<li class='gallerycaption'>Example Arduino shields</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:30px auto;"><a href="https://en.wikipedia.org/wiki/File:Arduino_Protoboard_Shields.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Arduino_Protoboard_Shields.jpg/120px-Arduino_Protoboard_Shields.jpg" width="120" height="90" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Arduino_Protoboard_Shields.jpg/180px-Arduino_Protoboard_Shields.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Arduino_Protoboard_Shields.jpg/240px-Arduino_Protoboard_Shields.jpg 2x" data-file-width="1024" data-file-height="768" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Multiple shields can be stacked. In this example the top shield contains a solderless breadboard.</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:35px auto;"><a href="https://en.wikipedia.org/wiki/File:Wingshield_on_Arduino_-_ARSH-05-WI.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Wingshield_on_Arduino_-_ARSH-05-WI.jpg/120px-Wingshield_on_Arduino_-_ARSH-05-WI.jpg" width="120" height="80" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Wingshield_on_Arduino_-_ARSH-05-WI.jpg/180px-Wingshield_on_Arduino_-_ARSH-05-WI.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/72/Wingshield_on_Arduino_-_ARSH-05-WI.jpg/240px-Wingshield_on_Arduino_-_ARSH-05-WI.jpg 2x" data-file-width="3560" data-file-height="2373" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Screw-terminal breakout shield in a wing-type format</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:35px auto;"><a href="https://en.wikipedia.org/wiki/File:Adafruit_Motor_Shield_-_ARSH-02-MS_01.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Adafruit_Motor_Shield_-_ARSH-02-MS_01.jpg/120px-Adafruit_Motor_Shield_-_ARSH-02-MS_01.jpg" width="120" height="80" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Adafruit_Motor_Shield_-_ARSH-02-MS_01.jpg/180px-Adafruit_Motor_Shield_-_ARSH-02-MS_01.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Adafruit_Motor_Shield_-_ARSH-02-MS_01.jpg/240px-Adafruit_Motor_Shield_-_ARSH-02-MS_01.jpg 2x" data-file-width="3057" data-file-height="2038" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Adafruit Motor Shield with screw terminals for connection to motors</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:35px auto;"><a href="https://en.wikipedia.org/wiki/File:ARSH-09-DL_03.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/ARSH-09-DL_03.jpg/120px-ARSH-09-DL_03.jpg" width="120" height="80" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ee/ARSH-09-DL_03.jpg/180px-ARSH-09-DL_03.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ee/ARSH-09-DL_03.jpg/240px-ARSH-09-DL_03.jpg 2x" data-file-width="2994" data-file-height="1996" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Adafruit Datalogging Shield with a <a href="https://en.wikipedia.org/wiki/Secure_Digital" title="Secure Digital">Secure Digital</a> (SD) card slot and real-time clock (RTC) chip</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:28px auto;"><a href="https://en.wikipedia.org/wiki/File:Fabric_Shield_for_Arduino_Nano.JPG" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Fabric_Shield_for_Arduino_Nano.JPG/120px-Fabric_Shield_for_Arduino_Nano.JPG" width="120" height="94" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Fabric_Shield_for_Arduino_Nano.JPG/180px-Fabric_Shield_for_Arduino_Nano.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Fabric_Shield_for_Arduino_Nano.JPG/240px-Fabric_Shield_for_Arduino_Nano.JPG 2x" data-file-width="1035" data-file-height="810" /></a></div>
+</div>
+<div class="gallerytext">
+<p>HackARobot Fabric Shield&#160;–  designed for Arduino Nano to hook up motors and sensors such as gyroscope or GPS, and other breakout boards such as WiFi, Bluetooth, RF, etc.</p>
+</div>
+</div>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Software">Software</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=5" title="Edit section: Software">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="infobox vevent" style="width:22em">
+<caption class="summary">Arduino Software IDE</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="https://en.wikipedia.org/wiki/File:Arduino_1.0_IDE,_Ubuntu_11.10.png" class="image"><img alt="Arduino 1.0 IDE, Ubuntu 11.10.png" src="http://upload.wikimedia.org/wikipedia/en/thumb/d/d9/Arduino_1.0_IDE%2C_Ubuntu_11.10.png/220px-Arduino_1.0_IDE%2C_Ubuntu_11.10.png" width="220" height="268" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/d9/Arduino_1.0_IDE%2C_Ubuntu_11.10.png/330px-Arduino_1.0_IDE%2C_Ubuntu_11.10.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/d9/Arduino_1.0_IDE%2C_Ubuntu_11.10.png/440px-Arduino_1.0_IDE%2C_Ubuntu_11.10.png 2x" data-file-width="486" data-file-height="593" /></a>
+<div>Screenshot of the Arduino IDE showing the <i>Blink</i> simple beginner program</div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="https://en.wikipedia.org/wiki/Software_developer" title="Software developer">Developer(s)</a></th>
+<td>Arduino Software</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="https://en.wikipedia.org/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>1.6.8 / 9&#160;March 2016<span class="noprint">; 2 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-03-09</span>)</span><sup id="cite_ref-AutoF7-37_22-0" class="reference"><a href="#cite_note-AutoF7-37-22">[18]</a></sup></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Written in</th>
+<td><a href="https://en.wikipedia.org/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="https://en.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="https://en.wikipedia.org/wiki/C++" title="C++">C++</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="https://en.wikipedia.org/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td><a href="https://en.wikipedia.org/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="https://en.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td><a href="https://en.wikipedia.org/wiki/Integrated_development_environment" title="Integrated development environment">Integrated development environment</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="https://en.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">LGPL</a> or <a href="https://en.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a> license</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="http://arduino.cc/">arduino<wbr />.cc</a></span></td>
+</tr>
+</table>
+<p>Arduino programs may be written in any <a href="https://en.wikipedia.org/wiki/Programming_language" title="Programming language">programming language</a> with a compiler that produces binary machine code. Atmel provides a development environment for their microcontrollers, AVR Studio and the newer Atmel Studio.<sup id="cite_ref-AutoF7-38_23-0" class="reference"><a href="#cite_note-AutoF7-38-23">[19]</a></sup><sup id="cite_ref-AutoF7-39_24-0" class="reference"><a href="#cite_note-AutoF7-39-24">[20]</a></sup></p>
+<p>The Arduino project provides the Arduino <a href="https://en.wikipedia.org/wiki/Integrated_development_environment" title="Integrated development environment">integrated development environment</a> (IDE), which is a <a href="https://en.wikipedia.org/wiki/Cross-platform" title="Cross-platform">cross-platform</a> application written in the programming language <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>. It originated from the IDE for the languages <i><a href="https://en.wikipedia.org/wiki/Processing_(programming_language)" title="Processing (programming language)">Processing</a></i> and <i><a href="https://en.wikipedia.org/wiki/Wiring_(development_platform)" title="Wiring (development platform)">Wiring</a></i>. It is designed to introduce programming to artists and other newcomers unfamiliar with software development. It includes a code editor with features such as <a href="https://en.wikipedia.org/wiki/Syntax_highlighting" title="Syntax highlighting">syntax highlighting</a>, <a href="https://en.wikipedia.org/wiki/Brace_matching" title="Brace matching">brace matching</a>, and automatic indentation, and provides simple one-click mechanism to compile and load programs to an Arduino board. A program written with the IDE for Arduino is called a "sketch".<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">[21]</a></sup></p>
+<p>The Arduino IDE supports the languages <a href="https://en.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="https://en.wikipedia.org/wiki/C++" title="C++">C++</a> using special rules to organize code. The Arduino IDE supplies a <a href="https://en.wikipedia.org/wiki/Software_library" title="Software library" class="mw-redirect">software library</a> called Wiring from the Wiring project, which provides many common input and output procedures. A typical Arduino C/C++ sketch consist of two functions that are compiled and linked with a program stub <i>main()</i> into an executable <a href="https://en.wikipedia.org/wiki/Cyclic_executive" title="Cyclic executive">cyclic executive</a> program:</p>
+<ul>
+<li><i>setup()</i>: a function that runs once at the start of a program and that can initialize settings.</li>
+<li><i>loop()</i>: a function called repeatedly until the board powers off.</li>
+</ul>
+<p>After compiling and linking with the <a href="https://en.wikipedia.org/wiki/GNU_toolchain" title="GNU toolchain">GNU toolchain</a>, also included with the IDE distribution, the Arduino IDE employs the program <i>avrdude</i> to convert the executable code into a text file in hexadecimal coding that is loaded into the Arduino board by a loader program in the board's firmware.</p>
+<h3><span class="mw-headline" id="Sample_program">Sample program</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=6" title="Edit section: Sample program">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A typical program for a beginning Arduino programmer blinks a <a href="https://en.wikipedia.org/wiki/Light-emitting_diode" title="Light-emitting diode">light-emitting diode</a> (LED) on and off. This program is usually loaded in the Arduino board by the manufacturer. In the Arduino environment, a user might write such a program as shown:<sup id="cite_ref-Blink_Tutorial_26-0" class="reference"><a href="#cite_note-Blink_Tutorial-26">[22]</a></sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cp">#define LED_PIN 13</span>
+
+<span class="kt">void</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">pinMode</span><span class="p">(</span><span class="n">LED_PIN</span><span class="p">,</span> <span class="kc">OUTPUT</span><span class="p">);</span>       <span class="c1">// Enable pin 13 for digital output</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nx">loop</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">digitalWrite</span><span class="p">(</span><span class="n">LED_PIN</span><span class="p">,</span> <span class="kc">HIGH</span><span class="p">);</span>    <span class="c1">// Turn on the LED</span>
+    <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>                    <span class="c1">// Wait one second (1000 milliseconds)</span>
+    <span class="nf">digitalWrite</span><span class="p">(</span><span class="n">LED_PIN</span><span class="p">,</span> <span class="kc">LOW</span><span class="p">);</span>     <span class="c1">// Turn off the LED</span>
+    <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>                    <span class="c1">// Wait one second</span>
+<span class="p">}</span>
+</pre></div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="https://en.wikipedia.org/wiki/File:Power_and_Pin13_LED_on_Arduino_Compatible_Board.jpg" class="image"><img alt="Power LED and Integrated LED on Arduino Compatible Board" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Power_and_Pin13_LED_on_Arduino_Compatible_Board.jpg/220px-Power_and_Pin13_LED_on_Arduino_Compatible_Board.jpg" width="220" height="124" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Power_and_Pin13_LED_on_Arduino_Compatible_Board.jpg/330px-Power_and_Pin13_LED_on_Arduino_Compatible_Board.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/27/Power_and_Pin13_LED_on_Arduino_Compatible_Board.jpg/440px-Power_and_Pin13_LED_on_Arduino_Compatible_Board.jpg 2x" data-file-width="1920" data-file-height="1079" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="https://en.wikipedia.org/wiki/File:Power_and_Pin13_LED_on_Arduino_Compatible_Board.jpg" class="internal" title="Enlarge"></a></div>
+Power LED (red) and integrated LED on Line 13 (green) on Arduino compatible board, made in China</div>
+</div>
+</div>
+<p>Most Arduino boards contain an LED and a load resistor connected between pin 13 and ground which is a convenient feature for many tests.<sup id="cite_ref-Blink_Tutorial_26-1" class="reference"><a href="#cite_note-Blink_Tutorial-26">[22]</a></sup></p>
+<h2><span class="mw-headline" id="Development">Development</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=7" title="Edit section: Development">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="https://en.wikipedia.org/wiki/File:Arduino-compatible_R3_UNO_Sku066313-01.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Arduino-compatible_R3_UNO_Sku066313-01.jpg/220px-Arduino-compatible_R3_UNO_Sku066313-01.jpg" width="220" height="220" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/66/Arduino-compatible_R3_UNO_Sku066313-01.jpg/330px-Arduino-compatible_R3_UNO_Sku066313-01.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/66/Arduino-compatible_R3_UNO_Sku066313-01.jpg/440px-Arduino-compatible_R3_UNO_Sku066313-01.jpg 2x" data-file-width="600" data-file-height="600" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="https://en.wikipedia.org/wiki/File:Arduino-compatible_R3_UNO_Sku066313-01.jpg" class="internal" title="Enlarge"></a></div>
+Arduino-compatible R3 UNO board made in China with no Arduino logo, but with identical markings, including "<i>Made in Italy</i>" text</div>
+</div>
+</div>
+<p>Arduino is an <a href="https://en.wikipedia.org/wiki/Open-source_hardware" title="Open-source hardware">open-source hardware</a>. The hardware reference designs are distributed under a <a href="https://en.wikipedia.org/wiki/Creative_Commons" title="Creative Commons">Creative Commons</a> Attribution Share-Alike 2.5 license and are available on the Arduino website. Layout and production files for some versions of the hardware are also available. The source code for the IDE is released under the <a href="https://en.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a>, version 2.<sup id="cite_ref-27" class="reference"><a href="#cite_note-27">[23]</a></sup></p>
+<p>Although the hardware and software designs are freely available under <a href="https://en.wikipedia.org/wiki/Copyleft" title="Copyleft">copyleft</a> licenses, the developers have requested that the name "Arduino" be <a href="https://en.wikipedia.org/wiki/Generic_trademark" title="Generic trademark">exclusive to the official product</a> and not be used for derived works without permission. The official policy document on use of the Arduino name emphasizes that the project is open to incorporating work by others into the official product.<sup id="cite_ref-AutoF7-44_28-0" class="reference"><a href="#cite_note-AutoF7-44-28">[24]</a></sup> Several Arduino-compatible products commercially released have avoided the <i>Arduino</i> name by using <i>-duino</i> name variants.<sup id="cite_ref-freeduino_29-0" class="reference"><a href="#cite_note-freeduino-29">[25]</a></sup></p>
+<h2><span class="mw-headline" id="Applications"><span id="GERTDUINO"></span>Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=8" title="Edit section: Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote">See also: <a href="https://en.wikipedia.org/wiki/List_of_open-source_hardware_projects" title="List of open-source hardware projects">List of open-source hardware projects</a></div>
+<ul>
+<li>Xoscillo, an open-source <a href="https://en.wikipedia.org/wiki/Oscilloscope" title="Oscilloscope">oscilloscope</a><sup id="cite_ref-AutoF7-40_30-0" class="reference"><a href="#cite_note-AutoF7-40-30">[26]</a></sup></li>
+<li>Scientific equipment<sup id="cite_ref-AutoF7-41_31-0" class="reference"><a href="#cite_note-AutoF7-41-31">[27]</a></sup> such as the Chemduino<sup id="cite_ref-32" class="reference"><a href="#cite_note-32">[28]</a></sup></li>
+<li><a href="https://en.wikipedia.org/wiki/Arduinome" title="Arduinome">Arduinome</a>, a <a href="https://en.wikipedia.org/wiki/MIDI_controller" title="MIDI controller">MIDI controller</a> device that mimics the <a href="https://en.wikipedia.org/wiki/Monome" title="Monome">Monome</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OBDuino" title="OBDuino">OBDuino</a>, a <a href="https://en.wikipedia.org/wiki/Trip_computer" title="Trip computer">trip computer</a> that uses the <a href="https://en.wikipedia.org/wiki/On-board_diagnostics" title="On-board diagnostics">on-board diagnostics</a> interface found in most modern cars</li>
+<li><a href="https://en.wikipedia.org/wiki/Ardupilot" title="Ardupilot">Ardupilot</a>, drone software and hardware</li>
+<li>ArduinoPhone, a do-it-yourself cellphone<sup id="cite_ref-33" class="reference"><a href="#cite_note-33">[29]</a></sup><sup id="cite_ref-34" class="reference"><a href="#cite_note-34">[30]</a></sup></li>
+<li><i>GertDuino</i>, an Arduino mate for the <a href="https://en.wikipedia.org/wiki/Raspberry_Pi" title="Raspberry Pi">Raspberry Pi</a><sup id="cite_ref-35" class="reference"><a href="#cite_note-35">[31]</a></sup></li>
+<li>Water quality testing platform<sup id="cite_ref-36" class="reference"><a href="#cite_note-36">[32]</a></sup></li>
+<li>Homemade CNC using Arduino and DC motors with close loop control by Homofaciens<sup id="cite_ref-37" class="reference"><a href="#cite_note-37">[33]</a></sup></li>
+<li>DC motor control using Arduino and H-Bridge<sup id="cite_ref-38" class="reference"><a href="#cite_note-38">[34]</a></sup></li>
+</ul>
+<h2><span class="mw-headline" id="Recognitions">Recognitions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=9" title="Edit section: Recognitions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Arduino project received an honorary mention in the Digital Communities category at the 2006 <a href="https://en.wikipedia.org/wiki/Prix_Ars_Electronica" title="Prix Ars Electronica">Prix Ars Electronica</a>.<sup id="cite_ref-AutoF7-45_39-0" class="reference"><a href="#cite_note-AutoF7-45-39">[35]</a></sup></p>
+<h2><span class="mw-headline" id="Trademark_dispute">Trademark dispute</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=10" title="Edit section: Trademark dispute">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In early 2008, the five cofounders of the Arduino project created a company, Arduino LLC,<sup id="cite_ref-40" class="reference"><a href="#cite_note-40">[36]</a></sup> to hold the trademarks associated with Arduino. The manufacture and sale of the boards was to be done by external companies, and Arduino LLC would get a royalty from them. The founding bylaws of Arduino LLC specified that each of the five founders transfer ownership of the Arduino brand to the newly formed company.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (September 2015)">citation needed</span></a></i>]</sup></p>
+<p>At the end of 2008, Gianluca Martino's company, Smart Projects, registered the Arduino trademark in Italy and kept this a secret from the other cofounders for about two years. This was revealed when the Arduino company tried to register the trademark in other areas of the world (they originally registered only in the US), and discovered that it was already registered in Italy. Negotiations with Gianluca and his firm to bring the trademark under control of the original Arduino company failed. In 2014, Smart Projects began refusing to pay royalties. They then appointed a new CEO, Mr. Musto, who renamed the company to Arduino SRL and created a website named arduino.org, copying the graphics and layout of the original Arduino.cc. This resulted in a rift in the Arduino development team. All Arduino boards are still available to consumers, and the designs are open source, so the implications of this are uncertain.<sup id="cite_ref-41" class="reference"><a href="#cite_note-41">[37]</a></sup><sup id="cite_ref-42" class="reference"><a href="#cite_note-42">[38]</a></sup><sup id="cite_ref-43" class="reference"><a href="#cite_note-43">[39]</a></sup></p>
+<p>In May 2015, "Genuino" was created around the world as another trademark, held by Arduino LLC, and is currently being used as Arduino LLC's brand name outside of the US.<sup id="cite_ref-genuino_44-0" class="reference"><a href="#cite_note-genuino-44">[40]</a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=11" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="noprint portal tright" style="border:solid #aaa 1px;margin:0.5em 0 0.5em 1em">
+<table style="background:#f9f9f9;font-size:85%;line-height:110%;max-width:175px">
+<tr style="vertical-align:middle">
+<td style="text-align:center"><a href="https://en.wikipedia.org/wiki/File:Free_and_open-source_software_logo_(2009).svg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_(2009).svg/28px-Free_and_open-source_software_logo_(2009).svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></a></td>
+<td style="padding:0 0.2em;vertical-align:middle;font-style:italic;font-weight:bold"><a href="https://en.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software portal</a></td>
+</tr>
+<tr style="vertical-align:middle">
+<td style="text-align:center"><a href="https://en.wikipedia.org/wiki/File:Nuvola_apps_ksim.png" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nuvola_apps_ksim.png/28px-Nuvola_apps_ksim.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nuvola_apps_ksim.png/42px-Nuvola_apps_ksim.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nuvola_apps_ksim.png/56px-Nuvola_apps_ksim.png 2x" data-file-width="128" data-file-height="128" /></a></td>
+<td style="padding:0 0.2em;vertical-align:middle;font-style:italic;font-weight:bold"><a href="https://en.wikipedia.org/wiki/Portal:Electronics" title="Portal:Electronics">Electronics portal</a></td>
+</tr>
+</table>
+</div>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Comparison_of_single-board_computers" title="Comparison of single-board computers">Comparison of single-board computers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Intel_Edison" title="Intel Edison">Intel Edison</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Arduino_boards_and_compatible_systems" title="List of Arduino boards and compatible systems">List of Arduino boards and compatible systems</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IOIO" title="IOIO">IOIO</a></li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=12" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: lower-alpha;">
+<ol class="references">
+<li id="cite_note-N10000-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-N10000_10-0">^</a></b></span> <span class="reference-text">Diecimila means "ten thousands" in Italian language</span></li>
+<li id="cite_note-N2009-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-N2009_11-0">^</a></b></span> <span class="reference-text">Duemilanove means "two thousands nine" in Italian language</span></li>
+<li id="cite_note-N1-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-N1_12-0">^</a></b></span> <span class="reference-text">Uno means "one" in Italian language</span></li>
+<li id="cite_note-MEGA-2560-R3-18"><span class="mw-cite-backlink">^ <a href="#cite_ref-MEGA-2560-R3_18-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-MEGA-2560-R3_18-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">This is a compatible version of the MEGA 2560 R3 board, made by an alternative manufacturer.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[14]</a></sup></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=13" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://arduino.cc/en/guide/introduction">"Arduino - Introduction"</a>. <i>arduino.cc</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=Arduino+-+Introduction&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Farduino.cc%2Fen%2Fguide%2Fintroduction&amp;rft.jtitle=arduino.cc&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.adafruit.com/blog/2011/05/15/how-many-arduinos-are-in-the-wild-about-300000/">"How many Arduinos are "in the wild?" About 300,000"</a>. <a href="https://en.wikipedia.org/wiki/Adafruit_Industries" title="Adafruit Industries">Adafruit Industries</a>. May 15, 2011<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-05-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=How+many+Arduinos+are+%22in+the+wild%3F%22+About+300%2C000&amp;rft.date=2011-05-15&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.adafruit.com%2Fblog%2F2011%2F05%2F15%2Fhow-many-arduinos-are-in-the-wild-about-300000%2F&amp;rft.pub=Adafruit+Industries&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://medea.mah.se/2013/04/arduino-faq//">"Arduino FAQ – With David Cuartielles"</a>. <a href="https://en.wikipedia.org/wiki/Malmö_University" title="Malmö University">Malmö University</a>. April 5, 2013<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-03-24</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=Arduino+FAQ+%93+With+David+Cuartielles&amp;rft.date=2013-04-05&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmedea.mah.se%2F2013%2F04%2Farduino-faq%2F%2F&amp;rft.pub=Malm%C3%B6+University&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-:0-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-:0_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:0_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://arduinohistory.github.io/">"Home"</a>. <i>arduinohistory.github.io</i>. 2016-01-01<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-03-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=Home&amp;rft.date=2016-01-01&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Farduinohistory.github.io&amp;rft.jtitle=arduinohistory.github.io&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-spectrum.ieee.org-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-spectrum.ieee.org_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-spectrum.ieee.org_5-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">David Kushner (26 Oct 2011). <a rel="nofollow" class="external text" href="http://spectrum.ieee.org/geek-life/hands-on/the-making-of-arduino">"The Making of Arduino"</a>. <i><a href="https://en.wikipedia.org/wiki/IEEE_Spectrum" title="IEEE Spectrum">IEEE Spectrum</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=The+Making+of+Arduino&amp;rft.au=David+Kushner&amp;rft.date=2011-10-26&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fspectrum.ieee.org%2Fgeek-life%2Fhands-on%2Fthe-making-of-arduino&amp;rft.jtitle=IEEE+Spectrum&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation journal">Justin Lahart (27 November 2009). <a rel="nofollow" class="external text" href="http://online.wsj.com/article/SB10001424052748703499404574559960271468066.html">"Taking an Open-Source Approach to Hardware"</a>. <i><a href="https://en.wikipedia.org/wiki/The_Wall_Street_Journal" title="The Wall Street Journal">The Wall Street Journal</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">7 September</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=Taking+an+Open-Source+Approach+to+Hardware&amp;rft.au=Justin+Lahart&amp;rft.date=2009-11-27&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fonline.wsj.com%2Farticle%2FSB10001424052748703499404574559960271468066.html&amp;rft.jtitle=The+Wall+Street+Journal&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://rhizome.org/editorial/2009/sep/23/interview-with-casey-reas-and-ben-fry/">"Rhizome - Interview with Casey Reas and Ben Fry"</a>. 2009-09-23<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-08-23</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=Rhizome+-+Interview+with+Casey+Reas+and+Ben+Fry&amp;rft.date=2009-09-23&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Frhizome.org%2Feditorial%2F2009%2Fsep%2F23%2Finterview-with-casey-reas-and-ben-fry%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://arduino.cc/en/main/boards">"Hardware Index"</a>. Arduino Project<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-12-10</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=Hardware+Index&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Farduino.cc%2Fen%2Fmain%2Fboards&amp;rft.pub=Arduino+Project&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/Optiboot/optiboot">"Optiboot Bootloader for Arduino and Atmel AVR"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-10-01</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=Optiboot+Bootloader+for+Arduino+and+Atmel+AVR&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2FOptiboot%2Foptiboot&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://moderndevice.com/product/bare-bones-board-bbb-kit/">"Bare Bones Board"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=Bare+Bones+Board&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmoderndevice.com%2Fproduct%2Fbare-bones-board-bbb-kit%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.adafruit.com/products/72">"Boarduino"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=Boarduino&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.adafruit.com%2Fproducts%2F72&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-smartprojects-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-smartprojects_15-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://smartprj.com/">"Redirect..."</a>. <i>smartprj.com</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=Redirect...&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fsmartprj.com%2F&amp;rft.jtitle=smartprj.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text">Schmidt, M. ["Arduino: A Quick Start Guide"], <i><a href="https://en.wikipedia.org/wiki/Pragmatic_Bookshelf" title="Pragmatic Bookshelf" class="mw-redirect">Pragmatic Bookshelf</a></i>, January 22, 2011, Pg. 201</span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.arduino.cc/en/Main/ArduinoBoardMega2560">"Arduino - ArduinoBoardMega2560"</a>. <i>arduino.cc</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=Arduino+-+ArduinoBoardMega2560&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.arduino.cc%2Fen%2FMain%2FArduinoBoardMega2560&amp;rft.jtitle=arduino.cc&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoF7-35-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-AutoF7-35_19-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://todbot.com/blog/2006/07/11/arduino-breadboard-shield/">"Arduino breadboard shield: $10 &amp; 10 mins"</a>. <i>todbot blog</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=Arduino+breadboard+shield%3A+%2410+%26+10+mins&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ftodbot.com%2Fblog%2F2006%2F07%2F11%2Farduino-breadboard-shield%2F&amp;rft.jtitle=todbot+blog&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoF7-36-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-AutoF7-36_20-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.tigoe.net/pcomp/code/arduinowiring/26">"Arduino Shields for Prototyping"</a>. <i>tigoe.net</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=Arduino+Shields+for+Prototyping&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.tigoe.net%2Fpcomp%2Fcode%2Farduinowiring%2F26&amp;rft.jtitle=tigoe.net&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><cite class="citation web">Jonathan Oxer. <a rel="nofollow" class="external text" href="http://shieldlist.org/">"Arduino Shield list"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">5 Nov</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.au=Jonathan+Oxer&amp;rft.btitle=Arduino+Shield+list&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fshieldlist.org%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoF7-37-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-AutoF7-37_22-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://arduino.cc/en/Main/ReleaseNotes">"Arduino Software Release Notes"</a>. Arduino Project<span class="reference-accessdate">. Retrieved <span class="nowrap">March 11,</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=Arduino+Software+Release+Notes&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Farduino.cc%2Fen%2FMain%2FReleaseNotes&amp;rft.pub=Arduino+Project&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoF7-38-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-AutoF7-38_23-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.megunolink.com/Building_an_Arduino_project_with_MegunoLink_and_Atmel_Studio_(Blink_Tutorial)">"Using Atmel Studio for Arduino development"</a>. Megunolink.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-01-18</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=Using+Atmel+Studio+for+Arduino+development&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.megunolink.com%2FBuilding_an_Arduino_project_with_MegunoLink_and_Atmel_Studio_%28Blink_Tutorial%29&amp;rft.pub=Megunolink.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoF7-39-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-AutoF7-39_24-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.engblaze.com/tutorial-using-avr-studio-5-with-arduino-projects/">"Using AVR Studio for Arduino development"</a>. Engblaze.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-01-18</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=Using+AVR+Studio+for+Arduino+development&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.engblaze.com%2Ftutorial-using-avr-studio-5-with-arduino-projects%2F&amp;rft.pub=Engblaze.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.amazon.com/Programming-Arduino-Getting-Started-Sketches/dp/0071784225/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1364494138&amp;sr=1-1&amp;keywords=arduino+sketches">"Programming Arduino Getting Started with Sketches"</a>. <a href="https://en.wikipedia.org/wiki/McGraw-Hill" title="McGraw-Hill" class="mw-redirect">McGraw-Hill</a>. Nov 8, 2011<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-03-28</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=Programming+Arduino+Getting+Started+with+Sketches&amp;rft.date=2011-11-08&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.amazon.com%2FProgramming-Arduino-Getting-Started-Sketches%2Fdp%2F0071784225%2Fref%3Dsr_1_1%3Fs%3Dbooks%26ie%3DUTF8%26qid%3D1364494138%26sr%3D1-1%26keywords%3Darduino%2Bsketches&amp;rft.pub=McGraw-Hill&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Blink_Tutorial-26"><span class="mw-cite-backlink">^ <a href="#cite_ref-Blink_Tutorial_26-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Blink_Tutorial_26-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://arduino.cc/en/Tutorial/Blink">"Blink Tutorial"</a>. Arduino.cc.</span></li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/arduino/Arduino">"The arduino source code"</a>. <i>The arduino source code</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=The+arduino+source+code&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fgithub.com%2Farduino%2FArduino&amp;rft.jtitle=The+arduino+source+code&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoF7-44-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-AutoF7-44_28-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://arduino.cc/en/Main/Policy">"Policy"</a>. Arduino.cc<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-01-18</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=Policy&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Farduino.cc%2Fen%2FMain%2FPolicy&amp;rft.pub=Arduino.cc&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-freeduino-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-freeduino_29-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.freeduino.org/freeduino_open_designs.html">"Freeduino Open Designs"</a>. Freeduino.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2008-03-03</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=Freeduino+Open+Designs&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.freeduino.org%2Ffreeduino_open_designs.html&amp;rft.pub=Freeduino.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoF7-40-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-AutoF7-40_30-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://code.google.com/p/xoscillo/">"xoscillo&#160;– A software oscilloscope that acquires data using an arduino or a parallax (more platforms to come). – Google Project Hosting"</a>. Code.google.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-01-18</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=xoscillo+%93+A+software+oscilloscope+that+acquires+data+using+an+arduino+or+a+parallax+%28more+platforms+to+come%29.+%93+Google+Project+Hosting&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fcode.google.com%2Fp%2Fxoscillo%2F&amp;rft.pub=Code.google.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoF7-41-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-AutoF7-41_31-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.sciencemag.org/content/337/6100/1303.summary">Pearce, Joshua M. 2012. "Building Research Equipment with Free, Open-Source Hardware". <i>Science</i> <b>337</b> (6100): 1303–1304.</a> <a rel="nofollow" class="external text" href="http://mtu.academia.edu/JoshuaPearce/Papers/1867941/Open_Source_Research_in_Sustainability">(open access)</a></span></li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text">Kubínová, S. and Šlégr, J., 2015. ChemDuino: Adapting Arduino for Low-Cost Chemical Measurements in Lecture and Laboratory. Journal of Chemical Education, 92(10), pp.1751-1753.</span></li>
+<li id="cite_note-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-33">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.instructables.com/id/ArduinoPhone/">ArduinoPhone</a>. Instructables.com (2013-07-17). Retrieved on 2013-08-04.</span></li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-34">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://web.media.mit.edu/~mellis/cellphone/">DIY Cellphone</a>, MIT</span></li>
+<li id="cite_note-35"><span class="mw-cite-backlink"><b><a href="#cite_ref-35">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.raspberrypi-spy.co.uk/2013/11/introducing-the-gertduino-add-on-board-for-raspberry-pi/">Raspberry Pi Spy</a>. Introducing the GertDuino Add-on Board for Raspberry Pi. Retrieved on 2014-11-09.</span></li>
+<li id="cite_note-36"><span class="mw-cite-backlink"><b><a href="#cite_ref-36">^</a></b></span> <span class="reference-text">Bas Wijnen, G. C. Anzalone and Joshua M. Pearce, Open-source mobile water quality testing platform. Journal of Water, Sanitation and Hygiene for Development, 4(3) pp. 532–537 (2014). doi:10.2166/washdev.2014.137 <a rel="nofollow" class="external text" href="https://www.academia.edu/8319858/Open-source_mobile_water_quality_testing_platform">open access</a></span></li>
+<li id="cite_note-37"><span class="mw-cite-backlink"><b><a href="#cite_ref-37">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.homofaciens.de/technics-machines-cnc-v2_en_navion.htm">CNC V2.0</a>. Homofaciens.de . Retrieved on 2016-02-24</span></li>
+<li id="cite_note-38"><span class="mw-cite-backlink"><b><a href="#cite_ref-38">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://darkbluebit.com/arduino/advanced-projects/robot-motor-control/">Arduino Robot – Motor Control</a>. DarkBlueBit.com. Retrieved on 2016-04-16</span></li>
+<li id="cite_note-AutoF7-45-39"><span class="mw-cite-backlink"><b><a href="#cite_ref-AutoF7-45_39-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://archive.aec.at/prix/#8052">"Ars Electronica Archiv"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-03-27</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.btitle=Ars+Electronica+Archiv&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Farchive.aec.at%2Fprix%2F%238052&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-40"><span class="mw-cite-backlink"><b><a href="#cite_ref-40">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://corp.sec.state.ma.us/CorpWeb/CorpSearch/CorpSummary.aspx?FEIN=262323943&amp;SEARCH_TYPE=1">"Business Entity Summary for Arduino LLC"</a>. <i>Mass.gov</i>. State of Massachusetts.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=Business+Entity+Summary+for+Arduino++LLC&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fcorp.sec.state.ma.us%2FCorpWeb%2FCorpSearch%2FCorpSummary.aspx%3FFEIN%3D262323943%26SEARCH_TYPE%3D1&amp;rft.jtitle=Mass.gov&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-41"><span class="mw-cite-backlink"><b><a href="#cite_ref-41">^</a></b></span> <span class="reference-text"><cite class="citation web">Allan, Alasdair (6 March 2015). <a rel="nofollow" class="external text" href="http://makezine.com/2015/03/06/arduino-vs-arduino/">"Arduino Wars: Group Splits, Competing Products Revealed?"</a>. <i>makezine.com</i>. Maker Media, Inc<span class="reference-accessdate">. Retrieved <span class="nowrap">21 April</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=Arduino+Wars%3A+Group+Splits%2C+Competing+Products+Revealed%3F&amp;rft.aufirst=Alasdair&amp;rft.aulast=Allan&amp;rft.date=2015-03-06&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmakezine.com%2F2015%2F03%2F06%2Farduino-vs-arduino%2F&amp;rft.jtitle=makezine.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-42"><span class="mw-cite-backlink"><b><a href="#cite_ref-42">^</a></b></span> <span class="reference-text"><cite class="citation web">Banzi, Massimo (19 March 2015). <a rel="nofollow" class="external text" href="http://makezine.com/2015/03/19/massimo-banzi-fighting-for-arduino/">"Massimo Banzi: Fighting for Arduino"</a>. <i>makezine.com</i>. Maker Media, Inc<span class="reference-accessdate">. Retrieved <span class="nowrap">21 April</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=Massimo+Banzi%3A+Fighting+for+Arduino&amp;rft.aufirst=Massimo&amp;rft.aulast=Banzi&amp;rft.date=2015-03-19&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmakezine.com%2F2015%2F03%2F19%2Fmassimo-banzi-fighting-for-arduino%2F&amp;rft.jtitle=makezine.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-43"><span class="mw-cite-backlink"><b><a href="#cite_ref-43">^</a></b></span> <span class="reference-text"><cite class="citation web">Williams, Elliot (28 March 2015). <a rel="nofollow" class="external text" href="http://hackaday.com/2015/03/28/arduino-srl-to-distributors-were-the-real-arduino/">"Arduino SRL to Distributors: "We’re the Real Arduino<span style="padding-right:0.2em;">"</span>"</a>. <i>Hackaday.com</i>. Hackaday.com<span class="reference-accessdate">. Retrieved <span class="nowrap">21 April</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=Arduino+SRL+to+Distributors%3A+%22We%99re+the+Real+Arduino%22&amp;rft.aufirst=Elliot&amp;rft.aulast=Williams&amp;rft.date=2015-03-28&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fhackaday.com%2F2015%2F03%2F28%2Farduino-srl-to-distributors-were-the-real-arduino%2F&amp;rft.jtitle=Hackaday.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-genuino-44"><span class="mw-cite-backlink"><b><a href="#cite_ref-genuino_44-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://makezine.com/2015/05/16/arduino-adafruit-manufacturing-genuino/">"Arduino Announces New Brand, Genuino, Manufacturing Partnership with Adafruit - Make:"</a>. <i>Make:</i><span class="reference-accessdate">. Retrieved <span class="nowrap">17 May</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArduino&amp;rft.atitle=Arduino+Announces+New+Brand%2C+Genuino%2C+Manufacturing+Partnership+with+Adafruit+-+Make%3A&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmakezine.com%2F2015%2F05%2F16%2Farduino-adafruit-manufacturing-genuino%2F&amp;rft.jtitle=Make%3A&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=14" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><i>Getting Started with Arduino</i>; Massimo Banzi, Michael Shiloh; 262 pages; 2014; <a href="https://en.wikipedia.org/wiki/Special:BookSources/1449363334" class="internal mw-magiclink-isbn">ISBN 1-4493-6333-4</a>.</li>
+<li><i>Make: Sensors</i>; Tero Karvinen, Kimmo Karvinen, Ville Valtokari; 400 pages; 2014; <a href="https://en.wikipedia.org/wiki/Special:BookSources/9781449368104" class="internal mw-magiclink-isbn">ISBN 978-1-4493-6810-4</a>.</li>
+<li><i>Arduino For Dummies</i>; John Nussey; 446 pages; 2013; <a href="https://en.wikipedia.org/wiki/Special:BookSources/9781118446379" class="internal mw-magiclink-isbn">ISBN 978-1118446379</a>.</li>
+<li><i>Programming Arduino Next Steps: Going Further with Sketches</i>; Simon Monk; 2013; <a href="https://en.wikipedia.org/wiki/Special:BookSources/9780071830256" class="internal mw-magiclink-isbn">ISBN 978-0071830256</a>.</li>
+<li><i>Exploring Arduino: Tools and Techniques for Engineering Wizardry</i>; Jeremy Blum; 384 pages; 2013; <a href="https://en.wikipedia.org/wiki/Special:BookSources/9781118549360" class="internal mw-magiclink-isbn">ISBN 978-1118549360</a>.</li>
+<li><i>Arduino Workshop: A Hands-On Introduction with 65 Projects</i>; John Boxall; 392 pages; 2013; <a href="https://en.wikipedia.org/wiki/Special:BookSources/9781593274481" class="internal mw-magiclink-isbn">ISBN 978-1593274481</a>.</li>
+<li><i>Beginning C for Arduino: Learn C Programming for the Arduino and Compatible Microcontrollers</i>; Jack Purdum; 280 pages; 2012; <a href="https://en.wikipedia.org/wiki/Special:BookSources/9781430247760" class="internal mw-magiclink-isbn">ISBN 978-1430247760</a>.</li>
+<li><i>Programming Arduino: Getting Started With Sketches</i>; Monk Simon; 162 pages; 2011; <a href="https://en.wikipedia.org/wiki/Special:BookSources/9780071784221" class="internal mw-magiclink-isbn">ISBN 978-0071784221</a>.</li>
+<li><i>Make: Electronics (Learning by Discovery)</i>; Charles Platt; 352 pages; 2009; <a href="https://en.wikipedia.org/wiki/Special:BookSources/9780596153748" class="internal mw-magiclink-isbn">ISBN 978-0596153748</a>.</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit&amp;section=15" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="http://commons.wikimedia.org/wiki/Category:Arduino" class="extiw" title="commons:Category:Arduino">Arduino</a></b></i>.</td>
+</tr>
+</table>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://arduino.cc/">Official website</a></span></span>, Arduino LLC</li>
+<li><a rel="nofollow" class="external text" href="http://www.imdb.com/title/tt1869268/"><i>Arduino The Documentary</i></a> at the <a href="https://en.wikipedia.org/wiki/IMDb" title="IMDb">Internet Movie Database</a>, <a rel="nofollow" class="external text" href="http://vimeo.com/18539129">Vimeo</a></li>
+<li><a rel="nofollow" class="external text" href="http://arduino.cc/en/Guide/Libraries">Installing additional Arduino libraries</a></li>
+<li><a rel="nofollow" class="external text" href="http://robodino.org/resources/arduino">Arduino cheat sheets</a></li>
+<li><a rel="nofollow" class="external text" href="http://codebender.cc/">An online platform and collaboration platform for Arduino users</a></li>
+<li>Arduino Board Pinout Diagrams: <a rel="nofollow" class="external text" href="http://arduino.cc/forum/index.php?/topic,132130.0.html">Due</a>, <a rel="nofollow" class="external text" href="https://secure.flickr.com/photos/28521811@N04/8469564216/sizes/l/in/photostream/">Esplora</a>, <a rel="nofollow" class="external text" href="https://secure.flickr.com/photos/28521811@N04/8466547410/sizes/l/in/photostream/">Leonardo</a>, <a rel="nofollow" class="external text" href="https://secure.flickr.com/photos/28521811@N04/8451024820/sizes/l/in/photostream/">Mega</a>, <a rel="nofollow" class="external text" href="https://secure.flickr.com/photos/28521811@N04/8471357492/sizes/l/in/photostream/">Micro</a>, <a rel="nofollow" class="external text" href="https://secure.flickr.com/photos/28521811@N04/8453583648/sizes/l/in/photostream/">Mini</a>, <a rel="nofollow" class="external text" href="http://pighixxx.com/nanopdf.pdf">Nano</a>, <a rel="nofollow" class="external text" href="https://secure.flickr.com/photos/28521811@N04/8449936925/sizes/l/in/photostream/">Uno</a></li>
+<li><a rel="nofollow" class="external text" href="http://i.imgur.com/yGRLPvL.jpg">Evolution tree for Arduino</a></li>
+<li><a rel="nofollow" class="external text" href="http://twit.tv/shows/triangulation/episodes/110/">Massimo Banzi</a> interviewed on the TV show Triangulation on the <a href="https://en.wikipedia.org/wiki/TWiT.tv" title="TWiT.tv">TWiT.tv</a> network</li>
+<li><a rel="nofollow" class="external text" href="http://twit.tv/show/floss-weekly/61/">Massimo Banzi</a> interviewed on the TV show FLOSS weekly on the <a href="https://en.wikipedia.org/wiki/TWiT.tv" title="TWiT.tv">TWiT.tv</a> network</li>
+<li><a rel="nofollow" class="external text" href="https://www.unitedstatescourts.org/federal/mad/167131/">Arduino, LLC v. Arduino S.R.L. et al</a>; Federal district court docket from the United States Courts Archive</li>
+<li><a rel="nofollow" class="external text" href="http://download.intel.com/support/edison/sb/edisonarduino_hg_331191007.pdf">Intel Edison Kit for Arduino (Hardware Guide)</a>, <a href="https://en.wikipedia.org/wiki/Intel" title="Intel">Intel</a>, February 2015</li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:Single-board_computer" title="Template:Single-board computer"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:Single-board_computer" title="Template talk:Single-board computer"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Single-board_computer&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="https://en.wikipedia.org/wiki/Single-board_computer" title="Single-board computer">Single-board computer</a> &amp; <a href="https://en.wikipedia.org/wiki/Single-board_microcontroller" title="Single-board microcontroller">Single-board microcontroller</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Comparison_of_single-board_computers" title="Comparison of single-board computers">Devices</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">Arduino</strong></li>
+<li><a href="https://en.wikipedia.org/wiki/Arndale_Board" title="Arndale Board">Arndale Board</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Banana_Pi" title="Banana Pi">Banana Pi</a></li>
+<li><a href="https://en.wikipedia.org/wiki/BeagleBoard" title="BeagleBoard">BeagleBoard</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cotton_Candy_(single-board_computer)" title="Cotton Candy (single-board computer)">Cotton Candy</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CHIP_(computer)" title="CHIP (computer)">C.H.I.P.</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cubieboard" title="Cubieboard">Cubieboard</a></li>
+<li><a href="https://en.wikipedia.org/w/index.php?title=Dragonboard&amp;action=edit&amp;redlink=1" class="new" title="Dragonboard (page does not exist)">Dragonboard</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Intel_Edison" title="Intel Edison">Edison</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Intel_Galileo" title="Intel Galileo">Galileo</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gumstix" title="Gumstix">Gumstix</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hawkboard" title="Hawkboard">Hawkboard</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IGEPv2" title="IGEPv2">IGEPv2</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jetson_TK1" title="Jetson TK1" class="mw-redirect">Jetson TK1</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jetson_TX1" title="Jetson TX1" class="mw-redirect">Jetson TX1</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Odroid" title="Odroid" class="mw-redirect">Odroid</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OLinuXino" title="OLinuXino">OLinuXino</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PandaBoard" title="PandaBoard">PandaBoard</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Adapteva#Parallella_project" title="Adapteva">Parallella</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rascal_(single-board_computer)" title="Rascal (single-board computer)">Rascal</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Raspberry_Pi" title="Raspberry Pi">Raspberry Pi</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Snowball_(single-board_computer)" title="Snowball (single-board computer)">Snowball</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tiva-C_LaunchPad" title="Tiva-C LaunchPad">Tiva-C LaunchPad</a></li>
+<li><a href="https://en.wikipedia.org/wiki/UDOO" title="UDOO">UDOO</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/System_on_a_chip" title="System on a chip">SoCs</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="https://en.wikipedia.org/wiki/ARM_architecture" title="ARM architecture">ARM</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Allwinner_Technology#SoC_.28System_on_Chip.29" title="Allwinner Technology">Allwinner</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Apple_(system_on_chip)" title="Apple (system on chip)" class="mw-redirect">Ax</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Exynos_(system_on_chip)" title="Exynos (system on chip)" class="mw-redirect">Exynos</a></li>
+<li><a href="https://en.wikipedia.org/wiki/I.MX" title="I.MX">i.MX</a></li>
+<li><a href="https://en.wikipedia.org/wiki/HiSilicon#K3V3" title="HiSilicon">K3V3</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MediaTek#Smartphone_application_.26_modem_processors_.2F_SoCs" title="MediaTek">MT</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nomadik" title="Nomadik">Nomadik</a></li>
+<li><a href="https://en.wikipedia.org/wiki/NovaThor" title="NovaThor">NovaThor</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OMAP" title="OMAP">OMAP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rockchip" title="Rockchip">Rockchip</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Qualcomm_Snapdragon" title="Qualcomm Snapdragon">Qualcomm Snapdragon</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tegra" title="Tegra">Tegra</a></li>
+<li><a href="https://en.wikipedia.org/wiki/WonderMedia#Products" title="WonderMedia">WonderMedia</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="https://en.wikipedia.org/wiki/MIPS_instruction_set" title="MIPS instruction set">MIPS</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Ingenic#XBurst1-based_SoCs" title="Ingenic" class="mw-redirect">Jz</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="https://en.wikipedia.org/wiki/X86" title="X86">x86</a>/<a href="https://en.wikipedia.org/wiki/X86-64" title="X86-64">x86-64</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Atom_(system_on_chip)" title="Atom (system on chip)">Atom</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jaguar_(microarchitecture)" title="Jaguar (microarchitecture)">Jaguar</a>-based</li>
+<li><a href="https://en.wikipedia.org/wiki/Puma_(microarchitecture)" title="Puma (microarchitecture)">Puma</a>-based</li>
+<li><a href="https://en.wikipedia.org/wiki/Intel_Quark" title="Intel Quark">Quark</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Software</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Apache_Hadoop" title="Apache Hadoop">Apache Hadoop</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Linaro" title="Linaro">Linaro</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div><b><img alt="List-Class article" src="http://upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <a href="https://en.wikipedia.org/wiki/Comparison_of_single-board_computers" title="Comparison of single-board computers">Comparison of single-board computers</a></b></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:Microcontrollers" title="Template:Microcontrollers"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:Microcontrollers" title="Template talk:Microcontrollers"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Microcontrollers&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="https://en.wikipedia.org/wiki/Microcontroller" title="Microcontroller">Microcontrollers</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Main</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Single-board_microcontroller" title="Single-board microcontroller">Single-board microcontroller</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Special_function_register" title="Special function register">Special function register</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Architectures</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Intel_MCS-51" title="Intel MCS-51">8051</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ARM_architecture" title="ARM architecture">ARM</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Atmel_AVR" title="Atmel AVR">AVR</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PIC_microcontroller" title="PIC microcontroller">PIC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/C166" title="C166" class="mw-redirect">C166</a></li>
+<li><a href="https://en.wikipedia.org/wiki/TriCore" title="TriCore" class="mw-redirect">TriCore</a></li>
+<li><a href="https://en.wikipedia.org/wiki/FR-V" title="FR-V" class="mw-redirect">FR-V</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Motorola_6800" title="Motorola 6800">6800</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Families</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">4-bit</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Toshiba_TLCS" title="Toshiba TLCS">TLCS-47</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">8-bit</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Atmel_AVR" title="Atmel AVR">AVR</a></li>
+<li>PIC<a href="https://en.wikipedia.org/wiki/PIC_microcontroller#PIC10_and_PIC12" title="PIC microcontroller">10/12</a>/<a href="https://en.wikipedia.org/wiki/PIC_microcontroller#PIC16" title="PIC microcontroller">16</a>/<a href="https://en.wikipedia.org/wiki/PIC_microcontroller#PIC17" title="PIC microcontroller">17</a>/<a href="https://en.wikipedia.org/wiki/PIC_microcontroller#PIC18" title="PIC microcontroller">18</a></li>
+<li><a href="https://en.wikipedia.org/wiki/COP8" title="COP8">COP8</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Intel_MCS-48" title="Intel MCS-48">MCS-48</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Intel_MCS-51" title="Intel MCS-51">MCS-51</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Zilog_Z8" title="Zilog Z8">Z8</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Zilog_eZ80" title="Zilog eZ80">eZ80</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Freescale_68HC08" title="Freescale 68HC08">HC08</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Freescale_68HC11" title="Freescale 68HC11">HC11</a></li>
+<li><a href="https://en.wikipedia.org/wiki/H8_Family" title="H8 Family">H8</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Toshiba_TLCS" title="Toshiba TLCS">TLCS-870</a></li>
+<li><a href="https://en.wikipedia.org/wiki/XC800_family" title="XC800 family">XC800</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">16-bit</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/C166_family" title="C166 family">C166</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CompactRISC" title="CompactRISC">CR16/CR16C</a></li>
+<li><a href="https://en.wikipedia.org/wiki/H8_Family" title="H8 Family">H8S</a></li>
+<li><a href="https://en.wikipedia.org/wiki/TI_MSP430" title="TI MSP430">MSP430</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PIC_microcontroller#PIC24_and_dsPIC" title="PIC microcontroller">PIC24/dsPIC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/R8C" title="R8C">R8C</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Toshiba_TLCS" title="Toshiba TLCS">TLCS-900</a></li>
+<li><a href="https://en.wikipedia.org/wiki/XC_2000_family" title="XC 2000 family">XC 2000</a></li>
+<li><a href="https://en.wikipedia.org/wiki/XE166_family" title="XE166 family">XE166</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">32-bit</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="https://en.wikipedia.org/wiki/AMD_Am29000" title="AMD Am29000">Am29000</a></i></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_applications_of_ARM_cores" title="List of applications of ARM cores">ARM families</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AVR32" title="AVR32">AVR32</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Freescale_ColdFire" title="Freescale ColdFire">ColdFire</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CompactRISC" title="CompactRISC">CRX</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fujitsu_FR" title="Fujitsu FR">FR</a></li>
+<li><a href="https://en.wikipedia.org/wiki/FR-V" title="FR-V" class="mw-redirect">FR-V</a></li>
+<li><a href="https://en.wikipedia.org/wiki/H8_Family" title="H8 Family">H8SX</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MPC5xx" title="MPC5xx">MPC5xx</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PIC_microcontroller#PIC32MX" title="PIC microcontroller">PIC32</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PowerPC" title="PowerPC">PowerPC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Toshiba_TLCS" title="Toshiba TLCS">TLCS-900</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Infineon_TriCore" title="Infineon TriCore">TriCore</a></li>
+<li><a href="https://en.wikipedia.org/wiki/V850" title="V850">V850</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Interfaces</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Programming</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/In-circuit_serial_programming" title="In-circuit serial programming" class="mw-redirect">In-circuit serial programming</a> (ICSP)</li>
+<li><a href="https://en.wikipedia.org/wiki/In-system_programming" title="In-system programming">In-system programming</a> (ISP)</li>
+<li><a href="https://en.wikipedia.org/wiki/Atmel_AVR#PDI" title="Atmel AVR">Program and Debug Interface</a> (PDI)</li>
+<li><a href="https://en.wikipedia.org/wiki/Atmel_AVR#High_voltage_serial" title="Atmel AVR">High-voltage serial programming</a> (HVSP)</li>
+<li><a href="https://en.wikipedia.org/wiki/Atmel_AVR#High_voltage_parallel" title="Atmel AVR">High voltage parallel programming</a> (HVPP)</li>
+<li><a href="https://en.wikipedia.org/wiki/Atmel_AVR#Bootloader" title="Atmel AVR">Bootloader</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Atmel_AVR#ROM" title="Atmel AVR">ROM</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Atmel_AVR#aWire" title="Atmel AVR">aWire</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Debugging</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/DebugWIRE" title="DebugWIRE">debugWIRE</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Joint_Test_Action_Group" title="Joint Test Action Group" class="mw-redirect">Joint Test Action Group</a> (JTAG)</li>
+<li><a href="https://en.wikipedia.org/wiki/PIC_microcontroller#In-circuit_debugging" title="PIC microcontroller">In-circuit debugging</a> (ICD)</li>
+<li><a href="https://en.wikipedia.org/wiki/In-circuit_emulator" title="In-circuit emulator" class="mw-redirect">In-circuit emulator</a> (ICE)</li>
+<li><a href="https://en.wikipedia.org/wiki/In-target_probe" title="In-target probe">In-target probe</a> (ITP)</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Simulators</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Gpsim" title="Gpsim">gpsim</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Lists</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/List_of_common_microcontrollers" title="List of common microcontrollers">Common microcontrollers</a></li>
+<li>By manufacturer
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Freescale_products#Microcontrollers" title="List of Freescale products">Freescale</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Intel_microprocessor#Microcontrollers" title="Intel microprocessor" class="mw-redirect">Intel</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">See also</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Embedded_system" title="Embedded system">Embedded system</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Programmable_logic_controller" title="Programmable logic controller">Programmable logic controller</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:Ambient_intelligence" title="Template:Ambient intelligence"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:Ambient_intelligence" title="Template talk:Ambient intelligence"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Ambient_intelligence&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="https://en.wikipedia.org/wiki/Ambient_intelligence" title="Ambient intelligence">Ambient intelligence</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Concepts</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Context_awareness" title="Context awareness">Context awareness</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Internet_of_Things" title="Internet of Things">Internet of Things</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Object_hyperlinking" title="Object hyperlinking">Object hyperlinking</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Profiling_(information_science)" title="Profiling (information science)">Profiling</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Spime" title="Spime">Spime</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Supranet" title="Supranet">Supranet</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ubiquitous_computing" title="Ubiquitous computing">Ubiquitous computing</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Web_of_Things" title="Web of Things">Web of Things</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Wireless_sensor_network" title="Wireless sensor network">Wireless sensor networks</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Technologies</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/6LoWPAN" title="6LoWPAN">6LoWPAN</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ANT+" title="ANT+">ANT+</a></li>
+<li><a href="https://en.wikipedia.org/wiki/DASH7" title="DASH7">DASH7</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IEEE_802.15.4" title="IEEE 802.15.4">IEEE 802.15.4</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Internet_0" title="Internet 0">Internet 0</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Machine_to_machine" title="Machine to machine">Machine to machine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Radio-frequency_identification" title="Radio-frequency identification">Radio-frequency identification</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Smartdust" title="Smartdust">Smartdust</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tera-play" title="Tera-play">Tera-play</a></li>
+<li><a href="https://en.wikipedia.org/wiki/XBee" title="XBee">XBee</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Platforms</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">Arduino</strong></li>
+<li><a href="https://en.wikipedia.org/wiki/Contiki" title="Contiki">Contiki</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Electric_Imp" title="Electric Imp">Electric Imp</a></li>
+<li><a href="https://en.wikipedia.org/wiki/.NET_Gadgeteer" title=".NET Gadgeteer">Gadgeteer</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IoBridge" title="IoBridge">ioBridge</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Netduino" title="Netduino">Netduino</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Raspberry_Pi" title="Raspberry Pi">Raspberry Pi</a></li>
+<li><a href="https://en.wikipedia.org/wiki/TinyOS" title="TinyOS">TinyOS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Wiring_(development_platform)" title="Wiring (development platform)">Wiring</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Xively" title="Xively">Xively</a></li>
+<li><a href="https://en.wikipedia.org/wiki/NodeMCU" title="NodeMCU">NodeMCU</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Applications</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Ambient_device" title="Ambient device">Ambient device</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CeNSE" title="CeNSE">CeNSE</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Connected_car" title="Connected car">Connected car</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Home_automation" title="Home automation">Home automation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/HomeOS" title="HomeOS">HomeOS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Internet_refrigerator" title="Internet refrigerator">Internet refrigerator</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nabaztag" title="Nabaztag">Nabaztag</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Smart_city" title="Smart city">Smart city</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Smart_TV" title="Smart TV">Smart TV</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Smarter_Planet" title="Smarter Planet">Smarter Planet</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Pioneers</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Kevin_Ashton" title="Kevin Ashton">Kevin Ashton</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Adam_Dunkels" title="Adam Dunkels">Adam Dunkels</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Stefano_Marzano" title="Stefano Marzano">Stefano Marzano</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Don_Norman" title="Don Norman">Don Norman</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Roel_Pieper" title="Roel Pieper">Roel Pieper</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Josef_Preishuber-Pflügl" title="Josef Preishuber-Pflügl">Josef Preishuber-Pflügl</a></li>
+<li><a href="https://en.wikipedia.org/wiki/John_Seely_Brown" title="John Seely Brown">John Seely Brown</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bruce_Sterling" title="Bruce Sterling">Bruce Sterling</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mark_Weiser" title="Mark Weiser">Mark Weiser</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Ambient_Devices" title="Ambient Devices">Ambient Devices</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AmbieSense" title="AmbieSense">AmbieSense</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Framework_Programmes_for_Research_and_Technological_Development" title="Framework Programmes for Research and Technological Development">Ebbits project</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IPSO_Alliance" title="IPSO Alliance">IPSO Alliance</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1003
+Cached time: 20160512233845
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.964 seconds
+Real time usage: 1.242 seconds
+Preprocessor visited node count: 4322/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 127065/2097152 bytes
+Template argument size: 6434/2097152 bytes
+Highest expansion depth: 19/40
+Expensive parser function count: 5/500
+Lua time usage: 0.391/10.000 seconds
+Lua memory usage: 6.55 MB/50 MB
+Number of Wikibase entities loaded: 1-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1023.797      1 - -total
+ 29.85%  305.647      2 - Template:Reflist
+ 19.49%  199.548     28 - Template:Cite_web
+ 14.77%  151.171      6 - Template:Navbox
+ 12.11%  123.986      2 - Template:Infobox
+  7.16%   73.322      1 - Template:Infobox_information_appliance
+  6.24%   63.927      1 - Template:Update
+  6.09%   62.379      1 - Template:Infobox_software
+  5.65%   57.809      2 - Template:Ambox
+  5.41%   55.383      1 - Template:Single-board_computer
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:5389424-0!*!0!!en!4!* and timestamp 20160512233844 and revision id 719319763
+ -->
+<noscript><img src="http://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;oldid=719319763">https://en.wikipedia.org/w/index.php?title=Arduino&amp;oldid=719319763</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Arduino" title="Category:Arduino">Arduino</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Open_hardware_electronic_devices" title="Category:Open hardware electronic devices">Open hardware electronic devices</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Microcontrollers" title="Category:Microcontrollers">Microcontrollers</a></li><li><a href="https://en.wikipedia.org/wiki/Category:2005_introductions" title="Category:2005 introductions">2005 introductions</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Internet_of_Things" title="Category:Internet of Things">Internet of Things</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Robotics_hardware" title="Category:Robotics hardware">Robotics hardware</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_obsolete_information_from_October_2015" title="Category:Articles with obsolete information from October 2015">Articles with obsolete information from October 2015</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_Wikipedia_articles_in_need_of_updating" title="Category:All Wikipedia articles in need of updating">All Wikipedia articles in need of updating</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_needing_additional_references_from_May_2013" title="Category:Articles needing additional references from May 2013">Articles needing additional references from May 2013</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_containing_potentially_dated_statements_from_2016" title="Category:Articles containing potentially dated statements from 2016">Articles containing potentially dated statements from 2016</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_unsourced_statements_from_September_2015" title="Category:Articles with unsourced statements from September 2015">Articles with unsourced statements from September 2015</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Commons_category_with_local_link_same_as_on_Wikidata" title="Category:Commons category with local link same as on Wikidata">Commons category with local link same as on Wikidata</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Official_website_different_in_Wikidata_and_Wikipedia" title="Category:Official website different in Wikidata and Wikipedia">Official website different in Wikidata and Wikipedia</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://en.wikipedia.org/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://en.wikipedia.org/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Arduino&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Arduino" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="https://en.wikipedia.org/wiki/Arduino"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="https://en.wikipedia.org/wiki/Talk:Arduino"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="https://en.wikipedia.org/wiki/Arduino" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://en.wikipedia.org/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://en.wikipedia.org/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="https://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="https://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="https://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="https://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="https://en.wikipedia.org/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="http://shop.wikimedia.org/" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="https://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="https://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Arduino" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Arduino" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;oldid=719319763" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q175957" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&amp;page=Arduino&amp;id=719319763" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="https://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Arduino">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="https://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Arduino&amp;returnto=Arduino&amp;oldid=719319763&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="https://en.wikipedia.org/w/index.php?title=Arduino&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Arduino" hreflang="en">Wikimedia Commons</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-als"><a href="http://als.wikipedia.org/wiki/Arduino-Plattform" title="Arduino-Plattform – Alemannisch" lang="als" hreflang="als">Alemannisch</a></li><li class="interlanguage-link interwiki-ar"><a href="http://ar.wikipedia.org/wiki/آردوينو" title="آردوينو – Arabic" lang="ar" hreflang="ar">العربية</a></li><li class="interlanguage-link interwiki-as"><a href="http://as.wikipedia.org/wiki/আৰ্ডুইন%27" title="আৰ্ডুইন' – Assamese" lang="as" hreflang="as">অসমীয়া</a></li><li class="interlanguage-link interwiki-az"><a href="http://az.wikipedia.org/wiki/Arduino" title="Arduino – Azerbaijani" lang="az" hreflang="az">Azərbaycanca</a></li><li class="interlanguage-link interwiki-bn"><a href="http://bn.wikipedia.org/wiki/অরড্যুইনো" title="অরড্যুইনো – Bengali" lang="bn" hreflang="bn">বাংলা</a></li><li class="interlanguage-link interwiki-be"><a href="http://be.wikipedia.org/wiki/Arduino" title="Arduino – Belarusian" lang="be" hreflang="be">Беларуская</a></li><li class="interlanguage-link interwiki-bg"><a href="http://bg.wikipedia.org/wiki/Ардуино" title="Ардуино – Bulgarian" lang="bg" hreflang="bg">Български</a></li><li class="interlanguage-link interwiki-ca"><a href="http://ca.wikipedia.org/wiki/Arduino" title="Arduino – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Arduino" title="Arduino – Czech" lang="cs" hreflang="cs">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="http://da.wikipedia.org/wiki/Arduino" title="Arduino – Danish" lang="da" hreflang="da">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="http://de.wikipedia.org/wiki/Arduino_(Plattform)" title="Arduino (Plattform) – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="http://et.wikipedia.org/wiki/Arduino" title="Arduino – Estonian" lang="et" hreflang="et">Eesti</a></li><li class="interlanguage-link interwiki-el"><a href="http://el.wikipedia.org/wiki/Arduino" title="Arduino – Greek" lang="el" hreflang="el">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="http://es.wikipedia.org/wiki/Arduino" title="Arduino – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="http://eo.wikipedia.org/wiki/Arduino" title="Arduino – Esperanto" lang="eo" hreflang="eo">Esperanto</a></li><li class="interlanguage-link interwiki-eu"><a href="http://eu.wikipedia.org/wiki/Arduino" title="Arduino – Basque" lang="eu" hreflang="eu">Euskara</a></li><li class="interlanguage-link interwiki-fa"><a href="http://fa.wikipedia.org/wiki/آردوینو" title="آردوینو – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Arduino" title="Arduino – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-gl"><a href="http://gl.wikipedia.org/wiki/Arduino" title="Arduino – Galician" lang="gl" hreflang="gl">Galego</a></li><li class="interlanguage-link interwiki-ko"><a href="http://ko.wikipedia.org/wiki/아두이노" title="아두이노 – Korean" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-hr"><a href="http://hr.wikipedia.org/wiki/Arduino" title="Arduino – Croatian" lang="hr" hreflang="hr">Hrvatski</a></li><li class="interlanguage-link interwiki-id"><a href="http://id.wikipedia.org/wiki/Arduino" title="Arduino – Indonesian" lang="id" hreflang="id">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-is"><a href="http://is.wikipedia.org/wiki/Arduino" title="Arduino – Icelandic" lang="is" hreflang="is">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="http://it.wikipedia.org/wiki/Arduino_(hardware)" title="Arduino (hardware) – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="http://he.wikipedia.org/wiki/ארדואינו" title="ארדואינו – Hebrew" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-hu"><a href="http://hu.wikipedia.org/wiki/Arduino" title="Arduino – Hungarian" lang="hu" hreflang="hu">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Arduino_(computerplatform)" title="Arduino (computerplatform) – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="http://ja.wikipedia.org/wiki/Arduino" title="Arduino – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="http://no.wikipedia.org/wiki/Arduino" title="Arduino – Norwegian" lang="no" hreflang="no">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Arduino" title="Arduino – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt badge-Q17437798 badge-goodarticle" title="good article"><a href="http://pt.wikipedia.org/wiki/Arduino" title="Arduino – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="http://ro.wikipedia.org/wiki/Arduino" title="Arduino – Romanian" lang="ro" hreflang="ro">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="http://ru.wikipedia.org/wiki/Arduino" title="Arduino – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-sq"><a href="http://sq.wikipedia.org/wiki/Arduino" title="Arduino – Albanian" lang="sq" hreflang="sq">Shqip</a></li><li class="interlanguage-link interwiki-simple"><a href="http://simple.wikipedia.org/wiki/Arduino" title="Arduino – Simple English" lang="simple" hreflang="simple">Simple English</a></li><li class="interlanguage-link interwiki-sk"><a href="http://sk.wikipedia.org/wiki/Arduino" title="Arduino – Slovak" lang="sk" hreflang="sk">Slovenčina</a></li><li class="interlanguage-link interwiki-sl"><a href="http://sl.wikipedia.org/wiki/Arduino" title="Arduino – Slovenian" lang="sl" hreflang="sl">Slovenščina</a></li><li class="interlanguage-link interwiki-sr"><a href="http://sr.wikipedia.org/wiki/Arduino" title="Arduino – Serbian" lang="sr" hreflang="sr">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Arduino" title="Arduino – Finnish" lang="fi" hreflang="fi">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Arduino" title="Arduino – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-ta"><a href="http://ta.wikipedia.org/wiki/ஆர்டுயீனோ" title="ஆர்டுயீனோ – Tamil" lang="ta" hreflang="ta">தமிழ்</a></li><li class="interlanguage-link interwiki-te"><a href="http://te.wikipedia.org/wiki/అర్దుఇనొ" title="అర్దుఇనొ – Telugu" lang="te" hreflang="te">తెలుగు</a></li><li class="interlanguage-link interwiki-tr"><a href="http://tr.wikipedia.org/wiki/Arduino" title="Arduino – Turkish" lang="tr" hreflang="tr">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="http://uk.wikipedia.org/wiki/Arduino" title="Arduino – Ukrainian" lang="uk" hreflang="uk">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="http://vi.wikipedia.org/wiki/Arduino" title="Arduino – Vietnamese" lang="vi" hreflang="vi">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="http://zh.wikipedia.org/wiki/Arduino" title="Arduino – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q175957#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 8 May 2016, at 23:54.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="http://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="http://en.m.wikipedia.org/w/index.php?title=Arduino&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="https://en.wikipedia.org/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="http://www.mediawiki.org/"><img src="https://en.wikipedia.org/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.eventLogging.subscriber","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":95,"wgHostname":"mw1092"});});</script>
+	</body>
+
+<!-- Mirrored from en.wikipedia.org/wiki/Arduino by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:27 GMT -->
+</html>

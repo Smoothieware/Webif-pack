@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    
+<!-- Mirrored from www.onlfait.ch/CCDCC.js/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:15 GMT -->
+<head>
+        <meta charset="utf-8">
+        <title>CCDCC.js - Demo</title>
+        <link rel="stylesheet" href="http://www.onlfait.ch/CCDCC.js/css/reset.css">
+        <link rel="stylesheet" href="http://www.onlfait.ch/CCDCC.js/css/ccdcc.css">
+        <link rel="stylesheet" href="http://www.onlfait.ch/CCDCC.js/css/font-awesome.min.css">
+        <script type="text/javascript" src="http://www.onlfait.ch/CCDCC.js/js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="http://www.onlfait.ch/CCDCC.js/js/Blob.js"></script>
+        <script type="text/javascript" src="http://www.onlfait.ch/CCDCC.js/js/FileSaver.js"></script>
+        <script type="text/javascript" src="http://www.onlfait.ch/CCDCC.js/js/ccdcc/ccdcc.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <h1 id="title">CCDCC.js - Demo</h1>
+            <h4>Cambam Canned Drilling Cycles Converter</h4>
+            <div id="ccdcc">
+                <div id="usage" class="box">
+                    Copy/Past/Edit your G-Code on the input box and press convert.<br />
+                    <span class="small __file_support">You can also select a file on your HD,
+                    or drag and drop directly the file on the input box.</span><br />
+                    Enjoy :)
+                </div>
+                <div id="inputBox" class="box">
+                    <label id="inputLabel" for="input">Input</label>
+                    <span id="inputInfos">
+                        <span class="info">chars = <span id="input_chars">n/a</span></span>
+                        <span class="info">lines = <span id="input_lines">n/a</span></span>
+                        <span class="info">cycles = <span id="cycles_count">n/a</span></span>
+                        <span class="info">holes = <span id="holes_count">n/a</span></span>
+                    </span>
+                    <span id="inputControls">
+                        <input type="file" id="inputFile" name="inputFile" />
+                        <button id="openFileButton" class="__file_support">open file</button>
+                        <button id="convertButton">convert</button>
+                    </span>
+                    <textarea id="input" name="input"></textarea>
+                </div>
+                <div id="outputBox" class="box">
+                    <label id="outputLabel" for="output">Output</label>
+                    <span id="outputInfos">
+                        <span class="info">chars = <span id="output_chars">n/a</span></span>
+                        <span class="info">lines = <span id="output_lines">n/a</span></span>
+                        <label for="dwell">dwell in
+                            <select id="dwell" name="dwell">
+                                <option value="S">seconds</option>
+                                <option value="P">millis</option>
+                            </select>
+                        </label>
+                        <label for="clean">
+                            <input type="checkbox" id="clean" name="clean" value="true" checked="checked" />
+                            remove duplicate line
+                        </label>
+                        <button id="convertButton">convert</button>
+                        <button id="saveFileButton" class="__file_saver_support">save file</button>
+                    </span>
+                    <textarea id="output" name="output"></textarea>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://www.onlfait.ch/CCDCC.js/js/main.js"></script>
+        <a href="https://github.com/lautr3k/CCDCC.js"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+    </body>
+
+<!-- Mirrored from www.onlfait.ch/CCDCC.js/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:15 GMT -->
+</html>

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from en.wikipedia.org/wiki/Hardware_description_language by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Hardware description language - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Hardware_description_language","wgTitle":"Hardware description language","wgCurRevisionId":707135611,"wgRevisionId":707135611,"wgArticleId":74554,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from January 2013","All articles needing additional references","Wikipedia articles that are too technical from April 2014","All articles that are too technical","Articles needing expert attention from April 2014","All articles needing expert attention","All articles with unsourced statements","Articles with unsourced statements from July 2010","Vague or ambiguous time from April 2014","Articles with unsourced statements from April 2014","Wikipedia articles with GND identifiers","Hardware description languages","Technical communication","Logic design","Programming language classification"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Hardware_description_language","wgRelevantArticleId":74554,"wgRequestId":"VzXBrwpAMFIAAFzxQP0AAAAT","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSAcceptLanguageList":["en","*"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCentralAuthMobileDomain":false,"wgWikibaseItemId":"Q173341","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","ext.centralNotice.bannerController","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.pygments%2CwikimediaBadges%7Cext.tmh.thumbnail.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.raggett%2CsectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector"/>
+<script async="" src="https://en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.28.0-wmf.1"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="https://en.wikipedia.org/wiki/android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Hardware_description_language"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit"/>
+<link rel="apple-touch-icon" href="https://en.wikipedia.org/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="https://en.wikipedia.org/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Hardware_description_language"/>
+<link rel="dns-prefetch" href="http://meta.wikimedia.org/" />
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Hardware_description_language rootpage-Hardware_description_language skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Hardware description language</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="metadata plainlinks ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<table class="mw-collapsible" style="width:95%; background:transparent;" role="presentation">
+<tr>
+<th style="text-align:left; padding:0.2em 2px 0.2em 0;">This article has multiple issues. <span style="font-weight: normal;">Please help <b><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit">improve it</a></b> (<a href="https://en.wikipedia.org/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">see how</a>) or discuss these issues on the <b><a href="https://en.wikipedia.org/wiki/Talk:Hardware_description_language" title="Talk:Hardware description language">talk page</a></b>.</span></th>
+</tr>
+<tr>
+<td>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="https://en.wikipedia.org/wiki/File:Question_book-new.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="262" data-file-height="204" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="https://en.wikipedia.org/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit">improve this article</a> by <a href="https://en.wikipedia.org/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(January 2013)</i></small> <small class="hide-when-compact"><i>(<a href="https://en.wikipedia.org/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+<table class="metadata plainlinks ambox ambox-style ambox-technical" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>may be too <a href="http://en.wiktionary.org/wiki/technical#Adjective" class="extiw" title="wikt:technical">technical</a> for most readers to understand</b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit">improve</a> this article to <a href="https://en.wikipedia.org/wiki/Wikipedia:Make_technical_articles_understandable" title="Wikipedia:Make technical articles understandable">make it understandable to non-experts</a>, without removing the technical details. The <a href="https://en.wikipedia.org/wiki/Talk:Hardware_description_language" title="Talk:Hardware description language">talk page</a> may contain suggestions.</span> <small><i>(April 2014)</i></small></span></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<small class="hide-when-compact"><i>(<a href="https://en.wikipedia.org/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></td>
+</tr>
+</table>
+<p>In <a href="https://en.wikipedia.org/wiki/Electronics" title="Electronics">electronics</a>, a <b>hardware description language</b> (<b>HDL</b>) is a specialized <a href="https://en.wikipedia.org/wiki/Computer_language" title="Computer language">computer language</a> used to describe the structure and behavior of <a href="https://en.wikipedia.org/wiki/Electronic_circuit" title="Electronic circuit">electronic circuits</a>, and most commonly, <a href="https://en.wikipedia.org/wiki/Digital_logic" title="Digital logic" class="mw-redirect">digital logic</a> circuits.</p>
+<p>A hardware description language enables a precise, <a href="https://en.wikipedia.org/wiki/Formal_language" title="Formal language">formal</a> description of an electronic circuit that allows for the automated analysis and <a href="https://en.wikipedia.org/wiki/Electronic_circuit_simulation" title="Electronic circuit simulation">simulation</a> of an electronic circuit. It also allows for the <a href="https://en.wikipedia.org/wiki/Logic_synthesis" title="Logic synthesis">synthesis</a> of a HDL description into a <a href="https://en.wikipedia.org/wiki/Netlist" title="Netlist">netlist</a> (a specification of physical electronic components and how they are connected together), which can then be <a href="https://en.wikipedia.org/wiki/Place_and_route" title="Place and route">placed and routed</a> to produce the <a href="https://en.wikipedia.org/wiki/Mask_set" title="Mask set">set of masks</a> used to create an <a href="https://en.wikipedia.org/wiki/Integrated_circuit" title="Integrated circuit">integrated circuit</a>.</p>
+<p>A hardware description language looks much like a programming language such as <a href="https://en.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>; it is a textual description consisting of expressions, statements and control structures. One important difference between most programming languages and HDLs is that HDLs explicitly include the notion of time.</p>
+<p>HDLs form an integral part of <a href="https://en.wikipedia.org/wiki/Electronic_design_automation" title="Electronic design automation">electronic design automation</a> (EDA) systems, especially for complex circuits, such as <a href="https://en.wikipedia.org/wiki/Application-specific_integrated_circuit" title="Application-specific integrated circuit">application-specific integrated circuits</a>, <a href="https://en.wikipedia.org/wiki/Microprocessor" title="Microprocessor">microprocessors</a>, and <a href="https://en.wikipedia.org/wiki/Programmable_logic_device" title="Programmable logic device">programmable logic devices</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Motivation"><span class="tocnumber">1</span> <span class="toctext">Motivation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Structure_of_HDL"><span class="tocnumber">2</span> <span class="toctext">Structure of HDL</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Comparison_with_control-flow_languages"><span class="tocnumber">2.1</span> <span class="toctext">Comparison with control-flow languages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Design_using_HDL"><span class="tocnumber">4</span> <span class="toctext">Design using HDL</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Simulating_and_debugging_HDL_code"><span class="tocnumber">5</span> <span class="toctext">Simulating and debugging HDL code</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Design_verification_with_HDLs"><span class="tocnumber">6</span> <span class="toctext">Design verification with HDLs</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#HDL_and_programming_languages"><span class="tocnumber">7</span> <span class="toctext">HDL and programming languages</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#High-level_synthesis"><span class="tocnumber">8</span> <span class="toctext">High-level synthesis</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Examples_of_HDLs"><span class="tocnumber">9</span> <span class="toctext">Examples of HDLs</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#HDLs_for_analog_circuit_design"><span class="tocnumber">9.1</span> <span class="toctext">HDLs for analog circuit design</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#HDLs_for_digital_circuit_design"><span class="tocnumber">9.2</span> <span class="toctext">HDLs for digital circuit design</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#HDLs_for_printed_circuit_board_design"><span class="tocnumber">9.3</span> <span class="toctext">HDLs for printed circuit board design</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#See_also"><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">11</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Motivation">Motivation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=1" title="Edit section: Motivation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Due to the exploding complexity of digital electronic circuits since the 1970s (see <a href="https://en.wikipedia.org/wiki/Moore%27s_law" title="Moore's law">Moore's law</a>), circuit designers needed digital logic descriptions to be performed at a high level without being tied to a specific electronic technology, such as <a href="https://en.wikipedia.org/wiki/CMOS" title="CMOS">CMOS</a> or <a href="https://en.wikipedia.org/wiki/BJT" title="BJT" class="mw-redirect">BJT</a>. HDLs were created to implement <a href="https://en.wikipedia.org/wiki/Register-transfer_level" title="Register-transfer level">register-transfer level</a> abstraction, a model of the data flow and timing of a circuit.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p>There are two major hardware description languages: VHDL and Verilog. There are different types of description in them "dataflow, behavioral and structural". Example of dataflow of hdl:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">library</span> <span class="nn">iEEE</span><span class="p">;</span>
+<span class="k">use</span> <span class="nn">iEEE.STD_LOGIC_1164.ALL</span><span class="p">;</span>
+<span class="k">use</span> <span class="nn">iEEE.STD_NUMERIC_STD.ALL</span><span class="p">;</span>
+
+<span class="k">entity</span> <span class="nc">not1</span> <span class="k">is</span>
+  <span class="k">port</span><span class="p">(</span><span class="n">a</span><span class="o">:</span><span class="k">in</span> <span class="kt">STD_LOGIC</span><span class="p">;</span>
+       <span class="n">b</span><span class="o">:</span><span class="k">out</span> <span class="kt">STD_logic</span><span class="p">);</span>
+<span class="k">end</span> <span class="nc">not1</span><span class="p">;</span>
+
+<span class="k">architecture</span> <span class="nc">behavioral</span> <span class="k">of</span> <span class="nc">not1</span> <span class="k">is</span>
+<span class="k">begin</span>
+  <span class="n">b</span> <span class="o">&lt;=</span> <span class="k">not</span> <span class="n">a</span><span class="p">;</span>
+<span class="k">end</span> <span class="nc">behavioral</span><span class="p">;</span>
+</pre></div>
+<h2><span class="mw-headline" id="Structure_of_HDL">Structure of HDL</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=2" title="Edit section: Structure of HDL">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>HDLs are standard text-based expressions of the structure of electronic systems and their behaviour over time. Like <a href="https://en.wikipedia.org/wiki/Concurrent_programming" title="Concurrent programming" class="mw-redirect">concurrent programming</a> languages, HDL syntax and semantics include explicit notations for expressing <a href="https://en.wikipedia.org/wiki/Concurrency_(computer_science)" title="Concurrency (computer science)">concurrency</a>. However, in contrast to most software <a href="https://en.wikipedia.org/wiki/Programming_language" title="Programming language">programming languages</a>, HDLs also include an explicit notion of time, which is a primary attribute of hardware. Languages whose only characteristic is to express circuit connectivity between a hierarchy of blocks are properly classified as <a href="https://en.wikipedia.org/wiki/Netlist" title="Netlist">netlist</a> languages used in electric computer-aided design (<a href="https://en.wikipedia.org/wiki/CAD" title="CAD" class="mw-redirect">CAD</a>). HDL can be used to express designs in structural, behavioral or register-transfer-level architectures for the same circuit functionality; in the latter two cases the <a href="https://en.wikipedia.org/wiki/Logic_synthesis" title="Logic synthesis">synthesizer</a> decides the architecture and logic gate layout.</p>
+<p>HDLs are used to write executable specifications for hardware. A program designed to implement the underlying semantics of the language statements and simulate the progress of time provides the hardware designer with the ability to model a piece of hardware before it is created physically. It is this executability that gives HDLs the illusion of being <a href="https://en.wikipedia.org/wiki/Programming_languages" title="Programming languages" class="mw-redirect">programming languages</a>, when they are more precisely classified as <a href="https://en.wikipedia.org/wiki/Specification_language" title="Specification language">specification languages</a> or <a href="https://en.wikipedia.org/wiki/Modeling_language" title="Modeling language">modeling languages</a>. Simulators capable of supporting discrete-event (digital) and continuous-time (analog) modeling exist, and HDLs targeted for each are available.</p>
+<h3><span class="mw-headline" id="Comparison_with_control-flow_languages">Comparison with control-flow languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=3" title="Edit section: Comparison with control-flow languages">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>It is certainly possible to represent hardware semantics using traditional programming languages such as <a href="https://en.wikipedia.org/wiki/C++" title="C++">C++</a>, which operate on <a href="https://en.wikipedia.org/wiki/Control_flow" title="Control flow">control flow</a> semantics as opposed to <a href="https://en.wikipedia.org/wiki/Data_flow" title="Data flow" class="mw-redirect">data flow</a>, although to function as such, programs must be augmented with extensive and unwieldy <a href="https://en.wikipedia.org/wiki/Class_library#Object_and_class_libraries" title="Class library" class="mw-redirect">class libraries</a>. Generally, however, software programming languages do not include any capability for explicitly expressing time, and thus cannot function as hardware description languages. Before the introduction of <a href="https://en.wikipedia.org/wiki/System_Verilog" title="System Verilog" class="mw-redirect">System Verilog</a> in 2002, <a href="https://en.wikipedia.org/wiki/C++" title="C++">C++</a> integration with a <a href="https://en.wikipedia.org/wiki/Logic_simulation" title="Logic simulation">logic simulator</a> was one of the few ways to use <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> in hardware verification. System Verilog is the first major HDL to offer object orientation and garbage collection.</p>
+<p>Using the proper subset of hardware description language, a program called a synthesizer, or <a href="https://en.wikipedia.org/wiki/Logic_synthesis" title="Logic synthesis">logic synthesis tool</a>, can infer hardware logic operations from the language statements and produce an equivalent netlist of generic hardware primitives<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="https://en.wikipedia.org/wiki/MOS:JARGON" title="MOS:JARGON" class="mw-redirect"><span title="The material near this tag may be using jargon that limits the article's accessibility. (April 2014)">jargon</span></a></i>]</sup> to implement the specified behaviour.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2010)">citation needed</span></a></i>]</sup> Synthesizers generally ignore the expression of any timing constructs in the text. Digital logic synthesizers, for example, generally use <a href="https://en.wikipedia.org/wiki/Clock_signal" title="Clock signal">clock edges</a> as the way to time the circuit, ignoring any timing constructs. The ability to have a synthesizable subset of the language does not itself make a hardware description language.</p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=4" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The first hardware description languages appeared in the late 1960s, looking like more traditional languages.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> The first that had a lasting effect was described in 1971 in C. Gordon Bell and Allen Newell's text <i>Computer Structures</i>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> This text introduced the concept of <a href="https://en.wikipedia.org/wiki/Register_transfer_level" title="Register transfer level" class="mw-redirect">register transfer level</a>, first used in the ISP language to describe the behavior of the <a href="https://en.wikipedia.org/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">Digital Equipment Corporation</a> (DEC) <a href="https://en.wikipedia.org/wiki/PDP-8" title="PDP-8">PDP-8</a>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<p>The language became more widespread with the introduction of DEC's PDP-16 RT-Level Modules (RTMs) and a book describing their use.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> At least two implementations of the basic ISP language (ISPL and ISPS) followed.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> ISPS was well suited to describe relations between the inputs and the outputs of the design and was quickly adopted by commercial teams at DEC, as well as by a number of research teams both in the USA and among its NATO allies.</p>
+<p>The RTM products never took off commercially and DEC stopped marketing them in the mid-1980s, as new techniques and in particular <a href="https://en.wikipedia.org/wiki/Very-large-scale_integration" title="Very-large-scale integration">very-large-scale integration</a> (VLSI) became more popular.</p>
+<p>Separate work done about 1979 at the <a href="https://en.wikipedia.org/wiki/University_of_Kaiserslautern" title="University of Kaiserslautern" class="mw-redirect">University of Kaiserslautern</a> produced a language called KARL ("KAiserslautern Register Transfer Language"), which included design calculus language features supporting VLSI chip floorplanning<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="https://en.wikipedia.org/wiki/MOS:JARGON" title="MOS:JARGON" class="mw-redirect"><span title="The material near this tag may be using jargon that limits the article's accessibility. (April 2014)">jargon</span></a></i>]</sup> and structured hardware design. This work was also the basis of KARL's interactive graphic sister language ABL, whose name was an <a href="https://en.wikipedia.org/wiki/Initialism" title="Initialism" class="mw-redirect">initialism</a> for "A Block diagram Language".<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> ABL was implemented in the early 1980s by the Centro Studi e Laboratori Telecomunicazioni (<a href="https://en.wikipedia.org/wiki/CSELT" title="CSELT">CSELT</a>) in Torino, Italy, producing the ABLED graphic VLSI design editor. In the mid-1980s, a VLSI design framework was implemented around KARL and ABL by an international consortium funded by the Commission of the European Union.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup></p>
+<p>By the late 1970s, design using <a href="https://en.wikipedia.org/wiki/Programmable_logic_device" title="Programmable logic device">programmable logic devices</a> (PLDs) became popular, although these designs were primarily limited to designing <a href="https://en.wikipedia.org/wiki/Finite_state_machine" title="Finite state machine" class="mw-redirect">finite state machines</a>. The work at <a href="https://en.wikipedia.org/wiki/Data_General" title="Data General">Data General</a> in 1980 used these same devices to design the <a href="https://en.wikipedia.org/wiki/Data_General_Eclipse_MV/8000" title="Data General Eclipse MV/8000">Data General Eclipse MV/8000</a>, and commercial need began to grow for a language that could map well to them. By 1983 <a href="https://en.wikipedia.org/wiki/Data_I/O" title="Data I/O">Data I/O</a> introduced ABEL to fill that need.</p>
+<p>As design shifted to VLSI, the first modern HDL, <a href="https://en.wikipedia.org/wiki/Verilog" title="Verilog">Verilog</a>, was introduced by <a href="https://en.wikipedia.org/wiki/Gateway_Design_Automation" title="Gateway Design Automation">Gateway Design Automation</a> in 1985. <a href="https://en.wikipedia.org/wiki/Cadence_Design_Systems" title="Cadence Design Systems">Cadence Design Systems</a> later acquired the rights to Verilog-XL, the HDL simulator that would become the de facto standard of Verilog simulators for the next decade. In 1987, a request from the U.S. Department of Defense led to the development of <a href="https://en.wikipedia.org/wiki/VHDL" title="VHDL">VHDL</a> (<a href="https://en.wikipedia.org/wiki/VHSIC" title="VHSIC">VHSIC</a> Hardware Description Language). VHDL was based on the <a href="https://en.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada programming language</a>, as well as on the experience gained with the earlier development of ISPS.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> Initially, Verilog and VHDL were used to document and simulate circuit designs already captured and described in another form (such as <a href="https://en.wikipedia.org/wiki/Schematic" title="Schematic">schematic</a> files). HDL simulation enabled engineers to work at a higher level of abstraction than simulation at the schematic level, and thus increased design capacity from hundreds of transistors to thousands.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2010)">citation needed</span></a></i>]</sup></p>
+<p>The introduction of <a href="https://en.wikipedia.org/wiki/Logic_synthesis" title="Logic synthesis">logic synthesis</a> for HDLs pushed HDLs from the background into the foreground of digital design. Synthesis tools compiled HDL source files (written in a constrained format called RTL) into a manufacturable netlist description in terms of <a href="https://en.wikipedia.org/wiki/Gate" title="Gate">gates</a> and <a href="https://en.wikipedia.org/wiki/Transistor" title="Transistor">transistors</a>. Writing synthesizable RTL files required practice and discipline on the part of the designer; compared to a traditional schematic layout, synthesized RTL netlists were almost always larger in area and slower in performance<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2010)">citation needed</span></a></i>]</sup>. A circuit design from a skilled engineer, using labor-intensive schematic-capture/hand-layout, would almost always outperform its logically-synthesized equivalent, but the productivity advantage held by synthesis soon displaced digital schematic capture to exactly those areas that were problematic for RTL synthesis: extremely high-speed, low-power, or asynchronous circuitry.</p>
+<p>Within a few years, VHDL and Verilog emerged as the dominant HDLs in the electronics industry, while older and less capable HDLs gradually disappeared from use. However, VHDL and Verilog share many of the same limitations: neither is suitable for analog or <a href="https://en.wikipedia.org/wiki/Mixed-signal_integrated_circuit" title="Mixed-signal integrated circuit">mixed-signal circuit</a> simulation; neither possesses language constructs to describe recursively-generated logic structures. Specialized HDLs (such as Confluence) were introduced with the explicit goal of fixing specific limitations of Verilog and VHDL, though none were ever intended to replace them.</p>
+<p>Over the years, much effort has been invested in improving HDLs. The latest iteration of Verilog, formally known as IEEE 1800-2005 SystemVerilog, introduces many new features (classes, random variables, and properties/assertions) to address the growing need for better <a href="https://en.wikipedia.org/wiki/Test_bench" title="Test bench">test bench</a> randomization, design hierarchy, and reuse. A future revision of VHDL is also in development<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items" title="Wikipedia:Manual of Style/Dates and numbers"><span title="The time period mentioned near this tag is ambiguous. (April 2014)">when?</span></a></i>]</sup>, and is expected to match SystemVerilog's improvements.</p>
+<h2><span class="mw-headline" id="Design_using_HDL">Design using HDL</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=5" title="Edit section: Design using HDL">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As a result of the efficiency gains realized using HDL, a majority of modern digital circuit design revolves around it. Most designs begin as a set of requirements or a high-level architectural diagram. Control and decision structures are often prototyped in <a href="https://en.wikipedia.org/wiki/Flowchart" title="Flowchart">flowchart</a> applications, or entered in a <a href="https://en.wikipedia.org/wiki/State_diagram" title="State diagram">state diagram</a> editor. The process of writing the HDL description is highly dependent on the nature of the circuit and the designer's preference for coding style. The HDL is merely the 'capture language', often beginning with a high-level algorithmic description such as a C++ mathematical model. Designers often use scripting languages such as <a href="https://en.wikipedia.org/wiki/Perl" title="Perl">Perl</a> to automatically generate repetitive circuit structures in the HDL language. Special text editors offer features for automatic indentation, syntax-dependent coloration, and <a href="https://en.wikipedia.org/wiki/Macro_(computer_science)" title="Macro (computer science)">macro</a>-based expansion of entity/architecture/signal declaration.</p>
+<p>The HDL code then undergoes a code review, or auditing. In preparation for synthesis, the HDL description is subject to an array of automated checkers. The checkers report deviations from standardized code guidelines, identify potential ambiguous code constructs before they can cause misinterpretation, and check for common logical coding errors, such as dangling<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="https://en.wikipedia.org/wiki/MOS:JARGON" title="MOS:JARGON" class="mw-redirect"><span title="The material near this tag may be using jargon that limits the article's accessibility. (April 2014)">jargon</span></a></i>]</sup> <a href="https://en.wikipedia.org/wiki/Port" title="Port">ports</a> or <a href="https://en.wikipedia.org/wiki/Short_circuit" title="Short circuit">shorted</a> outputs. This process aids in resolving errors before the code is synthesized.</p>
+<p>In industry parlance, HDL design generally ends at the synthesis stage. Once the synthesis tool has mapped the HDL description into a gate netlist, the netlist is passed off to the back-end stage. Depending on the physical technology (<a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array" title="Field-programmable gate array">FPGA</a>, <a href="https://en.wikipedia.org/wiki/Application-specific_integrated_circuit" title="Application-specific integrated circuit">ASIC</a> <a href="https://en.wikipedia.org/wiki/Gate_array" title="Gate array">gate array</a>, ASIC <a href="https://en.wikipedia.org/wiki/Standard_cell" title="Standard cell">standard cell</a>), HDLs may or may not play a significant role in the back-end flow. In general, as the design flow progresses toward a physically realizable form, the design database becomes progressively more laden with technology-specific information, which cannot be stored in a generic HDL description. Finally, an integrated circuit is manufactured or programmed for use.</p>
+<h2><span class="mw-headline" id="Simulating_and_debugging_HDL_code">Simulating and debugging HDL code</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=6" title="Edit section: Simulating and debugging HDL code">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote relarticle mainarticle">Main article: <a href="https://en.wikipedia.org/wiki/Logic_simulation" title="Logic simulation">Logic simulation</a></div>
+<p>Essential to HDL design is the ability to simulate HDL programs. Simulation allows an HDL description of a design (called a model) to pass <a href="https://en.wikipedia.org/wiki/Functional_verification" title="Functional verification">design verification</a>, an important milestone that validates the design's intended function (specification) against the code implementation in the HDL description. It also permits architectural exploration. The engineer can experiment with design choices by writing multiple variations of a base design, then comparing their behavior in simulation. Thus, simulation is critical for successful HDL design.</p>
+<p>To simulate an HDL model, an engineer writes a top-level simulation environment (called a <a href="https://en.wikipedia.org/wiki/Test_bench" title="Test bench">test bench</a>). At minimum, a testbench contains an instantiation of the model (called the device under test or DUT), pin/signal declarations for the model's I/O, and a clock waveform. The testbench code is event driven: the engineer writes HDL statements to implement the (testbench-generated) reset-signal, to model interface transactions (such as a host–bus read/write), and to monitor the DUT's output. An HDL simulator — the program that executes the testbench — maintains the simulator clock, which is the master reference for all events in the testbench simulation. Events occur only at the instants dictated by the testbench HDL (such as a reset-toggle coded into the testbench), or in reaction (by the model) to stimulus and triggering events. Modern HDL simulators have full-featured <a href="https://en.wikipedia.org/wiki/Graphical_user_interface" title="Graphical user interface">graphical user interfaces</a>, complete with a suite of debug tools. These allow the user to stop and restart the simulation at any time, insert simulator breakpoints (independent of the HDL code), and monitor or modify any element in the HDL model hierarchy. Modern simulators can also link the HDL environment to user-compiled libraries, through a defined <a href="https://en.wikipedia.org/wiki/Verilog#Program_Language_Interface_.28PLI.29" title="Verilog">PLI</a>/<a href="https://en.wikipedia.org/w/index.php?title=VHDL_Programming_Language_Interface&amp;action=edit&amp;redlink=1" class="new" title="VHDL Programming Language Interface (page does not exist)">VHPI</a> interface. Linking is system-dependent (Win32/<a href="https://en.wikipedia.org/wiki/Linux" title="Linux">Linux</a>/SPARC), as the HDL simulator and user libraries are compiled and linked outside the HDL environment.</p>
+<p>Design verification is often the most time-consuming portion of the design process, due to the disconnect between a device's <a href="https://en.wikipedia.org/wiki/Functional_specification" title="Functional specification">functional specification</a>, the designer's interpretation of the specification, and the imprecision<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2010)">citation needed</span></a></i>]</sup> of the HDL language. The majority of the initial test/debug cycle is conducted in the HDL <i>simulator</i> environment, as the early stage of the design is subject to frequent and major circuit changes. An HDL description can also be prototyped and tested in hardware — <a href="https://en.wikipedia.org/wiki/Programmable_logic_device" title="Programmable logic device">programmable logic devices</a> are often used for this purpose. Hardware prototyping is comparatively more expensive than HDL simulation, but offers a real-world view of the design. Prototyping is the best way to check interfacing against other hardware devices and hardware prototypes. Even those running on slow FPGAs offer much shorter simulation times than pure HDL simulation.</p>
+<h2><span class="mw-headline" id="Design_verification_with_HDLs">Design verification with HDLs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=7" title="Edit section: Design verification with HDLs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote relarticle mainarticle">Main article: <a href="https://en.wikipedia.org/wiki/Functional_verification" title="Functional verification">Functional verification</a></div>
+<p>Historically, design verification was a laborious, repetitive loop of writing and running simulation <a href="https://en.wikipedia.org/wiki/Test_case" title="Test case">test cases</a> against the design under test. As chip designs have grown larger and more complex, the task of design verification has grown to the point where it now dominates the schedule of a design team. Looking for ways to improve design productivity, the <a href="https://en.wikipedia.org/wiki/Electronic_design_automation" title="Electronic design automation">electronic design automation</a> industry developed the <a href="https://en.wikipedia.org/wiki/Property_Specification_Language" title="Property Specification Language">Property Specification Language</a>.</p>
+<p>In <a href="https://en.wikipedia.org/wiki/Formal_verification" title="Formal verification">formal verification</a> terms, a property is a factual statement about the expected or assumed behavior of another object. Ideally, for a given HDL description, a property or properties can be proven true or false using formal mathematical methods. In practical terms, many properties cannot be proven because they occupy an unbounded <a href="https://en.wikipedia.org/wiki/Solution_space" title="Solution space" class="mw-redirect">solution space</a>. However, if provided a set of operating assumptions or constraints, a property checker can prove (or disprove) certain properties by narrowing the solution space.</p>
+<p>The assertions do not model circuit activity, but capture and document the designer's intent in the HDL code. In a simulation environment, the simulator evaluates all specified assertions, reporting the location and severity of any violations. In a synthesis environment, the synthesis tool usually operates with the policy of halting synthesis upon any violation. Assertion-based verification is still in its infancy, but is expected to become an integral part of the HDL design toolset.</p>
+<h2><span class="mw-headline" id="HDL_and_programming_languages">HDL and programming languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=8" title="Edit section: HDL and programming languages">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>An HDL is grossly similar to a software <a href="https://en.wikipedia.org/wiki/Programming_language" title="Programming language">programming language</a>, but there are major differences. Many programming languages are inherently procedural (single-threaded), with limited syntactical and semantic support to handle concurrency. HDLs, on the other hand, resemble <a href="https://en.wikipedia.org/wiki/Concurrent_programming" title="Concurrent programming" class="mw-redirect">concurrent programming</a> languages in their ability to model multiple parallel processes (such as <a href="https://en.wikipedia.org/wiki/Flip-flop_(electronics)" title="Flip-flop (electronics)">flipflops</a> and <a href="https://en.wikipedia.org/wiki/Adder_(electronics)" title="Adder (electronics)">adders</a>) that automatically execute independently of one another. Any change to the process's input automatically triggers an update in the simulator's process stack. Both programming languages and HDLs are processed by a compiler (usually called a synthesizer in the HDL case), but with different goals. For HDLs, "compiling" refers to logical synthesis, a process of transforming the HDL code listing into a physically realizable gate netlist. The netlist output can take any of many forms: a "simulation" netlist with gate-delay information, a "handoff" netlist for post-synthesis <a href="https://en.wikipedia.org/wiki/Place_and_route" title="Place and route">place and route</a>, or a generic industry-standard <a href="https://en.wikipedia.org/wiki/Electronic_Design_Interchange_Format" title="Electronic Design Interchange Format" class="mw-redirect">Electronic Design Interchange Format</a> (EDIF) (for subsequent conversion to a <a href="https://en.wikipedia.org/wiki/JEDEC" title="JEDEC">JEDEC</a>-format file).</p>
+<p>On the other hand, a software compiler converts the source-code listing into a <a href="https://en.wikipedia.org/wiki/Microprocessor" title="Microprocessor">microprocessor</a>-specific object code for execution on the target microprocessor. As HDLs and programming languages borrow concepts and features from each other, the boundary between them is becoming less distinct. However, pure HDLs are unsuitable for general purpose software application development, just as general-purpose programming languages are undesirable for modeling hardware. Yet as electronic systems grow increasingly complex, and <a href="https://en.wikipedia.org/wiki/Reconfigurable_system" title="Reconfigurable system" class="mw-redirect">reconfigurable systems</a> become increasingly common, there is growing desire in the industry for a single language that can perform some tasks of both hardware design and software programming. <a href="https://en.wikipedia.org/wiki/SystemC" title="SystemC">SystemC</a> is an example of such—embedded system hardware can be modeled as non-detailed architectural blocks (<a href="https://en.wikipedia.org/wiki/Black_box" title="Black box">black boxes</a> with modeled signal inputs and output drivers). The target application is written in C or C++ and natively compiled for the host-development system (as opposed to targeting the embedded CPU, which requires host-simulation of the embedded CPU or an emulated CPU). The high level of abstraction of SystemC models is well suited to early architecture exploration, as architectural modifications can be easily evaluated with little concern for signal-level implementation issues. However, the threading model used in SystemC and its reliance on shared memory mean that it does not handle parallel execution or lower level models well.</p>
+<h2><span class="mw-headline" id="High-level_synthesis">High-level synthesis</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=9" title="Edit section: High-level synthesis">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In their level of abstraction, HDLs have been compared to <a href="https://en.wikipedia.org/wiki/Assembly_language" title="Assembly language">assembly languages</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (April 2014)">citation needed</span></a></i>]</sup> There are moves to raise the abstraction level of the design in order to reduce the complexity of programming in HDLs, creating a sub-field called <i>high-level synthesis</i>. Companies such as <a href="https://en.wikipedia.org/wiki/Cadence_Design_Systems" title="Cadence Design Systems">Cadence</a>, <a href="https://en.wikipedia.org/wiki/Synopsys" title="Synopsys">Synopsys</a> and Agility Design Solutions are promoting <a href="https://en.wikipedia.org/wiki/SystemC" title="SystemC">SystemC</a> as a way to combine high-level languages with concurrency models to allow faster design cycles for <a href="https://en.wikipedia.org/wiki/FPGA" title="FPGA" class="mw-redirect">FPGAs</a> than is possible using traditional HDLs. Approaches based on standard <a href="https://en.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> or <a href="https://en.wikipedia.org/wiki/C++" title="C++">C++</a> (with libraries or other extensions allowing parallel programming) are found in the <a href="https://en.wikipedia.org/wiki/Catapult_C" title="Catapult C">Catapult C</a> tools from <a href="https://en.wikipedia.org/wiki/Mentor_Graphics" title="Mentor Graphics">Mentor Graphics</a>, and the <a href="https://en.wikipedia.org/wiki/Impulse_C" title="Impulse C">Impulse C</a> tools from Impulse Accelerated Technologies. Annapolis Micro Systems, Inc.'s CoreFire Design Suite and <a href="https://en.wikipedia.org/wiki/National_Instruments" title="National Instruments">National Instruments</a> LabVIEW FPGA provide a graphical <a href="https://en.wikipedia.org/wiki/Dataflow" title="Dataflow">dataflow</a> approach to high-level design entry and languages such as <a href="https://en.wikipedia.org/wiki/SystemVerilog" title="SystemVerilog">SystemVerilog</a>, SystemVHDL, and <a href="https://en.wikipedia.org/wiki/Handel-C" title="Handel-C">Handel-C</a> seek to accomplish the same goal, but are aimed at making existing hardware engineers more productive, rather than making FPGAs more accessible to existing software engineers. It is also possible to design hardware modules using <a href="https://en.wikipedia.org/wiki/MATLAB" title="MATLAB">MATLAB</a> and <a href="https://en.wikipedia.org/wiki/Simulink" title="Simulink">Simulink</a> using the <a href="https://en.wikipedia.org/wiki/Mathworks" title="Mathworks" class="mw-redirect">Mathworks</a> HDL Coder tool<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup> or Xilinx System Generator (XSG) (formerly Accel DSP) from <a href="https://en.wikipedia.org/wiki/Xilinx" title="Xilinx">Xilinx</a>.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup></p>
+<h2><span class="mw-headline" id="Examples_of_HDLs">Examples of HDLs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=10" title="Edit section: Examples of HDLs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="HDLs_for_analog_circuit_design">HDLs for analog circuit design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=11" title="Edit section: HDLs for analog circuit design">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="sortable wikitable">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=Analog_Hardware_Descriptive_Language&amp;action=edit&amp;redlink=1" class="new" title="Analog Hardware Descriptive Language (page does not exist)">Analog Hardware Descriptive Language</a></td>
+<td>an open <a href="https://en.wikipedia.org/wiki/Field-programmable_analog_array" title="Field-programmable analog array">analog hardware</a> description language</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=SpectreHDL&amp;action=edit&amp;redlink=1" class="new" title="SpectreHDL (page does not exist)">SpectreHDL</a></td>
+<td>a proprietary analog hardware description language</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Verilog-AMS" title="Verilog-AMS">Verilog-AMS</a> (Verilog for Analog and Mixed-Signal)</td>
+<td>an open standard extending Verilog for analog and mixed analog/digital simulation</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/VHDL-AMS" title="VHDL-AMS">VHDL-AMS</a> (VHDL with Analog/Mixed-Signal extension)</td>
+<td>a standardised language for mixed analog/digital simulation</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=HDL-A&amp;action=edit&amp;redlink=1" class="new" title="HDL-A (page does not exist)">HDL-A</a></td>
+<td>a proprietary analog hardware description language</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="HDLs_for_digital_circuit_design">HDLs for digital circuit design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=12" title="Edit section: HDLs for digital circuit design">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The two most widely used and well-supported HDL varieties used in industry are <a href="https://en.wikipedia.org/wiki/Verilog" title="Verilog">Verilog</a> and <a href="https://en.wikipedia.org/wiki/VHDL" title="VHDL">VHDL</a>.</p>
+<table class="sortable wikitable">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Advanced_Boolean_Expression_Language" title="Advanced Boolean Expression Language">Advanced Boolean Expression Language</a> (ABEL)</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Altera_Hardware_Description_Language" title="Altera Hardware Description Language">Altera Hardware Description Language</a> (AHDL)</td>
+<td>a proprietary language from <a href="https://en.wikipedia.org/wiki/Altera" title="Altera">Altera</a></td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/AHPL" title="AHPL">AHPL</a></td>
+<td>A Hardware Programming language</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Bluespec" title="Bluespec">Bluespec</a></td>
+<td>high-level HDL based on <a href="https://en.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> (not embedded <a href="https://en.wikipedia.org/wiki/Domain-specific_language" title="Domain-specific language">DSL</a>)<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=Bluespec_SystemVerilog&amp;action=edit&amp;redlink=1" class="new" title="Bluespec SystemVerilog (page does not exist)">Bluespec SystemVerilog</a> (BSV)</td>
+<td>based on Bluespec, with <a href="https://en.wikipedia.org/wiki/Verilog" title="Verilog">Verilog</a> HDL like syntax, by <a href="https://en.wikipedia.org/wiki/Bluespec,_Inc." title="Bluespec, Inc." class="mw-redirect">Bluespec, Inc.</a></td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=C-to-Verilog&amp;action=edit&amp;redlink=1" class="new" title="C-to-Verilog (page does not exist)">C-to-Verilog</a></td>
+<td>Converter from C to Verilog</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=Chisel_(HDL)&amp;action=edit&amp;redlink=1" class="new" title="Chisel (HDL) (page does not exist)">Chisel</a> (Constructing Hardware in a Scala Embedded Language)</td>
+<td>based on <a href="https://en.wikipedia.org/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a> (embedded <a href="https://en.wikipedia.org/wiki/Domain-specific_language" title="Domain-specific language">DSL</a>)</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=Confluence_(HDL)&amp;action=edit&amp;redlink=1" class="new" title="Confluence (HDL) (page does not exist)">Confluence</a></td>
+<td>a functional HDL; has been discontinued</td>
+</tr>
+<tr>
+<td>CoWareC</td>
+<td>a C-based HDL by <a href="https://en.wikipedia.org/wiki/CoWare" title="CoWare" class="mw-redirect">CoWare</a>. Now discontinued in favor of SystemC</td>
+</tr>
+<tr>
+<td>CUPL (Compiler for Universal Programmable Logic<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup>}</td>
+<td>a proprietary language from <a href="https://en.wikipedia.org/w/index.php?title=Logical_Devices,_Inc.&amp;action=edit&amp;redlink=1" class="new" title="Logical Devices, Inc. (page does not exist)">Logical Devices, Inc.</a></td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/ELLA_(programming_language)" title="ELLA (programming language)">ELLA</a></td>
+<td>no longer in common use</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/ESys.net" title="ESys.net">ESys.net</a></td>
+<td>.net framework written in C#</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Handel-C" title="Handel-C">Handel-C</a></td>
+<td>a C-like design language</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=HHDL_(programming_language)&amp;action=edit&amp;redlink=1" class="new" title="HHDL (programming language) (page does not exist)">HHDL</a></td>
+<td>based on <a href="https://en.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> (embedded DSL).</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=Hardware_Join_Java&amp;action=edit&amp;redlink=1" class="new" title="Hardware Join Java (page does not exist)">Hardware Join Java</a> (HJJ)</td>
+<td>based on <a href="https://en.wikipedia.org/wiki/Join_Java" title="Join Java">Join Java</a></td>
+</tr>
+<tr>
+<td>HML (Hardware ML)</td>
+<td>based on <a href="https://en.wikipedia.org/wiki/Standard_ML" title="Standard ML">SML</a><sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup></td>
+</tr>
+<tr>
+<td>Hydra</td>
+<td>based on <a href="https://en.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Impulse_C" title="Impulse C">Impulse C</a></td>
+<td>another C-like HDL</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=ISPS_(programming_language)&amp;action=edit&amp;redlink=1" class="new" title="ISPS (programming language) (page does not exist)">ISPS</a></td>
+<td>Original HDL from CMU, no longer in common use</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=ParC&amp;action=edit&amp;redlink=1" class="new" title="ParC (page does not exist)">ParC</a> (Parallel C++)</td>
+<td>kusu extended with HDL style threading and communication for task-parallel programming</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/JHDL" title="JHDL">JHDL</a></td>
+<td>based on <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/KARL" title="KARL">KARL</a></td>
+<td>KARlsruhe Language (chapter in<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup>), a Pascalish hardware descriptive language, no longer in common use.</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=Lava_(Haskell)&amp;action=edit&amp;redlink=1" class="new" title="Lava (Haskell) (page does not exist)">Lava</a></td>
+<td>based on <a href="https://en.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> (embedded DSL).<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup><sup id="cite_ref-19" class="reference"><a href="#cite_note-19">[19]</a></sup><sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup></td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Lola_(hardware_description_language)" title="Lola (hardware description language)" class="mw-redirect">Lola</a></td>
+<td>a simple language used for teaching</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/M_(HDL)" title="M (HDL)" class="mw-redirect">M</a></td>
+<td>A HDL from <a href="https://en.wikipedia.org/wiki/Mentor_Graphics" title="Mentor Graphics">Mentor Graphics</a></td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/MyHDL" title="MyHDL">MyHDL</a></td>
+<td>based on <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" title="Python (programming language)">Python</a> (embedded <a href="https://en.wikipedia.org/wiki/Domain-specific_language" title="Domain-specific language">DSL</a>)</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/PALASM" title="PALASM">PALASM</a></td>
+<td>for <a href="https://en.wikipedia.org/wiki/Programmable_Array_Logic" title="Programmable Array Logic">Programmable Array Logic</a> (PAL) devices</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=ROCCC&amp;action=edit&amp;redlink=1" class="new" title="ROCCC (page does not exist)">ROCCC</a> (Riverside Optimizing Compiler for Configurable Computing)</td>
+<td>Free and open-source C to HDL tool</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=RHDL&amp;action=edit&amp;redlink=1" class="new" title="RHDL (page does not exist)">RHDL</a></td>
+<td>based on the <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby programming language</a></td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Ruby_(hardware_description_language)" title="Ruby (hardware description language)">Ruby (hardware description language)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/SystemC" title="SystemC">SystemC</a></td>
+<td>a standardized class of C++ libraries for high-level behavioral and transaction modeling of <a href="https://en.wikipedia.org/wiki/Digital_hardware" title="Digital hardware" class="mw-redirect">digital hardware</a> at a high level of abstraction, i.e. system-level</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/SystemVerilog" title="SystemVerilog">SystemVerilog</a></td>
+<td>a superset of Verilog, with enhancements to address system-level design and verification</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=SystemTCL&amp;action=edit&amp;redlink=1" class="new" title="SystemTCL (page does not exist)">SystemTCL</a></td>
+<td>SDL based on Tcl.</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=THDL%2B%2B&amp;action=edit&amp;redlink=1" class="new" title="THDL++ (page does not exist)">THDL++</a> (Templated HDL inspired by C++)</td>
+<td>An extension of VHDL with inheritance, advanced templates and policy classes</td>
+</tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="http://www.tl-x.org/">TL-Verilog</a> (Transaction-Level Verilog)</td>
+<td>An extension of Verilog/SystemVerilog with constructs for pipelines and transactions.</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Verilog" title="Verilog">Verilog</a></td>
+<td>One of the most widely used and well-supported HDLs</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/VHDL" title="VHDL">VHDL</a> (<a href="https://en.wikipedia.org/wiki/VHSIC" title="VHSIC">VHSIC</a> HDL)</td>
+<td>One of the most widely used and well-supported HDLs</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="HDLs_for_printed_circuit_board_design">HDLs for printed circuit board design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=13" title="Edit section: HDLs for printed circuit board design">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Several projects exist for defining printed circuit board connectivity using language based, textual-entry methods.</p>
+<table class="sortable wikitable">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=PHDL&amp;action=edit&amp;redlink=1" class="new" title="PHDL (page does not exist)">PHDL</a> (PCB HDL)</td>
+<td>A free and open source HDL for defining printed circuit board connectivity</td>
+</tr>
+<tr>
+<td><a href="https://en.wikipedia.org/w/index.php?title=EDAsolver&amp;action=edit&amp;redlink=1" class="new" title="EDAsolver (page does not exist)">EDAsolver</a></td>
+<td>An HDL for solving schematic designs based on constraints</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=14" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Specification_language" title="Specification language">Specification language</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Modeling_language" title="Modeling language">Modeling language</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hardware_verification_language" title="Hardware verification language">Hardware verification language</a></li>
+<li><a href="https://en.wikipedia.org/wiki/SystemC" title="SystemC">SystemC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/SystemVerilog" title="SystemVerilog">SystemVerilog</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Property_Specification_Language" title="Property Specification Language">Property Specification Language</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenVera" title="OpenVera">OpenVera</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bluespec" title="Bluespec">Bluespec</a></li>
+<li><a href="https://en.wikipedia.org/wiki/C_to_HDL" title="C to HDL">C to HDL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Flow_to_HDL" title="Flow to HDL">Flow to HDL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rosetta-lang" title="Rosetta-lang">Rosetta-lang</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=15" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation book">Ciletti, Michael D. (2010). <i>Advanced Digital Design with Verilog HDL</i>. Prentice Hall.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHardware+description+language&amp;rft.aufirst=Michael+D.&amp;rft.aulast=Ciletti&amp;rft.btitle=Advanced+Digital+Design+with+Verilog+HDL&amp;rft.date=2010&amp;rft.genre=book&amp;rft.pub=Prentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Barbacci, M. "A comparison of register transfer languages for describing computers and digital systems," Carnegie-Mellon Univ., Dept. of Computer Science, March 1973</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation book">Bell, C. G.; Newell, A. (1971). <i>Computer Structures: Readings and Examples</i>. McGraw-Hill. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="https://en.wikipedia.org/wiki/Special:BookSources/0-07-004357-4" title="Special:BookSources/0-07-004357-4">0-07-004357-4</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHardware+description+language&amp;rft.aufirst=C.+G.&amp;rft.aulast=Bell&amp;rft.au=Newell%2C+A.&amp;rft.btitle=Computer+Structures%3A+Readings+and+Examples&amp;rft.date=1971&amp;rft.genre=book&amp;rft.isbn=0-07-004357-4&amp;rft.pub=McGraw-Hill&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation book">Reilly, E.D. (2003). <i>Milestones in computer science and information technology</i>. Greenwood Press. p.&#160;183. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="https://en.wikipedia.org/wiki/Special:BookSources/1-57356-521-0" title="Special:BookSources/1-57356-521-0">1-57356-521-0</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHardware+description+language&amp;rft.aufirst=E.D.&amp;rft.aulast=Reilly&amp;rft.btitle=Milestones+in+computer+science+and+information+technology&amp;rft.date=2003&amp;rft.genre=book&amp;rft.isbn=1-57356-521-0&amp;rft.pages=183&amp;rft.pub=Greenwood+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation book">Bell, C.G.; Grason, J.; Newell, A. (1972). <i>Designing Computers and Digital Systems</i>. Digital Press.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHardware+description+language&amp;rft.aufirst=C.G.&amp;rft.au=Grason%2C+J.&amp;rft.aulast=Bell&amp;rft.au=Newell%2C+A.&amp;rft.btitle=Designing+Computers+and+Digital+Systems&amp;rft.date=1972&amp;rft.genre=book&amp;rft.pub=Digital+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> (<a href="https://en.wikipedia.org/wiki/LCCN" title="LCCN" class="mw-redirect">LCCN</a> Number 72-89566)</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">Barbacci, M. "The Symbolic Manipulation of Computer Descriptions: ISPL Compiler and Simulator," Carnegie-Mellon Univ., Dept. of Computer Science, 1976</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">Barbacci, M. "The ISPS Computer Description Language," Carnegie-Mellon Univ., Dept. of Computer Science, 1977</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation report">Girardi, G.; Hartenstein, R. (1983). ABL specification (Report). <a href="https://en.wikipedia.org/wiki/CSELT" title="CSELT">CSELT</a> and <a href="https://en.wikipedia.org/wiki/University_of_Kaiserslautern" title="University of Kaiserslautern" class="mw-redirect">University of Kaiserslautern</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHardware+description+language&amp;rft.au=Girardi%2C+G.&amp;rft.au=Hartenstein%2C+R.&amp;rft.btitle=ABL+specification&amp;rft.date=1983&amp;rft.genre=report&amp;rft.pub=CSELT+and+University+of+Kaiserslautern&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite id="CITEREFMermet1993" class="citation">Mermet, J., ed. (1993), <i>Fundamentals and Standards in Hardware Description Languages</i>, Springer Verlag</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHardware+description+language&amp;rft.btitle=Fundamentals+and+Standards+in+Hardware+Description+Languages&amp;rft.date=1993&amp;rft.genre=book&amp;rft.pub=Springer+Verlag&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text">Barbacci, M., Grout S., Lindstrom, G., Maloney, M.P. "Ada as a hardware description language&#160;: an initial report," Carnegie-Mellon Univ., Dept. of Computer Science, 1984</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.mathworks.com/products/hdl-coder/">"VHDL code - HDL Coder - MATLAB &amp; Simulink"</a>. Mathworks.com. 2011-04-30<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-08-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHardware+description+language&amp;rft.btitle=VHDL+code+-+HDL+Coder+-+MATLAB+%26+Simulink&amp;rft.date=2011-04-30&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.mathworks.com%2Fproducts%2Fhdl-coder%2F&amp;rft.pub=Mathworks.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.xilinx.com/tools/sysgen.htm">"System Generator for DSP"</a>. Xilinx.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-08-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHardware+description+language&amp;rft.btitle=System+Generator+for+DSP&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.xilinx.com%2Ftools%2Fsysgen.htm&amp;rft.pub=Xilinx.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><i>A History of Haskell: being lazy with class</i> §12.4.2</span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text">Eurich, J.P. and Roth, G. (1990): "EDIF grows up". IEEE Spectrum, Vol. 27, Issue 11, pp. 68 - 72.</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation journal">Li, Yanbing; Miriam Leeser (1995). "HML: An Innovative Hardware Description Language and Its Translation to VHDL". <i>Proceedings of CHDL’95</i>: 691–696.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHardware+description+language&amp;rft.atitle=HML%3A+An+Innovative+Hardware+Description+Language+and+Its+Translation+to+VHDL&amp;rft.aufirst=Yanbing&amp;rft.aulast=Li&amp;rft.au=Miriam+Leeser&amp;rft.date=1995&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+CHDL%9995&amp;rft.pages=691-696&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text">J. Mermet (editor): Fundamentals and Standards in Hardware Description Languages (Springer Verlag, 1993)</span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/chalmers-lava2000">Chalmers Lava</a></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/xilinx-lava">Xilinx Lava</a></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/kansas-lava">Kansas Lava</a></span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/york-lava">York Lava</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit&amp;section=16" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.eda.org/verilog-ams/">Verilog-AMS Technical Subcommittee</a></li>
+<li><a rel="nofollow" class="external text" href="http://hct.sourceforge.net/">HCT</a> - The HDL Complexity tool, used to determine design complexity.</li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:Computer_language" title="Template:Computer language"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:Computer_language" title="Template talk:Computer language"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Computer_language&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div style="font-size:114%">Types of <a href="https://en.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer languages</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Architecture_description_language" title="Architecture description language">Architecture description</a></li>
+<li><strong class="selflink">Hardware description</strong></li>
+<li><a href="https://en.wikipedia.org/wiki/Markup_language" title="Markup language">Markup</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Modeling_language" title="Modeling language">Modeling</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Programming_language" title="Programming language">Programming language</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Query_language" title="Query language">Query</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Specification_language" title="Specification language">Specification</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Style_sheet_language" title="Style sheet language">Stylesheet</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Template_processor" title="Template processor">Template processing</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Transformation_language" title="Transformation language">Transformation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:Programmable_Logic" title="Template:Programmable Logic"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:Programmable_Logic" title="Template talk:Programmable Logic"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Programmable_Logic&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="https://en.wikipedia.org/wiki/Programmable_logic_device" title="Programmable logic device">Programmable logic</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Concepts</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Application-specific_integrated_circuit" title="Application-specific integrated circuit">ASIC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/System_on_a_chip" title="System on a chip">SOC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array" title="Field-programmable gate array">FPGA</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Logic_block" title="Logic block">Logic block</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Complex_programmable_logic_device" title="Complex programmable logic device">CPLD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Erasable_programmable_logic_device" title="Erasable programmable logic device">EPLD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Programmable_logic_array" title="Programmable logic array">PLA</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Programmable_Array_Logic" title="Programmable Array Logic">PAL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Generic_array_logic" title="Generic array logic">GAL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Reconfigurable_computing" title="Reconfigurable computing">Reconfigurable computing</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Xputer" title="Xputer">Xputer</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Soft_microprocessor" title="Soft microprocessor">Soft microprocessor</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Circuit_underutilization" title="Circuit underutilization">Circuit underutilization</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><strong class="selflink">Languages</strong></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Verilog" title="Verilog">Verilog</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Verilog-A" title="Verilog-A">A</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Verilog-AMS" title="Verilog-AMS">AMS</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/VHDL" title="VHDL">VHDL</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/VHDL-AMS" title="VHDL-AMS">AMS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/VHDL-VITAL" title="VHDL-VITAL">VITAL</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/SystemVerilog" title="SystemVerilog">SystemVerilog</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/SystemVerilog_DPI" title="SystemVerilog DPI">DPI</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/SystemC" title="SystemC">SystemC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Altera_Hardware_Description_Language" title="Altera Hardware Description Language">AHDL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Handel-C" title="Handel-C">Handel-C</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Property_Specification_Language" title="Property Specification Language">PSL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Unified_Power_Format" title="Unified Power Format">UPF</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PALASM" title="PALASM">PALASM</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Advanced_Boolean_Expression_Language" title="Advanced Boolean Expression Language">ABEL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Programmable_Array_Logic#CUPL" title="Programmable Array Logic">CUPL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenVera" title="OpenVera">OpenVera</a></li>
+<li><a href="https://en.wikipedia.org/wiki/C_to_HDL" title="C to HDL">C to HDL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Flow_to_HDL" title="Flow to HDL">Flow to HDL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MyHDL" title="MyHDL">MyHDL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/JHDL" title="JHDL">JHDL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ELLA_(programming_language)" title="ELLA (programming language)">ELLA</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Companies</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Accellera" title="Accellera">Accellera</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Actel" title="Actel">Actel</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Achronix" title="Achronix">Achronix</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Advanced_Micro_Devices" title="Advanced Micro Devices">AMD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Aldec" title="Aldec">Aldec</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Altera" title="Altera">Altera</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Atmel" title="Atmel">Atmel</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cadence_Design_Systems" title="Cadence Design Systems">Cadence</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cypress_Semiconductor" title="Cypress Semiconductor">Cypress</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Duolog" title="Duolog">Duolog</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Forte_Design_Systems" title="Forte Design Systems">Forte</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Intel" title="Intel">Intel</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Lattice_Semiconductor" title="Lattice Semiconductor">Lattice</a></li>
+<li><a href="https://en.wikipedia.org/wiki/National_Semiconductor" title="National Semiconductor">National</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mentor_Graphics" title="Mentor Graphics">Mentor Graphics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Microsemi" title="Microsemi">Microsemi</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Signetics" title="Signetics">Signetics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Synopsys" title="Synopsys">Synopsys</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Magma_Design_Automation" title="Magma Design Automation">Magma</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Virage_Logic" title="Virage Logic">Virage Logic</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Texas_Instruments" title="Texas Instruments">Texas Instruments</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tabula_(company)" title="Tabula (company)">Tabula</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Xilinx" title="Xilinx">Xilinx</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Products</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Hardware</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/ICE_(FPGA)" title="ICE (FPGA)">iCE</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Stratix" title="Stratix">Stratix</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Virtex_(FPGA)" title="Virtex (FPGA)">Virtex</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Software</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Altera_Quartus" title="Altera Quartus">Altera Quartus</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Xilinx_ISE" title="Xilinx ISE">Xilinx ISE</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Xilinx_Vivado" title="Xilinx Vivado">Xilinx Vivado</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ModelSim" title="ModelSim">ModelSim</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Verilog-to-Routing" title="Verilog-to-Routing">VTR</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_HDL_simulators" title="List of HDL simulators">Simulators</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">IP</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Proprietary</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/ARC_(processor)" title="ARC (processor)">ARC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/LEON" title="LEON">LEON</a></li>
+<li><a href="https://en.wikipedia.org/wiki/LatticeMico8" title="LatticeMico8">LatticeMico8</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MicroBlaze" title="MicroBlaze">MicroBlaze</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PicoBlaze" title="PicoBlaze">PicoBlaze</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nios_embedded_processor" title="Nios embedded processor">Nios</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nios_II" title="Nios II">Nios II</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Open-source</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/LatticeMico32" title="LatticeMico32">LatticeMico32</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenCores" title="OpenCores">OpenCores</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenRISC" title="OpenRISC">OpenRISC</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/OpenRISC_1200" title="OpenRISC 1200">1200</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/RISC-V" title="RISC-V">RISC-V</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Java_Optimized_Processor" title="Java Optimized Processor">JOP</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Help:Authority_control" title="Help:Authority control">Authority control</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Integrated_Authority_File" title="Integrated Authority File">GND</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://d-nb.info/gnd/4159102-1">4159102-1</a></span></li>
+<li><a href="https://en.wikipedia.org/wiki/National_Diet_Library" title="National Diet Library">NDL</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://id.ndl.go.jp/auth/ndlna/01183213">01183213</a></span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1179
+Cached time: 20160513100749
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.479 seconds
+Real time usage: 0.568 seconds
+Preprocessor visited node count: 3190/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 87808/2097152 bytes
+Template argument size: 10810/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 6/500
+Lua time usage: 0.247/10.000 seconds
+Lua memory usage: 3.75 MB/50 MB
+Number of Wikibase entities loaded: 1-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  452.231      1 - -total
+ 36.15%  163.473      9 - Template:Fix
+ 27.01%  122.127      9 - Template:Delink
+ 22.36%  101.106      1 - Template:Reflist
+ 21.06%   95.234      3 - Template:Ambox
+ 17.87%   80.796      5 - Template:Citation_needed
+ 17.73%   80.184      3 - Template:Jargon-inline
+ 16.47%   74.480      1 - Template:Multiple_issues
+ 11.89%   53.760      4 - Template:Navbox
+ 10.31%   46.619      4 - Template:Cite_book
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:74554-0!*!0!!en!4!* and timestamp 20160513100749 and revision id 707135611
+ -->
+<noscript><img src="http://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;oldid=707135611">https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;oldid=707135611</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Hardware_description_languages" title="Category:Hardware description languages">Hardware description languages</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Technical_communication" title="Category:Technical communication">Technical communication</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Logic_design" title="Category:Logic design">Logic design</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Programming_language_classification" title="Category:Programming language classification">Programming language classification</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Articles_needing_additional_references_from_January_2013" title="Category:Articles needing additional references from January 2013">Articles needing additional references from January 2013</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Wikipedia_articles_that_are_too_technical_from_April_2014" title="Category:Wikipedia articles that are too technical from April 2014">Wikipedia articles that are too technical from April 2014</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_that_are_too_technical" title="Category:All articles that are too technical">All articles that are too technical</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_needing_expert_attention_from_April_2014" title="Category:Articles needing expert attention from April 2014">Articles needing expert attention from April 2014</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_needing_expert_attention" title="Category:All articles needing expert attention">All articles needing expert attention</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_unsourced_statements_from_July_2010" title="Category:Articles with unsourced statements from July 2010">Articles with unsourced statements from July 2010</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Vague_or_ambiguous_time_from_April_2014" title="Category:Vague or ambiguous time from April 2014">Vague or ambiguous time from April 2014</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_unsourced_statements_from_April_2014" title="Category:Articles with unsourced statements from April 2014">Articles with unsourced statements from April 2014</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Wikipedia_articles_with_GND_identifiers" title="Category:Wikipedia articles with GND identifiers">Wikipedia articles with GND identifiers</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://en.wikipedia.org/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://en.wikipedia.org/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Hardware+description+language&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Hardware+description+language" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="https://en.wikipedia.org/wiki/Hardware_description_language"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="https://en.wikipedia.org/wiki/Talk:Hardware_description_language"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="https://en.wikipedia.org/wiki/Hardware_description_language" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://en.wikipedia.org/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://en.wikipedia.org/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="https://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="https://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="https://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="https://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="https://en.wikipedia.org/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="http://shop.wikimedia.org/" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="https://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="https://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Hardware_description_language" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Hardware_description_language" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;oldid=707135611" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q173341" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&amp;page=Hardware_description_language&amp;id=707135611" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="https://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Hardware+description+language">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="https://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Hardware+description+language&amp;returnto=Hardware+description+language&amp;oldid=707135611&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="https://en.wikipedia.org/w/index.php?title=Hardware_description_language&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Hardware_description_languages" hreflang="en">Wikimedia Commons</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-bn"><a href="http://bn.wikipedia.org/wiki/হার্ডওয়্যার_ডেসক্রিপশন_ল্যাঙ্গুয়েজ" title="হার্ডওয়্যার ডেসক্রিপশন ল্যাঙ্গুয়েজ – Bengali" lang="bn" hreflang="bn">বাংলা</a></li><li class="interlanguage-link interwiki-ca"><a href="http://ca.wikipedia.org/wiki/Llenguatge_de_descripció_de_maquinari" title="Llenguatge de descripció de maquinari – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-de"><a href="http://de.wikipedia.org/wiki/Hardwarebeschreibungssprache" title="Hardwarebeschreibungssprache – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="http://et.wikipedia.org/wiki/Riistvarakirjelduskeel" title="Riistvarakirjelduskeel – Estonian" lang="et" hreflang="et">Eesti</a></li><li class="interlanguage-link interwiki-el"><a href="http://el.wikipedia.org/wiki/Γλώσσα_περιγραφής_υλικού" title="Γλώσσα περιγραφής υλικού – Greek" lang="el" hreflang="el">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="http://es.wikipedia.org/wiki/Lenguaje_de_descripción_de_hardware" title="Lenguaje de descripción de hardware – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Langage_de_description_de_matériel" title="Langage de description de matériel – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="http://ko.wikipedia.org/wiki/하드웨어_기술_언어" title="하드웨어 기술 언어 – Korean" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-hi"><a href="http://hi.wikipedia.org/wiki/हार्डवेयर_वर्णन_की_भाषा" title="हार्डवेयर वर्णन की भाषा – Hindi" lang="hi" hreflang="hi">हिन्दी</a></li><li class="interlanguage-link interwiki-ms"><a href="http://ms.wikipedia.org/wiki/Bahasa_takrifan_perkakasan" title="Bahasa takrifan perkakasan – Malay" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Hardwarebeschrijvingstaal" title="Hardwarebeschrijvingstaal – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="http://ja.wikipedia.org/wiki/ハードウェア記述言語" title="ハードウェア記述言語 – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Hardware_Description_Language" title="Hardware Description Language – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Linguagem_de_descrição_de_hardware" title="Linguagem de descrição de hardware – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="http://ru.wikipedia.org/wiki/Язык_описания_аппаратуры" title="Язык описания аппаратуры – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Laitteistokuvauskieli" title="Laitteistokuvauskieli – Finnish" lang="fi" hreflang="fi">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Hårdvarubeskrivande_språk" title="Hårdvarubeskrivande språk – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-tr"><a href="http://tr.wikipedia.org/wiki/Donanım_tanımlama_dili" title="Donanım tanımlama dili – Turkish" lang="tr" hreflang="tr">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="http://uk.wikipedia.org/wiki/Мови_опису_апаратури" title="Мови опису апаратури – Ukrainian" lang="uk" hreflang="uk">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="http://zh.wikipedia.org/wiki/硬件描述语言" title="硬件描述语言 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q173341#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 27 February 2016, at 01:24.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="http://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="http://en.m.wikipedia.org/w/index.php?title=Hardware_description_language&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="https://en.wikipedia.org/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="http://www.mediawiki.org/"><img src="https://en.wikipedia.org/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.eventLogging.subscriber","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":64,"wgHostname":"mw1247"});});</script>
+	</body>
+
+<!-- Mirrored from en.wikipedia.org/wiki/Hardware_description_language by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:26 GMT -->
+</html>

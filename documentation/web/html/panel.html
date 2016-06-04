@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/panel by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:45:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>LCD for Smoothieboard - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="login__customdomainscriptf36a.html?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="../images/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = '../images/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "panel";
+        OZONE.request.timestamp = 1463138535;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "panel";
+        WIKIREQUEST.info.pageId = 19330264;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="../images/wikidot.combined.js"></script>
+            <script type="text/javascript" src="../images/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="../images/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(../images/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(../images/style.css);
+                    @import url(../images/style-2.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="../images/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="../images/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="../images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="../images/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="index.html">Documentation</a><br /></li>
+<li><img src="../images/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="smoothieboard.html">SmoothieBoard</a><br /></li>
+<li><img src="../images/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="blog.html">Blog</a><br /></li>
+<li><img src="../images/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="gallery.html">Gallery</a><br /></li>
+<li><img src="../images/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="irc.html">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="general.html">Forum</a></li>
+<li><a href="smoothieware-support.html">Support/Help Mailing list</a></li>
+<li><a href="smoothie-dev.html">Developper Mailing list</a></li>
+<li><a href="111870450664099533727.html">Google+ Community</a></li>
+<li><a href="index-2.html">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="../images/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="search.html">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="../images/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>LCD for Smoothieboard</span></div>
+          <div class="breadcrumbs"><a href="configuring-smoothie.html">Configuring Smoothie</a> &raquo; <a href="utils.html">Utils</a> &raquo; LCD for Smoothieboard</div>
+          <div id="page-content">
+
+<div id="toc" class="floatright">
+<div id="toc-action-bar"><a href="javascript:;" onclick="WIKIDOT.page.listeners.foldToc(event)">Fold</a><a style="display: none" href="javascript:;" onclick="WIKIDOT.page.listeners.unfoldToc(event)">Unfold</a></div>
+<div class="title">Table of Contents</div>
+<div id="toc-list">
+<div style="margin-left: 1em;"><a href="#toc0">Supported Panels</a></div>
+<div style="margin-left: 1em;"><a href="#toc1">Configuration</a></div>
+<div style="margin-left: 2em;"><a href="#toc2">All configuration options</a></div>
+<div style="margin-left: 2em;"><a href="#toc3">Custom menu entries</a></div>
+<div style="margin-left: 2em;"><a href="#toc4">External SD card setup</a></div>
+<div style="margin-left: 2em;"><a href="#toc5">Using the spare button as a Kill switch</a></div>
+<div style="margin-left: 1em;"><a href="#toc6">Reprap Discount GLCD</a></div>
+<div style="margin-left: 2em;"><a href="#toc7">Manual wiring</a></div>
+<div style="margin-left: 1em;"><a href="#toc8">RRD GLCD to Azteeg X5 Mini v1.1 interface board</a></div>
+<div style="margin-left: 1em;"><a href="#toc9">Azteeg X5 Mini to RRD GLCD wiring harness</a></div>
+<div style="margin-left: 1em;"><a href="#toc10">Viki2 from panacutt.com</a></div>
+<div style="margin-left: 1em;"><a href="#toc11">LCD 12864 with ST 7920 driver</a></div>
+<div style="margin-left: 3em;"><a href="#toc12">Rotary Encoder and Push Button</a></div>
+<div style="margin-left: 3em;"><a href="#toc13">LCD Wiring</a></div>
+<div style="margin-left: 3em;"><a href="#toc14">Power for displaydriver</a></div>
+<div style="margin-left: 3em;"><a href="#toc15">SPI</a></div>
+<div style="margin-left: 3em;"><a href="#toc16">Power LED background</a></div>
+<div style="margin-left: 1em;"><a href="#toc17">AZSMZ 12864 LCD to Smoothieboard</a></div>
+</div>
+</div>
+<h1 id="toc0"><span>Supported Panels</span></h1>
+<p>The following panels are currently supported by Smoothie :</p>
+<ul>
+<li><a href="reprapdiscount_full_graphic_smart_controller.html">ReprapDiscount GLCD</a></li>
+<li><a href="universal-panel-adapter.html">Universal Panel Adapter</a></li>
+<li>Viki2 and Miniviki2, from <a href="index-78.html">panucatt</a></li>
+</ul>
+<p>Supported SPI chips:- ST7565 and ST7920</p>
+<div class="bs-callout bs-callout-info">
+<h4><span>Using non-SPI panels</span></h4>
+<p>I2C and parallel panels are not supported directly, however using a cheap Arduino Mini Pro, Uno or Nano<br />
+you can use the following I2C panels or a regular Reprap style Parallel style LCD using the universal panel adapter <a href="universal-panel-adapter.html">https://github.com/wolfmanjm/universal-panel-adapter</a> and the <tt>universal_adapter</tt> driver :</p>
+<ul>
+<li>old Viki lcd -&nbsp;I2C</li>
+<li>Most reprap style parallel LCD - Parallel</li>
+<li>Panelolu2 probably works but not tested - I2C</li>
+</ul>
+</div>
+<h1 id="toc1"><span>Configuration</span></h1>
+<h2 id="toc2"><span>All configuration options</span></h2>
+<p>Here are all the configuration options available for the Panel module :</p>
+<table class="wiki-content-table">
+<tr>
+<th>Option</th>
+<th>Example value</th>
+<th>Explanation</th>
+</tr>
+</table>
+<table class="wiki-content-table">
+<tr>
+<td>panel.enable</td>
+<td>false</td>
+<td>Set to true to enable the panel interface. Panels are a screen, an encoder wheel and/or a set of buttons, used to control your machine.</td>
+</tr>
+<tr>
+<td>panel.lcd</td>
+<td>reprap_discount_glcd</td>
+<td>Type of panel we are connecting. Each panel has a specific interface so we need to specify which panel we will be connecting. The currently supported panel types are <tt>reprap_discount_glcd</tt>, <tt>st7565_glcd</tt>, <tt>viki2</tt>, <tt>mini_viki2</tt> and <tt>universal_adapter</tt>.</td>
+</tr>
+<tr>
+<td>panel.spi_channel</td>
+<td>0</td>
+<td>SPI channel to use</td>
+</tr>
+<tr>
+<td>panel.spi_cs_pin</td>
+<td><tt>0.16</tt></td>
+<td>CS ( Chip Select ) pin to use, this can be used to have several different devices on the same SPI port, as long as each device has a separate CS pin. Note that the RRD GLCD panel does not support this and requires being alone on it's port.</td>
+</tr>
+<tr>
+<td>panel.spi_frequency</td>
+<td>500000</td>
+<td>SPI port frequency</td>
+</tr>
+<tr>
+<td>panel.contrast</td>
+<td>9</td>
+<td>Contrast value for panels that support it ( <tt>viki2</tt>, <tt>mini_viki2</tt> and <tt>st7565_glcd</tt> )</td>
+</tr>
+<tr>
+<td>panel.reverse</td>
+<td>false</td>
+<td>If set to true, reverse the screen.</td>
+</tr>
+<tr>
+<td>panel.busy_pin</td>
+<td><tt>nc</tt></td>
+<td>If using the <tt>universal_adapter</tt>, this pin can be connected to the adapter to ask it if it is busy or not.</td>
+</tr>
+<tr>
+<td>panel.encoder_a_pin</td>
+<td><tt>3.25!^</tt></td>
+<td>A pin for the encoder wheel. Encoders have two pins : A and B. Set to <tt>nc</tt> if you use no encoder.</td>
+</tr>
+<tr>
+<td>panel.encoder_b_pin</td>
+<td><tt>3.26!^</tt></td>
+<td>B pin for the encoder wheel. Encoders have two pins : A and B. Set to <tt>nc</tt> if you use no encoder.</td>
+</tr>
+<tr>
+<td>panel.encoder_resolution</td>
+<td><tt>2</tt></td>
+<td>the number of pulses the encoder emits per detent/click</td>
+</tr>
+<tr>
+<td>panel.click_button_pin</td>
+<td><tt>1.30!^</tt></td>
+<td>Pin for the click ( &quot;enter&quot; ) button</td>
+</tr>
+<tr>
+<td>panel.buzz_pin</td>
+<td><tt>1.31</tt></td>
+<td>Pin for the buzzer</td>
+</tr>
+<tr>
+<td>panel.back_button_pin</td>
+<td><tt>2.11!^</tt></td>
+<td>Pin for the back button</td>
+</tr>
+<tr>
+<td>panel.up_button_pin</td>
+<td><tt>0.1!</tt></td>
+<td>Pin for the up button</td>
+</tr>
+<tr>
+<td>panel.down_button_pin</td>
+<td><tt>0.0!</tt></td>
+<td>Pin for the down button</td>
+</tr>
+<tr>
+<td>panel.menu_offset</td>
+<td>0</td>
+<td>On some panels, this value must be set to 1. This is a number of lines to offset the menu lines by on screen.</td>
+</tr>
+<tr>
+<td>panel.alpha_jog_feedrate</td>
+<td>6000</td>
+<td>X jogging feedrate in millimetres/minute. This is used when jogging using the panel screen.</td>
+</tr>
+<tr>
+<td>panel.beta_jog_feedrate</td>
+<td>6000</td>
+<td>Y jogging feedrate in millimetres/minute. This is used when jogging using the panel screen.</td>
+</tr>
+<tr>
+<td>panel.gamma_jog_feedrate</td>
+<td>200</td>
+<td>Z jogging feedrate in millimetres/minute. This is used when jogging using the panel screen.</td>
+</tr>
+<tr>
+<td>panel.hotend_temperature</td>
+<td>185</td>
+<td>Temperature to set the hotend to when using the pre-heating menu item</td>
+</tr>
+<tr>
+<td>panel.bed_temperature</td>
+<td>60</td>
+<td>Temperature to set the bed to when using the pre-heating menu item</td>
+</tr>
+<tr>
+<td>panel.external_sd</td>
+<td>true</td>
+<td>Set to true if your panel has an external SD card slot, or if you want to connect a second SD card slot to one of your Smothieboard's SPI ports</td>
+</tr>
+<tr>
+<td>panel.external_sd.spi_channel</td>
+<td>0</td>
+<td>Set the SPI channel the external SD card is on</td>
+</tr>
+<tr>
+<td>panel.external_sd.spi_cs_pin</td>
+<td><tt>2.8</tt></td>
+<td>Set the CS ( Chip Select ) pin for the external SD card, this allows you to use multiple devices on the same SPI port, as long as they each have a CS pin</td>
+</tr>
+<tr>
+<td>panel.external_sd.sdcd_pin</td>
+<td><tt>2.13!^</tt></td>
+<td>SD card detect signal pin, set to <tt>nc</tt> if you don't use a SD card detect signal</td>
+</tr>
+<tr>
+<td>custom_menu.<a class="newpage" href="menu-name.html">menu_name</a>.enable</td>
+<td>true</td>
+<td>When set to true, create a new custom menu entry for the panel with the name <a class="newpage" href="menu-name.html">menu_name</a>. You can create any number of custom entries as long as they have different names.</td>
+</tr>
+<tr>
+<td>custom_menu.<a class="newpage" href="menu-name.html">menu_name</a>.name</td>
+<td>Power_on</td>
+<td>The name that will be displayed in the panel's menus</td>
+</tr>
+<tr>
+<td>custom_menu.<a class="newpage" href="menu-name.html">menu_name</a>.command</td>
+<td><tt>M80_S30|G1_X10</tt></td>
+<td>The command that will be executed when the menu entry is selected and clicked. Note that the <tt>_</tt> character gets converted to space in the menu and commands ( and must be used instead of the space character ) , and the <tt>|</tt> character is used to separate multiple commands</td>
+</tr>
+</table>
+<h2 id="toc3"><span>Custom menu entries</span></h2>
+<p>Menu entries can be added from the config file for simple commands, for instance the following adds a Power on and Power off menu entry.<br />
+Note that _ will be converted to a space when displayed in the Menu. Commands can be seperated with a |. If you want to add a menu entry that probes your z-axis you will have to use a command like G30 Z0 followed by a G0 Z10. For this you need a custom menu entry &quot;custom_menu.zprobe.command G30Z0|G0Z10&quot;. This moves the z-axis down untill it hits the probe, sets Z to 0 and moves 10 back up.</p>
+<div class="code">
+<pre>
+<code>custom_menu.power_on.enable              true              #
+custom_menu.power_on.name                Power_on          #
+custom_menu.power_on.command             M80               #
+
+custom_menu.power_off.enable             true              #
+custom_menu.power_off.name               Power_off         #
+custom_menu.power_off.command            M81               #</code>
+</pre></div>
+<h2 id="toc4"><span>External SD card setup</span></h2>
+<div class="bs-callout bs-callout-info">
+<p><strong>WARNING</strong> using the external sdcard for printing from is not recommended at present. running SPI over long (or even short) cables is problematic, and can cause random hangs and/or corrupted data. I am not aware of a way to fix this other than using differential buffer drivers.</p>
+</div>
+<p>For the RRD GLCD it <strong>CANNOT</strong> share the same SPI as the LCD so it must be hooked up to the onboard sdcard SPI and use a spare pin for the sdcs.<br />
+Also note that an external SDcard sharing the SPI port with the onboard/internal sdcard <strong>must</strong> be ejected before rebooting as the bootloader does not like the external card. <strong>NOTE</strong> Smoothie will <strong>not</strong> boot if the external sdcard is inserted in the RRD LCD sdcard slot at boot time, it must be inserted after it has booted.</p>
+<p>If the lcd panel has an sdcard reader it can be enabled with the following config:-</p>
+<div class="code">
+<pre>
+<code># setup for external sd card on the viki2 which shares the lcd spi port with the sdcard
+panel.external_sd                         true           # set to true if there is an extrernal sdcard on the panel
+panel.external_sd.spi_channel             0              # set spi channel the sdcard is on
+panel.external_sd.spi_cs_pin              0.27            # set spi chip select for the sdcard
+panel.external_sd.sdcd_pin                0.28!^          # sd detect signal (set to nc if no sdcard detect)</code>
+</pre></div>
+<div class="code">
+<pre>
+<code># setup for external sd card on the RRD GLCD which shares the onboard sdcard SPI port
+panel.external_sd                        true             # set to true if there is an extrernal sdcard on the panel
+panel.external_sd.spi_channel            1                # set spi channel the sdcard is on
+panel.external_sd.spi_cs_pin             0.27             # set spi chip select for the sdcard (or any spare pin)
+panel.external_sd.sdcd_pin               0.28!^           # sd detect signal (set to nc if no sdcard detect) (or any spare pin)</code>
+</pre></div>
+<h2 id="toc5"><span>Using the spare button as a Kill switch</span></h2>
+<p>The button on the glcd and VIki2 can be wired as a Kill button by following <a href="pausebutton.html">This guide</a>. In that case the<br />
+<tt>panel.back_button_pin</tt> should be commented out.</p>
+<h1 id="toc6"><span>Reprap Discount GLCD</span></h1>
+<div class="image-container alignleft"><img src="../images/glcd-display.png" alt="glcd-display.png" class="image" /></div>
+<p>Power from the 5v line directly, from the 5v uart pin with a decoupling capacitor of at least 0.1uF, from a + pin on an unused endstop, or an external 5V power supply capable of delivering at least 500&#160;mA.</p>
+<div class="bs-callout bs-callout-info">
+<h4><span><a href="image.html">More power</a></span></h4>
+<p>If you are using the onboard 5V regulator to step down from 12/24V, check the current draw required for your panel - depending on the color/backlight on your GLCD, it may require &gt;250&#160;mA for the backlight.</p>
+<p>The normal recommended 5V regulator will not supply enough current for those panels - if the panel powers up, it will have very low contrast.</p>
+<p>Use Recom part <tt>R-78E5.0-<strong>1.0</strong></tt> instead - it will supply 1 amp (vs 0.5 amps for the normally recommended regulator).</p>
+<p>It is available at Digikey, and likely at other major electronics component sites.</p>
+<p>See <a href="voltageregulator.html">Voltage Regulator</a>.</p>
+</div>
+<div class="bs-callout bs-callout-info">
+<h4><span>Adapter</span></h4>
+<p>There is an adapter board to easily connect a ReprapDiscount GLCD to a Smoothieboard with flat cable, howver note this is entirely optional.</p>
+<p>You can find information about it at the <a href="rrdglcdadapter.html">RRDGLCDAdapter</a> page.</p>
+<p>It's sources are available on <a href="glcdadapter2.html">github</a>.</p>
+</div>
+<div class="bs-callout bs-callout-warning">
+<h4><span>SPI thermocouples</span></h4>
+<p>Because the RRD GLCD does not implement SPI correctly, it has to be alone on it's SPI port. This means you won't be able to use SPI thermocouples and the RRD&nbsp;GLCD together on the same board, unfortunately</p>
+</div>
+<h2 id="toc7"><span>Manual wiring</span></h2>
+<p>On the back of the GLCD EXP1 is to left and EXP2 is to right, pin 1 is bottom left, pin 2 is top left etc.<br />
++5v is EXP1 pin 10, Gnd is EXP1 pin 9</p>
+<div class="code">
+<pre>
+<code># config settings
+panel.enable                          true              # set to true to enable the panel code
+panel.lcd                             reprap_discount_glcd     # set type of panel
+panel.spi_channel                     0                 # spi channel to use  ; GLCD EXP1 Pins 3,5 (MOSI, SCLK)
+panel.spi_cs_pin                      0.16              # spi chip select     ; GLCD EXP1 Pin 4
+panel.encoder_a_pin                   3.25!^            # encoder pin         ; GLCD EXP2 Pin 3
+panel.encoder_b_pin                   3.26!^            # encoder pin         ; GLCD EXP2 Pin 5
+panel.click_button_pin                1.30!^            # click button        ; GLCD EXP1 Pin 2
+panel.buzz_pin                        1.31              # pin for buzzer      ; GLCD EXP1 Pin 1
+panel.back_button_pin                 2.11!^            # 2.11 menu back      ; GLCD EXP2 Pin 8
+# setup for external sd card on the GLCD which uses the onboard sdcard SPI port
+panel.external_sd                     true              # set to true if there is an extrernal sdcard on the panel
+panel.external_sd.spi_channel         1                 # set spi channel the sdcard is on
+panel.external_sd.spi_cs_pin          0.28              # set spi chip select for the sdcard (or any spare pin)
+panel.external_sd.sdcd_pin            0.27!^            # sd detect signal (set to nc if no sdcard detect) (or any spare pin)</code>
+</pre></div>
+<strong>5XC Pin Locations for GLCD Panel</strong><br />
+<img src="../images/smoothieboard2sd.jpg" alt="smoothieboard2sd.jpg" class="image" /><img src="../images/glcdpinouts2sd.jpg" alt="GLCDPINOUTS2SD.jpg" class="image" />
+<div class="bs-callout bs-callout-warning">
+<h4><span>Pin numbering</span></h4>
+<p>5vdc availability presumes a 5vdc source (power from SBUS, 5V input, or optionally installed 5v converter VBB).<br />
+Be aware that RRD does not follow proper conventions for pin numbering. The pin 1 indicator on the ribbon is actually pin 10 in the RRD schematic. The image above is numbered according to the RRD inset schematics.</p>
+</div>
+<h1 id="toc8"><span>RRD GLCD to Azteeg X5 Mini v1.1 interface board</span></h1>
+<img src="../images/glcd2x5_single_sm.jpg" alt="glcd2x5_single_sm.jpg" class="image" /><img src="../images/ax5m_glcd_sm.jpg" alt="ax5m_glcd_sm.jpg" class="image" />
+<p>This interface board is simple to install, eliminates custom cables, frustration, and wire mess.</p>
+<p>It is compatible with Azteeg X5 Mini v1.1 motion controller and is available from <a href="glcd-to-azteeg-x5-mini-board.html" target="_blank">www.UltiBots.com</a>. Source files are on our <a href="glcd2x5.html">GitHub</a>.</p>
+<h1 id="toc9"><span>Azteeg X5 Mini to RRD GLCD wiring harness</span></h1>
+<p>This wiring harness uses three 2x10, one 1x2 .100&quot; crimp housings and one heat shrinked female pin to connect the RRD GLCD to an Azteeg X5 Mini.</p>
+<div class="image-container alignleft"><a href="../images/glcdtoazteegx5miniwiringharness.pdf"><img src="../images/medium.jpg" alt="GLCDtoAzteegX5miniWiringHarness.pdf" class="image" /></a></div>
+<p><strong>Note:</strong> This information is compatible with Azteeg X5 Mini v1.0 motion controllers.</p>
+<h1 id="toc10"><span>Viki2 from panacutt.com</span></h1>
+<p>Viki2 wires to an Azteeg X5 mini with a flat cable as it has 1:1 pin mapping. The ConfigSample for the Azteeg mini has the config settings required, just uncomment them,</p>
+<p>The config for Azteeg X5 is different to smoothieboard and is shown in the file <a href="config.html#L178">https://github.com/Smoothieware/Smoothieware/blob/2f88d440ee3f79cb5202d242967b555fa35c7423/ConfigSamples/AzteegX5Mini/config#L178</a></p>
+<p>Here is an example config for a 4 driver smoothieboard<br />
+<strong>NOTE</strong> a 5 driver does not have enough free pins to use all the features</p>
+<div class="code">
+<pre>
+<code># For 4 driver Smoothie board NOT azteeg X5 or 5 driver smoothie
+panel.enable                                 true              # set to true to enable the panel code
+panel.lcd                                    viki2             # set type of panel
+panel.spi_channel                            0                 # set spi channel to use P0_18,P0_15 MOSI,SCLK
+panel.spi_cs_pin                             0.16              # set spi chip select
+panel.encoder_a_pin                          3.25!^            # encoder pin
+panel.encoder_b_pin                          3.26!^            # encoder pin
+panel.click_button_pin                       1.30!^            # click button
+panel.a0_pin                                 2.11              # st7565 needs an a0
+#panel.contrast                              8                 # some panels need contrast set, this is for viki2
+#panel.encoder_resolution                    4                 # number of clicks to move 1 item
+panel.buzz_pin                               1.31              # pin for buzzer
+panel.red_led_pin                            1.22              # pin for red led on viki2 (5 driver can't use this)
+panel.blue_led_pin                           1.23              # pin for blue led on viki2 (5 driver can't use this)
+#panel.back_button_pin                        1.30!^           # optionally using the red buttin as a back button
+# setup for external sd card on the viki2
+panel.external_sd                            true              # set to true if there is an extrernal sdcard on the panel
+panel.external_sd.spi_channel                0                 # set spi channel the sdcard is on
+panel.external_sd.spi_cs_pin                 2.8               # set spi chip select for the sdcard (NOTE 5 drvier can't use this)
+panel.external_sd.sdcd_pin                   2.13!^            # sd detect signal (set to nc if no sdcard detect) (NOTE 5 drvier can't use this)</code>
+</pre></div>
+<p><strong>Using the suggested firmware above the wiring for the Viki 2.0 on a 4 driver smoothieboard is as follows:</strong></p>
+<div class="code">
+<pre>
+<code>SDCD to P0.27
+BTN to P1.30
+SDCS to P2.8
+LCS to P0.16
+SCK to P0.15
+GND to 5v power supply's ground or a ground pin on the smoothieboard
+ENCB to P3.26
+ENCA to P3.25
+MISO to P0.8
+A0 to P2.11
+MOSI to P0.18
++Vin to 5v power supply
+
+BTN to None, Viki 2.0 has 2 Blue BTN wires that do the same thing
+Buzzer to P1.31
+Blue-LED to P1.23
+Red-LED to P1.22</code>
+</pre></div>
+<br />
+This wiring uses this <a href="../images/smoothieboard-wiring.png">smoothie pin map</a> and this <a href="../images/viki2_wiring_diagrameb84.pdf?AWSAccessKeyId=AKIAJ2JSYZ7O3I4JO6DA&amp;Expires=1454541217&amp;Signature=MMRFZtl%2BpEqk7VniywwRSn7JXhI%3D&amp;response-content-type=application%2Fpdf">Viki 2.0 wiring guide</a>
+<p>5 driver smoothieboard, disables buzzer and uses red led instead</p>
+<div class="code">
+<pre>
+<code># For 5 driver Smoothie board NOT azteeg X5
+panel.enable                                 true              # set to true to enable the panel code
+panel.lcd                                    viki2             # set type of panel
+panel.spi_channel                            0                 # set spi channel to use P0_18,P0_15 MOSI,SCLK
+panel.spi_cs_pin                             0.16              # set spi chip select
+panel.encoder_a_pin                          3.25!^            # encoder pin
+panel.encoder_b_pin                          3.26!^            # encoder pin
+panel.click_button_pin                       1.30!^            # click button
+panel.a0_pin                                 2.11              # st7565 needs an a0
+#panel.contrast                              8                 # some panels need contrast set, this is for viki2
+#panel.encoder_resolution                    4                 # number of clicks to move 1 item
+#panel.buzz_pin                              1.31              # pin for buzzer (use red led OR buzzer not both)
+panel.red_led_pin                            1.31              # pin for red led on viki2
+#panel.blue_led_pin                          1.23              # pin for blue led on viki2 (5 driver can't use this)
+#panel.back_button_pin                       1.30!^            # optionally using the red button as a back button (NOT available on 5 driver)
+# setup for external sd card on the viki2
+panel.external_sd                            true              # set to true if there is an extrernal sdcard on the panel
+panel.external_sd.spi_channel                0                 # set spi channel the sdcard is on
+panel.external_sd.spi_cs_pin                 0.27              # set spi chip select for the sdcard
+panel.external_sd.sdcd_pin                   0.28!^            # sd detect signal (set to nc if no sdcard detect)</code>
+</pre></div>
+<h1 id="toc11"><span>LCD 12864 with ST 7920 driver</span></h1>
+<p>Works with the reprap GLCD driver :)and is available for around 7€ or 10$.<br />
+Just wire the display unit as indicated.</p>
+<h3 id="toc12"><span>Rotary Encoder and Push Button</span></h3>
+<p>To use the menu system of the smoothie. Wire a Rotary Encoder with a Push Button according to GLCD config above to the pins</p>
+<div class="code">
+<pre>
+<code>3.25&lt;-- encoder  A  [2]-|¯¯¯¯¯|-[4] encoder sw --&gt;GND
+ GND&lt;-- encoder Com [1]-| (O) |
+3.26&lt;-- encoder  B  [3]-|_____|-[5] encoder sw --&gt;1.30</code>
+</pre></div>
+<p>It is possible to use the pin 1.22&#160;1.23&#160;1.30 (on the same connector), but in this case do not use corresponding mosfets</p>
+<h3 id="toc13"><span>LCD Wiring</span></h3>
+<div class="code">
+<pre>
+<code>Display [PIN] --&gt; Board or external GND/VCC</code>
+</pre></div>
+<h3 id="toc14"><span>Power for displaydriver</span></h3>
+<div class="code">
+<pre>
+<code>VSS (GND) [1] --&gt; GND
+VCC [2] --&gt; VCC 5V</code>
+</pre></div>
+<h3 id="toc15"><span>SPI</span></h3>
+<div class="code">
+<pre>
+<code>RS [4] --&gt; ssel1/CS
+R/W [5] --&gt; Mosi
+E [6] --&gt; sclk1/SCK
+PSB[15] --&gt; GND  (for serial mode)          check before if PSB is not connected to vcc on the Lcd PCB</code>
+</pre></div>
+<img src="../images/st7920pcb.png" alt="st7920pcb.png" class="image" />
+<h3 id="toc16"><span>Power LED background</span></h3>
+<div class="code">
+<pre>
+<code>BLA [19] --&gt; VCC 5V
+BLK [20] --&gt; GND</code>
+</pre></div>
+<h1 id="toc17"><span>AZSMZ 12864 LCD to Smoothieboard</span></h1>
+<img src="../images/smoothieboard-lcd_1024.jpg" alt="smoothieboard-LCD_1024.jpg" class="image" />
+<p>Configuration :&nbsp;</p>
+<div class="code">
+<pre>
+<code># For Smoothie board NOT azteeg X5
+
+panel.enable                 true          # set to true to enable the panel code
+panel.lcd                        viki2               # set type of panel. AZSMZ 12864 LCD is similar viki2, also set to viki2.
+panel.spi_channel         0                 # set spi channel to use P0_18,P0_15 MOSI,SCLK
+panel.spi_cs_pin           0.16           # set spi chip select
+panel.encoder_a_pin    3.25!^        # encoder pin
+panel.encoder_b_pin    3.26!^        # encoder pin
+panel.click_button_pin  1.30!^        # click button
+panel.a0_pin                  2.11          # st7565 needs an a0
+panel.contrast                19             # some panels need contrast set, this is for AZSMZ 12864 LCD
+panel.encoder_resolution      4     # number of clicks to move 1 item
+panel.buzz_pin               1.31         # pin for buzzer (use red led OR buzzer not both)
+panel.menu_offset         0              # some panels will need 1 here
+panel.reverse                 1
+
+# setup for external sd card on the LCD board
+panel.external_sd                           true                # set to true if there is an extrernal sdcard on the panel
+panel.external_sd.spi_channel     0                    # set spi channel the sdcard is on
+panel.external_sd.spi_cs_pin       0.27              # set spi chip select for the sdcard
+panel.external_sd.sdcd_pin          0.28!^           # sd detect signal (set to nc if no sdcard detect)</code>
+</pre></div>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 122, last edited: <span class="odate time_1454541109 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">03 Feb 2016 23:11</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="doc_start.html" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="legal_terms-of-service.html" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="legal_privacy-policy.html" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="index-4.html">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="index-5.html">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="../images/p-edl3gsnujjzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/panel by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:46:32 GMT -->
+</html>

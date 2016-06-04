@@ -1,0 +1,2333 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<!-- Mirrored from hackaday.io/project/5200-pick-and-place-machine by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:15:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Pick and Place Machine &bull; Hackaday.io</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    
+
+
+        <meta name="description" content="ProtoVoltaics Pick and Place Machine Project">
+        <link rel="canonical" href="http://hackaday.io/project/5200-pick-and-place-machine" />
+
+
+
+    <link rel="stylesheet" href="http://cdn.hackaday.io/css/style.css?version=0.69.10" />
+        <script type="text/javascript">
+        function getCommentIdFromUrl() {
+            if(window.location.hash) {
+                var hash = window.location.hash.substring(1);
+                var commentId = parseInt(hash.replace('j-discussion-', ''));
+                if (commentId) {
+                    return commentId;
+                }
+            }
+            return null;
+        }
+
+        var commentId = getCommentIdFromUrl();
+        if (commentId) {
+            var url = window.location.href;
+            if (url.indexOf('?') > -1) {
+                url = url.substring(0, url.indexOf('?'));
+            }
+            if (url.indexOf('#') > -1) {
+                url = url.substring(0, url.indexOf('#'));
+            }
+            url += '/discussion-' + commentId;
+            window.location.href = url;
+        }
+    </script>
+    <script type="text/javascript" src="http://use.typekit.net/ymb0lgk.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hackadayio">
+    <meta name="twitter:title" content="Pick and Place Machine">
+    
+        <meta name="twitter:description" content="As a company we needed a PnP machine to make our products faster. Most of the PnP machines we found online were expensive, inaccurate, loud, and incomplete. It didn&amp;apos;t take us long to decide this was going to be our next project. 
+
+The goal is to make a fully automated machine with fully automated feeders that are easily replaced anywhere in the stack. Also, the Pick and Place will use CV for accurate placement.
+
+">
+    
+    
+        <meta name="twitter:image" content="https://cdn.hackaday.io/images/resize/600x600/2668501435167152836.JPG">
+    
+
+    <!-- Open Graph data -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pick and Place Machine">
+    <meta property="og:url" content="http://hackaday.io/project/5200-pick-and-place-machine">
+    
+        <meta property="og:description" content="As a company we needed a PnP machine to make our products faster. Most of the PnP machines we found online were expensive, inaccurate, loud, and incomplete. It didn&amp;apos;t take us long to decide this was going to be our next project. 
+
+The goal is to make a fully automated machine with fully automated feeders that are easily replaced anywhere in the stack. Also, the Pick and Place will use CV for accurate placement.
+
+">
+    
+    
+        <meta property="og:image" content="https://cdn.hackaday.io/images/resize/600x600/2668501435167152836.JPG">
+    
+
+    <script>
+        var HIO = {};
+    </script>
+
+</head>
+<body class="project-detail page_v2 ">
+
+    <!--
+############################################################################################
+############################################################################################
+############################################################################################
+#####################Kt;tL#######################################Kti,E######################
+#######################;   .###################################G    E#######################
+#######################K    f##################################    ;########################
+########################Wj   E###############################K:  .W#########################
+##########################.  :E##############################:  .L##########################
+#########################D    f##############################.   .##########################
+########################,     ;##############################     :E#######K################
+################f######K      ,##############################      ,######Lt################
+################  W###W       i##############################       t####j t################
+################:  E#L.        f###########################L.        f#Ki .E################
+################j  ;E.          j##########################.         .G;  i#################
+#################L               i#######################K                ##################
+#################W                E#####################K;               ;##################
+###################:               .###################D               :f###################
+#####################DLfGD           G####WEEEEKW####W           ;GffGK#####################
+##########################i         iD##Kfi    :jKW##D          iE##########################
+###########################W      ,G##f            jE#E;       j############################
+############################L     D##D              ,##K       W############################
+#############################D:  G#W                  K#E,   G##############################
+###############################;i#L                    j## ,E###############################
+###############################KK#.                     ##iE################################
+#################################j                      ;K##################################
+################################W                        ,##################################
+################################E                         ##################################
+###############################Ki                         D#################################
+###############################E.                         L#################################
+###############################f    iD##W;       D###D    :#################################
+###############################i   i######K     K#####K;   #################################
+###############################;  .E#######     #######D   #################################
+###############################;  L########     ########   #################################
+###############################i  G#######K     K#######   #################################
+###############################j  L#####E,       fE#####   #################################
+###############################D  .E##j            .t##E  ;#################################
+###############################E:  ;##.              #Wt  j#################################
+################################G   ;t      tWi      t    E#################################
+#############################KL##           K#K;          #K:K##############################
+#############################i ##:          ###t         j#f ;K#############################
+############################:  G#K          #E#L        L##    D############################
+###########################D   ;W#:         #;#L        W#K    .############################
+#####################KKEKK      :##L        ; ..      :D##.      fKEEK######################
+###################t.            ;##G:               ,##E,             tD###################
+##################G               E##E               i##;               :###################
+#################D                W##W    iL    E.    ###D                ##################
+################W,               G###W    tG    K.    ####:               K#################
+################;  LW;         ,E#####:  ;W#    #G   f#####;         ;KG  :K################
+################  D###E       ;########WW####WW####WW#######W       :####: j################
+################ ,#####:      ;##############################       G####E i################
+################K#######.     ;##############################      L######WG################
+########################f     i##############################     j#########################
+#########################W   .D##############################.   i##########################
+#########################E   G###############################D   ,##########################
+########################G:   #################################j   G#########################
+#######################f    K##################################j    W#######################
+#####################Kt :iE#####################################KL:  K######################
+############################################################################################
+############################################################################################
+############################################################################################
+-->
+
+<div class="header" id="header">
+    <div class="container">
+
+        <a href="https://hackaday.io/" title="Hackaday.io Home" class="logo" onclick="CT(this, 'Menu', 'Home'); return false;">Hack a Day</a>
+
+        <a href="javascript:void(0);" class="button-menu">Menu</a>
+
+        <ul class="nav" role="navigation">
+            <li><a href="https://hackaday.io/projects" class="">Projects</a></li>
+            <li><a href="https://hackaday.io/lists" class="">Lists</a></li>
+            <li><a href="https://hackaday.io/stack" class="">Stack</a></li>
+            <li class="dropdown j-more-open">
+                <a href="javascript:void(0)" class="dropdown-link">More <i class="icon-arrowdown"></i></a>
+                <ul role="menu" class="dropdown-menu more-menu" id="j-more">
+                    <li><a href="http://hackaday.com/blog/" target="_blank">Blog</a></li>
+                    <li><a href="https://hackaday.io/events">Events</a></li>
+                    <li><a href="https://hackaday.io/hackerspaces">Hackerspaces</a></li>
+                    <li><a href="https://hackaday.io/hackers">Profiles</a></li>
+                    <li><a href="https://hackaday.io/contests">Contests</a></li>
+                    <li><a href="https://hackaday.io/prize" target="_blank">The Hackaday Prize</a></li>
+                    <li><a href="https://hackaday.io/submissions/prize2016/list">2016 Prize Entries</a></li>
+                    <li><a href="http://store.hackaday.com/" class="j-store-tracking" target="_blank">Store</a></li>
+                </ul>
+            </li>
+            <li class="search-holder">
+                <form id="search-form" action="https://hackaday.io/search" onsubmit="return submitSearch();" method="GET">
+                    <input type="text" placeholder="Search projects, profiles ..." name="term" class="input-field j-add-search" id="j-add-search" value="" autocomplete="off" pattern=".{2,}" required title="2 characters minimum" />
+                    <button type="submit" class="button-search"><i class="icon-search"></i></button>
+                </form>
+            </li>
+        </ul>
+
+        
+
+            <ul class="nav right nav-signin" role="navigation">
+                <li><a href="https://hackaday.io/signup" class="gold-white-button">Sign up</a></li>
+                <li><a href="https://hackaday.io/signin?returnUrl=%2Fproject%2F5200-pick-and-place-machine">Log In</a></li>
+            </ul>
+
+        
+    </div>
+</div>
+
+<div id="topMessage" class="alert small hide">
+    <span class="j-top-content"></span>
+    <a href="javascript:void(0);" class="alert-close j-top-message-close"><i class="icon-close"></i> Close</a>
+</div>
+
+
+
+
+
+
+    
+
+    
+        <div class="page-basic-info-static guest-message-signup">
+            
+                <h2>Does this project spark your interest?</h2>
+                <p class="page-basic-info-text">Become a member to follow this project and don't miss any updates</p>
+
+            
+
+            <div class="signup-holder">
+                <form method="POST" action="https://hackaday.io/signup">
+                    <input type="hidden" name="_csrf" value="KCkDBoSD-KHBDmP8ReOB3tFFtFuu-a62Dzm0" />
+                    <input type="text" class="input-field input-email" placeholder="Your email address"  name="email"  /><input type="password" class="input-field input-password" placeholder="Password"  name="password" /><button class="black-gold-button signup" type="submit">Become a member</button>
+                    <input class="input-field" placeholder="Invitation Code" required name="invitation_code" value="5Ad0ix2-b96J" type="hidden" />
+                </form>
+            </div>
+
+        </div>
+    
+    
+
+    
+
+    
+    <div class="header-photo" >
+        <div class="overlay"></div>
+    </div>
+    
+
+    
+    <div class="headline" >
+        <div class="headline-image-overlay"></div>
+        <div class="progress-holder">
+            <div class="progress">
+                <div class="progress-item">
+                    <div class="progress-number foreground">0%</div>
+                </div>
+                <div class="progress-number">0%</div>
+            </div>
+        </div>
+        <div class="container">
+
+            <h1><a href="https://hackaday.io/project/5200-pick-and-place-machine">Pick and Place Machine</a></h1>
+            <p class="description">ProtoVoltaics Pick and Place Machine Project</p>
+
+            
+
+            
+                <div class="author">
+                    <span class="identity-card" data-id="58543"><a href="https://hackaday.io/ProtoVoltaics"><img src="https://pbs.twimg.com/profile_images/544847966918307840/7AR92PL7.png" />ProtoVoltaics</a></span>
+                </div>
+            
+
+            
+
+            
+
+                <div class="project-following-container ">
+                    <a href="javascript:void(0)" data-href="/project/5200/event/unfollow" class="gold-gold-button unfollow text-changing-button" data-before="<i class='icon-follow'></i> Following" data-after="Unfollow?"><i class="icon-follow"></i> Following</a>
+                    <a href="javascript:void(0)" data-href="/project/5200/event/follow" class="gold-gold-button follow">Follow project</a>
+                </div>
+
+                
+                
+
+                
+
+                
+                    <div class="project-skulling-container ">
+                        <a href="javascript:void(0)" data-href="/project/5200/event/unskull" class="gold-gold-button unskulled text-changing-button" data-before="<span class='icon-skull-test'></span> Liked" data-after="Unlike?"><span class="icon-skull-test"></span> Liked</a>
+                        <a href="javascript:void(0)" data-href="/project/5200/event/skull" class="gold-gold-button skulled"><span class="icon-skull-test"></span> Like</a>
+                    </div>
+                
+
+            
+
+        </div>
+
+        <div class="project-join-top ">
+
+            
+
+            
+                
+                    <a href="javascript:void(0)"
+                       
+                            class="login-button button-upload"
+                       
+                    >Join this project <span class="icon-join"></span></a>
+                
+            
+        </div>
+
+    </div>
+
+    <div id="similars">
+        <div class="similars-header">
+            Similar projects worth following
+            <a href="javascript:void(0)" class="submissions-close"></a>
+        </div>
+        <div class="container"></div>
+    </div>
+
+
+    <div class="project-menu-details-holder">
+        <div class="container">
+            <div class="content-left section-profile-stats">
+                
+                    
+                        <div class="stat-one">
+                            <span title="View Count">
+                                22.7k
+                            </span>
+                            <small>views</small>
+                        </div>
+                    
+                
+                <a href="javascript:void(0)">
+                    <div class="stat-one">
+                        <span title="Comments" class="comment_count">
+                            23
+                        </span>
+                        <small>comments</small>
+                    </div>
+                </a>
+                
+                    
+                        <a href="https://hackaday.io/hackers/all/project/5200/following">
+                    
+                        <div class="stat-one">
+                            <span title="Followers" class="follower_count">
+                                240
+                            </span>
+                            <small>followers</small>
+                        </div>
+                    
+                        </a>
+                    
+
+                    
+                        
+                            <a href="https://hackaday.io/hackers/all/project/5200/likers">
+                        
+                                <div class="stat-one">
+                                    <span title="Likes" class="like_count">
+                                        93
+                                    </span>
+                                    <small>likes</small>
+                                </div>
+                        
+                            </a>
+                        
+                    
+                    
+                
+            </div>
+
+            <div class="content-right">
+                <ul class="project-menu">
+                    
+                    
+                        <li><a href="#menu-description" class="active">Description</a></li>
+                    
+                    <li>
+                        
+                            <a href="#menu-details" >Details</a>
+                        
+                    </li>
+                    <li>
+                        
+                            Files (0)
+                        
+                    </li>
+                    
+                        <li>
+                            
+                                    <a href="#menu-components">Components (7)</a>
+                            
+                        </li>
+                    
+                    <li>
+                        
+                            <a href="#menu-logs">Logs (45)</a>
+                        
+                    </li>
+                    
+                        <li>
+                            
+                                Instructions (0)
+                            
+                        </li>
+                    
+                    
+                    <li>
+                        
+                            <a href="#j-discussions-title">Discussion (23)</a>
+                        
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-left">
+
+            
+                <ul class="submissions-icons">
+                    
+                        
+                        
+                    
+                        
+                            <li>
+                                <a href="https://hackaday.io/submissions/prize2015/list" class="submission-icon submission-icon-5">
+                                    The 2015 Hackaday Prize
+                                </a>
+                            </li>
+                        
+                        
+                    
+                        
+                        
+                    
+                </ul>
+            
+
+            
+                <a href="https://hackaday.io/project/5200/gallery#a910d9a40e8a7ef1f4120ce0b0efbb16" id="project-image" class="image-holder" style="background-image: url(https://cdn.hackaday.io/images/resize/600x600/2668501435167152836.JPG)" data-image="https://cdn.hackaday.io/images/resize/600x600/2668501435167152836.JPG">
+                </a>
+            
+
+            <div class="thumbs-holder">
+                
+                        <a href="https://hackaday.io/project/5200/gallery#a910d9a40e8a7ef1f4120ce0b0efbb16" class="image-holder thumb" style="background-image: url(https://cdn.hackaday.io/images/resize/600x600/2668501435167152836.JPG)" data-image="https://cdn.hackaday.io/images/resize/600x600/2668501435167152836.JPG">
+                    </a>
+                
+                        <a href="https://hackaday.io/project/5200/gallery#8209c9f9f0db6b0090f14ec5f6b009d3" class="image-holder thumb" style="background-image: url(https://cdn.hackaday.io/images/resize/600x600/721741435167175030.JPG)" data-image="https://cdn.hackaday.io/images/resize/600x600/721741435167175030.JPG">
+                    </a>
+                
+                        <a href="https://hackaday.io/project/5200/gallery#7b98012dcde0b11d2b71428afd7f008d" class="image-holder thumb thumb-last" style="background-image: url(https://cdn.hackaday.io/images/resize/600x600/2813711435167279499.jpg)" data-image="https://cdn.hackaday.io/images/resize/600x600/2813711435167279499.jpg">
+                    </a>
+                
+                        <a href="https://hackaday.io/project/5200/gallery#6227a3be376219b1c49f323934f29ced" class="image-holder thumb" style="background-image: url(https://cdn.hackaday.io/images/resize/600x600/2700101435167294182.JPG)" data-image="https://cdn.hackaday.io/images/resize/600x600/2700101435167294182.JPG">
+                    </a>
+                
+            </div>
+
+            
+                <div class="view-gallery-holder">
+                    <a href="https://hackaday.io/project/5200/gallery">
+                        <div class="view-gallery grey-gold-button very-small-button">View Gallery</div>
+                    </a>
+                </div>
+            
+
+            
+
+            
+            
+
+            <aside class="section section-project-stats">
+                
+                    
+                        <span class="icon-view-count view_count" title="View Count">22.7k</span>
+                    
+                
+                <a>
+                    <span class="icon-comment-with-hover oi-font-color-grey comment_count" title="Comments">23</span>
+                </a>
+                
+                    
+                        <a href="https://hackaday.io/hackers/all/project/5200/following">
+                    
+                        <span class="icon-view oi-font-color-grey follower_count" title="Followers">240</span>
+                    
+                        </a>
+                    
+
+                    
+                        
+                            <a href="https://hackaday.io/hackers/all/project/5200/likers">
+                        
+                                <span class="icon-skull oi-font-color-grey like_count" title="Likes">93</span>
+                        
+                            </a>
+                        
+                    
+                
+            </aside>
+
+            
+                <aside class="section section-team">
+                    <h2 class="section-title">
+                        
+                            Team
+                        
+                    </h2>
+
+                    <ul>
+                        
+                            
+                                <li>
+                                    <span class="gray-link"><span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543"><img src="https://pbs.twimg.com/profile_images/544847966918307840/7AR92PL7.png" />ProtoVoltaics</a></span></span>
+                                    
+
+                                    
+                                </li>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    </ul>
+
+                    <div class="error-message hide" id="team-error"><p></p></div>
+
+                    
+                        <input type="hidden" name="HADPrizeSubmission" value="false"/>
+                        
+                            <a href="javascript:void(0)"
+                               
+                                    class="login-button"
+                               
+                            >Join this project</a>
+                        
+                    
+
+                </aside>
+            
+
+            
+
+            
+
+            
+
+
+            
+                
+                    <aside class="section section-tags">
+                        
+                            <div class="special-tags">
+                                <a href="https://hackaday.io/projects/tag/software" class="tag tag-software">Software</a>
+                            </div>
+                        
+                            <div class="special-tags">
+                                <a href="https://hackaday.io/projects/tag/hardware" class="tag tag-hardware">hardware</a>
+                            </div>
+                        
+                            <div class="special-tags">
+                                <a href="https://hackaday.io/projects/tag/completed project" class="tag tag-completed">completed project</a>
+                            </div>
+                        
+                        
+                            <a href="https://hackaday.io/projects/tag/kickstarter" class="tag">kickstarter</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/arduino" class="tag">arduino</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/smd" class="tag">smd</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/pcb" class="tag">pcb</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/ROBOT" class="tag">ROBOT</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/Maker" class="tag">Maker</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/computer vision" class="tag">computer vision</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/camera" class="tag">camera</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/electronics" class="tag">electronics</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/automation" class="tag">automation</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/prototype" class="tag">prototype</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/opencv" class="tag">opencv</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/manufacturing" class="tag">manufacturing</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/smt" class="tag">smt</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/CV" class="tag">CV</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/assembly" class="tag">assembly</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/maker faire" class="tag">maker faire</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/Pick and place" class="tag">Pick and place</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/auto tool changer" class="tag">auto tool changer</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/openpnp" class="tag">openpnp</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/pnp" class="tag">pnp</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/MAKERFAIRE" class="tag">MAKERFAIRE</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/forge" class="tag">forge</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/PCBA" class="tag">PCBA</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/2015HackadayPrize" class="tag">2015HackadayPrize</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/feeder" class="tag">feeder</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/makermovement" class="tag">makermovement</a>
+                        
+                            <a href="https://hackaday.io/projects/tag/crowd funding" class="tag">crowd funding</a>
+                        
+                    </aside>
+                
+            
+
+            
+            
+                <aside class="section section-lists">
+                    <h2 class="section-title">This Project Is In These Lists</h2>
+                    
+                        <div class="section-lists list-items">
+    <a href="https://hackaday.io/list/7401-2015-hackaday-prize-quarterfinalists">
+        <div title="2015 Hackaday Prize: Quarterfinalists" class="list-item-cover"
+                
+                    style="background-image: url('https://cdn.hackaday.io/images/resize/600x600/9018131440633050876.png')"
+                
+                >
+        </div>
+
+        <div class="project-item-title">
+            <h4>2015 Hackaday Prize: Quarterfinalists</h4>
+        </div>
+    </a>
+</div>
+
+                    
+                        <div class="section-lists list-items">
+    <a href="https://hackaday.io/list/7402-2015-hackaday-prize-semifinalists">
+        <div title="2015 Hackaday Prize: Semifinalists" class="list-item-cover"
+                
+                    style="background-image: url('https://cdn.hackaday.io/images/resize/600x600/6517621440633148631.png')"
+                
+                >
+        </div>
+
+        <div class="project-item-title">
+            <h4>2015 Hackaday Prize: Semifinalists</h4>
+        </div>
+    </a>
+</div>
+
+                    
+                    <a href="https://hackaday.io/lists/">Browse all lists »</a>
+                </aside>
+            
+
+            
+                <aside class="section section-submissions-lists">
+                    <h2 class="section-title">This project is submitted for</h2>
+                    <ul>
+                        
+                            <li><a href="https://hackaday.io/submissions/tipline/list">Hackaday.com Tip Line</a></li>
+                        
+                            <li><a href="https://hackaday.io/submissions/prize2015/list">The 2015 Hackaday Prize</a></li>
+                        
+                            <li><a href="https://hackaday.io/submissions/bestproduct/list">Best Product</a></li>
+                        
+                    </ul>
+                </aside>
+            
+
+            <aside class="section section-project-time">
+                <p class="project-time">
+                    This project was
+                        
+                            created on 04/09/2015
+                            
+                                 and last updated 8 months ago.
+                            
+                        
+                </p>
+            </aside>
+
+            
+
+        </div>
+
+        <div class="content-right">
+
+            
+                <section class="section section-description">
+                    <h2 id="menu-description" class="section-title">Description</h2>
+                    <div class="description">As a company we needed a PnP machine to make our products faster. Most of the PnP machines we found online were expensive, inaccurate, loud, and incomplete. It didn&apos;t take us long to decide this was going to be our next project. <br><br>The goal is to make a fully automated machine with fully automated feeders that are easily replaced anywhere in the stack. Also, the Pick and Place will use CV for accurate placement.<br><br></div>
+                </section>
+            
+
+            
+                <section class="section section-details">
+                    <h2 id="menu-details" class="section-title">
+                        
+                            Details
+                        
+                    </h2>
+                    
+
+                    
+                        <div class="post-content details-content">
+                            <p><p>The goal here is to have a machine the requires no babysitting. We want to hit run job, and continue working on other tasks. The video below will show current progress on the unit.</p><p><iframe src="http://www.youtube.com/embed/Ny99KzsySHE" allowfullscreen="" frameborder="0" height="281" width="500"></iframe>Our latest test video is above. This is the official release video for our pick and place project. You can see everything here that we do. Auto tool changing, multi-board placement, feeders, trays, cut tape, computer vision, software/UI, and more. It doesn&apos;t end here either. This is a product we will be using ourselves we have a vested interest in updating it, and keeping it as awesome as possible. </p><iframe src="http://www.youtube.com/embed/C7Pi4akL5og" allowfullscreen="" frameborder="0" height="281" width="500"></iframe><p><br>As you can see in the video the machine goes to the part, aligns over top, and picks. Then, aligns again for placement. This gives us very accurate placement of small parts, and low pitch parts. In the video you can kind of see our feeder working. All parts are picked from the same feeder position. The feeder feeds the part into the well, and peels the clear plastic back all automatically. </p><p>The unit currently places at about 800 components per hour, has automatic tool changing for different sized parts, has breakthrough computer vision, and robust automatic feeders. Also, the software is very easy to use. </p><p>There is still work to be done, so continue to check in, and see the progress of the machine :D<br></p><p>Here is a demo of the UI.</p><p><iframe src="http://www.youtube.com/embed/unx23pqdpWw" allowfullscreen="" frameborder="0" height="281" width="500"></iframe></p><p>As you can see we have two camera views. From each camera we select an area of interest, and from that area we use the CV to make sure that any offset is corrected. Also, you can import any PCB layout to the &quot;Job Details&quot; area. In our case we used KiCad. </p>
+                                
+                            </p>
+                        </div>
+                    
+                    <div class="detail-btns">
+                    
+                            
+                    
+                    </div>
+                </section>
+
+            
+
+            
+
+            
+                
+                    <section class="section section-components">
+                        <h2 id="menu-components" class="section-title">
+                            
+                                Components
+                            
+                        </h2>
+                        
+                            <ul class="section-component-list">
+                                
+                                    
+    <li class="component-64477">
+        <span class="component-number">1</span>
+        <span class="component-x">×</span>
+        <span class="component-content">
+            ProtoVoltaics Pick and Place machine add-on for X-Carve
+            <span class="component-description"></span>
+       </span>
+    </li>
+
+    <li class="component-64478">
+        <span class="component-number">1</span>
+        <span class="component-x">×</span>
+        <span class="component-content">
+            X-Carve
+            <span class="component-description"></span>
+       </span>
+    </li>
+
+    <li class="component-64479">
+        <span class="component-number">1</span>
+        <span class="component-x">×</span>
+        <span class="component-content">
+            Computer
+            <span class="component-description"></span>
+       </span>
+    </li>
+
+    <li class="component-64480">
+        <span class="component-number">1</span>
+        <span class="component-x">×</span>
+        <span class="component-content">
+            Monitor
+            <span class="component-description"></span>
+       </span>
+    </li>
+
+    <li class="component-64481">
+        <span class="component-number">1</span>
+        <span class="component-x">×</span>
+        <span class="component-content">
+            ProtoVoltaics PnP Software
+            <span class="component-description"></span>
+       </span>
+    </li>
+
+    <li class="component-64482">
+        <span class="component-number">1</span>
+        <span class="component-x">×</span>
+        <span class="component-content">
+            ProtoVoltaics Open Sourse Feeders
+            <span class="component-description">1-36 feeders can be used for 500mm PnP unit</span>
+       </span>
+    </li>
+
+    <li class="component-64483">
+        <span class="component-number">3</span>
+        <span class="component-x">×</span>
+        <span class="component-content">
+            USB Camera
+            <span class="component-description"></span>
+       </span>
+    </li>
+
+                                
+                            </ul>
+                        <p>
+                            
+                            
+                        </p>
+                    </section>
+                
+            
+
+            
+                <section class="section section-buildlogs">
+
+                    <h2 id="menu-logs" class="section-title">Project Logs</h2>
+                    
+                    <ul class="buildlogs-list post-content details-content">
+                    
+                        
+                            <li>
+                        
+                            <h3 class="element-title"><a href="https://hackaday.io/project/5200/log/26065-hadcom">HAD.com</a> </h3>
+                            <small class="authorship">
+                                <span class="gray-link"><span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span></span> &bull;
+                                <span class='time-card' style='margin: 0' title='8 months ago'>10/01/2015 at 14:30</span>  &bull;
+                                <a class="gray-link" href="https://hackaday.io/project/5200/log/26065#discussion-list">
+                                    0 comments
+                                </a>
+                            </small>
+                            <p><p><span class="fn"><a href="http://hackaday.com/author/brianbenchoff/" title="Posts by Brian Benchoff" class="author url fn" rel="author"></a></span>Brian Benchoff has wrote a small article about our project on <a href="http://had.com/" target="_blank">HAD.com</a> go check it out! </p><p><a href="http://hackaday.com/2015/09/28/hackaday-prize-semifinalist-cnc-becomes-pick-and-place/">http://hackaday.com/2015/09/28/hackaday-prize-semifinalist-cnc-becomes-pick-and-place/</a><br></p>
+                                
+                            </p>
+                        </li>
+                    
+                        
+                            <li>
+                        
+                            <h3 class="element-title"><a href="https://hackaday.io/project/5200/log/26038-improvements">Improvements</a> </h3>
+                            <small class="authorship">
+                                <span class="gray-link"><span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span></span> &bull;
+                                <span class='time-card' style='margin: 0' title='8 months ago'>09/30/2015 at 17:39</span>  &bull;
+                                <a class="gray-link" href="https://hackaday.io/project/5200/log/26038#discussion-list">
+                                    0 comments
+                                </a>
+                            </small>
+                            <p><p>We are back to work! We have a lot of people interested one of which requires us to prove our worth, and we always like a good challenge! To meet the expectations of the customer we have to add several new features. These new features will include the ability to place double sided boards and to have a &quot;vibrafeed&quot; for parts that come in tube trays. </p><p>We are working on getting this done ASAP! We are also making improvements to the error detection. We will now be able to tell very quickly if we had a part pick up failure. </p><p>Lastly, we are making changes to some areas of our computer vision. When all of this is done we will be able to reduce set up times drastically. Setting up these machines has always been the biggest headache, and we think we have the solution for it. </p><p>Stay tuned as the updates roll through!<br></p>
+                                
+                            </p>
+                        </li>
+                    
+                        
+                            <li>
+                        
+                            <h3 class="element-title"><a href="https://hackaday.io/project/5200/log/25999-back-from-the-faire">Back from the Faire!</a> </h3>
+                            <small class="authorship">
+                                <span class="gray-link"><span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span></span> &bull;
+                                <span class='time-card' style='margin: 0' title='8 months ago'>09/29/2015 at 14:10</span>  &bull;
+                                <a class="gray-link" href="https://hackaday.io/project/5200/log/25999#discussion-list">
+                                    0 comments
+                                </a>
+                            </small>
+                            <p><p>We had a great time at the World Maker Faire! NYC was so much fun. We met a lot of great people and great makers. One thing that we ran into is that there are a lot of people who want the machine, but aren&apos;t able to back KickStarters. We&apos;ve been reached out to by several academic institutions, small businesses, and large companies that want our PnP, but are not allowed to fund a KickStarter campaign. </p><p><strong>Because we have had so much interest in our machine we will be selling it as a product weather or not the KickStarter gets funded.</strong> </p><p>If you have interest in the machine and are unable to pledge toward the KS campaign we ask that you please email us at ryan.riegel@<a href="http://protovoltaics.com/" target="_blank">protovoltaics.com</a></p><p>Thanks!<br></p>
+                                
+                            </p>
+                        </li>
+                    
+                    </ul>
+                    <p class="log-btns">
+                        
+                        
+                            <a href="https://hackaday.io/project/5200/logs" class="grey-gold-button medium-button show">
+                            
+                                View all 45 project logs
+                            
+                            </a>
+                        
+                    </p>
+                </section>
+            
+
+            
+                
+            
+
+            
+
+            
+                <section class="section section-share">
+                    <h2 class="section-title">
+                        
+                            Enjoy this project?
+                        
+                    </h2>
+                    
+                    Share &nbsp;
+                    <a href="https://twitter.com/intent/tweet?url=http://hackaday.io/project/5200-pick-and-place-machine&amp;text=Pick%20and%20Place%20Machine%20by%20protovoltaics&amp;related=hackadayio&amp;via=hackadayio" target="_blank" alt="Share on twitter" class="gray-link"><span class="icon-twitter-circle"></span></a> &nbsp;
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://hackaday.io/project/5200-pick-and-place-machine" target="_blank" alt="Share on Facebook" class="gray-link"><span class="icon-facebook-circle"></span></a> &nbsp;
+                    <a href="https://plus.google.com/share?url=http://hackaday.io/project/5200-pick-and-place-machine&amp;h1=en-US" target="_blank" alt="Share on Google+" class="gray-link"><span class="icon-googleplus-circle"></span></a>
+                </section>
+            
+
+            
+            <section class="section last">
+    <h2 id="j-discussions-title" class="section-title">Discussions</h2>
+
+    <form id="j-discussion-add-top" action="https://hackaday.io/discussions/add" name="add-comment" method="POST" class="skip-global-form discussion-form j-discussion-add hide">
+
+        <textarea placeholder="Add your comment" name="comment" class="redactor-comment textarea-field"></textarea>
+
+        <input type="hidden" name="categoryId" value="5200" />
+        <input type="hidden" name="category" value="project" />
+        <input type="hidden" name="_csrf" value="KCkDBoSD-KHBDmP8ReOB3tFFtFuu-a62Dzm0" />
+        <input type="hidden" name="replyTo" value="0" />
+
+        <input type="submit" class="button-grey-gold-medium" value="Post comment" />
+    </form>
+
+    <div id="discussion-list" class="discussion-list">
+        
+<p>
+    <div class="signup-holder textarea-holder">
+        <textarea placeholder="Log In or become a member to leave your comment" name="comment" class="editable input-comment"></textarea>
+    </div>
+    <a href="#" class="button-grey-gold-small login-comment login-button">Log In/Sign up to comment</a>
+</p>
+<div class="modal-content-holder login-modal" id="login-modal">
+    <div class="submissions-close modal-cancel"></div>
+    <div class="signup-holder">
+        <h2>Become a member</h2>
+        <p>In order to follow projects & hackers or give likes
+        <br />you need to create an account.</p>
+        <form action="https://hackaday.io/signup" method="POST">
+            <fieldset class="form-left">
+                <input type="text" class="input-field" placeholder="Enter your email address" required name="email"  />
+                <input type="password" class="input-field" placeholder="Pick a secure password" required name="password"  />
+            </fieldset>
+            <fieldset class="form-right">
+                <button class="gold-gold-button signup" type="submit">Sign up</button>
+          </fieldset>
+          <input type="hidden" name="_csrf" value="KCkDBoSD-KHBDmP8ReOB3tFFtFuu-a62Dzm0" />
+          <input class="input-field" placeholder="Invitation Code" required name="invitation_code" value="5Ad0ix2-b96J" type="hidden" />
+        </form>
+        <a id="login-modal-signin" href="https://hackaday.io/signin">Already a member?</a>
+    </div>
+</div>
+
+
+
+
+
+    
+    
+
+    <div id="j-discussion-55658" data-level="1" class="discussions-item" style="margin-left: 0px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/137318">
+                <img src="https://avatars.githubusercontent.com/u/1410977?v=3" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="137318"><a href="https://hackaday.io/hacker/137318">Oskar Weigl</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-55658"><span class='time-card' style='margin: 0' title='8 days ago'>05/05/2016 at 20:30</span></a>
+
+                <span id="comment-points-holder-55658" class="hide">
+                    &bull; <span id="comment-points-55658">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-55658-content">
+                    <p>Hey! I&apos;m working on a project to develop a&#xA0;really cheap brush-less servo motor controller, that should allow the use of cheap brush-less motors that heavily out-perform steppers. This may be useful if you want speed and/or avoid&#xA0;step-skipping.&#xA0;Check it out ;D<br></p><p><a href="https://hackaday.io/project/11583-odrive-high-performance-motor-control">https://hackaday.io/project/11583-odrive-high-performance-motor-control</a></p>
+                </div>
+                <p id="comment-55658-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-55658">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-33398" data-level="1" class="discussions-item" style="margin-left: 0px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/87489">
+                <img src="http://gravatar.com/avatar/fb14fa4a8e02b720b6d1914942d5d455?d=https://hackaday.io/img/default-gravatar.png&amp;r=x&amp;s=100" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="87489"><a href="https://hackaday.io/hacker/87489">bruce mellen</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-33398"><span class='time-card' style='margin: 0' title='9 months ago'>08/19/2015 at 01:14</span></a>
+
+                <span id="comment-points-holder-33398" class="hide">
+                    &bull; <span id="comment-points-33398">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-33398-content">
+                    <p>We&apos;ve been looking for an affordable desktop pnp machine,<br>just found your project, viewed the videos, and have a couple thoughts.</p><p>1) Are you making use of the multiple fiducials on the PCB shown<br>and/or looking at the target pads to finalize alignment?</p><p>2) Your tape feeders are pretty complicated if you want to<br>fully automate placement of a non-trivial board.&#xA0; One would have to buy many and each does not<br>look cheap to make.&#xA0; Have you, instead,<br>thought of a simpler single mechanism feeder, such as that used on the CHMT48V,<br>even though it would slow placement a bit?&#xA0;<br>Yes, there is a trade-off between price and speed, but I expect many of<br>us can&apos;t afford more than a few of the feeders prototyped &#x2013; which is contrary<br>to your goal of walking away and letting it run.</p><p>3) Are you aiming to accurately place things like .4mm pitch<br>UFDFNs? 0402 and SOD-923? 144LQFP (20x20mm)?&#xA0;<br>SMT caps and inductors? Different tape widths?</p><p><br>I look forward to following your progress&#x2026;.</p>
+                </div>
+                <p id="comment-33398-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-33398">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-33434" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/58543">
+                <img src="https://pbs.twimg.com/profile_images/544847966918307840/7AR92PL7.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-33434"><span class='time-card' style='margin: 0' title='9 months ago'>08/19/2015 at 13:01</span></a>
+
+                <span id="comment-points-holder-33434" class="hide">
+                    &bull; <span id="comment-points-33434">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-33434-content">
+                    <p>Hello Bruce, Thanks for the comment.</p><p>We are only using the fiducials to find where the PCB is in the PnP. We are using our CV to see the target pads to finalize alignment.&#xA0;</p><p>The largest amount of feedback we received was from those who had feeders similar to the CHMT48V, and their complaint was that it was too hard to swap reels out. If they ran out of parts in a reel from the middle of the stack it was a lot of work to replace. Our solution was to make a completely modular system. Just pull the individual feeder unit up and out of the stack and replace reels. The units we have are actually pretty cheap for us to make. We have access to a 4000W laser cutter which we use to cut the frame and gears. I believe the largest cost of the unit is the pancake motor.&#xA0;</p><p>We are aiming to be able to place as many different parts as possible. We haven&apos;t tried many types of parts yet. On our current test board we are placing 0603&apos;s, 0805 caps, and .65mm pitch parts. We are working on some simple solutions for different tape sizes.</p><p>It might be cool to add a &quot;parts placed&quot; list to the details. It will be a while before we get to that though. Still a lot to work on! <br> </p>
+                </div>
+                <p id="comment-33434-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-33434">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-33252" data-level="1" class="discussions-item" style="margin-left: 0px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/72173">
+                <img src="https://cdn.hackaday.io/images/resize/100x100/8811981441478451761.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="72173"><a href="https://hackaday.io/hacker/72173">Glenn</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-33252"><span class='time-card' style='margin: 0' title='9 months ago'>08/17/2015 at 16:10</span></a>
+
+                <span id="comment-points-holder-33252" class="hide">
+                    &bull; <span id="comment-points-33252">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-33252-content">
+                    <p>Hi Folks how about another update?&#xA0; Projected Kickstarter date - don&apos;t want to miss this one?</p>
+                </div>
+                <p id="comment-33252-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-33252">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-33255" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/58543">
+                <img src="https://pbs.twimg.com/profile_images/544847966918307840/7AR92PL7.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-33255"><span class='time-card' style='margin: 0' title='9 months ago'>08/17/2015 at 16:42</span></a>
+
+                <span id="comment-points-holder-33255" class="hide">
+                    &bull; <span id="comment-points-33255">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-33255-content">
+                    <p>Hi, yeah we&apos;ve got a little behind again. Our goal is to have the KickStarter up during the first week of September. We have a large list of Maker Faires we will be attending soon, so we have been working on getting the machine as awesome as possible before we hit the road. We had planned on starting the kickstarter, and then adding all these small features later, but now it seems everything happening at once. We think this will be beneficial having the kickstarter open while we are at all the Faires. Thanks for the comment we love to hear from the community, I will do a quick update just for you :) <br></p>
+                </div>
+                <p id="comment-33255-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-33255">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-33288" data-level="3" class="discussions-item" style="margin-left: 50px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/72173">
+                <img src="https://cdn.hackaday.io/images/resize/100x100/8811981441478451761.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="72173"><a href="https://hackaday.io/hacker/72173">Glenn</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-33288"><span class='time-card' style='margin: 0' title='9 months ago'>08/17/2015 at 20:31</span></a>
+
+                <span id="comment-points-holder-33288" class="hide">
+                    &bull; <span id="comment-points-33288">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-33288-content">
+                    <p>Thanks for the update. I am currently sourcing a project for assembly&#xA0;that will produce the funds to enable the purchase of my own PnP machine. So looking forward to hearing more about your machine.</p>
+                </div>
+                <p id="comment-33288-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-33288">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-33302" data-level="4" class="discussions-item" style="margin-left: 50px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/58543">
+                <img src="https://pbs.twimg.com/profile_images/544847966918307840/7AR92PL7.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-33302"><span class='time-card' style='margin: 0' title='9 months ago'>08/17/2015 at 22:09</span></a>
+
+                <span id="comment-points-holder-33302" class="hide">
+                    &bull; <span id="comment-points-33302">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-33302-content">
+                    <p>Awesome! Hope we can be the solution you are looking for!</p>
+                </div>
+                <p id="comment-33302-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-33302">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-33753" data-level="5" class="discussions-item" style="margin-left: 50px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/72173">
+                <img src="https://cdn.hackaday.io/images/resize/100x100/8811981441478451761.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="72173"><a href="https://hackaday.io/hacker/72173">Glenn</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-33753"><span class='time-card' style='margin: 0' title='9 months ago'>08/23/2015 at 17:51</span></a>
+
+                <span id="comment-points-holder-33753" class="hide">
+                    &bull; <span id="comment-points-33753">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-33753-content">
+                    <p>is there a list somewhere we can get on so we get notifed when the kickstarter is about to go live?</p>
+                </div>
+                <p id="comment-33753-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-33753">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-33757" data-level="6" class="discussions-item" style="margin-left: 50px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/58543">
+                <img src="https://pbs.twimg.com/profile_images/544847966918307840/7AR92PL7.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-33757"><span class='time-card' style='margin: 0' title='9 months ago'>08/23/2015 at 18:55</span></a>
+
+                <span id="comment-points-holder-33757" class="hide">
+                    &bull; <span id="comment-points-33757">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-33757-content">
+                    <p>I will make a post here for sure. We have a mailing list as well if you would like to join that you can send me a private message with your email.</p>
+                </div>
+                <p id="comment-33757-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-33757">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-31581" data-level="1" class="discussions-item" style="margin-left: 0px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/35232">
+                <img src="https://avatars.githubusercontent.com/u/7986118?v=2" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="35232"><a href="https://hackaday.io/hacker/35232">monnoliv</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-31581"><span class='time-card' style='margin: 0' title='10 months ago'>07/23/2015 at 09:12</span></a>
+
+                <span id="comment-points-holder-31581" class="hide">
+                    &bull; <span id="comment-points-31581">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-31581-content">
+                    <p>Very nice project! CV was lacking on all those cheap&#xA0;P&amp;P machines. I saw also that you can change pick&#xA0;head&#xA0;automatically, nice feature. Hope the feeders are not&#xA0;mechanically&#xA0;too complicated. Keep us in touch here for your kickstater campain.</p>
+                </div>
+                <p id="comment-31581-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-31581">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-31594" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/58543">
+                <img src="https://pbs.twimg.com/profile_images/544847966918307840/7AR92PL7.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-31594"><span class='time-card' style='margin: 0' title='10 months ago'>07/23/2015 at 11:52</span></a>
+
+                <span id="comment-points-holder-31594" class="hide">
+                    &bull; <span id="comment-points-31594">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-31594-content">
+                    <p>Thanks! I will try to post updates as much as possible. Is there any concern you&apos;d have with the feeders being to complicated? Right now they are gear operated, and they look a lot more complicated than they really are. Always looking for advice on how to make them better.</p>
+                </div>
+                <p id="comment-31594-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-31594">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-30908" data-level="1" class="discussions-item" style="margin-left: 0px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/45819">
+                <img src="http://gravatar.com/avatar/974490674d6e89751cb84aeef5e57e61?d=https://hackaday.io/img/default-gravatar.png&amp;r=x&amp;s=100" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="45819"><a href="https://hackaday.io/hacker/45819">Jack Laidlaw</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-30908"><span class='time-card' style='margin: 0' title='10 months ago'>07/13/2015 at 20:46</span></a>
+
+                <span id="comment-points-holder-30908" class="hide">
+                    &bull; <span id="comment-points-30908">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-30908-content">
+                    <p>Cool project, How much has build cost been so far (only if you want to disclose)?</p>
+                </div>
+                <p id="comment-30908-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-30908">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-30913" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/58543">
+                <img src="https://pbs.twimg.com/profile_images/544847966918307840/7AR92PL7.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-30913"><span class='time-card' style='margin: 0' title='10 months ago'>07/13/2015 at 21:21</span></a>
+
+                <span id="comment-points-holder-30913" class="hide">
+                    &bull; <span id="comment-points-30913">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-30913-content">
+                    <p>The majority of the project cost has been man hours to build and program. At the moment we are discussing a sale price for the unit. We may publish a BOM in the future.</p>
+                </div>
+                <p id="comment-30913-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-30913">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-30915" data-level="3" class="discussions-item" style="margin-left: 50px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/45819">
+                <img src="http://gravatar.com/avatar/974490674d6e89751cb84aeef5e57e61?d=https://hackaday.io/img/default-gravatar.png&amp;r=x&amp;s=100" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="45819"><a href="https://hackaday.io/hacker/45819">Jack Laidlaw</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-30915"><span class='time-card' style='margin: 0' title='10 months ago'>07/13/2015 at 21:35</span></a>
+
+                <span id="comment-points-holder-30915" class="hide">
+                    &bull; <span id="comment-points-30915">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-30915-content">
+                    <p>Cheers I look forward to seeing the finished product<br></p>
+                </div>
+                <p id="comment-30915-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-30915">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-30921" data-level="4" class="discussions-item" style="margin-left: 50px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/58543">
+                <img src="https://pbs.twimg.com/profile_images/544847966918307840/7AR92PL7.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-30921"><span class='time-card' style='margin: 0' title='10 months ago'>07/13/2015 at 21:54</span></a>
+
+                <span id="comment-points-holder-30921" class="hide">
+                    &bull; <span id="comment-points-30921">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-30921-content">
+                    <p>We are so close. We had a lot of delays in June, but we should be finished with our first units this week!</p>
+                </div>
+                <p id="comment-30921-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-30921">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-28389" data-level="1" class="discussions-item" style="margin-left: 0px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/1504">
+                <img src="http://gravatar.com/avatar/8a246e5daa70ff2e92af0c232be35657?d=https://hackaday.io/img/default-gravatar.png&amp;r=x&amp;=&amp;s=100" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="1504"><a href="https://hackaday.io/hacker/1504">Viva Penguinos</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-28389"><span class='time-card' style='margin: 0' title='11 months ago'>06/18/2015 at 14:42</span></a>
+
+                <span id="comment-points-holder-28389" class="hide">
+                    &bull; <span id="comment-points-28389">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-28389-content">
+                    <p>Hi, What software do you use to create your GUI?</p>
+                </div>
+                <p id="comment-28389-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-28389">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-28410" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/58543">
+                <img src="https://pbs.twimg.com/profile_images/544847966918307840/7AR92PL7.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-28410"><span class='time-card' style='margin: 0' title='11 months ago'>06/18/2015 at 18:36</span></a>
+
+                <span id="comment-points-holder-28410" class="hide">
+                    &bull; <span id="comment-points-28410">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-28410-content">
+                    <p>Viva Penguinos, we are using QT for the GUI.</p>
+                </div>
+                <p id="comment-28410-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-28410">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-22045" data-level="1" class="discussions-item" style="margin-left: 0px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/46983">
+                <img src="https://cdn.hackaday.io/images/resize/100x100/4368631432297264657.jpg" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="46983"><a href="https://hackaday.io/hacker/46983">npupp</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-22045"><span class='time-card' style='margin: 0' title='a year ago'>04/10/2015 at 14:36</span></a>
+
+                <span id="comment-points-holder-22045" class="hide">
+                    &bull; <span id="comment-points-22045">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-22045-content">
+                    <p>Very nice! Looking forward to the UI video and future updates *watches liek a hawk*</p>
+                </div>
+                <p id="comment-22045-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-22045">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-22052" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/58543">
+                <img src="https://pbs.twimg.com/profile_images/544847966918307840/7AR92PL7.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-22052"><span class='time-card' style='margin: 0' title='a year ago'>04/10/2015 at 15:48</span></a>
+
+                <span id="comment-points-holder-22052" class="hide">
+                    &bull; <span id="comment-points-22052">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-22052-content">
+                    <p>It's been a heck of a day here already. I will get that video up right after lunch, so maybe like an hour. Thanks for the support!</p>
+                </div>
+                <p id="comment-22052-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-22052">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-22014" data-level="1" class="discussions-item" style="margin-left: 0px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/2252">
+                <img src="http://gravatar.com/avatar/8c321018d158ad6181471e40c187db34?d=https://hackaday.io/img/default-gravatar.png&amp;r=x&amp;=&amp;s=100" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="2252"><a href="https://hackaday.io/hacker/2252">Thinkerer</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-22014"><span class='time-card' style='margin: 0' title='a year ago'>04/10/2015 at 11:32</span></a>
+
+                <span id="comment-points-holder-22014" class="hide">
+                    &bull; <span id="comment-points-22014">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-22014-content">
+                    <p>Nicely done - if you find that you're getting vacuum pump failures from too many start/stop cycles you could go to a constant-on w/solenoid &amp; muffled&nbsp;bleed port arrangement.</p>
+                </div>
+                <p id="comment-22014-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-22014">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-22016" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/58543">
+                <img src="https://pbs.twimg.com/profile_images/544847966918307840/7AR92PL7.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-22016"><span class='time-card' style='margin: 0' title='a year ago'>04/10/2015 at 11:43</span></a>
+
+                <span id="comment-points-holder-22016" class="hide">
+                    &bull; <span id="comment-points-22016">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-22016-content">
+                    <p>Thanks for the tip! We haven't run it enough at this point to have any problems with the vacuum. We will for sure try to break it in the future. If it doesn't hold up we will try something like this out, and honestly the pump itself isn't all that loud. </p>
+                </div>
+                <p id="comment-22016-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-22016">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-21921" data-level="1" class="discussions-item" style="margin-left: 0px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/47168">
+                <img src="https://cdn.hackaday.io/images/resize/100x100/3800231427315343595.jpg" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="47168"><a href="https://hackaday.io/hacker/47168">hebel23</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-21921"><span class='time-card' style='margin: 0' title='a year ago'>04/09/2015 at 18:03</span></a>
+
+                <span id="comment-points-holder-21921" class="hide">
+                    &bull; <span id="comment-points-21921">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-21921-content">
+                    <p>Nice project! Excited to see the next steps...</p>
+                </div>
+                <p id="comment-21921-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-21921">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-21930" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="https://hackaday.io/hacker/58543">
+                <img src="https://pbs.twimg.com/profile_images/544847966918307840/7AR92PL7.png" alt="">
+            </a>
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <span class="identity-card" data-id="58543"><a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></span>
+
+                wrote <a class="gray-link" href="https://hackaday.io/project/5200-pick-and-place-machine/discussion-21930"><span class='time-card' style='margin: 0' title='a year ago'>04/09/2015 at 19:49</span></a>
+
+                <span id="comment-points-holder-21930" class="hide">
+                    &bull; <span id="comment-points-21930">
+                         point
+                    </span>
+                </span>
+
+            </small>
+            <div class="comment-content">
+                <div id="comment-21930-content">
+                    <p>Glad to see interest so soon after posting! We will be posting a video of the UI soon. Boards for the next version of our tape feeder are in, and we will be putting the finishing touches on that. The feeders are listed as a different project on here if you'd like to check them out.&nbsp;</p>
+                </div>
+                <p id="comment-21930-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="comment-actions" id="actions-21930">
+                    
+                    
+                    &nbsp;
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes">yes</a> | <a href="#" class="delete-no">no</a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+
+
+
+<script type="text/javascript">
+
+    var pageIndex = 0;
+
+
+</script>
+    </div>
+
+    
+
+</section>
+
+
+
+
+        </div>
+
+    </div>
+
+    
+        <div class="container">
+            <section class="section-recommendations">
+                <h1>Similar Projects</h1>
+                <div>
+                    
+                        
+
+<div class="project-item   ">
+
+    
+
+    <a href="https://hackaday.io/project/80-supplyframe-design-lab" class="item-link">
+        <div title="Supplyframe Design Lab by Sophi Kravitz" class="project-item-cover"
+                
+             style="background-image:url(https://cdn.hackaday.io/images/resize/600x600/2884411455670477716.jpg)"
+                
+                >
+
+        </div>
+
+        
+                <div class="project-item-stats">
+                    
+                    
+                        <span class="icon-view-count" title="View Count">15.3k</span>
+                    
+                    <span class="icon-comment-with-hover" title="Comments">39</span>
+                    <span class="icon-view" title="Followers">274</span>
+                    
+                        <span class="icon-skull" title="Likes">155</span>
+                    
+                </div>
+         
+
+        <div class="project-item-title ">
+            Yes, it is what you think it is! 
+Supplyframe &amp; Hackaday are opening an awesome space in Pasadena, CA!
+        </div>
+    </a>
+    <div class="project-item-headline">
+        <span class="project-owner hide">Project Owner</span>
+        <span class="project-owner hide">Contributor</span>
+        <h3 class="element-title"><a href="https://hackaday.io/project/80-supplyframe-design-lab" title="Supplyframe Design Lab">Supplyframe Design Lab</a></h3>
+        <p>by <a href="https://hackaday.io/hacker/542">Sophi Kravitz</a></p>
+    </div>
+</div>
+
+                    
+                        
+
+<div class="project-item m-last-child  ">
+
+    
+        <ul class="submissions-icons">
+            
+                
+                    <li>
+                        <a href="https://hackaday.io/submissions/prize2014/list" class="submission-icon submission-icon-1">
+                            Official Hackaday Prize Entry
+                        </a>
+                    </li>
+                
+            
+        </ul>
+    
+
+    <a href="https://hackaday.io/project/1755-liteplacer-a-low-cost-pick-and-place-machine" class="item-link">
+        <div title="LitePlacer - a low cost Pick and Place machine by Juha Kuusama" class="project-item-cover"
+                
+             style="background-image:url(https://cdn.hackaday.io/images/resize/600x600/5444681404459799500.jpg)"
+                
+                >
+
+        </div>
+
+        
+                <div class="project-item-stats">
+                    
+                    
+                        <span class="icon-view-count" title="View Count">12.8k</span>
+                    
+                    <span class="icon-comment-with-hover" title="Comments">2</span>
+                    <span class="icon-view" title="Followers">614</span>
+                    
+                        <span class="icon-skull" title="Likes">64</span>
+                    
+                </div>
+         
+
+        <div class="project-item-title hasBadge">
+            LitePlacer is a Pick and Place machine optimized for prototype assembly. It has optical calibration with two cameras: www.liteplacer.com
+        </div>
+    </a>
+    <div class="project-item-headline">
+        <span class="project-owner hide">Project Owner</span>
+        <span class="project-owner hide">Contributor</span>
+        <h3 class="element-title"><a href="https://hackaday.io/project/1755-liteplacer-a-low-cost-pick-and-place-machine" title="LitePlacer - a low cost Pick and Place machine">LitePlacer - a low cost Pick and Place machine</a></h3>
+        <p>by <a href="https://hackaday.io/hacker/16046">Juha Kuusama</a></p>
+    </div>
+</div>
+
+                    
+                        
+
+<div class="project-item  b-last-child ">
+
+    
+        <ul class="submissions-icons">
+            
+                
+            
+        </ul>
+    
+
+    <a href="https://hackaday.io/project/4934-automatic-pick-and-place-feeders" class="item-link">
+        <div title="Automatic Pick and Place Feeders by ProtoVoltaics" class="project-item-cover"
+                
+             style="background-image:url(https://cdn.hackaday.io/images/resize/600x600/2926401427303075902.JPG)"
+                
+                >
+
+        </div>
+
+        
+                <div class="project-item-stats">
+                    
+                    
+                        <span class="icon-view-count" title="View Count">2.8k</span>
+                    
+                    <span class="icon-comment-with-hover" title="Comments">0</span>
+                    <span class="icon-view" title="Followers">65</span>
+                    
+                        <span class="icon-skull" title="Likes">11</span>
+                    
+                </div>
+         
+
+        <div class="project-item-title ">
+            We are trying to make cost viable feeders for OpenPnP Machines.
+        </div>
+    </a>
+    <div class="project-item-headline">
+        <span class="project-owner hide">Project Owner</span>
+        <span class="project-owner hide">Contributor</span>
+        <h3 class="element-title"><a href="https://hackaday.io/project/4934-automatic-pick-and-place-feeders" title="Automatic Pick and Place Feeders">Automatic Pick and Place Feeders</a></h3>
+        <p>by <a href="https://hackaday.io/hacker/58543">ProtoVoltaics</a></p>
+    </div>
+</div>
+
+                    
+                </div>
+            </section>
+
+        </div>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer" class="footer">
+    <a href="#header" class="back-to-top" onClick="CT(this, 'Footer', 'GoingUp');"><i class="icon-longarrowup"></i> Going up?</a>
+    <p>
+        <a href="http://hackaday.com/about/">About Us</a>
+        <a href="mailto:projects-contact@hackaday.com">Contact Hackaday.io</a>
+        <a href="https://hackaday.io/project/37">Give Feedback</a> <a href="https://hackaday.io/tos">Terms of Use</a>
+        <a href="https://hackaday.io/privacy-policy">Privacy Policy</a>
+        <a href="https://dev.hackaday.io/" target="_blank">Hackaday API</a>
+    </p>
+    <p><a href="https://hackaday.io/"  onClick="CT(this, 'Footer', 'Home' ); return false;"><i class="icon-skull"></i> &copy; 2016 Hackaday</a></p>
+</div>
+
+<script>
+    var csrftoken = 'KCkDBoSD-KHBDmP8ReOB3tFFtFuu-a62Dzm0';
+</script>
+
+    <script type="text/javascript">
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47229708-1', 'auto');
+
+    var dimensionValue = 'nonregistered';
+    ga('set', 'dimension1', dimensionValue);
+    ga('require', 'displayfeatures');
+
+    ga('send', 'pageview');
+
+    </script>
+
+<img src="http://analytics.supplyframe.com/trackingservlet/impression?action=pageImpression&amp;zone=HIO_project&amp;extra=logged%3Dfalse%7ChaveAccountCookie%3D0%7C&amp;ab=undefined" class="sf-impression" />
+    
+<div class="j-modal-confirmation modal-background"></div>
+<div class="j-modal-confirmation modal-content-holder">
+    <div class="close"><a href="#" id="modal-cancel"><span class="modal-close"></span></a></div>
+    <p class="text-center" id="modal-message"></p>
+    <p class="text-center">
+        <a class="grey-grey-button" id="modal-yes" href="javascript:void(0);" data-projecttype="project" data-projectid="5200" data-pageid="" data-pagetype="">Yes, delete it</a>
+        <a class="gold-gold-button" id="modal-cancel" href="#">Cancel</a>
+    </p>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <script src="http://cdn.hackaday.io/build/h%2FydgsYIeDTf7pqgYQEKK8Ngblw0IkZCDqfJ9S2tk7zsBoxIHt5iOd49Qp+F4vdxEuRj+GpGDLbX4aGOQGmbjaOxUZvklg4ReFk68R95OQshFrGKebvogKGQOiB5Hi1xym9KC54c9Ps0WpzuNydLk4B%2FbKi91KhV40Uxhl38XXb1IVAxAI8iW+oQUPCFkHVWZxD0B+MZ+uEXJTlWuBmopNMxTHRK5yleITPZODT6evYhvPcTNHjcVmLti9HxMVov4N%2FG0Vb08G3dKHr8dVQWzXej5t18RehizqZ8wIVJ7qC9KzGR033hnY+738MOXak8dpeyqpHFLjEp7PzTT6rj3RPc7nwrdaF4oiZCSltbqBl1dSpMMFeUJZZ6mGMQfyhp4EVA7ZPb98lYuiIqp%2FBw2NUHlvJCYJwClIqu4nY2LNBxJLsq5F9kn7htOiODJjPV07zn5G6W55q+ihMiSmJWys6z7BYWkUZ6HwU9vXiHGIDGixtI1UwtX727S57vk14dYtkZvaT%2Fxo3KH2OvVRx5ieW08hqOc2l5PWntYlBA%2FJgj9iLo4EPYqNgqUwJoP9XoTa0CPSBrIshWpDXZzaVEcw%3D%3D-0.69.10.js"></script>
+
+    <style>
+        .mediumInsert-buttons {
+            display: none !important;
+        }
+    </style>
+
+    <div id="submission-popup-back"></div>
+    <div id="submission-popup"></div>
+
+    
+
+    <div id="modal-report-back" class="modal-background"></div>
+<div id="modal-report" class="modal-content-holder container">
+    <a href="javascript:void(0);" class="modal-close"></a>
+    <form action="https://hackaday.io/report/project" class="j-modal-form">
+        <h2>Report project as inappropriate</h2>
+
+        <p class="intro-text">
+            You are about to report the project "<b>Pick and Place Machine</b>", please tell us the reason.
+        </p>
+
+        <textarea name="comment" class="j-report-comment" placeholder="Why do you report the project as inappropriate"></textarea>
+
+        <input type="hidden" name="_csrf" value="KCkDBoSD-KHBDmP8ReOB3tFFtFuu-a62Dzm0" />
+        
+            <input type="hidden" name="projectId" value="5200" />
+        
+        <div class="modal-footer">
+            <input type="submit" value="Report" class="gold-gold-button submit-button"/>
+        </div>
+        <div class='j-modal-form-message'></div>
+    </form>
+    <div class='j-modal-message hide'></div>
+</div>
+
+    <div id="modal-contributor-apply-back" class="modal-background"></div>
+    <div id="modal-contributor-apply" class="modal-content-holder container">
+        <a href="javascript:void(0);" class="modal-close"></a>
+        <form id="contributor-apply-form">
+            <h2>Send message</h2>
+
+            <textarea name="message" class="j-report-comment">
+Hello,
+
+I really like your project and I think I have skills to help you.
+            </textarea>
+            <p class="application-success">Your application has been submitted.</p>
+            <input type="hidden" name="_csrf" value="KCkDBoSD-KHBDmP8ReOB3tFFtFuu-a62Dzm0" />
+            <input type="hidden" name="projectId" value="5200" />
+
+            <div class="modal-footer">
+                <input type="submit" value="Send" class="gold-gold-button"/>
+            </div>
+        </form>
+
+    </div>
+
+
+    <div id="modal-contributor-remove-back" class="modal-background"></div>
+    <div id="modal-contributor-remove" class="modal-content-holder container">
+        <a href="javascript:void(0);" class="modal-close"></a>
+        <form id="contributor-remove-form">
+            <h2>Remove Contributor</h2>
+            <p>
+                Are you sure you want to remove yourself as a contributor for this project?
+            </p>
+            <p>Project owner will be notified upon removal.</p>
+            <input type="hidden" name="_csrf" value="KCkDBoSD-KHBDmP8ReOB3tFFtFuu-a62Dzm0" />
+            <input type="hidden" name="projectId" value="5200" />
+            <input type="hidden" name="remove_contributor_id" id="remove_contributor_id"/>
+
+            <div class="modal-footer">
+                <input type="submit" value="Remove" class="grey-grey-button"/>
+                <input value="Nevermind" class="gold-gold-button"/>
+            </div>
+        </form>
+    </div>
+
+    
+
+    <script>
+        HIO.projectId = 5200;
+        HIO._csrf = "KCkDBoSD-KHBDmP8ReOB3tFFtFuu-a62Dzm0";
+    </script>
+
+  </body>
+
+<!-- Mirrored from hackaday.io/project/5200-pick-and-place-machine by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:15:37 GMT -->
+</html>

@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<!-- Mirrored from www.adafruit.com/products/269 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta name="globalsign-domain-verification" content="395EvTKgTnwb20iKcV68nItcl7lbY_JFqavc5s-uhP"/>
+<meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQUGWV5XGwAIV1RVAwA="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(14),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(15),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7);t("loader").features.stn=!0,t(6);var c=NREUM.o.EV;o.on("fn-start",function(t,e){var n=t[0];n instanceof c&&(this.bstStart=Date.now())}),o.on("fn-end",function(t,e){var n=t[0];n instanceof c&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),s.on("fn-start",function(){this.bstStart=Date.now()}),s.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on("pushState-start",function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on("pushState-end",function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",r,!1),document.addEventListener("keypress",r,!1),document.addEventListener("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(16)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(16)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(16)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(16)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",s)}function i(t){w.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(16)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(11),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(13),m=window.XMLHttpRequest;s.features.xhr=!0,t(9),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("https://www.adafruit.com/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(14),a=t(15);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],14:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],15:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],16:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(15),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return w}function i(){return new r}var a="nr@context",s=t("gos"),c=t(14),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(14),f=window,u=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var d=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,10,4,3]);</script>
+<meta id="jsviewport" name="viewport" content="width=device-width"/>
+<meta name="author" content="Adafruit Industries"/>
+<meta name="generator" content="Adafuit Shopping Cart based on Zencart"/>
+<link rel="mask-icon" href="https://cdn-shop.adafruit.com/static/adafruit_favicon.svg" color="#000000">
+<link rel="apple-touch-icon" sizes="57x57" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn-shop.adafruit.com/static/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="https://cdn-shop.adafruit.com/static/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="https://cdn-shop.adafruit.com/static/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="https://cdn-shop.adafruit.com/static/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://cdn-shop.adafruit.com/static/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="https://cdn-shop.adafruit.com/static/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#1a1919">
+<meta name="msapplication-TileImage" content="https://cdn-shop.adafruit.com/static/mstile-144x144.png">
+<meta name="format-detection" content="telephone=no">
+<base />
+<title>Thermocouple Amplifier MAX31855 breakout board (MAX6675 upgrade) [v2.0] ID: 269 - $14.95 : Adafruit Industries, Unique &amp; fun DIY electronics and kits</title><link rel="alternate" type="application/rss+xml" title="adafruit industries blog  RSS Feed" href="http://blog.adafruit.com/feed/"/> <meta name="description" content="Adafruit Industries, Unique &amp; fun DIY electronics and kits Thermocouple Amplifier MAX31855 breakout board (MAX6675 upgrade) [v2.0] ID: 269 - Thermocouples are very sensitive, requiring a good amplifier with a cold-compensation reference. The MAX31855K does everything for you, and can be easily interfaced with any microcontroller, even one without an analog input. This breakout board has the chip itself, a 3.3V regulator with 10uF bypass capacitors and level shifting circuitry, "/>
+<meta name="keywords" content="Thermocouple Amplifier MAX31855 breakout board (MAX6675 upgrade) [v2.0] ID: 269 Tools Gift Certificates Arduino Cables Sensors LEDs Books Breakout Boards Power EL Wire/Tape/Panel Components & Parts LCDs & Displays Wearables BeagleBone Prototyping Raspberry Pi Wireless Young Engineers 3D printing NeoPixels Kits & Projects Robotics & CNC Accessories Software Cosplay/Costuming Halloween Reseller & University Packs Internet of Things - IoT Particle Development Boards ecommerce, open source, shop, online shopping"/>
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-7723544-1', 'auto');
+  ga('require', 'ec');
+</script>
+ 
+ 
+<script type="text/javascript">
+  var gts = gts || [];
+
+  gts.push(["id", "27252"]);
+  gts.push(["badge_position", "BOTTOM_RIGHT"]);
+  gts.push(["locale", "en_US"]);
+  gts.push(["google_base_offer_id", "269"]);
+  gts.push(["google_base_subaccount_id", "5543303"]);
+  gts.push(["google_base_country", "US"]);
+  gts.push(["google_base_language", "en"]);
+
+  (function() {
+    var gts = document.createElement("script");
+    gts.type = "text/javascript";
+    gts.async = true;
+    gts.src = "https://www.googlecommerce.com/trustedstores/api/js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(gts, s);
+  })();
+</script>
+ 
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6029052/784822/css/fonts.css"/>
+<link rel="stylesheet" type="text/css" href="https://www.adafruit.com/includes/templates/adafruit2013/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="https://www.adafruit.com/includes/templates/adafruit2013/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="https://www.adafruit.com/includes/templates/adafruit2013/jscript/bootstrap.min.js"></script>
+<script src="https://www.adafruit.com/includes/templates/adafruit2013/jscript/modernizr.js" type="text/javascript"></script>
+<script src="https://www.adafruit.com/includes/templates/adafruit2013/jscript/adafruit.hoverMenu.js" type="text/javascript"></script>
+<script src="https://www.adafruit.com/includes/templates/adafruit2013/jscript/adafruit.mobileMenu.js" type="text/javascript"></script>
+<script src="https://www.adafruit.com/includes/templates/adafruit2013/jscript/jquery.hoverIntent.js" type="text/javascript"></script>
+<script src="https://www.adafruit.com/includes/templates/adafruit2013/jscript/hogan.js" type="text/javascript"></script>
+<script src="https://www.adafruit.com/includes/templates/adafruit2013/jscript/typeahead.js" type="text/javascript"></script>
+<script src="http://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="http://cdn.jsdelivr.net/algoliasearch.helper/2/algoliasearch.helper.min.js"></script>
+<script src="https://www.adafruit.com/includes/templates/adafruit2013/jscript/adafruit.instant-search.js" type="text/javascript"></script>
+<script>
+  $(document).ready(function(){
+    $('#search-form').on("submit" ,function(e){
+      e.preventDefault();      
+      pid = parseInt($('#search').val(), 10);
+      if($.isNumeric($('#search').val()) && !isNaN(pid) && pid < 10000){
+        window.location.replace('https://www.adafruit.com' + '/product/' + pid );
+      }
+    });
+
+    $('#search-wrapper').on("click" ,function(e){
+      $('#search-wrapper').addClass('focused');
+      $('#search').trigger('focus');
+    });
+    $('#search').on("blur" ,function(e){
+      $('#search-wrapper').removeClass('focused');
+    });
+  });
+</script>
+<script src="https://www.adafruit.com/includes/templates/adafruit2013/jscript/jquery.fitvids.js" type="text/javascript"></script>
+<script src="https://www.adafruit.com/includes/javascript/jquery.cookie.js" type="text/javascript"></script>
+<script src="https://www.adafruit.com/includes/javascript/jquery.wildcart.js" type="text/javascript"></script>
+<script src="https://www.adafruit.com/includes/javascript/ada_ec.js" type="text/javascript"></script>
+<script>
+  var ada_env = {"env":"prod","algolia":{"app_id":"W9DMM4OTH0","app_key":"e613bcda3453b9ef887e2724362f9e57"}};
+</script>
+<link rel="stylesheet" type="text/css" href="https://www.adafruit.com/includes/templates/adafruit2013/css/style.css?1463139904"/>
+<script>
+
+
+    $(document).ready(function(){
+
+
+	   $('#prod-add-qty').on('keyup', function() {
+		$('#prod-add-qty-mobile').val($(this).val());
+	   });
+	   
+
+       $('#prod-add-qty-mobile').on('keyup', function() {
+		$('#prod-add-qty').val($(this).val());
+	   });
+
+
+       $('.add_to_cart_ec_multi').click(function(e){
+        var _this = $(this);
+
+        ga('ec:addProduct', {
+            'id': 'P' + $(this).data('pid'),
+            'name': $(this).data('name').replace(/'/g, "\\'"),
+            'category': $(this).data('crumbs'),
+            'quantity': $($(this).data('qty-source')).val()
+        });
+
+        ga('ec:setAction', 'add');
+        ga('send', 'event', 'UX', 'click', 'add to cart', {
+            useBeacon: true
+        });
+
+
+
+        
+      });
+
+
+
+
+   });
+</script>
+ 
+<script type="text/javascript" src="https://www.adafruit.com/includes/templates/adafruit2013/jscript/jquery.fancybox.js"></script>
+<script type="text/javascript" src="https://www.adafruit.com/includes/templates/adafruit2013/jscript/jquery.fancybox-thumbs.js"></script>
+<script type="text/javascript" src="https://www.adafruit.com/includes/templates/adafruit2013/jscript/jquery.touchSwipe.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://www.adafruit.com/includes/templates/adafruit2013/css/jquery.fancybox.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://www.adafruit.com/includes/templates/adafruit2013/css/jquery.fancybox-thumbs.css" media="screen"/>
+<script language="javascript" type="text/javascript">
+
+$(document).ready(function(){
+    if($('.stacky_num').length) {
+		$('#prod-add-qty').keyup(function(){
+			stacky_val = $(".stacky_num").val();
+			if( isNaN(stacky_val) || (parseFloat(stacky_val) != parseInt(stacky_val) ) )
+			stacky_val = 1;
+			atc_val = $("#prod-add-qty").val();
+			stacky_val *= atc_val;
+
+			$(".stacky_num").html(parseInt(stacky_val));
+			$(".stacky-checkbox").prop('value', stacky_val);
+		});
+		$('#prod-add-qty-mobile').keyup(function(){
+			stacky_val = $(".stacky_num").val();
+			if( isNaN(stacky_val) || (parseFloat(stacky_val) != parseInt(stacky_val) ) )
+			stacky_val = 1;
+			atc_val = $("#prod-add-qty").val();
+			stacky_val *= atc_val;
+
+			$(".stacky_num").html(parseInt(stacky_val));
+			$(".stacky-checkbox").prop('value', stacky_val);
+		});
+	}
+});
+
+var reqs = new Array();
+var wishlistTimeout = new Array();
+var wishlistMobileTimeout = new Array();
+var wishlistNames = null; 
+
+
+function toggleAccordion(id){
+	$(id).toggle();
+	$(id).parent().toggleClass('open');
+}
+function scrollToAnchor(aid){
+	var aTag = $(aid);
+	$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+$( document ).ready(function() {
+	// Wishlist Stuff
+	if($('#add-btn').length) {
+		$('#add-to-wishlist-placeholder').height($('#add-to-wishlist-container')[0].scrollHeight);
+	
+		function clearTimeouts(wid) {
+			if (wishlistTimeout[wid] != 0) {
+				clearTimeout(wishlistTimeout[wid]);
+				wishlistTimeout[wid] = 0;
+			}
+			if (wishlistMobileTimeout[wid] != 0) {
+				clearTimeout(wishlistMobileTimeout[wid]);
+				wishlistMobileTimeout[wid] = 0;
+			}
+		}
+
+		function showAdded(wid) {
+			clearTimeouts();
+			var label = $('#wishlabel-'+wid);
+			var height = document.getElementById('wishlabel-'+wid).scrollHeight;
+			label.css('minHeight',height);
+			var name = wishlistNames[wid];
+			var mobileLabel = $('#wishlabel-mobile-'+wid);
+			var mobileHeight = document.getElementById('wishlabel-mobile-'+wid).scrollHeight;
+			mobileLabel.css('minHeight',mobileHeight);
+			// Do the main label
+			label.css('color','#178c33');
+			label.html('SAVED');
+			wishlistTimeout[wid] = setTimeout(function(){ label.css('color', '#000'); label.html(name); }, 3000);
+			// And the mobile one
+			mobileLabel.css('color','#178c33');
+			mobileLabel.html('SAVED');
+			wishlistMobileTimeout[wid] = setTimeout(function(){ mobileLabel.css('color', '#000'); mobileLabel.html(name); }, 3000);
+		}
+
+		function showRemoved(wid) {
+			clearTimeouts();
+			var label = $('#wishlabel-'+wid);
+			var height = document.getElementById('wishlabel-'+wid).scrollHeight;
+			label.css('minHeight',height);
+			var name = wishlistNames[wid];
+			var mobileLabel = $('#wishlabel-mobile-'+wid);
+			var mobileHeight = document.getElementById('wishlabel-mobile-'+wid).scrollHeight;
+			mobileLabel.css('minHeight',mobileHeight);
+			// Do the main label
+			label.css('color','#ff0000');
+			label.html('REMOVED');
+			wishlistTimeout[wid] = setTimeout(function(){ label.css('color', '#000'); label.html(name); }, 3000);
+			// And the mobile one
+			mobileLabel.css('color','#ff0000');
+			mobileLabel.html('REMOVED');
+			wishlistMobileTimeout[wid] = setTimeout(function(){ mobileLabel.css('color', '#000'); mobileLabel.html(name); }, 3000);
+		}
+		
+
+		function checked_stackies() {
+			var rv = $(".stacky-checkbox:checked").map(function(){
+				  return $(this).attr('name');
+			}).get();
+			var re = new RegExp("([0-9]+)");
+			for (var i = 0; i < rv.length; i++) {
+				results = re.exec(rv[i]);
+				rv[i] = results[0];
+			}
+			return rv;
+		}
+
+		function IsNumeric(input) {
+			return (input - 0) == input && (''+input).trim().length > 0;
+		}
+
+		// We run this on page load and every time there's a new wishlist created.
+		function hookup_checkboxes() {
+			$('.wishlabel').off('click');
+			$('.wishlabel').on('click',function (e) {
+				var wid = $(this).data('id');
+				var el = $('#wchk-'+wid);
+				el.trigger('click');
+			});
+			$('.wid-checkbox').off('click');
+			$('.wid-checkbox').on('click',function(){
+				if($(this).is(':checked')) {
+					// Ajax the wishlist form
+					var wid = $(this).val();
+					var qty = $('#prod-add-qty').val();
+					var stackies = checked_stackies();
+					var data = {
+						'wid' : wid,
+						'add': 269,
+						'qty': qty,
+						'stackies': stackies,
+						'token' : ''
+					};
+					$.post('/wishlists',data)
+					.done(function(data) { 
+						if(IsNumeric(data.wid)) {
+							$('#wchkmbl-'+data.wid).prop('checked', true);
+							showAdded(data.wid);
+						}
+					});
+				} else {
+					// Ajax the delete form
+					var wid = $(this).val();
+					var pid = 269;
+					var stackies = checked_stackies();
+					var data = {
+						'wid' : wid,
+						'delete' : pid,
+						'stackies' : stackies,
+						'token' : ''
+					};
+					$.post('/wishlists',data)
+					.done(function(data) { 
+						if(IsNumeric(data.wid)) {
+							$('#wchkmbl-'+data.wid).prop('checked', false);
+							showRemoved(data.wid);
+						}
+					});
+				}
+			}); 
+			$('.wid-checkbox-mobile').off('click');
+			$('.wid-checkbox-mobile').on('click',function(){
+				if($(this).is(':checked')) {
+					// Ajax the wishlist form
+					var wid = $(this).val();
+					var qty = $('#prod-add-qty-mobile').val();
+					var stackies = checked_stackies();
+					var data = {
+						'wid' : wid,
+						'add': 269,
+						'qty': qty,
+						'stackies' : stackies,
+						'token' : ''
+					};
+					$.post('/wishlists',data)
+					.done(function(data) { 
+						if(IsNumeric(data[wid])) {
+							$('#wchk-'+data[wid]).prop('checked', true);
+							showAdded(data[wid]);
+						}
+					});
+				} else {
+					// Ajax the delete form
+					var wid = $(this).val();
+					var pid = 269;
+					var stackies = checked_stackies();
+					var data = {
+						'wid' : wid,
+						'delete' : pid,
+						'stackies' : stackies,
+						'token' : ''
+					};
+					$.post('/wishlists',data)
+					.done(function(data) { 
+						if(IsNumeric(data[wid])) {
+							$('#wchk-'+data[wid]).prop('checked', false);
+							showRemoved(data[wid]);
+						}
+					});
+				}
+			}); 
+		}
+		
+		// Start the whole thing up!
+		hookup_checkboxes();
+
+		$('.stacky-checkbox').click(function (e) {
+			var name = $(this).attr('name');
+			var checked = $(this).prop('checked');
+			$("[name='"+name+"']").prop('checked',checked);
+		});
+
+		$('.mobile-stacky-checkbox').click(function (e) {
+			var name = $(this).attr('name');
+			var checked = $(this).prop('checked');
+			$("[name='"+name+"']").prop('checked',checked);
+		});
+
+		$('#create-btn').click(function (e) {
+			e.preventDefault();
+			$('#new-wishlist-name').val('');
+			$('#new-wishlist-description').val('');
+			var modal = $('#create-wishlist-modal');
+			modal.modal('show');
+		});
+		
+		$('#create-btn-mobile').click(function (e) {
+			e.preventDefault();
+			$('#new-wishlist-name').val('');
+			$('#new-wishlist-description').val('');
+			var modal = $('#create-wishlist-modal');
+			modal.modal('show');
+		});
+		
+		$('#create-submit').click(function (e) {
+			e.preventDefault();
+			// Create the new wishlist
+			var newWishlistName = $('#new-wishlist-name').val();
+			var newWishlistDescription = $('#new-wishlist-description').val();
+			var newWishlistToken = $('#new-wishlist-token').val();
+			var data = {
+				'action' : 'create',
+				'name' : newWishlistName,
+				'description' : newWishlistDescription,
+				'token' : newWishlistToken
+			}
+			$.post('/wishlists',data)
+				.done(function(data) {
+					if (data.success) {
+						// Add it to the desktop and mobile lists
+						$('#add-to-wishlist-container ul').append('<li class="clearfix"><input class="wid-checkbox" id="wchk-'+data.new_wishlist_id+'" type="checkbox" value="'+data.new_wishlist_id+'" name="wid"><div class="wishlabel" data-id="'+data.new_wishlist_id+'" id="wishlabel-'+data.new_wishlist_id+'">'+data.new_wishlist_name+'</div></li>');
+						$('#add-to-wishlist-container-mobile ul').append('<li class="clearfix"><input id="wchkmbl-'+data.new_wishlist_id+'" class="wid-checkbox-mobile" type="checkbox" value="'+data.new_wishlist_id+'" name="wid"><div class="wishlabel" data-id="'+data.new_wishlist_id+'" id="wishlabel-mobile-'+data.new_wishlist_id+'">'+data.new_wishlist_name+'</div></li>');
+						// Add it to the wishlist names
+						wishlistNames[data.new_wishlist_id] = data.new_wishlist_name;
+						// And hook up the checkboxes
+						hookup_checkboxes();
+					}
+					// Finally, hide the modal
+					var modal = $('#create-wishlist-modal');
+					modal.modal('hide');
+				});
+		});
+		
+		$('#add-btn').on('click',function(){
+							window.location.href =	'https://www.adafruit.com/index.php?main_page=login';
+					});
+		
+		$('#add-btn-mobile').on('click',function(){
+							window.location.href =	'https://www.adafruit.com/index.php?main_page=login';
+					});
+	}
+	
+	// Product Videos
+	$('a.product-video').on('click', function(event) {
+		event.preventDefault();
+		$.fancybox({
+			'type' : 'iframe',
+			// hide the related video suggestions and autoplay the video
+			'href' : this.href,
+			'overlayShow' : true,
+			'centerOnScroll' : true,
+			'speedIn'  : 100,
+			'speedOut' : 50,
+			'padding'  : 0,
+			afterLoad  : function () {
+				$.extend(this, {
+					aspectRatio : true,
+					width: '1200',
+					height  : '800'
+				});
+			}
+		});
+	});	
+	$(".fancymp4")
+	.fancybox({
+        padding     : 0,
+        margin      : 40,
+        nextEffect  : 'fade',
+        prevEffect  : 'none',
+		fitToView   : true,
+        autoCenter  : false,
+		scrolling   : 'no',
+		aspectRatio : true,
+		helpers : {
+			title : {
+				type : 'inside'
+			}
+		},
+        afterLoad  : function () {
+        },
+		onUpdate : function () {
+			$.fancybox.reposition();
+			$.fancybox.update();
+			$('#vid').get(0).play();
+		}
+    });
+	$(".fancybox")
+    .fancybox({
+        padding    : 0,
+        margin     : 20,
+        nextEffect : 'fade',
+        prevEffect : 'none',
+        autoCenter : false,
+		helpers : {
+			title : {
+				type : 'inside'
+			},
+			buttons	: {},
+			thumbs : {
+				width: 100,
+				height: 75
+			}
+		},
+        afterLoad  : function () {
+            $.extend(this, {
+                aspectRatio : true,
+                type    : 'html',
+				width: '1600',
+                height  : '1200',
+                content : '<div class="fancybox-image" style="background-image:url(' + this.href + '); background-size: cover; background-position:50% 50%;background-repeat:no-repeat;height:100%;width:100%;" /></div>'
+            });
+        },
+		onUpdate : function () {
+			$.fancybox.reposition();
+			$.fancybox.update();
+		}
+    });
+
+	$('.prod-toggle').click(function(){
+		id = $(this).attr('id');
+		id = '#'+id.replace('tab_', 'content_');
+		var expandMarker = $('.right-plus', this).html();
+		if (expandMarker == '+') {
+			$('.right-plus', this).html('-');
+		} else {
+			$('.right-plus', this).html('+');
+		}
+		toggleAccordion(id);
+	});
+
+	$(".toggle-link").click(function () {
+		var expandMarker = $('.right-plus', this).html();
+		if (expandMarker == '+') {
+			$('.right-plus', this).html('-');
+		} else {
+			$('.right-plus', this).html('+');
+		}
+	});
+
+	$('.fancybox-more').click(function(){
+		$('.fancynav-link').removeClass('selected');
+		index = String(this);
+		index = index.substr(index.length-1);
+		$('.fl-'+index).addClass('selected');
+	});
+
+
+	// thumbail switcher
+	$('.product-info-img-thumb').click(function(e){
+		var video = $(this).data('video');
+		if (video) { // If this is a video
+			// First, make sure the hidden video is updated.
+			var videoHtml = '<video id="vid" height="100%" preload="auto" muted="muted" loop="loop" autoplay="autoplay" poster="https://cdn-shop.adafruit.com/product-videos/1200x900/'+$(this).data('filename')+'.jpg"><source src="https://cdn-shop.adafruit.com/product-videos/1200x900/'+$(this).data('filename')+'.mp4" /><source src="https://cdn-shop.adafruit.com/product-videos/1200x900/'+$(this).data('filename')+'.webm" type="video/webm; codecs=vp8,vorbis" /><source src="https://cdn-shop.adafruit.com/product-videos/1200x900/'+$(this).data('filename')+'.ogv" type="video/ogg; codecs=theora,vorbis" />Your browser does not support the video tag.</video>';
+			$('#vidbox').html(videoHtml);
+			// Then update the visible video
+			videoHtml = '<div class="prodvid-container"><img src="https://cdn-shop.adafruit.com/product-videos/1024x768/'+$(this).data('filename')+'.jpg"/><video width="100%" preload="auto" muted="muted" autoplay="autoplay" loop="loop" poster="https://cdn-shop.adafruit.com/product-videos/1024x768/'+$(this).data('filename')+'.jpg"><source src="https://cdn-shop.adafruit.com/product-videos/1024x768/'+$(this).data('filename')+'.mp4" /><source src="https://cdn-shop.adafruit.com/product-videos/1024x768/'+$(this).data('filename')+'.webm" type="video/webm; codecs=vp8,vorbis" /><source src="https://cdn-shop.adafruit.com/product-videos/1024x768/'+$(this).data('filename')+'.ogv" type="video/ogg; codecs=theora,vorbis" />Your browser does not support the video tag.</video></div>';
+			$('#prod-primary-img-container a').html(videoHtml);
+			// Finally, make sure the link takes you to the right place.
+			$('#prod-primary-img-container a').unbind();
+			$('#prod-primary-img-container a').attr('href', '#vid');
+			$('#prod-primary-img-container a').removeClass('fancybox');
+			$('#prod-primary-img-container a').addClass('fancymp4');
+			$(".fancymp4")
+			.fancybox({
+				padding     : 0,
+				margin      : 40,
+				nextEffect  : 'fade',
+				prevEffect  : 'none',
+				fitToView   : true,
+				autoCenter  : false,
+				scrolling   : 'no',
+				aspectRatio : true,
+				helpers : {
+					title : {
+						type : 'inside'
+					}
+				},
+				afterLoad  : function () {
+				},
+				onUpdate : function () {
+					$.fancybox.reposition();
+					$.fancybox.update();
+					$('#vid').get(0).play();
+				}
+			});
+		} else { // If this is an image
+			$('#prod-primary-img-container a').html('<img src="https://cdn-shop.adafruit.com/970x728/'+$(this).data('filename')+'" class="img-responsive"/>');
+			// Finally, make sure the link takes you to the right place.
+			$('#prod-primary-img-container a').unbind();
+			$('#prod-primary-img-container a').attr('href', 'https://cdn-shop.adafruit.com/1200x900/' + $(this).data('filename'));
+			$('#prod-primary-img-container a').removeClass('fancymp4');
+			$('#prod-primary-img-container a').addClass('fancybox');
+			$(".fancybox")
+			.fancybox({
+				padding    : 0,
+				margin     : 20,
+				nextEffect : 'fade',
+				prevEffect : 'none',
+				autoCenter : false,
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {},
+					thumbs : {
+						width: 100,
+						height: 75
+					}
+				},
+				afterLoad  : function () {
+					$.extend(this, {
+						aspectRatio : true,
+						type    : 'html',
+						width: '1600',
+						height  : '1200',
+						content : '<div class="fancybox-image" style="background-image:url(' + this.href + '); background-size: cover; background-position:50% 50%;background-repeat:no-repeat;height:100%;width:100%;" /></div>'
+					});
+				},
+				onUpdate : function () {
+					$.fancybox.reposition();
+					$.fancybox.update();
+				}
+			});
+		}
+
+		$('.fancybox').attr('data-fancybox-group', 'gallery');
+		$(this).removeAttr('data-fancybox-group');
+
+		e.stopPropagation();
+		e.preventDefault();
+	});
+
+	$('.carousel').carousel({
+		interval : false
+	});
+
+
+	//Enable swiping...
+	$(".carousel-inner").swipe({
+	  excludedElements: "button, input, select, textarea, .noSwipe",
+	  swipeLeft: function() {
+		$(this).parent().carousel('next');
+	  },
+	  swipeRight: function() {
+		$(this).parent().carousel('prev');
+	  },
+	  tap: function(event, target) {
+		window.open($(target).closest('.item').find('.prod-vid-thumb').attr('href'), '_self');
+	  }
+	});
+
+	$('.prod-rightnav-link').click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		var id = $(this).attr('id');
+		id = '#'+id.replace('prod-rightnav-','')+'-anchor';
+		$(this).addClass('active');
+
+		scrollToAnchor(id);
+	});
+
+	$('#prod-info').fitVids();
+					
+});
+
+</script>
+<meta name="twitter:card" content="product">
+<meta name="twitter:site" content="adafruit">
+<meta name="twitter:creator" content="@adafruit">
+<meta name="twitter:title" content="Thermocouple Amplifier MAX31855 breakout board (MAX6675 upgrade)">
+<meta name="twitter:description" content="Thermocouples are very sensitive, requiring a good amplifier with a cold-compensation reference. The MAX31855K does everything for you, and can be easily interfaced with any microcontroller, ...">
+<meta name="twitter:image:src" content="http://www.adafruit.com/images/480x360/269-04.jpg">
+<meta name="twitter:data1" content="$14.95 USD">
+<meta name="twitter:label1" content="PRICE">
+<meta name="twitter:data2" content="IN STOCK">
+<meta name="twitter:label2" content="STOCK">
+<meta name="twitter:domain" content="adafruit.com">
+<!--[if lt IE 9]>
+<script src="/includes/templates/adafruit2013/jscript/respond.min.js"></script>
+<script src="/includes/templates/adafruit2013/jscript/html5shiv.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("a > button").on('click', function() { 
+    location.href = $(this).closest("a").attr("href");
+});
+});
+</script>
+<![endif]-->
+<script type="text/javascript">
+	function hideMessage() {
+		$('.messaging-container').hide();
+		$('#small-header-nav').removeClass('msg');
+		document.cookie = "seen_msg_=1; path=/;domain=adafruit.com;";
+	}
+
+	$(document).ready(function(){
+
+		// Turn on all the carousels!
+		if($('.carousel').length > 0) $('.carousel').carousel();
+
+		$('#navigation nav > ul > li').hover_menu();
+		$('#small-header-content').mobile_menu();
+
+		
+		function videoautoheight(){
+			$("iframe.youtube").each(function() {
+				var orig = $(this);
+				var container = orig.parents().find("div:last");
+				container.fitVids();
+			});
+		}
+
+		videoautoheight();
+
+		$('#header-cart').shoppingCartTag({
+		  cartUpdated : function(cart_data){
+			cartCount = 0;
+			this.html(cart_data['cart_totals']['items'] + ' Items <i class="fa fa-shopping-cart"></i>');
+		  }
+		});
+		$('.small-cart-count').shoppingCartTag({
+		  cartUpdated : function(cart_data){
+			cartCount = 0;
+			this.html(cart_data['cart_totals']['items'] );
+		  }
+		});
+	});
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.adafruit.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.adafruit.com/search?g=1&q={search_term}",
+    "query-input": "required name=search_term"
+  }
+}
+</script>
+</head>
+<body class="no-js">
+<div id="outer-wrapper">
+<div id="inner-wrapper">
+<script>
+	var oldQuery = '';
+	function submitNewRelicTracker(query){
+		// Prepare some information to send to NewRelic
+		var viewportWidth = $(window).width();
+		var viewportHeight = $(window).height();	
+		var newRelicInfo = {
+			'search_token' : '2158284e5d135534fa5db002e7276902',
+			'url' : '/products/269?hidden=yes&amp;main_page=product_info&amp;products_id=269',
+			'query' : query,
+			'autocompleted' : '',
+			'product_selected' : false,
+			'viewportWidth' : viewportWidth,
+			'viewportHeight' : viewportHeight
+		};
+		newRelicInfo['query'] = query;
+		$.ajax({
+			type: "POST",
+			async: false,
+			url: '/api/nr_search.php',
+			data: newRelicInfo
+		});
+	}
+	function autocompleteNewRelicTracker(autocompleted){
+		// Prepare some information to send to NewRelic
+		var viewportWidth = $(window).width();
+		var viewportHeight = $(window).height();	
+		var newRelicInfo = {
+			'search_token' : '2158284e5d135534fa5db002e7276902',
+			'url' : '/products/269?hidden=yes&amp;main_page=product_info&amp;products_id=269',
+			'query' : oldQuery,
+			'autocompleted' : autocompleted,
+			'product_selected' : true,
+			'viewportWidth' : viewportWidth,
+			'viewportHeight' : viewportHeight
+		};
+		$.ajax({
+			type: "POST",
+			async: false,
+			url: '/api/nr_search.php',
+			data: newRelicInfo
+		});
+	}
+	$( document ).ready(function() {  
+		$("#search-form").submit(function(index) {
+			// We need to send everything to NewRelic.
+			submitNewRelicTracker($('#search').val());
+		});
+		$("#mobile-search-form").submit(function(index) {
+			// We need to send everything to NewRelic.
+			submitNewRelicTracker($('#mobile-search').val());
+		});
+	});
+</script>
+<header id="adafruit-header" class="clearfix">
+<div id="small-header-content" class="container visible-xs">
+<button id="small-header-menu-button" class="c-hamburger c-hamburger--htx">
+<span>toggle menu</span>
+</button>
+<div class="small-header-logo">
+<a href="#">
+<img alt="Adafruit Logo" height="50" width="50" id="logo_small" src="https://www.adafruit.com/includes/templates/adafruit2013/images/adafruit_logo_small.png" title="Adafruit"/>
+</a>
+</div>
+<a class="small-header-cart" href="https://www.adafruit.com/shopping_cart">
+<span class="small-cart-count">0</span>
+<i class="fa fa-shopping-cart"></i>
+</a>
+</div>
+<nav id="small-header-nav" role="navigation" class="visible-xs">
+<div class="block">
+<ul>
+<li>
+<div id="small-search-wrapper">
+<div id="small-search-inner-wrapper">
+<form id="mobile-search-form" action="https://www.adafruit.com/search" method="get">
+<label for="search" style="display:none;">Search</label>
+<input class="search" type="text" id="mobile-search" name="qs" placeholder=""/>
+<button class="search-button-mobile" type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
+</div>
+</li>
+</ul>
+<ul class="breadcrumbs"><li><a id="hamburger-home-link" href="#">MENU</a></li></ul>
+<ul class="menu"><li><a href="https://www.adafruit.com/">SHOP</a><ul class="menu"><li><a href="https://www.adafruit.com/">HOME</a></li><li><a href="https://www.adafruit.com/new">NEW PRODUCTS</a></li><li><a href="https://www.adafruit.com/categories/17">ARDUINO</a></li><li><a href="https://www.adafruit.com/categories/105">RASPBERRY PI</a></li><li><a href="https://www.adafruit.com/categories/75">BEAGLEBONE</a></li><li><a href="https://www.adafruit.com/categories/168">NEOPIXELS</a></li><li><a href="https://www.adafruit.com/categories/65">WEARABLES</a></li><li><a href="https://www.adafruit.com/categories/117">YOUNG ENGINEERS</a></li><li><a href="https://www.adafruit.com/categories/290">COSPLAY/COSTUMING</a></li><li><a href="https://www.adafruit.com/categories/82">PROTOTYPING</a></li><li><a href="https://www.adafruit.com/categories/307">HALLOWEEN</a></li><li><a href="https://www.adafruit.com/categories/42">BREAKOUT BOARDS</a></li><li><a href="https://www.adafruit.com/categories/851">DEVELOPMENT BOARDS</a></li><li><a href="https://www.adafruit.com/categories/203">KITS & PROJECTS</a></li><li><a href="https://www.adafruit.com/categories/63">LCDS & DISPLAYS</a></li><li><a href="https://www.adafruit.com/categories/328">RESELLER & UNIVERSITY PACKS</a></li><li><a href="https://www.adafruit.com/categories/37">LEDS</a></li><li><a href="https://www.adafruit.com/categories/44">POWER</a></li><li><a href="https://www.adafruit.com/categories/33">CABLES</a></li><li><a href="https://www.adafruit.com/categories/8">TOOLS</a></li><li><a href="https://www.adafruit.com/categories/227">ROBOTICS & CNC</a></li><li><a href="https://www.adafruit.com/categories/234">ACCESSORIES</a></li><li><a href="https://www.adafruit.com/categories/54">COMPONENTS & PARTS</a></li><li><a href="https://www.adafruit.com/categories/35">SENSORS</a></li><li><a href="https://www.adafruit.com/categories/50">EL WIRE/TAPE/PANEL</a></li><li><a href="https://www.adafruit.com/categories/128">3D PRINTING</a></li><li><a href="https://www.adafruit.com/categories/40">BOOKS</a></li><li><a href="https://www.adafruit.com/categories/254">SOFTWARE</a></li><li><a href="https://www.adafruit.com/categories/112">WIRELESS</a></li><li><a href="https://www.adafruit.com/categories/14">GIFT CERTIFICATES</a></li><li><a href="https://www.adafruit.com/categories/342">INTERNET OF THINGS - IOT</a></li><li><a href="https://www.adafruit.com/categories/771">PARTICLE</a></li></ul></li><li><a href="https://blog.adafruit.com/">BLOG</a><ul class="menu"><li><a href="https://blog.adafruit.com/">HOME</a></li><li><a href="https://blog.adafruit.com/category/3d-printing/">3D PRINTING</a></li><li><a href="https://blog.adafruit.com/category/art/">ART</a></li><li><a href="https://blog.adafruit.com/category/raspberry-pi/">RASPBERRY PI</a></li><li><a href="https://blog.adafruit.com/category/random/">RANDOM</a></li><li><a href="https://blog.adafruit.com/category/wearables/">WEARABLES</a></li><li><a href="https://blog.adafruit.com/category/arduino/">ARDUINO</a></li><li><a href="https://blog.adafruit.com/category/science/">SCIENCE</a></li><li><a href="https://blog.adafruit.com/category/costuming/">COSTUMING</a></li><li><a href="https://blog.adafruit.com/category/cosplay/">COSPLAY</a></li></ul></li><li><a href="https://learn.adafruit.com/">LEARN</a></li><li><a href="https://www.youtube.com/adafruit">VIDEOS</a><ul class="menu"><li><a href="https://learn.adafruit.com/">HOME</a></li><li><a href="https://learn.adafruit.com/category/components">COMPONENTS</a></li><li><a href="https://learn.adafruit.com/category/sensors">SENSORS</a></li><li><a href="https://learn.adafruit.com/category/hacks">HACKS</a></li><li><a href="https://learn.adafruit.com/category/microcomputers">MICROCOMPUTERS</a></li><li><a href="https://learn.adafruit.com/category/adafruit-products">ADAFRUIT PRODUCTS</a></li><li><a href="https://learn.adafruit.com/category/maker-business">MAKER BUSINESS</a></li><li><a href="https://learn.adafruit.com/category/projects">PROJECTS</a></li><li><a href="https://learn.adafruit.com/category/leds">LEDS</a></li><li><a href="https://learn.adafruit.com/category/raspberry-pi">RASPBERRY PI</a></li><li><a href="https://learn.adafruit.com/category/braincrafts">BRAINCRAFTS</a></li><li><a href="https://learn.adafruit.com/category/lcds-and-displays">LCDS & DISPLAYS</a></li><li><a href="https://learn.adafruit.com/category/el">EL WIRE/TAPE/PANEL</a></li><li><a href="https://learn.adafruit.com/category/tools">TOOLS</a></li><li><a href="https://learn.adafruit.com/category/microcontrollers">MICROCONTROLLERS</a></li><li><a href="https://learn.adafruit.com/category/learn-arduino">LEARN ARDUINO</a></li><li><a href="https://learn.adafruit.com/category/customer-projects">CUSTOMER PROJECTS</a></li><li><a href="https://learn.adafruit.com/category/beaglebone">BEAGLEBONE</a></li><li><a href="https://learn.adafruit.com/category/circuit-playground">CIRCUIT PLAYGROUND</a></li><li><a href="https://learn.adafruit.com/category/3d-printing">3D PRINTING</a></li><li><a href="https://learn.adafruit.com/category/trinket">TRINKET</a></li><li><a href="https://learn.adafruit.com/category/robotics">ROBOTICS</a></li><li><a href="https://learn.adafruit.com/category/collins-lab">COLLIN'S LAB</a></li><li><a href="https://learn.adafruit.com/category/community-support">COMMUNITY SUPPORT</a></li><li><a href="https://learn.adafruit.com/category/wearables">WEARABLES</a></li><li><a href="https://learn.adafruit.com/category/adafruit-io">ADAFRUIT IO</a></li><li><a href="https://learn.adafruit.com/category/arduino">ARDUINO</a></li><li><a href="https://learn.adafruit.com/category/feather">FEATHER</a></li><li><a href="https://learn.adafruit.com/category/circuit-playground-1">CIRCUIT PLAYGROUND</a></li><li><a href="https://learn.adafruit.com/category/wireless">WIRELESS</a></li></ul></li><li><a id="mobile-sign-in-link" href="https://accounts.adafruit.com/">SIGN IN</a></li><li><a id="mobile-sign-out-link" href="https://accounts.adafruit.com/users/sign_out">SIGN OUT</a></li></ul> <script src="https://www.adafruit.com/includes/templates/adafruit2013/jscript/hamburger_menu.js"></script>
+</div>
+</nav>
+<div id="header-content" class="container hidden-xs">
+<div id="header-profile">
+<a href="https://www.adafruit.com/shopping_cart" id="header-cart">
+0 Items <i class="fa fa-shopping-cart"></i>
+</a>
+<div id="account">
+<a href="https://www.adafruit.com/index.php?main_page=login">Sign In</a>
+</div>
+<div id="search-wrapper">
+<form id="search-form" action="https://www.adafruit.com/search" method="get">
+<label for="search" style="display:none;">Search</label>
+<input id="search" data-algolia-app="W9DMM4OTH0" data-algolia-key="e613bcda3453b9ef887e2724362f9e57" data-env="prod" type="text" autocomplete="off" spellcheck="false" autocorrect="off" name="q"/>
+<i class="fa fa-search"></i>
+<input type="submit" style="height: 1px; width: 1px; color:#000; background-color: #000;">
+</form>
+</div>
+</div>
+<div id="navigation">
+<a href="#">
+<img alt="Adafruit Logo" height="60" width="172" id="logo" src="https://www.adafruit.com/includes/templates/adafruit2013//images/logo_2x.png" title="Adafruit"/>
+</a>
+<nav class="hover-menu">
+<ul>
+<li id="nav-shop" data-load="https://www.adafruit.com/api/flyouts/shop.html"><a href="https://www.adafruit.com/categories">SHOP</a></li>
+<li id="nav-blog" data-load="https://blog.adafruit.com/adafruit-blog-flyouts"><a href="https://blog.adafruit.com/">BLOG</a></li>
+<li id="nav-learn" data-load="https://learn.adafruit.com/api/hover-menu/flyouts/learn.html"><a href="https://learn.adafruit.com/">LEARN</a></li>
+<li id="nav-support">
+<a href="https://forums.adafruit.com/">FORUMS</a>
+</li>
+<li id="nav-video">
+<a href="http://www.youtube.com/adafruit">VIDEOS</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<script>
+	var justBlurred = false;
+</script>
+<div class="breadcrumbs">
+<div class="container">
+<a href="https://www.adafruit.com/categories/35">Sensors</a> / <a href="https://www.adafruit.com/categories/56">Temperature</a> <span class="hidden-xs-inline">/</span> <span class="hidden-xs-inline">Thermocouple Amplifier MAX31855 breakout board (MAX6675 upgrade)</span>
+</div>
+</div>
+<div class="instant-search-container container">
+<main>
+<div class="row">
+ 
+<div id="left-column" class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+ 
+<div id="is-header"></div>
+<hr class="top-ten"/>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div id="is-hits"></div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div id="is-pagination"></div>
+</div>
+</div>
+</div>
+<div id="right-column" class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+<div id="categories"></div>
+<div id="facets"></div>
+</div>
+</div>
+</main>
+ 
+<script type="text/template" id="is-header-template">
+    <div class="row" > 
+        <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-title gotham-light" >
+            Search results for <span class="gotham-book">{{query}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-tabs">  
+            PRODUCTS | <a href="https://learn.adafruit.com/search?q={{query}}">LEARN</a> | <a href="https://blog.adafruit.com/?s={{query}}">BLOG</a> | <a href="https://forums.adafruit.com/search.php?keywords={{query}}" >FORUMS</a>
+        </div>
+    </div>
+</script>
+ 
+<script type="text/template" id="hit-template">
+    {{#hits}}
+        <div class="row product-listing">
+            <div class="img-container col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                <a href="/products/{{objectID}}"
+                class="ec_click_product"
+                data-pid="{{objectID}}"
+                data-name="{{name}}"
+                data-position="{{@index}}"
+                data-listname="Product Listing instant-search">
+                    {{#is_video}}
+                        <div class="prodvid-container">
+                            <img src="https://cdn-shop.adafruit.com/product-videos/320x240/{{image}}.jpg"/>
+                            <video width="100%" preload="auto" muted="muted" autoplay="autoplay" loop="loop" poster="https://cdn-shop.adafruit.com/product-videos/320x240/{{image}}.jpg">
+                                <source src="https://cdn-shop.adafruit.com/product-videos/320x240/{{image}}.mp4" />
+                                <source src="https://cdn-shop.adafruit.com/product-videos/320x240/{{image}}.webm" type="video/webm; codecs=vp8,vorbis" />
+                                <source src="https://cdn-shop.adafruit.com/product-videos/320x240/{{image}}.ogv" type="video/ogg; codecs=theora,vorbis" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    {{/is_video}}
+                    {{^is_video}}
+                        <img class="img-responsive" src="https://cdn-shop.adafruit.com/310x233/{{image}}" alt="{{name}}" />
+                    {{/is_video}}
+                </a>
+            </div>
+            <div class="product-listing-right col-lg-8 col-md-8 col-sm-8 col-xs-6">
+                <div class="product-listing-text-wrapper">
+                    <h1 class="gotham-book"><a href="/products/{{objectID}}"
+                    class="ec_click_product"
+                    data-pid="{{objectID}}"
+                    data-name="{{name}}"
+                    data-position="{{@index}}"
+                    data-listname="Product Listing instant-search">
+                    {{{name}}}
+                    {{#model}}
+                    - {{{model}}}
+                    {{/model}}
+                    </a></h1>
+                    <div class="product_id">PRODUCT ID: {{objectID}}</div>
+                    <div class="product-description clearfix hidden-md hidden-sm hidden-xs is-description">
+                        {{{description_lg}}}
+                    </div>
+                </div>
+                <div class="product-info clearfix row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hidden-xs">
+                        {{#add_to_cart}}
+                            <form action="added" method="post">
+                                <input type="hidden" name="action" value="add_product" />
+                                <input type="hidden" name="pid" value="{{objectID}}" />
+                                <input type="hidden" name="qty" value="1" />
+                                <input type="hidden" name="source_page" value="instant-search" />
+                                <input type="hidden" name="source_id" value="instant-search" />
+                                <button type="submit"  class="blue-button-large" data-pid="{{objectID}}" data-qty="1">{{button_text}}</button>
+                            </form>                 
+                        {{/add_to_cart}}
+                        {{^add_to_cart}}
+                            <a href="products/{{objectID}}"
+                            class="ec_click_product"
+                            data-pid="{{objectID}}"
+                            data-name="{{name}}"
+                            data-listname="Product Listing (more info) instant-search">
+                                <button class="blue-button-large" >{{button_text}}</button>
+                            </a>
+                        {{/add_to_cart}}
+                    </div>
+                    <div class="price-stock col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="price">{{#price}}${{price}}{{/price}}</div>
+                        <div class="stock">
+                            <span class='out-of-stock'>{{list_tag}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile view -->
+        <div class="row top-twenty visible-xs">
+            <div class="col-xs-12">
+                {{#add_to_cart}}
+                    <form action="added" method="post">
+                        <input type="hidden" name="action" value="add_product" />
+                        <input type="hidden" name="pid" value="{{objectID}}" />
+                        <input type="hidden" name="qty" value="1" />
+                        <div class="mobile-button-row">
+                        <button type="submit"  class="blue-button-large add_to_cart_ec" 
+                        data-pid="{{objectID}}" 
+                        data-qty="1"
+                        data-name="{{name}}"
+                        >ADD TO CART</button>
+                        </div>
+                    </form>
+                {{/add_to_cart}}
+                {{^add_to_cart}}                
+                    <a href="products/{{objectID}}"
+                    class="ec_click_product"
+                    data-pid="{{objectID}}"
+                    data-name="{{name}}"
+                    data-listname="Product Listing (more info) instant-search">
+                        <div class="mobile-button-row">
+                            <button class="blue-button-large">MORE INFO</button>
+                        </div>
+                    </a>
+                {{/add_to_cart}}
+            </div>
+        </div>
+        <hr />
+    {{/hits}}
+</script>
+ 
+<script type="text/template" id="pagination-template">
+  <ul class="is-pagination">
+    <li {{^prev_page}}class="disabled"{{/prev_page}}><a {{#prev_page}}class="go-to-page" data-page="{{ prev_page }}"{{/prev_page}}>Previous</a></li>
+    {{#pages}}
+        <li class="{{#current}}active{{/current}} {{#disabled}}disabled{{/disabled}}"><a {{^disabled}} class="go-to-page" data-page="{{ number }}" {{/disabled}}>{{ number }}</a></li>
+    {{/pages}}
+    <li {{^next_page}}class="disabled"{{/next_page}}><a {{#next_page}}class="go-to-page" data-page="{{ next_page }}"{{/next_page}}>Next</a></li>
+  </ul>
+</script>
+ 
+<script type="text/template" id="categories-template">
+    <div class="facet">
+        <h5 class="is-facet-header gotham-light">CATEGORIES</h5>
+        <ul class="lvl0">
+            {{#cats}}
+                {{#show_0}}
+                    <li>
+                        <a class="facet-link category-refine {{#isChecked_0}}facet-refined{{/isChecked_0}} gotham-light" data-type="category" data-level="0" data-value="{{ path }}" 
+                        {{#isChecked_0}}data-checked="true"{{/isChecked_0}} {{#isRefined_0}}data-refined="true"{{/isRefined_0}}
+                        {{^isChecked_0}}data-checked="false"{{/isChecked_0}} {{^isRefined_0}}data-refined="false"{{/isRefined_0}}
+                        >
+                            <input type="checkbox" class="facet-checkbox" {{#isChecked_0}}checked="checked"{{/isChecked_0}} id="cats_{{ id }}" /> {{ name }}
+                        </a>
+                        <ul class="lvl1">
+                            {{#isChecked_0}}
+                                {{#subs}}
+                                    {{#show_1}}
+                                        <li>
+                                            <a class="facet-link category-refine {{#isRefined}}facet-refined{{/isRefined}} gotham-light" data-type="category" data-level="1" data-value="{{ path }}" 
+                                            {{#isChecked_1}}data-checked="true"{{/isChecked_1}} {{#isRefined_1}}data-refined="true"{{/isRefined_1}}
+                                            {{^isChecked_1}}data-checked="false"{{/isChecked_1}} {{^isRefined_1}}data-refined="false"{{/isRefined_1}}
+                                            >
+                                                <input type="checkbox" class="facet-checkbox" {{#isChecked_1}}checked="checked"{{/isChecked_1}}/> {{ name }}
+                                            </a>
+                                            <ul class="lvl2">
+                                            {{#isChecked_1}}
+                                                {{#subs}}
+                                                    {{#show_2}}
+                                                        <li>
+                                                            <a class="facet-link category-refine {{#isRefined}}facet-refined{{/isRefined}} gotham-light" data-type="category" data-level="2"  data-value="{{ path }}" 
+                                                            {{#isChecked_2}}data-checked="true"{{/isChecked_2}} {{#isRefined_2}}data-refined="true"{{/isRefined_2}}
+                                                            {{^isChecked_2}}data-checked="false"{{/isChecked_2}} {{^isRefined_2}}data-refined="false"{{/isRefined_2}}
+                                                            >
+                                                                <input type="checkbox" class="facet-checkbox" {{#isChecked_2}}checked="checked"{{/isChecked_2}}/> {{ name }}
+                                                            </a>
+                                                        </li>
+                                                    {{/show_2}}
+                                                {{/subs}}
+                                            {{/isChecked_1}}
+                                            </ul>
+                                        </li>
+                                    {{/show_1}}
+                                {{/subs}}
+                            {{/isChecked_0}}
+                        </ul>
+                    </li>
+                {{/show_0}}
+            {{/cats}}
+        </ul>
+    </div>
+</script>
+ 
+<script type="text/template" id="facets-template">
+    <div class="facet">
+        <h5 class="is-facet-header gotham-light">{{ title }}</h5>
+        <ul class="lvl0">
+            {{#values}}
+                <li>
+                    <a class="facet-link toggle-refine {{#disjunctive}}facet-disjunctive{{/disjunctive}} {{#isRefined}}facet-refined{{/isRefined}} gotham-light" data-facet="{{ facet }}" data-value="{{ name }}">
+                        <input type="checkbox" class="facet-checkbox" {{#isRefined}}checked="checked"{{/isRefined}}/> {{ name }}
+                    </a>
+                </li>
+            {{/values}}
+        </ul>
+    </div>
+</script>
+</div>
+<div class="main-container container">
+<div class="row product-info">
+<div class="visible-sm visible-xs col-sm-12 col-xs-12 ">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h1 style="">Thermocouple Amplifier MAX31855 breakout board (MAX6675 upgrade) - v2.0</h1>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="product_id mobile-text-wrapper">PRODUCT ID: 269</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div id="prod-price" class="mobile-text-wrapper">
+$14.95 </div>
+<div class="hidden-sm hidden-xs">
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix visible-sm visible-xs"></div>
+<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+<div id="prod-primary-img-container" class="hidden-sm hidden-xs">
+<a class="fancybox" data-fancybox-group="gallery" href="https://cdn-shop.adafruit.com/1200x900/269-04.jpg">
+<img src="https://cdn-shop.adafruit.com/970x728/269-04.jpg" alt="Thermocouple Amplifier MAX31855 breakout board (MAX6675 upgrade) - v2.0"/>
+</a>
+<div id="vidbox">
+</div>
+</div>
+<div id="prod-mobile-carousel" class="carousel slide visible-sm visible-xs">
+<ol class="carousel-indicators">
+<li data-target="#prod-mobile-carousel" data-slide-to="0" class=active></li>
+<li data-target="#prod-mobile-carousel" data-slide-to="1"></li>
+<li data-target="#prod-mobile-carousel" data-slide-to="2"></li>
+<li data-target="#prod-mobile-carousel" data-slide-to="3"></li>
+</ol>
+<div class="carousel-inner">
+<div class="item active">
+<img src="https://cdn-shop.adafruit.com/970x728/269-04.jpg" alt="269_0"/>
+</div>
+<div class="item ">
+<img src="https://cdn-shop.adafruit.com/970x728/269-03.jpg" alt="269_1"/>
+</div>
+<div class="item ">
+<img src="https://cdn-shop.adafruit.com/970x728/269-05.jpg" alt="269_2"/>
+</div>
+<div class="item ">
+<img src="https://cdn-shop.adafruit.com/970x728/269-02.jpg" alt="269_3"/>
+</div>
+</div>
+<a class="left carousel-control" href="#prod-mobile-carousel" data-slide="prev">
+<div class="carousel-arrow">
+<i class="fa fa-angle-left"></i>
+</div>
+</a>
+<a class="right carousel-control" href="#prod-mobile-carousel" data-slide="next">
+<div class="carousel-arrow">
+<i class="fa fa-angle-right"></i>
+</div>
+</a>
+</div>
+<div class="row hidden-sm hidden-xs" style="clear: left;">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" style="margin: 20px 0 10px 0;">
+<div class="prod-img-thumb">
+<a href="https://cdn-shop.adafruit.com/1200x900/269-04.jpg" class="product-info-img-thumb fancybox" data-video="0" data-filename="https://www.adafruit.com/269-04.jpg">
+<img src="https://cdn-shop.adafruit.com/145x109/269-04.jpg" alt="269_2" class="img-responsive"/>
+</a>
+</div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" style="margin: 20px 0 10px 0;">
+<div class="prod-img-thumb">
+<a href="https://cdn-shop.adafruit.com/1200x900/269-03.jpg" class="product-info-img-thumb fancybox" data-fancybox-group="gallery" data-video="0" data-filename="https://www.adafruit.com/269-03.jpg">
+<img src="https://cdn-shop.adafruit.com/145x109/269-03.jpg" alt="269_3" class="img-responsive"/>
+</a>
+</div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" style="margin: 20px 0 10px 0;">
+<div class="prod-img-thumb">
+<a href="https://cdn-shop.adafruit.com/1200x900/269-05.jpg" class="product-info-img-thumb fancybox" data-fancybox-group="gallery" data-video="0" data-filename="https://www.adafruit.com/269-05.jpg">
+<img src="https://cdn-shop.adafruit.com/145x109/269-05.jpg" alt="269_4" class="img-responsive"/>
+</a>
+</div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" style="margin: 20px 0 10px 0;">
+<div class="prod-img-thumb">
+<a href="https://cdn-shop.adafruit.com/1200x900/269-02.jpg" class="product-info-img-thumb fancybox" data-fancybox-group="gallery" data-video="0" data-filename="https://www.adafruit.com/269-02.jpg">
+<img src="https://cdn-shop.adafruit.com/145x109/269-02.jpg" alt="269_5" class="img-responsive"/>
+</a>
+</div>
+</div>
+</div>
+<hr class="gray tenzero hidden-xs hidden-sm"/>
+<div class="visible-sm visible-xs">
+<div class="row top-twenty">
+<div class="col-sm-6 hidden-xs">
+<div class="productQuantityDiscounts  mobile-text-wrapper">
+<table id="quantityDiscount" border="0" cellspacing="2" cellpadding="2">
+<tr id="quantityDiscountsHeading">
+<td class="discount-header">QTY</td>
+<td class="discount-header">DISCOUNT</td>
+</tr>
+<tr class="discount-row"><td>1-9</td><td>$14.95</td></tr>
+<tr class="discount-row"><td>10-99</td><td>$13.46</td></tr>
+<tr class="discount-row"><td>100+</td><td>$11.96</td></tr>
+</tr>
+</table>
+</div>
+<div class="mobile-text-margins top-ten" style="font-weight: bold; margin-bottom: 10px;">
+IN STOCK </div>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div class="row">
+<div id="prod-stock">
+<div class="col-sm-12 col-xs-12 mobile-button-row">
+<form action="https://www.adafruit.com/added" method="post">
+<div id="prod-add-mobile" class="clearfix">
+<input type="hidden" name="action" value="add_product"/>
+<input type="hidden" name="pid" value="269"/>
+<input type="text" name="qty" id="prod-add-qty-mobile" value="1"/>
+<input type="hidden" name="source_page" value="product"/>
+<input type="hidden" name="source_id" value="269"/>
+<button id="prod-add-btn-mobile" type="submit" class="addToCart" data-pid="269" data-qty-source="#prod-add-qty-mobile">Add to Cart</button>
+</div>
+</form>
+ 
+</div>
+<div class="col-xs-12 visible-xs">
+<div class="productQuantityDiscounts  mobile-text-wrapper">
+<table id="quantityDiscount" border="0" cellspacing="2" cellpadding="2">
+<tr id="quantityDiscountsHeading">
+<td class="discount-header">QTY</td>
+<td class="discount-header">DISCOUNT</td>
+</tr>
+<tr class="discount-row"><td>1-9</td><td>$14.95</td></tr>
+<tr class="discount-row"><td>10-99</td><td>$13.46</td></tr>
+<tr class="discount-row"><td>100+</td><td>$11.96</td></tr>
+</tr>
+</table>
+</div>
+</div>
+<div class="clearfix visible-sm visible-xs"></div>
+<div class="col-xs-12 mobile-text-margins top-ten hidden-sm" style="margin-bottom: 10px;">
+IN STOCK </div>
+<div class="col-xs-12 mobile-button-row">
+<div id="add-to-wishlist-container-mobile">
+<button id="add-btn-mobile" class="gray-button" style="width: 100%;">ADD TO WISHLIST</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ul id="prod-info">
+<li class="prod-accordion-content prod-accordion-content-description mobile-text-wrapper">
+<h1 id="tab_description" class="hidden-sm hidden-xs">Description</h1>
+<a data-toggle="collapse" href="#description" class="toggle-link"><h1 id="tab_description" class="visible-sm visible-xs">Description<span class="right-plus visible-sm visible-xs">-</span></h1></a>
+<div id="description" class="panel-collapse collapse in-md in-lg in">
+<a id="description-anchor" class="invizzy-anchor" name="description"></a><p>Thermocouples are very sensitive, requiring a good amplifier with a cold-compensation reference. The MAX31855K does everything for you, and can be easily interfaced with any microcontroller, even one without an analog input. This breakout board has the chip itself, a 3.3V regulator with 10uF bypass capacitors and level shifting circuitry, all assembled and tested. Comes with a 2 pin terminal block (for connecting to the thermocouple) and pin header (to plug into any breadboard or perfboard). <a href="http://www.adafruit.com/products/270">Goes great with our 1m K-type thermocouple</a>.<br/>
+<br/>
+<strong>New!</strong> Now uses the MAX31855K instead of the MAX6675, so it can measure a wider temperature measurement range. <strong>Please note!</strong> the MAX31855 is not pin compatible or drop-in code compatible with the MAX6675. We do have an Arduino library for both chips but you&#39;ll need to adjust any existing MAX6675 designs for the new MAX31855. The MAX6675 has been discontinued by Maxim.<br/>
+<br/>
+Version 2.0 now includes ferrite beads and filter capacitor onboard for better stability</p>
+<ul>
+<li>Works with any K type thermocouple</li>
+<li>Will not work with any other kind of thermocouple other than K type</li>
+<li><strong>-200&deg;C to +1350&deg;C output in 0.25 degree increments</strong> - note that K thermocouples have about &plusmn;2&deg;C to &plusmn;6&deg;C accuracy</li>
+<li>Internal temperature reading</li>
+<li>3.3 to 5v power supply and logic level compliant!</li>
+<li>SPI data output requires any 3 digital I/O pins.</li>
+</ul>
+<p><a href="http://learn.adafruit.com/thermocouple/">Hey we even have a handy tutorial on thermocouples which includes an Arduino library, wiring diagrams and example code. How easy is that?</a></p> </div>
+</li>
+<li class="prod-accordion-content prod-accordion-content-technical-details mobile-text-wrapper">
+<h1 id="tab_technical-details" class="hidden-sm hidden-xs">Technical Details</h1>
+<a data-toggle="collapse" href="#technical-details" class="toggle-link"><h1 id="tab_technical-details" class="visible-sm visible-xs">Technical Details<span class="right-plus visible-sm visible-xs">+</span></h1></a>
+<div id="technical-details" class="panel-collapse collapse in-md in-lg ">
+<a id="technical-details-anchor" class="invizzy-anchor" name="technical-details"></a><p>Dimensions (without headers):</p>
+<ul>
+<li>Length: 20mm/0.8in</li>
+<li>Width: 20mm/0.8in</li>
+<li>Height: 3.28mm/0.12in</li>
+<li>Weight: 1.33g/0.05oz</li>
+</ul> <ul id="product-files">
+</ul>
+</div>
+</li>
+<li class="prod-accordion-content prod-accordion-content-learn mobile-text-wrapper">
+<h1 id="tab_learn" class="hidden-sm hidden-xs">Learn</h1>
+<a data-toggle="collapse" href="#learn" class="toggle-link"><h1 id="tab_learn" class="visible-sm visible-xs">Learn<span class="right-plus visible-sm visible-xs">+</span></h1></a>
+<div id="learn" class="panel-collapse collapse in-md in-lg ">
+<a id="learn-anchor" class="invizzy-anchor" name="learn"></a><div class="row">
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="row product-info-tutorial">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 product-tutorial-img-container">
+<a href="https://learn.adafruit.com/thermocouple">
+<img src="http://cdn-learn.adafruit.com/guides/images/000/000/023/medium500/thermocouple_LRG.jpg?1448300909" alt="Thermocouple" class="img-responsive"/>
+</a>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+<div class="product-info-tutorials-text">
+<div class="product-info-added-tutorial-title">
+<a href="https://learn.adafruit.com/thermocouple">
+Thermocouple
+</a>
+</div>
+<div class="product-info-tutorials-tagline">
+Lets use the Seebeck effect!
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix hidden-lg top-ten"></div>
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="row product-info-tutorial">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 product-tutorial-img-container">
+<a href="https://learn.adafruit.com/connecting-the-max31855-thermocouple-amplifier-breakout-to-an-electric-imp">
+<img src="http://cdn-learn.adafruit.com/guides/images/000/000/360/medium500/assembled_circuit.png?1448301405" alt="Connecting the MAX31855 Thermocouple Amplifier breakout to an Electric Imp" class="img-responsive"/>
+</a>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+<div class="product-info-tutorials-text">
+<div class="product-info-added-tutorial-title">
+<a href="https://learn.adafruit.com/connecting-the-max31855-thermocouple-amplifier-breakout-to-an-electric-imp">
+Connecting the MAX31855 Thermocouple Amplifier breakout to an Electric Imp
+</a>
+</div>
+<div class="product-info-tutorials-tagline">
+Read thermocouple data with an Electric Imp, then graph it on Xively, tweet it, and monitor it on your iPhone!
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix hidden-lg top-ten"></div>
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="row product-info-tutorial">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 product-tutorial-img-container">
+<a href="https://learn.adafruit.com/adafruit-1-wire-thermocouple-amplifier-max31850k">
+<img src="http://cdn-learn.adafruit.com/guides/images/000/000/520/medium500/1727chipboard_detail_LRG.jpg?1448301662" alt="Adafruit 1-Wire Thermocouple Amplifier - MAX31850K" class="img-responsive"/>
+</a>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+<div class="product-info-tutorials-text">
+<div class="product-info-added-tutorial-title">
+<a href="https://learn.adafruit.com/adafruit-1-wire-thermocouple-amplifier-max31850k">
+Adafruit 1-Wire Thermocouple Amplifier - MAX31850K
+</a>
+</div>
+<div class="product-info-tutorials-tagline">
+1-Wire for all the thermocouples
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix hidden-lg top-ten"></div>
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="row product-info-tutorial">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 product-tutorial-img-container">
+<a href="https://learn.adafruit.com/max31855-thermocouple-python-library">
+<img src="http://cdn-learn.adafruit.com/guides/images/000/000/738/medium500/MAX31855.jpg?1448301953" alt="MAX31855 Thermocouple Sensor Python Library" class="img-responsive"/>
+</a>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+<div class="product-info-tutorials-text">
+<div class="product-info-added-tutorial-title">
+<a href="https://learn.adafruit.com/max31855-thermocouple-python-library">
+MAX31855 Thermocouple Sensor Python Library
+</a>
+</div>
+<div class="product-info-tutorials-tagline">
+Use a MAX31855 thermocouple temperature sensor on a BeagleBone Black or Raspberry Pi!
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix hidden-lg top-ten"></div>
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="row product-info-tutorial">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 product-tutorial-img-container">
+<a href="https://learn.adafruit.com/adafruit-ft232h-with-spi-and-i2c-libraries">
+<img src="http://cdn-learn.adafruit.com/guides/images/000/000/817/medium500/DSC00742.jpg?1448302003" alt="Adafruit FT232H With SPI & I2C Devices" class="img-responsive"/>
+</a>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+<div class="product-info-tutorials-text">
+<div class="product-info-added-tutorial-title">
+<a href="https://learn.adafruit.com/adafruit-ft232h-with-spi-and-i2c-libraries">
+Adafruit FT232H With SPI & I2C Devices
+</a>
+</div>
+<div class="product-info-tutorials-tagline">
+Use the Adafruit FT232H USB to GPIO / SPI / I2C breakout with Adafruit's SPI & I2C devices.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix hidden-lg top-ten"></div>
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="row product-info-tutorial">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 product-tutorial-img-container">
+<a href="https://learn.adafruit.com/calibrating-sensors">
+<img src="http://cdn-learn.adafruit.com/guides/images/000/000/977/medium500/234A0501-Compressed.jpg?1448302119" alt="Calibrating Sensors" class="img-responsive"/>
+</a>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+<div class="product-info-tutorials-text">
+<div class="product-info-added-tutorial-title">
+<a href="https://learn.adafruit.com/calibrating-sensors">
+Calibrating Sensors
+</a>
+</div>
+<div class="product-info-tutorials-tagline">
+Get peak performance from all your sensors.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix hidden-lg top-ten"></div>
+</div> </div>
+</li>
+</ul>
+ 
+<h1 class="hidden-sm hidden-xs">MAY WE ALSO SUGGEST...</h1>
+<a href="#related-products" data-toggle="collapse" class="toggle-link"><h1 id="tab_related" class=" related-header hidden-md hidden-lg">MAY WE ALSO SUGGEST...<span class="right-plus visible-sm visible-xs">-</span></h1></a>
+<div id="related-products" class="row panel-collapse in">
+<script>ga('ec:addImpression', {
+        'id': '270',
+        'name': "P270", 'position': '1' });
+ </script>
+<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 top-ten">
+<a href="https://www.adafruit.com/products/270" title="Thermocouple Type-K Glass Braid Insulated" class="ec_click_product" data-pid="270" data-name="Thermocouple Type-K Glass Braid Insulated" data-position="1" data-listname="Product Page xsell">
+<div class="hover-img-box">
+<img src="https://cdn-shop.adafruit.com/413x309/270-00.jpg" class="img-responsive"/>
+<div class="hover-img-text">Thermocouple Type-K Glass Braid Insulated</div>
+</div>
+</a>
+</div>
+<script>ga('ec:addImpression', {
+        'id': '165',
+        'name': "P165", 'position': '2' });
+ </script>
+<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 top-ten">
+<a href="https://www.adafruit.com/products/165" title="TMP36 - Analog Temperature sensor" class="ec_click_product" data-pid="165" data-name="TMP36 - Analog Temperature sensor" data-position="2" data-listname="Product Page xsell">
+<div class="hover-img-box">
+<img src="https://cdn-shop.adafruit.com/413x309/165-00.jpg" class="img-responsive"/>
+<div class="hover-img-text">TMP36 - Analog Temperature sensor</div>
+</div>
+</a>
+</div>
+<script>ga('ec:addImpression', {
+        'id': '268',
+        'name': "P268", 'position': '3' });
+ </script>
+<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 top-ten">
+<a href="https://www.adafruit.com/products/268" title="Powerswitch tail 2" class="ec_click_product" data-pid="268" data-name="Powerswitch tail 2" data-position="3" data-listname="Product Page xsell">
+<div class="hover-img-box">
+<img src="https://cdn-shop.adafruit.com/413x309/268-04.jpg" class="img-responsive"/>
+<div class="hover-img-text">Powerswitch tail 2</div>
+</div>
+</a>
+</div>
+<script>ga('ec:addImpression', {
+        'id': '3081',
+        'name': "P3081", 'position': '4' });
+ </script>
+<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 top-ten">
+<a href="https://www.adafruit.com/products/3081" title="Pax Instruments T400 Temperature Datalogger Set" class="ec_click_product" data-pid="3081" data-name="Pax Instruments T400 Temperature Datalogger Set" data-position="4" data-listname="Product Page xsell">
+<div class="hover-img-box">
+<img src="https://cdn-shop.adafruit.com/413x309/3081-01.jpg" class="img-responsive"/>
+<div class="hover-img-text">Pax Instruments T400 Temperature Datalogger Set</div>
+</div>
+</a>
+</div>
+<script>ga('ec:addImpression', {
+        'id': '642',
+        'name': "P642", 'position': '5' });
+ </script>
+<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 top-ten">
+<a href="https://www.adafruit.com/products/642" title="High Temp Waterproof DS18B20 Digital temperature sensor + extras" class="ec_click_product" data-pid="642" data-name="High Temp Waterproof DS18B20 Digital temperature sensor + extras" data-position="5" data-listname="Product Page xsell">
+<div class="hover-img-box">
+<img src="https://cdn-shop.adafruit.com/413x309/642-00.jpg" class="img-responsive"/>
+<div class="hover-img-text">High Temp Waterproof DS18B20 Digital temperature sensor + extras</div>
+</div>
+</a>
+</div>
+<script>ga('ec:addImpression', {
+        'id': '1727',
+        'name': "P1727", 'position': '6' });
+ </script>
+<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 top-ten">
+<a href="https://www.adafruit.com/products/1727" title="Thermocouple Amplifier with 1-Wire Breakout Board - MAX31850K" class="ec_click_product" data-pid="1727" data-name="Thermocouple Amplifier with 1-Wire Breakout Board - MAX31850K" data-position="6" data-listname="Product Page xsell">
+<div class="hover-img-box">
+<img src="https://cdn-shop.adafruit.com/413x309/1727-00.jpg" class="img-responsive"/>
+<div class="hover-img-text">Thermocouple Amplifier with 1-Wire Breakout Board - MAX31850K</div>
+</div>
+</a>
+</div>
+<script>ga('ec:addImpression', {
+        'id': '2857',
+        'name': "P2857", 'position': '7' });
+ </script>
+<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 top-ten">
+<a href="https://www.adafruit.com/products/2857" title="Adafruit Sensiron SHT31-D Temperature & Humidity Sensor Breakout" class="ec_click_product" data-pid="2857" data-name="Adafruit Sensiron SHT31-D Temperature & Humidity Sensor Breakout" data-position="7" data-listname="Product Page xsell">
+<div class="hover-img-box">
+<img src="https://cdn-shop.adafruit.com/413x309/2857-00.jpg" class="img-responsive"/>
+<div class="hover-img-text">Adafruit Sensiron SHT31-D Temperature & Humidity Sensor Breakout</div>
+</div>
+</a>
+</div>
+<script>ga('ec:addImpression', {
+        'id': '374',
+        'name': "P374", 'position': '8' });
+ </script>
+<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 top-ten">
+<a href="https://www.adafruit.com/products/374" title="DS18B20 Digital temperature sensor + extras" class="ec_click_product" data-pid="374" data-name="DS18B20 Digital temperature sensor + extras" data-position="8" data-listname="Product Page xsell">
+<div class="hover-img-box">
+<img src="https://cdn-shop.adafruit.com/413x309/374-00.jpg" class="img-responsive"/>
+<div class="hover-img-text">DS18B20 Digital temperature sensor + extras</div>
+</div>
+</a>
+</div>
+<script>ga('ec:addImpression', {
+        'id': '1296',
+        'name': "P1296", 'position': '9' });
+ </script>
+<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 top-ten">
+<a href="https://www.adafruit.com/products/1296" title="Contact-less Infrared Thermopile Sensor Breakout - TMP006" class="ec_click_product" data-pid="1296" data-name="Contact-less Infrared Thermopile Sensor Breakout - TMP006" data-position="9" data-listname="Product Page xsell">
+<div class="hover-img-box">
+<img src="https://cdn-shop.adafruit.com/413x309/1296-00.jpg" class="img-responsive"/>
+<div class="hover-img-text">Contact-less Infrared Thermopile Sensor Breakout - TMP006</div>
+</div>
+</a>
+</div>
+<script>ga('ec:addImpression', {
+        'id': '1778',
+        'name': "P1778", 'position': '10' });
+ </script>
+<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 top-ten">
+<a href="https://www.adafruit.com/products/1778" title="Analog Output K-Type Thermocouple Amplifier - AD8495 Breakout" class="ec_click_product" data-pid="1778" data-name="Analog Output K-Type Thermocouple Amplifier - AD8495 Breakout" data-position="10" data-listname="Product Page xsell">
+<div class="hover-img-box">
+<img src="https://cdn-shop.adafruit.com/413x309/1778-00.jpg" class="img-responsive"/>
+<div class="hover-img-text">Analog Output K-Type Thermocouple Amplifier - AD8495 Breakout</div>
+</div>
+</a>
+</div>
+</div>
+ 
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<a id="distributors-anchor" name="distributors"></a>
+<ul id="distributor-box">
+<li>
+<h1 id="tab_3" class="prod-toggle mobile-text-wrapper">Distributors<span class="right-plus visible-xs visible-sm">+</span></h1>
+<div id="content_3" class="content mobile-text-wrapper">
+<ul id="prod-distributors">
+<li>
+<div>
+<a href="http://www.icshop.com/" target="_blank"/>
+<h2>INIKI Electronics Co., LTD</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://shop.pimoroni.com/" target="_blank"/>
+<h2>Pimoroni</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.robotpark.com/" target="_blank"/>
+<h2>ROBOTPARK</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://nettigo.pl/products/supplier/Adafruit" target="_blank"/>
+<h2>Nettigo</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.kinetroni.com/" target="_blank"/>
+<h2>kinetronica</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.arduitronics.com/" target="_blank"/>
+<h2>Arduitronics</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.skpang.co.uk/" target="_blank"/>
+<h2>SK Pang electronics</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.openhacks.com/" target="_blank"/>
+<h2>Open Hacks</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.play-zone.ch/" target="_blank"/>
+<h2>Play-Zone</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.exp-tech.de/" target="_blank"/>
+<h2>Exp-tech</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="https://www.adafruit.com/www.idea-link.net" target="_blank"/>
+<h2>Idea Link </h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://grobotronics.com/" target="_blank"/>
+<h2>GRobotronics</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.vanallesenmeer.nl/" target="_blank"/>
+<h2>van alles en meer</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.devicemart.co.kr/" target="_blank"/>
+<h2>NTREX, Inc.- Devicemart</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.core-electronics.com.au/" target="_blank"/>
+<h2>Core Electronics</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="https://www.thingbits.net/" target="_blank"/>
+<h2>Thingbits Electronics</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.robotshop.com/ca/en/adafruit-en.html" target="_blank"/>
+<h2>RobotShop Canada</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.robotshop.com/en/adafruit-en.html" target="_blank"/>
+<h2>RobotShop</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.robotshop.com/eu/fr/adafruit-en.html" target="_blank"/>
+<h2>RobotShop Europe</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://watterott.com/" target="_blank"/>
+<h2>Watterott Electronic</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://shop.mchobby.be/" target="_blank"/>
+<h2>MicroControleur Hobby</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://nicegear.co.nz/" target="_blank"/>
+<h2>Nice Gear</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.mouser.com/adafruit/" target="_blank"/>
+<h2>Mouser Electronics</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.coldfire-electronica.com/" target="_blank"/>
+<h2>ColdFire Electronica</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.maker-shop.ch/" target="_blank"/>
+<h2>maker-shop</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.pi-shop.ch/" target="_blank"/>
+<h2>pi-shop</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.pakronics.com/" target="_blank"/>
+<h2>Pakronics</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://littlebirdelectronics.com.au/" target="_blank"/>
+<h2>Little Bird Electronics</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.cetronic.es/" target="_blank"/>
+<h2>Cetronic</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.mechasolution.com/" target="_blank"/>
+<h2>MechaSolution</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.rpelectronics.com/" target="_blank"/>
+<h2>R.P. Electronics</h2>
+<span></span>
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="http://www.direnc.net/" target="_blank"/>
+<h2>www.direnc.net</h2>
+<span></span>
+</a>
+</div>
+</li>
+</ul>
+<p style="clear: both;">See our <a href="https://www.adafruit.com/distributors/">Distributors page</a> for a complete list of distributors.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+<div id="prod-right-side" data-spy="affix" data-offset-top="100" data-offset-bottom="1000" class="affix-top">
+<h1 style="">Thermocouple Amplifier MAX31855 breakout board (MAX6675 upgrade) - v2.0</h1>
+<div class="product_id">
+PRODUCT ID: 269 </div>
+<div id="prod-price">
+$14.95 </div>
+<div id="prod-stock" class="">
+IN STOCK<form action="https://www.adafruit.com/added" method="post">
+<div id="prod-add" class="clearfix">
+<input type="hidden" name="action" value="add_product"/>
+<input type="hidden" name="pid" value="269"/>
+<input type="text" name="qty" id="prod-add-qty" value="1"/>
+<input type="hidden" name="source_page" value="product"/>
+<input type="hidden" name="source_id" value="269"/>
+<button id="prod-add-btn" type="submit" class="addToCart add_to_cart_ec_multi" data-pid="269" data-qty-source="#prod-add-qty" data-name="Thermocouple Amplifier MAX31855 breakout board (MAX6675 upgrade)" data-crumbs="Sensors/Temperature/">Add to Cart</button>
+</div>
+<div class="productQuantityDiscounts  mobile-text-wrapper">
+<table id="quantityDiscount" border="0" cellspacing="2" cellpadding="2">
+<tr id="quantityDiscountsHeading">
+<td class="discount-header">QTY</td>
+<td class="discount-header">DISCOUNT</td>
+</tr>
+<tr class="discount-row"><td>1-9</td><td>$14.95</td></tr>
+<tr class="discount-row"><td>10-99</td><td>$13.46</td></tr>
+<tr class="discount-row">
+<tr class="discount-row"><td>100+</td><td>$11.96</td></tr>
+</tr>
+</table>
+</div>
+</form>
+ 
+<div id="add-to-wishlist-container">
+<button id="add-btn" class="gray-button" style="width: 100%;">ADD TO WISHLIST</button>
+</div>
+</div>
+<div id="prod-rightnav">
+<ul class="nav">
+<li><a class="prod-rightnav-link" id="prod-rightnav-description" href="https://www.adafruit.com/products/269#description-anchor">Description</a></li>
+<li><a class="prod-rightnav-link" id="prod-rightnav-technical-details" href="https://www.adafruit.com/products/269#technical-details-anchor">Technical Details</a></li>
+<li><a class="prod-rightnav-link" id="prod-rightnav-learn" href="https://www.adafruit.com/products/269#learn-anchor">Learn</a></li>
+</ul>
+<div id="add-to-wishlist-placeholder"></div>
+</div>
+</div>
+<script type="text/javascript">
+			$(document).ready(function(){
+				var top_offset = $('#prod-right-side').offset().top || $('#adafruit-header').height() + 20;
+				$('#prod-right-side').data('offset-top', top_offset);
+				var bottom_offset = $('#footer').height() + 40;
+				$('#prod-right-side').data('offset-bottom', bottom_offset);
+			});
+		</script>
+</div>
+</div>
+</div>
+<script>
+
+ga('ec:addProduct', {
+  'id': 'P269',
+  'name': 'Thermocouple Amplifier MAX31855 breakout board (MAX6675 upgrade)',
+});
+
+ga('ec:setAction', 'detail');
+
+</script>
+</div> <div id="footer">
+<div class="container">
+<div class="row">
+<div class=" col-lg-6 col-md-6 col-sm-4 col-xs-12">
+<ul id="footer-left">
+<li><a href="https://www.adafruit.com/contact_us">Contact</a></li>
+<li><a href="https://www.adafruit.com/support">Support</a></li>
+<li><a href="https://www.adafruit.com/distributors">Distributors</a></li>
+<li><a href="https://www.adafruit.com/educators">Educators</a></li>
+<li><a href="https://www.adafruit.com/jobs">Jobs</a></li>
+<li><a href="https://www.adafruit.com/faq">FAQ</a></li>
+<li><a href="https://www.adafruit.com/shippinginfo">Shipping &amp; Returns</a></li>
+<li><a href="https://www.adafruit.com/terms_of_service">Terms of Service</a></li>
+<li><a href="https://www.adafruit.com/privacy">PRIVACY &amp; LEGAL</a></li>
+<li><a href="https://www.adafruit.com/about">About Us</a></li>
+</ul>
+<div id="footer-copyright">
+<a href="http://nytm.org/made-in-nyc/">Engineered in NYC</a> <span>Adafruit&nbsp;&reg;</span>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-8 hidden-xs">
+<div id="footer-quote"><span class="quotes-large">"Don't fight forces, use them"<span class="quotes_author"> - <a href="http://en.wikipedia.org/wiki/Buckminster_Fuller">R. Buckminster Fuller</a></span></div> <div id="footer-seals" class="hidden-xs">
+<div class="authorize">
+  <div class="AuthorizeNetSeal"> <script type="text/javascript" language="javascript">var ANS_customer_id="1de2c247-f7e6-492b-99d8-fb648be79ff1";</script> <script type="text/javascript" language="javascript" src="http://verify.authorize.net/anetseal/seal.js"></script> <a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">Online Payments</a> </div>
+</div>
+<div class="seals">
+<img class="img-responsive" src="https://www.adafruit.com/includes/templates/adafruit2013/images/seals_2x.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>ga('send', 'pageview');</script>
+ 
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1014834932;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1014834932/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+</div>
+</div>
+<div class="modal fade" id="create-wishlist-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title" id="myModalLabel">CREATE NEW WISHLIST</h4>
+</div>
+<div class="modal-body">
+<form id="form-wishlist-create" method="post" action="https://www.adafruit.com/wishlists">
+<input type="hidden" id="new-wishlist-token" name="token" value=""/>
+<label for="name">NAME</label>
+<input type="text" name="name" id="new-wishlist-name" value=""/>
+<label for="name">DESCRIPTION</label>
+<textarea name="description" id="new-wishlist-description"></textarea>
+<div style="text-align: right;">
+<button id="create-submit" class="blue-button">CREATE</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"308175db61","applicationID":"3835741","transactionName":"ZVxbZUFQWBdVW0BdWFwWekRARVkJG0hGW1NHWk1uWl9QCw==","queueTime":0,"applicationTime":341,"atts":"SRtYEwlKSxk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.adafruit.com/products/269 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+</html>

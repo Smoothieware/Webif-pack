@@ -1,0 +1,1162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir='ltr'>
+
+<!-- Mirrored from trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { (function(){function c(a){this.t={};this.tick=function(a,c,b){var d=void 0!=b?b:(new Date).getTime();this.t[a]=[d,c];if(void 0==b)try{window.console.timeStamp("CSI/"+a)}catch(e){}};this.tick("start",null,a)}var a;window.performance&&(a=window.performance.timing);var h=a?new c(a.responseStart):new c;window.jstiming={Timer:c,load:h};if(a){var b=a.navigationStart,e=a.responseStart;0<b&&e>=b&&(window.jstiming.srt=e-b)}if(a){var d=window.jstiming.load;0<b&&e>=b&&(d.tick("_wtsrt",void 0,b),d.tick("wtsrt_",
+"_wtsrt",e),d.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),d&&0<b&&(d.tick("_tbnd",void 0,window.chrome.csi().startE),d.tick("tbnd_","_tbnd",b))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,d&&0<b&&(d.tick("_tbnd",void 0,window.external.startE),d.tick("tbnd_","_tbnd",b))),a&&(window.jstiming.pt=a)}catch(k){}})();window.tickAboveFold=function(c){var a=0;if(c.offsetParent){do a+=c.offsetTop;while(c=c.offsetParent)}c=a;750>=c&&window.jstiming.load.tick("aft")};var f=!1;function g(){f||(f=!0,window.jstiming.load.tick("firstScrollTime"))}window.addEventListener?window.addEventListener("scroll",g,!1):window.attachEvent("onscroll",g);
+ })();</script>
+<meta content='blogger' name='generator'/>
+<link href='http://trains.socha.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="John&#39;s Model Making - Atom" href="http://trains.socha.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="John&#39;s Model Making - RSS" href="http://trains.socha.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="John&#39;s Model Making - Atom" href="https://www.blogger.com/feeds/2228372887329990411/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="John&#39;s Model Making - Atom" href="http://trains.socha.com/feeds/6150256532740760201/comments/default" />
+<link href='http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/Rev-1_thumb.png' rel='image_src'/>
+<meta content='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html' property='og:url'/>
+<meta content='http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/Rev-1_thumb.png' property='og:image'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>John's Model Making: Auto Adjust FSR End Stop Detector</title>
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/static/v1/widgets/3429619312-widget_css_bundle.css' />
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=2228372887329990411&amp;zx=4b72e09d-7cbe-4c45-bcd0-3f26ec64908b' />
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Minima Stretch
+Date:     26 Feb 2004
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="bgcolor" description="Page Background Color"
+type="color" default="#fff">
+<Variable name="textcolor" description="Text Color"
+type="color" default="#333">
+<Variable name="linkcolor" description="Link Color"
+type="color" default="#58a">
+<Variable name="pagetitlecolor" description="Blog Title Color"
+type="color" default="#666">
+<Variable name="descriptioncolor" description="Blog Description Color"
+type="color" default="#999">
+<Variable name="titlecolor" description="Post Title Color"
+type="color" default="#c60">
+<Variable name="bordercolor" description="Border Color"
+type="color" default="#ccc">
+<Variable name="sidebarcolor" description="Sidebar Title Color"
+type="color" default="#999">
+<Variable name="sidebartextcolor" description="Sidebar Text Color"
+type="color" default="#666">
+<Variable name="visitedlinkcolor" description="Visited Link Color"
+type="color" default="#999">
+<Variable name="bodyfont" description="Text Font"
+type="font" default="normal normal 100% Georgia, Serif">
+<Variable name="headerfont" description="Sidebar Title Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif">
+<Variable name="pagetitlefont" description="Blog Title Font"
+type="font"
+default="normal normal 200% Georgia, Serif">
+<Variable name="descriptionfont" description="Blog Description Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
+<Variable name="postfooterfont" description="Post Footer Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+/* Use this with templates/template-twocol.html */
+body {
+background:#ffffff;
+margin:0;
+color:#333333;
+font:x-small Georgia Serif;
+font-size/* */:/**/small;
+font-size: /**/small;
+text-align: center;
+}
+a:link {
+color:#5588aa;
+text-decoration:none;
+}
+a:visited {
+color:#999999;
+text-decoration:none;
+}
+a:hover {
+color:#cc6600;
+text-decoration:underline;
+}
+a img {
+border-width:0;
+}
+/* Header
+-----------------------------------------------
+*/
+#header-wrapper {
+margin:0 2% 10px;
+border:1px solid #cccccc;
+}
+#header {
+margin: 5px;
+border: 1px solid #cccccc;
+text-align: center;
+color:#666666;
+}
+#header-inner {
+background-position: center;
+margin-left: auto;
+margin-right: auto;
+}
+#header h1 {
+margin:5px 5px 0;
+padding:15px 20px .25em;
+line-height:1.2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+font: normal normal 200% Georgia, Serif;
+}
+#header a {
+color:#666666;
+text-decoration:none;
+}
+#header a:hover {
+color:#666666;
+}
+#header .description {
+margin:0 5px 5px;
+padding:0 20px 15px;
+text-transform:uppercase;
+letter-spacing:.2em;
+line-height: 1.4em;
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+color: #999999;
+}
+#header img {
+margin-left: auto;
+margin-right: auto;
+}
+/* Outer-Wrapper
+----------------------------------------------- */
+#outer-wrapper {
+margin:0;
+padding:10px;
+text-align:left;
+font: normal normal 100% Georgia, Serif;
+}
+#main-wrapper {
+margin-left: 2%;
+width: 67%;
+float: left;
+display: inline;       /* fix for doubling margin in IE */
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+}
+#sidebar-wrapper {
+margin-right: 2%;
+width: 25%;
+float: right;
+display: inline;       /* fix for doubling margin in IE */
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+margin:1.5em 0 .75em;
+font:normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#999999;
+}
+/* Posts
+-----------------------------------------------
+*/
+h2.date-header {
+margin:1.5em 0 .5em;
+}
+.post {
+margin:.5em 0 1.5em;
+border-bottom:1px dotted #cccccc;
+padding-bottom:1.5em;
+}
+.post h3 {
+margin:.25em 0 0;
+padding:0 0 4px;
+font-size:140%;
+font-weight:normal;
+line-height:1.4em;
+color:#cc6600;
+}
+.post h3 a, .post h3 a:visited, .post h3 strong {
+display:block;
+text-decoration:none;
+color:#cc6600;
+font-weight:normal;
+}
+.post h3 strong, .post h3 a:hover {
+color:#333333;
+}
+.post-body {
+margin:0 0 .75em;
+line-height:1.6em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+margin: .75em 0;
+color:#999999;
+text-transform:uppercase;
+letter-spacing:.1em;
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+line-height: 1.4em;
+}
+.comment-link {
+margin-left:.6em;
+}
+.post img, table.tr-caption-container {
+padding:4px;
+border:1px solid #cccccc;
+}
+.tr-caption-container img {
+border: none;
+padding: 0;
+}
+.post blockquote {
+margin:1em 20px;
+}
+.post blockquote p {
+margin:.75em 0;
+}
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+margin:1em 0;
+font-weight: bold;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color: #999999;
+}
+#comments-block {
+margin:1em 0 1.5em;
+line-height:1.6em;
+}
+#comments-block .comment-author {
+margin:.5em 0;
+}
+#comments-block .comment-body {
+margin:.25em 0 0;
+}
+#comments-block .comment-footer {
+margin:-.25em 0 2em;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.1em;
+}
+#comments-block .comment-body p {
+margin:0 0 .75em;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+}
+#blog-pager-newer-link {
+float: left;
+}
+#blog-pager-older-link {
+float: right;
+}
+#blog-pager {
+text-align: center;
+}
+/* Sidebar Content
+----------------------------------------------- */
+.sidebar {
+color: #666666;
+line-height: 1.5em;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 0;
+padding:0 0 0;
+}
+.sidebar li {
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:.25em;
+padding-left:15px;
+text-indent:-15px;
+line-height:1.5em;
+}
+.sidebar .widget, .main .widget {
+border-bottom:1px dotted #cccccc;
+margin:0 0 1.5em;
+padding:0 0 1.5em;
+}
+.main .Blog {
+border-bottom-width: 0;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 0;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+padding: 4px;
+border: 1px solid #cccccc;
+}
+.profile-data {
+margin:0;
+text-transform:uppercase;
+letter-spacing:.1em;
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+color: #999999;
+font-weight: bold;
+line-height: 1.6em;
+}
+.profile-datablock {
+margin:.5em 0 .5em;
+}
+.profile-textblock {
+margin: 0.5em 0;
+line-height: 1.6em;
+}
+.profile-link {
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+text-transform: uppercase;
+letter-spacing: .1em;
+}
+/* Footer
+----------------------------------------------- */
+#footer {
+width:660px;
+clear:both;
+margin:0 auto;
+padding-top:15px;
+line-height: 1.6em;
+text-transform:uppercase;
+letter-spacing:.1em;
+text-align: center;
+}
+
+--></style>
+<script type="text/javascript">var a="&m=1",d="(^|&)m=",e="?",f="?m=1";function g(){var b=window.location.href,c=b.split(e);switch(c.length){case 1:return b+f;case 2:return 0<=c[1].search(d)?null:b+a;default:return null}}var h=navigator.userAgent;if(-1!=h.indexOf("Mobile")&&-1!=h.indexOf("WebKit")&&-1==h.indexOf("iPad")||-1!=h.indexOf("Opera Mini")||-1!=h.indexOf("IEMobile")){var k=g();k&&window.location.replace(k)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' data-version='1' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d2228372887329990411\x26blogName\x3dJohn\x27s+Model+Making\x26publishMode\x3dPUBLISH_MODE_HOSTED\x26navbarType\x3dSILVER\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttp://trains.socha.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttp://trains.socha.com/\x26targetPostID\x3d6150256532740760201\x26blogPostOrPageUrl\x3dhttp://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html\x26vt\x3d763343709732807268',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'http://pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div id='outer-wrapper'><div id='wrap2'>
+<!-- skip links for text browsers -->
+<span id='skiplinks' style='display:none;'>
+<a href='#main'>skip to main </a> |
+      <a href='#sidebar'>skip to sidebar</a>
+</span>
+<div id='header-wrapper'>
+<div class='header section' id='header'><div class='widget Header' data-version='1' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+<a href='http://trains.socha.com/'>John's Model Making</a>
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+<div id='content-wrapper'>
+<div id='crosscol-wrapper' style='text-align:center'>
+<div class='crosscol section' id='crosscol'></div>
+</div>
+<div id='main-wrapper'>
+<div class='main section' id='main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Sunday, May 4, 2014</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/Rev-1_thumb.png' itemprop='image_url'/>
+<meta content='2228372887329990411' itemprop='blogId'/>
+<meta content='6150256532740760201' itemprop='postId'/>
+<a name='6150256532740760201'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+Auto Adjust FSR End Stop Detector
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-6150256532740760201' itemprop='description articleBody'>
+<p>I really like using FSRs (force-sensitive resistors) for detecting when the nozzle of the 3D printer touches the print bed. They can be very sensitive, and therefore very precise. What I didn&#8217;t like was how difficult it was to get them just right. Wouldn&#8217;t it be great if you could plug them into a tiny circuit board and just have them work?</p>  <p>I decided to see if I could build a circuit board that would make it really easy and reliable to use FSRs. Here are the goals I set:</p>  <ul>   <li>Automatically adjust to the weight of the print bed without requiring any configuration or adjustment&#8212;they should just work</li>    <li>Have an LED for each FSR to show when that FSR &#8220;triggers&#8221;</li>    <li>Connect directly to the end stop pins on most 3D printer boards</li>    <li>Be self powered from the end stop</li>    <li>Make it open source: <a title="https://github.com/JohnSL/FSR_Endstop" href="https://github.com/JohnSL/FSR_Endstop">https://github.com/JohnSL/FSR_Endstop</a></li> </ul>  <h4>Designing the Circuit Board</h4>  <p>With the help of my friend Stephen, we designed a circuit board in <a href="http://www.cadsoftusa.com/download-eagle/">CadSoft Eagle</a> (that means we designed the circuit together, and then I watched and ask questions as he designed the circuit board in Eagle). It took him about an hour to design the following circuit board:</p>  <p><a href="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/Rev-1.png"><img title="Rev 1" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="Rev 1" src="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/Rev-1_thumb.png" width="225" height="244" /></a></p>  <p>We then created a set of Gerber files and sent them off to <a href="http://oshpark.com/">OSH Park</a> to have some actual PCBs made. I ordered 12 PCBs and the total charge was about $26, including shipping. That&#8217;s a really great deal. The lead time to get these was about two weeks. By the way, there&#8217;s a small design flaw in this circuit board if you want to see if you can find it (click on the image to enlarge it). I&#8217;ll describe the flaw later.</p>  <p>This circuit board uses an Atmel ATTiny461 microcontroller, which is in the same family as most Arduino boards. What that meant is I could use a standard Arduino to write some firmware to test out my ideas while I waited for the circuit boards arrived. This is where being a software developer by day really helps. It didn&#8217;t take me very long to write and test some code. I only tested a single FSR because, at this point, I&#8217;d sold my 3DR &#8220;Simple&#8221; Delta printer to a person at work, and I haven&#8217;t finished designing my next delta. I have two other 3D printers, so I wasn&#8217;t really using my delta anyway.</p>  <h4>Soldering Parts in Place</h4>  <p>Two weeks later, I got the circuit boards in the mail, and they&#8217;re really nice! The next step was to learn how to solder the tiny SMD (surface mound device) components onto the board. Many of the components are what&#8217;s know as 0603s, which means they&#8217;re 0.06 inches by 0.03 inches (or 1/16 by 1/32). That&#8217;s really tiny, and smaller than I can see well without some magnification. I have a microscope that I first got to inspect the injection molds that I was milling, so I decided to use that for soldering the parts on.</p>  <p>Hand soldering SMDs turned out to be a lot easier than I expected. The key to success it to use flux (I used liquid flux) and a small soldering iron tip. My tip is nothing special, being about 0.05&#8221; in diameter at the end.</p>  <p>After applying the flux, I would add just a dab of solder to the very end of the tip, and then touch it briefly to the end of the part to be soldered while holding the part down with the tip of some tweezers. Here is what my hand-soldered board looked like when I was almost finished:</p>  <p><a href="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P4211897_Cropped.jpg"><img title="OLYMPUS DIGITAL CAMERA         " style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="OLYMPUS DIGITAL CAMERA         " src="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P4211897_Cropped_thumb.jpg" width="637" height="484" /></a></p>  <p>On the right side, near the bottom, I have two black diodes soldered in place. These diodes form a bridge rectifier, which allows me to provide power to the entire board from the two pins below labeled +/- that come from the end stop connector on the printer board. Most printer boards have three wires: signal, 5V and ground. However there is no standard for the order of 5V and ground, so using a bridge rectifier allows using either polarity of connection, at the slight loss of some voltage. In other words, this means everything runs at about 4V instead of the input 5V, which is no problem for this microcontroller, as it can operate down to about 1.8V.</p>  <p>The diodes, however, drove me crazy. Most of the SMDs have metal pads on the bottom that warp around to the ends, making them easy to solder. These diodes, on the other hand, only have metal pads on the bottom. I somehow managed to solder two in place. However there wasn&#8217;t enough clearance for me to solder the other two in place. Fortunately, the Garage at work has a hot air solder rework station, so I was able to use it, along with some solder paste, to solder the other two diodes in place. For those of you familiar with circuits, you&#8217;re probably wondering why we didn&#8217;t use a bridge rectifier chip, which would have been much easier to solder in place. The answer is that my friend Stephen had all these components on hand, so we used what he had. I&#8217;ve since changed the design to use a single chip instead of four diodes, but I haven&#8217;t ordered test boards yet.</p>  <h4>Programming and Testing the Circuit Board</h4>  <p>After I finished the first circuit board, it was time to program and test the circuit board. Programming turned out to be a little more difficult than I expected because I ran into an issue with uploading the firmware. But first, I&#8217;ll describe the setup. Stephen included a programming header in the design (at the bottom left in the photo above) so I could hook this board up to a USB programmer. I used the <a href="https://www.sparkfun.com/products/9825">Pocket AVR Programmer</a> from Sparkfun because this was my first experience programming the chip on a custom circuit board, and this programmer looked good.</p>  <p><a href="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/WP_20140504_10_14_37_Pro_600.jpg"><img title="WP_20140504_10_14_37_Pro_600" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="WP_20140504_10_14_37_Pro_600" src="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/WP_20140504_10_14_37_Pro_600_thumb.jpg" width="604" height="454" /></a></p>  <p>I chose to write my code using Arduino, so I needed to a way to target the ATTiny861 microcontroller. Fortunately, someone already figured out how to do this, so I used the <a href="https://github.com/TCWORLD/ATTinyCore">ATTinyCore on GitHub</a> to setup my environment so I could write code for this chip. then I could just upload the code and be done, or at least so I thought.</p>  <p>I kept getting validation errors. Sometimes uploading would succeed, but only rarely. After trying lots of things, and searching the web, I downloaded <a href="http://sourceforge.net/projects/winavr/files/">WinAVR</a> because something I read gave me the ide it might be helpful. This download include a newer copy of a program called avrdude that is used by Arduino to upload firmware. I turned out verbose reporting in Arduino, found the call to avrdude and then tried this with the newer version of avrdude&#8212;it worked perfectly every time. Copying this newer version of avrdude on top of the old version in the Arduino folder fixed the problem. Now I can successfully upload changes every single time. I have no idea why I had problems with the older version, but I found something that work. If anyone knows more, please send me a note.</p>  <p>Now it was time to test on a printer, rather than at my workbench. I asked one of my fellow Garage members if I could try it on his printer. So Dave brought his printer in last Thursday and we gave it a try using my very first circuit board. And it work really well. Here is a video of my very first test:</p>  <div id="scid:5737277B-5D6D-4f48-ABFC-DD9C333F4C5D:bfeea054-95ed-4076-adf7-33bae1335d81" class="wlWriterEditableSmartContent" style="float: none; padding-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px"><div><object width="564" height="316"><param name="movie" value="http://www.youtube.com/v/ZhwwatXtXoI?hl=en&amp;hd=1"></param><embed src="http://www.youtube.com/v/ZhwwatXtXoI?hl=en&amp;hd=1" type="application/x-shockwave-flash" width="564" height="316"></embed></object></div><div style="width:564px;clear:both;font-size:.8em">Very first test of the FSR Endstop Detector circuit board on a Kossel Mini</div></div>  <p>When you watch the video, notice that the number of FSRs being triggered varies from one to three, depending on where the nozzle touches the surface. Also, you can&#8217;t see it in the video, but there is a fourth LED that is green and is on most of the time. I had originally planned to have five LEDs: three for the FSR triggers, one for the combined trigger, and one for power on. But I forgot to include the power on LED. Part way through writing the firmware, I suddenly realized I could change the output LED to be on most of the time, and turn off only when triggered. So now I don&#8217;t need that extra LED.</p>  <h4>Making more Boards</h4>  <p>After my experience trying to solder the first circuit board by hand, I decided to try another approach. In a moment of weakness, I purchased a very cheap ($200) reflow oven from eBay. This oven was less than half the cost of a good one, and after I clicked the buy button I did some research and found lots of negative reviews. Woops. In any event, it was on the way, so I decided to give it a try.</p>  <p>For my first attempt, I used the syringe needle that came with the tube of solder paste to dab solder onto the pads. The syringe was a lot bigger than the pads, so I had problems getting just the right amount of solder paste to stick. Once I had all the parts placed, I put the board in the oven and set it to profile 1. After about 8 minutes, I pulled the board out and much of the solder had not melted. Hmmm, not what I expected. I then checked the solder paste I was using carefully and noticed it was lead-free solder, which melts at a higher temperature. I changed to profile 3 and tried again&#8212;this time it came out perfect.</p>  <p><a href="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/WP_20140427_19_33_11_600.jpg"><img title="WP_20140427_19_33_11_600" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="WP_20140427_19_33_11_600" src="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/WP_20140427_19_33_11_600_thumb.jpg" width="604" height="341" /></a></p>  <p><a href="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/WP_20140427_19_33_23_Cropped.jpg"><img title="WP_20140427_19_33_23_Cropped" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="WP_20140427_19_33_23_Cropped" src="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/WP_20140427_19_33_23_Cropped_thumb.jpg" width="564" height="311" /></a></p>  <p>The main problem I have with this reflow oven is the smell. From what I&#8217;ve read, they use a lot of masking tape inside, and this gets hot enough during use to off gas quite badly. I&#8217;m either going to build a hood and exhaust the fumes to the outside, or do what one blogger suggested and replace the masking tape with Kapton tape.</p>  <h4>Using a Solder Stencil</h4>  <p>I had read about using solder paste with a stencil and it sounded a lot easier than using the syringe to apply paste, so I thought I&#8217;d give it a try. Eagle already had all the for a solder stencil, and you can output this as an EPS file (Encapsulated PostScript), which is a file format that Corel Draw can easily read. I opened the file in Corel and then changed the pads so they would have a hairline black outline and no fill. Then I cut a stencil from some 5mil Mylar, and I also cut a jig for holding the circuit board in place:</p>  <p><a href="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031913_600.jpg"><img title="OLYMPUS DIGITAL CAMERA         " style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="OLYMPUS DIGITAL CAMERA         " src="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031913_600_thumb.jpg" width="604" height="454" /></a></p>  <p>The jig is made from 1/16&#8221; thick museum board, which is basically poster board. I scored a line on the left side to show where the edge of the Mylar stencil should be attach, and I&#8217;ve taped the stencil to the museum board.</p>  <p>I spread some solder paste onto the left side and then used a palette knife to scrape the paste through the holes. Here is the result:</p>  <p><a href="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031908_600.jpg"><img title="OLYMPUS DIGITAL CAMERA         " style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="OLYMPUS DIGITAL CAMERA         " src="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031908_600_thumb.jpg" width="604" height="454" /></a></p>  <p>Or zoomed into a small part of this board:</p>  <p><a href="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031908_Cropped_600.jpg"><img title="OLYMPUS DIGITAL CAMERA         " style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="OLYMPUS DIGITAL CAMERA         " src="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031908_Cropped_600_thumb.jpg" width="604" height="454" /></a></p>  <p>In this picture you can see the small &#8220;mounds&#8221; of solder paste that were applied with this method. I&#8217;m really amazed at how well this worked. It&#8217;s much easier and faster than applying paste by hand, and the results are a lot more consistent. Next, here is the same area with parts place, ready to put into the oven:</p>  <p><a href="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031909_Cropped_600.jpg"><img title="OLYMPUS DIGITAL CAMERA         " style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="OLYMPUS DIGITAL CAMERA         " src="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031909_Cropped_600_thumb.jpg" width="604" height="454" /></a></p>  <p>And after about 10 minutes in the oven, everything is soldered in place:</p>  <p><a href="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031911_Cropped_600.jpg"><img title="OLYMPUS DIGITAL CAMERA         " style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="OLYMPUS DIGITAL CAMERA         " src="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031911_Cropped_600_thumb.jpg" width="604" height="454" /></a></p>  <h4>The Design Flaw</h4>  <p>Here is nearly finished circuit board:</p>  <p><a href="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031911_600.jpg"><img title="OLYMPUS DIGITAL CAMERA         " style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="OLYMPUS DIGITAL CAMERA         " src="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031911_600_thumb.jpg" width="604" height="454" /></a></p>  <p>Isn&#8217;t that beautiful! All that&#8217;s left is to solder header in place for the three FSRs, for the end stop, and for programming. And, fix the design flaw.</p>  <p>So what is the design flaw? You can see it here:</p>  <p><a href="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031911_Flaw_600.jpg"><img title="OLYMPUS DIGITAL CAMERA         " style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="OLYMPUS DIGITAL CAMERA         " src="http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/P5031911_Flaw_600_thumb.jpg" width="584" height="439" /></a></p>  <p>In the very middle of this photo, there is a trace missing. LED4 and R4 are supposed to be connected, but they&#8217;re not. Fortunately, this is very easy to fix by adding a blob of solder to bridge the two devices.</p>  <h4>Availability and Future Plans</h4>  <p>I&#8217;ve made the design files and source code open source, and you can find them on Github: <a title="https://github.com/JohnSL/FSR_Endstop" href="https://github.com/JohnSL/FSR_Endstop">https://github.com/JohnSL/FSR_Endstop</a></p>  <p>As I mentioned above, I changed the design to replace the four diodes with a single bridge rectifier chip, which makes hand-soldering much easier. I will be ordering some of these boards soon for testing. Once I&#8217;ve verified that everything works well, I&#8217;ll upload the Gerber files, which you can then use to order circuit boards directly from OSH Park or anywhere else you choose.</p>  
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://www.blogger.com/profile/06008871146248095504' itemprop='url'/>
+<a class='g-profile' href='https://www.blogger.com/profile/06008871146248095504' rel='author' title='author profile'>
+<span itemprop='name'>John Socha-Leialoha</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+at
+<meta content='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html' itemprop='url'/>
+<a class='timestamp-link' href='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2014-05-04T11:28:00-07:00'>11:28 AM</abbr></a>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='post-comment-link'>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-34126331'>
+<a href='https://www.blogger.com/post-edit.g?blogID=2228372887329990411&amp;postID=6150256532740760201&amp;from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4>9 comments:</h4>
+<div class='comments-content'>
+<script async='async' src='http://www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js' type='text/javascript'></script>
+<script type='text/javascript'>
+    (function() {
+      var items = [{'id': '6787688229541678580', 'body': 'I hope you offer populated boards for sale at some point.  I\x26#39;d be interested in them!', 'timestamp': '1399251660111', 'permalink': 'http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment\x3d1399251660111#c6787688229541678580', 'author': {'name': 'Haydn Huntley', 'avatarUrl': '//lh4.googleusercontent.com/-ThxdNkZbFB0/AAAAAAAAAAI/AAAAAAAAAIo/a9Z9u-ogLRk/s35-c/photo.jpg', 'profileUrl': 'https://www.blogger.com/profile/18416868133560099383'}, 'displayTime': 'May 4, 2014 at 6:01 PM', 'deleteclass': 'item-control blog-admin pid-22204312'}, {'id': '4913249634287076395', 'parentId': '6787688229541678580', 'body': 'Thanks. I have no plans to offer boards myself. However I\x26#39;m planning on going to MakerFaire this month, and I\x26#39;m hoping I might find somewhere while I\x26#39;m there who is interested in making the boards. I had a hobby business once before and learned my lesson. This is a hobby, and I want to keep it fun.', 'timestamp': '1399253211104', 'permalink': 'http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment\x3d1399253211104#c4913249634287076395', 'author': {'name': 'John Socha-Leialoha', 'avatarUrl': '//3.bp.blogspot.com/_YnTAOJsrrJQ/S6WTus3JssI/AAAAAAAAAAk/8o1Vr3fXV_I/S45-s35/John%25202%2520250.jpg', 'profileUrl': 'https://www.blogger.com/profile/06008871146248095504'}, 'displayTime': 'May 4, 2014 at 6:26 PM', 'deleteclass': 'item-control blog-admin pid-34126331'}, {'id': '3257359143915265483', 'body': 'Awesome, John! I did mine with the ATtiny85 with wire wrapping, but I love your PCB design! ', 'timestamp': '1399266042963', 'permalink': 'http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment\x3d1399266042963#c3257359143915265483', 'author': {'name': 'Wing Tang Wong', 'avatarUrl': '//4.bp.blogspot.com/-s1oX9GOf79M/TfpI9vkVp7I/AAAAAAAAAr4/vFSS-zq4ohU/s35/Screen%25252Bshot%25252B2011-06-07%25252Bat%25252B2.31.10%25252BPM.png', 'profileUrl': 'https://www.blogger.com/profile/15588459662357176465'}, 'displayTime': 'May 4, 2014 at 10:00 PM', 'deleteclass': 'item-control blog-admin pid-2100244407'}, {'id': '495688093609954785', 'body': 'Very nice work!  \x3cbr /\x3e\x3cbr /\x3eAny reason you can think of that I wouldn\x26#39;t be able to port this code to a Trinket?  I would remove the individual LED flashing, of course, and just use the one onboard the Trinket.  Just curious.', 'timestamp': '1399327379211', 'permalink': 'http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment\x3d1399327379211#c495688093609954785', 'author': {'name': 'Anonymous', 'avatarUrl': '//img1.blogblog.com/img/blank.gif', 'profileUrl': ''}, 'displayTime': 'May 5, 2014 at 3:02 PM', 'deleteclass': 'item-control blog-admin pid-1210673171'}, {'id': '2386408610722566308', 'body': 'Excellent work and nice write-up!\x3cbr /\x3e\x3cbr /\x3eOne point of caution: The bridge rectifier you\x26#39;re using keeps your device\x26#39;s logic ground one voltage drop above the ground of the system you attach the device to. On some devices this could lead to trouble detecting a low level reliably, as the low voltage is rather high. I just checked for my BeBoPr boards: The Schmitt-Trigger inputs have a negative going threshold of at least 1.0 Volt, so I don\x26#39;t expect a problem there. Make sure to verify this if you\x26#39;re using other hardware!\x3cbr /\x3e\x3cbr /\x3eIt\x26#39;s not completely clear to me how you\x26#39;ve made the stencil. If you can\x26#39;t or don\x26#39;t want to do this yourself, have a look here for cheap mylar stencils: http://www.oshstencils.com.\x3cbr /\x3e\x3cbr /\x3e-- Bas\x3cbr /\x3e', 'timestamp': '1402473022716', 'permalink': 'http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment\x3d1402473022716#c2386408610722566308', 'author': {'name': 'modmaker', 'avatarUrl': '//3.bp.blogspot.com/-Q3cVT83tYrQ/UgjiL9Ep3BI/AAAAAAAAACk/-HREZ9-dDCA/s35/ncbas.png', 'profileUrl': 'https://www.blogger.com/profile/02338605313857827906'}, 'displayTime': 'June 11, 2014 at 12:50 AM', 'deleteclass': 'item-control blog-admin pid-115682607'}, {'id': '4117040014299426639', 'body': 'Hi\x3cbr /\x3e\x3cbr /\x3eI downloaded and installed ATTinyCore as you have suggested.\x3cbr /\x3eMy arduino-0023 sees me only two Bord available:\x3cbr /\x3e\x3cbr /\x3eATtiny861 @ 1 MHz  (internal oscillator; BOD disabled)\x3cbr /\x3eATtiny861 @ 18.432 MHz  (external oscillator; BOD disabled)\x3cbr /\x3e\x3cbr /\x3eWhich is correct? 1 MHz?\x3cbr /\x3e\x3cbr /\x3eRegard\x3cbr /\x3eDrake\x3cbr /\x3e\x3cbr /\x3e', 'timestamp': '1429133082289', 'permalink': 'http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment\x3d1429133082289#c4117040014299426639', 'author': {'name': 'Anonymous', 'avatarUrl': '//img1.blogblog.com/img/blank.gif', 'profileUrl': ''}, 'displayTime': 'April 15, 2015 at 2:24 PM', 'deleteclass': 'item-control blog-admin pid-88988020'}, {'id': '151823687260479680', 'body': 'John, I\x26#39;ve been using the manufactured boards on my deltas (5 of them) and they are great. There is gathering interest in using FSRs on Cartesian printers. I have a Taz and am investigating how best to do this. Ideally, you\x26#39;d want 3 points of contact (3 FSRs) as that defines a plane, but with a square or rectangular build plate, that leaves 2 corners \x26quot;overhanging\x26quot; with quite a lot of area. I have not tried it so this is theoretical but it seems that a touch on one of these corners would trigger 2 FSRs and lift the one opposite - not good. So maybe a 4 FSR setup with one at each corner is needed. Hence my post here! How difficult would it be to prototype a version of this that has inputs for 4 FSRs? \x3cbr /\x3e\x3cbr /\x3echeers,\x3cbr /\x3eMichael ', 'timestamp': '1441110756933', 'permalink': 'http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment\x3d1441110756933#c151823687260479680', 'author': {'name': 'mhackney', 'avatarUrl': '//img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'https://www.blogger.com/profile/07266175443539080935'}, 'displayTime': 'September 1, 2015 at 5:32 AM', 'deleteclass': 'item-control blog-admin pid-1837822286'}, {'id': '1135504768665307787', 'body': 'Awesome...you can upload the gerbers to OSHStencils and get some rather awesome stencils made for cheap as well...', 'timestamp': '1450154372293', 'permalink': 'http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment\x3d1450154372293#c1135504768665307787', 'author': {'name': 'Brian C', 'avatarUrl': '//lh3.googleusercontent.com/-f4r--ydq4rQ/AAAAAAAAAAI/AAAAAAAAACE/y9fuV2xg-DE/s35-c/photo.jpg', 'profileUrl': 'https://www.blogger.com/profile/11925676398236619690'}, 'displayTime': 'December 14, 2015 at 8:39 PM', 'deleteclass': 'item-control blog-admin pid-322097916'}, {'id': '6386028386127396380', 'body': 'can i buy this card?', 'timestamp': '1456152156769', 'permalink': 'http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment\x3d1456152156769#c6386028386127396380', 'author': {'name': 'Magnus Persson', 'avatarUrl': '//img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'https://www.blogger.com/profile/14276431293081716630'}, 'displayTime': 'February 22, 2016 at 6:42 AM', 'deleteclass': 'item-control blog-admin pid-835578402'}];
+      var msgs = {'loadMore': 'Load more...', 'loading': 'Loading...', 'loaded': 'No more!', 'addComment': 'Add comment', 'reply': 'Reply', 'delete': 'Delete'};
+      var config = {'blogId': '2228372887329990411', 'postId': '6150256532740760201', 'feed': 'http://trains.socha.com/feeds/6150256532740760201/comments/default', 'authorName': 'John Socha-Leialoha', 'authorUrl': 'https://www.blogger.com/profile/06008871146248095504', 'baseUri': 'https://www.blogger.com', 'maxThreadDepth': 2};
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        if (entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + entry.content.$t + '</span>';
+            }
+          }
+        }
+        return entry.content.$t;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/delete-comment.g?blogID='
+               + config.blogId + '&postID=' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          replybox.src = '';
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+</script>
+<div id='comment-holder'>
+<div id='bc_0_10C' kind='c'><div id='bc_0_10CT'><div id='bc_0_9T' class='comment-thread' kind='r'  t='0' u='0'><ol id='bc_0_9TB'><li id='bc_0_1B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://lh4.googleusercontent.com/-ThxdNkZbFB0/AAAAAAAAAAI/AAAAAAAAAIo/a9Z9u-ogLRk/s35-c/photo.jpg'></img></div><div id='c6787688229541678580' class='comment-block'><div id='bc_0_1M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/18416868133560099383'>Haydn Huntley</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment=1399251660111#c6787688229541678580'>May 4, 2014 at 6:01 PM</a></span></div><p id='bc_0_1MC' class='comment-content'>I hope you offer populated boards for sale at some point.  I&#39;d be interested in them!</p><span id='bc_0_1MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-22204312'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=2228372887329990411&amp;postID=6787688229541678580'>Delete</a></span></span></div><div id='bc_0_1BR' class='comment-replies'><span id='bc_0_1b+seedDD3oD' kind='d'><div id='bc_0_0T' class='comment-thread inline-thread' kind='t'   t='0' u='0'><span id='bc_0_0TT' class='thread-toggle thread-expanded' kind='g'><span id='bc_0_0TA' class='thread-arrow'></span><span id='bc_0_0TN' class='thread-count'><span id='bc_0_0TNT' style='display: none;'></span><span id='bc_0_0TNU' style='display: none;'></span><a href='javascript:;' target='_self'>Replies</a><div id='bc_0_0TD' class='thread-dropContainer thread-expanded'><span class='thread-drop'></span></div></span></span><ol id='bc_0_0TC' class='thread-chrome thread-expanded'><div><li id='bc_0_0B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://3.bp.blogspot.com/_YnTAOJsrrJQ/S6WTus3JssI/AAAAAAAAAAk/8o1Vr3fXV_I/S45-s35/John%25202%2520250.jpg'></img></div><div id='c4913249634287076395' class='comment-block'><div id='bc_0_0M' class='comment-header' kind='m'><cite class='user blog-author'><a rel='nofollow' href='https://www.blogger.com/profile/06008871146248095504'>John Socha-Leialoha</a></cite><span class='icon user blog-author'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment=1399253211104#c4913249634287076395'>May 4, 2014 at 6:26 PM</a></span></div><p id='bc_0_0MC' class='comment-content'>Thanks. I have no plans to offer boards myself. However I&#39;m planning on going to MakerFaire this month, and I&#39;m hoping I might find somewhere while I&#39;m there who is interested in making the boards. I had a hobby business once before and learned my lesson. This is a hobby, and I want to keep it fun.</p><span id='bc_0_0MN' class='comment-actions secondary-text' kind='m'><span class='item-control blog-admin pid-34126331'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=2228372887329990411&amp;postID=4913249634287076395'>Delete</a></span></span></div><div id='bc_0_0BR' class='comment-replies'></div><div id='bc_0_0B_box' class='comment-replybox-single'></div></li></div><div id='bc_0_0I' class='continue' kind='ci'><a href='javascript:;' target='_self'>Reply</a></div></ol><div id='bc_0_0T_box' class='comment-replybox-thread'></div></div></span></div><div id='bc_0_1B_box' class='comment-replybox-single'></div></li><li id='bc_0_2B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://4.bp.blogspot.com/-s1oX9GOf79M/TfpI9vkVp7I/AAAAAAAAAr4/vFSS-zq4ohU/s35/Screen%25252Bshot%25252B2011-06-07%25252Bat%25252B2.31.10%25252BPM.png'></img></div><div id='c3257359143915265483' class='comment-block'><div id='bc_0_2M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/15588459662357176465'>Wing Tang Wong</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment=1399266042963#c3257359143915265483'>May 4, 2014 at 10:00 PM</a></span></div><p id='bc_0_2MC' class='comment-content'>Awesome, John! I did mine with the ATtiny85 with wire wrapping, but I love your PCB design! </p><span id='bc_0_2MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-2100244407'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=2228372887329990411&amp;postID=3257359143915265483'>Delete</a></span></span></div><div id='bc_0_2BR' class='comment-replies'></div><div id='bc_0_2B_box' class='comment-replybox-single'></div></li><li id='bc_0_3B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img1.blogblog.com/img/blank.gif'></img></div><div id='c495688093609954785' class='comment-block'><div id='bc_0_3M' class='comment-header' kind='m'><cite class='user'>Anonymous</cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment=1399327379211#c495688093609954785'>May 5, 2014 at 3:02 PM</a></span></div><p id='bc_0_3MC' class='comment-content'>Very nice work!  <br /><br />Any reason you can think of that I wouldn&#39;t be able to port this code to a Trinket?  I would remove the individual LED flashing, of course, and just use the one onboard the Trinket.  Just curious.</p><span id='bc_0_3MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1210673171'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=2228372887329990411&amp;postID=495688093609954785'>Delete</a></span></span></div><div id='bc_0_3BR' class='comment-replies'></div><div id='bc_0_3B_box' class='comment-replybox-single'></div></li><li id='bc_0_4B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://3.bp.blogspot.com/-Q3cVT83tYrQ/UgjiL9Ep3BI/AAAAAAAAACk/-HREZ9-dDCA/s35/ncbas.png'></img></div><div id='c2386408610722566308' class='comment-block'><div id='bc_0_4M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/02338605313857827906'>modmaker</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment=1402473022716#c2386408610722566308'>June 11, 2014 at 12:50 AM</a></span></div><p id='bc_0_4MC' class='comment-content'>Excellent work and nice write-up!<br /><br />One point of caution: The bridge rectifier you&#39;re using keeps your device&#39;s logic ground one voltage drop above the ground of the system you attach the device to. On some devices this could lead to trouble detecting a low level reliably, as the low voltage is rather high. I just checked for my BeBoPr boards: The Schmitt-Trigger inputs have a negative going threshold of at least 1.0 Volt, so I don&#39;t expect a problem there. Make sure to verify this if you&#39;re using other hardware!<br /><br />It&#39;s not completely clear to me how you&#39;ve made the stencil. If you can&#39;t or don&#39;t want to do this yourself, have a look here for cheap mylar stencils: http://www.oshstencils.com.<br /><br />-- Bas<br /></p><span id='bc_0_4MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-115682607'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=2228372887329990411&amp;postID=2386408610722566308'>Delete</a></span></span></div><div id='bc_0_4BR' class='comment-replies'></div><div id='bc_0_4B_box' class='comment-replybox-single'></div></li><li id='bc_0_5B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img1.blogblog.com/img/blank.gif'></img></div><div id='c4117040014299426639' class='comment-block'><div id='bc_0_5M' class='comment-header' kind='m'><cite class='user'>Anonymous</cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment=1429133082289#c4117040014299426639'>April 15, 2015 at 2:24 PM</a></span></div><p id='bc_0_5MC' class='comment-content'>Hi<br /><br />I downloaded and installed ATTinyCore as you have suggested.<br />My arduino-0023 sees me only two Bord available:<br /><br />ATtiny861 @ 1 MHz  (internal oscillator; BOD disabled)<br />ATtiny861 @ 18.432 MHz  (external oscillator; BOD disabled)<br /><br />Which is correct? 1 MHz?<br /><br />Regard<br />Drake<br /><br /></p><span id='bc_0_5MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-88988020'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=2228372887329990411&amp;postID=4117040014299426639'>Delete</a></span></span></div><div id='bc_0_5BR' class='comment-replies'></div><div id='bc_0_5B_box' class='comment-replybox-single'></div></li><li id='bc_0_6B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img2.blogblog.com/img/b16-rounded.gif'></img></div><div id='c151823687260479680' class='comment-block'><div id='bc_0_6M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/07266175443539080935'>mhackney</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment=1441110756933#c151823687260479680'>September 1, 2015 at 5:32 AM</a></span></div><p id='bc_0_6MC' class='comment-content'>John, I&#39;ve been using the manufactured boards on my deltas (5 of them) and they are great. There is gathering interest in using FSRs on Cartesian printers. I have a Taz and am investigating how best to do this. Ideally, you&#39;d want 3 points of contact (3 FSRs) as that defines a plane, but with a square or rectangular build plate, that leaves 2 corners &quot;overhanging&quot; with quite a lot of area. I have not tried it so this is theoretical but it seems that a touch on one of these corners would trigger 2 FSRs and lift the one opposite - not good. So maybe a 4 FSR setup with one at each corner is needed. Hence my post here! How difficult would it be to prototype a version of this that has inputs for 4 FSRs? <br /><br />cheers,<br />Michael </p><span id='bc_0_6MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1837822286'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=2228372887329990411&amp;postID=151823687260479680'>Delete</a></span></span></div><div id='bc_0_6BR' class='comment-replies'></div><div id='bc_0_6B_box' class='comment-replybox-single'></div></li><li id='bc_0_7B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://lh3.googleusercontent.com/-f4r--ydq4rQ/AAAAAAAAAAI/AAAAAAAAACE/y9fuV2xg-DE/s35-c/photo.jpg'></img></div><div id='c1135504768665307787' class='comment-block'><div id='bc_0_7M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/11925676398236619690'>Brian C</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment=1450154372293#c1135504768665307787'>December 14, 2015 at 8:39 PM</a></span></div><p id='bc_0_7MC' class='comment-content'>Awesome...you can upload the gerbers to OSHStencils and get some rather awesome stencils made for cheap as well...</p><span id='bc_0_7MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-322097916'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=2228372887329990411&amp;postID=1135504768665307787'>Delete</a></span></span></div><div id='bc_0_7BR' class='comment-replies'></div><div id='bc_0_7B_box' class='comment-replybox-single'></div></li><li id='bc_0_8B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img2.blogblog.com/img/b16-rounded.gif'></img></div><div id='c6386028386127396380' class='comment-block'><div id='bc_0_8M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/14276431293081716630'>Magnus Persson</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html?showComment=1456152156769#c6386028386127396380'>February 22, 2016 at 6:42 AM</a></span></div><p id='bc_0_8MC' class='comment-content'>can i buy this card?</p><span id='bc_0_8MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-835578402'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=2228372887329990411&amp;postID=6386028386127396380'>Delete</a></span></span></div><div id='bc_0_8BR' class='comment-replies'></div><div id='bc_0_8B_box' class='comment-replybox-single'></div></li></ol><div id='bc_0_9I' class='continue' kind='ci'><a href='javascript:;' target='_self'>Add comment</a></div><div id='bc_0_9T_box' class='comment-replybox-thread'></div><div id='bc_0_9L' class='loadmore loaded' kind='rb'><a href='javascript:;' target='_self'>Load more...</a></div></div></div></div>
+</div>
+</div>
+<p class='comment-footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<p>
+</p>
+<a href='https://www.blogger.com/comment-iframe.g?blogID=2228372887329990411&amp;postID=6150256532740760201' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410px' id='comment-editor' name='comment-editor' src='#' width='100%'></iframe>
+<script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/3944580614-comment_from_post_iframe.js"></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://trains.socha.com/2014/05/building-headerless-programmer.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://trains.socha.com/2014/05/fsr-bed-leveling-trials-and-tribulations.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+</span>
+<a class='home-link' href='http://trains.socha.com/'>Home</a>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='http://trains.socha.com/feeds/6150256532740760201/comments/default' target='_blank' type='application/atom+xml'>Post Comments (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'en'};</script>
+</div></div>
+</div>
+<div id='sidebar-wrapper'>
+<div class='sidebar section' id='sidebar'><div class='widget HTML' data-version='1' id='HTML1'>
+<div class='widget-content'>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=5723658; 
+var sc_invisible=1; 
+var sc_partition=63; 
+var sc_click_stat=1; 
+var sc_security="fc96c45b"; 
+</script>
+
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a title="hit counter for blogger" class="statcounter" href="http://www.statcounter.com/blogger/"><img class="statcounter" src="http://c.statcounter.com/5723658/0/fc96c45b/1/" alt="hit counter for blogger" /></a></div></noscript>
+<!-- End of StatCounter Code -->
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2228372887329990411&amp;widgetType=HTML&amp;widgetId=HTML1&amp;action=editWidget&amp;sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget LinkList' data-version='1' id='LinkList1'>
+<h2>External Links</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://blogs.msdn.com/jsocha'>My Work Blog</a></li>
+<li><a href='http://www.newrailmodels.com/'>New Rail Models</a></li>
+<li><a href='http://www.raggstoriches.biz/'>Ragg's...To Riches?</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2228372887329990411&amp;widgetType=LinkList&amp;widgetId=LinkList1&amp;action=editWidget&amp;sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList1"));' target='configLinkList1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Profile' data-version='1' id='Profile1'>
+<h2>About Me</h2>
+<div class='widget-content'>
+<a href='https://www.blogger.com/profile/06008871146248095504'><img alt='My Photo' class='profile-img' height='57' src='http://1.bp.blogspot.com/_YnTAOJsrrJQ/S6WTtjSHAuI/AAAAAAAAAAM/uF82CnxPOe4/s80-R/John%25202%2520250.jpg' width='80'/></a>
+<dl class='profile-datablock'>
+<dt class='profile-data'>
+<a class='profile-name-link g-profile' href='https://www.blogger.com/profile/06008871146248095504' rel='author' style='background-image: url(http://www.blogger.com/img/logo-16.png);'>
+</a>
+</dt>
+</dl>
+<a class='profile-link' href='https://www.blogger.com/profile/06008871146248095504' rel='author'>View my complete profile</a>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2228372887329990411&amp;widgetType=Profile&amp;widgetId=Profile1&amp;action=editWidget&amp;sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Profile1"));' target='configProfile1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget BlogArchive' data-version='1' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>
+
+        &#9660;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/search?updated-min=2014-01-01T00:00:00-08:00&amp;updated-max=2015-01-01T00:00:00-08:00&amp;max-results=10'>
+2014
+</a>
+<span class='post-count' dir='ltr'>(10)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2014_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2014_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>
+
+        &#9660;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2014_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+<ul class='posts'>
+<li><a href='http://trains.socha.com/2014/05/building-headerless-programmer.html'>Building a Headerless Programmer</a></li>
+<li><a href='http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html'>Auto Adjust FSR End Stop Detector</a></li>
+<li><a href='http://trains.socha.com/2014/05/fsr-bed-leveling-trials-and-tribulations.html'>FSR Bed Leveling Trials and Tribulations</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2014_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2014_01_01_archive.html'>
+January
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/search?updated-min=2013-01-01T00:00:00-08:00&amp;updated-max=2014-01-01T00:00:00-08:00&amp;max-results=7'>
+2013
+</a>
+<span class='post-count' dir='ltr'>(7)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2013_12_01_archive.html'>
+December
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2013_11_01_archive.html'>
+November
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2013_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2013_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2013_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/search?updated-min=2012-01-01T00:00:00-08:00&amp;updated-max=2013-01-01T00:00:00-08:00&amp;max-results=3'>
+2012
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2012_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/search?updated-min=2011-01-01T00:00:00-08:00&amp;updated-max=2012-01-01T00:00:00-08:00&amp;max-results=1'>
+2011
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2011_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/search?updated-min=2010-01-01T00:00:00-08:00&amp;updated-max=2011-01-01T00:00:00-08:00&amp;max-results=13'>
+2010
+</a>
+<span class='post-count' dir='ltr'>(13)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2010_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2010_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2010_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://trains.socha.com/2010_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2228372887329990411&amp;widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=editWidget&amp;sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div></div>
+</div>
+<!-- spacer for skins that want sidebar and main to be the same height-->
+<div class='clear'>&#160;</div>
+</div>
+<!-- end content-wrapper -->
+<div id='footer-wrapper'>
+<div class='footer section' id='footer'></div>
+</div>
+</div></div>
+<!-- end outer-wrapper -->
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script>
+
+<!-- 'Il est de votre responsabilité d\x27informer vos visiteurs à propos des cookies utilisés sur votre blog. Rendez-vous sur http://www.blogger.com/go/cookiechoices pour en savoir plus.' -->
+<script src="http://trains.socha.com/js/cookiechoices.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    window.cookieChoices && cookieChoices.showCookieConsentBar && cookieChoices.showCookieConsentBar(
+        (window.cookieOptions && cookieOptions.msg) || 'Ce site utilise des cookies provenant de Google afin de fournir ses services, personnaliser les annonces et analyser le trafic. Les informations relatives à votre utilisation du site sont partagées avec Google. En acceptant ce site, vous acceptez l\x27utilisation des cookies.',
+        (window.cookieOptions && cookieOptions.close) || 'OK !',
+        (window.cookieOptions && cookieOptions.learn) || 'En savoir plus',
+        (window.cookieOptions && cookieOptions.link) || 'https://www.blogger.com/go/blogspot-cookies');
+  });
+</script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1530794599-widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '2228372887329990411';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d2228372887329990411','http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html','2228372887329990411');
+_WidgetManager._SetDataContext([{'name': 'options', 'data': {}}, {'name': 'blog', 'data': {'blogId': '2228372887329990411', 'bloggerUrl': 'https://www.blogger.com', 'title': 'John\x27s Model Making', 'pageType': 'item', 'postId': '6150256532740760201', 'url': 'http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html', 'canonicalUrl': 'http://trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html', 'homepageUrl': 'http://trains.socha.com/', 'canonicalHomepageUrl': 'http://trains.socha.com/', 'blogspotFaviconUrl': 'http://trains.socha.com/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'analyticsAccountNumber': '', 'useUniversalAnalytics': false, 'pageName': 'Auto Adjust FSR End Stop Detector', 'pageTitle': 'John\x27s Model Making: Auto Adjust FSR End Stop Detector', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22John\x26#39;s Model Making - Atom\x22 href\x3d\x22http://trains.socha.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22John\x26#39;s Model Making - RSS\x22 href\x3d\x22http://trains.socha.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22John\x26#39;s Model Making - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/2228372887329990411/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22John\x26#39;s Model Making - Atom\x22 href\x3d\x22http://trains.socha.com/feeds/6150256532740760201/comments/default\x22 /\x3e\n', 'meTag': '', 'openIdOpTag': '', 'postImageUrl': 'http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/Rev-1_thumb.png', 'latencyHeadScript': '\x3cscript type\x3d\x22text/javascript\x22\x3e(function() { (function(){function c(a){this.t\x3d{};this.tick\x3dfunction(a,c,b){var d\x3dvoid 0!\x3db?b:(new Date).getTime();this.t[a]\x3d[d,c];if(void 0\x3d\x3db)try{window.console.timeStamp(\x22CSI/\x22+a)}catch(e){}};this.tick(\x22start\x22,null,a)}var a;window.performance\x26\x26(a\x3dwindow.performance.timing);var h\x3da?new c(a.responseStart):new c;window.jstiming\x3d{Timer:c,load:h};if(a){var b\x3da.navigationStart,e\x3da.responseStart;0\x3cb\x26\x26e\x3e\x3db\x26\x26(window.jstiming.srt\x3de-b)}if(a){var d\x3dwindow.jstiming.load;0\x3cb\x26\x26e\x3e\x3db\x26\x26(d.tick(\x22_wtsrt\x22,void 0,b),d.tick(\x22wtsrt_\x22,\n\x22_wtsrt\x22,e),d.tick(\x22tbsd_\x22,\x22wtsrt_\x22))}try{a\x3dnull,window.chrome\x26\x26window.chrome.csi\x26\x26(a\x3dMath.floor(window.chrome.csi().pageT),d\x26\x260\x3cb\x26\x26(d.tick(\x22_tbnd\x22,void 0,window.chrome.csi().startE),d.tick(\x22tbnd_\x22,\x22_tbnd\x22,b))),null\x3d\x3da\x26\x26window.gtbExternal\x26\x26(a\x3dwindow.gtbExternal.pageT()),null\x3d\x3da\x26\x26window.external\x26\x26(a\x3dwindow.external.pageT,d\x26\x260\x3cb\x26\x26(d.tick(\x22_tbnd\x22,void 0,window.external.startE),d.tick(\x22tbnd_\x22,\x22_tbnd\x22,b))),a\x26\x26(window.jstiming.pt\x3da)}catch(k){}})();window.tickAboveFold\x3dfunction(c){var a\x3d0;if(c.offsetParent){do a+\x3dc.offsetTop;while(c\x3dc.offsetParent)}c\x3da;750\x3e\x3dc\x26\x26window.jstiming.load.tick(\x22aft\x22)};var f\x3d!1;function g(){f||(f\x3d!0,window.jstiming.load.tick(\x22firstScrollTime\x22))}window.addEventListener?window.addEventListener(\x22scroll\x22,g,!1):window.attachEvent(\x22onscroll\x22,g);\n })();\x3c/script\x3e', 'mobileHeadScript': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/8ad532ebdf067ca1', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sf': 'n', 'tf': ''}}, {'name': 'features', 'data': {'widgetVisibility': true}}, {'name': 'messages', 'data': {'adsGoHere': 'Ads go here', 'archive': 'Archive', 'authorSaid': '%1 said...', 'authorSaidWithLink': '\x3ca href\x3d\x22%2\x22 rel\x3d\x22nofollow\x22\x3e%1\x3c/a\x3e said...', 'blogArchive': 'Blog Archive', 'by': 'By', 'byAuthor': 'By %1', 'byAuthorLink': 'By \x3ca href\x3d\x22%2\x22\x3e%1\x3c/a\x3e', 'configurationRequired': 'Configuration required', 'deleteBacklink': 'Delete Backlink', 'deleteComment': 'Delete Comment', 'edit': 'Edit', 'emailAddress': 'Email Address', 'getEmailNotifications': 'Get email notifications', 'hidden': 'Hidden', 'keepReading': 'Keep reading', 'labels': 'Labels', 'loadMorePosts': 'Load more posts', 'loading': 'Loading...', 'myBlogList': 'My Blog List', 'myFavoriteSites': 'My favorite sites', 'newer': 'Newer', 'newerPosts': 'Newer Posts', 'newest': 'Newest', 'noResultsFound': 'No results found', 'noTitle': 'No title', 'numberOfComments': '{numComments, plural, \x3d0 {No comments} \x3d1 {1 comment} other {# comments}}', 'older': 'Older', 'olderPosts': 'Older Posts', 'oldest': 'Oldest', 'onlyTeamMembersCanComment': 'Note: Only a member of this blog may post a comment.', 'popularPosts': 'Popular Posts', 'popularPostsFromThisBlog': 'Popular posts from this blog', 'postAComment': 'Post a Comment', 'postedBy': 'Posted by', 'postedByAuthor': 'Posted by %1', 'postedByAuthorLink': 'Posted by \x3ca href\x3d\x22%2\x22\x3e%1\x3c/a\x3e', 'readMore': 'Read more', 'reportAbuse': 'Report Abuse', 'search': 'Search', 'searchBlog': 'Search blog', 'share': 'Share', 'showAll': 'Show all', 'showLess': 'Show less', 'showMore': 'Show more', 'someOfMyFavoriteSites': 'Some of my favorite sites', 'subscribe': 'Subscribe', 'subscribeTo': 'Subscribe to:', 'subscribeToThisBlog': 'Subscribe to this blog', 'theresNothingHere': 'There\x27s nothing here!', 'viewAll': 'View all', 'visible': 'Visible', 'visitProfile': 'Visit profile', 'widgetNotAvailableInPreview': 'This content is not available in blog preview.', 'widgetNotAvailableOnHttps': 'This content is not yet available over encrypted connections.'}}, {'name': 'skin', 'data': {'vars': {'descriptionfont': 'normal normal 78% \x27Trebuchet MS\x27, Trebuchet, Arial, Verdana, Sans-serif', 'endSide': 'right', 'pagetitlefont': 'normal normal 200% Georgia, Serif', 'textcolor': '#333333', 'titlecolor': '#cc6600', 'linkcolor': '#5588aa', 'startSide': 'left', 'sidebarcolor': '#999999', 'bordercolor': '#cccccc', 'sidebartextcolor': '#666666', 'postfooterfont': 'normal normal 78% \x27Trebuchet MS\x27, Trebuchet, Arial, Verdana, Sans-serif', 'bgcolor': '#ffffff', 'bodyfont': 'normal normal 100% Georgia, Serif', 'visitedlinkcolor': '#999999', 'descriptioncolor': '#999999', 'headerfont': 'normal normal 78% \x27Trebuchet MS\x27,Trebuchet,Arial,Verdana,Sans-serif', 'pagetitlecolor': '#666666'}, 'override': ''}}, {'name': 'template', 'data': {'isResponsive': false, 'isCustom': false}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'title': 'Auto Adjust FSR End Stop Detector', 'description': 'I really like using FSRs (force-sensitive resistors) for detecting when the nozzle of the 3D printer touches the print bed. They can be very...', 'featuredImage': 'http://www.socha.com/blogs/trains/Auto-Adjust-FSR-End-Stop-Detector_8373/Rev-1_thumb.png'}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/3718793046-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/306752634-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebar', null, document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar', null, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Loading...'}, 'displayModeFull'));
+</script>
+</body>
+
+<!-- Mirrored from trains.socha.com/2014/05/auto-adjust-fsr-end-stop-detector.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+</html>

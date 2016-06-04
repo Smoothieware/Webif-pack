@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from help.github.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <link rel="search" type="application/opensearchdescription+xml" href="https://help.github.com/opensearch.xml" title="GitHub:Help" />
+  <title> GitHub Help</title>
+  
+<link rel="icon" type="image/x-icon" href="https://help.github.com/assets/images/site/favicon.ico">
+<link rel="stylesheet" href="https://help.github.com/assets/stylesheets/application.css">
+<script src="https://help.github.com/assets/javascripts/application.js"></script>
+
+<meta name="Description" content="Help documentation for GitHub.com, GitHub Enterprise, GitHub Pages, and GitHub for Mac and Windows…">
+
+<script type="text/javascript">
+  $(function() {
+    $('#quicksearch-query').lunrSearch({
+      
+      indexUrl: '/search/search.json',
+      
+      quickSearchResults:  '.autocomplete-results',
+      quickSearchEntries:  '.result-group',
+      quickSearchTemplate: '#quicksearch-results-template',
+
+      searchResults: '.search-container',
+      searchEntries: '.search-results',
+      searchTemplate: '#search-results-template'
+    });
+  });
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3769691-27']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+</head>
+
+<body id="com">
+
+<div id="not-footer">
+  
+
+
+  <div id="header">
+    <div class="clearfix">
+      <h1 class="site-logo"><a href="https://help.github.com/">GitHub Help</a></h1>
+
+      <ul class="top-nav">
+        
+        <li>
+          <button class="js-dropdown-button dropdown-button">Version <div class="dropdown-caret"></div></button>
+          <div class="dropdown-menu js-dropdown-menu">
+            <a href="https://help.github.com/">GitHub.com</a>
+            
+            <a href="https://help.github.com/enterprise/2.6/user">GitHub Enterprise 2.6</a>
+            
+            <a href="https://help.github.com/enterprise/2.5/user">GitHub Enterprise 2.5</a>
+            
+            <a href="https://help.github.com/enterprise/2.4/user">GitHub Enterprise 2.4</a>
+            
+            <a href="https://help.github.com/enterprise/2.3/user">GitHub Enterprise 2.3</a>
+            
+            <a href="https://help.github.com/enterprise/2.2/user">GitHub Enterprise 2.2</a>
+            
+          </div>
+        </li>
+        
+        
+        <li><a href="https://github.com/contact">Contact Support</a></li>
+        <li><a href="https://github.com/">Return to GitHub</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div id="content-wrapper">
+
+    <div class="site">
+      
+
+
+
+      
+<ul id="bootcamp">
+  <li>
+    <a href="https://help.github.com/articles/set-up-git" onClick="_gaq.push(['_trackEvent', 'Help Bootcamp', 'Click', 'set-up-git']);">
+      <img alt="Set up git" src="https://help.github.com/assets/images/site/set-up-git.gif">
+      <h4>Set Up Git</h4>
+    </a>
+  </li>
+  <li>
+    <a href="https://help.github.com/articles/create-a-repo" onClick="_gaq.push(['_trackEvent', 'Help Bootcamp', 'Click', 'create-a-repo']);">
+      <img alt="Create a repo" src="https://help.github.com/assets/images/site/create-a-repo.gif">
+      <h4>Create A Repo</h4>
+    </a>
+  </li>
+  <li>
+    <a href="https://help.github.com/articles/fork-a-repo" onClick="_gaq.push(['_trackEvent', 'Help Bootcamp', 'Click', 'fork-a-repo']);">
+      <img alt="Fork a repo" src="https://help.github.com/assets/images/site/fork-a-repo.gif">
+      <h4>Fork A Repo</h4>
+    </a>
+  </li>
+  <li>
+    <a href="https://help.github.com/articles/be-social" onClick="_gaq.push(['_trackEvent', 'Help Bootcamp', 'Click', 'be-social']);">
+      <img alt="Be social" src="https://help.github.com/assets/images/site/be-social.gif">
+      <h4>Be Social</h4>
+    </a>
+  </li>
+</ul>
+
+<h2 class="search-title">Sometimes you just need a little <span>help</span>.</h2>
+
+<div class="search-form big">
+  
+  
+
+
+<script id="quicksearch-results-template" type="text/mustache">
+  <div class="header">
+    <a class="initial quicksearch-seemore" href="/search?q=">See more results</a>
+  </div>
+  [[#entries]]
+    <tr class="article">
+      <td class="info">
+        <a href="[[url]]" class="js-articles-quicksearch-link">[[title]]</a>
+      </td>
+    </tr>
+  [[/entries]]
+</script>
+
+<form accept-charset="UTF-8" action="https://help.github.com/search" id="articles-search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <div class="outer">
+    <div class="inner fade-label">
+      <input type="text" name="q" id="quicksearch-query" class="js-articles-quicksearch"
+      placeholder="How can we help?" />
+      <div class="search-form-btn">
+        <button><span class="octicon octicon-search"></span></button>
+      </div>
+    </div>
+  </div>
+</form>
+<div class="autocomplete-results" style="display: none;">
+  <table class="result-group" border="0" cellpadding="0" cellspacing="0">
+  </table>
+</div>
+
+</div>
+
+<div id="article-list-container" class="js-hide-during-search">
+  <div id="subnav"></div>
+
+  <div id="common-issues">
+    <h3>Common Issues</h3>
+    <ul class="chevron list">
+      
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'why-are-my-contributions-not-showing-up-on-my-profile']);">Why are my contributions not showing up on my profile?</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/why-is-git-always-asking-for-my-password" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'why-is-git-always-asking-for-my-password']);">Why is Git always asking for my password?</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/dealing-with-non-fast-forward-errors" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'dealing-with-non-fast-forward-errors']);">Dealing with non-fast-forward errors</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/error-repository-not-found" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'error-repository-not-found']);">Error: Repository not found</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/do-you-have-custom-plans" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'do-you-have-custom-plans']);">Do you have custom plans?</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/https-cloning-errors" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'https-cloning-errors']);">HTTPS cloning errors</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/what-is-my-disk-quota" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'what-is-my-disk-quota']);">What is my disk quota?</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/what-are-the-limits-for-viewing-content-and-diffs-in-my-repository" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'what-are-the-limits-for-viewing-content-and-diffs-in-my-repository']);">What are the limits for viewing content and diffs in my repository?</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/remove-sensitive-data" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'remove-sensitive-data']);">Remove sensitive data</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/how-do-i-access-my-organization-account" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'how-do-i-access-my-organization-account']);">How do I access my organization account?</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/what-are-the-different-access-permissions" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'what-are-the-different-access-permissions']);">What are the different access permissions?</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/why-are-my-commits-linked-to-the-wrong-user" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'why-are-my-commits-linked-to-the-wrong-user']);">Why are my commits linked to the wrong user?</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/what-plan-should-i-choose" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'what-plan-should-i-choose']);">What plan should I choose?</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/how-do-i-cancel-my-account" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'how-do-i-cancel-my-account']);">How do I cancel my account?</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/error-remote-head-refers-to-nonexistent-ref-unable-to-checkout" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'error-remote-head-refers-to-nonexistent-ref-unable-to-checkout']);">Error: remote HEAD refers to nonexistent ref, unable to checkout</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/my-repository-is-marked-as-the-wrong-language" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'my-repository-is-marked-as-the-wrong-language']);">My repository is marked as the wrong language</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/paying-for-your-github-user-account" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'paying-for-your-github-user-account']);">Paying for your GitHub user account</a>
+        </li>
+      
+        <li class="article">
+          <a href="https://help.github.com/articles/how-can-i-add-extra-information-to-my-personal-account-s-receipts" class="km-article-link" onclick="_gaq.push(['_trackEvent', 'Common Issue', 'Click', 'how-can-i-add-extra-information-to-my-personal-account-s-receipts']);">How can I add extra information to my personal account's receipts?</a>
+        </li>
+      
+    </ul>
+  </div>
+
+  <ul id="categories">
+    
+            <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/bootcamp">Bootcamp</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/set-up-git" class="km-article-link">Set Up Git</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/create-a-repo" class="km-article-link">Create A Repo</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/fork-a-repo" class="km-article-link">Fork A Repo</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/be-social" class="km-article-link">Be Social</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/github-glossary" class="km-article-link">GitHub Glossary</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/good-resources-for-learning-git-and-github" class="km-article-link">Good Resources for Learning Git and GitHub</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/setup">Setup</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/signing-up-for-a-new-github-account" class="km-article-link">Signing up for a new GitHub account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/verifying-your-email-address" class="km-article-link">Verifying your email address</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/setting-your-email-in-git" class="km-article-link">Setting your email in Git</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/setting-your-username-in-git" class="km-article-link">Setting your username in Git</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/dealing-with-line-endings" class="km-article-link">Dealing with line endings</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/keeping-your-email-address-private" class="km-article-link">Keeping your email address private</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/how-do-i-set-up-my-profile-picture" class="km-article-link">How do I set up my profile picture?</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/setting-up-and-managing-your-github-user-account">Setting up and managing your GitHub user account</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa" class="km-article-link">Securing your account with two-factor authentication (2FA)</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-two-factor-authentication" class="km-article-link">About Two-Factor Authentication</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/changing-two-factor-authentication-delivery-methods-for-your-mobile-device" class="km-article-link">Changing two-factor authentication delivery methods for your mobile device</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/downloading-your-two-factor-authentication-recovery-codes" class="km-article-link">Downloading your two-factor authentication recovery codes</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/setting-a-fallback-authentication-number" class="km-article-link">Setting a fallback authentication number</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/configuring-two-factor-authentication-via-a-totp-mobile-app" class="km-article-link">Configuring two-factor authentication via a TOTP mobile app</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/configuring-two-factor-authentication-via-fido-u2f" class="km-article-link">Configuring two-factor authentication via FIDO U2F</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/configuring-two-factor-authentication-via-text-message" class="km-article-link">Configuring two-factor authentication via text message</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/providing-your-2fa-authentication-code" class="km-article-link">Providing your 2FA authentication code</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/recovering-your-account-if-you-lost-your-2fa-credentials" class="km-article-link">Recovering your account if you lost your 2FA credentials</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/countries-where-sms-authentication-is-supported" class="km-article-link">Countries where SMS authentication is supported</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/managing-user-account-settings" class="km-article-link">Managing user account settings</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/changing-your-github-username" class="km-article-link">Changing your GitHub username</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/merging-multiple-user-accounts" class="km-article-link">Merging multiple user accounts</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/deleting-your-user-account" class="km-article-link">Deleting your user account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/what-s-the-difference-between-user-and-organization-accounts" class="km-article-link">What's the difference between user and organization accounts?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/publicizing-or-hiding-organization-membership" class="km-article-link">Publicizing or hiding organization membership</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/permission-levels-for-a-user-account-repository" class="km-article-link">Permission levels for a user account repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/what-happens-when-i-change-my-username" class="km-article-link">What happens when I change my username?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/best-practices-for-leaving-your-company" class="km-article-link">Best practices for leaving your company</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/what-does-the-available-for-hire-checkbox-do" class="km-article-link">What does the 'Available for hire' checkbox do?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/connecting-with-third-party-applications" class="km-article-link">Connecting with third-party applications</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/managing-billing-on-github" class="km-article-link">Managing billing on GitHub</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/what-plan-should-i-choose" class="km-article-link">What plan should I choose?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/do-you-have-custom-plans" class="km-article-link">Do you have custom plans?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/what-do-i-do-if-my-card-is-declined" class="km-article-link">What do I do if my card is declined?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/does-github-provide-invoicing" class="km-article-link">Does GitHub provide invoicing?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/how-do-i-cancel-my-account" class="km-article-link">How do I cancel my account?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/500-error-while-upgrading" class="km-article-link">500 error while upgrading</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/if-my-account-is-locked-and-i-upgrade-it-do-i-owe-anything-for-previous-time" class="km-article-link">If my account is locked and I upgrade it, do I owe anything for previous time?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/how-does-upgrading-or-downgrading-affect-the-billing-process" class="km-article-link">How does upgrading or downgrading affect the billing process?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/billing-plans-for-git-large-file-storage" class="km-article-link">Billing plans for Git Large File Storage</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/what-happens-if-my-repository-is-locked" class="km-article-link">What happens if my repository is locked?</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/paying-for-user-accounts" class="km-article-link">Paying for user accounts</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/paying-for-your-github-user-account" class="km-article-link">Paying for your GitHub user account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/updating-your-personal-account-s-credit-card" class="km-article-link">Updating your personal account's credit card</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/updating-your-personal-account-s-paypal-information" class="km-article-link">Updating your personal account's PayPal information</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/switching-payment-methods-for-your-personal-account" class="km-article-link">Switching payment methods for your personal account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/removing-a-payment-method-associated-with-your-user-account" class="km-article-link">Removing a payment method associated with your user account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/setting-your-personal-account-s-billing-email" class="km-article-link">Setting your personal account's billing email</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/finding-your-personal-account-s-next-billing-date" class="km-article-link">Finding your personal account's next billing date</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/downloading-receipts-for-personal-accounts" class="km-article-link">Downloading receipts for personal accounts</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/how-can-i-add-extra-information-to-my-personal-account-s-receipts" class="km-article-link">How can I add extra information to my personal account's receipts?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/discounted-personal-accounts" class="km-article-link">Discounted personal accounts</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/changing-your-personal-account-s-billing-plan" class="km-article-link">Changing your personal account's billing plan</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/upgrading-your-personal-account-from-free-to-paid-with-a-credit-card" class="km-article-link">Upgrading your personal account from free to paid with a credit card</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/upgrading-your-personal-account-from-free-to-paid-with-paypal" class="km-article-link">Upgrading your personal account from free to paid with PayPal</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/redeeming-a-coupon-for-your-personal-account" class="km-article-link">Redeeming a coupon for your personal account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/switching-between-monthly-and-yearly-billing-for-your-personal-account" class="km-article-link">Switching between monthly and yearly billing for your personal account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/purchasing-additional-storage-and-bandwidth-for-a-personal-account" class="km-article-link">Purchasing additional storage and bandwidth for a personal account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/downgrading-a-user-account-to-free" class="km-article-link">Downgrading a user account to free</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/unlocking-a-locked-personal-account" class="km-article-link">Unlocking a locked personal account</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/managing-email-preferences" class="km-article-link">Managing email preferences</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/types-of-emails-github-sends" class="km-article-link">Types of emails GitHub sends</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-an-email-address-to-your-github-account" class="km-article-link">Adding an email address to your GitHub account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/changing-your-primary-email-address" class="km-article-link">Changing your primary email address</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/managing-marketing-emails-from-github" class="km-article-link">Managing marketing emails from GitHub</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/remembering-your-github-username-or-email" class="km-article-link">Remembering your GitHub username or email</a>
+</li>
+</ul></li></ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/using-git">Using Git</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/git-cheatsheet" class="km-article-link">Git cheatsheet</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/ignoring-files" class="km-article-link">Ignoring files</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/associating-text-editors-with-git" class="km-article-link">Associating text editors with Git</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/what-is-a-good-git-workflow" class="km-article-link">What is a good Git workflow?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/using-git-blame-to-trace-changes-in-a-file" class="km-article-link">Using Git blame to trace changes in a file</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line" class="km-article-link">Resolving a merge conflict from the command line</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/setting-up-and-managing-organizations-and-teams">Setting up and managing organizations and teams</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/creating-a-new-organization-account" class="km-article-link">Creating a new organization account</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-organizations" class="km-article-link">About organizations</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-a-new-organization-from-scratch" class="km-article-link">Creating a new organization from scratch</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/converting-a-user-into-an-organization" class="km-article-link">Converting a user into an organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/permission-levels-for-an-organization" class="km-article-link">Permission levels for an organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/removing-a-member-from-your-organization" class="km-article-link">Removing a member from your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/inviting-users-to-join-your-organization" class="km-article-link">Inviting users to join your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/canceling-or-editing-an-invitation-to-join-your-organization" class="km-article-link">Canceling or editing an invitation to join your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-a-billing-manager-to-your-organization" class="km-article-link">Adding a billing manager to your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/removing-a-billing-manager-from-your-organization" class="km-article-link">Removing a billing manager from your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/can-i-create-accounts-for-people-in-my-organization" class="km-article-link">Can I create accounts for people in my organization?</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/paying-for-organization-accounts" class="km-article-link">Paying for organization accounts</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/paying-for-your-github-organization-account" class="km-article-link">Paying for your GitHub organization account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/updating-your-organization-s-credit-card" class="km-article-link">Updating your organization's credit card</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/updating-your-organization-s-paypal-information" class="km-article-link">Updating your organization's PayPal information</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/switching-payment-methods-for-your-organization" class="km-article-link">Switching payment methods for your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/removing-a-payment-method-associated-with-your-organization" class="km-article-link">Removing a payment method associated with your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/setting-your-organization-s-billing-email" class="km-article-link">Setting your organization's billing email</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/finding-your-organization-s-next-billing-date" class="km-article-link">Finding your organization's next billing date</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/downloading-receipts-for-organizations" class="km-article-link">Downloading receipts for organizations</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/how-can-i-add-extra-information-to-my-organization-s-receipts" class="km-article-link">How can I add extra information to my organization's receipts?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/discounted-organization-accounts" class="km-article-link">Discounted organization accounts</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/changing-your-organization-billing-plan" class="km-article-link">Changing your organization billing plan</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/upgrading-your-organization-account-from-free-to-paid-with-a-credit-card" class="km-article-link">Upgrading your organization account from free to paid with a credit card</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/upgrading-your-organization-account-from-free-to-paid-with-paypal" class="km-article-link">Upgrading your organization account from free to paid with PayPal</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/about-per-user-pricing" class="km-article-link">About per-user pricing</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/switching-from-per-repository-to-per-user-pricing" class="km-article-link">Switching from per-repository to per-user pricing</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-seats-to-your-organization" class="km-article-link">Adding seats to your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/downgrading-your-organization-s-paid-seats" class="km-article-link">Downgrading your organization's paid seats</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/redeeming-a-coupon-for-organizations" class="km-article-link">Redeeming a coupon for organizations</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/switching-between-monthly-and-yearly-billing-for-your-organization" class="km-article-link">Switching between monthly and yearly billing for your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/purchasing-additional-storage-and-bandwidth-for-an-organization" class="km-article-link">Purchasing additional storage and bandwidth for an organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/downgrading-an-organization-with-per-seat-pricing-to-free" class="km-article-link">Downgrading an organization with per-seat pricing to free</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/downgrading-an-organization-with-per-repository-pricing-to-free" class="km-article-link">Downgrading an organization with per-repository pricing to free</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/unlocking-a-locked-organization-account" class="km-article-link">Unlocking a locked organization account</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/setting-up-teams" class="km-article-link">Setting up teams</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-improved-organization-permissions" class="km-article-link">About improved organization permissions</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/repository-permission-levels-for-an-organization" class="km-article-link">Repository permission levels for an organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-a-team" class="km-article-link">Creating a team</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/deleting-a-team" class="km-article-link">Deleting a team</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/changing-a-person-s-role-to-owner" class="km-article-link">Changing a person's role to owner</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/giving-team-maintainer-permissions-to-an-organization-member" class="km-article-link">Giving "team maintainer" permissions to an organization member</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/converting-your-previous-owners-team-to-the-improved-organization-permissions" class="km-article-link">Converting your previous Owners team to the improved organization permissions</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/converting-your-previous-admin-team-to-the-improved-organization-permissions" class="km-article-link">Converting your previous admin team to the improved organization permissions</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/migrating-your-previous-admin-teams-to-the-improved-organization-permissions" class="km-article-link">Migrating your previous admin teams to the improved organization permissions</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/maintaining-teams" class="km-article-link">Maintaining teams</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/changing-team-settings" class="km-article-link">Changing team settings</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-organization-members-to-a-team" class="km-article-link">Adding organization members to a team</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/removing-organization-members-from-a-team" class="km-article-link">Removing organization members from a team</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/managing-an-individual-s-access-to-an-organization-repository" class="km-article-link">Managing an individual's access to an organization repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/managing-team-access-to-an-organization-repository" class="km-article-link">Managing team access to an organization repository</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/restricting-access-to-your-organization-s-data" class="km-article-link">Restricting access to your organization's data</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-third-party-application-restrictions" class="km-article-link">About third-party application restrictions</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/enabling-third-party-application-restrictions-for-your-organization" class="km-article-link">Enabling third-party application restrictions for your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/disabling-third-party-application-restrictions-for-your-organization" class="km-article-link">Disabling third-party application restrictions for your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/approving-third-party-applications-for-your-organization" class="km-article-link">Approving third-party applications for your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/denying-access-to-a-previously-approved-application-for-your-organization" class="km-article-link">Denying access to a previously approved application for your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/requesting-organization-approval-for-third-party-applications" class="km-article-link">Requesting organization approval for third-party applications</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/requesting-organization-approval-for-your-authorized-applications" class="km-article-link">Requesting organization approval for your authorized applications</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/keeping-your-organization-secure" class="km-article-link">Keeping your organization secure</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/adding-outside-collaborators-to-repositories-in-your-organization" class="km-article-link">Adding outside collaborators to repositories in your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/reviewing-the-audit-log-for-your-organization" class="km-article-link">Reviewing the audit log for your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/ensuring-that-organization-members-have-enabled-two-factor-authentication" class="km-article-link">Ensuring that organization members have enabled two-factor authentication</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/converting-an-organization-member-to-an-outside-collaborator" class="km-article-link">Converting an organization member to an outside collaborator</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/auditing-applications-owned-by-your-organization" class="km-article-link">Auditing applications owned by your organization</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/managing-organization-settings" class="km-article-link">Managing organization settings</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/accessing-your-organization-s-settings" class="km-article-link">Accessing your organization's settings</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/renaming-an-organization" class="km-article-link">Renaming an organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/transferring-organization-ownership" class="km-article-link">Transferring organization ownership</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/deleting-an-organization-account" class="km-article-link">Deleting an organization account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/converting-an-organization-into-a-user" class="km-article-link">Converting an organization into a user</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/encouraging-positive-contributions-in-your-organization" class="km-article-link">Encouraging positive contributions in your organization</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/blocking-a-user-from-your-organization" class="km-article-link">Blocking a user from your organization</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/unblocking-a-user-from-your-organization" class="km-article-link">Unblocking a user from your organization</a>
+</li>
+</ul></li></ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/organizations">Organizations</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/how-do-i-access-my-organization-account" class="km-article-link">How do I access my organization account?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/what-are-the-different-access-permissions" class="km-article-link">What are the different access permissions?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/removing-yourself-from-an-organization" class="km-article-link">Removing yourself from an organization</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/security">Security</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/why-do-my-images-have-strange-urls" class="km-article-link">Why do my images have strange URLs?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/updating-your-github-access-credentials" class="km-article-link">Updating your GitHub access credentials</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/what-is-a-strong-password" class="km-article-link">What is a strong password?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/how-can-i-reset-my-password" class="km-article-link">How can I reset my password?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/reviewing-your-security-log" class="km-article-link">Reviewing your security log</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/preventing-unauthorized-access" class="km-article-link">Preventing Unauthorized Access</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/sudo-mode" class="km-article-link">Sudo Mode</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/repositories">Repositories</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/integrating-jira-with-your-projects" class="km-article-link">Integrating JIRA with your projects</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-a-new-repository" class="km-article-link">Creating a new repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/cloning-a-repository" class="km-article-link">Cloning a repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/making-a-public-repository-private" class="km-article-link">Making a public repository private</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/making-a-private-repository-public" class="km-article-link">Making a private repository public</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/transferring-a-repository" class="km-article-link">Transferring a repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/renaming-a-repository" class="km-article-link">Renaming a repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/duplicating-a-repository" class="km-article-link">Duplicating a repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/deleting-a-repository" class="km-article-link">Deleting a repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/about-webhooks" class="km-article-link">About Webhooks</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/my-repository-is-marked-as-the-wrong-language" class="km-article-link">My repository is marked as the wrong language</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/can-i-archive-a-repository" class="km-article-link">Can I archive a repository?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/https-cloning-errors" class="km-article-link">HTTPS cloning errors</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/issues-only-access-permissions" class="km-article-link">Issues-only access permissions</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/getting-permanent-links-to-files" class="km-article-link">Getting permanent links to files</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/relative-links-in-readmes" class="km-article-link">Relative links in READMEs</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/section-links-on-readmes-and-blob-pages" class="km-article-link">Section links on READMEs and blob pages</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/what-are-the-limits-for-viewing-content-and-diffs-in-my-repository" class="km-article-link">What are the limits for viewing content and diffs in my repository?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/open-source-licensing" class="km-article-link">Open source licensing</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/about-github-mirrors" class="km-article-link">About GitHub mirrors</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line" class="km-article-link">Adding an existing project to GitHub using the command line</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/error-repository-not-found" class="km-article-link">Error: Repository not found</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/error-remote-head-refers-to-nonexistent-ref-unable-to-checkout" class="km-article-link">Error: Remote HEAD refers to nonexistent ref, unable to checkout</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/managing-large-files">Managing Large Files</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/working-with-large-files" class="km-article-link">Working with large files</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/conditions-for-large-files" class="km-article-link">Conditions for large files</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/removing-files-from-a-repository-s-history" class="km-article-link">Removing files from a repository's history</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/distributing-large-binaries" class="km-article-link">Distributing large binaries</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/what-is-my-disk-quota" class="km-article-link">What is my disk quota?</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/versioning-large-files" class="km-article-link">Versioning large files</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-git-large-file-storage" class="km-article-link">About Git Large File Storage</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/installing-git-large-file-storage" class="km-article-link">Installing Git Large File Storage</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/configuring-git-large-file-storage" class="km-article-link">Configuring Git Large File Storage</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/collaboration-with-git-large-file-storage" class="km-article-link">Collaboration with Git Large File Storage</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/viewing-storage-and-bandwidth-usage-for-a-personal-account" class="km-article-link">Viewing storage and bandwidth usage for a personal account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/viewing-storage-and-bandwidth-usage-for-an-organization" class="km-article-link">Viewing storage and bandwidth usage for an organization</a>
+</li>
+</ul></li></ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/search">Search</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/searching-github" class="km-article-link">Searching GitHub</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/advanced-search" class="km-article-link">Advanced Search</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/search-syntax" class="km-article-link">Search Syntax</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/searching-repositories" class="km-article-link">Searching repositories</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/searching-code" class="km-article-link">Searching code</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/searching-issues" class="km-article-link">Searching issues</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/searching-users" class="km-article-link">Searching users</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/notifications">Notifications</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-notifications" class="km-article-link">About notifications</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/watching-repositories" class="km-article-link">Watching repositories</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/configuring-notification-emails" class="km-article-link">Configuring notification emails</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/managing-notification-emails-for-organizations" class="km-article-link">Managing notification emails for organizations</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/viewing-your-feeds" class="km-article-link">Viewing your feeds</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/receiving-email-notifications-for-pushes-to-a-repository" class="km-article-link">Receiving email notifications for pushes to a repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/news-feed" class="km-article-link">News Feed</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/managing-notification-delivery-methods" class="km-article-link">Managing notification delivery methods</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/listing-watched-repositories" class="km-article-link">Listing watched repositories</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/unwatching-repositories" class="km-article-link">Unwatching repositories</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/managing-notifications" class="km-article-link">Managing notifications</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/stars">Stars</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-stars" class="km-article-link">About Stars</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/finding-interesting-projects-on-github" class="km-article-link">Finding interesting projects on GitHub</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/managing-your-stars" class="km-article-link">Managing your stars</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/keyboard-shortcuts">Keyboard Shortcuts</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/using-keyboard-shortcuts" class="km-article-link">Using keyboard shortcuts</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/administering-a-repository">Administering a repository</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/helping-people-contribute-to-your-project" class="km-article-link">Helping people contribute to your project</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/setting-guidelines-for-repository-contributors" class="km-article-link">Setting guidelines for repository contributors</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-an-issue-template-for-your-repository" class="km-article-link">Creating an issue template for your repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-a-pull-request-template-for-your-repository" class="km-article-link">Creating a pull request template for your repository</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/managing-branches-in-your-repository" class="km-article-link">Managing branches in your repository</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-branches" class="km-article-link">About branches</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/setting-the-default-branch" class="km-article-link">Setting the default branch</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/viewing-branches-in-your-repository" class="km-article-link">Viewing branches in your repository</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/defining-the-mergeability-of-pull-requests" class="km-article-link">Defining the mergeability of pull requests</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-protected-branches" class="km-article-link">About protected branches</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/configuring-protected-branches" class="km-article-link">Configuring protected branches</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/about-required-status-checks" class="km-article-link">About required status checks</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/types-of-required-status-checks" class="km-article-link">Types of required status checks</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/enabling-required-status-checks" class="km-article-link">Enabling required status checks</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/about-branch-restrictions" class="km-article-link">About branch restrictions</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/enabling-branch-restrictions" class="km-article-link">Enabling branch restrictions</a>
+</li>
+</ul></li></ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/collaborating-on-projects-using-issues-and-pull-requests">Collaborating on projects using issues and pull requests</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/working-with-forks" class="km-article-link">Working with forks</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-forks" class="km-article-link">About forks</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/configuring-a-remote-for-a-fork" class="km-article-link">Configuring a remote for a fork</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/syncing-a-fork" class="km-article-link">Syncing a fork</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/merging-an-upstream-repository-into-your-fork" class="km-article-link">Merging an upstream repository into your fork</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/what-happens-to-forks-when-a-repository-is-deleted-or-changes-visibility" class="km-article-link">What happens to forks when a repository is deleted or changes visibility?</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/discussing-projects-in-issues-and-pull-requests" class="km-article-link">Discussing projects in issues and pull requests</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-discussions-in-issues-and-pull-requests" class="km-article-link">About discussions in issues and pull requests</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/subscribing-to-conversations" class="km-article-link">Subscribing to conversations</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/unsubscribing-from-conversations" class="km-article-link">Unsubscribing from conversations</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/collaborating-on-repositories-with-code-quality-features-enabled" class="km-article-link">Collaborating on repositories with code quality features enabled</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-statuses" class="km-article-link">About statuses</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/working-with-protected-branches-and-required-status-checks" class="km-article-link">Working with protected branches and required status checks</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/proposing-changes-to-a-project-with-pull-requests" class="km-article-link">Proposing changes to a project with pull requests</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/types-of-collaborative-development-models" class="km-article-link">Types of collaborative development models</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-and-deleting-branches-within-your-repository" class="km-article-link">Creating and deleting branches within your repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-a-pull-request" class="km-article-link">Creating a pull request</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/using-pull-requests" class="km-article-link">Using pull requests</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/reviewing-and-discussing-changes-in-pull-requests" class="km-article-link">Reviewing and discussing changes in pull requests</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/reviewing-proposed-changes-in-a-pull-request" class="km-article-link">Reviewing proposed changes in a pull request</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/commenting-on-differences-between-files" class="km-article-link">Commenting on differences between files</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/checking-out-pull-requests-locally" class="km-article-link">Checking out pull requests locally</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/incorporating-changes-from-a-pull-request" class="km-article-link">Incorporating changes from a pull request</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/merging-a-pull-request" class="km-article-link">Merging a pull request</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/about-pull-request-merge-squashing" class="km-article-link">About pull request merge squashing</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/configuring-pull-request-merge-squashing" class="km-article-link">Configuring pull request merge squashing</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/closing-a-pull-request" class="km-article-link">Closing a pull request</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/reverting-a-pull-request" class="km-article-link">Reverting a pull request</a>
+</li>
+</ul></li></ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/managing-projects">Managing projects</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-issues" class="km-article-link">About issues</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-an-issue" class="km-article-link">Creating an issue</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/disabling-issues" class="km-article-link">Disabling issues</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/file-attachments-on-issues-and-pull-requests" class="km-article-link">File attachments on issues and pull requests</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users" class="km-article-link">Assigning issues and pull requests to other GitHub users</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/viewing-all-of-your-issues-and-pull-requests" class="km-article-link">Viewing all of your issues and pull requests</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-and-editing-labels-for-issues-and-pull-requests" class="km-article-link">Creating and editing labels for issues and pull requests</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/applying-labels-to-issues-and-pull-requests" class="km-article-link">Applying labels to issues and pull requests</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-and-editing-milestones-for-issues-and-pull-requests" class="km-article-link">Creating and editing milestones for issues and pull requests</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/associating-milestones-with-issues-and-pull-requests" class="km-article-link">Associating milestones with issues and pull requests</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/viewing-your-milestone-s-progress" class="km-article-link">Viewing your milestone's progress</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/filtering-issues-and-pull-requests" class="km-article-link">Filtering issues and pull requests</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/filtering-issues-and-pull-requests-by-assignees" class="km-article-link">Filtering issues and pull requests by assignees</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/filtering-issues-and-pull-requests-by-labels" class="km-article-link">Filtering issues and pull requests by labels</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/filtering-issues-and-pull-requests-by-milestone" class="km-article-link">Filtering issues and pull requests by milestone</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/sorting-issues-and-pull-requests" class="km-article-link">Sorting issues and pull requests</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/using-search-to-filter-issues-and-pull-requests" class="km-article-link">Using search to filter issues and pull requests</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/sharing-filters" class="km-article-link">Sharing filters</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/blocking-a-user-from-your-personal-account" class="km-article-link">Blocking a user from your personal account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/unblocking-a-user-from-your-personal-account" class="km-article-link">Unblocking a user from your personal account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/locking-conversations" class="km-article-link">Locking conversations</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/deleting-unused-branches" class="km-article-link">Deleting unused branches</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/managing-repository-collaborators">Managing Repository Collaborators</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/adding-collaborators-to-a-personal-repository" class="km-article-link">Adding collaborators to a personal repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/removing-a-collaborator-from-a-personal-repository" class="km-article-link">Removing a collaborator from a personal repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/removing-yourself-from-a-collaborator-s-repository" class="km-article-link">Removing yourself from a collaborator's repository</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/managing-remotes">Managing Remotes</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-remote-repositories" class="km-article-link">About remote repositories</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-a-remote" class="km-article-link">Adding a remote</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/changing-a-remote-s-url" class="km-article-link">Changing a remote's URL</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/renaming-a-remote" class="km-article-link">Renaming a remote</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/removing-a-remote" class="km-article-link">Removing a remote</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/which-remote-url-should-i-use" class="km-article-link">Which remote URL should I use?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/why-is-git-always-asking-for-my-password" class="km-article-link">Why is Git always asking for my password?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/dealing-with-non-fast-forward-errors" class="km-article-link">Dealing with non-fast-forward errors</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/fetching-a-remote" class="km-article-link">Fetching a remote</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/pushing-to-a-remote" class="km-article-link">Pushing to a remote</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/updating-credentials-from-the-osx-keychain" class="km-article-link">Updating credentials from the OSX Keychain</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/caching-your-github-password-in-git" class="km-article-link">Caching your GitHub password in Git</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/ssh">SSH</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/generating-an-ssh-key" class="km-article-link">Generating an SSH key</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/checking-for-existing-ssh-keys" class="km-article-link">Checking for existing SSH keys</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" class="km-article-link">Generating a new SSH key and adding it to the ssh-agent</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account" class="km-article-link">Adding a new SSH key to your GitHub account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/testing-your-ssh-connection" class="km-article-link">Testing your SSH connection</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe" class="km-article-link">Keeping your SSH keys and application access tokens safe</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/what-are-github-s-ssh-key-fingerprints" class="km-article-link">What are GitHub's SSH key fingerprints?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/working-with-ssh-key-passphrases" class="km-article-link">Working with SSH key passphrases</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/using-ssh-over-the-https-port" class="km-article-link">Using SSH over the HTTPS port</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/how-do-i-recover-my-ssh-key-passphrase" class="km-article-link">How do I recover my SSH key passphrase?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/error-permission-denied-publickey" class="km-article-link">Error: Permission denied (publickey)</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/error-bad-file-number" class="km-article-link">Error: Bad file number</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/error-key-already-in-use" class="km-article-link">Error: Key already in use</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/error-permission-to-user-repo-denied-to-other-user" class="km-article-link">Error: Permission to user/repo denied to other-user</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/error-permission-to-user-repo-denied-to-user-other-repo" class="km-article-link">Error: Permission to user/repo denied to user/other-repo</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/error-agent-admitted-failure-to-sign" class="km-article-link">Error: Agent admitted failure to sign</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/error-ssl-certificate-problem-verify-that-the-ca-cert-is-ok" class="km-article-link">Error: SSL certificate problem, verify that the CA cert is OK</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/error-we-re-doing-an-ssh-key-audit" class="km-article-link">Error: We're doing an SSH key audit</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/gpg">GPG</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/generating-a-gpg-key" class="km-article-link">Generating a GPG key</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/checking-for-existing-gpg-keys" class="km-article-link">Checking for existing GPG keys</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/generating-a-new-gpg-key" class="km-article-link">Generating a new GPG key</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account" class="km-article-link">Adding a new GPG key to your GitHub account</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/telling-git-about-your-gpg-key" class="km-article-link">Telling Git about your GPG key</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/signing-commits-using-gpg" class="km-article-link">Signing commits using GPG</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/signing-tags-using-gpg" class="km-article-link">Signing tags using GPG</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/github-pages-basics">GitHub Pages Basics</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/what-are-github-pages" class="km-article-link">What are GitHub Pages?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/user-organization-and-project-pages" class="km-article-link">User, Organization, and Project Pages</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-pages-with-the-automatic-generator" class="km-article-link">Creating Pages with the automatic generator</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-project-pages-manually" class="km-article-link">Creating Project Pages manually</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/further-reading-on-github-pages" class="km-article-link">Further reading on GitHub Pages</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/customizing-github-pages">Customizing GitHub Pages</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages" class="km-article-link">Using Jekyll as a static site generator with GitHub Pages</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-github-pages-and-jekyll" class="km-article-link">About GitHub Pages and Jekyll</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll" class="km-article-link">Setting up your GitHub Pages site locally with Jekyll</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/configuring-jekyll" class="km-article-link">Configuring Jekyll</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/troubleshooting-jekyll-builds" class="km-article-link">Troubleshooting Jekyll builds</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/viewing-jekyll-build-error-messages" class="km-article-link">Viewing Jekyll build error messages</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/generic-jekyll-build-failures" class="km-article-link">Generic Jekyll build failures</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-invalid-submodule" class="km-article-link">Page build failed: Invalid submodule</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-missing-submodule" class="km-article-link">Page build failed: Missing submodule</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-markdown-errors" class="km-article-link">Page build failed: Markdown errors</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-config-file-error" class="km-article-link">Page build failed: Config file error</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-unknown-tag-error" class="km-article-link">Page build failed: Unknown tag error</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-tag-not-properly-terminated" class="km-article-link">Page build failed: Tag not properly terminated</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-tag-not-properly-closed" class="km-article-link">Page build failed: Tag not properly closed</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-file-does-not-exist-in-includes-directory" class="km-article-link">Page build failed: File does not exist in includes directory</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-file-is-a-symlink" class="km-article-link">Page build failed: File is a symlink</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-symlink-does-not-exist-within-your-site-s-repository" class="km-article-link">Page build failed: Symlink does not exist within your site's repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-file-is-not-properly-utf-8-encoded" class="km-article-link">Page build failed: File is not properly UTF-8 encoded</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-invalid-post-date" class="km-article-link">Page build failed: Invalid post date</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-invalid-highlighter-language" class="km-article-link">Page build failed: Invalid highlighter language</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/updating-your-markdown-processor-to-kramdown" class="km-article-link">Updating your Markdown processor to kramdown</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-relative-permalinks-configured" class="km-article-link">Page build failed: Relative permalinks configured</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-syntax-error-in-for-loop" class="km-article-link">Page build failed: Syntax error in 'for' loop</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/files-that-start-with-an-underscore-are-missing" class="km-article-link">Files that start with an underscore are missing</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/page-build-failed-invalid-yaml-in-data-file" class="km-article-link">Page build failed: Invalid YAML in data file</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site" class="km-article-link">Adding Jekyll plugins to a GitHub Pages site</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/configuring-jekyll-plugins" class="km-article-link">Configuring Jekyll plugins</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/sitemaps-for-github-pages" class="km-article-link">Sitemaps for GitHub Pages</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/search-engine-optimization-for-github-pages" class="km-article-link">Search engine optimization for GitHub Pages</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/repository-metadata-on-github-pages" class="km-article-link">Repository metadata on GitHub Pages</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/atom-rss-feeds-for-github-pages" class="km-article-link">Atom (RSS) feeds for GitHub Pages</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/redirects-on-github-pages" class="km-article-link">Redirects on GitHub Pages</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/emoji-on-github-pages" class="km-article-link">Emoji on GitHub Pages</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/mentions-on-github-pages" class="km-article-link">@Mentions on GitHub Pages</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages" class="km-article-link">Using a custom domain with GitHub Pages</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/quick-start-setting-up-a-custom-domain" class="km-article-link">Quick start: Setting up a custom domain</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/about-supported-custom-domains" class="km-article-link">About supported custom domains</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites" class="km-article-link">Custom domain redirects for GitHub Pages sites</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/setting-up-your-pages-site-repository" class="km-article-link">Setting up your pages site repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/setting-up-an-apex-domain" class="km-article-link">Setting up an apex domain</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/setting-up-a-www-subdomain" class="km-article-link">Setting up a www subdomain</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/setting-up-an-apex-domain-and-www-subdomain" class="km-article-link">Setting up an apex domain and www subdomain</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/setting-up-a-custom-subdomain" class="km-article-link">Setting up a custom subdomain</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/troubleshooting-custom-domains" class="km-article-link">Troubleshooting custom domains</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/additional-customizations-for-github-pages" class="km-article-link">Additional customizations for GitHub Pages</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site" class="km-article-link">Creating a custom 404 page for your GitHub Pages site</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/using-syntax-highlighting-on-github-pages" class="km-article-link">Using syntax highlighting on GitHub Pages</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/using-a-static-site-generator-other-than-jekyll" class="km-article-link">Using a static site generator other than Jekyll</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/mime-types-on-github-pages" class="km-article-link">MIME types on GitHub Pages</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/should-i-rename-lt-username-github-com-gt-repositories-to-lt-username-github-io-gt" class="km-article-link">Should I rename &lt;username.github.com&gt; repositories to &lt;username.github.io&gt;?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/using-submodules-with-pages" class="km-article-link">Using submodules with Pages</a>
+</li>
+</ul></li></ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/github-pages-troubleshooting">GitHub Pages Troubleshooting</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/unpublishing-a-project-pages-site" class="km-article-link">Unpublishing a Project Pages site</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/unpublishing-a-user-pages-site" class="km-article-link">Unpublishing a User Pages site</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/writing-on-github">Writing on GitHub</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github" class="km-article-link">Getting started with writing and formatting on GitHub</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-writing-and-formatting-on-github" class="km-article-link">About writing and formatting on GitHub</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/basic-writing-and-formatting-syntax" class="km-article-link">Basic writing and formatting syntax</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/working-with-advanced-formatting" class="km-article-link">Working with advanced formatting</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/organizing-information-with-tables" class="km-article-link">Organizing information with tables</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-and-highlighting-code-blocks" class="km-article-link">Creating and highlighting code blocks</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/autolinked-references-and-urls" class="km-article-link">Autolinked references and URLs</a>
+</li>
+</ul></li>          <li class="article">
+<a href="https://help.github.com/articles/working-with-saved-replies" class="km-article-link">Working with saved replies</a>
+<ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/creating-a-saved-reply" class="km-article-link">Creating a saved reply</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/changing-a-saved-reply" class="km-article-link">Changing a saved reply</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/deleting-a-saved-reply" class="km-article-link">Deleting a saved reply</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/using-saved-replies" class="km-article-link">Using saved replies</a>
+</li>
+</ul></li></ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/manipulating-files">Manipulating Files</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/creating-new-files" class="km-article-link">Creating new files</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-a-file-to-a-repository" class="km-article-link">Adding a file to a repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line" class="km-article-link">Adding a file to a repository from the command line</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/renaming-a-file" class="km-article-link">Renaming a file</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/moving-a-file-to-a-new-location" class="km-article-link">Moving a file to a new location</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/moving-a-file-to-a-new-location-using-the-command-line" class="km-article-link">Moving a file to a new location using the command line</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/deleting-files" class="km-article-link">Deleting files</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/github-flow-in-the-browser" class="km-article-link">GitHub Flow in the Browser</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/editing-files-in-your-repository" class="km-article-link">Editing files in your repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/editing-files-in-another-user-s-repository" class="km-article-link">Editing files in another user's repository</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/working-with-non-code-files">Working with non-code files</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/rendering-and-diffing-images" class="km-article-link">Rendering and diffing images</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/mapping-geojson-files-on-github" class="km-article-link">Mapping geoJSON files on GitHub</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/3d-file-viewer" class="km-article-link">3D File Viewer</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/rendering-csv-and-tsv-data" class="km-article-link">Rendering CSV and TSV data</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/rendering-pdf-documents" class="km-article-link">Rendering PDF documents</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/rendering-differences-in-prose-documents" class="km-article-link">Rendering differences in prose documents</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/commits">Commits</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/changing-a-commit-message" class="km-article-link">Changing a commit message</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/closing-issues-via-commit-messages" class="km-article-link">Closing issues via commit messages</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/commit-exists-on-github-but-not-in-my-local-clone" class="km-article-link">Commit exists on GitHub but not in my local clone</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/commit-branch-and-tag-labels" class="km-article-link">Commit branch and tag labels</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/why-are-my-commits-linked-to-the-wrong-user" class="km-article-link">Why are my commits linked to the wrong user?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/why-are-my-commits-in-the-wrong-order" class="km-article-link">Why are my commits in the wrong order?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/comparing-commits-across-time" class="km-article-link">Comparing commits across time</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/differences-between-commit-views" class="km-article-link">Differences between commit views</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/gists">Gists</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-gists" class="km-article-link">About gists</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-gists" class="km-article-link">Creating gists</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/forking-and-cloning-gists" class="km-article-link">Forking and cloning gists</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/deleting-an-anonymous-gist" class="km-article-link">Deleting an anonymous gist</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/advanced-git">Advanced Git</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/remove-sensitive-data" class="km-article-link">Remove sensitive data</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/about-git-rebase" class="km-article-link">About Git rebase</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/using-git-rebase" class="km-article-link">Using Git rebase</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/resolving-merge-conflicts-after-a-git-rebase" class="km-article-link">Resolving merge conflicts after a Git rebase</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/changing-author-info" class="km-article-link">Changing author info</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/splitting-a-subfolder-out-into-a-new-repository" class="km-article-link">Splitting a subfolder out into a new repository</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/about-git-subtree-merges" class="km-article-link">About Git subtree merges</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/releases">Releases</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-releases" class="km-article-link">About Releases</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-releases" class="km-article-link">Creating Releases</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/working-with-tags" class="km-article-link">Working with Tags</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/editing-and-deleting-releases" class="km-article-link">Editing and deleting releases</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/getting-the-download-count-for-your-releases" class="km-article-link">Getting the download count for your releases</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/linking-to-releases" class="km-article-link">Linking to releases</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/graphs-and-contributions">Graphs and Contributions</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-repository-graphs" class="km-article-link">About Repository Graphs</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/viewing-contributions-on-your-profile-page" class="km-article-link">Viewing contributions on your profile page</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile" class="km-article-link">Why are my contributions not showing up on my profile?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/i-don-t-see-myself-in-the-repository-contributors-graph" class="km-article-link">I don't see myself in the repository contributors graph</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/about-pulse" class="km-article-link">About Pulse</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/why-don-t-graphs-work-with-ie8" class="km-article-link">Why don't graphs work with IE8?</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/automation">Automation</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/getting-started-with-the-api" class="km-article-link">Getting started with the API</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-an-access-token-for-command-line-use" class="km-article-link">Creating an access token for command-line use</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/git-automation-with-oauth-tokens" class="km-article-link">Git automation with OAuth tokens</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/wiki">Wiki</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/about-github-wikis" class="km-article-link">About GitHub Wikis</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-wiki-pages-via-the-online-interface" class="km-article-link">Adding wiki pages via the online interface</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/editing-wiki-pages-via-the-online-interface" class="km-article-link">Editing wiki pages via the online interface</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-a-footer" class="km-article-link">Creating a footer</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/creating-a-sidebar" class="km-article-link">Creating a sidebar</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-and-editing-wiki-pages-locally" class="km-article-link">Adding and editing wiki pages locally</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/viewing-a-wiki-s-history-of-changes" class="km-article-link">Viewing a wiki's history of changes</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-images-to-wikis" class="km-article-link">Adding images to wikis</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/adding-links-to-wikis" class="km-article-link">Adding links to wikis</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/supported-mediawiki-formats" class="km-article-link">Supported MediaWiki formats</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/changing-access-permissions-for-wikis" class="km-article-link">Changing access permissions for wikis</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/disabling-wikis" class="km-article-link">Disabling wikis</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/importing">Importing</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/importing-your-project-to-github" class="km-article-link">Importing your project to GitHub</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/importing-a-git-repository-using-the-command-line" class="km-article-link">Importing a Git repository using the command line</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/importing-from-subversion" class="km-article-link">Importing from Subversion</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/what-are-the-differences-between-svn-and-git" class="km-article-link">What are the differences between SVN and Git?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/importing-from-other-version-control-systems-to-github" class="km-article-link">Importing from other version control systems to GitHub</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/support-for-subversion-clients" class="km-article-link">Support for Subversion clients</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/subversion-properties-supported-by-github" class="km-article-link">Subversion properties supported by GitHub</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/jobs">Jobs</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/how-to-write-a-great-job-post" class="km-article-link">How to write a great job post</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/administration">Administration</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/what-ip-addresses-does-github-use-that-i-should-whitelist" class="km-article-link">What IP addresses does GitHub use that I should whitelist?</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/why-did-i-get-redirected-to-this-page" class="km-article-link">Why did I get redirected to this page?</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/about-github">About GitHub</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/using-an-octocat-to-link-to-github-or-your-github-profile" class="km-article-link">Using an Octocat to link to GitHub or your GitHub profile</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/where-can-i-find-open-source-projects-to-work-on" class="km-article-link">Where can I find Open Source projects to work on?</a>
+</li>
+</ul>        <li class="category">
+        <h5>
+          <span class="handle"></span>
+          <a href="https://help.github.com/categories/site-policy">Site Policy</a>
+        </h5>
+
+        <ul class="chevron list">
+<li class="article">
+<a href="https://help.github.com/articles/supported-browsers" class="km-article-link">Supported Browsers</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/name-squatting-policy" class="km-article-link">Name Squatting Policy</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/dmca-takedown-policy" class="km-article-link">DMCA Takedown Policy</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/guide-to-submitting-a-dmca-takedown-notice" class="km-article-link">Guide to Submitting a DMCA Takedown Notice</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/guide-to-submitting-a-dmca-counter-notice" class="km-article-link">Guide to Submitting a DMCA Counter Notice</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/github-trademark-policy" class="km-article-link">GitHub Trademark Policy</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/github-privacy-policy" class="km-article-link">GitHub Privacy Policy</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/github-security" class="km-article-link">GitHub Security</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/responsible-disclosure-of-security-vulnerabilities" class="km-article-link">Responsible Disclosure of Security Vulnerabilities</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/github-terms-of-service" class="km-article-link">GitHub Terms of Service</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/amendment-to-github-terms-of-service-applicable-to-u-s-federal-government-users" class="km-article-link">Amendment to GitHub Terms of Service Applicable to U.S. Federal Government Users</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/guidelines-for-legal-requests-of-user-data" class="km-article-link">Guidelines for Legal Requests of User Data</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/eu-safe-harbor" class="km-article-link">EU Safe Harbor</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/github-registered-developer-agreement" class="km-article-link">GitHub Registered Developer Agreement</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/github-pre-release-program" class="km-article-link">GitHub Pre-Release Program</a>
+</li>
+<li class="article">
+<a href="https://help.github.com/articles/github-and-export-controls" class="km-article-link">GitHub and Export Controls</a>
+</li>
+</ul>
+  </ul>
+
+</div>
+
+
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="inner">
+    <a href="https://github.com/" class="invertocat">
+      <img alt="The GitHub Logo" src="https://help.github.com/assets/images/site/invertocat.png" width="24" height="24" />
+    </a>
+    <p class="left">
+      &copy; <span id="year">2016</span> GitHub Inc. All rights reserved.
+    </p>
+      <ul class="links right">
+        <li><a href="https://help.github.com/terms-of-service">Terms of Service</a></li>
+        <li><a href="https://help.github.com/privacy-policy">Privacy</a></li>
+        <li><a href="https://help.github.com/security">Security</a></li>
+        
+          <li><a href="https://github.com/contact">Support</a></li>
+        
+      </ul>
+  </div>
+</div>
+
+
+<div class="fullscreen-overlay"></div>
+</body>
+
+<!-- Mirrored from help.github.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:02 GMT -->
+</html>

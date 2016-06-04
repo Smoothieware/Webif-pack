@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<!-- Mirrored from linuxcnc.org/docs/html/gcode/coordinates.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.6.7" />
+<title>Coordinate Systems</title>
+<link rel="stylesheet" href="http://linuxcnc.org/docs/html//asciidoc.css" type="text/css" />
+<link rel="stylesheet" href="http://linuxcnc.org/docs/html//linuxcnc.css" type="text/css" />
+<script type="text/javascript" src="http://linuxcnc.org/docs/html//asciidoc.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+asciidoc.install(2);
+/*]]>*/
+</script>
+</head>
+<body class="book">
+<div id="header">
+<h1>Coordinate Systems</h1>
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph"><p><a id="cha:coordinate-system"></a> </p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction">1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>This chapter introduces you to offsets as they are used by the LinuxCNC.
+These include:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+Machine Coordinates (G53)
+</p>
+</li>
+<li>
+<p>
+Nine Coordinate System Offsets (G54-G59.3)
+</p>
+</li>
+<li>
+<p>
+Global Offsets (G92)
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_machine_coordinate_system">2. Machine Coordinate System</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Regardless of any offsets that may be in effect, putting a G53 in a block of
+code tells the interpreter to go to the real or absolute axis positions
+commanded in the block and ignore any offsets in effect. In the following
+example the machine will move to the machine coordinates set when the axes
+were homed and will ignore any coordianate system and global offsets in effect.</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>G53 G0 X0 Y0 Z0</tt></pre>
+</div></div>
+<div class="paragraph"><p>G53 is not a modal command. It must be used on each line where motion
+based upon absolute machine position is desired.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_coordinate_systems">3. Coordinate Systems</h2>
+<div class="sectionbody">
+<div class="imageblock" style="text-align:center;">
+<div class="content">
+<img src="http://linuxcnc.org/docs/html/gcode/images/offsets.png" alt="images/offsets.png" />
+</div>
+<div class="title">Figure 1. Example of Coordinate Systems</div>
+</div>
+<div class="ulist"><div class="title">Coordinate System Offsets</div><ul>
+<li>
+<p>
+G54 - use coordinate system 1
+</p>
+</li>
+<li>
+<p>
+G55 - use coordinate system 2
+</p>
+</li>
+<li>
+<p>
+G56 - use coordinate system 3
+</p>
+</li>
+<li>
+<p>
+G57 - use coordinate system 4
+</p>
+</li>
+<li>
+<p>
+G58 - use coordinate system 5
+</p>
+</li>
+<li>
+<p>
+G59 - use coordinate system 6
+</p>
+</li>
+<li>
+<p>
+G59.1 - use coordinate system 7
+</p>
+</li>
+<li>
+<p>
+G59.2 - use coordinate system 8
+</p>
+</li>
+<li>
+<p>
+G59.3 - use coordinate system 9
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Coordinate system offsets are used to shift the coordinate system from the
+machine coordinate system. This allows the G code to be programmed for the
+part without regard to the part location on the machine. Using coordinate
+system offsets would allow you to machine parts in multiple locations with the
+same G code.</p></div>
+<div class="paragraph"><p>The values for offsets are stored in the VAR file that is requested by the INI
+file during the startup of an LinuxCNC.</p></div>
+<div class="paragraph"><p>In the VAR file scheme, the first variable number stores the X offset,
+the second the Y offset and so on for all nine axes. There are numbered
+sets like this for each of the coordinate system offsets.</p></div>
+<div class="paragraph"><p>Each of the graphical interfaces has a way to set values for these offsets.
+You can also set these values by editing the VAR file itself and then
+restart LinuxCNC so that the LinuxCNC reads the new values however this is
+not the recommended way. Using G10, G92, G28.1, etc are better ways to
+set the variables.</p></div>
+<div class="tableblock">
+<table rules="all"
+width="40%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<caption class="title">Table 1. Example of G55 parameters</caption>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+<thead>
+<tr>
+<th align="center" valign="top">Axis </th>
+<th align="center" valign="top"> Variable </th>
+<th align="center" valign="top"> Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" valign="top"><p class="table">X</p></td>
+<td align="center" valign="top"><p class="table">5241</p></td>
+<td align="center" valign="top"><p class="table">2.000000</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">Y</p></td>
+<td align="center" valign="top"><p class="table">5242</p></td>
+<td align="center" valign="top"><p class="table">1.000000</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">Z</p></td>
+<td align="center" valign="top"><p class="table">5243</p></td>
+<td align="center" valign="top"><p class="table">-2.000000</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">A</p></td>
+<td align="center" valign="top"><p class="table">5244</p></td>
+<td align="center" valign="top"><p class="table">0.000000</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">B</p></td>
+<td align="center" valign="top"><p class="table">5245</p></td>
+<td align="center" valign="top"><p class="table">0.000000</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">C</p></td>
+<td align="center" valign="top"><p class="table">5246</p></td>
+<td align="center" valign="top"><p class="table">0.000000</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">U</p></td>
+<td align="center" valign="top"><p class="table">5247</p></td>
+<td align="center" valign="top"><p class="table">0.000000</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">V</p></td>
+<td align="center" valign="top"><p class="table">5248</p></td>
+<td align="center" valign="top"><p class="table">0.000000</p></td>
+</tr>
+<tr>
+<td align="center" valign="top"><p class="table">W</p></td>
+<td align="center" valign="top"><p class="table">5249</p></td>
+<td align="center" valign="top"><p class="table">0.000000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="paragraph"><p>You should read this as moving the zero positions of G55 to X = 2
+units, Y= 1 unit, and Z = -2 units away from the absolute zero position.</p></div>
+<div class="paragraph"><p>Once there are values assigned, a call to G55 in a program block would
+shift the zero reference by the values stored. The following line would
+then move each axis to the new zero position. Unlike G53, G54 through
+G59.3 are modal commands. They will act on all blocks of code after one
+of them has been set. The program that might be run using
+fixture offsets would require only a single coordinate
+reference for each of the locations and all of the work to be done
+there. The following code is offered as an example of making a square
+using the G55 offsets that we set above.</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>G55 ; use coordinate system 2
+G0 X0 Y0 Z0
+G1 F2 Z-0.2000
+X1
+Y1
+X0
+Y0
+G0 Z0
+G54 ; use coordinate system 1
+G0 X0 Y0 Z0
+M2</tt></pre>
+</div></div>
+<div class="paragraph"><p>In this example the G54 near the end leaves the G54 coordinate system with all
+zero offsets so that there is a modal code for the absolute machine based axis
+positions. This program assumes that we have done that and use the ending
+command as a command to machine zero. It would have been possible to use G53
+and arrive at the same place but that command would not have been modal and
+any commands issued after it would have returned to using the G55 offsets
+because that coordinate system would still be in effect.</p></div>
+<div class="sect2">
+<h3 id="_default_coordinate_system">3.1. Default Coordinate System</h3>
+<div class="paragraph"><p>One other variable in the VAR file becomes important when we think
+about offset systems. This variable is named 5220. In the default files
+its value is set to 1.00000. This means that when the LinuxCNC starts up it
+should use the first coordinate system as its default. If you set this
+to 9.00000 it would use the ninth offset system as its default for
+start up and reset. Any value other than an integer (decimal really)
+between 1 and 9, or a missing 5220 variable will cause the LinuxCNC to
+revert to the default value of 1.00000 on start up.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_setting_coordinate_system_offsets">3.2. Setting Coordinate System Offsets</h3>
+<div class="paragraph"><p>The G10 L2x command can be used to set coordinate system offsets:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+<em>G10 L2  P(1-9)</em> - Set offset(s) to a value. Current position irrelevant.
+                         (see <a href="http://linuxcnc.org/docs/html/gcode/g-code.html#gcode:g10-l2">G10 L2</a> for details)
+</p>
+</li>
+<li>
+<p>
+<em>G10 L20 P(1-9)</em> - Set offset(s) so current position becomes a value.
+                         (see <a href="http://linuxcnc.org/docs/html/gcode/g-code.html#gcode:g10-l20">G10 L20</a> for details)
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_global_offsets_a_id_sec_g92_offsets_a">4. Global Offsets<a id="sec:g92-offsets"></a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_the_g92_commands">4.1. The G92 Commands</h3>
+<div class="paragraph"><p>This set of commands include;</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+<em>G92</em> - This command, when used with axis names, sets values to offset
+    variables.
+</p>
+</li>
+<li>
+<p>
+<em>G92.1</em> - This command sets zero values to the G92 variables.
+</p>
+</li>
+<li>
+<p>
+<em>G92.2</em> - This command suspends but does not zero out the G92
+    variables.
+</p>
+</li>
+<li>
+<p>
+<em>G92.3</em> - This command applies offset values that have been suspended.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>When the commands are used as described above, they will work pretty
+much as you would expect.</p></div>
+<div class="paragraph"><p>To make the  current point, what ever it is,
+have the coordinates X0, Y0, and Z0 you would use G92 X0 Y0 Z0.
+G92 <strong>does not</strong> work from absolute machine coordinates.
+It works from <strong>current location</strong>.</p></div>
+<div class="paragraph"><p>G92 also works from current location as modified by any other offsets
+that are in effect when the G92 command is invoked. While testing for
+differences between work offsets and actual offsets it was found that a
+G54 offset could cancel out a G92 and thus give the appearance that no
+offsets were in effect. However, the G92 was still in effect for all
+coordinates and did produce expected work offsets for the other
+coordinate systems.</p></div>
+<div class="paragraph"><p>It is a good practice to clear the G92 offsets at the end of their
+use with G92.1 or G92.2. When starting up LinuxCNC if any offsets are
+in the G92 variables they will be applied when an axis is homed.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_setting_g92_values">4.2. Setting G92 Values</h3>
+<div class="paragraph"><p>G92 commands work from current axis location and add and subtract
+correctly to give the current axis position the value assigned by the
+G92 command. The effects work even though previous offsets are in.</p></div>
+<div class="paragraph"><p>So if the X axis is currently showing 2.0000 as its position a <em>G92 X0</em>
+will set an offset of -2.0000 so that the current location of X becomes
+zero. A <em>G92 X2</em> will set an offset of 0.0000 and the displayed position
+will not change. A <em>G92 X5.0000</em> will set an offset of 3.0000 so that the
+current displayed position becomes 5.0000.</p></div>
+<div class="paragraph"><p>The G92 parameters are:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+5211 - X Axis Offset
+</p>
+</li>
+<li>
+<p>
+5212 - Y Axis Offset
+</p>
+</li>
+<li>
+<p>
+5213 - Z Axis Offset
+</p>
+</li>
+<li>
+<p>
+5214 - A Axis Offset
+</p>
+</li>
+<li>
+<p>
+5215 - B Axis Offset
+</p>
+</li>
+<li>
+<p>
+5216 - C Axis Offset
+</p>
+</li>
+<li>
+<p>
+5217 - U Axis Offset
+</p>
+</li>
+<li>
+<p>
+5218 - V Axis Offset
+</p>
+</li>
+<li>
+<p>
+5219 - W Axis Offset
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>If you are seeing unexpected positions as the result of a commanded move, as a
+result of storing an offset in a previous program and not clearing them at the
+end then issue a G92.1 in the MDI window to clear the stored offsets.</p></div>
+<div class="paragraph"><p>If G92 values exist in the VAR file when LinuxCNC starts up, the G92
+values in the var file will be applied to the values of the current
+location of each axis. If this is home position and home position is
+set as machine zero everything will be correct. Once home has been
+established using real machine switches, or by moving each axis to a known
+home position and issuing an axis home command, any G92 offsets will be
+applied. If you have a G92 X1 in effect when you home the X axis the
+DRO will read <em>X: 1.000</em> instead of the expected <em>X: 0.000</em> because the
+G92 was applied to the machine origin. If you issue a G92.1 and the DRO
+now reads all zeros then you had a G92 offset in effect when you last
+ran LinuxCNC.</p></div>
+<div class="paragraph"><p>Unless your intention is to use the same G92 offsets in the next
+program, the best practice is to issue a G92.1 at the end of any G Code
+files where you use G92 offsets.</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Caution</div>
+</td>
+<td class="content">When a file is aborted during processing that has G92 offsets in effect a
+startup will cause them to become active again. Always have your preamble
+to set the environment as you expect it.</td>
+</tr></table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sample_program_using_offsets">5. Sample Program Using Offsets</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>This sample engraving project mills a set of four .1 radius circles in
+roughly a star shape around a center circle. We can setup the
+individual circle pattern like this.</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>G10 L2 P1 X0 Y0 Z0 (ensure that G54 is set to machine zero)
+G0 X-0.1 Y0 Z0
+G1 F1 Z-0.25
+G3 X-0.1 Y0 I0.1 J0
+G0 Z0
+M2</tt></pre>
+</div></div>
+<div class="paragraph"><p>We can issue a set of commands to create offsets for the four other
+circles like this.</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>G10 L2 P2 X0.5 (offsets G55 X value by 0.5 inch)
+G10 L2 P3 X-0.5 (offsets G56 X value by -0.5 inch)
+G10 L2 P4 Y0.5 (offsets G57 Y value by 0.5 inch)
+G10 L2 P5 Y-0.5 (offsets G58 Y value by -0.5 inch)</tt></pre>
+</div></div>
+<div class="paragraph"><p>We put these together in the following program:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>(a program for milling five small circles in a diamond shape)
+
+G10 L2 P1 X0 Y0 Z0 (ensure that G54 is machine zero)
+G10 L2 P2 X0.5 (offsets G55 X value by 0.5 inch)
+G10 L2 P3 X-0.5 (offsets G56 X value by -0.5 inch)
+G10 L2 P4 Y0.5 (offsets G57 Y value by 0.5 inch)
+G10 L2 P5 Y-0.5 (offsets G58 Y value by -0.5 inch)
+
+G54 G0 X-0.1 Y0 Z0 (center circle)
+G1 F1 Z-0.25
+G3 X-0.1 Y0 I0.1 J0
+G0 Z0
+
+G55 G0 X-0.1 Y0 Z0 (first offset circle)
+G1 F1 Z-0.25
+G3 X-0.1 Y0 I0.1 J0
+G0 Z0
+
+G56 G0 X-0.1 Y0 Z0 (second offset circle)
+G1 F1 Z-0.25
+G3 X-0.1 Y0 I0.1 J0
+G0 Z0
+
+G57 G0 X-0.1 Y0 Z0 (third offset circle)
+G1 F1 Z-0.25
+G3 X-0.1 Y0 I0.1 J0
+G0 Z0
+
+G58 G0 X-0.1 Y0 Z0 (fourth offset circle)
+G1 F1 Z-0.25
+G3 X-0.1 Y0 I0.1 J0
+G54 G0 X0 Y0 Z0
+
+M2</tt></pre>
+</div></div>
+<div class="paragraph"><p>Now comes the time when we might apply a set of G92 offsets to this
+program. You&#8217;ll see that it is running in each case at Z0. If the mill
+were at the zero position, a G92 Z1.0000 issued at the head of the
+program would shift everything an inch. You might also shift the
+whole pattern around in the XY plane by adding some X and Y offsets
+with G92. If you do this you should add a G92.1 command just before the
+M2 that ends the program. If you do not, other programs that you might
+run after this one will also use that G92 offset. Furthermore it would
+save the G92 values when you shut down the LinuxCNC and they will be
+recalled when you start up again.</p></div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2016-05-13 02:07:08 MDT
+</div>
+</div>
+</body>
+
+<!-- Mirrored from linuxcnc.org/docs/html/gcode/coordinates.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:16 GMT -->
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/spindle-control by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Spindle Control - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="http://www.wikidot.com/default__flow/login__CustomDomainScript?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "spindle-control";
+        OZONE.request.timestamp = 1463139889;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "spindle-control";
+        WIKIREQUEST.info.pageId = 22174755;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--javascript/WIKIDOT.combined.js"></script>
+            <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--bootstrap/3.2.0/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--bootstrap/3.2.0/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/bootstrap-base/css/style.css);
+                    @import url(http://chibidibidiwah.wdfiles.com/local--theme/bare/style.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="http://smoothieware.org/local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="http://smoothieware.org/local--favicon/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="http://smoothieware.org/common--images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://smoothieware.org/common--images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://smoothieware.org/common--images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://smoothieware.org/" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/">Documentation</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/smoothieboard">SmoothieBoard</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/blog">Blog</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/gallery">Gallery</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="http://smoothieware.org/irc">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="http://smoothieware.org/forum/c-496918/general">Forum</a></li>
+<li><a href="http://groups.google.com/group/smoothieware-support">Support/Help Mailing list</a></li>
+<li><a href="http://groups.google.com/group/smoothie-dev">Developper Mailing list</a></li>
+<li><a href="https://plus.google.com/communities/111870450664099533727">Google+ Community</a></li>
+<li><a href="https://www.facebook.com/Smoothieware/">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/search">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="http://chibidibidiwah.wdfiles.com/local--files/start/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Spindle Control</span></div>
+          
+          <div id="page-content">
+
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://www.automationtechnologiesinc.com/wp-content/uploads/2011/11/KL-2200-1024x1024.jpg" width="450px" alt="KL-2200-1024x1024.jpg" class="image" /></div>
+<h2 id="toc0"><span><a name="spindle-control"></a> Spindle Control</span></h2>
+<p>The Spindle is the main effector on your CNC Mill/Router. It holds the end mill or drill bit, makes it turn and remove material.</p>
+<p>While manual control is sometimes fine ( turn it on before starting your G-code, off when you are done ), it is so much neater to have G-codes to control it automatically : simply put an ON G-code at the beginning of your G-code file, and a off G-code at the end of your G-code file, and you don't have to think about it any-more.</p>
+<p>First thing you need to do is choose which component on the Smoothieboard is going to choose to control your Spindle.</p>
+<p>Mosfets are present on-board, but have limited current capacity ( up to 12A ) and need to be protected by a diode when controlling a motor.</p>
+<p><a href="http://smoothieware.org/general-appendixes#solidstaterelay">Solid state relays</a> are controlled via a GPIO pin, and can control higher loads, but are on/off only ( no control of the exact amount of power sent via PWM ). For more information about SSRs, <a href="http://smoothieware.org/general-appendixes#solidstaterelay">see this appendix</a>.</p>
+<p>Here is a brief on the MOSFETs&nbsp;on the Smoothieboard :&nbsp;</p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://chibidibidiwah.wdfiles.com/local--files/3d-printer-guide/smoothieboard-mosfets.png" width="450px" alt="smoothieboard-mosfets.png" class="image" /></div>
+<h3 id="toc1"><span>Mosfets</span></h3>
+<p>Smoothie has up to 6 MOSFET controls ( 6 on 5X, 4 on 4X and 2 on 3X ). You have to connect your PSU to the power input connector for those FETs, and connect your power consuming element ( be it heating element, spindle, etc&#8230; ) to the power outputs of those same FETs. Essentially Smoothie connects/disconnects the element ( connected to the mosfet connector ) from the PSU ( connected to the power input connector ) as needed to maintain temperature or as requested by G-codes.</p>
+<p>There are three main pairs of Mosfets on the board :</p>
+<ul>
+<li>Big MOSFETS pair : Their outputs are labelled <strong>P2_7</strong> and <strong>P2_5</strong> on the schematic, the input connector for them is found between them. They are found on the 4X and 5X boards.</li>
+<li>Small MOSFETS pair : Their outputs are labelled <strong>P2_6</strong> and <strong>P2_4</strong> on the schematic, the input connector for them is found by their side, between P2_6 and P1_23. They are found on all of the boards.</li>
+<li>Mixed MOSFETS pair : Their outputs are labelled <strong>P1_22</strong> and <strong>P1_23</strong> on the schematic. The pair is called &quot;mixed&quot; because it consists of one big MOSFET and one small MOSFET. They do not have a specific input, they take power directly from VBB ( the Stepper motors power input described in the Stepper Motors chapter ).</li>
+</ul>
+<div class="wiki-note">
+<p>MOSFET power inputs have a polarity, make sure you connect <strong>+</strong> on that connector to <strong>+</strong> on your PSU, and <strong>-</strong> to <strong>-</strong> on the PSU. Heater elements however do not have a polarity, so you do not have to worry about polarity on the outputs. If you are using another output element like a Peltier or a Spindle, you need to be careful to respect the polarity for the outputs too.</p>
+</div>
+<p>Big MOSFETS can handle up to 20A without cooling, but the 5mm green connectors are rated up to only 12A, and the Small MOSFETS can handle up to 3A, and their connectors are rated up to 7.5A. Therefore, never use the big MOSFETS for more than 12A ( and monitor connector and MOSFET temperatures at that current use ), and the small MOSFETS' use should be limited to small fans. Trying to power a 40W hotend cartridge heater at 12V with the small FETs will destroy them, locking them to the &quot;ON&quot; state.</p>
+<p>If you need to control more than 12Amps, you can not do it with one of the MOSFETS on board, however you can use a Solid State Relay. For information see the <a href="#solidstaterelay">Solid State Relay Appendix on this page</a>.</p>
+<div class="wiki-note">
+<p>In the case of both the Big MOSFETS pair, and the Small MOSFETS pair, you take power from the PSU to them via their respective power input connectors.</p>
+<p>There is an alternative however. For each pair, you can use jumpers ( one jumper for the small MOSFETS pair ( <strong>JP28</strong> ), two parralel jumpers for the two big MOSFETS pair ( <strong>JP11</strong> and <strong>JP27</strong> ) ). If you solder the pins for those, and connect a <a href="http://www.computerhope.com/jargon/j/jumper.htm">jumper</a> to those pins, closing the circuit to VBB ( the stepper motors power input ), allowing you to take the power from those MOSFETS from the same place as the stepper motors do.</p>
+<p>In the case of the big MOSFETS, you have to solder and put in place two jumpers, in parallel, in order to handle more current.</p>
+</div>
+<div class="bs-callout bs-callout-warning">
+<h4 id="toc2"><span>Current rating</span></h4>
+<p>However, <strong><a href="http://www.obscureinternet.com/wp-content/uploads/1268330310152.jpg">WARNING</a></strong>, each jumper is rated for only 2A of current. This means you can not use this way of powering your MOSFETS if you are going to use more than 2A ( for the small MOSFETS ) or 4A ( for the big MOSFETS, with both jumpers used, for 2 x 2A ).</p>
+<p>Do not use the jumpers to power a heated bed for example, as it uses much more than 4A.</p>
+</div>
+<p>In order to configure your Smoothieboard to use a specific MOSFET, you need to know which pin corresponds to which MOSFET. Here is a recapitulating table to help you find that out :</p>
+<table class="wiki-content-table">
+<tr>
+<th>MOSFET Pair</th>
+<td colspan="2">Big MOSFETS</td>
+<td colspan="2">Small MOSFETS</td>
+<td colspan="2">Mixed MOSFETS</td>
+</tr>
+<tr>
+<th>Label on diagram</th>
+<td><strong>P2_7</strong></td>
+<td><strong>P2_5</strong></td>
+<td><strong>P2_4</strong></td>
+<td><strong>P2_6</strong></td>
+<td><strong>P1_23</strong></td>
+<td><strong>P1_22</strong></td>
+</tr>
+<tr>
+<th>Digital output pin</th>
+<td>2.7</td>
+<td>2.5</td>
+<td>2.4</td>
+<td>2.6</td>
+<td>1.23</td>
+<td>1.22</td>
+</tr>
+<tr>
+<th>Power Input</th>
+<td colspan="2">Between <strong>P2_7</strong> and <strong>P2_5</strong></td>
+<td colspan="2">Between <strong>P2_6</strong> and <strong>P1_23</strong></td>
+<td colspan="2">Taken from <strong>VBB</strong></td>
+</tr>
+<tr>
+<th>Size</th>
+<td>Big</td>
+<td>Big</td>
+<td>Small</td>
+<td>Small</td>
+<td>Big</td>
+<td>Small</td>
+</tr>
+<tr>
+<th>Maximum current</th>
+<td>12A</td>
+<td>12A</td>
+<td>0.5A*</td>
+<td>0.5A*</td>
+<td>12A</td>
+<td>0.5A*</td>
+</tr>
+<tr>
+<th>Used for</th>
+<td>Hotend</td>
+<td>Heated bed</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<p>*While the datasheet says it can handle ~5A, it should not be used for anything but low-current fans, at least at 12V. Trying to run a hotend off of the small MOSFETs will destroy them (experimentally proven at 12V).</p>
+<h3 id="toc3"><span>Wiring</span></h3>
+<p>TODO :&nbsp;diagram</p>
+<h3 id="toc4"><span>Configuration</span></h3>
+<p>Now that you have located which MOSFET you are going to use for Spindle control, and what GPIO&nbsp;pin it corresponds to, you need to add a spindle control section to your configuration file.</p>
+<p>We will be doing this using the <a href="http://smoothieware.org/switch">Switch</a> module</p>
+<p>Add this to your configuration file :&nbsp;</p>
+<div class="code">
+<pre>
+<code>#Spindle control Switch module
+switch.spindle.enable                            true             #
+switch.spindle.input_on_command                  M3               #
+switch.spindle.input_off_command                 M5               #
+switch.spindle.output_pin                        2.7              # Here we are using the first big MOSFET
+switch.spindle.output_type                       pwm              # pwm output settable with S parameter in the input_on_comand
+switch.spindle.max_pwm                           255              # set max pwm for the pin default is 255</code>
+</pre></div>
+<h3 id="toc5"><span>Controlling the Spindle</span></h3>
+<p>Now that everything is configured, you can use G-codes to control the Spindle.</p>
+<p>You can do this either manually by sending G-codes directly to the board via serial or your host software, or add those G-codes to the beginning/end.</p>
+<p>You can choose the exact G-codes in the configuration, here we used the standard M3 to turn the Spindle ON, and M5&nbsp;to turn the Spindle OFF.</p>
+<p>If you need to choose the power ( speed ) of your Spindle, you can do so because the output is configured as PWM.</p>
+<p>Simply do :</p>
+<div class="code">
+<pre>
+<code>M3 S128</code>
+</pre></div>
+<p>To set the spindle to half power/speed. PWM values go from 0 to 255.</p>
+<h3><span>Diode</span></h3>
+<p>Because the spindle can feed power back into the MOSFET and damage the MOSFET, you also need to wire a diode of sufficient size across the output.</p>
+<h2 id="toc6"><span><a name="loopback"></a> PID loopback spindle control</span></h2>
+<p>To get more accurate RPM control, you can use a feedback sensor. This can be optical or a hall effect sensor, which senses the rotation of the spindle. Smoothie then measures the real RPM of the spindle and adjusts the PWM value accordingly.</p>
+<p>To use this module, you need to connect your spindle to pins with proper hardware support:</p>
+<ul>
+<li>PWM output pin: any of P1.18, P1.20, P1.21, P1.23, P1.24, P1.26, P2.0 - P2.5, P2.26, P3.25</li>
+<li>Feedback sensor pin: must be in port 0 or port 2; P2.6 and P2.7 are available on smoothieboard</li>
+</ul>
+<h3 id="toc7"><span>Configuration</span></h3>
+<table class="wiki-content-table">
+<tr>
+<th>Option</th>
+<th>Example value</th>
+<th>Explanation</th>
+</tr>
+</table>
+<table class="wiki-content-table">
+<tr>
+<td>spindle_enable</td>
+<td>true</td>
+<td>If set to true, enables the Spindle module, which uses an encoder to PID-control a PWM-modulated spindle motor</td>
+</tr>
+<tr>
+<td>spindle_pwm_pin</td>
+<td><tt>2.4</tt></td>
+<td>Output PWM pin (uses hardware PWM). Note : hardware PWM is available only on pins <tt>2.0</tt> to <tt>2.5</tt>, <tt>1.18</tt>, <tt>1.20</tt>, <tt>1.21</tt>, <tt>1.23</tt>, <tt>1.24</tt>, <tt>1.26</tt>, <tt>3.25</tt> and <tt>3.26</tt></td>
+</tr>
+<tr>
+<td>spindle_pwm_period</td>
+<td>100</td>
+<td>PWM period to use in microseconds</td>
+</tr>
+<tr>
+<td>spindle_feedback_pin</td>
+<td><tt>2.6</tt></td>
+<td>Feedback input pin (must be Port 0 or 2, meaning the pin number must be <tt>2.x</tt> or <tt>0.x</tt> )</td>
+</tr>
+<tr>
+<td>spindle_pulses_per_rev</td>
+<td>3</td>
+<td>Number of feedback pulses per revolution on the feedback input pin</td>
+</tr>
+<tr>
+<td>spindle_default_rpm</td>
+<td>5000</td>
+<td>RPM to use if none given in M3 command, in rotations/minute</td>
+</tr>
+<tr>
+<td>spindle_control_P</td>
+<td>0.0002</td>
+<td>PID P factor (unit is 1 / RPM)</td>
+</tr>
+<tr>
+<td>spindle_control_I</td>
+<td>0.0001</td>
+<td>PID I factor (unit is 1 / ( RPM x seconds ))</td>
+</tr>
+<tr>
+<td>spindle_control_D</td>
+<td>0.000001</td>
+<td>PID D factor (unit is 1 / (R PM / seconds ))</td>
+</tr>
+</table>
+<h3 id="toc8"><span>G-code</span></h3>
+<p>Available G-code commands:</p>
+<ul>
+<li><tt>M3</tt> will start the spindle. <tt>M3 S5000</tt> will start the spindle and set speed to 5000 RPM.</li>
+<li><tt>M5</tt> will stop the spindle. Last set RPM is remembered and used for next <tt>M3</tt> command if S argument is not given.</li>
+<li><tt>M957</tt> will report the current spindle speed and PWM value.</li>
+<li><tt>M958</tt> will report the current PID parameters. <tt>M958 Px.xxx Ix.xxx Dx.xxx</tt> will set them (to save the new values, you need to edit config file manually).</li>
+</ul>
+<h3 id="toc9"><span>Tuning the PID parameters</span></h3>
+<p>There is no PID autotuning for spindle parameters currently. You can use the following process to manually tune the PID:</p>
+<ol>
+<li>Set dummy values with <tt>M958 P0.0001 I0 D0</tt></li>
+<li>Stop the spindle with <tt>M5</tt> and make sure spindle is ready to run on next <tt>M3</tt> command (i.e. power supply is on).</li>
+<li>Run <tt>M3 S100000</tt>, which should start the spindle at maximum speed.</li>
+<li>Measure the time <strong>T</strong> it takes for the spindle to reach full speed (using your ears and a stopwatch).</li>
+<li>Check the maximum RPM <strong>R</strong> the spindle reaches by running <tt>M957</tt></li>
+</ol>
+<p>Now set the parameters to:</p>
+<ul>
+<li>P = <strong>1/R</strong> (e.g. for 10&#160;000 RPM, set P = 0.0001)</li>
+<li>I = <strong>2/(R*T)</strong> (e.g. if it took 1 second to speed up to 10&#160;000 RPM, set I = 0.0002)</li>
+<li>D = <strong>T / R / 10</strong> (e.g. D = 0.00001)</li>
+</ul>
+<p>Some manual tuning may be needed after this. Test speed changes using the M3 command and try loading the spindle to see if it reacts fast enough to load changes.</p>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 14, last edited: <span class="odate time_1452984276 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">16 Jan 2016 22:44</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="http://www.wikidot.com/">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/spindle-control by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:15 GMT -->
+</html>

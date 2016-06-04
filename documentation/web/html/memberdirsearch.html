@@ -1,0 +1,1878 @@
+<!DOCTYPE HTML>
+
+<!-- Mirrored from www.nxp.com/webapp/connect/memberDirSearch.sp by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Member Directory Search</title>
+	
+		<link type="text/css" href="http://style.nxp.com/v1.43/shared/js/jquery/jquery_ui_min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://style.nxp.com/v1.43/fsl_connect/stylesheets/fslConnect.css" type="text/css"/>
+
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="http://style.nxp.com/files/css/thickbox.blockdiag.css" />
+
+<link rel="stylesheet" href="http://style.nxp.com/v1.43/connect/stylesheets/connect.css" type="text/css"/>
+		<link rel="stylesheet" href="http://style.nxp.com/v1.43/connect/stylesheets/jstree.style.css" type="text/css"/>
+
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/jquery/jquery.plus.min.js"></script>
+
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/public_common.js"></script>
+
+<script type="text/javascript" language="JavaScript" src="http://style.nxp.com/v1.43/connect/javascript/memberDirectory.js"></script>
+<script src="http://style.nxp.com/v1.43/shared/js/swfobject.js"></script>
+<script defer="defer" src="http://style.nxp.com/files/js/ie_onload.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/jquery/jquery.validate.js"></script>	
+<script type="text/javascript" language="JavaScript" src="http://style.nxp.com/v1.43/connect/javascript/jquery.jstree.js"></script><style>
+			#fslconnect .ccl.verticalDotted {
+			    padding: 0.75em !important;
+			    width: 44.5% !important;
+			}
+			#fslconnect .ccr, #fslconnect .ccr.verticalDotted-1{
+			    border-top-right-radius: 0.4em;
+			    margin: 0 0 0 17px;
+			    padding: 0.7em !important;
+			    width: 48% !important;
+			}
+		</style>
+		<script  type="text/javascript" charset="utf-8">
+	var i18n_en = { 'You are about to cancel your current enrollment into the Freescale Connect Program.  Are you sure?\nClick OK to cancel this enrollment or click Cancel to continue with enrollment.' : 'You are about to cancel your current enrollment into the Freescale Connect Program.  Are you sure?\nClick OK to cancel this enrollment or click Cancel to continue with enrollment.','You do not have permission to change this profile. A valid Freescale Connect user ID is required. Please contact the' : 'You do not have permission to change this profile. A valid NXP Partner Program user ID is required. Please contact the','Linux-Freescale' : 'Linux-NXP','Freescale Connect Partner Program Portal' : 'NXP Partner Program Portal','Freescale Connect Partner' : 'NXP Partner','Please enter at least one Freescale solution (device, application, tools or reference designs) supported by your service' : 'Please enter at least one NXP solution (device, application, tools or reference designs) supported by your service'}
+</script>
+<script type="text/javascript" charset="UTF-8">
+function getTranslatedText(string){
+	try {
+		var localize = {};
+		if(  (typeof i18n_en != 'undefined' ) && i18n_en !=null)
+		localize = i18n_en;
+		
+        string = string.toString() || '';
+        var args = arguments;
+        var pattern = (args.length > 0) ? new RegExp('%([1-' + args.length.toString() + '])', 'g') : null;
+        var str = localize.hasOwnProperty(string) ? localize[string] : string;
+       	return String(str).replace(pattern, function (match, index) { return args[index]; });
+    } catch (e) {
+    }	
+}
+</script>
+</head>
+<body id="fslconnect">
+		<!--googleoff: all-->
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1; width=device-width;">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<script>
+var conflict = false; 
+if(typeof $ != "undefined") 
+	conflict = true;
+</script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+var jQuery_1_9_1 = jQuery;
+if(conflict) 
+	jQuery_1_9_1 = jQuery.noConflict(true);
+</script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/historyMenu.js"></script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/header.js"></script>
+
+<link rel="stylesheet" href="http://style.nxp.com/shared/stylesheets/nxp-common.min.css" type="text/css" />
+ <link rel="stylesheet" href="http://style.nxp.com/files/css/nxp-common-delta.css" type="text/css" />
+
+<!--[if lte IE 9]>
+	<link rel="stylesheet" href="http://style.nxp.com/shared/stylesheets/nxp-common-ie.min.css" type="text/css" />
+	<script src="http://style.nxp.com/v1.43/files/js/html5shiv.js"></script>
+<![endif]--> 
+
+<!--[if lt IE 9]>	
+	<script src="http://style.nxp.com/v1.43/files/js/placeholders.min.js"></script>
+	<script src="http://style.nxp.com/v1.43/shared/js/respond.min.js"></script>
+	<link rel="stylesheet" href="http://style.nxp.com/shared/stylesheets/nxp-common-ie8.min.css">
+<![endif]-->
+
+ 
+<a name="top"></a>
+                <!-- <noindex> --><input type="hidden" name="baseUrl" value="http://www.nxp.com/webapp"/>
+        <input type ="hidden" name="PART_NUMBER" value=""/>
+        <input type ="hidden" name="SEARCH_OPERATOR" value="Contains"/>
+
+        <!--[if lt IE 9]>
+		<div class="ie-alert ie-alert-warning ie-alert-dismissible" role="alert" id="ie8Alert">
+		  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true" class="icon-close2"></span><span class="ie-alert-close">Close</span></button>
+		  Some features of this site may not be available on the browser version you are using. For an enhanced experience, please use a more current browser.</div>
+		<![endif]-->
+        
+        <header>
+       <div id="header" class="nxp-nav">
+        <div class="container">
+				<div class="row">
+					<div class="col-sm-1">
+        				<div id="fsl-logo">
+							<a title="NXP Semiconductors" href="http://www.nxp.com/">
+							<img alt="NXP Semiconductors" src="http://style.nxp.com/v1.43/shared/images/NXP_logo.png"></a>
+						</div>
+					</div>
+					<div class="col-sm-8 pull-right zIndex2">
+						<ul class="list-inline pull-right" id="top-nav">
+							<li>
+									<div class="dropdown" id="login-block">
+									
+	                                	<a href="https://www.nxp.com/security/public/login.LoginActionController.sp" class="login dtmHeaderLogin">
+	                                		<span class="icon-user nxp-orange-text"></span>&nbsp;Sign In or Register</a>
+	                                	</div>
+	                                </li>
+									<li>
+              <div class="dropdown" id="languages">
+                <a href="#" id="languageDropdownMenu" data-toggle="dropdown">
+                <span class="icon-globe2 nxp-blue-text"></span>&nbsp;English&nbsp;<span class="icon-arrow-down2"></span></a>
+                <ul id="language-actions" class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="languageDropdownMenu">
+                  <li role="presentation" class="select-lang">Select language</li>
+                 <!--  <li role="presentation"><a role="menuitem" class="lang-en selected">English <span class="icon-checkmark3 pull-right"></span></a></li> -->
+                  <li role="presentation"><a role="menuitem" class="lang-en selected" href="http://www.nxp.com/webapp/connect/memberDirSearch.sp?uc=true&amp;lang_cd=en">
+                 <span class="icon-globe2 nxp-blue-text pull-left"></span>
+                  <span class="icon-checkmark3 fsl-orange-text pull-right"></span> 
+				 &nbsp;English&nbsp;
+                 </a></li>
+                  
+                <li role="presentation"><a role="menuitem" class="lang-zh-Hans" href="http://www.nxp.com/zh-Hans/webapp/connect/memberDirSearch.sp?uc=true&amp;lang_cd=zh-Hans">
+                 <span class="flag flag-zh pull-left"></span>
+                  <span class=""></span> 
+				 &nbsp;中文&nbsp;
+                 </a></li>
+                  
+                <li role="presentation"><a role="menuitem" class="lang-ja" href="http://www.nxp.com/ja/webapp/connect/memberDirSearch.sp?uc=true&amp;lang_cd=ja">
+                 <span class="flag flag-ja pull-left"></span>
+                  <span class=""></span> 
+				 &nbsp;日本語&nbsp;
+                 </a></li>
+                  
+                <li role="presentation"><a role="menuitem" class="lang-ko" href="http://www.nxp.com/ko/webapp/connect/memberDirSearch.sp?uc=true&amp;lang_cd=ko">
+                 <span class="flag flag-ko pull-left"></span>
+                  <span class=""></span> 
+				 &nbsp;한국어&nbsp;
+                 </a></li>
+                  
+                <div class="dropdown-border"></div>
+                </ul>
+              </div>
+            </li>
+            	<li>
+            	<div id="shopping-cart">
+            			<a href="https://www.nxp.com/webapp/ecommerce.show_cart.framework"><span class="icon-cart nxp-green-text"></span>&nbsp;Cart</a>
+				</div>
+								</li>
+							</ul>
+							
+						</div>
+						<!--new searchBox-->
+						<div class="col-sm-8 pull-right" id="search-block">
+								<div class="input-group pull-right" id="search-input">
+								
+								
+							  
+							  <form id="search" class="search-form" name="gs" method="GET" action="http://www.nxp.com/search" onSubmit="return validateSubmitQuery(this);">
+							<div class="sf-row">
+							<div class="input-group-btn zIndex5" id="search-all">
+							
+								
+								  <button type="button" class="btn btn-default dropdown-toggle everything" data-toggle="dropdown" tabindex="-1"><span id="Default-choice-list">ALL &nbsp;</span><span class="icon-arrow-down2"></span></button>
+								  <ul id="search-choices" class="dropdown-menu" role="menu">	
+								    <!--Modified for CR-60627 by b7215 start -->
+								    <li id="All"  name="nxp_search_all_results"><a style="cursor:pointer"><span class="icon-globe"></span>&nbsp;&nbsp;ALL</a></li>
+									<li id="Products" name="nxp_search_products" ><a style="cursor:pointer"><span class="icon-part"></span>&nbsp;&nbsp;Products</a></li>
+									<li id="Documents" name="nxp_search_documents"><a style="cursor:pointer"><span class="icon-document"></span>&nbsp;&nbsp;Documents</a></li>
+									<li id="SoftwareTools" name="nxp_search_sw_tools"><a style="cursor:pointer"><span class="icon-tools"></span>&nbsp;&nbsp;Software & Tools</a></li>
+									<li id="Support" name="nxp_search_support"><a style="cursor:pointer"><span class="icon-question6"></span>&nbsp;&nbsp;Support</a></li>
+									<!-- <li id="Applications" name="nxp_search_applications"><a style="cursor:pointer"><span class="icon-tree3"></span>&nbsp;&nbsp;Applications</a></li>-->
+									<li id="Videos" name="nxp_search_videos"><a style="cursor:pointer"><span class="icon-film"></span>&nbsp;&nbsp;Videos</a></li>
+									<li id="Trainings" name="nxp_search_training"><a style="cursor:pointer"><span class="icon-graduation"></span>&nbsp;&nbsp;Training</a></li>
+									<li id="Community" name="nxp_search_community"><a style="cursor:pointer"><span class="icon-bubbles"></span>&nbsp;&nbsp;Community</a></li>
+									<li id="Blogs" name="nxp_search_blogs"><a style="cursor:pointer"><span class="icon-bubble11"></span>&nbsp;&nbsp;Blogs</a></li>
+									<li id="Partners" name="nxp_search_partner"><a style="cursor:pointer"><span class="icon-user7"></span>&nbsp;&nbsp;Partners</a></li>
+								    <li id="CrossReference" name="CrossReference"><a style="cursor:pointer"><span class="icon-shuffle2"></span>&nbsp;&nbsp;Cross Reference</a></li>
+								    <li id="PackageSearch" name="PackageSearch"><a style="cursor:pointer"><span class="icon-key-keyboard"></span>&nbsp;&nbsp;Package Search</a></li>
+								    <li id="ChemicalFinder" name="ChemicalFinder"><a style="cursor:pointer"><span class="icon-leaf2"></span>&nbsp;&nbsp;Chemical Finder</a></li>
+								    <li id="ProductSelector" name="ProductSelector"><a style="cursor:pointer"><span class="icon-equalizer"></span>&nbsp;&nbsp;Product Selector</a></li>
+								    <!-- Modified for CR-60627 by b47215 end -->
+								  </ul>
+								  
+								  
+								</div>
+									<input type="text" value="" autocomplete="off" onkeyup=" searchTop(event)" id="parts" name="q"
+										placeholder="Search..." class="form-control"/>
+									
+									<div class="input-group-btn " id="keyword-button-div" >
+								  <button style="cursor:pointer" type="submit" class="btn btn-default search-submit"><span class="icon-search2 fsl-gray-text"></span></button>
+								<table style="width: 205px; visibility: hidden; margin-left:-368px; margin-top:00px;"
+									id="result_suggest" cellpadding="0" cellspacing="0"
+									class="ss-gac-m"></table>
+								</div>
+								
+								
+		
+							   
+							    
+								<input id="client" name="client" value="nxp_search_all_results"
+									type="hidden"> <input id="site" name="site"
+									value="nxp_en" type="hidden"> <input
+									id="proxystylesheet" name="proxystylesheet"
+									value="nxp_search_style_fe" type="hidden"> <input
+									id="sort" name="sort" value="date:D:L:d1" type="hidden">
+								<input id="oe" name="oe" value="UTF-8" type="hidden"> <input
+									id="ie" name="ie" value="UTF-8" type="hidden"> <input
+									id="ud" name="ud" value="1" type="hidden"> <input
+									id="output" name="output" value="xml_no_dtd" type="hidden">
+								<input id="exclude_apps" name="exclude_apps" value="1"
+									type="hidden"> <input id="callback" name="callback"
+									value="ss_show" type="hidden"> <input id="lang_cd"
+									name="lang_cd" value="en"
+									type="hidden"> <input id="filter" name="filter" value="0"
+									type="hidden"> <input id="getfields" name="getfields"
+									value="*" type="hidden"> <input type="hidden"
+									name="baseUrl" value="http://www.nxp.com/webapp"> <input
+									type="hidden" name="SEARCH_OPERATOR" value="Contains"> <input
+									type="hidden" name="attempt" value="-1"> <input
+									type="hidden" name="rc" value="1"> <input type="hidden"
+									name="hl" value="en">
+									
+									<input id="dnavs" name="dnavs" type="hidden"> 
+									</div>
+							</form>
+
+						</div>
+						<!--new searchBox-->
+						</div>
+					</div>
+					<div class="navbar navbar-default megamenu">
+					<div class="navbar-header">
+						
+						<a href="#nogo" data-toggle="collapse" data-target="#navbar-collapse-fsl" class="navbar-toggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</a>
+					</div>
+				<div class="container">
+				<div id="navbar-collapse-fsl" class="navbar-collapse collapse">
+					<div class="navbar-center">
+					   
+  <ul class="nav navbar-nav"> 
+        <li class="dropdown  megamenu-fw productsmenu"> 
+          <a href="http://www.nxp.com/webapp/sps/library/prod_lib.jsp" data-toggle="dropdown" class="dropdown-toggle">PRODUCTS</a> 
+          <div class="dropdown-menu dtmMegaMenu" data-dtmName="PRODUCTS"> 
+              <div class="row"> 
+                <div class="col-sm-4"> 
+	                  <h5><a href="http://www.nxp.com/products/arm-processors:ARM-ARCHITECTURE">ARM<sup>&reg;</sup> PROCESSORS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <ul> 
+                    <li><a href="http://www.nxp.com/products/arm-processors/kinetis-cortex-m:KINETIS">Kinetis Cortex&reg;-M Microcontrollers</a></li> 
+                    <li><a href="http://www.nxp.com/products/arm-processors/lpc-arm-cortex-m-mcus:LPC-ARM-CORTEX-M-MCUS">LPC Cortex-M Microcontrollers</a></li> 
+                    <li><a href="http://www.nxp.com/products/arm-processors/lpc-arm7-arm9-mcus:LPC-ARM7-ARM9-MCUS">LPC ARM7/ARM9 Microcontrollers</a></li> 
+                    <li><a href="http://www.nxp.com/products/arm-processors/i.mx-applications-processors-based-on-arm-cores:IMX_HOME">i.MX Applications Processors</a></li> 
+                    <li><a href="http://www.nxp.com/products/power-architecture-processors/qoriq-platforms:QORIQ_HOME">QorIQ Multicore Processors</a></li> 
+              </ul> 
+	                  <h5><a href="http://www.nxp.com/products/power-architecture-processors:POWER-ARCHITECTURE">POWER ARCHITECTURE<sup>&reg;</sup><br/>PROCESSORS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+	                  <h5><a href="http://www.nxp.com/products/more-processors:MORE-PROCESSORS">MORE PROCESSORS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                </div> 
+                <div class="col-sm-4"> 
+	                  <h5><a href="http://www.nxp.com/products/discretes-and-logic:DISCRETES-AND-LOGIC">DISCRETE & LOGIC&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <ul > 
+                    <li><a href="http://www.nxp.com/products/discretes-and-logic/bipolar-transistors:MC_71078">Bipolar Transistors</a></li> 
+                    <li><a href="http://www.nxp.com/products/diodes-beta:MC_71100">Diodes</a></li> 
+                    <li><a href="http://www.nxp.com/products/esd-protection-beta:MC_56902">ESD Protection, TVS, Filters</a></li> 
+                    <li><a href="http://www.nxp.com/products/logic-beta:MC_50808">Logic</a></li> 
+                    <li><a href="http://www.nxp.com/products/mosfets-beta:MC_71128">MOSFETs</a></li> 
+                  </ul> 
+                  <h5><a href="http://www.nxp.com/products/zidentification-and-security-beta:MC_53420">IDENTIFICATION & SECURITY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <ul > 
+                    <li><a href="http://www.nxp.com/products/identification-and-security/smart-card-ics/mifare-ics:MC_53422">MIFARE</a></li> 
+                    <li><a href="http://www.nxp.com/products/identification-and-security/nfc-and-reader-ics:MC_71110">NFC</a></li> 
+               	  </ul> 
+                    <h5><a href="http://www.nxp.com/products/interface-and-connectivity:INTERFACE-AND-CONNECTIVITY">INTERFACE AND CONNECTIVITY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  	<ul > 
+                    	<li><a href="http://www.nxp.com/products/interface-and-connectivity/interface-and-system-management/i2c:MC_41735">I<sup>2</sup>C</a></li> 
+                    	<li><a href="http://www.nxp.com/products/interface-and-connectivity/wired-connectivity/usb-type-c:USB-TYPE-C">USB Type-C</a></li> 
+               		</ul> 
+                    <h5><a href="http://www.nxp.com/products/media-and-audio-processing:MEDIA-AND-AUDIO-PROCESSING">MEDIA AND AUDIO PROCESSING&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                    <h5><a href="http://www.nxp.com/products/power-management:POWER-MANAGEMENT">POWER MANAGEMENT&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                    <h5><a href="http://www.nxp.com/products/rf:RF_HOME">RF&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                    <h5><a href="http://www.nxp.com/products/sensors:SNSHOME">SENSORS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                </div> 
+                <div class="col-sm-4"> 
+	                    <h5 ><a href="http://www.nxp.com/products/automotive-products:MC_50802">AUTOMOTIVE PRODUCTS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+    								<ul> 
+  										<li><a href="http://www.nxp.com/products/analog-power-management/advanced-automotive-safety/automotive-radar:MITERWAVEICS">Automotive Radar</a></li> 
+  										<li><a href="http://www.nxp.com/products/zinterface-and-connectivity-beta/can-lin-flexray-transceivers-beta:MC_50862">CAN/LIN/FlexRay Transceivers</a></li> 
+  										<li><a href="http://www.nxp.com/products/automotive-products/identification-and-security:IDENTIFICATION-SECURITY-AUTO">Car Access & Immobilizers</a></li> 
+  										<li><a href="http://www.nxp.com/products/automotive-products/media-and-audio-processing/multi-standard-digital-radio:MC_53738">Multi Standard Digital Radio</a></li> 
+  										<li><a href="http://www.nxp.com/products/automotive-products/microcontrollers-and-processors:MICROCONTROLLERS-PROCESSORS-AUTO">S12 & S32 MCUs/MPUs</a></li> 
+  										<!--li><a href="http://www.nxp.com/products/more-processors/16-bit-mcus/s12-magni-mixed-signal-mcusmagniv:S12MAGNIVMCU?cof=0&am=0">S12 MagniV Microcontroller</a></li> 
+  										<li><a href="http://www.nxp.com/products/arm-processors/s32-processors-and-microcontrollers:S32V200">S32 MCUs/MPUs</a></li--> 
+   <hr/> 
+	                    <h5 ><a href="http://www.nxp.com/tools/embedded-software-and-tools:DEVELOPER_HOME">DEVELOPMENT TOOLS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+	                    <h5 ><a href="http://www.nxp.com/webapp/software-center/library.jsp#/home/query/~query~/~filter~/popularity/0 ">SOFTWARE CENTER&nbsp;<span class="icon-angle-right"></span></a></h5> 
+   <hr/> 
+	                    <h5 >MORE PRODUCT INFORMATION&nbsp;</h5> 
+                  <ul > 
+                    <li><a href="http://www.nxp.com/products/products:PCPRODCAT">All Products</a></li> 
+                    <li><a href="http://www.nxp.com/webapp/crosscheck/competitorXRef.sp">Competitor Cross Reference Tool</a></li> 
+                    <li><a href="http://www.nxp.com/packages">Packages</a></li> 
+                    <li><a href="http://www.nxp.com/about/technology-programs/product-longevity:PRDCT_LONGEVITY_HM">Product Longevity Program</a></li> 
+                    <li><a href="http://www.nxp.com/webapp/parametricSelector.sp?">Product Selector</a></li> 
+               </ul> 
+                </div> 
+              </div> 
+          <div class="dropdown-border"></div> 
+          </div> 
+      </li> 
+      <li class="dropdown megamenu-fw applicationsmenu"> 
+        <a href="http://www.nxp.com/webapp/sps/site/homepage.jsp?code=IFINDSTRYFCS" data-toggle="dropdown" class="dropdown-toggle">SOLUTIONS</a> 
+        <div class="dropdown-menu dtmMegaMenu" data-dtmName="SOLUTIONS"> 
+            <div class="row" style="padding:0 15px;"> 
+  			  <div class="col-sm-6" style="padding:0 5px;"> 
+  				<h5><a href="http://www.nxp.com/applications/smart-connected-solutions:SMART-CONNECTED-SOLUTIONS" style="padding-left: 0px !important;">SMART CONNECTED SOLUTIONS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+  				<a href="http://www.nxp.com/applications/smart-connected-solutions:SMART-CONNECTED-SOLUTIONS"><img src="http://cache.nxp.com/files/graphic/banner/main_pu/SMART-CONNECTED-DEVICES-MENU.jpg" class="img-responsive" alt="Smart Connected Devices" style="width:33%;"></a> 
+  				<p>An unrivaled portfolio of solutions for the Internet of Things (IoT), spanning everything from the end node, to the gateway, to the cloud.</p> 
+  			  </div> 
+              <div class="col-sm-6" style="padding:0 5px;"> 
+  				<h5><a href="http://www.nxp.com/applications/secure-connected-vehicle:SECURE-CONNECTED-VEHICLE" style="padding-left: 0px !important;">SECURE CONNECTED VEHICLE&nbsp;<span class="icon-angle-right"></span></a></h5> 
+  				<a href="http://www.nxp.com/applications/secure-connected-vehicle:SECURE-CONNECTED-VEHICLE"><img src="http://cache.nxp.com/files/graphic/banner/main_pu/SECURE-CONNECTED-VEHICLE-MENU.jpg" class="img-responsive" alt="Secure Connected Vehicle" style="width:33%;"></a> 
+  				<p>Innovative solutions that enable breakthrough automotive designs in and around the car, enhancing safety and the driver experience.</p> 
+  			  </div> 
+            </div> 
+            <div class="row" style="padding:0 15px;"> 
+  			  <div class="col-sm-6" style="padding:0 5px;"> 
+  				<h5><a href="http://www.nxp.com/applications/solutions-for-the-iot-and-adas/smart-connected-solutions-for-the-iot/smart-cities-in-the-age-of-iot:SMART-CITIES" style="padding-left: 0px !important;" >SMART CITIES&nbsp;<span class="icon-angle-right"></span></a></h5> 
+  				<a href="http://www.nxp.com/applications/solutions-for-the-iot-and-adas/smart-connected-solutions-for-the-iot/smart-cities-in-the-age-of-iot:SMART-CITIES"><img src="http://cache.nxp.com/files/graphic/banner/SMART-CITIES-BANNER.jpg" class="img-responsive" alt="Smart Cities" style="width:33%;"></a> 
+  				<p>Ready for the future? We are. Providing reliable, more efficient technologies to safely navigate the growing demand of urban IoT.</p> 
+              </div> 
+  			  <div class="col-sm-6" style="padding:0 5px;"> 
+  				<h5><a href="http://www.nxp.com/applications/end-to-end-security-and-privacy:END-TO-END-SECURITY-AND-PRIVACY" style="padding-left: 0px !important;">END-TO-END SECURITY AND PRIVACY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+  				<a href="http://www.nxp.com/applications/end-to-end-security-and-privacy:END-TO-END-SECURITY-AND-PRIVACY"><img src="http://cache.nxp.com/files/graphic/banner/main_pu/SECURITY-AND-PRIVACY-MENU.jpg" class="img-responsive" alt="End to End Security and Privacy" style="width:33%;"></a> 
+  				<p>Security solutions that deliver the highest levels of protection, while making it as easy and convenient for users to interact with any service or device.</p> 
+              </div> 
+            </div> 
+            <div class="row" style="padding:0 15px;"> 
+  			  <div class="col-sm-6" style="padding:0 5px;"> 
+              </div> 
+  			  <div class="col-sm-6" style="padding:0 5px;"> 
+  				<h5><a href="http://www.nxp.com/applications/solutions-for-the-iot-and-adas/smart-society:SMART-SOCIETY" style="padding-left: 0px !important;">SMART SOCIETY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+  				<a href="http://www.nxp.com/applications/solutions-for-the-iot-and-adas/smart-society:SMART-SOCIETY"><img src="http://cache.nxp.com/files/graphic/banner/main_pu/SMART-SOCIETY-MENU.jpg" class="img-responsive" alt="End to End Security and Privacy" style="width:33%;"></a> 
+  				<p>Creating the infrastructure for the next generation of innovators through STEM programs, start-up communities and educational tools.</p> 
+              </div> 
+            </div> 
+          <div class="dropdown-border"></div> 
+        </div> 
+      </li> 
+        <li class="dropdown megamenu-fw trainingmenu"> 
+          <a href="http://www.nxp.com/training/sales-and-support:SUPPORTHOME" data-toggle="dropdown" class="dropdown-toggle">SUPPORT</a> 
+          <div class="dropdown-menu dtmMegaMenu" data-dtmName="SUPPORT"> 
+              <div class="row"> 
+                <div class="col-sm-4"> 
+	                      <h5><a href="http://www.nxp.com/pages/communities:COMMUNITIES" target="_blank">NXP COMMUNITY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <ul > 
+                    <li><a href="https://community.freescale.com/community/codewarrior" target="_blank">CodeWarrior Development Tools</a></li> 
+                    <li><a href="https://community.freescale.com/community/imx" target="_blank">i.MX Community (SoCs and PMIC Support)</a></li> 
+                    <li><a href="https://community.freescale.com/community/nfc" target="_blank">NFC</a></li> 
+                    <li><a href="https://community.freescale.com/community/iot-center" target="_blank">IoT Solutions Center</a></li> 
+                    <li><a href="https://community.freescale.com/community/kinetis" target="_blank">Kinetis Microcontrollers</a></li> 
+                    <li><a href="https://www.lpcware.com/forum" target="_blank">LPC Forums</a></li> 
+                    <li><a href="https://community.freescale.com/community/qoriq" target="_blank">QorIQ Processors</a></li> 
+                    <li><a href="https://community.freescale.com/community/16bit" target="_blank">S12/MagniV Microcontrollers</a></li> 
+                    <li><a href="https://community.freescale.com/community/wireless-connectivity" target="_blank">Wireless Connectivity</a></li> 
+                    <li><a href="http://www.nxp.com/pages/communities:COMMUNITIES" target="_blank">View All</a></li> 
+                  </ul> 
+                </div> 
+                <div class="col-sm-4"> 
+                  <h5><a href="http://www.nxp.com/training/online-academy:ON_DEMAND_TRNG">ONLINE TRAINING ACADEMY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <h5 ><a href="http://www.nxp.com/training/classroom-training-events:CLASSROOM-TRAINING-EVENTS">CLASSROOM TRAINING&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <ul  > 
+                    <li><a href="http://www.nxp.com/support/classroom-training-events/nxp-technology-forum:NXP-FTF-TECH-FORUM-HOME">NXP FTF Tech Forum</a></li> 
+                    <li><a href="http://www.nxp.com/support/classroom-training-events/nxp-tech-days:NXP-TECH-DAYS">NXP Technology Days</a></li> 
+                    <li><a href="http://www.nxp.com/training/classroom-training-events/industry-events:EVENTS_HOME">Industry Events</a></li> 
+                    <li><a href="http://www.nxp.com/training/classroom-training-events/certified-training-workshops:LIVE_TRNG">Certified Training Workshops</a></li> 
+                  </ul> 
+                  <h5><a href="http://www.nxp.com/training/university-programs:UNIVPROGRAM_HOME_CAT">UNIVERSITY PROGRAMS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <h5><a href="http://www.nxp.com/video/vault/?searchLabel=renderHomepage">VIDEO VAULT&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                </div> 
+                <div class="col-sm-4"> 
+                  <h5><a href="http://www.nxp.com/training/sales-and-support:SUPPORTHOME">SUPPORT RESOURCES&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <ul  > 
+                    <li><a href="http://www.nxp.com/pages/documentation:DOCUMENTATION">Documentation Library</a></li> 
+                    <li><a href="http://www.nxp.com/training/sales-and-support:SUPPORTHOME">Sales and Support</a></li> 
+                    <li><a href="http://www.nxp.com/pages/nxp-professional-services:PROFESSIONAL-SERVICES">Professional Engineering Services</a></li> 
+                    <li><a href="http://www.nxp.com/webapp/software-center/library.jsp#/home/query/~query~/~filter~/popularity/0">Software Center</a></li> 
+                  </ul> 
+   	              <h5><a href="http://www.nxp.com/webapp/connect/memberDirSearch.sp">NXP PARTNER PROGRAM&nbsp;<span class="icon-angle-right"></span></a></h5> 	
+                </div> 
+              </div> 
+          <div class="dropdown-border"></div> 
+          </div> 
+        </li> 
+      <li class="dropdown  megamenu-fw aboutmenu"> 
+        <a href="http://www.nxp.com/about/about-nxp:COMPANY_INFO_HOME" data-toggle="dropdown" class="dropdown-toggle">ABOUT</a> 
+        <div class="dropdown-menu dtmMegaMenu" data-dtmName="ABOUT"> 
+            <div class="row"> 
+              <div class="col-sm-4"> 
+	                      <h5 ><a href="http://www.nxp.com/about/about-nxp:COMPANY_INFO_HOME">ABOUT NXP&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                <ul > 
+                <li><a href="http://www.nxp.com/about/worldwide-locations:GLOBAL_SITES">NXP Worldwide</a></li> 
+                <li><a href="http://www.nxp.com/about/worldwide-locations/worldwide-sales-offices/distributor-network:DISTRIBUTORS">Distributor Network</a></li> 
+                <li><a href="http://media.nxp.com/">Media Center</a></li> 
+                <li><a href="http://investors.nxp.com/">Investor Relations</a></li> 
+                <li><a href="http://www.nxp.com/about/careers-at-nxp:CAREERS">Careers</a></li> 
+                <li><a href="http://www.nxp.com/about/our-customers:ABOUT_CUSTOMERS">Customers</a></li> 
+                <li><a href="http://blog.nxp.com/" target="_blank">Blogs</a></li> 
+              </ul>  
+              </div> 
+              <div class="col-sm-4"> 
+              <h5 ><a href="http://www.nxp.com/about/corporate-responsibility:CORP_SOCIAL_RESP">CORPORATE RESPONSIBILITY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                <ul > 
+                <li><a href="http://www.nxp.com/about/technology-leadership/environmentally-preferred-products:ABUENVPRFPRDX">Environmental Compliance Office</a></li> 
+                <li><a href="http://www.nxp.com/about/corporate-responsibility/ethics:ETHICS">Ethics</a></li> 
+                <li><a href="http://www.nxp.com/about/corporate-responsibility/employees:EMPLOYEES">Employees</a></li> 
+              </ul>  
+              <h5><a href="http://www.nxp.com/webapp/connect/memberDirSearch.sp">NXP PARTNER PROGRAM&nbsp;<span class="icon-angle-right"></span></a></h5> 	
+              <h5 ><a href="http://www.nxp.com/about/technology-leadership:RESEARCH_AND_DEVELOPMENT">TECHNOLOGY LEADERSHIP&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                <ul > 
+                <li><a href="http://www.nxp.com/about/technology-programs/product-longevity:PRDCT_LONGEVITY_HM">Product Longevity</a></li> 
+                <li><a href="http://www.nxp.com/about/technology-leadership/quality:QUALITY_HOME">Quality</a></li> 
+                <li><a href="http://www.nxp.com/about/technology-leadership/safeassure-functional-safety-program:SAFETYPRGRM">SafeAssure</a></li> 
+                </ul>  
+              </div> 
+            </div> 
+
+          <div class="dropdown-border"></div> 
+        </div> 
+      </li> 
+    </ul> 
+   
+</div>
+					</div>
+					</div>
+					</div>
+				</div>
+				</div>
+				
+	<input type="hidden" id="sechighlight" name="sechighlight" value="noHighlight" />
+
+<script type="text/javascript">
+
+
+
+jQuery_1_9_1('[data-toggle=dropdown]').dropdown();
+
+
+jQuery_1_9_1(document).ready(function ($) 
+{   
+	var nonSecureHost="http://www.nxp.com/webapp";
+	var siteBlogs="nxp_blogs";
+	var siteCommunity="nxp_community";
+	var siteSupport="nxp_support_en";
+	var siteVar="nxp_en";
+	//code added for CR-59954 starts
+	var secHighlight = $('#sechighlight').val();
+	 $('.'+secHighlight).css("background-color", "#ffffff");
+	 $('.'+secHighlight+' > a ').css("color", "#777777");
+	//code added for CR-59954 ends
+	document.getElementById("dnavs").value="";	
+	$("#All").hide();
+	$('#ProductSelector').mouseover(function (e){
+  		
+		$("#parts").prop('disabled', true);
+		$("#parts").css('background-color' , '#DEDEDE');
+		$("#parts").css('color' , '#DEDEDE');
+	});
+	$('#ProductSelector').mouseout(function (e){
+		if (! $(this).data("sticky")){
+		$("#parts").prop('disabled', false);
+		$("#parts").css('background-color' , '#FFFFFF');
+		$("#parts").css('color' , '#666666');
+		}
+	
+	});
+  	$('#search-choices li').click(function () {
+		
+ 	document.getElementById("client").value  = $(this).attr('name');
+  	document.getElementById("Default-choice-list").innerHTML=$(this).text() + " ";
+
+  	if("Blogs"!=$(this).attr('id') && "Community"!=$(this).attr('id') && "Support"!=$(this).attr('id')){
+  		document.getElementById("site").value  =siteVar;
+  	  	}
+
+  	if("Blogs"==$(this).attr('id')){
+  		document.getElementById("site").value  =siteBlogs;
+  	}
+  	if("Community"==$(this).attr('id')){
+  		document.getElementById("site").value  =siteCommunity;
+  	}
+  	if("Support"==$(this).attr('id')){
+  		document.getElementById("site").value  =siteSupport;
+  	}
+
+  	if("ProductSelector"==document.getElementById("client").value){
+  		$(this).data("sticky", true);
+  		$("#parts").prop('disabled', true);
+  		$("#parts").css('background-color' , '#DEDEDE');
+  		$("#parts").css('color' , '#DEDEDE');
+  		var lang=document.getElementById("lang_cd").value;
+  		if("en"==lang)
+	     window.location=nonSecureHost+"/parametricSelector.sp?";
+	  	else
+	  	 window.location=nonSecureHost+"/parametricSelector.sp?lang_cd="+lang;
+  	  	
+
+    }
+	
+  	if($.trim($(this).text())!="All"){
+  	document.getElementById("dnavs").value=$(this).attr('id'); 
+	$('ul li').show();
+	$(this).hide();
+  	}
+  	else{
+  	document.getElementById("dnavs").value="";
+    $('ul li').show();
+    $("#All").hide();
+    }
+  });
+  	
+});
+
+
+var LANG_CD_LIST = "zh-Hans,ja,ko";
+var URL_DOMAIN = "www.nxp.com";
+var URL_MAJOR_DOMAIN = "nxp.com";
+var CACHE_URL_DOMAINS = ["cache.nxp.com", "style.nxp.com", "image.nxp.com"];
+</script>
+        	</header>
+     <!-- </noindex> --><script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/favorite.js"></script>
+<script>
+
+var ss_gsa_host = "//www.nxp.com";
+var nxp_domain = "http://www1.nxp.com/";
+//Added by b22154 for CR-60627 for using in gsa_suggestions.js
+var blogsClient="nxp_search_blogs";
+var communityClient="nxp_search_community";
+var supportClient="nxp_search_support";
+</script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/search/javascript/gsa_suggestions.js"></script>
+
+<style type="text/css"> 
+.ss-gac-m {
+background: white;
+border: 1px solid black;
+cursor: default;
+font-size: 13px;
+line-height: 17px;
+margin: 0;
+position: absolute;
+z-index: 99;
+}
+
+.ss-gac-b {
+  background: #36c;
+  color: white;
+}
+
+.ss-gac-c {
+  overflow: hidden;
+  padding-left: 3px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.ss-gac-d {
+  color: green;
+  font-size: 10px;
+  overflow: hidden;
+  padding: 0 3px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.ss-gac-b td {
+  color: white;
+}
+</html>
+
+.ss-gac-d {
+	display:none;
+}
+
+</style>
+<!--googleon: all-->
+
+<!DOCTYPE HTML>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <div id="pgctwrp">
+	
+</div>
+<!--Modification start by B47191 on 26 August 2013 For Connect Globalization CR52322 -->
+<!--Modification End by B47191 on 26 August 2013 For Connect Globalization CR52322 -->		
+
+
+<style>
+#tabsJQ .ui-tabs-nav li a:hover {
+    background: none repeat scroll 0 0 #FFCA66 !important;
+    border-top-left-radius: 0.3em !important;
+    border-top-right-radius: 0.3em !important;
+    color: #FFFFFF !important;
+}
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.ccl,.ccr').css({'min-height':'0px','border':'none'}); // Added by B48931 for Cr54489 on 04Mar2014
+		$('.tab-link').click(function(){ $('#tabsJQ').tabs('select', parseInt($(this).attr('data-tabnum'))); })
+
+		$("select[name='NXP Connect Partners']").get(0).selectedIndex = 0;
+//added for CSS Rebranding
+		$('#tabsJQ').removeClass('ui-widget');
+		
+	 });
+	
+</script>
+<script type="text/javascript">
+
+var devTypeTreeXMLStr = "<deviceTypeTree id='root'><deviceType id='000NTM15M9QX``Automotive Products' desc='Automotive Products'><deviceType id='000NVIW6BDXT``Identification and Security' desc='Identification and Security'><deviceType id='010NTCVCTHUE``Automotive NFC' desc='Automotive NFC'></deviceType><deviceType id='020NTCVE5ASK``Immobilizer' desc='Immobilizer'></deviceType><deviceType id='030NTCVFBJ1``Passive Keyless Entry' desc='Passive Keyless Entry'></deviceType><deviceType id='040NTCVGQ5DU``Remote Keyless Entry' desc='Remote Keyless Entry'></deviceType><deviceType id='050NTCVHZNYI``RF Link' desc='RF Link'></deviceType></deviceType><deviceType id='000NVG7I3NW5``Power Management' desc='Power Management'><deviceType id='010NVG7L9FIW``Battery Management' desc='Battery Management'><deviceType id='005NAPTX4H1Y``Battery Cell Controllers' desc='Battery Cell Controllers'></deviceType><deviceType id='020LY9FYVHR6``Battery Sensors' desc='Battery Sensors'></deviceType></deviceType><deviceType id='040N9UFT5O6X``Engine and DC Motor Control' desc='Engine and DC Motor Control'><deviceType id='005N9UGFYPK``High-Current Motor Control' desc='High-Current Motor Control'></deviceType><deviceType id='015N9UGLL824``MCU and Injection Driver' desc='MCU and Injection Driver'></deviceType><deviceType id='030M98448``H-Bridges' desc='H-Bridges'></deviceType><deviceType id='070M985296881182``Powertrain/Engine Control' desc='Powertrain/Engine Control'></deviceType></deviceType><deviceType id='050NVG8BGOZG``Lighting Driver and Controller ICs' desc='Lighting Driver and Controller ICs'><deviceType id='000NTM1BVFUV``Automotive Lighting' desc='Automotive Lighting'></deviceType><deviceType id='000NX1TGHJQ6``Automotive Lighting, LED Driver ICs' desc='Automotive Lighting, LED Driver ICs'></deviceType><deviceType id='150NTCU44EWS``Light Position Controllers' desc='Light Position Controllers'></deviceType></deviceType><deviceType id='060M985296241684``Linear Regulator' desc='Linear Regulator'></deviceType><deviceType id='070NY4S79JCX``PMICs' desc='PMICs'><deviceType id='010M4SCPNJ4Z``PMICs for i.MX Processors' desc='PMICs for i.MX Processors'></deviceType><deviceType id='020M4SCRD656``Configurable PMICs (PF Series)' desc='Configurable PMICs (PF Series)'></deviceType></deviceType><deviceType id='100M985296533526``Switching Regulator' desc='Switching Regulator'></deviceType></deviceType><deviceType id='000NVIWJ1IPS``Interface and Connectivity' desc='Interface and Connectivity'><deviceType id='010NVIWJYEN1``Interface and System Management' desc='Interface and System Management'><deviceType id='010NTCLV3M0H``Automotive RTCs' desc='Automotive RTCs'></deviceType><deviceType id='070M985305445709``DSI and PSI5 Components' desc='DSI and PSI5 Components'></deviceType><deviceType id='110NAPU0TJ6B``Isolated Communications Devices' desc='Isolated Communications Devices'></deviceType><deviceType id='120NTM47WMPT``LCD Drivers' desc='LCD Drivers'></deviceType><deviceType id='130NTM48CF18``LED Controllers' desc='LED Controllers'></deviceType></deviceType><deviceType id='020NVIWKSG4L``Wired Connectivity' desc='Wired Connectivity'><deviceType id='010NTCM9U1XF``CAN Protocol Controllers' desc='CAN Protocol Controllers'></deviceType><deviceType id='020NTCMHGJZN``CAN/LIN System Basis Chips' desc='CAN/LIN System Basis Chips'></deviceType><deviceType id='030NTCMB42X6``CAN~LIN~FlexRay Transceivers' desc='CAN/LIN/FlexRay Transceivers'><deviceType id='010M985304496393``CAN Physical Interfaces' desc='CAN Physical Interfaces'></deviceType><deviceType id='020NTCMCI40U``CAN Transceivers' desc='CAN Transceivers'></deviceType><deviceType id='030NTCMDYJXH``FlexRay Transceivers' desc='FlexRay Transceivers'></deviceType><deviceType id='040M98445``LIN, ISO9141, J1850 Physical Interfaces' desc='LIN, ISO9141, J1850 Physical Interfaces'></deviceType><deviceType id='050NTCMFZ10Q``LIN Transceivers' desc='LIN Transceivers'></deviceType></deviceType><deviceType id='040NTM3TFB00``Ethernet' desc='Ethernet'></deviceType><deviceType id='070JF7ERT7SX``System Basis Chip' desc='System Basis Chip'></deviceType><deviceType id='080NX1RAOGCF``USB Host Controller' desc='USB Host Controller'></deviceType></deviceType><deviceType id='030NVIWLZJRH``Wireless Connectivity' desc='Wireless Connectivity'><deviceType id='050NY10B9DIJ``NFMI Radio Solutions' desc='NFMI Radio Solutions'></deviceType><deviceType id='060NTM43PGFH``RFID Traceability' desc='RFID Traceability'></deviceType></deviceType></deviceType><deviceType id='000NWMUMRDIJ``Microcontrollers and Processors' desc='Microcontrollers and Processors'><deviceType id='010NY4PDL70C``ARM MCUs and MPUs' desc='ARM MCUs and MPUs'><deviceType id='015N199HJIN9``EA Automotive Series' desc='EA Automotive Series'></deviceType><deviceType id='050N366P2OV5``MAC57Dxxx 32-bit ARM MCUs' desc='MAC57Dxxx 32-bit ARM MCUs'></deviceType><deviceType id='080NK2V5EJ4Z``S32 Processors and Microcontrollers' desc='S32 Processors and Microcontrollers'></deviceType><deviceType id='090NY4PIHDJB``i.MX Application Processors' desc='i.MX Application Processors'><deviceType id='010LLAV55NYJ``i.MX 6 Processors' desc='i.MX 6 Processors'></deviceType><deviceType id='015L0VJIU24D``i.MX53 Processors' desc='i.MX53 Processors'></deviceType><deviceType id='020KFP1BXFTB``i.MX51 Processors' desc='i.MX51 Processors'></deviceType><deviceType id='040KHP4BTH1Y``i.MX35 Processors' desc='i.MX35 Processors'></deviceType><deviceType id='050KFP1C87YF``i.MX31 Processors' desc='i.MX31 Processors'></deviceType><deviceType id='060L0VJEG35I``i.MX28 Processors' desc='i.MX28 Processors'></deviceType><deviceType id='070KKQ68P7SX``i.MX25 Processors' desc='i.MX25 Processors'></deviceType><deviceType id='086LLAV164FY``i.MX6Q Processors' desc='i.MX6Q Processors'></deviceType><deviceType id='087LLAV387SX``i.MX6D Processors' desc='i.MX6D Processors'></deviceType></deviceType></deviceType><deviceType id='021MC1PEYNJW``Image Cognition Processors' desc='Image Cognition Processors'></deviceType><deviceType id='025NY4PEN9B0``32-bit Power Architecture' desc='32-bit Power Architecture'><deviceType id='010M2OH5WOV5``MPC57xx MCUs' desc='MPC57xx MCUs'></deviceType><deviceType id='020K14V9813A``MPC56xx MCUs' desc='MPC56xx MCUs'></deviceType><deviceType id='0301067371573986721160325``MPC55xx MCUs' desc='MPC55xx MCUs'></deviceType><deviceType id='0401061909289709724730898``mobileGT (51xx/52xx)' desc='mobileGT (51xx/52xx)'></deviceType></deviceType><deviceType id='080M0zGQK100``16-bit HCS12 &amp;amp; S12X' desc='16-bit HCS12 &amp;amp; S12X'></deviceType><deviceType id='120LMLIMLHR6``16-bit S12 MagniV' desc='16-bit S12 MagniV'></deviceType><deviceType id='130M3UZ8MPK``8-bit S08 5.5V MCUs' desc='8-bit S08 5.5V MCUs'></deviceType></deviceType><deviceType id='000NTM1CDFO8``Discretes and Logic' desc='Discretes and Logic'><deviceType id='010NTC66E44Z``Automotive MOSFETs' desc='Automotive MOSFETs'></deviceType><deviceType id='012NVIV3C2ER``Bipolar Transistors' desc='Bipolar Transistors'><deviceType id='010NTM1GX5OD``General Purpose Double Transistors' desc='General Purpose Double Transistors'><deviceType id='000NTM1KYFQY``Complimentary NPN/PNP' desc='Complimentary NPN/PNP'></deviceType><deviceType id='000NTM1LK1U8``Double PNP' desc='Double PNP'></deviceType><deviceType id='000NTM1K6CJG``Double NPN' desc='Double NPN'></deviceType></deviceType><deviceType id='020NTM33ELII``Loadswitch' desc='Loadswitch'></deviceType><deviceType id='030NTM343OLM``Low VCEsat (BISS) Transistors' desc='Low VCEsat (BISS) Transistors'></deviceType><deviceType id='040NTM1M63CX``Medium Power Transistors' desc='Medium Power Transistors'></deviceType><deviceType id='050NTM1MQ1KD``NPN Transistors' desc='NPN Transistors'></deviceType><deviceType id='060NTM1NCI6Z``PNP Transistors' desc='PNP Transistors'></deviceType><deviceType id='070NTM34KGND``Resistor-equipped Transistors' desc='Resistor-equipped Transistors'></deviceType></deviceType><deviceType id='014NVIV65OCD``Diodes' desc='Diodes'><deviceType id='000NTM3KPEL2``Switching Diodes' desc='Switching Diodes'></deviceType><deviceType id='000NTM3LUO79``Zener Diodes' desc='Zener Diodes'></deviceType><deviceType id='000NTM35Z8VI``Schottky Rectifiers' desc='Schottky Rectifiers'></deviceType><deviceType id='000NTM354O7C``Schottky Diodes' desc='Schottky Diodes'></deviceType></deviceType><deviceType id='016NTM1GEB4Q``ESD Protection' desc='ESD Protection'></deviceType><deviceType id='020M98459``High Side Switches' desc='High Side Switches'></deviceType><deviceType id='025NTM3TREUK``Logic' desc='Logic'><deviceType id='010NTM51MGWP``Analog Switches' desc='Analog Switches'></deviceType><deviceType id='020NTM51YI6R``Buffers/Inverters/Drivers' desc='Buffers/Inverters/Drivers'></deviceType><deviceType id='030NTM5279JL``BUS Switches' desc='BUS Switches'></deviceType><deviceType id='040NTM52G24Y``Counters/Frequency Dividers' desc='Counters/Frequency Dividers'></deviceType><deviceType id='050NTM52W18A``Digital Decoders/demultiplexers' desc='Digital Decoders/demultiplexers'></deviceType><deviceType id='060NTM539ON``Digital Multiplexers' desc='Digital Multiplexers'></deviceType><deviceType id='070NTM53TDYL``Flip-flops' desc='Flip-flops'></deviceType><deviceType id='080NTM5HH8MS``Gates' desc='Gates'></deviceType><deviceType id='090NTM5HVLBS``Latches/Registered Drivers' desc='Latches/Registered Drivers'></deviceType><deviceType id='100NTM5I93BB``Level Shifters/Translators' desc='Level Shifters/Translators'></deviceType><deviceType id='120NTM5IP9MY``Multivibrators' desc='Multivibrators'></deviceType><deviceType id='130NTM5J6JYB``Schmitt Triggers' desc='Schmitt Triggers'></deviceType><deviceType id='140NTM5JM2EA``Shift Registers' desc='Shift Registers'></deviceType><deviceType id='150NTM5K3J4I``Transceivers' desc='Transceivers'></deviceType></deviceType><deviceType id='030M98460``Low Side Switches' desc='Low Side Switches'></deviceType><deviceType id='050112681384125089``Squib Drivers' desc='Squib Drivers'></deviceType><deviceType id='060NTM3LDG7O``Transient Voltage Suppressors' desc='Transient Voltage Suppressors'></deviceType></deviceType><deviceType id='000NTQ600322``Sensors' desc='Sensors'><deviceType id='010NT30JJHR6``Angular Sensors' desc='Angular Sensors'></deviceType><deviceType id='010M939346191118``Accelerometers' desc='Accelerometers'><deviceType id='0001084288158625737424209``Low g Sensors' desc='Low g Sensors'></deviceType><deviceType id='0011084288500599697184595``Medium g Sensors' desc='Medium g Sensors'></deviceType><deviceType id='0021084289558003727680777``High g Sensors' desc='High g Sensors'></deviceType><deviceType id='010N5BNDO7YF``3-Axis Accelerometers' desc='3-Axis Accelerometers'></deviceType><deviceType id='020N5BNH18RR``2-Axis Accelerometers' desc='2-Axis Accelerometers'></deviceType><deviceType id='030N5BNJ2N6U``1-Axis Accelerometers' desc='1-Axis Accelerometers'></deviceType></deviceType><deviceType id='040NT38XE24D``Rotational Sensors' desc='Rotational Sensors'></deviceType><deviceType id='050NT38ZD9UN``Temperature Sensors' desc='Temperature Sensors'></deviceType><deviceType id='050M939346219036``Pressure Sensors' desc='Pressure Sensors'><deviceType id='010N5BOIHA55``Barometric Pressure 15 to 115 kPa' desc='Barometric Pressure 15 to 115 kPa'></deviceType><deviceType id='020N5BOQEFCA``Differential/Gauge up to 10 kPa' desc='Differential/Gauge up to 10 kPa'></deviceType><deviceType id='030N5BOUCJUW``Differential/Gauge up to 115 kPa' desc='Differential/Gauge up to 115 kPa'></deviceType><deviceType id='040N5BOWINJW``Differential/Gauge up to 1000 kPa' desc='Differential/Gauge up to 1000 kPa'></deviceType><deviceType id='050N5BP0LLZT``LPG and CNG Gas 15 to 400 kPa' desc='LPG and CNG Gas 15 to 400 kPa'></deviceType><deviceType id='060N5BP3XLWQ``Tire Pressure Monitoring Sensors' desc='Tire Pressure Monitoring Sensors'></deviceType><deviceType id='070N5BP6EH1Y``Vacuum Sensors -50 to -115 kPa' desc='Vacuum Sensors -50 to -115 kPa'></deviceType></deviceType></deviceType><deviceType id='000NTM3UEAB9``Media and Audio Processing' desc='Media and Audio Processing'><deviceType id='000NTM1BEL21``Audio Amplifiers' desc='Audio Amplifiers'><deviceType id='030NTCALH4U6``Class-AB (car radio)' desc='Class-AB (car radio)'></deviceType><deviceType id='050NTCAO98W9``Class-D (car radio)' desc='Class-D (car radio)'></deviceType></deviceType><deviceType id='010NTCA8ZF1D``AM~FM Radio and Audio' desc='AM/FM Radio and Audio'><deviceType id='020NTCABF493``Car Radio &amp;amp; Audio DSP Solutions' desc='Car Radio &amp;amp; Audio DSP Solutions'></deviceType><deviceType id='030NTCACLGK5``One-Chip Radio' desc='One-Chip Radio'></deviceType><deviceType id='040NTCADTHGI``Single-Chip Tuner/ASP (car radio)' desc='Single-Chip Tuner/ASP (car radio)'></deviceType></deviceType><deviceType id='070NTCF8FEXX``Multi Standard Digital Radio' desc='Multi Standard Digital Radio'></deviceType></deviceType><deviceType id='000NTM3UR7F7``RF' desc='RF'><deviceType id='000NTM4PQP3C``MOSFETs' desc='MOSFETs'></deviceType><deviceType id='010NTM4Q0ICT``LNAs' desc='LNAs'></deviceType><deviceType id='020NTM4OSBTZ``Bipolar Transistors' desc='Bipolar Transistors'></deviceType><deviceType id='050MD16MCHR6``Millimiter-Wave Solutions' desc='Millimiter-Wave Solutions'></deviceType><deviceType id='110NTD0KXK3J``Tuners' desc='Tuners'><deviceType id='010NTD0MPMC3``Car Radio Tuners- Analog IF' desc='Car Radio Tuners- Analog IF'></deviceType><deviceType id='020NTD0O12JO``Car Radio Tuners - Digital IF' desc='Car Radio Tuners - Digital IF'></deviceType></deviceType></deviceType></deviceType><deviceType id='010NTCV7YHN4``Identification and Security' desc='Identification and Security'><deviceType id='010NTCV9DN2U``Authentication' desc='Authentication'></deviceType><deviceType id='020NTCVB5GYP``Secure Car Access' desc='Secure Car Access'><deviceType id='010NTCVCTHUE``Automotive NFC' desc='Automotive NFC'></deviceType><deviceType id='020NTCVE5ASK``Immobilizer' desc='Immobilizer'></deviceType><deviceType id='030NTCVFBJ1``Passive Keyless Entry' desc='Passive Keyless Entry'></deviceType><deviceType id='040NTCVGQ5DU``Remote Keyless Entry' desc='Remote Keyless Entry'></deviceType><deviceType id='050NTCVHZNYI``RF Link' desc='RF Link'></deviceType></deviceType><deviceType id='040NTCVSIHSI``Smart Card ICs' desc='Smart Card ICs'><deviceType id='010NTCVTJYP``FastPay Secure Contactless Payment' desc='FastPay Secure Contactless Payment'></deviceType><deviceType id='020NTCVUZO3Z``MIFARE Smart Card ICs' desc='MIFARE Smart Card ICs'><deviceType id='010NTCVWUJ2Z``MIFARE Classic' desc='MIFARE Classic'></deviceType><deviceType id='020NTCVY6M3U``MIFARE DESFire' desc='MIFARE DESFire'></deviceType><deviceType id='030NTCVZLG12``MIFARE Plus' desc='MIFARE Plus'></deviceType><deviceType id='040NTCW8Z65O``MIFARE Ultralight' desc='MIFARE Ultralight'></deviceType><deviceType id='040NTCVPQ6P5``MIFARE SAMs for Reader Systems' desc='MIFARE SAMs for Reader Systems'></deviceType></deviceType><deviceType id='030NTCWBDLI4``SmarteID' desc='SmarteID'></deviceType><deviceType id='040NTCWDII88``SmartMX Dual Interface Controllers' desc='SmartMX Dual Interface Controllers'></deviceType><deviceType id='040NTCWCD602``SmartMX Contact Interface Controllers' desc='SmartMX Contact Interface Controllers'></deviceType><deviceType id='050NTCWEF8KR``SmartMX2-P40' desc='SmartMX2-P40'></deviceType><deviceType id='070NTCWFE19P``SmartMX2-P60' desc='SmartMX2-P60'></deviceType></deviceType><deviceType id='040NTCVJHCPO``NFC and Reader ICs' desc='NFC and Reader ICs'><deviceType id='010NTNAFMD6X``NFC Frontend Solutions' desc='NFC Frontend Solutions'></deviceType><deviceType id='010NTCVL24WT``NFC Controller Solutions' desc='NFC Controller Solutions'></deviceType><deviceType id='020NTCVMSGAU``Connected Tag Solutions' desc='Connected Tag Solutions'></deviceType><deviceType id='030NTCVOE38H``Contact Smart Card Reader ICs' desc='Contact Smart Card Reader ICs'></deviceType><deviceType id='040NTCVPQ6P5``MIFARE SAMs for Reader Systems' desc='MIFARE SAMs for Reader Systems'></deviceType><deviceType id='050NTCVR58HV``HITAG Reader ICs' desc='HITAG Reader ICs'></deviceType></deviceType><deviceType id='050NTCWGQC9G``Smart Label and Tag ICs' desc='Smart Label and Tag ICs'><deviceType id='000NZ3WK6FCA``Healthcare Solutions ICs' desc='Healthcare Solutions ICs'></deviceType><deviceType id='010NTCWHXMOW``ICODE' desc='ICODE'></deviceType><deviceType id='020NTCWJ064J``NTAG' desc='NTAG'></deviceType><deviceType id='030NTCWK1DC5``UCODE' desc='UCODE'></deviceType><deviceType id='040NTCWL2CI2``UCODE DNA' desc='UCODE DNA'></deviceType><deviceType id='050NTCWN78QU``HITAG' desc='HITAG'></deviceType><deviceType id='050NTCVR58HV``HITAG Reader ICs' desc='HITAG Reader ICs'></deviceType><deviceType id='050NTCWM6LMA``Connected Tag Solutions' desc='Connected Tag Solutions'></deviceType></deviceType></deviceType><deviceType id='012NTC6TWM1U``Media and Audio Processing' desc='Media and Audio Processing'><deviceType id='010NTCA8ZF1D``AM~FM Radio and Audio' desc='AM/FM Radio and Audio'><deviceType id='020NTCABF493``Car Radio &amp;amp; Audio DSP Solutions' desc='Car Radio &amp;amp; Audio DSP Solutions'></deviceType><deviceType id='030NTCACLGK5``One-Chip Radio' desc='One-Chip Radio'></deviceType><deviceType id='040NTCADTHGI``Single-Chip Tuner/ASP (car radio)' desc='Single-Chip Tuner/ASP (car radio)'></deviceType></deviceType><deviceType id='020NTCAG86O5``Audio Amplifiers' desc='Audio Amplifiers'><deviceType id='010NTCAJ72P4``Amplifiers for Portable Devices' desc='Amplifiers for Portable Devices'></deviceType><deviceType id='020NTCAKCKLR``Class-AB' desc='Class-AB'></deviceType><deviceType id='030NTCALH4U6``Class-AB (car radio)' desc='Class-AB (car radio)'></deviceType><deviceType id='040NTCAMWAPA``Class-D' desc='Class-D'></deviceType><deviceType id='050NTCAO98W9``Class-D (car radio)' desc='Class-D (car radio)'></deviceType></deviceType><deviceType id='030NTCAQOL7V``Data Converters' desc='Data Converters'><deviceType id='010NTCB1U6N3``Audio Converters' desc='Audio Converters'><deviceType id='000NXZ3RKCZQ``Audio CODEC' desc='Audio CODEC'></deviceType><deviceType id='010NTCB0A3H0``Audio ADCs' desc='Audio ADCs'></deviceType><deviceType id='030NTCB66C4T``Audio DACs' desc='Audio DACs'></deviceType></deviceType><deviceType id='020NTCB8R9M1``Imaging Front-End' desc='Imaging Front-End'></deviceType></deviceType><deviceType id='040NTCBKODAE``Digital Demodulators' desc='Digital Demodulators'></deviceType><deviceType id='050NTCBMT31S``IF Demodulators' desc='IF Demodulators'></deviceType><deviceType id='060NTCBQ4D4W``Media Processors' desc='Media Processors'><deviceType id='020NTCBU0IJ3``Digital Radio Processors' desc='Digital Radio Processors'></deviceType><deviceType id='030NTCBVBE2V``Multimedia Processors' desc='Multimedia Processors'></deviceType><deviceType id='040NTCBWJ8P8``Optical Storage' desc='Optical Storage'><deviceType id='050NTCF11K9Y``Zero IF Downconverters' desc='Zero IF Downconverters'></deviceType></deviceType></deviceType><deviceType id='070NTCF8FEXX``Multi Standard Digital Radio' desc='Multi Standard Digital Radio'></deviceType><deviceType id='080NTCF9E6QY``Silicon Tuners' desc='Silicon Tuners'><deviceType id='010NTCFA3GYG``Cable and Terrestrial Silicon Tuners' desc='Cable and Terrestrial Silicon Tuners'></deviceType><deviceType id='020NTCFCZDYK``Single Satellite Silicon Tuners' desc='Single Satellite Silicon Tuners'></deviceType></deviceType></deviceType><deviceType id='015NTA7YBOV5``Discretes and Logic' desc='Discretes and Logic'><deviceType id='010NTA8DVDJB``Bipolar Transistors' desc='Bipolar Transistors'><deviceType id='020NTA9AW3UA``General Purpose Bipolar Transistors' desc='General Purpose Bipolar Transistors'><deviceType id='010NTA9XNA55``Constant Current Source' desc='Constant Current Source'></deviceType><deviceType id='020NTA9ZEFCA``Standard Load Switches' desc='Standard Load Switches'></deviceType><deviceType id='030NTAA1VJUW``General Purpose Transistors' desc='General Purpose Transistors'><deviceType id='010NTABJSKWO``Single Transistors NPN' desc='Single Transistors NPN'></deviceType><deviceType id='020NTABPAAIK``Single Transistors PNP' desc='Single Transistors PNP'></deviceType><deviceType id='030NTABRBBPW``Double Transistors' desc='Double Transistors'><deviceType id='010NTABU2OR9``Complementary' desc='Complementary'></deviceType><deviceType id='020NTABW9373``Double NPN' desc='Double NPN'></deviceType><deviceType id='030NTABY15DJ``Double PNP' desc='Double PNP'></deviceType></deviceType></deviceType><deviceType id='040NTAATRNJW``Switching Transistors' desc='Switching Transistors'><deviceType id='010NTAGZ3O8E``Single NPN Switching Transistors' desc='Single NPN Switching Transistors'></deviceType><deviceType id='020NTAH18IN9``Single PNP Switching Transistors' desc='Single PNP Switching Transistors'></deviceType><deviceType id='030NTAJS4ACB``Double Switching Transistors' desc='Double Switching Transistors'></deviceType></deviceType><deviceType id='050NTAAV0LZT``Medium Power Transistors' desc='Medium Power Transistors'></deviceType><deviceType id='060NTAB1LLWQ``High Voltage Transistors' desc='High Voltage Transistors'><deviceType id='010NTAJTYJQ2``NPN High Voltage Transistors' desc='NPN High Voltage Transistors'></deviceType><deviceType id='020NTAJYEJ5U``PNP High Voltage Transistors' desc='PNP High Voltage Transistors'></deviceType><deviceType id='030NTAK24O6X``Double High Voltage Transistors' desc='Double High Voltage Transistors'></deviceType></deviceType><deviceType id='070NTAB4BH1Y``Low Noise Transistors' desc='Low Noise Transistors'><deviceType id='010NTAK3JPK``NPN' desc='NPN'></deviceType><deviceType id='020NTAK6K824``PNP' desc='PNP'></deviceType></deviceType><deviceType id='080NTAB6TJ6B``Matched Pair Transistors' desc='Matched Pair Transistors'></deviceType><deviceType id='090NTABA6EPN``Darlington Transistors' desc='Darlington Transistors'><deviceType id='010NTAK95J4Z``NPN' desc='NPN'></deviceType><deviceType id='020NTAKAA656``PNP' desc='PNP'></deviceType></deviceType><deviceType id='100NTABDE9UA``Schmitt Triggers' desc='Schmitt Triggers'></deviceType><deviceType id='110NTABEO8ZP``MOSFET Driver Transistors' desc='MOSFET Driver Transistors'></deviceType><deviceType id='120NTABG6529``Medium Frequency Transistors' desc='Medium Frequency Transistors'><deviceType id='010NTAKHREWM``NPN' desc='NPN'></deviceType><deviceType id='020NTAKJ813I``PNP' desc='PNP'></deviceType></deviceType></deviceType><deviceType id='040NTA9ES7YF``Low VCEsat (BISS) Transistors' desc='Low VCEsat (BISS) Transistors'><deviceType id='005NTALFF6DF``High Voltage Low VCEsat (BISS) Transistors' desc='High Voltage Low VCEsat (BISS) Transistors'></deviceType><deviceType id='010NTAKOOO67``Low Voltage Low VCEsat (BISS) Transistors' desc='Low Voltage Low VCEsat (BISS) Transistors'><deviceType id='010NTAKTN82H``Low VCEsat (BISS) Transistors Single NPN' desc='Low VCEsat (BISS) Transistors Single NPN'></deviceType><deviceType id='020NTAKVX1I1``Low VCEsat (BISS) Transistors Single PNP' desc='Low VCEsat (BISS) Transistors Single PNP'></deviceType><deviceType id='030NTAKXGB67``Low VCEsat (BISS) Transistors Double' desc='Low VCEsat (BISS) Transistors Double'><deviceType id='010NTAL20N4V``Low VCEsat (BISS) Transistors Double NPN/NPN' desc='Low VCEsat (BISS) Transistors Double NPN/NPN'></deviceType><deviceType id='020NTAL5AEGV``Low VCEsat (BISS) Transistors Double NPN/PNP' desc='Low VCEsat (BISS) Transistors Double NPN/PNP'></deviceType><deviceType id='030NTAL6R306``Low VCEsat (BISS) Transistors Double PNP/NPN' desc='Low VCEsat (BISS) Transistors Double PNP/NPN'></deviceType></deviceType><deviceType id='040NTAL90EEM``Low VCEsat (BISS) Load Switches' desc='Low VCEsat (BISS) Load Switches'></deviceType></deviceType></deviceType><deviceType id='050NTA9HH8RR``Resistor Equipped Transistors (RETs)' desc='Resistor Equipped Transistors (RETs)'><deviceType id='005NTALIOCJC``RET + General Purpose Transistor' desc='RET + General Purpose Transistor'></deviceType><deviceType id='010NTALL05ZH``RET 100 mA, 50 V' desc='RET 100 mA, 50 V'><deviceType id='010NTALM6C25``RET 100 mA, 50 V Complementary' desc='RET 100 mA, 50 V Complementary'></deviceType><deviceType id='020NTALP4A9M``RET 100 mA, 50 V Double NPN' desc='RET 100 mA, 50 V Double NPN'></deviceType><deviceType id='030NTAM04M2M``RET 100 mA, 50 V Double PNP' desc='RET 100 mA, 50 V Double PNP'></deviceType><deviceType id='040NTAM1PASM``RET 100 mA, 50 V Single NPN' desc='RET 100 mA, 50 V Single NPN'></deviceType><deviceType id='050NTAM34922``RET 100 mA, 50 V Single PNP' desc='RET 100 mA, 50 V Single PNP'></deviceType></deviceType><deviceType id='020NTAM5P9NO``RET 500 mA, 50 V' desc='RET 500 mA, 50 V'><deviceType id='010NTAM6S13A``RET 500 mA, 50 V Complementary' desc='RET 500 mA, 50 V Complementary'></deviceType><deviceType id='020NTAM94426``RET 500 mA, 50 V Double NPN' desc='RET 500 mA, 50 V Double NPN'></deviceType><deviceType id='030NTAMAPD7G``RET 500 mA, 50 V Single NPN' desc='RET 500 mA, 50 V Single NPN'></deviceType><deviceType id='040NTAMCWHM1``RET 500 mA, 50 V Single PNP' desc='RET 500 mA, 50 V Single PNP'></deviceType></deviceType><deviceType id='030NTAMF02GD``RET 800 mA, 40 V Low VCEsat' desc='RET 800 mA, 40 V Low VCEsat'><deviceType id='010NTAMGBA4U``RET 800 mA, 40 V NPN' desc='RET 800 mA, 40 V NPN'></deviceType><deviceType id='020NTAMIZJJZ``RET 800 mA, 40 V PNP' desc='RET 800 mA, 40 V PNP'></deviceType></deviceType></deviceType><deviceType id='060NTA9OYN6U``RF Bipolar Transistors' desc='RF Bipolar Transistors'><deviceType id='010NTAMTD66U``LNAs, Mixers, Frequency Multipliers, Buffers' desc='LNAs, Mixers, Frequency Multipliers, Buffers'><deviceType id='010NTAMUT8O1``12 GHz -&amp;gt; +18 GHz (Ku high, Ka band)' desc='12 GHz -&amp;gt; +18 GHz (Ku high, Ka band)'></deviceType><deviceType id='020NTAMX15TC``6 GHz -&amp;gt; 12 GHz (X, Ku low band)' desc='6 GHz -&amp;gt; 12 GHz (X, Ku low band)'></deviceType><deviceType id='030NTAMYF7J4``3.5 GHz -&amp;gt; 6 GHz (S, C band)' desc='3.5 GHz -&amp;gt; 6 GHz (S, C band)'></deviceType><deviceType id='040NTAN1J7P7``2 GHz -&amp;gt; 3.5 GHz (S band)' desc='2 GHz -&amp;gt; 3.5 GHz (S band)'></deviceType><deviceType id='050NTAN3IMFJ``1 GHz -&amp;gt; + 2 GHz (L band)' desc='1 GHz -&amp;gt; + 2 GHz (L band)'></deviceType><deviceType id='060NTAN50XD``&amp;lt; 1 GHz (VHF, UHF band)' desc='&amp;lt; 1 GHz (VHF, UHF band)'></deviceType></deviceType><deviceType id='020NTAN79GGO``High Linearity Amplifiers, High Output Amplifiers, Drivers' desc='High Linearity Amplifiers, High Output Amplifiers, Drivers'><deviceType id='010NTAN8YA2T``12 GHz -&amp;gt; +18 GHz (Ku high, Ka band)' desc='12 GHz -&amp;gt; +18 GHz (Ku high, Ka band)'></deviceType><deviceType id='020NTANC1H3K``6 GHz -&amp;gt; 12 GHz (X, Ku low band)' desc='6 GHz -&amp;gt; 12 GHz (X, Ku low band)'></deviceType><deviceType id='030NTANDKIIT``3.5 GHz -&amp;gt; 6 GHz (S, C band)' desc='3.5 GHz -&amp;gt; 6 GHz (S, C band)'></deviceType><deviceType id='040NTANEVNPL``2 GHz -&amp;gt; 3.5 GHz (S band)' desc='2 GHz -&amp;gt; 3.5 GHz (S band)'></deviceType><deviceType id='050NTANG65WC``1 GHz -&amp;gt; + 2 GHz (L band)' desc='1 GHz -&amp;gt; + 2 GHz (L band)'></deviceType><deviceType id='060NTANHOL77``&amp;lt; 1 GHz (VHF, UHF band)' desc='&amp;lt; 1 GHz (VHF, UHF band)'></deviceType></deviceType><deviceType id='030NTANJEOGD``Oscillators' desc='Oscillators'><deviceType id='010NTANL6JOQ``12 GHz -&amp;gt; +18 GHz (Ku high, Ka band)' desc='12 GHz -&amp;gt; +18 GHz (Ku high, Ka band)'></deviceType><deviceType id='020NTANN0AWR``6 GHz -&amp;gt; 12 GHz (X, Ku low band)' desc='6 GHz -&amp;gt; 12 GHz (X, Ku low band)'></deviceType><deviceType id='030NTANOSH1K``3.5 GHz -&amp;gt; 6 GHz (S, C band)' desc='3.5 GHz -&amp;gt; 6 GHz (S, C band)'></deviceType><deviceType id='040NTAOW5KGP``2 GHz - 3.5 GHz (S band)' desc='2 GHz - 3.5 GHz (S band)'></deviceType><deviceType id='050NTAOXX40I``1 GHz - 2 GHz (L band)' desc='1 GHz - 2 GHz (L band)'></deviceType><deviceType id='060NTAP2T72R``&amp;lt; 1 GHz (VHF, UHF band)' desc='&amp;lt; 1 GHz (VHF, UHF band)'></deviceType></deviceType><deviceType id='040NTAP4W3F6``RF Power Transistors for Portable Equipment (UHF)' desc='RF Power Transistors for Portable Equipment (UHF)'></deviceType><deviceType id='050NTAPCGLUL``PNP' desc='PNP'></deviceType></deviceType></deviceType><deviceType id='020NTA8ZCJCX``Diodes' desc='Diodes'><deviceType id='010NTAPKEIYU``Bandswitching Diodes' desc='Bandswitching Diodes'></deviceType><deviceType id='020NTAQHC59B``PIN Diodes' desc='PIN Diodes'></deviceType><deviceType id='030NTAQIH3JE``General Purpose Schottky Diodes &amp;lt; 250 mA' desc='General Purpose Schottky Diodes &amp;lt; 250 mA'></deviceType><deviceType id='040NTAQL37G5``Medium Power Schottky Diodes &amp;gt; 200 mA' desc='Medium Power Schottky Diodes &amp;gt; 200 mA'></deviceType><deviceType id='050NTAQMMKAQ``Schottky Diodes' desc='Schottky Diodes'></deviceType><deviceType id='060NTC0G9E8J``Varicap Diodes' desc='Varicap Diodes'><deviceType id='010NTC0HUI3C``VCO and FM Radio Tuning Varicap Diodes' desc='VCO and FM Radio Tuning Varicap Diodes'></deviceType><deviceType id='020NTC0JN4ZT``TV/VCR/DVD/HDD Varicap Diodes - UHF Tuning' desc='TV/VCR/DVD/HDD Varicap Diodes - UHF Tuning'></deviceType><deviceType id='030NTC0L7P0Y``TV/VCR/DVD/HDD Varicap Diodes - VHF Tuning' desc='TV/VCR/DVD/HDD Varicap Diodes - VHF Tuning'></deviceType></deviceType><deviceType id='110NTC0T0MMG``Switching Diodes' desc='Switching Diodes'></deviceType><deviceType id='120NTC0U4OQ9``Zener Diodes' desc='Zener Diodes'></deviceType></deviceType><deviceType id='030NTA90KGCF``ESD Protection' desc='ESD Protection'><deviceType id='010NTC16F37Q``General ESD Protection Devices' desc='General ESD Protection Devices'><deviceType id='010NTC188BKL``Ultra Low-Capacitance ESD Protection Devices' desc='Ultra Low-Capacitance ESD Protection Devices'></deviceType><deviceType id='020NTC1A560H``Low-Capacitance ESD Protection Devices' desc='Low-Capacitance ESD Protection Devices'></deviceType><deviceType id='030NTC1CVOXI``Standard ESD Protection Devices' desc='Standard ESD Protection Devices'></deviceType></deviceType><deviceType id='020NTC1EOGI7``Application-Specific ESD and ESD~EMI Solutions' desc='Application-Specific ESD and ESD/EMI Solutions'><deviceType id='010NTC1G2F9Z``USB 3.x and SATA Protection and Filtering' desc='USB 3.x and SATA Protection and Filtering'></deviceType><deviceType id='020NTC1MS646``USB 2.0 Protection and Filtering' desc='USB 2.0 Protection and Filtering'></deviceType><deviceType id='030NTC1O2BI1``Common Mode Filter for USB 3.x and 2.0' desc='Common Mode Filter for USB 3.x and 2.0'></deviceType><deviceType id='040NTC1PEJZ1``Common Mode Filter for Video Interfaces' desc='Common Mode Filter for Video Interfaces'></deviceType><deviceType id='050NTC1QQ1ZQ``Ethernet Protection' desc='Ethernet Protection'></deviceType><deviceType id='060NTC1S2C1M``LCD and Camera Protection and Filtering' desc='LCD and Camera Protection and Filtering'></deviceType><deviceType id='070NTC1TI3UW``HDMI and Memory Card Signal Conditioning' desc='HDMI and Memory Card Signal Conditioning'></deviceType><deviceType id='080NTC1WQ67O``Memory and SIM Card Protection and Filtering' desc='Memory and SIM Card Protection and Filtering'></deviceType><deviceType id='090NTC1ZKFIW``NFC Antenna Protection' desc='NFC Antenna Protection'></deviceType><deviceType id='090NTC1YANW5``Video Interface Protection' desc='Video Interface Protection'></deviceType><deviceType id='100NTC20VOZG``Audio Interface Protection and Filtering' desc='Audio Interface Protection and Filtering'></deviceType><deviceType id='110NTC221C2F``Battery and Charger Protection' desc='Battery and Charger Protection'></deviceType><deviceType id='140NTC23VK7W``Automotive High-Speed Network Protection' desc='Automotive High-Speed Network Protection'></deviceType><deviceType id='150NTC263ITD``Automotive In-Vehicle Network Bus Line Protection' desc='Automotive In-Vehicle Network Bus Line Protection'></deviceType></deviceType><deviceType id='030NTC27T9MJ``Transient Voltage Suppressor (TVS) Diodes' desc='Transient Voltage Suppressor (TVS) Diodes'><deviceType id='010NTC299C4T``TVS Diodes, 24 W/40 W' desc='TVS Diodes, 24 W/40 W'></deviceType><deviceType id='020NTC2ARDBL``TVS Diodes for Mobile Applications' desc='TVS Diodes for Mobile Applications'></deviceType><deviceType id='030NTC2C62HA``TVS Diodes, 400 W' desc='TVS Diodes, 400 W'></deviceType><deviceType id='040NTC2DTF0V``TVS Diodes, 600W' desc='TVS Diodes, 600W'></deviceType></deviceType></deviceType><deviceType id='040NTA925JE9``Logic' desc='Logic'><deviceType id='010NTC4IB7EM``Full Adders' desc='Full Adders'></deviceType><deviceType id='010NTC2FF8S0``Analog Switches' desc='Analog Switches'></deviceType><deviceType id='020NTC2H83MH``Buffers/Inverters/Drivers' desc='Buffers/Inverters/Drivers'></deviceType><deviceType id='030NTC3Z3EN1``Digital Multiplexers' desc='Digital Multiplexers'></deviceType><deviceType id='030NTC2ITJPJ``Bus Switches' desc='Bus Switches'></deviceType><deviceType id='040NTC4AOG4L``Encoders' desc='Encoders'></deviceType><deviceType id='040NTC2KDHZ5``Comparators' desc='Comparators'></deviceType><deviceType id='050NTC4DA4R1``FIFO Registers' desc='FIFO Registers'></deviceType><deviceType id='050NTC2O2BA3``Counters~Frequency Dividers' desc='Counters/Frequency Dividers'><deviceType id='010NTC2OYHTB``BCD/Decade Counters' desc='BCD/Decade Counters'></deviceType><deviceType id='020NTC3SS2ER``Binary Counters/Timers' desc='Binary Counters/Timers'></deviceType><deviceType id='030NTC3UROCD``Divider Counters' desc='Divider Counters'></deviceType></deviceType><deviceType id='060NTC4EI7MZ``Flip-Flops' desc='Flip-Flops'><deviceType id='010NTC4FR75F``D-Type Flip-Flops' desc='D-Type Flip-Flops'></deviceType><deviceType id='020NTC4GUHAL``J-K Type Flip-Flops' desc='J-K Type Flip-Flops'></deviceType></deviceType><deviceType id='060NTC3WCDXT``Decoders/Demultiplexers' desc='Decoders/Demultiplexers'></deviceType><deviceType id='070NTC3XMIPS``Digital Comparators' desc='Digital Comparators'></deviceType><deviceType id='130NTC4JOEAM``Gates' desc='Gates'><deviceType id='010NTC4LBAKV``AND Gates' desc='AND Gates'></deviceType><deviceType id='020NTC4MT7R2``Combination Gates' desc='Combination Gates'></deviceType><deviceType id='030NTC4O4B8M``Configurable Gates' desc='Configurable Gates'></deviceType><deviceType id='040NTC4Q7EAW``Exclusive-NOR Gates' desc='Exclusive-NOR Gates'></deviceType><deviceType id='050NTC4RUCC4``Exclusive-OR Gates' desc='Exclusive-OR Gates'></deviceType><deviceType id='060NTC4T8FC6``NAND Gates' desc='NAND Gates'></deviceType><deviceType id='070NTC4UQAII``NOR Gates' desc='NOR Gates'></deviceType><deviceType id='080NTC4W73AP``OR Gates' desc='OR Gates'></deviceType></deviceType><deviceType id='140NTC4Z26GZ``Latches/Registered Drivers' desc='Latches/Registered Drivers'></deviceType><deviceType id='150NTC50TWJ``Level Shifters/Translators' desc='Level Shifters/Translators'></deviceType><deviceType id='170NTC54R2W8``Multivibrators' desc='Multivibrators'></deviceType><deviceType id='180NTC58X9K4``Parity Generators/Checkers' desc='Parity Generators/Checkers'></deviceType><deviceType id='190NTC5BK8UZ``Phase Locked Loops' desc='Phase Locked Loops'></deviceType><deviceType id='200NTC5DADZE``Printer Interfaces' desc='Printer Interfaces'></deviceType><deviceType id='210NTC5EL928``Schmitt-Triggers' desc='Schmitt-Triggers'></deviceType><deviceType id='220NTC5FVEAO``Shift Registers' desc='Shift Registers'></deviceType><deviceType id='230NTC5GZC0X``Transceivers' desc='Transceivers'></deviceType></deviceType><deviceType id='050NTA93DJQ6``MOSFETs' desc='MOSFETs'><deviceType id='010NTC66E44Z``Automotive MOSFETs' desc='Automotive MOSFETs'></deviceType><deviceType id='020M98459``High Side Switches' desc='High Side Switches'></deviceType><deviceType id='030M98460``Low Side Switches' desc='Low Side Switches'></deviceType><deviceType id='040M982183398454``Pre-Drivers' desc='Pre-Drivers'></deviceType><deviceType id='050112681384125089``Squib Drivers' desc='Squib Drivers'></deviceType><deviceType id='060NTC691FJZ``Standard MOSFETs' desc='Standard MOSFETs'></deviceType><deviceType id='070NTC6AJ4CP``RF Small-Signal MOSFETs' desc='RF Small-Signal MOSFETs'><deviceType id='010NTC6C7E0W``N-Channel, Single MOSFETs for Switching' desc='N-Channel, Single MOSFETs for Switching'></deviceType><deviceType id='020NTC6DV7DZ``N-Channel, Dual-Gate MOSFETs' desc='N-Channel, Dual-Gate MOSFETs'></deviceType></deviceType></deviceType></deviceType><deviceType id='023NTCT0WGX``Power Management' desc='Power Management'><deviceType id='010NTCT6OCVS``AC-to-DC Solutions' desc='AC-to-DC Solutions'><deviceType id='010NTCT8946W``AC-DC Controllers' desc='AC-DC Controllers'></deviceType><deviceType id='020NTCTALJAF``AC-DC Controllers with Integrated PFC' desc='AC-DC Controllers with Integrated PFC'></deviceType><deviceType id='030NTCTC3M9R``AC-DC Controllers with Integrated Power Switch' desc='AC-DC Controllers with Integrated Power Switch'></deviceType><deviceType id='040NTCTDOCMP``Secondary Side Controllers' desc='Secondary Side Controllers'></deviceType></deviceType><deviceType id='020JF7EYDDIJ``Battery Management' desc='Battery Management'><deviceType id='005NAPTX4H1Y``Battery Cell Controllers' desc='Battery Cell Controllers'></deviceType><deviceType id='010LY9FW34CB``Battery Chargers' desc='Battery Chargers'></deviceType><deviceType id='020LY9FYVHR6``Battery Sensors' desc='Battery Sensors'></deviceType></deviceType><deviceType id='025O0NE4Z4CB``DC-to-DC Solutions' desc='DC-to-DC Solutions'></deviceType><deviceType id='030NTCTFHM4K``Energy Measurement ICs' desc='Energy Measurement ICs'></deviceType><deviceType id='040N9UFT5O6X``Engine and DC Motor Control' desc='Engine and DC Motor Control'><deviceType id='005N9UGFYPK``High-Current Motor Control' desc='High-Current Motor Control'></deviceType><deviceType id='015N9UGLL824``MCU and Injection Driver' desc='MCU and Injection Driver'></deviceType><deviceType id='030M98448``H-Bridges' desc='H-Bridges'></deviceType><deviceType id='070M985296881182``Powertrain/Engine Control' desc='Powertrain/Engine Control'></deviceType></deviceType><deviceType id='050NTCTH0IKT``Lighting Driver and Controller ICs' desc='Lighting Driver and Controller ICs'><deviceType id='010NTCTIN5XX``AC LED Driver ICs, Dimmable' desc='AC LED Driver ICs, Dimmable'></deviceType><deviceType id='020NTCTMBFB4``AC LED Driver ICs, High-Power + PFC' desc='AC LED Driver ICs, High-Power + PFC'></deviceType><deviceType id='030NTCTK21AZ``AC LED Driver ICs, Non-Dimmable' desc='AC LED Driver ICs, Non-Dimmable'></deviceType><deviceType id='040NTCTNOM5B``Automotive Lighting, LED Driver ICs' desc='Automotive Lighting, LED Driver ICs'></deviceType><deviceType id='050NTCTOYCQR``CFL and HF-TL Drivers - Dimmable' desc='CFL and HF-TL Drivers - Dimmable'></deviceType><deviceType id='060NTCTQHH5H``CFL and HF-TL Drivers - Fixed Output' desc='CFL and HF-TL Drivers - Fixed Output'></deviceType><deviceType id='070NTCTRXP0K``HID Controllers' desc='HID Controllers'></deviceType><deviceType id='120NTCL5RFKZ``I&amp;#178;C LED Display Control' desc='I&amp;#178;C LED Display Control'></deviceType><deviceType id='130K6BV0XD53``LED Drivers' desc='LED Drivers'></deviceType><deviceType id='140NTCTVLCJS``LED Flash Driver ICs' desc='LED Flash Driver ICs'></deviceType><deviceType id='150NTCU44EWS``Light Position Controllers' desc='Light Position Controllers'></deviceType></deviceType><deviceType id='060M985296241684``Linear Regulator' desc='Linear Regulator'></deviceType><deviceType id='070NTCU8UMN3``Linear Voltage Regulators' desc='Linear Voltage Regulators'><deviceType id='010NTCUAE14M``DDR Bus Termination Regulator' desc='DDR Bus Termination Regulator'></deviceType><deviceType id='020NTCUC0MBL``Shunt Regulators' desc='Shunt Regulators'></deviceType><deviceType id='030NTCUD52QI``LDO Low-Voltage' desc='LDO Low-Voltage'></deviceType><deviceType id='040NTCUFID5F``Multilinear Voltage Regulators' desc='Multilinear Voltage Regulators'></deviceType></deviceType><deviceType id='0801098824671538699514881``PMICs' desc='PMICs'><deviceType id='010M4SCPNJ4Z``PMICs for i.MX Processors' desc='PMICs for i.MX Processors'></deviceType><deviceType id='020M4SCRD656``Configurable PMICs (PF Series)' desc='Configurable PMICs (PF Series)'></deviceType><deviceType id='030NGDO9KNYJ``PMIC for Networking Processors' desc='PMIC for Networking Processors'></deviceType></deviceType><deviceType id='090J2KJ7LDIJ``Power over Ethernet (PoE)' desc='Power over Ethernet (PoE)'></deviceType><deviceType id='100M985296533526``Switching Regulator' desc='Switching Regulator'></deviceType><deviceType id='110N0USBDNJW``Wireless Charging ICs' desc='Wireless Charging ICs'></deviceType><deviceType id='120NTCT2YMDT``Wireless Power Receivers' desc='Wireless Power Receivers'></deviceType><deviceType id='130NTCT58J5T``Wireless Power Transmitters' desc='Wireless Power Transmitters'></deviceType></deviceType><deviceType id='025NTCPVN3P7``Microcontrollers and Processors' desc='Microcontrollers and Processors'><deviceType id='010NJMSJZEPN``ARM Processors' desc='ARM Processors'><deviceType id='010M0ylsZrDR``i.MX Applications Processors based on ARM Cores' desc='i.MX Applications Processors based on ARM Cores'><deviceType id='005NPQJHWNYJ``i.MX 7 Processors' desc='i.MX 7 Processors'></deviceType><deviceType id='010LLAV55NYJ``i.MX 6 Processors' desc='i.MX 6 Processors'></deviceType><deviceType id='015L0VJIU24D``i.MX53 Processors' desc='i.MX53 Processors'></deviceType><deviceType id='020KFP1BXFTB``i.MX51 Processors' desc='i.MX51 Processors'></deviceType><deviceType id='030KYD1AQ9B0``i.MX50 Processors' desc='i.MX50 Processors'></deviceType><deviceType id='035KHP4BMLWQ``i.MX37 Processors' desc='i.MX37 Processors'></deviceType><deviceType id='040KHP4BTH1Y``i.MX35 Processors' desc='i.MX35 Processors'></deviceType><deviceType id='050KFP1C87YF``i.MX31 Processors' desc='i.MX31 Processors'></deviceType><deviceType id='060L0VJEG35I``i.MX28 Processors' desc='i.MX28 Processors'></deviceType><deviceType id='068KHP49KLZT``i.MX27 Processors' desc='i.MX27 Processors'></deviceType><deviceType id='070KKQ68P7SX``i.MX25 Processors' desc='i.MX25 Processors'></deviceType><deviceType id='075KON1C19B0``i.MX23 Processors' desc='i.MX23 Processors'></deviceType><deviceType id='086LLAV164FY``i.MX6Q Processors' desc='i.MX6Q Processors'></deviceType><deviceType id='087LLAV387SX``i.MX6D Processors' desc='i.MX6D Processors'></deviceType><deviceType id='090KFP1CPN6U``i.MX21 Processors' desc='i.MX21 Processors'></deviceType><deviceType id='099KFP1CG8RR``i.MXS Processors' desc='i.MXS Processors'></deviceType></deviceType><deviceType id='020L3CG5FH1Y``Kinetis ARM Cortex-M MCUs' desc='Kinetis ARM Cortex-M MCUs'><deviceType id='010MQ4YU75WC``E Series' desc='E Series'></deviceType><deviceType id='015N199HJIN9``EA Automotive Series' desc='EA Automotive Series'></deviceType><deviceType id='020LXE78NHR6``K Series' desc='K Series'><deviceType id='000NWI2FW7SX``KS22 MCUs' desc='KS22 MCUs'></deviceType><deviceType id='005N3BBV53UA``K0x Entry MCUs' desc='K0x Entry MCUs'></deviceType><deviceType id='010LXE7DK5Q3``K1x Baseline MCUs' desc='K1x Baseline MCUs'></deviceType><deviceType id='020LXE7DZCIC``K2x USB MCUs' desc='K2x USB MCUs'></deviceType><deviceType id='030LXE7EM35I``K3x SLCD MCUs' desc='K3x SLCD MCUs'></deviceType><deviceType id='040LXE7F624D``K4x USB LCD MCUs' desc='K4x USB LCD MCUs'></deviceType><deviceType id='050LXE7FN9UN``K5x Measurement MCUs' desc='K5x Measurement MCUs'></deviceType><deviceType id='060LXE7G970C``K6x Ethernet MCUs' desc='K6x Ethernet MCUs'></deviceType><deviceType id='070LXE7HA9B0``K7x GLCD MCUs' desc='K7x GLCD MCUs'></deviceType><deviceType id='080NPUOEM3UA``K8x Scalable and Secure MCUs' desc='K8x Scalable and Secure MCUs'></deviceType></deviceType><deviceType id='030M0S9FY70C``L Series' desc='L Series'></deviceType><deviceType id='040MAR5BO5ZH``M Series' desc='M Series'></deviceType><deviceType id='045N10ARNEPN``V Series' desc='V Series'></deviceType><deviceType id='050M7TMQR7YF``W Series' desc='W Series'></deviceType><deviceType id='070MWOEDR9UN``Mini MCUs' desc='Mini MCUs'></deviceType></deviceType><deviceType id='030NTCPYJ2OI``LPC ARM Cortex-M MCUs' desc='LPC ARM Cortex-M MCUs'><deviceType id='010NTCQ2U24E``Cortex-M0+~M0' desc='Cortex-M0+/M0'><deviceType id='010NTCQ8AOF``LPC800' desc='LPC800'></deviceType><deviceType id='020NTCQ9XNWT``LPC1100' desc='LPC1100'></deviceType><deviceType id='030NTCQFFN92``LPC1200' desc='LPC1200'></deviceType></deviceType><deviceType id='020NTCQJ8MYG``Cortex-M3' desc='Cortex-M3'><deviceType id='010NTCQR5LVW``LPC1300' desc='LPC1300'></deviceType><deviceType id='020NTCQSZ3RK``LPC1500' desc='LPC1500'></deviceType><deviceType id='030NTCQUL4CD``LPC1700' desc='LPC1700'></deviceType><deviceType id='040NTCQW21Q3``LPC1800' desc='LPC1800'></deviceType></deviceType><deviceType id='030NTCQXRGGK``Cortex-M4~M4F' desc='Cortex-M4/M4F'><deviceType id='010NTCQZ9IMP``LPC4000' desc='LPC4000'></deviceType><deviceType id='020NTCR4H41N``LPC4300' desc='LPC4300'></deviceType><deviceType id='030NTCR7Z32S``LPC54000' desc='LPC54000'></deviceType></deviceType></deviceType><deviceType id='040NTCQ214ZP``LPC ARM7 ARM9 MCUs' desc='LPC ARM7 ARM9 MCUs'><deviceType id='010NTCRSIO71``ARM9' desc='ARM9'><deviceType id='010NTCRV0PE``LPC2900' desc='LPC2900'></deviceType><deviceType id='020NTCRWDGCJ``LPC3100/200' desc='LPC3100/200'></deviceType></deviceType><deviceType id='010NTCRO8MF``ARM7' desc='ARM7'><deviceType id='010NTCRQ5J9V``LPC2100/200/300/400' desc='LPC2100/200/300/400'></deviceType></deviceType></deviceType><deviceType id='050N366P2OV5``MAC57Dxxx 32-bit ARM MCUs' desc='MAC57Dxxx 32-bit ARM MCUs'></deviceType><deviceType id='0601074546953333713072451``MAC7100 (Legacy)' desc='MAC7100 (Legacy)'></deviceType><deviceType id='070NS6ATIJCX``QorIQ ARM Processors' desc='QorIQ ARM Processors'></deviceType><deviceType id='080NK2V5EJ4Z``S32 Processors and Microcontrollers' desc='S32 Processors and Microcontrollers'></deviceType><deviceType id='090LZPV6WGCF``VFxxx Controller Solutions based on ARM Cores' desc='VFxxx Controller Solutions based on ARM Cores'><deviceType id='010NEMWNXKT2``VFxxx F Series' desc='VFxxx F Series'></deviceType><deviceType id='020NG4AVT8RR``VFxxx R Series' desc='VFxxx R Series'></deviceType></deviceType></deviceType><deviceType id='020NJMSS29UA``Power Architecture' desc='Power Architecture'><deviceType id='010J2K8ELCZQ``MPC5xxx~5xxx 32-bit MCUs' desc='MPC5xxx/5xxx 32-bit MCUs'><deviceType id='010M2OH5WOV5``MPC57xx MCUs' desc='MPC57xx MCUs'></deviceType><deviceType id='020K14V9813A``MPC56xx MCUs' desc='MPC56xx MCUs'></deviceType><deviceType id='0301067371573986721160325``MPC55xx MCUs' desc='MPC55xx MCUs'></deviceType><deviceType id='0401061909289709724730898``mobileGT (51xx/52xx)' desc='mobileGT (51xx/52xx)'></deviceType><deviceType id='060M98648``5xx Controllers' desc='5xx Controllers'></deviceType></deviceType><deviceType id='015M0yw2Jk19``PowerQUICC Communications Processors' desc='PowerQUICC Communications Processors'><deviceType id='0001096560614858709714204``PowerQUICC I (8xx)' desc='PowerQUICC I (8xx)'></deviceType><deviceType id='0101096560874002702042977``PowerQUICC II (82xx)' desc='PowerQUICC II (82xx)'></deviceType><deviceType id='0201096561680087728801439``PowerQUICC II Pro (83xx)' desc='PowerQUICC II Pro (83xx)'></deviceType><deviceType id='0301096562235871727716465``PowerQUICC III (85xx)' desc='PowerQUICC III (85xx)'></deviceType></deviceType><deviceType id='030K2BAWD5JA``QorIQ Platforms' desc='QorIQ Platforms'><deviceType id='010M18UQ2JQ6``QorIQ Comms Platform' desc='QorIQ Comms Platform'><deviceType id='040MF6ZGOH1Y``QorIQ Value-Performance SoCs' desc='QorIQ Value-Performance SoCs'></deviceType><deviceType id='050MF6ZFFLWQ``QorIQ Mid-Performance SoCs' desc='QorIQ Mid-Performance SoCs'></deviceType><deviceType id='060MF6ZEILZT``QorIQ High-Performance SoCs' desc='QorIQ High-Performance SoCs'></deviceType></deviceType></deviceType><deviceType id='030LQJLQU9UA``QorIQ Qonverge' desc='QorIQ Qonverge'></deviceType><deviceType id='045M98653``Host and Integrated Host Processors (8xxx,7xxx,7xx,6xx)' desc='Host and Integrated Host Processors (8xxx,7xxx,7xx,6xx)'></deviceType><deviceType id='060NS6AZNGCF``QorIQ Power Architecture Processors' desc='QorIQ Power Architecture Processors'></deviceType></deviceType><deviceType id='030NJMSV68ZP``More Processors' desc='More Processors'><deviceType id='030NTCS142QC``8~16-bit MCUs' desc='8/16-bit MCUs'><deviceType id='005NTCUZGC2A``8-bit 80C51 OTP/ROM' desc='8-bit 80C51 OTP/ROM'></deviceType><deviceType id='010M98633``8-bit HC05 (Legacy)' desc='8-bit HC05 (Legacy)'></deviceType><deviceType id='0151100707604260710517663``8-bit HC08' desc='8-bit HC08'></deviceType><deviceType id='020M98635``8-bit HC11 (Legacy)' desc='8-bit HC11 (Legacy)'></deviceType><deviceType id='025LMLIJN4CB``8-bit Intelligent Distributed Controllers' desc='8-bit Intelligent Distributed Controllers'></deviceType><deviceType id='030NTCS30ATI``8-bit LPC900 Series' desc='8-bit LPC900 Series'></deviceType><deviceType id='040114220795310113``8-bit RS08' desc='8-bit RS08'></deviceType><deviceType id='0501112377972033730441437``8-bit S08' desc='8-bit S08'><deviceType id='010M3UZ6HO6X``8-bit S08 3.6V MCUs' desc='8-bit S08 3.6V MCUs'></deviceType><deviceType id='130M3UZ8MPK``8-bit S08 5.5V MCUs' desc='8-bit S08 5.5V MCUs'></deviceType></deviceType><deviceType id='060M98637``16-bit HC12 (Legacy)' desc='16-bit HC12 (Legacy)'></deviceType><deviceType id='070M98638``16-bit HC16' desc='16-bit HC16'></deviceType><deviceType id='080M0zGQK100``16-bit HCS12 &amp;amp; S12X' desc='16-bit HCS12 &amp;amp; S12X'></deviceType><deviceType id='120LMLIMLHR6``16-bit S12 MagniV' desc='16-bit S12 MagniV'></deviceType></deviceType><deviceType id='040NTCSK47TX``Application Specific MCUs~MPUs' desc='Application Specific MCUs/MPUs'><deviceType id='010NUH00NA55``Bluetooth Low Energy (BLE)' desc='Bluetooth Low Energy (BLE)'></deviceType><deviceType id='015MDJGM4DJB``Crypto Coprocessors' desc='Crypto Coprocessors'></deviceType><deviceType id='020NTCV2UCUA``IEEE 802.15.4 Wireless MCUs' desc='IEEE 802.15.4 Wireless MCUs'></deviceType><deviceType id='021MC1PEYNJW``Image Cognition Processors' desc='Image Cognition Processors'></deviceType><deviceType id='030NTCV3UJLF``QN902x Bluetooth Smart SoC - Archived' desc='QN902x Bluetooth Smart SoC - Archived'></deviceType></deviceType><deviceType id='050M0ylsYTLC``ColdFire+~ColdFire MCUs~MPUs' desc='ColdFire+/ColdFire MCUs/MPUs'><deviceType id='000L3CFQYLZT``ColdFire+ MCUs' desc='ColdFire+ MCUs'></deviceType><deviceType id='010M9``ColdFire MCUs' desc='ColdFire MCUs'><deviceType id='00011430571081945``V1 MCU' desc='V1 MCU'></deviceType><deviceType id='0101113331549638725695448``V2 MCU' desc='V2 MCU'></deviceType></deviceType><deviceType id='020LMFGMZO67``ColdFire MPUs' desc='ColdFire MPUs'><deviceType id='0001113331675698727611752``V2 MPU' desc='V2 MPU'></deviceType><deviceType id='010113198408012060``V3 MPU' desc='V3 MPU'></deviceType><deviceType id='0201113330424521710443426``V4 MPU' desc='V4 MPU'></deviceType></deviceType><deviceType id='0301118068000085705846165``68KMPUs-Legacy' desc='68KMPUs-Legacy'><deviceType id='000M934310090795``M683XX' desc='M683XX'></deviceType><deviceType id='001M934310184622``M680X0' desc='M680X0'></deviceType></deviceType><deviceType id='040M994189716807``ColdFire Peripherals' desc='ColdFire Peripherals'></deviceType></deviceType><deviceType id='060NJMSYYKWO``Digital Signal Processors~Controllers' desc='Digital Signal Processors/Controllers'><deviceType id='015M959617836292``DSCs' desc='DSCs'><deviceType id='010LMUGM1GCF``MC56F84xxx' desc='MC56F84xxx'></deviceType><deviceType id='020KQDNPO4X5``MC56F83xx' desc='MC56F83xx'></deviceType><deviceType id='030L3G2YEAIK``MC56F82xx' desc='MC56F82xx'></deviceType><deviceType id='04011414073607701``MC56F81xx' desc='MC56F81xx'></deviceType><deviceType id='050K9XLUAC2F``MC56F80xx' desc='MC56F80xx'></deviceType><deviceType id='060KQDNKN5KE``DSP56F82x' desc='DSP56F82x'></deviceType><deviceType id='070114140735424077``DSP56F80x' desc='DSP56F80x'></deviceType><deviceType id='080114140734028676``DSP5685x' desc='DSP5685x'></deviceType></deviceType><deviceType id='035M98596``DSP56K/Symphony DSPs' desc='DSP56K/Symphony DSPs'></deviceType><deviceType id='040JOVSQMFTB``StarCore DSPs' desc='StarCore DSPs'><deviceType id='010K8DYCGO6X``Multicore DSPs' desc='Multicore DSPs'></deviceType><deviceType id='020L60R4V6DF``Single-Core DSPs' desc='Single-Core DSPs'></deviceType><deviceType id='030L60RBECJC``Cost-Efficient DSP' desc='Cost-Efficient DSP'></deviceType></deviceType></deviceType></deviceType></deviceType><deviceType id='045NTCFWLJY3``Interface and Connectivity' desc='Interface and Connectivity'><deviceType id='010NTCG1DMG0``Interface and System Management' desc='Interface and System Management'><deviceType id='010NY4IQR9UN``Advanced Automotive Safety' desc='Advanced Automotive Safety'><deviceType id='010NNJ6EH4FY``Airbag' desc='Airbag'></deviceType><deviceType id='020NNJ6ATCZQ``Braking' desc='Braking'></deviceType><deviceType id='050MD16MCHR6``Millimiter-Wave Solutions' desc='Millimiter-Wave Solutions'></deviceType><deviceType id='060N5BP3XLWQ``Tire Pressure Monitoring Sensors' desc='Tire Pressure Monitoring Sensors'></deviceType></deviceType><deviceType id='020NTCG3GMI3``Analog Watch Motor Drivers' desc='Analog Watch Motor Drivers'></deviceType><deviceType id='030NTCG5X1PZ``Bridges' desc='Bridges'><deviceType id='010NTCG7IK8P``I&amp;#178;C / SPI Slave to UART / IrDA / GPIO Bridges' desc='I&amp;#178;C / SPI Slave to UART / IrDA / GPIO Bridges'></deviceType><deviceType id='020NTCGB1MXW``I&amp;#178;C Slave to SPI Master / GPIO Bridges' desc='I&amp;#178;C Slave to SPI Master / GPIO Bridges'></deviceType><deviceType id='030NTCGCUGAA``SPI Slave to I&amp;#178;C Master / GPIO Bridges' desc='SPI Slave to I&amp;#178;C Master / GPIO Bridges'></deviceType><deviceType id='040NTCGEL46B``UART to I&amp;#178;C Master / GPIO Bridges' desc='UART to I&amp;#178;C Master / GPIO Bridges'></deviceType></deviceType><deviceType id='040NTCGGD7MA``Car Radio On-Off Logic' desc='Car Radio On-Off Logic'></deviceType><deviceType id='050NTCKBX47C``Clock Distribution' desc='Clock Distribution'></deviceType><deviceType id='060NTCKD877K``Clocks with LCD Drivers' desc='Clocks with LCD Drivers'></deviceType><deviceType id='070M985305445709``DSI and PSI5 Components' desc='DSI and PSI5 Components'></deviceType><deviceType id='080NTCKEULAD``GTL to TTL Translators' desc='GTL to TTL Translators'></deviceType><deviceType id='090NTCKG6DK6``High-Speed Multiplexer' desc='High-Speed Multiplexer'></deviceType><deviceType id='100NXKB7ZD7G``IO-Link Serial Communication Protocol' desc='IO-Link Serial Communication Protocol'></deviceType><deviceType id='110NAPU0TJ6B``Isolated Communications Devices' desc='Isolated Communications Devices'></deviceType><deviceType id='120NTCKI1X3``I&amp;#178;C' desc='I&amp;#178;C'><deviceType id='010NTCKJO58L``I&amp;#178;C Bus Controller and Bridge ICs' desc='I&amp;#178;C Bus Controller and Bridge ICs'></deviceType><deviceType id='020NTCKMLJB``I&amp;#178;C Bus Repeaters/Hubs/Extenders' desc='I&amp;#178;C Bus Repeaters/Hubs/Extenders'></deviceType><deviceType id='030NTCKO691Z``I&amp;#178;C DACs and ADCs' desc='I&amp;#178;C DACs and ADCs'></deviceType><deviceType id='040NTCKPYFPO``I&amp;#178;C DIP Switch' desc='I&amp;#178;C DIP Switch'></deviceType><deviceType id='050NTCKRID5C``I&amp;#178;C Fast-Mode Plus' desc='I&amp;#178;C Fast-Mode Plus'></deviceType><deviceType id='060NTCKTQDT0``I&amp;#178;C General Purpose I/O' desc='I&amp;#178;C General Purpose I/O'></deviceType><deviceType id='070NTCKVH3VV``I&amp;#178;C Multiplexers/Switches' desc='I&amp;#178;C Multiplexers/Switches'></deviceType><deviceType id='080NTCKXRKTF``I&amp;#178;C Real-Time Clocks (RTC)' desc='I&amp;#178;C Real-Time Clocks (RTC)'></deviceType><deviceType id='090NTCL0TUC``I&amp;#178;C Serial EEPROM/RAM' desc='I&amp;#178;C Serial EEPROM/RAM'></deviceType><deviceType id='100NTCL2ENM``I&amp;#178;C Temperature/Voltage Monitors' desc='I&amp;#178;C Temperature/Voltage Monitors'></deviceType><deviceType id='110NTCL3S9K6``I&amp;#178;C Voltage Level Translators' desc='I&amp;#178;C Voltage Level Translators'></deviceType><deviceType id='120NTCL5RFKZ``I&amp;#178;C LED Display Control' desc='I&amp;#178;C LED Display Control'></deviceType></deviceType><deviceType id='130NTCL7NIK``LCD Drivers' desc='LCD Drivers'><deviceType id='010NTCLBCFUB``LCD Character Drivers' desc='LCD Character Drivers'></deviceType><deviceType id='020NTCLENN51``LCD Graphic Drivers' desc='LCD Graphic Drivers'></deviceType><deviceType id='030NTCLFY9H5``LCD Segment Drivers' desc='LCD Segment Drivers'></deviceType></deviceType><deviceType id='135NTC539OPD``Load Switches' desc='Load Switches'></deviceType><deviceType id='140NTCLL4IFY``Memory Data Switches' desc='Memory Data Switches'></deviceType><deviceType id='150NTCLO3OU2``PCI Express' desc='PCI Express'><deviceType id='010NTCLPBF3N``PCIe Channel Switches' desc='PCIe Channel Switches'></deviceType><deviceType id='020NTCLQJ2U8``PCIe Physical Layer (PHY) Devices' desc='PCIe Physical Layer (PHY) Devices'></deviceType><deviceType id='030NTCLRW5LP``PCI/PCIe Multimedia Interfaces' desc='PCI/PCIe Multimedia Interfaces'></deviceType></deviceType><deviceType id='160NTCLTHK7F``Real-Time Clocks' desc='Real-Time Clocks'><deviceType id='010NTCLV3M0H``Automotive RTCs' desc='Automotive RTCs'></deviceType><deviceType id='030NTCLYECE``RTCs with SPI' desc='RTCs with SPI'></deviceType><deviceType id='040NTCLZMIP5``RTCs with Temperature Compensation' desc='RTCs with Temperature Compensation'></deviceType><deviceType id='050NTCM0XAKS``Smart Card RTCs' desc='Smart Card RTCs'></deviceType><deviceType id='080NTCKXRKTF``I&amp;#178;C Real-Time Clocks (RTC)' desc='I&amp;#178;C Real-Time Clocks (RTC)'></deviceType></deviceType><deviceType id='170NTCM2F95J``SDIO Host controller' desc='SDIO Host controller'></deviceType><deviceType id='180M982188277973``Switch Monitoring ICs' desc='Switch Monitoring ICs'></deviceType><deviceType id='190NTCM5V55L``Video SERDES' desc='Video SERDES'></deviceType></deviceType><deviceType id='020NTCM864MP``Wired Connectivity' desc='Wired Connectivity'><deviceType id='010NTCM9U1XF``CAN Protocol Controllers' desc='CAN Protocol Controllers'></deviceType><deviceType id='020NTCMHGJZN``CAN/LIN System Basis Chips' desc='CAN/LIN System Basis Chips'></deviceType><deviceType id='030NTCMB42X6``CAN~LIN~FlexRay Transceivers' desc='CAN/LIN/FlexRay Transceivers'><deviceType id='010M985304496393``CAN Physical Interfaces' desc='CAN Physical Interfaces'></deviceType><deviceType id='020NTCMCI40U``CAN Transceivers' desc='CAN Transceivers'></deviceType><deviceType id='030NTCMDYJXH``FlexRay Transceivers' desc='FlexRay Transceivers'></deviceType><deviceType id='040M98445``LIN, ISO9141, J1850 Physical Interfaces' desc='LIN, ISO9141, J1850 Physical Interfaces'></deviceType><deviceType id='050NTCMFZ10Q``LIN Transceivers' desc='LIN Transceivers'></deviceType></deviceType><deviceType id='040NTM3TFB00``Ethernet' desc='Ethernet'></deviceType><deviceType id='045NTCMVWF58``Micro-USB Interface' desc='Micro-USB Interface'></deviceType><deviceType id='050NTCMXEA6G``Modems' desc='Modems'><deviceType id='010NTCMYR5SH``DOCSIS' desc='DOCSIS'></deviceType><deviceType id='020NTCN2J4ME``ASK Modem' desc='ASK Modem'></deviceType></deviceType><deviceType id='060NTCN6IFJ5``Signal Conditioners - USB 3.0' desc='Signal Conditioners - USB 3.0'></deviceType><deviceType id='070JF7ERT7SX``System Basis Chip' desc='System Basis Chip'></deviceType><deviceType id='080NTCPF5FTP``UARTs' desc='UARTs'><deviceType id='010NTCPGVO5T``Eight channel' desc='Eight channel'></deviceType><deviceType id='020NTCPIXFYD``Four channel' desc='Four channel'></deviceType><deviceType id='030NTCPKHZM``Single Channel' desc='Single Channel'></deviceType><deviceType id='040NTCPM38VR``Two channel' desc='Two channel'></deviceType></deviceType><deviceType id='090NTCN9J8E3``USB Host Controllers' desc='USB Host Controllers'></deviceType></deviceType><deviceType id='030NTCOJE9K4``Wireless Connectivity' desc='Wireless Connectivity'><deviceType id='010NE8D1570C``Sub-1 GHz Wireless Solutions' desc='Sub-1 GHz Wireless Solutions'></deviceType><deviceType id='020NE8D0G9UN``2.4 GHz Wireless Solutions' desc='2.4 GHz Wireless Solutions'><deviceType id='010NUH00NA55``Bluetooth Low Energy (BLE)' desc='Bluetooth Low Energy (BLE)'></deviceType><deviceType id='020NTCV2UCUA``IEEE 802.15.4 Wireless MCUs' desc='IEEE 802.15.4 Wireless MCUs'></deviceType><deviceType id='040NUH075JUW``Multi-PHY 802.15.4 + BLE' desc='Multi-PHY 802.15.4 + BLE'></deviceType></deviceType><deviceType id='040NTCVJHCPO``NFC and Reader ICs' desc='NFC and Reader ICs'><deviceType id='010NTNAFMD6X``NFC Frontend Solutions' desc='NFC Frontend Solutions'></deviceType><deviceType id='010NTCVL24WT``NFC Controller Solutions' desc='NFC Controller Solutions'></deviceType><deviceType id='020NTCVMSGAU``Connected Tag Solutions' desc='Connected Tag Solutions'></deviceType><deviceType id='030NTCVOE38H``Contact Smart Card Reader ICs' desc='Contact Smart Card Reader ICs'></deviceType><deviceType id='040NTCVPQ6P5``MIFARE SAMs for Reader Systems' desc='MIFARE SAMs for Reader Systems'></deviceType><deviceType id='050NTCVR58HV``HITAG Reader ICs' desc='HITAG Reader ICs'></deviceType></deviceType><deviceType id='050NY10B9DIJ``NFMI Radio Solutions' desc='NFMI Radio Solutions'></deviceType></deviceType></deviceType><deviceType id='050J2K9Y24FY``RF' desc='RF'><deviceType id='010NTCXOL92J``Control Circuits' desc='Control Circuits'><deviceType id='010M576SQNJW``Advanced Doherty Alignment Module (ADAM)' desc='Advanced Doherty Alignment Module (ADAM)'></deviceType><deviceType id='020NTCXS280``Attenuators' desc='Attenuators'></deviceType><deviceType id='030NTCXPW88J``Switches' desc='Switches'></deviceType></deviceType><deviceType id='020NO1CJA9B0``Digital Front End Processors' desc='Digital Front End Processors'></deviceType><deviceType id='030NTCYCFI7S``Low Power TX~RX Discrete Transistors' desc='Low Power TX/RX Discrete Transistors'><deviceType id='010NTCYG64X5``JFETs' desc='JFETs'><deviceType id='010NTCYHNAP5``N-Channel Junction Field-Effect Transistors for Switching' desc='N-Channel Junction Field-Effect Transistors for Switching'></deviceType><deviceType id='020NTCYIYJKP``P-Channel Junction Field-Effect Transistors for Switching' desc='P-Channel Junction Field-Effect Transistors for Switching'></deviceType><deviceType id='030NTCYK5KZZ``N-Channel Junction Field-Effect Transistors for General RF Applications' desc='N-Channel Junction Field-Effect Transistors for General RF Applications'></deviceType></deviceType><deviceType id='020NTCYT122Z``Bipolar' desc='Bipolar'><deviceType id='010NTAMTD66U``LNAs, Mixers, Frequency Multipliers, Buffers' desc='LNAs, Mixers, Frequency Multipliers, Buffers'><deviceType id='010NTAMUT8O1``12 GHz -&amp;gt; +18 GHz (Ku high, Ka band)' desc='12 GHz -&amp;gt; +18 GHz (Ku high, Ka band)'></deviceType><deviceType id='020NTAMX15TC``6 GHz -&amp;gt; 12 GHz (X, Ku low band)' desc='6 GHz -&amp;gt; 12 GHz (X, Ku low band)'></deviceType><deviceType id='030NTAMYF7J4``3.5 GHz -&amp;gt; 6 GHz (S, C band)' desc='3.5 GHz -&amp;gt; 6 GHz (S, C band)'></deviceType><deviceType id='040NTAN1J7P7``2 GHz -&amp;gt; 3.5 GHz (S band)' desc='2 GHz -&amp;gt; 3.5 GHz (S band)'></deviceType><deviceType id='050NTAN3IMFJ``1 GHz -&amp;gt; + 2 GHz (L band)' desc='1 GHz -&amp;gt; + 2 GHz (L band)'></deviceType><deviceType id='060NTAN50XD``&amp;lt; 1 GHz (VHF, UHF band)' desc='&amp;lt; 1 GHz (VHF, UHF band)'></deviceType></deviceType><deviceType id='020NTAN79GGO``High Linearity Amplifiers, High Output Amplifiers, Drivers' desc='High Linearity Amplifiers, High Output Amplifiers, Drivers'><deviceType id='010NTAN8YA2T``12 GHz -&amp;gt; +18 GHz (Ku high, Ka band)' desc='12 GHz -&amp;gt; +18 GHz (Ku high, Ka band)'></deviceType><deviceType id='020NTANC1H3K``6 GHz -&amp;gt; 12 GHz (X, Ku low band)' desc='6 GHz -&amp;gt; 12 GHz (X, Ku low band)'></deviceType><deviceType id='030NTANDKIIT``3.5 GHz -&amp;gt; 6 GHz (S, C band)' desc='3.5 GHz -&amp;gt; 6 GHz (S, C band)'></deviceType><deviceType id='040NTANEVNPL``2 GHz -&amp;gt; 3.5 GHz (S band)' desc='2 GHz -&amp;gt; 3.5 GHz (S band)'></deviceType><deviceType id='050NTANG65WC``1 GHz -&amp;gt; + 2 GHz (L band)' desc='1 GHz -&amp;gt; + 2 GHz (L band)'></deviceType><deviceType id='060NTANHOL77``&amp;lt; 1 GHz (VHF, UHF band)' desc='&amp;lt; 1 GHz (VHF, UHF band)'></deviceType></deviceType><deviceType id='030NTANJEOGD``Oscillators' desc='Oscillators'><deviceType id='010NTANL6JOQ``12 GHz -&amp;gt; +18 GHz (Ku high, Ka band)' desc='12 GHz -&amp;gt; +18 GHz (Ku high, Ka band)'></deviceType><deviceType id='020NTANN0AWR``6 GHz -&amp;gt; 12 GHz (X, Ku low band)' desc='6 GHz -&amp;gt; 12 GHz (X, Ku low band)'></deviceType><deviceType id='030NTANOSH1K``3.5 GHz -&amp;gt; 6 GHz (S, C band)' desc='3.5 GHz -&amp;gt; 6 GHz (S, C band)'></deviceType><deviceType id='040NTAOW5KGP``2 GHz - 3.5 GHz (S band)' desc='2 GHz - 3.5 GHz (S band)'></deviceType><deviceType id='050NTAOXX40I``1 GHz - 2 GHz (L band)' desc='1 GHz - 2 GHz (L band)'></deviceType><deviceType id='060NTAP2T72R``&amp;lt; 1 GHz (VHF, UHF band)' desc='&amp;lt; 1 GHz (VHF, UHF band)'></deviceType></deviceType><deviceType id='040NTAP4W3F6``RF Power Transistors for Portable Equipment (UHF)' desc='RF Power Transistors for Portable Equipment (UHF)'></deviceType><deviceType id='050NTAPCGLUL``PNP' desc='PNP'></deviceType></deviceType><deviceType id='020NTCYLK672``MOSFETs' desc='MOSFETs'><deviceType id='010NTC6C7E0W``N-Channel, Single MOSFETs for Switching' desc='N-Channel, Single MOSFETs for Switching'></deviceType><deviceType id='020NTC6DV7DZ``N-Channel, Dual-Gate MOSFETs' desc='N-Channel, Dual-Gate MOSFETs'></deviceType><deviceType id='030NTCYRC8QX``N-Channel, Dual-Gate MOSFETs for Set-Top Boxes' desc='N-Channel, Dual-Gate MOSFETs for Set-Top Boxes'></deviceType></deviceType></deviceType><deviceType id='040NTCXUIOQD``Low Power TX~RX ICs' desc='Low Power TX/RX ICs'><deviceType id='010NTCXX6AX9``Modulators' desc='Modulators'></deviceType><deviceType id='020NTCXYV4FY``Sub-GHz RF' desc='Sub-GHz RF'></deviceType><deviceType id='030NTCY05412``Transmitters' desc='Transmitters'></deviceType></deviceType><deviceType id='050NTCY1MDHS``Mixers' desc='Mixers'><deviceType id='010NTCY38EM9``Low Power FM IF Systems' desc='Low Power FM IF Systems'></deviceType><deviceType id='020NTCY5P8N4``Mixer without Integrated LO' desc='Mixer without Integrated LO'></deviceType><deviceType id='030NTCY6T3ZN``Mixer with Integrated LO' desc='Mixer with Integrated LO'></deviceType></deviceType><deviceType id='050MD16MCHR6``Millimiter-Wave Solutions' desc='Millimiter-Wave Solutions'></deviceType><deviceType id='060NTCY85B1D``PLLs and Oscillators' desc='PLLs and Oscillators'><deviceType id='010NTCY9F64V``Integrated PLL VCOs' desc='Integrated PLL VCOs'></deviceType><deviceType id='020NTCYAX53D``Microwave LO Generators' desc='Microwave LO Generators'></deviceType></deviceType><deviceType id='070NTCWZ655O``RF Amplifiers - Low ~ Medium Power' desc='RF Amplifiers - Low / Medium Power'><deviceType id='004MK874A529``GaAs Linear Power Transistors' desc='GaAs Linear Power Transistors'></deviceType><deviceType id='010NTCX0LKXX``Low Noise Amplifiers (LNAs)' desc='Low Noise Amplifiers (LNAs)'><deviceType id='0101077553938367729595478``LNAs for Base Station (GaAs)' desc='LNAs for Base Station (GaAs)'></deviceType><deviceType id='020NTCX21CVY``LNAs for General Purpose' desc='LNAs for General Purpose'></deviceType><deviceType id='030NTCX3DKPX``LNAs for Portable Devices' desc='LNAs for Portable Devices'></deviceType><deviceType id='040NTCX4KADU``LNAs for Set-Top Boxes (75&amp;#8486;)' desc='LNAs for Set-Top Boxes (75&amp;#8486;)'></deviceType><deviceType id='050NTCX5VM0G``LNAs for Wireless Infrastructures' desc='LNAs for Wireless Infrastructures'></deviceType><deviceType id='060NTCX8EI0Z``Multi-standard LNAs (SiGe)' desc='Multi-standard LNAs (SiGe)'></deviceType></deviceType><deviceType id='020NTCXA6G9R``Medium Power Amplifiers' desc='Medium Power Amplifiers'></deviceType><deviceType id='030NTCXBGEP8``Variable Gain Amplifiers' desc='Variable Gain Amplifiers'></deviceType><deviceType id='040NTCXDJO3N``Wideband Amplifiers' desc='Wideband Amplifiers'><deviceType id='004MK874A529``GaAs Linear Power Transistors' desc='GaAs Linear Power Transistors'></deviceType><deviceType id='010M10Mld5Hf``General Purpose Amplifiers' desc='General Purpose Amplifiers'></deviceType><deviceType id='020L9MDB9JQ6``Linear Amplifiers' desc='Linear Amplifiers'></deviceType><deviceType id='040NTCXHTD6B``Wideband Amplifiers (75 Ohm)' desc='Wideband Amplifiers (75 Ohm)'></deviceType></deviceType></deviceType><deviceType id='080NTCWX796L``RF Power Transistors' desc='RF Power Transistors'><deviceType id='010M942446219028``RF Broadcast' desc='RF Broadcast'></deviceType><deviceType id='020NOZ656KT2``RF Cellular Infrastructure' desc='RF Cellular Infrastructure'><deviceType id='001M939843445554``450 - 1000 MHz' desc='450 - 1000 MHz'></deviceType><deviceType id='002LUVI64FTB``1450 - 2200 MHz' desc='1450 - 2200 MHz'></deviceType><deviceType id='003LUVI9H7YF``2300 - 2690 MHz' desc='2300 - 2690 MHz'></deviceType><deviceType id='004LUVIC28RR``3400 - 3800 MHz' desc='3400 - 3800 MHz'></deviceType></deviceType><deviceType id='030JVXYHHCZQ``RF Commercial Aerospace' desc='RF Commercial Aerospace'></deviceType><deviceType id='040N4SXBT9B0``RF Cooking' desc='RF Cooking'></deviceType><deviceType id='050IZTZN6EWM``RF Industrial, Scientific and Medical' desc='RF Industrial, Scientific and Medical'></deviceType><deviceType id='060MYSI12LZT``RF Military' desc='RF Military'><deviceType id='020NBLBNR7SX``General Purpose Drivers' desc='General Purpose Drivers'></deviceType><deviceType id='030NBLBSODIJ``Radio Communications' desc='Radio Communications'></deviceType><deviceType id='040NBLBWFNYJ``RF Radar' desc='RF Radar'></deviceType></deviceType><deviceType id='070M939843382892``RF Mobile Radio' desc='RF Mobile Radio'></deviceType></deviceType><deviceType id='0901109019318578694525681``Transceivers and Wireless MCUs' desc='Transceivers and Wireless MCUs'><deviceType id='000M928166``802.15.4 (2.4 GHz) Transceivers' desc='802.15.4 (2.4 GHz) Transceivers'></deviceType><deviceType id='0101086277316604717837103``802.15.4 (2.4 GHz) Wireless MCUs' desc='802.15.4 (2.4 GHz) Wireless MCUs'></deviceType><deviceType id='030M10PHKGTk``UHF (Sub-1 GHz) Transceivers and Wireless MCUs' desc='UHF (Sub-1 GHz) Transceivers and Wireless MCUs'></deviceType></deviceType><deviceType id='110NTD0KXK3J``Tuners' desc='Tuners'><deviceType id='010NTD0MPMC3``Car Radio Tuners- Analog IF' desc='Car Radio Tuners- Analog IF'></deviceType><deviceType id='020NTD0O12JO``Car Radio Tuners - Digital IF' desc='Car Radio Tuners - Digital IF'></deviceType></deviceType><deviceType id='120M10PHNM9f``UHF Receivers' desc='UHF Receivers'></deviceType></deviceType><deviceType id='060M939346251269``Sensors' desc='Sensors'><deviceType id='000LHUQXLJ4Z``Intelligent Sensors and Sensor Hubs' desc='Intelligent Sensors and Sensor Hubs'></deviceType><deviceType id='005N5BNYED53``6-Axis Sensors' desc='6-Axis Sensors'></deviceType><deviceType id='010M939346191118``Accelerometers' desc='Accelerometers'><deviceType id='0001084288158625737424209``Low g Sensors' desc='Low g Sensors'></deviceType><deviceType id='0011084288500599697184595``Medium g Sensors' desc='Medium g Sensors'></deviceType><deviceType id='0021084289558003727680777``High g Sensors' desc='High g Sensors'></deviceType><deviceType id='010N5BNDO7YF``3-Axis Accelerometers' desc='3-Axis Accelerometers'></deviceType><deviceType id='020N5BNH18RR``2-Axis Accelerometers' desc='2-Axis Accelerometers'></deviceType><deviceType id='030N5BNJ2N6U``1-Axis Accelerometers' desc='1-Axis Accelerometers'></deviceType></deviceType><deviceType id='010NT30JJHR6``Angular Sensors' desc='Angular Sensors'></deviceType><deviceType id='020NT30YF5Q3``Capacitive  Sensors' desc='Capacitive  Sensors'></deviceType><deviceType id='030MMUR2AJE9``Gyroscopes' desc='Gyroscopes'></deviceType><deviceType id='040LEKTCL9B0``Magnetometers' desc='Magnetometers'></deviceType><deviceType id='040NT38XE24D``Rotational Sensors' desc='Rotational Sensors'></deviceType><deviceType id='050NT38ZD9UN``Temperature Sensors' desc='Temperature Sensors'></deviceType><deviceType id='050M939346219036``Pressure Sensors' desc='Pressure Sensors'><deviceType id='010N5BOIHA55``Barometric Pressure 15 to 115 kPa' desc='Barometric Pressure 15 to 115 kPa'></deviceType><deviceType id='020N5BOQEFCA``Differential/Gauge up to 10 kPa' desc='Differential/Gauge up to 10 kPa'></deviceType><deviceType id='030N5BOUCJUW``Differential/Gauge up to 115 kPa' desc='Differential/Gauge up to 115 kPa'></deviceType><deviceType id='040N5BOWINJW``Differential/Gauge up to 1000 kPa' desc='Differential/Gauge up to 1000 kPa'></deviceType><deviceType id='050N5BP0LLZT``LPG and CNG Gas 15 to 400 kPa' desc='LPG and CNG Gas 15 to 400 kPa'></deviceType><deviceType id='060N5BP3XLWQ``Tire Pressure Monitoring Sensors' desc='Tire Pressure Monitoring Sensors'></deviceType><deviceType id='070N5BP6EH1Y``Vacuum Sensors -50 to -115 kPa' desc='Vacuum Sensors -50 to -115 kPa'></deviceType></deviceType><deviceType id='0801091050279861702938268``Touch Sensors' desc='Touch Sensors'></deviceType><deviceType id='100NTCL2ENM``I&amp;#178;C Temperature/Voltage Monitors' desc='I&amp;#178;C Temperature/Voltage Monitors'></deviceType></deviceType><deviceType id='065NPQXZP9UN``Single Chip Module' desc='Single Chip Module'></deviceType></deviceTypeTree>";
+var devTypeTreeXML = jQuery_1_9_1.parseXML(devTypeTreeXMLStr);
+var devTypeTreeXMLRoot = jQuery_1_9_1(devTypeTreeXML).children().first(); 
+
+
+var appTypeTreeXMLStr = "<applicationTypeTree id='root'><applicationType id='000M0ylfWcbf``Automotive' desc='Automotive'><applicationType id='030J6K3WC24D``Chassis and Safety' desc='Chassis and Safety'></applicationType></applicationType></applicationTypeTree>";
+var appTypeTreeXML = jQuery_1_9_1.parseXML(appTypeTreeXMLStr);
+var appTypeTreeXMLRoot = jQuery_1_9_1(appTypeTreeXML).children().first(); 
+
+
+function initValidation(){
+	initDeviceSupTypeTree();
+	initApplicationSupTypeTree();
+	
+}
+	
+
+</script>
+
+
+<!-- script to enable Featured Alliances Flash -->
+<head>
+<script>
+var LANG_CD_LIST = "zh-Hans,ja,ko";
+var URL_DOMAIN = "www.nxp.com";
+var URL_MAJOR_DOMAIN = "nxp.com";
+var CACHE_URL_DOMAINS = ["cache.nxp.com", "style.nxp.com", "image.nxp.com"];
+</script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/webanalytics.js"></script>
+<script type="text/javascript" src="http://assets.adobedtm.com/f2bd0c145f764c0e7b6dae5f9269061e38fabacd/satelliteLib-2fb7098ae4e0938976f1eee822973607d3f48c60.js"></script></head>
+
+<body onload="initValidation();">
+
+<!--Modification start by B47191 on 26 August 2013 For Connect Globalization CR52322 -->
+<!--Modification End by B47191 on 26 August 2013 For Connect Globalization CR52322 -->	
+
+<script type="text/javascript">
+   	var s_vt_id = getCookieForSiteCatalyst("freescale_visitor_id");
+	var s_site_platform = "normal";
+	var s_normal_site = "normal";
+	if(s_site_platform == s_normal_site) {
+		s_site_platform = "full";
+	}
+
+	var s_do_pagecall = true;
+	
+	var s_searchQryTxt = "";
+	var s_searchResultCnt = "";
+	
+	var s_searchFilter = "";
+	
+	
+	if(s_searchResultCnt == '' || s_searchResultCnt == "0"){
+		s_searchResultCnt = "zero";
+	}
+
+	var s_currentUrl = document.URL;
+
+	var searchLabel = null;
+	var code = null;	
+	var type = null;
+	var nodeId = null;
+	var partnerId = null;
+	var partNumber = null;
+	var partNumber1 = null;
+	var packageId = null;
+	var orderablePartNum = null;
+	var yid = null;
+	var pageLoadRule = "";
+	var summaryPageType = "";
+	var pageCategory = "";
+	var sourceId = "";
+	var sourceType = "";
+
+	
+		pageLoadRule = pageLoadRule == "" ? "General":pageLoadRule;
+
+	
+		
+	
+	
+	s_currentUrl = getCleanPageURL();
+	if(searchLabel != null) s_currentUrl = s_currentUrl +'?searchLabel=' + searchLabel;
+	if(partnerId != null) s_currentUrl = s_currentUrl +'?partnerId=' + partnerId;	
+	if(partNumber != null) s_currentUrl = s_currentUrl +'?PART_NUMBER=' + partNumber;
+	if(partNumber1 != null) s_currentUrl = s_currentUrl +'?partnumber=' + partNumber1;
+	if(packageId != null) s_currentUrl = s_currentUrl +'?packageId=' + packageId;
+	if(orderablePartNum != null) s_currentUrl = s_currentUrl +'?orderablePartNum=' + orderablePartNum;	
+
+	var eventPathing = "";
+	var pageName = "NXP Partner:Member Directory Search";
+	var formReference = "";
+	var eVar57 = "";
+		
+	
+		eventPathing = "D=pageName";
+        if (typeof(eVar57) != "undefined" && eVar57.indexOf("Rich Media Component") != -1) {
+        	eventPathing = eVar57;
+        }
+	
+	
+	var digitalData={};
+	digitalData.pageInfo = {};
+	digitalData.pageInfo.pageLoadRule = pageLoadRule; 
+	digitalData.pageInfo.pageName = pageName;
+	digitalData.pageInfo.pageURLClean = s_currentUrl;			
+	digitalData.pageInfo.pageType = "NXP Partner";		
+	digitalData.pageInfo.siteSection1 = "NXP Partner";
+	digitalData.pageInfo.siteSection2 = "";
+	digitalData.pageInfo.siteSection3 = "";
+	digitalData.pageInfo.siteSection4 = "";
+	digitalData.pageInfo.siteSection5 = "";
+	digitalData.pageInfo.siteSection6 = "";
+	digitalData.pageInfo.siteSection7 = "";
+	digitalData.pageInfo.pageEventPathing = eventPathing;
+	
+	digitalData.pageInfo.pageTab = "";
+	digitalData.pageInfo.nodeID = "";	
+	digitalData.pageInfo.assetID = "";
+	digitalData.pageInfo.localTitle = "Member Directory Search";
+
+	digitalData.pageInfo.pageCodeID = "";
+	if ((pageName != null && pageName != "") && (pageName.indexOf("Shopping Cart:Distributors | ")!= -1 || 
+		    pageName.indexOf("General: More Info | ")!= -1 || pageName.indexOf("General: Reliability Report | ")!= -1 || 
+			pageName.indexOf("General: Parts Piece Detail | ")!= -1)){
+			digitalData.pageInfo.pageCodeID = "D=pageName";		 
+	}	
+
+	digitalData.pageInfo.summaryPageType = summaryPageType;
+	digitalData.pageInfo.pageCategory = pageCategory;
+	digitalData.pageInfo.sourceId = sourceId;
+	digitalData.pageInfo.sourceType = "";
+	if(pageCategory == "PSP" && sourceId != "")
+		digitalData.pageInfo.sourceType = sourceType;
+
+
+	var s_contentFinder = getContentFinding(document.referrer, document.URL);
+	digitalData.pageInfo.contentFinding = s_contentFinder;
+	
+				
+
+	digitalData.userInfo = {};
+	digitalData.userInfo.fslVisitorID = s_vt_id;
+
+	digitalData.siteInfo = {};
+	digitalData.siteInfo.sitePlatform = s_site_platform;
+	digitalData.siteInfo.lang = "en";
+
+	</script>
+<script type="text/javascript">
+ if (typeof jQuery != 'undefined') { 
+	  jQuery(document).ready(function() {  
+			$('a.thickbox').click(function(event){
+				var blkImgpath=$(this).find('img', this).attr("src"); 	    
+				if(blkImgpath.indexOf('/files/graphic/block_diagram') > -1){
+					var blkTitle = $(this).find('img', this).attr("alt");			
+					if(blkImgpath.indexOf("http") < 0) {
+						blkImgpath = window.location.protocol+"//"+window.location.host + blkImgpath;
+					}
+					blkImgpath=blkImgpath.replace("cache.nxp.com","www.nxp.com");
+					blkImgpath=blkImgpath.replace("cache-uat.freescale.com","uat.freescale.com");	
+					trackAnalyticsBlockDiagram(blkImgpath, blkTitle);
+				}
+			});							 
+		});  
+	}
+ </script>
+
+<!--INCLUDE CONN_PGM_BANNER COLLATERAL-->
+<div class="alliance-jsp">
+<div id="pgctwrp">
+<noindex><!-- Commented by b54369 for DAY1 on 29thSep 2015 - Start -->
+<!-- Commented by b54369 for DAY1 on 29thSep 2015 - End -->
+</noindex><div id="bc">
+<ul>
+<li>
+<a href="http://www.nxp.com/">NXP</a>
+</li>
+<li>NXP Partner Program</li>
+</ul>
+</div>
+<noindex><div class="liveChat"> </div>
+</noindex><div class="hrw">
+<noindex><hr>
+</noindex></div>
+<h1>NXP Partner Program</h1>
+<div class="padMe5">&nbsp;</div>
+	<div id="mncnt" class="iframe"  sizecache="20" sizeset="0">
+<div class="lc">
+  <div id="pu">
+    <div class="mn">
+      <div id="flshc">
+        <img src="http://www.nxp.com/files/graphic/banner/hm_pu/3659_ALLIANCES_HOME_745X131.jpg" alt="NXP Partner Program" />
+      </div>
+    </div>
+  </div>
+<div class="padMe5">&nbsp;</div>
+  <!-- START tab content -->
+  <div id="tabsJQ" class="ui-tabs ui-widget-content ui-corner-all">
+    <ul id="tabList" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+      <li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#auvp-overview-tab">Overview</a></li>
+	  <li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#auvp-partnerdir-tab">Partner Directory</a></li>
+      <li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#auvp-enroll-tab">Enrollment</a></li>
+      </ul>
+	
+	<!-- END tab 1, #auvp-support-tab -->
+	
+
+	
+    
+<!--	INCLUDE CONN_PGM_OVERVIEW COLLATERAL-->
+	<div id="auvp-overview-tab">
+		<div class="clearfix">
+			<p class="simple-warning"><i>We are currently in a state of transition as we merge the Freescal&#101; Connect Partner Program and the NXP Partner Program. At this time we are not accepting new enrollments or portal access to existing members. All Freescal&#101; Connect Partners are currently listed in the “Partner Directory” and NXP Partners can be found through the links on the “Overview tab.” </i></p>
+			<p>The NXP Partner Program is your essential source for embedded designs based on NXP solutions.<br />The program comprises a global network of independent engineering companies that offer the vital tools, software, technology, engineering services and training to speed your design. From reference boards to optimized software, the NXP Partner program provides a powerful and comprehensive ecosystem that partners with you in making the world a smarter, more connected place.</p>
+			
+			<div class="pdtn"></div>
+		
+		<div class="ccl verticalDotted">
+			
+			<div class="thumb">
+
+			<a href='http://www.nxp.com/search?Go=&amp;output=xml_no_dtd&amp;proxystylesheet=search_style_fe&amp;filter=0&amp;getfields=*&amp;rc=1&amp;oe=UTF-8&amp;ie=UTF-8&amp;exclude_apps=1&amp;client=search_partner&amp;q=+inmeta:Asset_Type%3DPartners+inmeta:Vendor%3DPremier%2520Partner&amp;dnavs=inmeta:Asset_Type%3DPartners+inmeta:Vendor%3DPremier%2520Partner&amp;&amp;lang_cd=en&amp;site=fsl_en&amp;'><img width="135" alt="Premier partners" src="http://www.nxp.com/files/graphic/tn/FC_PRMRPRTNR_74x135.jpg" class="thumb">
+			</a>
+		              				          
+			<p class="thumbp" style="padding: 0 0 0 145px;"><a href='http://www.nxp.com/search?Go=&amp;output=xml_no_dtd&amp;proxystylesheet=search_style_fe&amp;filter=0&amp;getfields=*&amp;rc=1&amp;oe=UTF-8&amp;ie=UTF-8&amp;exclude_apps=1&amp;client=search_partner&amp;q=+inmeta:Asset_Type%3DPartners+inmeta:Vendor%3DPremier%2520Partner&amp;dnavs=inmeta:Asset_Type%3DPartners+inmeta:Vendor%3DPremier%2520Partner&amp;&amp;lang_cd=en&amp;site=fsl_en&amp;'>Premier</a> partners collaborate closely with NXP to enrich the enablement and implementation of total system solutions.</p>
+			</div>			
+		  			
+			<div class="padMe5"></div>
+			
+			<div class="thumb">
+			<a href='http://www.nxp.com/search?Go=&amp;output=xml_no_dtd&amp;proxystylesheet=search_style_fe&amp;filter=0&amp;getfields=*&amp;rc=1&amp;oe=UTF-8&amp;ie=UTF-8&amp;exclude_apps=1&amp;client=search_partner&amp;q=+inmeta:Asset_Type%3DPartners+inmeta:Vendor%3DProven%2520Partner&amp;dnavs=inmeta:Asset_Type%3DPartners+inmeta:Vendor%3DProven%2520Partner&amp;&amp;lang_cd=en&amp;site=fsl_en&amp;'>
+				<img width="135" alt="Proven partners" src="http://www.nxp.com/files/graphic/tn/FC_PRVNPRTNRS_74x135.jpg" class="thumb">
+			</a>
+		                                 				
+			<p class="thumbp" style="padding: 0 0 0 145px;"><a href='http://www.nxp.com/search?Go=&amp;output=xml_no_dtd&amp;proxystylesheet=search_style_fe&amp;filter=0&amp;getfields=*&amp;rc=1&amp;oe=UTF-8&amp;ie=UTF-8&amp;exclude_apps=1&amp;client=search_partner&amp;q=+inmeta:Asset_Type%3DPartners+inmeta:Vendor%3DProven%2520Partner&amp;dnavs=inmeta:Asset_Type%3DPartners+inmeta:Vendor%3DProven%2520Partner&amp;&amp;lang_cd=en&amp;site=fsl_en&amp;'>Proven partners</a> offer the knowledge and experience to round out the enablement and implementation of total system solutions.</p>
+			</div>
+			
+			<div class="padMe5"></div>
+			
+		</div>
+		
+		<div class="ccr verticalDotted-1">
+			
+			<div class="thumb">
+			<a href='http://www.nxp.com/search?Go=&amp;output=xml_no_dtd&amp;proxystylesheet=search_style_fe&amp;filter=0&amp;getfields=*&amp;rc=1&amp;oe=UTF-8&amp;ie=UTF-8&amp;exclude_apps=1&amp;client=search_partner&amp;q=+inmeta:Asset_Type%3DPartners+inmeta:Vendor%3DPartner&amp;dnavs=inmeta:Asset_Type%3DPartners+inmeta:Vendor%3DPartner&amp;&amp;lang_cd=en&amp;site=fsl_en&amp;'>
+				<img width="135" alt="NXP partners" src="http://www.nxp.com/files/graphic/tn/FC_LOGO_74x135.jpg" class="thumb">
+			</a>                           		
+				
+			<p class="thumbp" style="padding: 0 0 0 145px;"><a href='http://www.nxp.com/search?Go=&amp;output=xml_no_dtd&amp;proxystylesheet=search_style_fe&amp;filter=0&amp;getfields=*&amp;rc=1&amp;oe=UTF-8&amp;ie=UTF-8&amp;exclude_apps=1&amp;client=search_partner&amp;q=+inmeta:Asset_Type%3DPartners+inmeta:Vendor%3DPartner&amp;dnavs=inmeta:Asset_Type%3DPartners+inmeta:Vendor%3DPartner&amp;&amp;lang_cd=en&amp;site=fsl_en&amp;'>NXP partners</a> complete the ecosystem surrounding NXP technologies.</p>
+			</div>
+			<div class="padMe5"></div><div class="bkflt"></div>
+			
+			
+			<ul class="boxes">
+				<li><a href='http://www.nxp.com/pages/partner-list:PARTNER-LIST'>NXP Partner List</a></li>
+				<li><a href='http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/software-and-tools-for-lpc-mcus/lpc-partner-ides-and-development-tools:LPC-PARTNER-IDES'>NXP IDE&#39;s & Development Tools</a></li>
+				<li><a href='http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/software-and-tools-for-lpc-mcus/lpc-idhs-and-consultants:LPC-IDHS-AND-CONSULTANTS'>NXP IDHs & Consultants</a></li>
+			</ul>
+			
+			
+			
+		
+		</div>
+			
+		</div>
+    </div><!--	INCLUDE CONN_PGM_PARTNER_DIR_HEADER COLLATERAL-->
+			
+
+<!-- START tab 3, #auvp-enroll-tab -->
+    <link type="text/css" rel="stylesheet" href="http://www.nxp.com/files/js/prettyPhoto/jquery.prettyPhoto.specialPsp.css" />
+<script type="text/javascript" src="http://www.nxp.com/files/js/prettyPhoto/jquery.prettyPhoto.specialPsp.js"></script>
+
+	<div id="auvp-partnerdir-tab" class="ui-tabs-panel">
+		<div class="clearfix">
+		
+		<div class="ccl verticalDotted">
+			<p class="simple-warning"><i>We are currently in a state of transition as we merge the Freescal&#101; Connect Partner Program and the NXP Partner Program. At this time we are not accepting new enrollments or portal access to existing members. All Freescal&#101; Connect Partners are currently listed in the “Partner Directory” and NXP Partners can be found through the links on the “Overview tab.” </i></p>
+			<p class="intro">NXP works with a range of partners in making the tools, software, training and engineering services necessary to help bring a solution to life. NXP EcoMAPS shows the major areas of the ecosystem surrounding NXP silicon and describes how partners interact with customers&#39; development process and end application.</p>
+		</div>		
+		<div class="ccr verticalDotted-1">
+			
+		<a class="thickbox" href='http://www.nxp.com/webapp/sps/components/displayCollateral.jsp?code=FSLCNNCTESYS_BDRO&amp;keepThis=true&amp;amp;TB_iframe=true&amp;amp;height=480&amp;amp;width=687'>
+    		<img class="thumb" src='http://cache.nxp.com/files/graphic/block_diagram/FLSCN_ECOMAPS_BDTN.jpg' alt="NXP.com on Your Mobile Device" border="0" />
+    		</a>
+			<div class="thumbp">
+				<h2 id="h1-splash"><a class="thickbox" href='http://www.nxp.com/webapp/sps/components/displayCollateral.jsp?code=FSLCNNCTESYS_BDRO&amp;keepThis=true&amp;amp;TB_iframe=true&amp;amp;height=480&amp;amp;width=687'>NXP EcoMAPS</a></h2>
+				<p class="intro">NXP partner types are supersets of EcoMAPS blocks</p>
+				<p>
+					<span class="rtarw" style=" z-index:0;">
+						<a class="thickbox" href='http://www.nxp.com/webapp/sps/components/displayCollateral.jsp?code=FSLCNNCTESYS_BDRO&amp;keepThis=true&amp;amp;TB_iframe=true&amp;amp;height=480&amp;amp;width=687'>
+							<span class="txt">Explore our EcoMAPS</span>
+						</a>
+					</span>
+				</p>
+			</div>
+		</div>
+		
+			<script type="text/javascript">
+
+	jQuery(function($){
+
+		$("#pHB_bd").html("<div class='padMe5'></div><div class='mobile-gallery'><a href='/webapp/sps/components/displayCollateral.jsp?code=FSLCNNCTESYS_BDRO?iframe=true&amp;width=687&amp;height=480' title='Click the arrows to navigate through the gallery' rel='prettyPhoto[iframes]'><img src='http://cache.nxp.com/files/graphic/block_diagram/MOBILE_BDTN.jpg' border='0' /></a></div>");
+
+		$(".mobile-gallery a[rel^='prettyPhoto']").prettyPhoto({
+
+			animationSpeed:'fast',
+
+			allowresize:false,
+
+			counter_separator_label:' of ',
+
+			theme:'light_square'
+
+		});
+
+	});
+
+</script>
+		
+		</div>
+
+    <!-- END tab 3, #auvp-enroll-tab --><div class="pdtn"></div>
+        
+   	<div class="padMe5"></div>
+   
+	<div class="clearfix">
+	<!--b47215 start function added for search simplification to change the parmeters for redirect to search uat-->
+	<script>
+	function callSearchForPartners()
+    {
+	var qText=document.getElementById('QueryText').value;
+	var searchForm = document.getElementById('myCompanyForm');
+	var qTag = document.createElement('input');
+	qTag.type = 'hidden';
+	qTag.name = 'q';
+	qTag.value = qText+" inmeta:Asset_Type=Partners";
+	searchForm.appendChild(qTag);
+	var site="";
+	var lang_cd ="en";
+	if(lang_cd=="en"){site="nxp_en";}
+	else if(lang_cd=="ja"){site="nxp_ja";}
+	else if(lang_cd=="zh-Hans"){site="nxp_zhHans";}
+	else {site = "nxp_en";}
+	var sitTag = document.createElement('input');
+	sitTag.type = 'hidden';
+	sitTag.name = 'site';
+	sitTag.value = site;
+	searchForm.appendChild(sitTag);
+	}
+	</script>
+	<!--b47215 end function added for search simplification to change the parmeters for redirect to search uat-->
+	<!--b47215 action edited for search simplification tp redirect to search uat-->
+		<form   id="myCompanyForm" name="myCompanyForm" action="http://www.nxp.com/search?" onsubmit="callSearchForPartners()" > 
+		<div class="ccl verticalDotted" style="min-height: 200px;">	
+				    
+				<div align="left"><FONT size=3 color="#E66A08">
+					<b>Company Name/Keyword Search:</b></FONT>
+					</div>	
+				<div class="padMe5"></div>			
+				<div>
+					<input type="text" style="width: 244px" maxlength="250" id="QueryText" name="QueryText">
+				</div>	
+				<input type="hidden" id="SelectedAsset" name="dnavs" value="inmeta:Asset_Type=Partners"/>		
+				<div class="padMe5"></div>
+			
+				<div align="left">
+					<a  href="#" onclick="$(this).closest('form').submit()" class="blue_gradient_button">Search</a>
+					</div>
+				<div class="padMe5"></div>
+				<div class="padMe5"></div>
+				<div align="left">
+				<!--b47215 href edited for search simplification tp redirect to search uat-->
+				   <script>
+				  var site="";
+					var lang_cd ="en";
+					if(lang_cd=="en"){site="nxp_en";}
+					else if(lang_cd=="ja"){site="nxp_ja";}
+					else if(lang_cd=="zh-Hans"){site="nxp_zhHans";}
+					else {site = "nxp_en";}
+				  </script>
+				   <a href="http://www.nxp.com/search?q=+inmeta:Asset_Type%3DPartners&amp;dnavs=inmeta:Asset_Type%3DPartners&amp;site=nxp_en&amp;output=xml_no_dtd&amp;proxystylesheet=nxp_search_style_fe&amp;filter=0&amp;getfields=*&amp;ie=UTF-8&amp;lang_cd=en&amp;access=p&amp;sort=meta%3ASort_Tier%3AA%3AD%3AY&amp;entqr=3&amp;entqrm=0&amp;oe=UTF-8&amp;ud=1&amp;client=nxp_search_partner"><font size="2">View entire list of NXP Partners</font></a><br>
+				  
+				   </div>
+		</div>
+		<!-- b47215 start list of inputfields added for search simplification -->
+		
+		<input id="client" name="client" value="nxp_search_partner" type="hidden">
+		<input id="proxystylesheet" name="proxystylesheet" value="nxp_search_style_fe" type="hidden">
+		<input id="output" name="output" value="xml_no_dtd" type="hidden"> 
+		<input id="filter" name="filter" value="0" type="hidden"> 
+		<input id="getfields" name="getfields" value="*" type="hidden">
+		<input id="lang_cd" name="lang_cd" value="en" type="hidden"> 
+		<input id="sort"name="sort" value="meta:Sort_Tier:A:D:Y" type="hidden"> 
+		<input id="oe" name="oe" value="UTF-8" type="hidden"> 
+		<input id="ie" name="ie" value="UTF-8" type="hidden"> 
+		<input id="ud" name="ud" value="1" type="hidden"> 
+		<input id="exclude_apps" name="exclude_apps" value="1" type="hidden"> 
+		<input id="callback" name="callback" value="ss_show" type="hidden">
+		<!-- b47215 end list of inputfields added for search simplification -->
+		</form>
+			
+			<div  class="ccr verticalDotted" style="min-height: 200px;">
+			<!--b47215 start function added for search simplification to change the parmeters for redirect to search uat-->
+	<script>
+	function callSearchSpecfic()
+    {
+		var qText=document.getElementById('QueryText').value;
+
+		var query= "http://www.nxp.com" + "/search?";
+		var lang_cd = "en";
+		var site = "" ;
+		if(lang_cd=="en"){site="nxp_en";}
+		else if(lang_cd=="ja"){site="nxp_ja";}
+		else if(lang_cd=="zh-Hans"){site="nxp_zhHans";}
+		else {site = "nxp_en";}
+		//alert(site+"  "+lang_cd);
+		var list_std="&site="+site+"&output=xml_no_dtd&proxystylesheet=nxp_search_style_fe&filter=0&getfields=*&ie=UTF-8&lang_cd=en&access=p&sort=meta:Sort_Tier:A:D:Y&entqr=3&entqrm=0&oe=UTF-8&ud=1";
+		var dnavs="&dnavs=inmeta:Asset_Type%3DPartners";
+	    var q= "&q=+inmeta:Asset_Type%3DPartners";
+		//to get the Devices supported
+		var prodtax;
+		var e = document.getElementById("productType");
+	    prodtax = e.options[e.selectedIndex].text;
+	   
+		if(e.options[e.selectedIndex].value)
+		{
+			if(lang_cd=="en")
+	            prodtax="+inmeta:prodTypeCategory%3D"+encodeURIComponent(encodeURIComponent(prodtax));
+			else
+            prodtax="+inmeta:prodTypeCategory%3D"+encodeURIComponent(prodtax.replace('\uff06','%26').replace('&','%26'));//to hanndle ja &
+			var f = document.getElementById("productSubType");
+			var prodSubVal = f.options[f.selectedIndex].text;
+			if(f.options[f.selectedIndex].value)
+					{
+				     //q=q+prodtax;
+	                //dnavs=dnavs+prodtax;
+	               if(lang_cd=="en")
+					prodtax = prodtax + "_"+encodeURIComponent(encodeURIComponent(prodSubVal).replace('(','%28').replace(')','%29').replace('-','%2D').replace('.','%2E'));
+	               else 
+	                 prodtax = prodtax + "_"+encodeURIComponent(prodSubVal.replace('\uff06','%26').replace('http://www.nxp.com/webapp/connect/+/','%2B%2F').replace('http://www.nxp.com/','%2F').replace('(','%28').replace(')','%29').replace('-','%2D').replace('.','%2E').replace(/ /g,'%20').replace('&','%26'));
+
+					var g = document.getElementById("productSubSubType");
+					var prodSubSubVal = g.options[g.selectedIndex].text;
+					if(g.options[g.selectedIndex].value)
+					 	{
+						q=q+prodtax;
+			            dnavs=dnavs+prodtax;
+			            if(lang_cd=="en")
+						prodtax +="_"+encodeURIComponent(encodeURIComponent(prodSubSubVal).replace('(','%28').replace(')','%29').replace('-','%2D').replace('.','%2E'));
+			            else
+			            prodtax +="_"+encodeURIComponent(prodSubSubVal.replace('\uff06','%26').replace('http://www.nxp.com/webapp/connect/+/','%2B%2F').replace('http://www.nxp.com/','%2F').replace('(','%28').replace(')','%29').replace('-','%2D').replace('.','%2E').replace(/ /g,'%20').replace('&','%26'));
+			            
+					    }
+					}
+			q=q+prodtax;
+			
+            dnavs=dnavs+prodtax;
+		}
+		else
+			prodtax="";
+		
+		//to get the applications supported
+		var apptax = "";
+		/*Commented by B35740 for Gforge 27462 ENHC0011017 Start*/ 
+		/*var h = document.getElementById("ApplicationType");
+		var apptax = h.options[h.selectedIndex].text;
+		if(h.options[h.selectedIndex].value)
+		{
+			if(lang_cd=="en")
+			   apptax="+inmeta:apppTypeCategory%3D"+encodeURIComponent(encodeURIComponent(apptax));
+			else
+				apptax="+inmeta:apppTypeCategory%3D"+encodeURIComponent(apptax.replace('\uff06','%26').replace(/ /g,'%20').replace('&','%26'));
+				var f = document.getElementById("ApplicationSubType");
+				var appSubVal = f.options[f.selectedIndex].text;
+				if(f.options[f.selectedIndex].value)
+					{
+					//q=q+apptax;
+		            //dnavs=dnavs+apptax;
+		            if(lang_cd=="en")
+					apptax = apptax + "_"+encodeURIComponent(encodeURIComponent(appSubVal).replace('(','%28').replace(')','%29').replace('-','%2D').replace('.','%2E'));	
+		            else
+		            	apptax = apptax + "_"+encodeURIComponent(appSubVal.replace('\uff06','%26').replace('(','%28').replace(')','%29').replace('-','%2D').replace('.','%2E').replace(/ /g,'%20').replace('&','%26'));
+		            	
+					}
+				q=q+apptax;
+	            dnavs=dnavs+apptax;
+		}
+		else
+		  apptax="";*/
+		/*Commented by B35740 for Gforge 27462 ENHC0011017 End*/
+	   //to get the vendor
+		var v = document.getElementById("vendor");
+		var vendor = v.options[v.selectedIndex].text;
+		if (v.options[v.selectedIndex].value)
+		{
+			//Added for Gforge 19267 Starts
+			    if(vendor!="Partner"){			    	
+			    	 vendor=vendor+"%2520"+"Partner";			  	     
+	        	}
+	        	
+			  //Added for Gforge 19267 ENd  			
+				vendor="+inmeta:Vendor%3D"+vendor;	
+				
+							
+				//vendor=vendor.replace(" - ","");
+				q=q+vendor;
+			
+	            dnavs=dnavs+vendor;
+		}
+
+		//to get the Service Offered
+		var fcp = document.getElementById("FreescaleConnectPartners");
+		var serTax = fcp.options[fcp.selectedIndex].text;
+		if(fcp.options[fcp.selectedIndex].value)
+		{
+			if(lang_cd=="en")
+			serTax="+inmeta:typeHirarchy%3D"+encodeURIComponent(encodeURIComponent(serTax));
+			else
+			serTax="+inmeta:typeHirarchy%3D"+encodeURIComponent(serTax.replace('http://www.nxp.com/','%2F').replace(/ /g,'%20'));
+			var f = document.getElementById("servicesLabel");
+			var serSubVal = f.options[f.selectedIndex].text;// if second service level is selected
+			if(f.options[f.selectedIndex].value)
+			{
+				if(lang_cd=="en")
+				serTax = serTax + "_"+encodeURIComponent(encodeURIComponent(serSubVal.replace('-','%2D')));
+				else
+					serTax = serTax + "_"+encodeURIComponent(serSubVal.replace('http://www.nxp.com/','%2F').replace(/ /g,'%20').replace('-','%2D'));	
+			}
+			var g = document.getElementById("cores");
+			var coresVal = g.options[g.selectedIndex].value;
+			if(coresVal && fcp.options[fcp.selectedIndex].value=="Embedded Board Solution Manufacturers")
+			{
+			   serTax = serTax + "+inmeta:cores%3D"+g.options[g.selectedIndex].text.replace(',','%252C').replace(',','%252C').replace(/ /g,'%20');		
+			}
+			q=q+serTax;
+			
+            dnavs=dnavs+serTax;
+				
+		}
+
+		//to get the Operating System
+		var os = document.getElementById("OperatingSystem");
+		var osTax = os.options[os.selectedIndex].value;
+		//inmeta:OperatingSystems%3DAndroid
+		if(osTax)
+		{
+			if(lang_cd=="en")
+			osTax="+inmeta:OperatingSystems%3D"+encodeURIComponent(encodeURIComponent(os.options[os.selectedIndex].text));
+			else 
+				osTax="+inmeta:OperatingSystems%3D"+encodeURIComponent(os.options[os.selectedIndex].text.replace('http://www.nxp.com/','%2F').replace(/ /g,'%20'));
+			osTax=osTax.replace("-","%252D");
+			q=q+osTax;
+			
+            dnavs=dnavs+osTax;
+		}
+
+		/* Added by b51167 on 7 Jan 2015 for CR58831 to add Countries LOV starts */
+		var country=document.getElementById("country");
+		var countryTax=country.options[country.selectedIndex].value;
+		if(countryTax)
+		{
+			countryTax="+inmeta:country%3D"+encodeURIComponent(country.options[country.selectedIndex].text.replace('http://www.nxp.com/','%2F').replace(/ /g,'%20'));
+			countryTax=countryTax.split("-").join("%252D");
+			countryTax=countryTax.split("(").join("%2528");
+			countryTax=countryTax.split(")").join("%2529");
+			q=q+countryTax;
+			
+            dnavs=dnavs+countryTax;
+            
+		}
+		/* Added by b51167 on 7 Jan 2015 for CR58831 to add Countries LOV ends */ 
+		client="&client=nxp_search_partner";
+		query += q + dnavs + client+list_std;
+		window.location =query;
+	}
+	</script>
+	<!--b47215 end function added for search simplification to change the parmeters for redirect to search uat-->
+		
+			<!--b47215 action edited for search simplification to redirect to search uat-->
+			<form   id="myForm" name="myForm" action="http://www.nxp.com/search?" onsubmit="callSearchForPartners()"  > 
+		
+				<div>				
+					
+					<input type="hidden" name="QueryText" id="QueryText" value="*"/>
+					<input type="hidden" name="SelectedAsset" value="NXP Connect Partners"/>
+					
+							
+						<div align="left"><FONT size=3 color="#E66A08"><b>
+							Advanced Search:</b></FONT>
+							</div>
+						<div class="padMe5"></div>	
+			
+						<!-- Added by b51167 on 7 Jan 2015 for CR58831 to add Countries LOV starts -->
+						<div align="left" >
+							<b>Country:</b>
+						</div>
+						<div  align="left">
+							<select style="width: 300px" class="connect_select isChanged" name="country" id="country">
+							<option value="">All</option>
+							<option value="USA - United States">United States</option>														
+							<option value="AFG - Afghanistan">Afghanistan</option>														
+							<option value="ALB - Albania">Albania</option>														
+							<option value="DZA - Algeria">Algeria</option>														
+							<option value="ASM - American Samoa">American Samoa</option>														
+							<option value="AND - Andora">Andora</option>														
+							<option value="AGO - Angola">Angola</option>														
+							<option value="ATA - Antartica">Antartica</option>														
+							<option value="ATG - Antigua">Antigua</option>														
+							<option value="ARG - Argentina">Argentina</option>														
+							<option value="ASP - Asia Pacific">Asia Pacific</option>														
+							<option value="AUS - Australia">Australia</option>														
+							<option value="AUT - Austria">Austria</option>														
+							<option value="BHS - Bahamas">Bahamas</option>														
+							<option value="BHR - Bahrain">Bahrain</option>														
+							<option value="BGD - Bangladesh">Bangladesh</option>														
+							<option value="BRB - Barbados">Barbados</option>														
+							<option value="BYS - Belarus">Belarus</option>														
+							<option value="BEL - Belgium">Belgium</option>														
+							<option value="BLZ - Belize">Belize</option>														
+							<option value="BMU - Bermuda">Bermuda</option>														
+							<option value="BTN - Bhutan">Bhutan</option>														
+							<option value="BOL - Bolivia">Bolivia</option>														
+							<option value="BHE - Bosnia-Herzegovina">Bosnia-Herzegovina</option>														
+							<option value="BWA - Botswana">Botswana</option>														
+							<option value="BVT - Bouvet Island">Bouvet Island</option>														
+							<option value="BRA - Brazil">Brazil</option>														
+							<option value="ATB - British Antartic">British Antartic</option>														
+							<option value="IOT - British Indian Ocean Ter">British Indian Ocean Ter</option>														
+							<option value="VGB - British Virgin Islands">British Virgin Islands</option>														
+							<option value="BRN - Brunei">Brunei</option>														
+							<option value="BGR - Bulgaria">Bulgaria</option>														
+							<option value="BUR - Burma">Burma</option>														
+							<option value="BDI - Burundi">Burundi</option>														
+							<option value="KHM - Cambodia">Cambodia</option>														
+							<option value="CMR - Cameroon">Cameroon</option>														
+							<option value="CAN - Canada">Canada</option>														
+							<option value="PCZ - Canal Zone">Canal Zone</option>														
+							<option value="CTE - Canton & Enderbury Islands">Canton & Enderbury Islands</option>														
+							<option value="CPV - Cape Verde, Teritory Of">Cape Verde, Teritory Of</option>														
+							<option value="CYM - Cayman Islands">Cayman Islands</option>														
+							<option value="CAF - Central African Republic">Central African Republic</option>														
+							<option value="TCD - Chad">Chad</option>														
+							<option value="CHL - Chile">Chile</option>														
+							<option value="CHN - China - 中国">China - 中国</option>														
+							<option value="CXR - Christmas Island">Christmas Island</option>														
+							<option value="CCK - Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>														
+							<option value="COL - Colombia">Colombia</option>														
+							<option value="COM - Comoro Islands">Comoro Islands</option>														
+							<option value="COG - Congo">Congo</option>														
+							<option value="COK - Cook Islands">Cook Islands</option>														
+							<option value="CRI - Costa Rica">Costa Rica</option>														
+							<option value="CRO - Croatia">Croatia</option>														
+							<option value="CUB - Cuba">Cuba</option>														
+							<option value="CYP - Cyprus">Cyprus</option>														
+							<option value="CZE - Czech Republic">Czech Republic</option>														
+							<option value="DHY - Dahomey">Dahomey</option>														
+							<option value="DNK - Denmark">Denmark</option>														
+							<option value="DMA - Dominica">Dominica</option>														
+							<option value="DOM - Dominican Republic">Dominican Republic</option>														
+							<option value="ECU - Ecuador">Ecuador</option>														
+							<option value="EGY - Egypt">Egypt</option>														
+							<option value="SLV - El Salvadore">El Salvadore</option>														
+							<option value="GNQ - Equatorial Guinea">Equatorial Guinea</option>														
+							<option value="EST - Estonia Republic">Estonia Republic</option>														
+							<option value="ETH - Ethiopia">Ethiopia</option>														
+							<option value="EUR - Eur Economic Commty Ecu">Eur Economic Commty Ecu</option>														
+							<option value="FRO - Faeroe Islands">Faeroe Islands</option>														
+							<option value="FLK - Falkland Islands(Malvinas)">Falkland Islands(Malvinas)</option>														
+							<option value="FJI - Fiji">Fiji</option>														
+							<option value="FIN - Finland">Finland</option>														
+							<option value="FRA - France">France</option>														
+							<option value="GUF - French Guiana">French Guiana</option>														
+							<option value="PYF - French Polynesia">French Polynesia</option>														
+							<option value="ATF - French South & Antartic Ld">French South & Antartic Ld</option>														
+							<option value="GAB - Gabon">Gabon</option>														
+							<option value="GMB - Gambia">Gambia</option>														
+							<option value="DEU - Germany">Germany</option>														
+							<option value="GHA - Ghana">Ghana</option>														
+							<option value="GIB - Gibralter">Gibralter</option>														
+							<option value="GRC - Greece">Greece</option>														
+							<option value="GRL - Greenland">Greenland</option>														
+							<option value="GRD - Grenada">Grenada</option>														
+							<option value="GLP - Guadeloupe">Guadeloupe</option>														
+							<option value="GUM - Guam">Guam</option>														
+							<option value="GTM - Guatemala">Guatemala</option>														
+							<option value="GIN - Guinea">Guinea</option>														
+							<option value="GNB - Guinea-Bissau">Guinea-Bissau</option>														
+							<option value="GUY - Guyana">Guyana</option>														
+							<option value="HTI - Haiti">Haiti</option>														
+							<option value="HMD - Heard & Mcdonald Islands">Heard & Mcdonald Islands</option>														
+							<option value="HND - Honduras">Honduras</option>														
+							<option value="HKG - Hong Kong">Hong Kong</option>														
+							<option value="HUN - Hungary">Hungary</option>														
+							<option value="ISL - Iceland">Iceland</option>														
+							<option value="IND - India">India</option>														
+							<option value="IDN - Indonesia">Indonesia</option>														
+							<option value="IRN - Iran">Iran</option>														
+							<option value="IRQ - Iraq">Iraq</option>														
+							<option value="NTZ - Iraq-Saudia Arabia (Neut)">Iraq-Saudia Arabia (Neut)</option>														
+							<option value="IRL - Ireland">Ireland</option>														
+							<option value="ISR - Israel">Israel</option>														
+							<option value="ITA - Italy">Italy</option>														
+							<option value="CIV - Ivory Coast">Ivory Coast</option>														
+							<option value="JAM - Jamaica">Jamaica</option>														
+							<option value="JPN - Japan - 日本">Japan - 日本</option>														
+							<option value="JTN - Johnson Atoll (Island)">Johnson Atoll (Island)</option>														
+							<option value="JOR - Jordan">Jordan</option>														
+							<option value="KEN - Kenya">Kenya</option>														
+							<option value="PRK - Korea (Dprk - North)">Korea (Dprk - North)</option>														
+							<option value="KOR - Korea (Republic - South) - 한국">Korea (Republic - South) - 한국</option>														
+							<option value="KWT - Kuwait">Kuwait</option>														
+							<option value="CEP - Lam Export">Lam Export</option>														
+							<option value="LAO - Laos">Laos</option>														
+							<option value="LAT - Latvia">Latvia</option>														
+							<option value="LBN - Lebanon">Lebanon</option>														
+							<option value="LSO - Lesotho">Lesotho</option>														
+							<option value="LBR - Liberia">Liberia</option>														
+							<option value="LBY - Libya">Libya</option>														
+							<option value="LIE - Liechtenstein">Liechtenstein</option>														
+							<option value="LTU - Lithuania">Lithuania</option>														
+							<option value="LUX - Luxembourg">Luxembourg</option>														
+							<option value="MKD - Macedonia">Macedonia</option>														
+							<option value="MDG - Madagascar">Madagascar</option>														
+							<option value="MWI - Malawi">Malawi</option>														
+							<option value="MYS - Malaysia">Malaysia</option>														
+							<option value="MDV - Maldives">Maldives</option>														
+							<option value="MLI - Mali">Mali</option>														
+							<option value="MLT - Malta">Malta</option>														
+							<option value="MTQ - Martinique">Martinique</option>														
+							<option value="MRT - Mauritania">Mauritania</option>														
+							<option value="MUS - Mauritius">Mauritius</option>														
+							<option value="MEX - Mexico">Mexico</option>														
+							<option value="MID - Midway Islands">Midway Islands</option>														
+							<option value="MDA - Moldavia">Moldavia</option>														
+							<option value="MCO - Monaco">Monaco</option>														
+							<option value="MNG - Mongolia">Mongolia</option>														
+							<option value="MSR - Montserrat">Montserrat</option>														
+							<option value="MAR - Morocco">Morocco</option>														
+							<option value="MOZ - Mozambique">Mozambique</option>														
+							<option value="NRU - Nauru">Nauru</option>														
+							<option value="NPL - Nepal">Nepal</option>														
+							<option value="NLD - Netherlands">Netherlands</option>														
+							<option value="ANT - Netherlands Antilles">Netherlands Antilles</option>														
+							<option value="NCL - New Caledonia">New Caledonia</option>														
+							<option value="NZL - New Zealand">New Zealand</option>														
+							<option value="NIC - Nicaragua">Nicaragua</option>														
+							<option value="NER - Niger">Niger</option>														
+							<option value="NGA - Nigeria">Nigeria</option>														
+							<option value="NIU - Niue Islands">Niue Islands</option>														
+							<option value="NFK - Norfolk Island">Norfolk Island</option>														
+							<option value="NOR - Norway">Norway</option>														
+							<option value="OMN - Oman">Oman</option>														
+							<option value="PCI - Pacific Islnds (Trust Ter)">Pacific Islnds (Trust Ter)</option>														
+							<option value="PAK - Pakistan">Pakistan</option>														
+							<option value="PAN - Panama">Panama</option>														
+							<option value="PNG - Papua New Guinea">Papua New Guinea</option>														
+							<option value="PAR - Paracel Islands">Paracel Islands</option>														
+							<option value="PRY - Paraguay">Paraguay</option>														
+							<option value="PER - Peru">Peru</option>														
+							<option value="PHI - Philippines">Philippines</option>														
+							<option value="PCN - Pitcairn Island">Pitcairn Island</option>														
+							<option value="POL - Poland">Poland</option>														
+							<option value="PRT - Portugal">Portugal</option>														
+							<option value="TMP - Portuguese Timor">Portuguese Timor</option>														
+							<option value="PRI - Puerto Rico">Puerto Rico</option>														
+							<option value="QAT - Qatar">Qatar</option>														
+							<option value="REU - Reunion">Reunion</option>														
+							<option value="ROM - Romania">Romania</option>														
+							<option value="RUS - Russia">Russia</option>														
+							<option value="RWA - Rwanda">Rwanda</option>														
+							<option value="SMR - San Marino">San Marino</option>														
+							<option value="STP - Sao Tome And Principe">Sao Tome And Principe</option>														
+							<option value="SAU - Saudia Arabia">Saudia Arabia</option>														
+							<option value="SEN - Senegal">Senegal</option>														
+							<option value="YUG - Serbia">Serbia</option>														
+							<option value="SYC - Seychelles">Seychelles</option>														
+							<option value="SLE - Sierra Leone">Sierra Leone</option>														
+							<option value="SGP - Singapore">Singapore</option>														
+							<option value="SVK - Slovakia">Slovakia</option>														
+							<option value="SLO - Slovenia">Slovenia</option>														
+							<option value="SLB - Solomon Islands">Solomon Islands</option>														
+							<option value="SOM - Somolia">Somolia</option>														
+							<option value="ZAF - South Africa">South Africa</option>														
+							<option value="NAM - South-West Africa">South-West Africa</option>														
+							<option value="ESP - Spain">Spain</option>														
+							<option value="ESH - Spanish Sahara">Spanish Sahara</option>														
+							<option value="SPR - Spratly Islands">Spratly Islands</option>														
+							<option value="LKA - Sri Lanka">Sri Lanka</option>														
+							<option value="KNA - St Christopher-Nevis-Ang.">St Christopher-Nevis-Ang.</option>														
+							<option value="SHN - St Helena">St Helena</option>														
+							<option value="LCA - St Lucia">St Lucia</option>														
+							<option value="SPM - St Pierre And Miquelon">St Pierre And Miquelon</option>														
+							<option value="VCT - St Vincent">St Vincent</option>														
+							<option value="SDN - Sudan">Sudan</option>														
+							<option value="SUR - Surinam">Surinam</option>														
+							<option value="SJM - Svalbard & Jan Mayan">Svalbard & Jan Mayan</option>														
+							<option value="SWZ - Swaziland">Swaziland</option>														
+							<option value="SWE - Sweden">Sweden</option>														
+							<option value="CHE - Switzerland">Switzerland</option>														
+							<option value="SYR - Syria">Syria</option>														
+							<option value="TWN - Taiwan">Taiwan</option>														
+							<option value="TZA - Tanzania, United Republic">Tanzania, United Republic</option>														
+							<option value="AFI - Ter Of Afars & Issas Frnch">Ter Of Afars & Issas Frnch</option>														
+							<option value="THA - Thailand">Thailand</option>														
+							<option value="TGO - Togo">Togo</option>														
+							<option value="TON - Tonga">Tonga</option>														
+							<option value="TTO - Trinidad & Tobago">Trinidad & Tobago</option>														
+							<option value="TUN - Tunisia">Tunisia</option>														
+							<option value="TUR - Turkey">Turkey</option>														
+							<option value="TKM - Turkmenistan">Turkmenistan</option>														
+							<option value="TCA - Turks & Caicos Islands">Turks & Caicos Islands</option>														
+							<option value="PUS - U.S. Misc Pacific Islands">U.S. Misc Pacific Islands</option>														
+							<option value="UGA - Uganda">Uganda</option>														
+							<option value="UKR - Ukraine">Ukraine</option>														
+							<option value="ARE - United Arab Emirates">United Arab Emirates</option>														
+							<option value="GBR - United Kingdom">United Kingdom</option>														
+							<option value="URY - Uruguay">Uruguay</option>														
+							<option value="VAT - Vatican City">Vatican City</option>														
+							<option value="VEN - Venezuela">Venezuela</option>														
+							<option value="VNM - Vietnam">Vietnam</option>														
+							<option value="WLF - Wallis And Futuna">Wallis And Futuna</option>														
+							<option value="WSM - Western Samoa">Western Samoa</option>														
+							<option value="YEM - Yemen">Yemen</option>														
+							<option value="YMD - Yemen (Aden)">Yemen (Aden)</option>														
+							<option value="ZAR - Zaire">Zaire</option>														
+							<option value="ZMB - Zambia">Zambia</option>														
+							</select>
+						</div>
+						<div class="padMe5"></div>
+						<br>
+						<!-- Added by b51167 on 7 Jan 2015 for CR58831 to add Countries LOV ends -->
+					
+						<div align="left" >
+							<b>Partner Tier:</b>
+							</div>
+						<div  align="left">
+						<select style="width: 300px" class="connect_select isChanged" name="vendor" id="vendor">
+							<option value="">All</option>
+							<option value="3 - Premier">Premier</option>														
+							<option value="2 - Proven">Proven</option>														
+							<option value="1 - Partner">Partner</option>														
+							</select>
+						</div>
+						<div class="padMe5"></div>	
+					<br>
+						<div align="left">					
+							<b>Services Offered:</b>
+							</div>
+				<div align="left" >
+				            <select name="NXP Connect Partners" class="connect_select isChanged"  id="FreescaleConnectPartners" style="width: 300px" value=""
+									onchange="Javascript:loadSubType('en','false');"  >
+								<option value="">All</option>
+								<option value="Development Tool Providers"/>Development Tool Providers</option>
+									<option value="Embedded Board Solution Manufacturers"/>Embedded Board Solution Manufacturers</option>
+									<option value="HW/SW Engineering Services"/>HW/SW Engineering Services</option>
+									<option value="Runtime Software Providers"/>Runtime Software Providers</option>
+									<option value="Semiconductor/Companion Module Manufacturers"/>Semiconductor/Companion Module Manufacturers</option>
+									<option value="Training"/>Training</option>
+									</select>
+							<div name="serviceSelectDiv" id="serviceSelectDiv" style="display:none" >
+							<!-- Modification start by B34340 for CR52322 on 05-09-2013 -->      
+							<select class="connect_select isChanged" name="Others" id="servicesLabel" style="width: 300px" >
+									<option value=" " selected>Please select</option>
+									</select>
+										
+							</div>	
+							
+							<div  name="serviceCoresDiv" id="serviceCoresDiv" style="display:none" >
+								<select style="width: 300px" class="connect_select isChanged" name="cores" id="cores">
+									<option value="">- Select Number of Cores -</option>
+									<option value="1 - 1">1</option>														
+									<option value="2 - 2">2</option>														
+									<option value="3 - 4">4</option>														
+									<option value="4 - 8">8</option>														
+									<option value="5 - 1,2,4">1,2,4</option>														
+									<option value="6 - 12(24 virtual)">12(24 virtual)</option>														
+									</select>
+							</div>
+							<!-- Modification end by B34340 for CR52322 on 05-09-2013 -->
+							
+					
+						</div>
+				
+				
+					
+					<div class="padMe5"></div>	
+						<br>
+						<div align="left">
+							<b>Devices Supported:</b>
+							</div>
+				
+						<div align="left" style="width: 300px">
+							<select style="width: 300px" class="connect_select isChanged" name="Product Type" id="productType" value="">
+							</select>
+							<select style="width: 300px"  class="connect_select isChanged"  id="productSubType" value="">
+							</select>
+							<select style="width: 300px" class="connect_select isChanged"  id="productSubSubType" value="">
+							</select>
+						</div>	
+				<!-- Modification start by B34340 for CR52322 on 05-09-2013 -->		
+					<div class="padMe5"></div>	
+						<br>
+						<div align="left" >
+							<b>Operating Systems:</b>
+						</div>
+						<div  align="left">
+							<select style="width: 300px" class="connect_select isChanged" name="OperatingSystem" id="OperatingSystem">
+								<option value="">All</option>
+									<option value="61 - Android">Android</option>
+									<option value="102 - AUTOSAR">AUTOSAR</option>
+									<option value="104 - BSD or FreeBSD">BSD or FreeBSD</option>
+									<option value="107 - ENEA-Other">ENEA-Other</option>
+									<option value="106 - ENEA OSE">ENEA OSE</option>
+									<option value="108 - FreeRTOS/SafeRTOS">FreeRTOS/SafeRTOS</option>
+									<option value="110 - Green Hills-Integrity">Green Hills-Integrity</option>
+									<option value="111 - Green Hills-Velocity">Green Hills-Velocity</option>
+									<option value="112 - In house-not Linux">In house-not Linux</option>
+									<option value="115 - Linux-ENEA">Linux-ENEA</option>
+									<option value="116 - Linux-Freescale">Linux-NXP</option>
+									<option value="117 - Linux-In house">Linux-In house</option>
+									<option value="118 - Linux-Mentor">Linux-Mentor</option>
+									<option value="120 - Linux-other">Linux-other</option>
+									<option value="121 - Linux-RedHat">Linux-RedHat</option>
+									<option value="122 - Linux-Ubuntu">Linux-Ubuntu</option>
+									<option value="123 - Linux-Wind River">Linux-Wind River</option>
+									<option value="119 - Linux-Montavista">Linux-Montavista</option>
+									<option value="124 - LynuxWorks-LynxOS">LynuxWorks-LynxOS</option>
+									<option value="125 - Mentor-Nucleus">Mentor-Nucleus</option>
+									<option value="126 - Micrium">Micrium</option>
+									<option value="127 - Microsoft">Microsoft</option>
+									<option value="282 - MQX-Embedded Access">MQX-Embedded Access</option>
+									<option value="128 - MQX-Freescale">MQX</option>
+									<option value="131 - QNX-Neutrino">QNX-Neutrino</option>
+									<option value="133 - SmartDSP OS">SmartDSP OS</option>
+									<option value="136 - Thread X">Thread X</option>
+									<option value="138 - Wind River-VxWorks">Wind River-VxWorks</option>
+									<option value="101 - Android / Linux">Android / Linux</option>
+									<option value="103 - Bare-Metal">Bare-Metal</option>
+									<option value="105 - CMX">CMX</option>
+									<option value="109 - Freescale MQX">Freescale MQX</option>
+									<option value="113 - LimeOS">LimeOS</option>
+									<option value="114 - Linux">Linux</option>
+									<option value="129 - OSEK">OSEK</option>
+									<option value="130 - PalmOS">PalmOS</option>
+									<option value="132 - SeggerRTOS">SeggerRTOS</option>
+									<option value="134 - Solaris">Solaris</option>
+									<option value="135 - StickOS">StickOS</option>
+									<option value="137 - uClinux">uClinux</option>
+									<option value="139 - Yocto">Yocto</option>
+									</select>
+						</div>
+				<!-- Modification End by B34340 for CR52322 on 05-09-2013 -->	
+						
+						
+				<div class="padMe5"></div>	
+				
+						<div colspan="3" align="left"><br><a href="#" onclick="callSearchSpecfic()" class="blue_gradient_button">Search</a>
+						</div>
+
+				</div>
+
+				</form>
+				
+			</div>
+			
+		
+	</div>
+	</div>
+
+
+
+
+<!-- END tab 1, #auvp-partnerdir-tab -->        
+   
+    <!-- END tab 2, #auvp-overview-tab -->
+	
+    <!-- START tab 3, #auvp-enroll-tab -->
+<!--  INCLUDE CONN_PGM_ENROLLMENT COLLATERAL-->
+ 
+﻿<!-- START tab 3, #auvp-enroll-tab -->
+    <div id="auvp-enroll-tab" class="ui-tabs-panel">
+		<div class="clearfix">
+			<div class="ccl verticalDotted">
+				<p class="simple-warning"><i>The NXP Partner Program is currently under construction for system updates and enhancements. At this time we will not be accepting any new enrollments. We will re-launch the program in early 2016. Thank you for your support.</i></p>
+				<p>The NXP Partner Program has three tiers. Premier and Proven are by invitation only. The third tier, Partner, is by application.</p>
+				
+				<h2><font color="#E66A08">Benefits</font></h2>
+				<ul class="boxes">
+					<li>Listing in the NXP partner database</li>
+					<li>Access to advanced roadmap and product information</li>
+					<li>Use of NXP Partner Program co-branding assets</li>
+					<li>Invitations to regional NXP events</li>
+					<li>Discounts on select development tools</li>
+					<li>All profiles now available in English and Simplified Chinese</li>
+				</ul>
+			</div>
+			<div class="ccr verticalDotted-1">
+				<h2><font color="#E66A08">Requirements</font></h2>
+				<ul class="boxes">
+					<li>Provide and maintain company information including address and contact information, countries and languages supported, company description, number of engineers, and technology focus.</li>
+					<li>Provide and maintain accurate information regarding product and services related to NXP solutions.</li>
+					<li>Provide company logo for use on NXP.com and in program materials.</li>
+					<li>Be currently shipping NXP-based products or providing engineering services around NXP technologies.</li>
+					<li>Pay an annual $99 administration fee.</li>
+					<li>Abide by all program terms &#38; conditions.</li>
+				</ul>
+				
+			</div>
+		</div>
+    </div>
+
+    <!-- END tab 3, #auvp-enroll-tab --><!-- END tab 3, #auvp-enroll-tab -->
+
+  <!-- END tab content -->
+
+<!-- End left column -->
+<!-- Begin Right Column -->
+<!--INCLUDE CONN_PGM_RC COLLATERAL-->
+</div>
+</div>
+
+<div class="rc">
+  <!-- Begin Info Unit -->
+  <div class="iu">
+     <h2>Additional Resources </h2>
+    <ul>
+      <li><a href='http://cache.nxp.com/files/32bit/doc/brochure/EMBEDDED-ARM.pdf'>NXP Embedded Solutions Based on ARM<sup>&#174;</sup> Technology Guide (pdf)</a><span class="new_green" date-expire="11/13/2013"></span></li>
+	  <li><a href="http://www.nxp.com/webapp/sps/site/homepage.jsp?code=SBC_HOME">Embedded Board Solutions</a></li>
+      <li><a href="https://community.freescale.com/welcome">NXP Communities</a></li>
+    </ul>
+  </div>
+  <!-- End Info Unit -->
+  
+  
+  <div class="iu">
+   <h2>Featured Case Studies </h2>
+  <ul>
+	<li><a href='http://www.nxp.com/products/freescale-connect-partner-program/nxp-and-qnx-optimize-industrial-automation-development-time:CASE_STUDY_QNX'>NXP and QNX: Optimize Industrial Automation Development Time</a></li>
+	<li><a href='http://www.nxp.com/products/freescale-connect-partner-program/nxp-and-enea-building-better-base-stations:CASE_STUDY_ENEA'>NXP and Enea: Building Better Base Stations</a></li>
+  </ul>
+  </div>
+  
+  <!--
+  <div class="rpu">
+    <div id="flshr">Featured Partners</div> 
+  </div> -->
+  <!-- end info unit -->
+  
+  
+  <!--<div class="iu">-->
+    <!-- beg info unit -->
+    <!-- Begin Login Box -->
+    <!--<div id="lgnbx">-->
+      <!-- <h2>Existing Partners Log-in </h2>-->
+      <!-- Start: Modified by r1329z for IAU on 20-Sep-2006 -->
+      <!--<form name="signin" method="post" action="https://www.nxp.com/security/j_security_check"  onsubmit="return validateSAMLLoginForm(this)" id="login" >-->
+        <!-- End: Modified by r1329z for IAU on 20-Sep-2006 -->
+       <!-- Enter Email Address
+        <input name="j_username" type="text" id="userid" value = "" class="txtbx" />
+        <br />
+        Enter Password
+        <input name="j_password" type="password" id="password" class="txtbx"/>
+        <input name="loginbutton" type="image" src="http://images.freescale.com/shared/images/buttons/login_lb.gif" alt="Login" />
+        <input type="checkbox" name="rememberUser" value="Y" />
+        Remember me on this computer<br />
+        <a href="https://www.nxp.com/webapp/crcl.ccr_forgot_login_ruhp.framework">Forgot
+        your password?</a><br />
+        <a href="https://www.nxp.com/security/public/login.LegalAgreementController.sp?action=printerFriendlyAgreement">Access
+        Agreement</a>
+      </form>
+    </div>-->
+    <!-- End Login Box -->
+  </div>
+
+</div>
+<!-- End Right Column -->
+<div class="bkflt"></div>
+<!-- End Content Space -->
+<div class="bkflt"></div>
+
+
+<!-- WebTrends NetIQ Javascript -->
+<!-- WebTrends collateral activated 2006-01-27 -->
+<script type="text/javascript" src='http://cache.nxp.com/files/js/jquery.GoogleSpreadsheet.js'></script>
+
+<noscript>
+<script src="http://cache.nxp.com/files/abstract/misc/SDC_SMARTSOURCE_TAG.js" language="javascript" type="text/javascript"></script>
+<img border="0" name="DCSIMG" width="1" height="1" alt="DSCIMG" src="http://fdc.freescale.com/dcsna6bpqoifwzzkbkpmprmyf_5x3f/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" /></noscript>
+
+
+<!-- Added to fix floating footer issue -->
+<div class="bkflt"></div>
+<!-- Added to fix floating footer issue.. END -->
+</div>
+</div>
+<br></br>
+<script type="text/javascript" src="http://style.nxp.com/files/js/elqNow/elqwebanalytics.js"></script>
+<script type="text/javascript">_satellite.pageBottom();</script>
+<script type="text/javascript" src="http://style.nxp.com/files/abstract/misc/blueconic.js"></script></body>
+<!--googleoff: all-->
+
+<!-- <noindex> --><div class="clearfix"></div>
+<footer>
+  
+    <div id="footer" class="nxp-nav container"> 
+        <div class="row"> 
+        <div class="col-sm-2 col-xs-6 dtmFooter" data-dtmName="ABOUT NXP"> 
+        <h4 >ABOUT NXP</h4> 
+          <ul class="list-unstyled"> 
+            <li class="paddingtop5"><a href="http://investors.nxp.com/phoenix.zhtml?c=209114&amp;p=irol-irhome">Investors</a></li> 
+            <li class="paddingtop5"><a href="http://www.nxp.com/webapp/connect/memberDirSearch.sp">Partners</a></li> 
+            <li class="paddingtop5"><a href="http://www.nxp.com/about/careers-at-nxp:CAREERS">Careers</a></li> 
+          </ul> 
+        </div>   
+        <div class="col-sm-2 col-xs-6 dtmFooter" data-dtmName="RESOURCES"> 
+        <h4 >RESOURCES</h4> 
+          <ul class="list-unstyled"> 
+            <li class="paddingtop5"><a href="http://www.nxp.com/about/nxp-mobile-applications:MOBILE">Mobile Apps</a></li> 
+            <li class="paddingtop5"><a href="http://media.nxp.com/">Press, News, Blogs</a></li> 
+            <li class="paddingtop5"><a href="http://www.nxp.com/pages/contact-us:CONTACTUS">Contact Us</a></li> 
+          </ul> 
+        </div>   
+        <div class="col-sm-3 col-xs-12 dtmFooter" data-dtmName="FOLLOW US"><h4 >FOLLOW US</h4> 
+        <ul id="footer-social" class="list-inline paddingtop5">  
+          <li class="twitter"><a href="https://twitter.com/NXP" title="Follow NXP on Twitter" target="_blank" data-content-finding="Footer" data-content-subfinding="Footer: FOLLOW US"><span class="icon-twitter22"></span></a></li>     
+          <li class="linkedin"><a href="http://www.linkedin.com/company/nxp-semiconductors" title="Follow NXP on Linked In" target="_blank" data-content-finding="Footer" data-content-subfinding="Footer: FOLLOW US"><span class="icon-linkedin"></span></a></li>   
+          <li class="facebook"><a href="https://www.facebook.com/NXPsemi" title="Follow NXP on Facebook" target="_blank" data-content-finding="Footer" data-content-subfinding="Footer: FOLLOW US"><span class="icon-facebook"></span></a></li> 
+          <!--li class="youtube"><a href="https://www.youtube.com/nxpsemiconductors" title="Follow NXP on Youtube" target="_blank" data-content-finding="Footer" data-content-subfinding="Footer: FOLLOW US"><span class="icon-youtube-square2"></span></a></li--> 
+          <li class="email"><a href="https://contact.nxp.com/Subscription-Center" target="_blank" title="Subscription Center"><span class="icon-mail2"></span></a></li>   
+          </ul> 
+        </div>   
+        <div class="col-sm-5 col-xs-12"> 
+          <div id="newsContainer"> 
+            <div id="news"> 
+            <div class="newsItem"><h5>NEWS</h5><p>NXP Semiconductor Announces Second Quarter 2015 Results</p><a href="http://otp.investis.com/clients/us/free_scale/usn/usnews-story.aspx?cid=896&amp;newsid=29975" class="readmore" target="_blank">Read More</a></div> 
+            </div> 
+            <div id="newsDirection"> 
+              <a href="#left" id="newsLeft"><span class="icon-angle-left"></span></a> 
+              <a href="#right" id="newsRight"><span class="icon-angle-right"></span></a> 
+            </div> 
+          </div>  
+        </div> 
+        </div> 
+        <div class="row legal paddingtop5"> 
+          <div class="col-sm-7 paddingleft35 dtmFooter" data-dtmName="Privacy"> 
+             <ul class="list-inline vertical"> 
+               <li><a href="http://www.nxp.com/about/privacy:PRIVACYPRACTICES">Privacy</a></li> 
+               <li><a href="http://www.nxp.com/about/terms-of-use:TERMSOFUSE">Terms of Use</a></li> 
+  			   <li><a href="http://www.nxp.com/about/our-standard-terms-and-conditions-of-sale-counter-offer:TERMSCONDITIONSSALE">Terms of Sale</a></li> 
+               <li><a href="#stay_here" id="stay_here" name="stay_here" onclick="displayBlock();">Feedback</a></li> 
+             </ul> 
+          </div> 
+          <div class="col-sm-5 pull-right" style="margin-top:6px;"> 
+            <span class="pull-right nxp-gray-text small">&copy;2006-2016 NXP Semiconductors. All rights reserved.</span> 
+          </div> 
+        </div> 
+      </div> </footer>	
+<script src="http://www.nxp.com/docs/headlines/NXP-NEWS-en.js"></script>
+<script	src="http://cache.nxp.com/files/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script	src="http://style.nxp.com/v1.43/files/header/nxp-news.js"></script>
+<script src="http://www.nxp.com/files/abstract/misc/public_common_delta.js" language="javascript" type="text/javascript"></script>
+
+
+<input id="mobileUrl" type="hidden" name="mobileUrl" value="/webapp/connect/memberDirSearch.sp?site_preference=mobile"/>
+<input id="language_option" type="hidden" name="language_option" value="en"/>
+<div id="divBlockLayer" class="blockLayer" ></div>
+<div id="asdf" style="position:absolute;"></div>
+                        
+                                        <!-- <div id="divBottomRight" style="position:absolute;z-index:8;width:70px">
+                                                <center>
+                                                <span id="image_feedback" alt="Feedback" onclick="displayBlock();"></span>
+                                                </center>
+                                        </div> -->
+
+            <!-- <link href="/shared/stylesheets/feedback.css" rel="stylesheet" type="text/css"> -->
+                        <script language="JavaScript" type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/dhtmlwindow.js"></script>
+                        <script language="JavaScript" type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/FloatingIcon.js"></script>
+                        <script language="Javascript" type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/CountChars.js"></script>
+                        <script language="JavaScript" type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/checkTextareaLimit.js"></script>
+
+
+
+
+<script type="text/javascript">
+var  XMLRequest=getAjaxRequest();
+function openfeedBackBlock(window_title,blockDiagUrl,code,psp_URL,width,height,fastpreview){
+	if(document.getElementById('feedBackajaxbox')!=null){
+           document.getElementById('feedBackajaxbox').contentarea.innerHTML="";
+    }
+    var url = getPreviewUrl('http://www.nxp.com/webapp/sps/components/hotFeedback.jsp?collateralCode=NEWCO_FEEDBACK_FORM');
+    ajaxwin=dhtmlwindow.open('http://www.nxp.com/webapp/connect/feedBackajaxbox',url,window_title, 'width='+width+'px,height='+height+'px,left=172px,resize=0,scrolling=1');
+    return ajaxwin ;
+}
+
+function openthankYouBlock(window_title,blockDiagUrl,code,psp_URL,width,height,fastpreview){
+    var url = getPreviewUrl('http://www.nxp.com/webapp/sps/components/hotFeedback.jsp?collateralCode=ONLINE_THANK_YOU');
+    ajaxwin=dhtmlwindow.open('http://www.nxp.com/webapp/connect/feedBackajaxbox',url,window_title, 'width='+width+'px,height='+height+'px,left=165px,resize=0,scrolling=1');
+    return ajaxwin ;
+}
+
+function getPreviewUrl(url, fastpreview){
+    if(fastpreview!=null  &&  (trim(fastpreview) != '' ) ){
+        return url+'&fastpreview=1' ;
+    }else{
+        return url ;
+    }
+}
+
+</script>
+<script language="JavaScript1.2" src="http://style.nxp.com/v1.43/shared/js/HM_Loader_ScriptDOM.js" type='text/javascript'></script>
+
+
+<script>
+$(document).ready(function() {
+	var url = window.location.href;
+		/* if (url.indexOf("?")>-1){
+			url = url.substr(0,url.indexOf("?"));
+		} */
+		var secNodeValue= $('#sechighlight').val();
+		if(secNodeValue == 'noHighlight'){
+		   $.getJSON('/files/abstract/text_insert/NewCoSectionalNavRules.json', function(data) {
+			   $.each(data, function(index, element) {
+	        	   if(url.match("^"+index) || url.indexOf(index)!=-1){
+	            	   $('.'+element[0].Nodeid).css("background-color", "#ffffff");
+	        		   $('.'+element[0].Nodeid+' > a ').css("color", "#777777");
+	        		   return false;
+	        	   }
+	    	    });
+	       });
+	}
+});
+
+</script>
+
+<!-- </noindex> --><!--googleon: all-->
+
+</body>
+
+<!-- Mirrored from www.nxp.com/webapp/connect/memberDirSearch.sp by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:47 GMT -->
+</html>

@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/forum/t-1381690?from=email by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>External SD Card only works if inserted before the board is turned on. - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="http://www.wikidot.com/default__flow/login__CustomDomainScript?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474487;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "forum:thread";
+        OZONE.request.timestamp = 1463139780;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "forum:thread";
+        WIKIREQUEST.info.pageId = 7451485;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--javascript/WIKIDOT.combined.js"></script>
+            <script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--bootstrap/3.2.0/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--bootstrap/3.2.0/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/bootstrap-base/css/style.css);
+                    @import url(http://chibidibidiwah.wdfiles.com/local--theme/bare/style.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="http://smoothieware.org/local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="http://smoothieware.org/local--favicon/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="http://smoothieware.org/common--images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://smoothieware.org/common--images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://smoothieware.org/common--images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    <link rel="alternate" type="application/rss+xml" title="Posts in the discussion thread &quot;External SD Card only works if inserted before the board is turned on.&quot;" href="http://smoothieware.org/feed/forum/t-1381690.xml"/><script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--modules/js/forum/ForumViewThreadModule.js"></script>
+<script type="text/javascript" src="http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--modules/js/forum/ForumViewThreadPostsModule.js"></script>
+</head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://smoothieware.org/" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/">Documentation</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/smoothieboard">SmoothieBoard</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/blog">Blog</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/gallery">Gallery</a><br /></li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="http://smoothieware.org/irc">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="http://smoothieware.org/forum/c-496918/general">Forum</a></li>
+<li><a href="http://groups.google.com/group/smoothieware-support">Support/Help Mailing list</a></li>
+<li><a href="http://groups.google.com/group/smoothie-dev">Developper Mailing list</a></li>
+<li><a href="https://plus.google.com/communities/111870450664099533727">Google+ Community</a></li>
+<li><a href="https://www.facebook.com/Smoothieware/">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="http://chibidibidiwah.wdfiles.com/local--files/nav:top/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="http://smoothieware.org/search">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="http://chibidibidiwah.wdfiles.com/local--files/start/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Forum Thread</span></div>
+          
+          <div id="page-content">
+
+
+<div class="forum-thread-box "> 
+	<div  class="forum-breadcrumbs">
+		<a href="http://smoothieware.org/forum/start">Forum</a>
+        &raquo; <a href="http://smoothieware.org/forum/c-496918/general">Smoothie Firwmare / General</a>
+		&raquo; External SD Card only works if inserted before the board is turned on.
+	</div>
+	
+	<div class="description-block well">
+		<div class="statistics">
+			Started by: <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span><br/>
+			Date:  <span class="odate time_1443565290 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">29 Sep 2015 22:21</span><br/>
+			Number of posts: 13<br/>
+			<span class="rss-icon"><img src="http://www.wikidot.com/common--theme/base/images/feed/feed-icon-14x14.png" alt="rss icon"/></span>
+			RSS: <a href="http://smoothieware.org/feed/forum/t-1381690.xml">New posts</a>
+		</div>
+									<div class="head">Summary:</div>
+				Trying to use SD Access panel from viki2. I have proof that the card reader can work but would need to solve some bugs.
+							
+	</div>
+	
+	<div class="options">
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.unfoldAll(event)" class="btn btn-default btn-small btn-sm">Unfold All</a> 
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.foldAll(event)" class="btn btn-default btn-small btn-sm">Fold All</a>
+		<a href="javascript:;" id="thread-toggle-options" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.toggleThreadOptions(event)" class="btn btn-default btn-small btn-sm"><i class="icon-plus"></i> More Options</a>
+	</div>
+	<div id="thread-options-2" class="options" style="display: none">
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.editThreadMeta(event)" class="btn btn-default btn-small btn-sm">Edit Title &amp; Description</a>
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.editThreadStickiness(event)" class="btn btn-default btn-small btn-sm">Stickness</a>
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.editThreadBlock(event)" class="btn btn-default btn-small btn-sm">Lock Thread</a>
+		<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.moveThread(event)" class="btn btn-default btn-small btn-sm">Move Thread</a>
+			</div>
+	
+	<div id="thread-action-area" class="action-area well" style="display: none"></div>
+
+    <div id="thread-container" class="thread-container">
+        <div id="thread-container-posts" style="display: none">
+            
+
+
+
+	
+					
+      
+    <div class="post-container" id="fpc-2383821">
+                      
+		<div class="post" id="post-2383821">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2383821)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2383821">
+																		External SD Card only works if inserted before the board is turned on.
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span> <span class="odate time_1443565290 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">29 Sep 2015 22:21</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2383821">
+									
+
+<p>Hi,<br />
+I am running smoothieboard 5X with viki2 LCD, with latest (sept. 20th) edge firmware.</p>
+<p>I have configured my external SD card according to the panel page of the wiki and I have read the External SD Card section.<br />
+This section specifies that the SD Card must be removed when powering on the board, since the bootloader doesn't like external SD cards. My problem is that is is recognized only if the SD card in inserted then the board boots.</p>
+<p>When I insert my SD card before powering on the board, everything runs smooth, I can access both SD cards ( sd/ and ext/ ) and all the sub-folders, files etc.</p>
+<p>However, when I first power up my board and then insert my external SD card, my board freezes for a minute or so. When it comes back, the Play menu shows both sd/ and ext/ but I can access only files in sd/ (sd card on the board). It freezes for a few seconds if I try to access the external card sub-folders.</p>
+<p>Having to reboot the printer every time we need to insert an SD card is not very convenient and it is probably not a wise solution since the wiki recommends not to do so. Where should I start looking to solve this issue ?</p>
+<p>Thanks</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+													<strong><a href="javascript:;" onclick="postReply(event,2383821)" class="btn btn-primary btn-small btn-sm">Reply</a></strong> 
+																	<a href="javascript:;" onclick="togglePostOptions(event,2383821)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2383821" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2383821)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2383821)">External SD Card only works if inserted before the board is turned on.</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span>, <span class="odate time_1443565290 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">29 Sep 2015 22:21</span>
+		</div>
+	</div>
+ 
+                
+        
+                      
+    <div class="post-container" id="fpc-2386592">
+                      
+		<div class="post" id="post-2386592">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2386592)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2386592">
+																		Re: External SD Card only works if inserted before the board is turned on.
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=471107&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="arthurwolf" style="background-image:url(http://www.wikidot.com/userkarma.php?u=471107)"/></a><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span> <span class="odate time_1444045328 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">05 Oct 2015 11:42</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2386592">
+									
+
+<p>How long is the cable going to your external SD card ?</p>
+<p>While there is some support for external SD cards in Smoothie, they are essentially a very very bad idea. SD cards are not designed to be talked to over wires like this, and it's bound to cause all sorts of very hard to figure out problems &#8230;</p>
+<p>Cheers.</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+													<strong><a href="javascript:;" onclick="postReply(event,2386592)" class="btn btn-primary btn-small btn-sm">Reply</a></strong> 
+																	<a href="javascript:;" onclick="togglePostOptions(event,2386592)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2386592" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2386592)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2386592)">Re: External SD Card only works if inserted before the board is turned on.</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=471107&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="arthurwolf" style="background-image:url(http://www.wikidot.com/userkarma.php?u=471107)"/></a><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span>, <span class="odate time_1444045328 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">05 Oct 2015 11:42</span>
+		</div>
+	</div>
+ 
+                
+        
+                      
+    <div class="post-container" id="fpc-2386790">
+                      
+		<div class="post" id="post-2386790">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2386790)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2386790">
+																		Re: External SD Card only works if inserted before the board is turned on.
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span> <span class="odate time_1444068183 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">05 Oct 2015 18:03</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2386790">
+									
+
+<p>If you think the length of the wires should solve the problem, I will try to shorten them. What maximum length would you recommend ? 3&quot;, 12&quot; ?</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+													<strong><a href="javascript:;" onclick="postReply(event,2386790)" class="btn btn-primary btn-small btn-sm">Reply</a></strong> 
+																	<a href="javascript:;" onclick="togglePostOptions(event,2386790)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2386790" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2386790)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2386790)">Re: External SD Card only works if inserted before the board is turned on.</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span>, <span class="odate time_1444068183 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">05 Oct 2015 18:03</span>
+		</div>
+	</div>
+ 
+                
+        
+            </div>
+ 
+            </div>
+ 
+            </div>
+ 
+
+	
+					
+      
+    <div class="post-container" id="fpc-2396478">
+                      
+		<div class="post" id="post-2396478">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2396478)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2396478">
+																		Re: External SD Card only works if inserted before the board is turned on.
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span> <span class="odate time_1445697197 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">24 Oct 2015 14:33</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2396478">
+									
+
+<p>My cables are the stock viki2 universal cables. I don't have the exact length, I'd say around 400-500mm.</p>
+<p>Can you describe why external SD is not a good idea ? would shielded MOSI, MISO and SCK signals solve the issue ?</p>
+<p>I have been able to access the SD card content a few times, when starting with the card inserted, now I can't see it's content. unless i plug it directly in the smoothieboard sd card slot.</p>
+
+							</div>
+
+								
+							<div class="changes">
+					Last edited on <span class="odate time_1445697250 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">24 Oct 2015 14:34</span>
+					by <span class="printuser"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span>
+					<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.showHistory(event,2396478)"><i class="icon-plus"></i> Show more</a>
+				</div>
+				<div class="revisions" style="display: none"></div>
+					
+						<div class="options">
+				
+													<strong><a href="javascript:;" onclick="postReply(event,2396478)" class="btn btn-primary btn-small btn-sm">Reply</a></strong> 
+																	<a href="javascript:;" onclick="togglePostOptions(event,2396478)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2396478" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2396478)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2396478)">Re: External SD Card only works if inserted before the board is turned on.</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span>, <span class="odate time_1445697197 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">24 Oct 2015 14:33</span>
+		</div>
+	</div>
+ 
+                
+        
+                      
+    <div class="post-container" id="fpc-2396561">
+                      
+		<div class="post" id="post-2396561">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2396561)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2396561">
+																		Re: External SD Card only works if inserted before the board is turned on.
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=471107&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="arthurwolf" style="background-image:url(http://www.wikidot.com/userkarma.php?u=471107)"/></a><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span> <span class="odate time_1445709436 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">24 Oct 2015 17:57</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2396561">
+									
+
+<blockquote>
+<p>Can you describe why external SD is not a good idea ?</p>
+</blockquote>
+<p>Because it wasn't designed to be used this way. If you have an external SD card reader on your computer, you have a SD card slot, then an actual SD card reading chip, then a USB cable, then finally your computer. You don't have the SD card reading chip in your computer, long wires, then the SD card slot itself.</p>
+<p>This is because USB was designed to be used over wires, and SD cards weren't. SPI isn't differential, doesn't correct for errors etc &#8230; it's not adapted to doing this. USB or Ethernet are.</p>
+<p>The fact that it's become common in this community, and that lots of people do it with some success, doesn't mean it's a good idea.</p>
+<p>Shielding shouldn't really help much.</p>
+<p>We support this due to popular demand, but it still is a very bad idea and there is very very little that can be done when it doesn't work.</p>
+
+							</div>
+
+								
+							<div class="changes">
+					Last edited on <span class="odate time_1445709486 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">24 Oct 2015 17:58</span>
+					by <span class="printuser"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span>
+					<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.showHistory(event,2396561)"><i class="icon-plus"></i> Show more</a>
+				</div>
+				<div class="revisions" style="display: none"></div>
+					
+						<div class="options">
+				
+													<strong><a href="javascript:;" onclick="postReply(event,2396561)" class="btn btn-primary btn-small btn-sm">Reply</a></strong> 
+																	<a href="javascript:;" onclick="togglePostOptions(event,2396561)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2396561" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2396561)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2396561)">Re: External SD Card only works if inserted before the board is turned on.</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=471107&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="arthurwolf" style="background-image:url(http://www.wikidot.com/userkarma.php?u=471107)"/></a><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span>, <span class="odate time_1445709436 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">24 Oct 2015 17:57</span>
+		</div>
+	</div>
+ 
+                
+        
+                      
+    <div class="post-container" id="fpc-2396887">
+                      
+		<div class="post" id="post-2396887">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2396887)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2396887">
+																		Re: External SD Card only works if inserted before the board is turned on.
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span> <span class="odate time_1445786809 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">25 Oct 2015 15:26</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2396887">
+									
+
+<p>Is there going to be a usb jack on the v2 and v2-pro then ?</p>
+<p>So the issue is not related to the SPI communication itself ? Would having both a shielded cable and a slower clock a good solution ?<br />
+External SD has worked flawlessly on the 6 Marlin based printers I have built and used, even with the cheap chinese Ramps and LCDs. I picked the best board and the best display/sd I found, it is surprising that this setup doesn't support external SD.</p>
+<p>I really need to have an external data input located at around 2-3ft from the smoothieboard.<br />
+Should I experiment with the MicroSD card breakout board from AdaFruit ?<br />
+Would you recommend I go the raspberry pi route ?</p>
+<p>Please give me some clues as to where I should start digging, I will solve this issue and help the community grow.</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+																					<a href="javascript:;" onclick="togglePostOptions(event,2396887)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2396887" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2396887)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2396887)">Re: External SD Card only works if inserted before the board is turned on.</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span>, <span class="odate time_1445786809 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">25 Oct 2015 15:26</span>
+		</div>
+	</div>
+ 
+                
+        
+            </div>
+ 
+                      
+    <div class="post-container" id="fpc-2396890">
+                      
+		<div class="post" id="post-2396890">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2396890)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2396890">
+																		Re: External SD Card only works if inserted before the board is turned on.
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=471107&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="arthurwolf" style="background-image:url(http://www.wikidot.com/userkarma.php?u=471107)"/></a><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span> <span class="odate time_1445786946 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">25 Oct 2015 15:29</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2396890">
+									
+
+<blockquote>
+<p>Is there going to be a usb jack on the v2 and v2-pro then ?</p>
+</blockquote>
+<p>Yes.</p>
+<blockquote>
+<p>So the issue is not related to the SPI communication itself ? Would having both a shielded cable and a slower clock a good solution ?</p>
+</blockquote>
+<p>It'd help. As I said, this is a very very bad idea, but it's one that still works for most people. A bit like biking without a helmet &#8230;</p>
+<blockquote>
+<p>Should I experiment with the MicroSD card breakout board from AdaFruit ?</p>
+</blockquote>
+<p>Changing breakouts won't change much.</p>
+<blockquote>
+<p>Would you recommend I go the raspberry pi route ?</p>
+</blockquote>
+<p>That sounds like a much much better idea.</p>
+
+							</div>
+
+								
+							<div class="changes">
+					Last edited on <span class="odate time_1445786972 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">25 Oct 2015 15:29</span>
+					by <span class="printuser"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span>
+					<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.showHistory(event,2396890)"><i class="icon-plus"></i> Show more</a>
+				</div>
+				<div class="revisions" style="display: none"></div>
+					
+						<div class="options">
+				
+																					<a href="javascript:;" onclick="togglePostOptions(event,2396890)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2396890" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2396890)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2396890)">Re: External SD Card only works if inserted before the board is turned on.</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=471107&amp;amp;size=small&amp;amp;timestamp=1463139779" alt="arthurwolf" style="background-image:url(http://www.wikidot.com/userkarma.php?u=471107)"/></a><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span>, <span class="odate time_1445786946 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">25 Oct 2015 15:29</span>
+		</div>
+	</div>
+ 
+                
+        
+            </div>
+ 
+                      
+    <div class="post-container" id="fpc-2397081">
+                      
+		<div class="post" id="post-2397081">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2397081)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2397081">
+																		Re: External SD Card only works if inserted before the board is turned on.
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139780" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span> <span class="odate time_1445816387 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">25 Oct 2015 23:39</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2397081">
+									
+
+<p>Very short cables won't do the trick.</p>
+<p>Again, here is my situation:</p>
+<p>If I insert the card before powering the board, 100% functionnal. I can run GCode files from external SD for hours and everything works perfectly.</p>
+<p>If I insert the card after the board have been powered, it just feels like either SPI channel is wrong or something like that&#8230; when the card is inserted, the board freezes for around a minute or two, and I can't access what's inside the card.</p>
+<p>Here is my setup:</p>
+<div class="code">
+<pre>
+<code>panel.external_sd                            true
+panel.external_sd.spi_channel                0
+panel.external_sd.spi_cs_pin                 0.27
+panel.external_sd.sdcd_pin                   0.28!^</code>
+</pre></div>
+<p>MOSI is on pin 0.18<br />
+MISO is on pin 0.17<br />
+SCK is on pin 0.15<br />
+SDCS is on 0.27<br />
+SDCD is on 0.28</p>
+<p>What could cause the SD card to only work when inserted before the board is powered ?</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+																					<a href="javascript:;" onclick="togglePostOptions(event,2397081)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2397081" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2397081)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2397081)">Re: External SD Card only works if inserted before the board is turned on.</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139780" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span>, <span class="odate time_1445816387 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">25 Oct 2015 23:39</span>
+		</div>
+	</div>
+ 
+                
+        
+            </div>
+ 
+                      
+    <div class="post-container" id="fpc-2397623">
+                      
+		<div class="post" id="post-2397623">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2397623)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2397623">
+																		Re: External SD Card only works if inserted before the board is turned on.
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139780" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span> <span class="odate time_1445899354 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">26 Oct 2015 22:42</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2397623">
+									
+
+<p>I found the culprit&#8230; I wired another smoothieboard with the exact same config file and exact same pins and everything works smoothly.</p>
+<p>Thus, something is broken on the first of the two boards I bought.<br />
+The fault was not the SD Card setup.</p>
+<p>I noticed that I tend to get static shocks when I play with the first setup&#8230;</p>
+<p>The bad part is that I will probably have to get it replaced by uberclock and they are not know to be very fast to answer mails&#8230;</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+																					<a href="javascript:;" onclick="togglePostOptions(event,2397623)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2397623" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2397623)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2397623)">Re: External SD Card only works if inserted before the board is turned on.</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139780" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span>, <span class="odate time_1445899354 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">26 Oct 2015 22:42</span>
+		</div>
+	</div>
+ 
+                
+        
+            </div>
+ 
+                      
+    <div class="post-container" id="fpc-2397625">
+                      
+		<div class="post" id="post-2397625">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2397625)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2397625">
+																		Re: External SD Card only works if inserted before the board is turned on.
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=471107&amp;amp;size=small&amp;amp;timestamp=1463139780" alt="arthurwolf" style="background-image:url(http://www.wikidot.com/userkarma.php?u=471107)"/></a><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span> <span class="odate time_1445899463 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">26 Oct 2015 22:44</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2397625">
+									
+
+<p>Static shocks are very very bad for the board, and are probably not caused by the board itself, but by something in your setup, or lack of protection when manipulating things &#8230;</p>
+<p>Rarely, static shocks have even been known to damage specific pins, which could be what happened to you.</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+																					<a href="javascript:;" onclick="togglePostOptions(event,2397625)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2397625" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2397625)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2397625)">Re: External SD Card only works if inserted before the board is turned on.</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=471107&amp;amp;size=small&amp;amp;timestamp=1463139780" alt="arthurwolf" style="background-image:url(http://www.wikidot.com/userkarma.php?u=471107)"/></a><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span>, <span class="odate time_1445899463 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">26 Oct 2015 22:44</span>
+		</div>
+	</div>
+ 
+                
+        
+            </div>
+ 
+                      
+    <div class="post-container" id="fpc-2397900">
+                      
+		<div class="post" id="post-2397900">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2397900)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2397900">
+																		Re: External SD Card only works if inserted before the board is turned on.
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139780" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span> <span class="odate time_1445959546 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">27 Oct 2015 15:25</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2397900">
+									
+
+<p>Well, it looks like I was able to reproduce the problem&#8230; after soldering the 5 external motor driver pins and the SPI1 pins, it started to behave exactly like the other one&#8230;</p>
+
+							</div>
+
+								
+							<div class="changes">
+					Last edited on <span class="odate time_1445989361 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">27 Oct 2015 23:42</span>
+					by <span class="printuser"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span>
+					<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.showHistory(event,2397900)"><i class="icon-plus"></i> Show more</a>
+				</div>
+				<div class="revisions" style="display: none"></div>
+					
+						<div class="options">
+				
+																					<a href="javascript:;" onclick="togglePostOptions(event,2397900)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2397900" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2397900)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2397900)">Re: External SD Card only works if inserted before the board is turned on.</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139780" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span>, <span class="odate time_1445959546 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">27 Oct 2015 15:25</span>
+		</div>
+	</div>
+ 
+                
+        
+            </div>
+ 
+                      
+    <div class="post-container" id="fpc-2399964">
+                      
+		<div class="post" id="post-2399964">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2399964)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2399964">
+																		Re: External SD Card only works if inserted before the board is turned on.
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=471107&amp;amp;size=small&amp;amp;timestamp=1463139780" alt="arthurwolf" style="background-image:url(http://www.wikidot.com/userkarma.php?u=471107)"/></a><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span> <span class="odate time_1446290018 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">31 Oct 2015 11:13</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2399964">
+									
+
+<p>This is super strange, are you also getting static shocks with that new board ?</p>
+
+							</div>
+
+								
+					
+						<div class="options">
+				
+																					<a href="javascript:;" onclick="togglePostOptions(event,2399964)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2399964" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2399964)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2399964)">Re: External SD Card only works if inserted before the board is turned on.</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=471107&amp;amp;size=small&amp;amp;timestamp=1463139780" alt="arthurwolf" style="background-image:url(http://www.wikidot.com/userkarma.php?u=471107)"/></a><a href="http://www.wikidot.com/user:info/arthurwolf" onclick="WIKIDOT.page.listeners.userInfo(471107); return false;" >arthurwolf</a></span>, <span class="odate time_1446290018 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">31 Oct 2015 11:13</span>
+		</div>
+	</div>
+ 
+                
+        
+            </div>
+ 
+                      
+    <div class="post-container" id="fpc-2475310">
+                      
+		<div class="post" id="post-2475310">
+		<div class="long">
+			<div class="head">
+									<div class="options">
+						<a href="javascript:;" onclick="togglePostFold(event,2475310)" class="btn btn-default btn-small btn-sm">Fold</a>
+					</div>
+								<div class="title" id="post-title-2475310">
+																		Re: External SD Card only works if inserted before the board is turned on.
+															</div>
+				<div class="info">
+					<span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139780" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span> <span class="odate time_1458347124 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">19 Mar 2016 00:25</span>
+														</div>
+			</div>
+			<div class="content" id="post-content-2475310">
+									
+
+<p>Hi, I found the solution, and thought I should share it.</p>
+<p>It seems that something caused some static buildup, even if I was working on an anti-static mat. This build-up was probably messing with the signal associated with the sdcd, causing the smoothieboard to freeze. Installing both the viki2 and the smoothieboard in a grounded aluminum box solved the issue. Everything works perfectly now.</p>
+<p>Cheers</p>
+
+							</div>
+
+								
+							<div class="changes">
+					Last edited on <span class="odate time_1460909061 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">17 Apr 2016 16:04</span>
+					by <span class="printuser"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span>
+					<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.showHistory(event,2475310)"><i class="icon-plus"></i> Show more</a>
+				</div>
+				<div class="revisions" style="display: none"></div>
+					
+						<div class="options">
+				
+													<strong><a href="javascript:;" onclick="postReply(event,2475310)" class="btn btn-primary btn-small btn-sm">Reply</a></strong> 
+																	<a href="javascript:;" onclick="togglePostOptions(event,2475310)" class="btn btn-default btn-small btn-sm">Options</a>
+							</div>
+									
+			<div id="post-options-2475310" class="options" style="display: none">
+			</div>
+		</div>
+		<div class="short">
+							<a class="options btn btn-default btn-mini btn-xs" href="javascript:;" onclick="togglePostFold(event,2475310)" c>Unfold</a>
+						<a class="title" href="javascript:;" onclick="togglePostFold(event,2475310)">Re: External SD Card only works if inserted before the board is turned on.</a> by <span class="printuser avatarhover"><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;"  ><img class="small" src="http://www.wikidot.com/avatar.php?userid=2253553&amp;amp;size=small&amp;amp;timestamp=1463139780" alt="JFD-SphereCo" style="background-image:url(http://www.wikidot.com/userkarma.php?u=2253553)"/></a><a href="http://www.wikidot.com/user:info/jfd-sphereco" onclick="WIKIDOT.page.listeners.userInfo(2253553); return false;" >JFD-SphereCo</a></span>, <span class="odate time_1458347124 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%7Cagohover">19 Mar 2016 00:25</span>
+		</div>
+	</div>
+ 
+                
+        
+            </div>
+ 
+            </div>
+ 
+            </div>
+ 
+
+
+
+        </div>
+    </div>
+
+	<div class="new-post">
+		<a href="javascript:;" id="new-post-button" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.newPost(event,null)" class="btn btn-default">New Post</a>
+	</div>
+	
+	<div style="display:none" id="post-options-template">
+			<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.showPermalink(event,'%POST_ID%')" class="btn btn-default btn-small btn-sm">Permanent Link</a>
+			<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.editPost(event,'%POST_ID%')" class="btn btn-default btn-small btn-sm">Edit</a>
+			<a href="javascript:;" onclick="WIKIDOT.modules.ForumViewThreadModule.listeners.deletePost(event,'%POST_ID%')"class="btn btn-danger btn-small btn-sm">Delete</a>
+	</div>
+	
+	<div style="display:none" id="post-options-permalink-template">/forum/t-1381690/external-sd-card-only-works-if-inserted-before-the-board-is#post-</div>
+</div>
+
+<script type="text/javascript">
+	WIKIDOT.forumThreadId = 1381690;
+</script></div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"></div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="http://www.wikidot.com/">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/forum/t-1381690?from=email by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:11 GMT -->
+</html>

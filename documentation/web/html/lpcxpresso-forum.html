@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]>
+	<html class="ie" lang="en">
+<![endif]-->
+<html lang="en">
+
+<!-- Mirrored from www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>LPCXpresso Forum | www.LPCware.com</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="fb:app_id" content="223354747775349"/>
+
+<link rel="alternate" type="application/rss+xml" title="RSS - LPCXpresso Forum" href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum/feed" />
+<meta name="abstract" content="Device variants" />
+<meta name="copyright" content="Copyright NXP Semiconductors 2012" />
+<link rel="canonical" href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum" />
+<meta name="revisit-after" content="1 day" />
+<meta name="robots" content="index, follow" />
+	<link type="text/css" rel="stylesheet" media="all" href="https://www.lpcware.com/sites/all/modules/codefilter/codefilter.css?6" />
+<link type="text/css" rel="stylesheet" media="all" href="https://www.lpcware.com/sites/all/modules/lpcwaresec/lpcwaresec.css?6" />
+<link type="text/css" rel="stylesheet" media="all" href="https://www.lpcware.com/sites/default/files/advagg/default/advagg_css/css_4cb7afaeb4fea7f74f15f4506a774af4_0.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.lpcware.com/sites/default/files/advagg/default/advagg_js/js_cca49c02c82535bb23469a4efcea06dd_0.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","faq_search":{"keypress":1,"submit_action":"ajax","showEntriesIfEmpty":0},"fivestar":{"titleUser":"Your rating: ","titleAverage":"Average: ","feedbackSavingVote":"Saving your vote...","feedbackVoteSaved":"Your vote has been saved.","feedbackDeletingVote":"Deleting your vote...","feedbackVoteDeleted":"Your vote has been deleted."},"googleanalytics":{"trackOutbound":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"googleAnalyticsReportsAjaxUrl":"\/google-analytics-reports\/ajax","cron":{"basePath":"\/poormanscron","runNext":1463141365},"comment_driven":{"node_form_bellow":0,"theme_support":"atrium"}});
+//--><!]]>
+</script>
+	<!--[if lte IE 7]>
+		<link href="/sites/all/themes/lpcware2013/_css/fix-ie.css" media="screen" rel="stylesheet" type="text/css">
+	<![endif]-->
+	<link rel="icon" type="image/x-icon" href="https://www.lpcware.com/sites/all/themes/lpcware2013/_media/favicon.ico">
+	<script type="text/javascript"></script>
+	<meta name="viewport" content="width=900, initial-scale=1.0">
+</head>
+<body class="not-front not-logged-in page-forum one-sidebar sidebar-right i18n-en role-anonymous-user page-forums-lpcxpresso-lpcxpresso-forum section-forums">
+	<div class="site-wrapper">
+		<div class="header">
+			<div class="header-content" style="width: 90%; margin: 0px auto;">
+				<a class="logo" href="https://www.lpcware.com/" title="Home">
+					<img src="https://www.lpcware.com/sites/all/themes/lpcware2013/_media/nxp-logo.svg" width="84" height="33" alt="Home">
+				</a>
+				<div class="menu">
+					<ul class="links" id="navlist"><li class="menu-9445 first"><a href="https://www.lpcware.com/relational_project_view" title="Returns to the home page">Home</a></li>
+<li class="menu-654"><a href="https://www.lpcware.com/blog" title="Blog pages">Blogs</a></li>
+<li class="menu-664 active-trail"><a href="https://www.lpcware.com/forum" title="Go to the forums">Forums</a></li>
+<li class="menu-1442"><a href="https://www.lpcware.com/projects_list_page" title="Project list page">Projects</a></li>
+<li class="menu-1509"><a href="https://www.lpcware.com/downloads" title="">Downloads</a></li>
+<li class="menu-665"><a href="https://www.lpcware.com/faq_filter" title="Frequently Asked Questions">FAQ</a></li>
+<li class="menu-674 last"><a href="https://www.lpcware.com/user" title="Account settings, polls, news services, recent posts, and more">My Account</a></li>
+</ul>				</div>
+				<div class="languages-wrapper">
+					<div class="languages-trigger">Global/English</div>
+					<div class="languages">
+						<span>Languages:</span>
+						<a href="https://www.lpcware.com/" class="language-link no-underline">Global</a>
+						<a href="https://www.lpcware.com/zh-hans" class="language-link no-underline">简体中文</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="body" style="width: 90%;">
+			<div class="content-wrapper right-nav-present">
+				<div class="body-content">
+					<div class="content-padding">
+																			<div id="block-block-9" class="clear-block block block-block">
+  <div class="content"> <p><img src="https://www.lpcware.com/sites/all/themes/lpcware2013/_media/lpcware-banner-new-2.jpg" border="0" style="width: 100%; height: auto;" /></p>
+<h2><strong><span style="font-size: 11.0pt; font-family: 'Calibri',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">NOTICE: &nbsp;LPCWare.com is moving to nxp.com. We will do our best to minimize the impact during this transition. Expected completion date July 1.</span></strong></h2> </div>
+  </div>
+																											<h1 class="banner-heading"><span>LPCXpresso Forum</span></h1>
+																			<div class="breadcrumb"><a href="https://www.lpcware.com/">Home</a> » <a href="https://www.lpcware.com/forum">Forums</a> » <a href="https://www.lpcware.com/forums/lpcxpresso">LPCXpresso</a></div>						<div class="tabs"></div>
+																								
+<div id="forum">
+
+  
+  <div class="forum-top-links"><ul class="links forum-links"><li class="login first last"><span><a href="https://www.lpcware.com/user/login?destination=forum%2F1100004">Login</a> to post new content in the forum.</span></li>
+</ul></div>
+    
+<div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=1" title="Go to page 2" class="active">2</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=2" title="Go to page 3" class="active">3</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=3" title="Go to page 4" class="active">4</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=4" title="Go to page 5" class="active">5</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=5" title="Go to page 6" class="active">6</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=6" title="Go to page 7" class="active">7</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=7" title="Go to page 8" class="active">8</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=8" title="Go to page 9" class="active">9</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=1" class="active">›</a></li>
+<li class="pager-last last"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=231" class="active">»</a></li>
+</ul></div>
+<table id="forum-topic-1100004" class="forum-topics">
+  <thead>
+    <tr><th class="topic-icon"></th><th class="topic-topic"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?sort=asc&amp;order=Topic" title="sort by Topic" class="active">Topic</a></th><th class="topic-replies"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?sort=asc&amp;order=Replies" title="sort by Replies" class="active">Replies</a></th><th class="topic-created"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?sort=asc&amp;order=Created" title="sort by Created" class="active">Created</a></th><th class="topic-lreply active"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?sort=asc&amp;order=Last+reply" title="sort by Last reply" class="active">Last reply<img src="https://www.lpcware.com/misc/arrow-asc.png" alt="sort icon" title="sort ascending" width="13" height="13" /></a></th></tr>
+  </thead>
+
+  <tbody>
+      
+    
+    <tr class="odd sticky-topic">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-sticky.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      Sticky: <a href="https://www.lpcware.com/content/forum/lpcxpresso-latest-release">LPCXpresso IDE latest release : 8.1.4</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">21</div>
+                  </td>
+
+      
+              <td class="created">
+            by lpcxpresso-support<br />2016-03-16 01:14      </td>
+      
+      <td class="last-reply">
+            by lpcxpresso-support<br />2016-03-16 01:14      </td>
+        </tr>
+      
+    
+    <tr class="even sticky-topic">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-sticky.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      Sticky: <a href="https://www.lpcware.com/content/forum/lpcscrypt-latest-release">LPCScrypt latest release : 1.7.0</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">3</div>
+                  </td>
+
+      
+              <td class="created">
+            by lpcxpresso-support<br />2016-02-23 02:35      </td>
+      
+      <td class="last-reply">
+            by lpcxpresso-support<br />2016-02-23 02:35      </td>
+        </tr>
+      
+    
+    <tr class="odd first-not-sticky not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/no-connection-emulator-device">No connection to emulator device</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">2</div>
+                  </td>
+
+      
+              <td class="created">
+           by Simon Stark<br />1 day 23 hours ago      </td>
+      
+      <td class="last-reply">
+           by Simon Stark<br />2 hours 18 min ago      </td>
+        </tr>
+      
+    
+    <tr class="even not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/debug-button">Debug button off</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">1</div>
+                  </td>
+
+      
+              <td class="created">
+           by blasiis<br />1 day 4 hours ago      </td>
+      
+      <td class="last-reply">
+           by blasiis<br />2 hours 19 min ago      </td>
+        </tr>
+      
+    
+    <tr class="odd not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/lpc1769-memory-assignemtn">LPC1769 Memory Assignment</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">3</div>
+                  </td>
+
+      
+              <td class="created">
+           by andrewaggie<br />1 day 14 hours ago      </td>
+      
+      <td class="last-reply">
+           by R2D2<br />19 hours 37 min ago      </td>
+        </tr>
+      
+    
+    <tr class="even not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/error-37-while-browsing-registers-tab">Error 37 while browsing Registers tab</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">0</div>
+                  </td>
+
+      
+              <td class="created">
+           by robert hulsebos<br />1 day 2 hours ago      </td>
+      
+      <td class="last-reply">
+  n/a</td>
+        </tr>
+      
+    
+    <tr class="odd not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/referencing-one-project-another-not-functioning-properly">Referencing one project from another not functioning properly</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">1</div>
+                  </td>
+
+      
+              <td class="created">
+            by robert hulsebos<br />2016-03-23 06:42      </td>
+      
+      <td class="last-reply">
+           by robert hulsebos<br />1 day 2 hours ago      </td>
+        </tr>
+      
+    
+    <tr class="even not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/lpcxpresso-740-double-floating-point-issues">LPCXpresso 7.4.0 double floating-point issues</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">12</div>
+                  </td>
+
+      
+              <td class="created">
+            by ld0d<br />2014-10-24 09:11      </td>
+      
+      <td class="last-reply">
+           by johnsonjeven<br />1 day 5 hours ago      </td>
+        </tr>
+      
+    
+    <tr class="odd not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/pn7462-read-flash-address-swd">PN7462 read flash address by SWD</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">0</div>
+                  </td>
+
+      
+              <td class="created">
+            by TLfair<br />2016-05-11 00:32      </td>
+      
+      <td class="last-reply">
+  n/a</td>
+        </tr>
+      
+    
+    <tr class="even not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-hot.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/mac-osx-el-capitan">Mac OSX El Capitan</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">24</div>
+                  </td>
+
+      
+              <td class="created">
+            by vinylrider<br />2015-10-03 12:41      </td>
+      
+      <td class="last-reply">
+            by lpcxpresso-support<br />2016-05-10 22:38      </td>
+        </tr>
+      
+    
+    <tr class="odd not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/lpclink-ii-vs-ulink-2-debug-pod">LPCLink II vs ULINK 2 debug pod</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">2</div>
+                  </td>
+
+      
+              <td class="created">
+            by tvink<br />2016-05-10 11:20      </td>
+      
+      <td class="last-reply">
+            by tvink<br />2016-05-10 13:28      </td>
+        </tr>
+      
+    
+    <tr class="even not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/lpcexpresso-814-why-it-build-twice">LPCExpresso 8.1.4, why it build twice</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">0</div>
+                  </td>
+
+      
+              <td class="created">
+            by riscy00<br />2016-05-09 07:31      </td>
+      
+      <td class="last-reply">
+  n/a</td>
+        </tr>
+      
+    
+    <tr class="odd not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/lpc-libraries-different-compilers">LPC libraries on different compilers. </a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">0</div>
+                  </td>
+
+      
+              <td class="created">
+            by PRASAD HEGDE<br />2016-05-08 23:20      </td>
+      
+      <td class="last-reply">
+  n/a</td>
+        </tr>
+      
+    
+    <tr class="even not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/very-laggy-lpcexpresso-ide">Very laggy LpcExpresso IDE.</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">1</div>
+                  </td>
+
+      
+              <td class="created">
+            by ub3r<br />2016-05-07 01:10      </td>
+      
+      <td class="last-reply">
+            by vtw.433e<br />2016-05-07 05:47      </td>
+        </tr>
+      
+    
+    <tr class="odd not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/re-invoke-isp-flashmagic-lpc131517">SOLVED!! Re-invoke ISP + Flashmagic + LPC1315/17</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">3</div>
+                  </td>
+
+      
+              <td class="created">
+            by ub3r<br />2016-05-07 01:04      </td>
+      
+      <td class="last-reply">
+            by ub3r<br />2016-05-07 02:24      </td>
+        </tr>
+      
+    
+    <tr class="even not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/lpcxpresso-814-garbles-disassembly-file-when-using-binary-utilities-disassemble-o-file">LPCXpresso 8.1.4 garbles disassembly file when using &quot;Binary Utilities-&amp;gt;Disassemble&quot; for a .o file</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">5</div>
+                  </td>
+
+      
+              <td class="created">
+            by dariy<br />2016-05-02 07:51      </td>
+      
+      <td class="last-reply">
+            by lpcxpresso-support<br />2016-05-06 03:03      </td>
+        </tr>
+      
+    
+    <tr class="odd not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/using-multiple-lpc-link2-debug-probes">Using Multiple LPC-Link2 debug probes</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">2</div>
+                  </td>
+
+      
+              <td class="created">
+            by Terje<br />2016-05-04 01:51      </td>
+      
+      <td class="last-reply">
+            by Terje<br />2016-05-05 00:03      </td>
+        </tr>
+      
+    
+    <tr class="even not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/lpc-xpresso-1769-external-33v">LPC Xpresso 1769 External 3.3V</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">0</div>
+                  </td>
+
+      
+              <td class="created">
+            by rocketfuel<br />2016-05-04 07:31      </td>
+      
+      <td class="last-reply">
+  n/a</td>
+        </tr>
+      
+    
+    <tr class="odd not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/lpc4337-15-target-error-commit-flash-write-flash-programmer-works">LPC4337: 15: Target error from Commit Flash write (but flash programmer works!)</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">2</div>
+                  </td>
+
+      
+              <td class="created">
+            by monnoliv<br />2016-05-03 03:02      </td>
+      
+      <td class="last-reply">
+            by monnoliv<br />2016-05-03 03:49      </td>
+        </tr>
+      
+    
+    <tr class="even not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/unable-select-redlib-library-when-linker-script-selected">Unable to select the redlib library when Linker script  is selected</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">1</div>
+                  </td>
+
+      
+              <td class="created">
+            by pyk_vsk<br />2016-05-01 05:25      </td>
+      
+      <td class="last-reply">
+            by vtw.433e<br />2016-05-01 08:26      </td>
+        </tr>
+      
+    
+    <tr class="odd not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/lpcxpresso-base-board-sample-link-errors-for-reference">LPCXpresso Base Board Sample Link Errors (for reference)</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">2</div>
+                  </td>
+
+      
+              <td class="created">
+            by IntStarFoo<br />2012-10-20 14:48      </td>
+      
+      <td class="last-reply">
+            by AlhaythamElhassan<br />2016-04-30 19:43      </td>
+        </tr>
+      
+    
+    <tr class="even not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/acrylic-case-lpc-link-2">Acrylic case for LPC Link 2</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">2</div>
+                  </td>
+
+      
+              <td class="created">
+            by 0xdeadbeef<br />2016-04-30 10:35      </td>
+      
+      <td class="last-reply">
+            by 0xdeadbeef<br />2016-04-30 12:37      </td>
+        </tr>
+      
+    
+    <tr class="odd not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/pc-not-able-detect-lpcxpresso1769cd-eval-board-om13085">PC not able to detect LPCxpresso1769/CD eval board (OM13085) </a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">5</div>
+                  </td>
+
+      
+              <td class="created">
+            by ally.amir<br />2016-04-27 20:23      </td>
+      
+      <td class="last-reply">
+            by yeechee<br />2016-04-29 19:10      </td>
+        </tr>
+      
+    
+    <tr class="even not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/memory-export-peripherals-doesnt-work">Memory export of peripherals doesn&#039;t work</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">0</div>
+                  </td>
+
+      
+              <td class="created">
+            by miccio<br />2016-04-29 05:47      </td>
+      
+      <td class="last-reply">
+  n/a</td>
+        </tr>
+      
+    
+    <tr class="odd not-sticky">
+      <td class="icon"><div class="forum-icon">
+
+<img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="" title="" width="24" height="24" />
+</div></td>
+
+      <td class="title">
+      <a href="https://www.lpcware.com/content/forum/pc-not-able-detect-lpcxpresso1769-oem13000">PC not able to detect LPCxpresso1769 (OEM13000)</a>            </td>
+
+              <td class="replies">
+          <div class="num num-replies">4</div>
+                  </td>
+
+      
+              <td class="created">
+            by AndreaCei<br />2016-04-28 05:31      </td>
+      
+      <td class="last-reply">
+            by vtw.433e<br />2016-04-29 02:53      </td>
+        </tr>
+    </tbody>
+</table>
+  <div class="forum-topic-legend forum-smalltext clear-block">
+  <div class="legend-group">
+    <dl>
+      <dt><img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-default.png" alt="No New Posts" title="No New Posts" width="24" height="24" /></dt>
+      <dd>No New Posts</dd>
+    </dl>
+    <dl>
+      <dt><img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-new.png" alt="New Posts" title="New Posts" width="24" height="24" /></dt>
+      <dd>New Posts</dd>
+    </dl>
+  </div>
+  <div class="legend-group">
+    <dl>
+      <dt><img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-hot.png" alt="Hot Thread (No New)" title="Hot Thread (No New)" width="24" height="24" /></dt>
+      <dd>Hot Thread (No New)</dd>
+    </dl>
+    <dl>
+      <dt><img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-hot-new.png" alt="Hot Thread (New)" title="Hot Thread (New)" width="24" height="24" /></dt>
+      <dd>Hot Thread (New)</dd>
+    </dl>
+  </div>
+  <div class="legend-group">
+    <dl>
+      <dt><img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-sticky.png" alt="Sticky Thread" title="Sticky Thread" width="24" height="24" /></dt>
+      <dd>Sticky Thread</dd>
+    </dl>
+    <dl>
+      <dt><img src="https://www.lpcware.com/sites/all/modules/advanced_forum/styles/blue_lagoon_stacked/images/topic-closed.png" alt="Locked Thread" title="Locked Thread" width="24" height="24" /></dt>
+      <dd>Locked Thread</dd>
+  </dl>
+  </div>
+</div>
+
+ <div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=1" title="Go to page 2" class="active">2</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=2" title="Go to page 3" class="active">3</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=3" title="Go to page 4" class="active">4</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=4" title="Go to page 5" class="active">5</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=5" title="Go to page 6" class="active">6</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=6" title="Go to page 7" class="active">7</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=7" title="Go to page 8" class="active">8</a></li>
+<li class="pager-item"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=8" title="Go to page 9" class="active">9</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=1" class="active">›</a></li>
+<li class="pager-last last"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?page=231" class="active">»</a></li>
+</ul></div></div>
+<div id="block-locale-0" class="clear-block block block-locale">
+  <h2>Languages</h2>
+  <div class="content"><ul><li class="en first active"><a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum" class="language-link active"><img src="https://www.lpcware.com/sites/all/modules/languageicons/flags/en.png" alt="English" title="English"  class="language-icon" width="16" height="12" /> English</a></li>
+<li class="zh-hans last"><a href="https://www.lpcware.com/zh-hans/lpcxpresso/forum" class="language-link"><img src="https://www.lpcware.com/sites/all/modules/languageicons/flags/zh-hans.png" alt="简体中文" title="简体中文"  class="language-icon" width="16" height="12" /> 简体中文</a></li>
+</ul></div>
+  </div>
+						<a href="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum/feed" class="feed-icon"><img src="https://www.lpcware.com/misc/feed.png" alt="Syndicate content" title="RSS - LPCXpresso Forum" width="16" height="16" /></a>					</div>
+				</div>
+									<div id="sidebar-right" class="sidebar sidebar-right-wrapper" valign="top">
+						<div class="site_search">
+							<form action="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum"  accept-charset="UTF-8" method="post" id="search-theme-form" class="gss">
+<div><div id="search" class="container-inline">
+ <div class="search-theme-form">
+ 	<div class="form-item" id="edit-search-theme-form-1-wrapper">
+ <label for="edit-search-theme-form-1">Search this site: </label>
+ <input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" value="" placeholder="Search this site" class="form-text" />
+</div>
+ </div>
+ <div class="submit">
+ 	<input type="submit" name="op" id="edit-submit-1" value="Search"  class="form-submit" />
+ </div>
+ <div class="hidden">
+ 	<input type="hidden" name="form_build_id" id="form-8b218852d7343405166abbef75efc068" value="form-8b218852d7343405166abbef75efc068"  />
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"  />
+ </div>
+</div>
+
+</div></form>
+						</div>
+						<div id="block-user-0" class="clear-block block block-user">
+  <h2>User login</h2>
+  <div class="content"><form action="https://www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum?destination=forum%2F1100004"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-openid-identifier-wrapper">
+ <label for="edit-openid-identifier">Log in using OpenID: </label>
+ <input type="text" maxlength="255" name="openid_identifier" id="edit-openid-identifier" size="13" value="" class="form-text" />
+ <div class="description"><a href="http://openid.net/">What is OpenID?</a></div>
+</div>
+<div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" tabindex="1" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  tabindex="1" class="form-text required" />
+</div>
+<div class="form-item" id="edit-remember-me-wrapper">
+ <label class="option" for="edit-remember-me"><input type="checkbox" name="remember_me" id="edit-remember-me" value="1"  checked="checked"  tabindex="1" class="form-checkbox" /> Remember me</label>
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  tabindex="1" class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-dc20d0ea5cc6a880eebb4be7b105db5e" value="form-dc20d0ea5cc6a880eebb4be7b105db5e"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+<input type="hidden" name="openid.return_to" id="edit-openid.return-to" value="https://www.lpcware.com/openid/authenticate?destination=forum%2F1100004"  />
+<div class="item-list"><ul><li class="openid-link first"><a href="https://www.lpcware.com/%2523">Log in using OpenID</a></li>
+<li class="user-link last"><a href="https://www.lpcware.com/%2523">Cancel OpenID login</a></li>
+</ul></div><div class="item-list"><ul><li class="first"><a href="https://www.lpcware.com/user/register" title="Create a new user account.">Create new account</a></li>
+<li class="last"><a href="https://www.lpcware.com/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div>
+</div></form>
+</div>
+  </div>
+<div id="block-block-5" class="clear-block block block-block">
+  <h2>Search the forums</h2>
+  <div class="content"><div class="forum_site_search">
+  <form action="https://www.lpcware.com/search/gss/" accept-charset="UTF-8" method="post" id="frmsearch-theme-form" class="gss" >
+    <div>
+      <div id="frmsearch" class="container-inline">
+        <div class="form-item" id="edit-frmsearch-theme-form-1-wrapper">
+          <input type="text" maxlength="128" name="search_theme_form" id="edit-frmsearch-theme-form-1" size="15" title="Enter the terms you wish to search for."  />
+        </div>
+        <input type="submit" name="op" value="Search"  class="form-submit" onclick="SearchRedirection(this.form);"/>
+      </div>
+    </div>
+  </form>
+</div>
+<script type="text/javascript">
+<!--
+function getElement (id)
+{
+   if (document.getElementById)
+   {
+      return document.getElementById(id);
+   }
+   else if (document.all)
+   {
+      return window.document.all[id];
+   }
+   else if (document.layers)
+   {
+      return window.document.layers[id];
+   }
+}
+function SearchRedirection(oForm)
+{
+  var searchElement = getElement ('edit-frmsearch-theme-form-1');
+  //var chkBox = getElement ('checkbox-frmsearch-form-1');
+  //var pathname = window.location.pathname;
+  var replace_path = ' inurl:forum ';
+  //if (chkBox.checked) {
+  //  replace_path = 'inurl:forum ' + 'inurl:' + pathname.substr(pathname.lastIndexOf('/') + 1) + ' ';
+  //} else {
+  //  replace_path = 'inurl:forum ';
+  //}
+  var x = '/search/gss/' + searchElement.value + replace_path ;
+ 
+  //window.alert(x);
+  oForm.action = x;
+  
+}
+//-->
+</script></div>
+  </div>
+<div id="block-block-3" class="clear-block block block-block">
+  <div class="content"><center><a href="http://www.lpcware.com/lpcxpresso" target="_blank">
+<img border="0" src="https://www.lpcware.com/system/files/images/LPCXpresso-logo_0.jpg" alt="1" width="154" height="154">
+</a></center></div>
+  </div>
+<div id="block-forum-1" class="clear-block block block-forum">
+  <h2>New forum topics</h2>
+  <div class="content"><div class="item-list"><ul><li class="first"><a href="https://www.lpcware.com/content/forum/i2c-eeprom-problem">I2C EEPROM Problem</a></li>
+<li><a href="https://www.lpcware.com/content/forum/bootloader-lpc1769-0">Bootloader for LPC1769</a></li>
+<li><a href="https://www.lpcware.com/content/forum/how-check-rtc-oscillator-running">How to check rtc oscillator is running?</a></li>
+<li><a href="https://www.lpcware.com/content/forum/dht11-test-aplication">DHT11 Test aplication</a></li>
+<li><a href="https://www.lpcware.com/content/forum/lpc2136-i2c-data-problem">lpc2136 i2c data problem</a></li>
+<li><a href="https://www.lpcware.com/content/forum/example-using-watchdog-timer-lpc3131-or-similar">Example of using the Watchdog Timer on LPC3131 or similar?</a></li>
+<li><a href="https://www.lpcware.com/content/forum/error-37-while-browsing-registers-tab">Error 37 while browsing Registers tab</a></li>
+<li><a href="https://www.lpcware.com/content/forum/lpc4357-jtag-swd-problem" title="6 comments">LPC4357 JTAG /SWD PROBLEM !</a></li>
+<li><a href="https://www.lpcware.com/content/forum/debug-button" title="1 comment">Debug button off</a></li>
+<li><a href="https://www.lpcware.com/content/forum/lpc1769-memory-assignemtn" title="3 comments">LPC1769 Memory Assignment</a></li>
+<li><a href="https://www.lpcware.com/content/forum/unable-connect-jtag-jlink-edu-pod-lpc1752">Unable to connect JTAG Jlink -EDU pod to LPC1752</a></li>
+<li><a href="https://www.lpcware.com/content/forum/ftdi-ft800-lcd-tft-display-lpc1769-some-problems-graphic-commands">FTDI FT800 LCD TFT display + LPC1769 - some problems with graphic commands </a></li>
+<li><a href="https://www.lpcware.com/content/forum/iap-usb-boot-and-crp">IAP USB boot and CRP</a></li>
+<li><a href="https://www.lpcware.com/content/forum/vector-catch">Vector Catch</a></li>
+<li class="last"><a href="https://www.lpcware.com/content/forum/dma-problem-dac-lpc1549">DMA problem with DAC in LPC1549</a></li>
+</ul></div><div class="more-link"><a href="https://www.lpcware.com/forum" title="Read the latest forum topics.">more</a></div></div>
+  </div>
+<div id="block-forum-0" class="clear-block block block-forum">
+  <h2>Active forum topics</h2>
+  <div class="content"><div class="item-list"><ul><li class="first"><a href="https://www.lpcware.com/content/forum/no-connection-emulator-device" title="2 comments">No connection to emulator device</a></li>
+<li><a href="https://www.lpcware.com/content/forum/debug-button" title="1 comment">Debug button off</a></li>
+<li><a href="https://www.lpcware.com/content/forum/i2c-eeprom-problem">I2C EEPROM Problem</a></li>
+<li><a href="https://www.lpcware.com/content/forum/lpc4357-jtag-swd-problem" title="6 comments">LPC4357 JTAG /SWD PROBLEM !</a></li>
+<li><a href="https://www.lpcware.com/content/forum/bootloader-lpc1769-0">Bootloader for LPC1769</a></li>
+<li><a href="https://www.lpcware.com/content/forum/spi-communication-mfrc522" title="4 comments">SPI Communication with MFRC522</a></li>
+<li><a href="https://www.lpcware.com/content/forum/how-check-rtc-oscillator-running">How to check rtc oscillator is running?</a></li>
+<li><a href="https://www.lpcware.com/content/forum/dht11-test-aplication">DHT11 Test aplication</a></li>
+<li><a href="https://www.lpcware.com/content/forum/lpc2136-i2c-data-problem">lpc2136 i2c data problem</a></li>
+<li><a href="https://www.lpcware.com/content/forum/example-using-watchdog-timer-lpc3131-or-similar">Example of using the Watchdog Timer on LPC3131 or similar?</a></li>
+<li><a href="https://www.lpcware.com/content/forum/lpc4330-spifi-lib" title="1 comment">LPC4330 SPIFI lib</a></li>
+<li><a href="https://www.lpcware.com/content/forum/lpc1769-memory-assignemtn" title="3 comments">LPC1769 Memory Assignment</a></li>
+<li><a href="https://www.lpcware.com/content/forum/lpc1788-sdram-test-failure" title="4 comments">LPC1788 SDRAM test failure</a></li>
+<li><a href="https://www.lpcware.com/content/forum/error-37-while-browsing-registers-tab">Error 37 while browsing Registers tab</a></li>
+<li><a href="https://www.lpcware.com/content/forum/referencing-one-project-another-not-functioning-properly" title="1 comment">Referencing one project from another not functioning properly</a></li>
+<li><a href="https://www.lpcware.com/content/forum/real-time-clock-setup-lpc4357" title="6 comments">Real Time Clock Setup on LPC4357</a></li>
+<li><a href="https://www.lpcware.com/content/forum/lpcxpresso-740-double-floating-point-issues" title="12 comments">LPCXpresso 7.4.0 double floating-point issues</a></li>
+<li><a href="https://www.lpcware.com/content/forum/binary-point-when-prigroup-b000" title="4 comments">Binary point when PRIGROUP is b000</a></li>
+<li><a href="https://www.lpcware.com/content/forum/unable-connect-jtag-jlink-edu-pod-lpc1752">Unable to connect JTAG Jlink -EDU pod to LPC1752</a></li>
+<li class="last"><a href="https://www.lpcware.com/content/forum/ftdi-ft800-lcd-tft-display-lpc1769-some-problems-graphic-commands">FTDI FT800 LCD TFT display + LPC1769 - some problems with graphic commands </a></li>
+</ul></div><div class="more-link"><a href="https://www.lpcware.com/forum" title="Read the latest forum topics.">more</a></div></div>
+  </div>
+					</div>
+							</div>
+		</div>
+		<div class="push"></div>
+	</div>
+	<div class="site-wrapper site-footer">
+		<div class="copyright" style="width: 90%;">
+			<div class="copyright-left">
+				<a href="http://www.nxp.com/privacy-policy.html">Privacy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://www.nxp.com/terms-of-use.html">Terms of Use</a>
+			</div>
+			<div class="copyright-right">
+				Copyright &copy;2016 LPCWare.com
+			</div>
+		</div>
+	</div>	<div id="fb-root"></div>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  jQuery.extend(Drupal.settings, {"fb":{"base_url":"https:\/\/www.lpcware.com","ajax_event_url":"https:\/\/www.lpcware.com\/fb\/ajax","is_anonymous":true,"fb_init_settings":{"xfbml":false,"status":false,"oauth":true,"cookie":true,"channelUrl":"https:\/\/www.lpcware.com\/fb\/channel"},"test_login_status":false,"get_login_status":true,"controls":"","js_sdk_url":"https:\/\/connect.facebook.net\/en_US\/all.js"}});
+
+if (typeof(FB) == 'undefined') {
+  var e = document.createElement('script');
+  e.async = true;
+  e.src = Drupal.settings.fb.js_sdk_url;
+  document.getElementById('fb-root').appendChild(e);
+}
+
+
+//--><!]]>
+
+</script>
+
+<div id='feedback_simple'>
+  <a
+    href='https://www.lpcware.com/contact'
+    class='feedback_simple-right feedback_simple'
+    style='top: 75%; height: 100px; width: 35px;'>
+      <img
+        alt='feedback'
+        src='https://www.lpcware.com/sites/all/modules/feedback_simple/feedback_simple.gif'
+        height='100px'
+        width='35px' />
+  </a>
+</div>
+<script type="text/javascript" src="https://www.lpcware.com/sites/default/files/advagg/default/advagg_js/js_de3e1dce450d1eed79aad185b2f07bfd_0.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-23698075-1"]);_gaq.push(["_trackPageview"]);(function(){var ga=document.createElement("script");ga.type="text/javascript";ga.async=true;ga.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s)})()
+//--><!]]>
+</script>
+</body>
+
+<!-- Mirrored from www.lpcware.com/forums/lpcxpresso/lpcxpresso-forum by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:20 GMT -->
+</html>

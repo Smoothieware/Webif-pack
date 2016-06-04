@@ -1,0 +1,2217 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]>
+<html class="no-js ie"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js"> <!--<![endif]-->
+<!--
+
+              MMM       MM
+              MMMMMMMMMMMMMMM
+            NMMM           .MM
+         MMMMMMM.MMMM   MMM MM
+        MMM  .MM.MMM    MMM MMM
+       .MMM   MM            MMM
+        MMM M MM MMMMMMMMMM MMM.
+        =MMMMMMM            MM
+         MMMMMMMMMMMMMMMMMMMMMM.
+     MMMMMMMM .  .            .MMMN
+   .MMMM M,                    ..MMM
+  .M.MM.NM .MMMMMMMMMMMMMMMMMMMM M.M
+ ZM.MM. MM  MMMMMMM+    .IMMMMMM M .M.
+ MMMMMMMMM  MMMM  .IM+.  ..MMMMM M=M.
+  MMMMMMMM  MMMMMMM.MM MMMMMMMMM MMM
+  MMMMMMMM  MMMMMMM,MM MM MMMMMM MMM
+  MM   NMM  MMMMMM=MMM MM MMMMMM M~M
+  MMMMMMMM  MMMMMM MMM MMMMMMMMM MMMM.
+ MMMM.. MM .MMMMMMMMMMMMMMMMMMMM M .MM.
+.MMMM8. MM  MMMMMMMMMMMMMMMMMMMM MM MM
+ MMMM MM+M  MMMMMM.      . .     M MM
+  7MM.+MMM            ..  +DMM  MMM.
+       MMMM..MMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMM+MM MMMM
+       MMMMMMMMMM.  MMMM, .   MM
+       MMMMMMM  Z   MMMM    . MM
+      MMMMMMMM  MNMMMMMMMMMMMMMMM.
+      MMMMMMMMMM.    MM+ ZMMM  MM
+     MMMMMM+ OMMM.   MM M      MM
+     .MMM,MMDMMM     MMMMMZ.   .MM
+        MMM M+ .     NMMMMMMMMMM .
+         $MMMMMMMMMM8
+
+-->
+
+<!-- Mirrored from ultimaker.com/en/products/cura-software by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>                        Cura 3D Printing Slicing Software    </title>
+    <meta name="description"
+          content="Cura is free to download and engineered to make the very most of the Ultimaker 3D Printers, it creates a stable, reliable and seamless 3D printing experience.">
+    <meta name="keywords"
+          content="Ultimaker, 3D Printer, 3D Printing, Slicer, Software, Download, Open Source, Most used Industry">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#0CA9E3">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        
+    <meta property="og:title" content="Cura 3D Printing Slicing Software | Ultimaker"/>
+    <meta property="og:url" content="https://ultimaker.com/en/products/cura-software"/>
+    <meta property="og:site_name" content="Ultimaker.com"/>
+        <meta property="og:type"
+          content="website"/>
+    <meta property="og:description"
+          content="Our free software prepares your model for 3D printing. For novices it’ll do everything for you, and for experts there are many advanced settings. As it’s open source, we work with our commun..."/>
+
+    
+    
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@ultimaker"/>
+    <meta name="twitter:creator"
+          content="@ultimaker"/>
+    <meta name="twitter:title" content="Cura 3D Printing Slicing Software | Ultimaker"/>
+
+                                <link rel="stylesheet" href="http://d2py9w124w2itd.cloudfront.net/build/site/css/84f1069e.build.min.css">
+            
+    <script src="http://d2py9w124w2itd.cloudfront.net/src/js/vendor/modernizr-custom.js"></script>
+
+    <script>
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        window.iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+        window.android = userAgent.match(/Android/i) ? true : false;
+        window.safari = userAgent.match(/Safari/i) ? true : false;
+        window.chrome = userAgent.match(/(CriOS|Chrome)/g) ? true : false;
+        if (window.iOS) {
+            document.documentElement.className += " iOS";
+        }
+        if (window.android) {
+            document.documentElement.className += " android";
+        }
+        if (window.iOS && window.safari && !window.chrome) {
+            document.documentElement.className += " m-safari";
+        }
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/248e38e1-b7f1-4fb1-934b-3beb23504d11.css"/>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="http://d2py9w124w2itd.cloudfront.net/img/favicons/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="//d2py9w124w2itd.cloudfront.net/img/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="//d2py9w124w2itd.cloudfront.net/img/favicons/browserconfig.xml'">
+
+</head>
+<body class="is-navimageshidden is-headeropen is-headertransparent  "
+      id="products">
+
+<!--[if lt IE 9]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div class="m-viewport">
+
+    <div class="m-navigationview">
+    <div class="navigationview-container scrollcap">
+        <div class="navigationview-content">
+            <div class="navigationview-top">
+                <ul class="navigation">
+                                            <li class="navigationitem" data-navigationparent>
+                            <div class="navigationitem-container">
+                                <a href="https://ultimaker.com/en/explore"
+                                   class="navigationitem-link ">
+                                    Explore
+                                </a>
+                                <span class="navigationitem-toggle" data-navigationparent-trigger>
+                                    <i class="icon icon-down"></i>
+                                </span>
+                            </div>
+
+                                                            <div class="navigationitem-subs" data-navigationparent-menu>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/explore/what-is-3d-printing"><em>What</em> is 3D printing?</a>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/explore/where-is-3d-printing-used"><em>Where</em> is 3D printing used?</a>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/explore/how-is-3d-printing-used"><em>How</em> is 3D printing used?</a>
+    </div>                            
+                        </li>
+                                            <li class="navigationitem" data-navigationparent>
+                            <div class="navigationitem-container">
+                                <a href="https://ultimaker.com/en/products"
+                                   class="navigationitem-link active">
+                                    Products
+                                </a>
+                                <span class="navigationitem-toggle" data-navigationparent-trigger>
+                                    <i class="icon icon-down"></i>
+                                </span>
+                            </div>
+
+                                                            
+<div class="navigationitem-subs" data-navigationparent-menu>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/products/ultimaker-2-plus">Ultimaker <em>2+</em></a>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/products/ultimaker-2-go">Ultimaker <em>2 Go</em></a>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/products/ultimaker-original">Ultimaker Original+</a>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/products/materials">Materials</a>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/products/cura-software">Cura Software</a>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/products/ultimaker-app">Ultimaker <em>app</em></a>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/products/add-ons">Add-ons</a>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/products/spare-parts">Spare parts</a>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/products/ultimaker-2-go-backpack">Ultimaker 2 Go Backpack</a>
+        <a class="navigationitem-sub" href="https://ultimaker.com/en/products/3d-printer-comparison">
+        Compare our 3D printers
+    </a>
+    <a class="navigationitem-sub" href="https://ultimaker.com/en/products">
+        View all products
+    </a>
+</div>                            
+                        </li>
+                                            <li class="navigationitem" data-navigationparent>
+                            <div class="navigationitem-container">
+                                <a href="https://ultimaker.com/en/stories"
+                                   class="navigationitem-link ">
+                                    Stories
+                                </a>
+                                <span class="navigationitem-toggle" data-navigationparent-trigger>
+                                    <i class="icon icon-down"></i>
+                                </span>
+                            </div>
+
+                                                            
+
+<div class="navigationitem-subs" data-navigationparent-menu>
+            <a class="navigationitem-sub" href="https://ultimaker.com/en/stories?filter[category]=309">Engineering</a>
+            <a class="navigationitem-sub" href="https://ultimaker.com/en/stories?filter[category]=311">Humanitarian aid</a>
+            <a class="navigationitem-sub" href="https://ultimaker.com/en/stories?filter[category]=314">Medical</a>
+            <a class="navigationitem-sub" href="https://ultimaker.com/en/stories?filter[category]=315">Product design</a>
+            <a class="navigationitem-sub" href="https://ultimaker.com/en/stories?filter[category]=326">University</a>
+            <a class="navigationitem-sub" href="https://ultimaker.com/en/stories?filter[category]=327">DIY, hobbies and home</a>
+    </div>                            
+                        </li>
+                                            <li class="navigationitem" data-navigationparent>
+                            <div class="navigationitem-container">
+                                <a href="https://ultimaker.com/en/resources"
+                                   class="navigationitem-link ">
+                                    Resources
+                                </a>
+                                <span class="navigationitem-toggle" data-navigationparent-trigger>
+                                    <i class="icon icon-down"></i>
+                                </span>
+                            </div>
+
+                                                            <div class="navigationitem-subs" data-navigationparent-menu>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/resources/manuals">Manuals</a>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/resources/troubleshooting">Troubleshooting</a>
+            <a class="navigationitem-sub"
+           href="https://ultimaker.com/en/resources/tips-tricks">Tips & Tricks</a>
+    </div>                            
+                        </li>
+                                            <li class="navigationitem" data-navigationparent>
+                            <div class="navigationitem-container">
+                                <a href="https://ultimaker.com/en/community/dashboard"
+                                   class="navigationitem-link ">
+                                    Community
+                                </a>
+                                <span class="navigationitem-toggle" data-navigationparent-trigger>
+                                    <i class="icon icon-down"></i>
+                                </span>
+                            </div>
+
+                                                            <div class="navigationitem-subs" data-navigationparent-menu>
+    <a class="navigationitem-sub" href="https://ultimaker.com/en/community/dashboard">Dashboard</a>
+    <a class="navigationitem-sub" href="https://ultimaker.com/en/community">Forum</a>
+    <a class="navigationitem-sub" href="https://ultimaker.com/en/community/prints/">3D Prints</a>
+    <a class="navigationitem-sub" href="https://ultimaker.com/en/community/people">People</a>
+    <a class="navigationitem-sub" href="https://ultimaker.com/en/community/chat">Chat room</a>
+</div>                            
+                        </li>
+                                    </ul>
+            </div>
+            <div class="navigationview-bottom">
+                <ul class="pressnavigation">
+                                            <li>
+                            <a href="https://ultimaker.com/en/blog">Blog</a>
+                        </li>
+                                                                                    <li>
+                                    <a href="https://ultimaker.com/en/resellers">Resellers</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://ultimaker.com/en/events">Events</a>
+                                </li>
+                                                                                                                <li>
+                                    <a href="https://ultimaker.com/en/about">About</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://ultimaker.com/en/jobs">Jobs</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://ultimaker.com/en/contact">Contact</a>
+                                </li>
+                                                                                                                                                                    <li>
+                                    <a href="https://ultimaker.com/en/press-room">Press Room</a>
+                                </li>
+                                                            <li>
+                                    <a href="https://ultimaker.com/en/brand-assets">Brand Assets</a>
+                                </li>
+                                                                                                                                        <li>
+                            <a href="https://ultimaker.com/en/request-support"
+                               data-popup="/en/request-support">Request support</a>
+                        </li>
+                                    </ul>
+                <ul class="socialnavigation">
+                    <li>
+                        <a href="https://www.facebook.com/Ultimaker" target="_blank" data-ga-category="social"
+                           data-ga-action="follow" data-ga-label="facebook"><i class="icon icon-facebook2"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Ultimaker" target="_blank" data-ga-category="social"
+                           data-ga-action="follow" data-ga-label="twitter"><i class="icon icon-twitter2"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com/ultimaker" target="_blank" data-ga-category="social"
+                           data-ga-action="follow" data-ga-label="instagram"><i class="icon icon-instagram2"></i>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/Ultimaker3D" target="_blank" data-ga-category="social"
+                           data-ga-action="follow" data-ga-label="youtube"><i class="icon icon-youtube2"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navigationview-meta clearfix">
+                            <a class="navigationview-metablock account" data-popup="/login"
+                   href="https://ultimaker.com/login">
+						<span class="navigationview-metablockmask">
+							<i class="icon icon-account"></i><span class="navigationview-metablocklabel"
+                                                                   data-hovertext="Login"></span>
+						</span>
+                </a>
+                        <span class="header-metablock country "
+                  data-popout="">
+					<span class="header-metablockmask">
+						<i class="icon icon-country"></i>
+					</span>
+					<div class="popoutmenu popoutmenu--country">
+                        <div class="regionselector">
+                            <form action="https://ultimaker.com/setlocale" method="post">
+                                <div class="regionselector-section l-cell100">
+                                    <label>
+                                        <select name="countrycode">
+                                                                                            <option value="AD"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Andorra
+                                                    - €</option>
+                                                                                            <option value="AR"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Argentina
+                                                    - ARS</option>
+                                                                                            <option value="AUS"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Australia
+                                                    - AUD</option>
+                                                                                            <option value="AT"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Austria
+                                                    - €</option>
+                                                                                            <option value="BH"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Bahrain
+                                                    - BHD</option>
+                                                                                            <option value="BLR"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Belarus
+                                                    - BYR</option>
+                                                                                            <option value="BE"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Belgium
+                                                    - €</option>
+                                                                                            <option value="BGR"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Bulgaria
+                                                    - BGN</option>
+                                                                                            <option value="CA"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Canada
+                                                    - $</option>
+                                                                                            <option value="CZ"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Czech Republic
+                                                    - Kč</option>
+                                                                                            <option value="DK"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Denmark
+                                                    - DKK</option>
+                                                                                            <option value="UAE"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Dubai (UAE)
+                                                    - AED</option>
+                                                                                            <option value="FI"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Finland
+                                                    - €</option>
+                                                                                            <option value="FR"
+                                                        selected="selected"                                                        data-languages='{"region": [{"en":"English"}]}'>France
+                                                    - €</option>
+                                                                                            <option value="DE"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Germany
+                                                    - €</option>
+                                                                                            <option value="GI"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Gibraltar
+                                                    - £</option>
+                                                                                            <option value="HKG"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Hong Kong
+                                                    - HKD</option>
+                                                                                            <option value="HUN"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Hungary
+                                                    - HUF</option>
+                                                                                            <option value="IN"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>India
+                                                    - INR</option>
+                                                                                            <option value="IRL"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Ireland
+                                                    - €</option>
+                                                                                            <option value="IL"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Israel
+                                                    - ILS</option>
+                                                                                            <option value="IT"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Italy
+                                                    - €</option>
+                                                                                            <option value="JP"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Japan
+                                                    - ¥</option>
+                                                                                            <option value="KAZ"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Kazakhstan
+                                                    - KZT</option>
+                                                                                            <option value="LB"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Lebanon
+                                                    - LBP</option>
+                                                                                            <option value="LT"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Lithuania
+                                                    - EUR</option>
+                                                                                            <option value="LUX"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Luxembourg
+                                                    - €</option>
+                                                                                            <option value="MY"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Malaysia
+                                                    - MYR</option>
+                                                                                            <option value="NL"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Netherlands
+                                                    - €</option>
+                                                                                            <option value="NZ"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>New Zealand
+                                                    - NZD</option>
+                                                                                            <option value="NO"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Norway
+                                                    - NOK</option>
+                                                                                            <option value="PH"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Philippines
+                                                    - PHP</option>
+                                                                                            <option value="PL"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Poland
+                                                    - Zł</option>
+                                                                                            <option value="PT"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Portugal
+                                                    - €</option>
+                                                                                            <option value="RU"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Russia
+                                                    - ₽</option>
+                                                                                            <option value="SG"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Singapore
+                                                    - SGD</option>
+                                                                                            <option value="ZA"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>South Africa
+                                                    - ZAR</option>
+                                                                                            <option value="KR"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>South Korea
+                                                    - KRW</option>
+                                                                                            <option value="ES"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Spain
+                                                    - €</option>
+                                                                                            <option value="SE"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Sweden
+                                                    - SEK</option>
+                                                                                            <option value="CH"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Switzerland
+                                                    - €</option>
+                                                                                            <option value="TWN"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Taiwan
+                                                    - TWD</option>
+                                                                                            <option value="THA"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Thailand
+                                                    - THB</option>
+                                                                                            <option value="TUN"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Tunisia
+                                                    - TND</option>
+                                                                                            <option value="TUR"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Turkey
+                                                    - TRY</option>
+                                                                                            <option value="GB"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>United Kingdom
+                                                    - £</option>
+                                                                                            <option value="US"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>United States
+                                                    - $</option>
+                                                                                            <option value="URY"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Uruguay
+                                                    - UYU</option>
+                                                                                            <option value="Global"
+                                                                                                                data-languages='{"region": [{"en":"English"}]}'>Global
+                                                    - €</option>
+                                                                                    </select>
+                                    </label>
+                                </div>
+                                <div class="regionselector-section language">
+                                    <label>
+                                        <select name="language" data-current-lang="en">
+                                            <option value="en">English</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="regionselector-section j-close">
+                                    <a class="buttonround buttonround--darkfill">Go</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+				</span>
+
+            <a class="navigationview-metablock"
+               data-popup="/shop/"
+               href="https://ultimaker.com/shop/">
+					<span class="navigationview-metablockmask">
+						<i class="icon icon-store"></i>
+					</span>
+            </a>
+        </div>
+    </div>
+</div>
+    <div class="m-mainview">
+
+        <header class="m-header">
+            <div class="menutoggle j-navigationtoggle">
+                <div class="menuicon">
+                    <span class="stripe-top"></span>
+                    <span class="stripe-middle"></span>
+                    <span class="stripe-bottom"></span>
+                </div>
+            </div>
+            <a class="header-logo" href="https://ultimaker.com/en"><img
+                        src="http://d2py9w124w2itd.cloudfront.net/img/logo-text.svg" alt="Ultimaker"/></a>
+
+            <div class="menuitems">
+            <div class="menuitem parentmenu parentmenu--hover ">
+            <a href="https://ultimaker.com/en/explore">
+                Explore
+            </a>
+
+                            <div class="menuitem--dropdown">
+    <i class="icon-arrowdown"></i>
+</div>
+<nav class="subnavigation">
+    <div class="parentmenu-child subnav">
+        <a href="https://ultimaker.com/en/explore/what-is-3d-printing" class="parentmenu-column l-cell25 banner-block">
+            <div class="subnav-head">
+                What <em>is 3D printing?</em>
+            </div>
+            <div class="banner">
+                                    <div class="banner-image">
+                        <div class="banner-background"
+                         data-bg-srcset="//d2py9w124w2itd.cloudfront.net/photo/umcategory/646x290/571fb9adafeda.jpg 2x, //d2py9w124w2itd.cloudfront.net/photo/umcategory/323x145/571fb9adafeda.jpg"></div>
+                    </div>
+                            </div>
+            <div class="subnav-footer">
+                <span class="subnav-title">
+                    <i class="icon icon-go"></i> Find out here
+                </span>
+            </div>
+        </a>
+        <div class="parentmenu-column l-cell50">
+            <span class="subnav-head">
+                <a href="https://ultimaker.com/en/explore/where-is-3d-printing-used">Where <em>is 3D printing used?</em></a>
+            </span>
+            <div class="l-cell33">
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/aerospace" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Aerospace
+    </span>
+</a>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/architecture" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Architecture
+    </span>
+</a>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/art" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Art
+    </span>
+</a>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/automotive" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Automotive
+    </span>
+</a>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/engineering" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Engineering
+    </span>
+</a>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/fablabs-and-makerspaces" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Fablabs
+    </span>
+</a>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/fashion" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Fashion
+    </span>
+</a>
+                            </div>
+            <div class="l-cell33">
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/humanitarian-aid" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Humanitarian aid
+    </span>
+</a>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/jewelry" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Jewelry
+    </span>
+</a>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/manufacturing" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Manufacturing
+    </span>
+</a>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/medicine" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Medicine
+    </span>
+</a>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/product-design" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Product design
+    </span>
+</a>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/research" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Research
+    </span>
+</a>
+                            </div>
+            <div class="l-cell33">
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/primary-education" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Primary education
+    </span>
+</a>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/secondary-education" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Secondary education
+    </span>
+</a>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/university" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> University
+    </span>
+</a>
+    <span class="subnav-item">&nbsp;</span>
+                                    
+<a class="subnav-item" href="https://ultimaker.com/en/explore/where-is-3d-printing-used/diy-hobbies-and-home" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> DIY, hobbies and home
+    </span>
+</a>
+                            </div>
+        </div>
+        <div class="parentmenu-column l-cell25">
+            <span class="subnav-head">
+                <a href="https://ultimaker.com/en/explore/how-is-3d-printing-used">How <em>is 3D printing used?</em></a>
+            </span>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/explore/how-is-3d-printing-used/concept-models" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Concept models
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/explore/how-is-3d-printing-used/functional-prototypes" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Functional prototypes
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/explore/how-is-3d-printing-used/end-use-parts" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> End-use parts
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/explore/how-is-3d-printing-used/tools-jigs-fixtures" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Tools, jigs and fixtures
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/explore/how-is-3d-printing-used/molds-casting" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Molds and casting
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/explore/how-is-3d-printing-used/visualization-aids" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Visualization aids
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/explore/how-is-3d-printing-used/lessons" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Lessons
+    </span>
+</a>
+                    </div>
+    </div>
+</nav>            
+        </div>
+            <div class="menuitem parentmenu parentmenu--hover active">
+            <a href="https://ultimaker.com/en/products">
+                Products
+            </a>
+
+                            <div class="menuitem--dropdown">
+    <i class="icon-arrowdown"></i>
+</div>
+
+<nav class="subnavigation">
+    <div class="parentmenu-child subnav">
+        <a href="https://ultimaker.com/en/products/ultimaker-2-plus"
+           class="parentmenu-column l-cell25 banner-block">
+            <div class="subnav-head">
+                <em>Buy now:</em> Ultimaker 2+
+            </div>
+            <div class="banner">
+                <div class="banner-image">
+                    <div class="banner-background"
+                         data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/menu/Ultimaker-2-Plus-3D-Printer@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/menu/Ultimaker-2-Plus-3D-Printer.jpg"></div>
+                </div>
+            </div>
+            <div class="subnav-footer">
+                <span class="subnav-title">
+                    <i class="icon icon-go"></i> Explore our best 3D printer yet
+                </span>
+            </div>
+        </a>
+        <div class="parentmenu-column l-cell25">
+            <span class="subnav-head">
+                3D printers
+            </span>
+                            <a class="subnav-item" href="https://ultimaker.com/en/products/ultimaker-2-plus">
+                                            <img class="subnav-thumb subnav-thumb--printers"
+                             data-srcset="//d2py9w124w2itd.cloudfront.net/photo/umcategory/50x80/571fc47bc1544.png 2x, //d2py9w124w2itd.cloudfront.net/photo/umcategory/25x40/571fc47bc1544.png"
+                             alt=""/>
+                                        <span class="subnav-title">Ultimaker <em>2+</em></span>
+                </a>
+                            <a class="subnav-item" href="https://ultimaker.com/en/products/ultimaker-2-go">
+                                            <img class="subnav-thumb subnav-thumb--printers"
+                             data-srcset="//d2py9w124w2itd.cloudfront.net/photo/umcategory/50x80/56165b054fabc.png 2x, //d2py9w124w2itd.cloudfront.net/photo/umcategory/25x40/56165b054fabc.png"
+                             alt=""/>
+                                        <span class="subnav-title">Ultimaker <em>2 Go</em></span>
+                </a>
+                            <a class="subnav-item" href="https://ultimaker.com/en/products/ultimaker-original">
+                                            <img class="subnav-thumb subnav-thumb--printers"
+                             data-srcset="//d2py9w124w2itd.cloudfront.net/photo/umcategory/50x80/5616591a1dd83.png 2x, //d2py9w124w2itd.cloudfront.net/photo/umcategory/25x40/5616591a1dd83.png"
+                             alt=""/>
+                                        <span class="subnav-title">Ultimaker Original+</span>
+                </a>
+                                    <span class="subnav-footer">
+                <a class="subnav-title" href="https://ultimaker.com/en/products/3d-printer-comparison">
+                    <i class="icon icon-go"></i> Compare our 3D printers
+                </a>
+            </span>
+        </div>
+        <div class="parentmenu-column l-cell25">
+            <span class="subnav-head">
+                Materials
+            </span>
+            <div class="l-cell50">
+                                                                                                                                                                        <a class="subnav-item" href="https://ultimaker.com/en/products/materials">
+                                                            <img class="subnav-thumb"
+                                     data-srcset="//d2py9w124w2itd.cloudfront.net/photo/umcategory/80x80/56165b99a0248.png 2x, //d2py9w124w2itd.cloudfront.net/photo/umcategory/40x40/56165b99a0248.png"
+                                     alt=""/>
+                                                        <span class="subnav-title">Learn about materials</span>
+                        </a>
+                                                                                                                                                                                                                                    </div>
+        </div>
+        <div class="parentmenu-column l-cell25">
+            <span class="subnav-head">
+                Software
+            </span>
+                                                                                                                                                                <a class="subnav-item" href="https://ultimaker.com/en/products/cura-software">
+                                                    <img class="subnav-thumb"
+                                 data-srcset="//d2py9w124w2itd.cloudfront.net/photo/umcategory/80x80/56165b4b5fa75.png 2x, //d2py9w124w2itd.cloudfront.net/photo/umcategory/40x40/56165b4b5fa75.png"
+                                 alt=""/>
+                                                <span class="subnav-title">Cura Software</span>
+                    </a>
+                                                                <a class="subnav-item" href="https://ultimaker.com/en/products/ultimaker-app">
+                                                    <img class="subnav-thumb"
+                                 data-srcset="//d2py9w124w2itd.cloudfront.net/photo/umcategory/80x80/5616595e99c25.png 2x, //d2py9w124w2itd.cloudfront.net/photo/umcategory/40x40/5616595e99c25.png"
+                                 alt=""/>
+                                                <span class="subnav-title">Ultimaker <em>app</em></span>
+                    </a>
+                                                                                                                            <span class="subnav-head subnav-head--bottom">
+                Extras
+            </span>
+                                                                                                                                                                                                                        <a class="subnav-item" href="https://ultimaker.com/en/products/add-ons">
+                                                    <img class="subnav-thumb"
+                                 data-srcset="//d2py9w124w2itd.cloudfront.net/photo/umcategory/120x120/56dfe8cca767e.png 2x, //d2py9w124w2itd.cloudfront.net/photo/umcategory/60x60/56dfe8cca767e.png"
+                                 alt=""/>
+                                                <span class="subnav-title">Add-ons</span>
+                    </a>
+                                                                <a class="subnav-item" href="https://ultimaker.com/en/products/spare-parts">
+                                                    <img class="subnav-thumb"
+                                 data-srcset="//d2py9w124w2itd.cloudfront.net/photo/umcategory/120x120/56165b7879d52.png 2x, //d2py9w124w2itd.cloudfront.net/photo/umcategory/60x60/56165b7879d52.png"
+                                 alt=""/>
+                                                <span class="subnav-title">Spare parts</span>
+                    </a>
+                                                                </div>
+    </div>
+</nav>            
+        </div>
+            <div class="menuitem parentmenu parentmenu--hover ">
+            <a href="https://ultimaker.com/en/stories">
+                Stories
+            </a>
+
+                            
+<div class="menuitem--dropdown">
+    <i class="icon-arrowdown"></i>
+</div>
+<nav class="subnavigation">
+    <div class="parentmenu-child subnav">
+        <div class="parentmenu-column l-cell25">
+            <span class="subnav-head">
+                Popular pages
+            </span>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/stories?filter[category]=309" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Engineering
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/stories?filter[category]=311" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Humanitarian aid
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/stories?filter[category]=314" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Medicine
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/stories?filter[category]=315" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Product design
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/stories?filter[category]=326" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> University
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/stories?filter[category]=327" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> DIY, hobbies and home
+    </span>
+</a>
+                        <span class="subnav-footer">
+                <a class="subnav-title" href="https://ultimaker.com/en/stories">
+                    <i class="icon icon-go"></i> View all stories
+                </a>
+            </span>
+        </div>
+        <div class="parentmenu-column l-cell75">
+            <span class="subnav-head">
+                Featured stories
+            </span>
+                            <a class="banner l-cell33" href="https://ultimaker.com/en/stories/20758-surgical-planning-using-3d-printed-bone-models">
+                    <div class="banner-image">
+                        <div class="banner-background"
+                             data-bg-srcset="//d2py9w124w2itd.cloudfront.net/photo/umtopic/646x290/571f70d6314be.jpg 2x, //d2py9w124w2itd.cloudfront.net/photo/umtopic/323x145/571f70d6314be.jpg"></div>
+                    </div>
+                    <div class="banner-copy">
+                        <p class="banner-description">Surgical planning using 3D printed bone models</p>
+                    </div>
+                </a>
+                            <a class="banner l-cell33" href="https://ultimaker.com/en/stories/20312-3d-printing-a-tyrannosaurus-rex-skeleton">
+                    <div class="banner-image">
+                        <div class="banner-background"
+                             data-bg-srcset="//d2py9w124w2itd.cloudfront.net/photo/umtopic/646x290/56fcf4034461f.jpg 2x, //d2py9w124w2itd.cloudfront.net/photo/umtopic/323x145/56fcf4034461f.jpg"></div>
+                    </div>
+                    <div class="banner-copy">
+                        <p class="banner-description">3D printing a Tyrannosaurus rex skeleton</p>
+                    </div>
+                </a>
+                            <a class="banner l-cell33" href="https://ultimaker.com/en/stories/19738-developing-sustainable-fuel-with-team-fast">
+                    <div class="banner-image">
+                        <div class="banner-background"
+                             data-bg-srcset="//d2py9w124w2itd.cloudfront.net/photo/umtopic/646x290/571fc9b5959a4.jpg 2x, //d2py9w124w2itd.cloudfront.net/photo/umtopic/323x145/571fc9b5959a4.jpg"></div>
+                    </div>
+                    <div class="banner-copy">
+                        <p class="banner-description">Developing sustainable fuel with Team FAST</p>
+                    </div>
+                </a>
+                    </div>
+    </div>
+</nav>            
+        </div>
+            <div class="menuitem parentmenu parentmenu--hover ">
+            <a href="https://ultimaker.com/en/resources">
+                Resources
+            </a>
+
+                            <div class="menuitem--dropdown">
+    <i class="icon-arrowdown"></i>
+</div>
+<nav class="subnavigation">
+    <div class="parentmenu-child subnav">
+        <div class="parentmenu-column l-cell25">
+                                                <span class="subnav-head">
+                        <a href="https://ultimaker.com/en/resources/manuals">Manuals</a>
+                    </span>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/manuals/ultimaker-3d-printers">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                3D printers
+                            </span>
+                        </a>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/manuals/materials">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                <em>Materials</em>
+                            </span>
+                        </a>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/manuals/software">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                <em>Software</em>
+                            </span>
+                        </a>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/manuals/add-ons">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                <em>Add-ons</em>
+                            </span>
+                        </a>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/manuals/spare-parts">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                Spare <em>parts</em>
+                            </span>
+                        </a>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/manuals/community">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                <em>Community</em>
+                            </span>
+                        </a>
+                                                                                                                                                                </div>
+        <div class="parentmenu-column l-cell25">
+                                                                                                        <span class="subnav-head">
+                        <a href="https://ultimaker.com/en/resources/tips-tricks">Tips & Tricks</a>
+                    </span>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/tips-tricks/software">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                Software
+                            </span>
+                        </a>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/tips-tricks/materials">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                Materials
+                            </span>
+                        </a>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/tips-tricks/improving-print-quality">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                Improving print quality
+                            </span>
+                        </a>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/tips-tricks/post-processing">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                Post-processing
+                            </span>
+                        </a>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/tips-tricks/maintenance">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                Maintenance
+                            </span>
+                        </a>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/tips-tricks/print-tutorials">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                Print tutorials
+                            </span>
+                        </a>
+                                                                <span class="subnav-footer">
+                            <a class="subnav-title" href="https://ultimaker.com/en/resources/tips-tricks">
+                                <i class="icon icon-go"></i> View all tips and tricks
+                            </a>
+                        </span>
+                                                                                    </div>
+        <div class="parentmenu-column l-cell25">
+                                                                            <span class="subnav-head">
+                        <a href="https://ultimaker.com/en/resources/troubleshooting">Troubleshooting</a>
+                    </span>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/troubleshooting/3d-prints">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                3D Prints
+                            </span>
+                        </a>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/troubleshooting/3d-printers">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                3D Printers
+                            </span>
+                        </a>
+                                            <a class="subnav-item" href="https://ultimaker.com/en/resources/troubleshooting/software">
+                            <span class="subnav-title">
+                                <i class="icon icon-right"></i>
+                                Software
+                            </span>
+                        </a>
+                                                                                                                                    </div>
+        <div class="l-cell25">&nbsp;</div>
+    </div>
+</nav>            
+        </div>
+            <div class="menuitem parentmenu parentmenu--hover ">
+            <a href="https://ultimaker.com/en/community/dashboard">
+                Community
+            </a>
+
+                            
+
+<div class="menuitem--dropdown">
+    <i class="icon-arrowdown"></i>
+</div>
+<nav class="subnavigation">
+    <div class="parentmenu-child subnav">
+        <div class="parentmenu-column l-cell25">
+            <span class="subnav-head">
+                Community areas
+            </span>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/dashboard" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Dashboard
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Forum
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/prints/" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> 3D Prints
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/people" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> People
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://youmagine.com/" data-popup="/app_dev.php/en/community/youmagine" data-cookiemodule="youmagine" target="_blank" data-cookiemodule-applied="true">
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> YouMagine
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/chat" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Chat room
+    </span>
+</a>
+                    </div>
+        <div class="parentmenu-column l-cell25">
+            <span class="subnav-head">
+                Forum categories
+            </span>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/general" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> General
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/the-art-of-printing" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> The Art of Printing
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/community" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Community
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/hardware" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Hardware
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/software-and-firmware" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Software and Firmware
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/materials" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Materials
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/education" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Education
+    </span>
+</a>
+                    </div>
+        <div class="parentmenu-column l-cell25">
+            <span class="subnav-head">
+                Popular print categories
+            </span>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/prints/?filter[whereCategoryId]=327" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> DIY, hobbies and home
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/prints/?filter[whereCategoryId]=324" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Primary education
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/prints/?filter[whereCategoryId]=315" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Product design
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/prints/?filter[whereCategoryId]=309" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Engineering
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/prints/?filter[whereCategoryId]=328" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Fashion
+    </span>
+</a>
+                            
+<a class="subnav-item" href="https://ultimaker.com/en/community/prints/?filter[whereCategoryId]=314" >
+    <span class="subnav-title">
+        <i class="icon icon-right"></i> Medicine
+    </span>
+</a>
+                        <span class="subnav-footer">
+                <a class="subnav-title" href="https://ultimaker.com/en/community/prints/">
+                    <i class="icon icon-go"></i> View all 3D prints
+                </a>
+            </span>
+        </div>
+
+                    <a data-popup="https://ultimaker.com/register" href="https://ultimaker.com/register" class="parentmenu-column l-cell25 banner-block">
+                <div class="subnav-head">
+                    Join our global community
+                </div>
+                <div class="banner">
+                    <div class="banner-image">
+                        <div class="banner-background"
+                             data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/menu/Ultimaker-Community@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/menu/Ultimaker-Community.jpg"></div>
+                    </div>
+                </div>
+                <div class="subnav-footer">
+                    <span class="subnav-title">
+                        <i class="icon icon-go"></i> Sign up here
+                    </span>
+                </div>
+            </a>
+            </div>
+</nav>            
+        </div>
+    </div>
+            <a class="header-search parentmenu" data-headerbar="header-search">
+                <span class="header-searchtoggle" data-headerbar-toggle="header-search"><i class="icon icon-search"></i></span>
+
+                <div class="header-searchbar parentmenu-child">
+                    <input class="j-search nouniform" name="search"
+                           placeholder="How can we help you?" type="text" data-search-category="0"
+                           data-search-type="0" data-search-path="/search"/>
+                    <input class="is-hide nouniform" type="submit" value="search"/>
+                </div>
+            </a>
+
+            <div class="header-meta">
+                <a class="header-metablock header-metablock--store"
+                   data-popup="/shop/"
+                   href="https://ultimaker.com/shop/">
+					<span class="header-metablockmask">
+						<i class="icon icon-store"></i><span class="header-metablocklabel"
+                                                             data-hovertext="Shop">Buy now</span>
+					</span>
+                </a>
+
+                                                            <a class="header-metablock account" data-popup="/register"
+                           href="https://ultimaker.com/register">
+							<span class="buttonround">
+								Sign up
+							</span>
+                        </a>
+                                    
+            </div>
+        </header>
+
+        
+																											
+	
+		
+	<section class="pagesection">
+		<div class="heroblock heroblock--big heroblock--software l-cell100">
+			<div class="heroblock-content">
+				<div data-load="0" data-load-effect="fadein">
+					<div class="heroblock-background"
+						 data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/software/Ultimaker-Cura@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/software/Ultimaker-Cura.jpg"></div>
+						 <noscript><img title="Cura slicing software" alt="3D printing slicing software" src="http://d2py9w124w2itd.cloudfront.net/img/software/Ultimaker-Cura.jpg"></noscript>
+					<div class="heroblock-backgroundsmall"
+						 data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/software/Ultimaker-Cura-Software@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/software/Ultimaker-Cura-Software.jpg"></div>
+						 <noscript><img title="Cura slicing software" alt="3D printing slicing software" src="http://d2py9w124w2itd.cloudfront.net/img/software/Ultimaker-Cura-Software.jpg"></noscript>
+				</div>
+				<div class="heroblock-copycontainer" data-load="0" data-load-effect="frombottom">
+					<div class="l-wrapper l-pad">
+						<div class="heroblock-copy" data-parallax="0.1">
+							<h1 class="heroblock-title title title--xxl">CURA AND<br>3D PRINTING<br><em>MADE FOR<br>EACH OTHER</em></h1>
+
+							<p>Our free software prepares your model for 3D printing. For novices it’ll do everything for you, and for experts there are many advanced settings. As it’s open source, we work with our community to enrich it even more.</p>
+
+															<a class="buttonround buttonround--fill r-mobile-hidden"
+																	   data-popup="/en/products/cura-software/download-request/85">Download Cura-15.04.5 </a>
+							
+							<span class="heroblock-price r-mobile-hidden">
+								<span class="heroblock-pricenumber">
+									<i class="icon icon-windows"></i>
+									<select class="selector--platform">
+																					<option
+												selected>Windows</option>
+																					<option
+												data-href="/en/products/cura-software/platform/2">MacOS X</option>
+																					<option
+												data-href="/en/products/cura-software/platform/3">Linux</option>
+																			</select>
+								</span>
+							</span>
+
+							<p class="r-mobile-hidden" style="margin-top: 15px;">
+																										<a class="minigo" data-popup="/en/products/cura-software/download-request/90"><i class="icon icon-download"></i> Download Cura 2.1.0 (beta)</a><br />
+																<a class="minigo" href="https://ultimaker.com/en/products/cura-software/list"><i class="icon icon-go"></i>&nbsp;See all versions</a><br />
+								<a class="minigo" data-popup="/en/products/cura-software/release-notes" href="https://ultimaker.com/en/products/cura-software/release-notes"><i class="icon icon-go"></i>&nbsp;Release notes</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+<section class="pagesection" data-load="1000" data-load-effect="frombottom">
+	<div class="calloutsection calloutsection--photo">
+		<div class="calloutsection-background" data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/software/Airplane-Wing-3D-Model@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/software/Airplane-Wing-3D-Model.jpg" data-parallax="-100" data-parallax-effect="translateY"></div>
+		<noscript><img title="Cura prepares a 3D model model of an airplane wing for 3D printing" alt="3D model of airplane wing sliced in Cura software" src="http://d2py9w124w2itd.cloudfront.net/img/software/Airplane-Wing-3D-Model.jpg"></noscript>
+		<div class="calloutsection-content">
+			<h3 class="calloutsection-title title title--xl">Cura, the world’s<br><em>most advanced</em><br> 3D printer software</h3>
+			<p class="r-mobile-hidden">
+				Intuitive, intelligent and engineered to either hold your hand or give you complete freedom.
+			</p>
+			
+		</div>
+				<div class="calloutsection-steps l-pad">
+			<div class="l-wrapper">
+								<div class="l-cell33 r-tablet-100 l-pad">
+					<div class="calloutsection-step">
+						<span class="calloutsection-steptitle">World-class<br>software for free</span>
+						<p class="calloutsection-stepdescription">Developed through open source collaboration, Cura is not only the most advanced 3D software around – it’s free too.</p>
+					</div>
+				</div>
+								<div class="l-cell33 r-tablet-100 l-pad">
+					<div class="calloutsection-step">
+						<span class="calloutsection-steptitle">Making the best<br>even better</span>
+						<p class="calloutsection-stepdescription">Our dedicated software team is constantly refining Cura adding new features for the enjoyment of all users.</p>
+					</div>
+				</div>
+								<div class="l-cell33 r-tablet-100 l-pad">
+					<div class="calloutsection-step">
+						<span class="calloutsection-steptitle">Fast draft or <br>high-res mode</span>
+						<p class="calloutsection-stepdescription">There are times you want perfection, other times you just need a quick preview. Cura puts you in the driving seat.</p>
+					</div>
+				</div>
+							</div>
+		</div>
+					</div>
+</section>
+	<section class="pagesection">
+		<div class="l-wrapper l-pad">
+			<div class="pagesection-header l-pad">
+				<h2 class="title title--xl r-tablet-title-l r-mobile-title"><em>Reliable</em> and open source</h2>
+
+				<p>Built on the robust Uranium framework, Cura’s incredibly reliable and flexible, allowing our dedicated software team to easily add new features. There’s even a certified global
+					support team on hand to answer all your questions.</p>
+			</div>
+
+			<div class="stories clearfix">
+				<div class="stories-small l-cell100">
+
+					<a href="https://ultimaker.com/en/blog/16492-cura-3d-printing-software-open-sourced-open-minded">
+						<div class="l-cell50 r-tablet-100 l-pad">
+							<div class="story is-loading">
+								<div class="story-image"
+									 data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/software/Open-Source-3D-Printing-Software@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/software/Open-Source-3D-Printing-Software.jpg">
+									<img data-srcset="//d2py9w124w2itd.cloudfront.net/img/software/Open-Source-3D-Printing-Software@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/software/Open-Source-3D-Printing-Software.jpg" alt="3D printing slicing software" title="Cura slicing software" src="http://d2py9w124w2itd.cloudfront.net/img/software/Open-Source-3D-Printing-Software.jpg"/>
+								</div>
+								<div class="story-copy">
+									<h4 class="story-title">Sharing Cura with the industry</h4>
+
+									<p class="story-descriptions">
+										Because Cura is open source, everyone gets to enjoy it. In fact, thanks to its robust reliability, several ten thousands of 3D printers use Cura – helping the
+										3D world to grow. See, sharing is good.
+									</p>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="https://ultimaker.com/en/resources/16589-plugins">
+						<div class="l-cell50 r-tablet-100 l-pad">
+							<div class="story is-loading">
+								<div class="story-image" data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/software/Cura-Software@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/software/Cura-Software.jpg">
+									<img data-srcset="//d2py9w124w2itd.cloudfront.net/img/software/Cura-Software@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/software/Cura-Software.jpg" alt="iPad speaker sliced in Cura and 3D printed on Ultimaker 2" title="3D model sliced in Cura and 3D printed with red PLA" src="http://d2py9w124w2itd.cloudfront.net/img/software/Cura-Software.jpg"/>
+								</div>
+								<div class="story-copy">
+									<h4 class="story-title">A global R&D team</h4>
+
+									<p class="story-descriptions">
+										As Cura’s open source, our community of global experts are able to create their own enhancements. These plugins are then free for everyone else to enjoy.
+										Together we’re stronger.
+										<br>
+									</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pagesection">
+		<div class="l-wrapper l-pad">
+															<div class="pagesection-downloads downloads l-pad">
+
+
+																																								
+				<div class="downloads-download">
+					<div class="downloads-name">
+						<span class="downloads-title">GitHub</span>
+						<span class="downloads-details">Developer page with source files</span>
+					</div>
+					<div class="downloads-buttons">
+						<a href="https://github.com/ultimaker" class="buttonround buttonround--fill">Github</a>
+					</div>
+				</div>
+
+													<div class="downloads-download">
+						<div class="downloads-name">
+							<span class="downloads-title">Support pages</span>
+							<span class="downloads-details">Whatever the difficulty of the question, chances are you’ll find the answer here</span>
+						</div>
+						<div class="downloads-buttons">
+							<a href="https://ultimaker.com/en/resources/manuals/software" class="buttonround buttonround--fill">Learn more</a>
+						</div>
+					</div>
+				
+				<div class="downloads-download">
+					<div class="downloads-name">
+						<span class="downloads-title">Release notes</span>
+						<span class="downloads-details">Cura software</span>
+					</div>
+					<div class="downloads-buttons">
+													<a data-popup="/en/products/cura-software/release-notes" href="https://ultimaker.com/en/products/cura-software/release-notes" class="buttonround buttonround--fill">View</a>
+											</div>
+				</div>
+
+															<div class="downloads-download r-mobile-hidden">
+							<div class="downloads-name">
+								<span class="downloads-title">Cura software</span>
+								<span class="downloads-details">Version 15.04.5 </span>
+								<a href="https://ultimaker.com/en/products/cura-software/list" class="downloads-minigo r-tablet-hidden">See all versions</a>
+							</div>
+							<div class="downloads-buttons">
+									<a class="communityfollow" data-title="Login or register first" data-popup="/login" href="https://ultimaker.com/login"><i class="icon icon-add"></i>&nbsp;Get notified</a>
+								<a class="buttonround buttonround--fill"
+																	   data-popup="/en/products/cura-software/download-request/85">Download</a>
+							</div>
+						</div>
+												</div>
+		</div>
+	</section>
+
+	<section class="pagesection">
+	<div class="calloutsection calloutsection--photo calloutsection--community">
+		<div class="calloutsection-background" data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/homepage/Ultimaker-Original-Feeder@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/homepage/Ultimaker-Original-Feeder.jpg" data-parallax="-100" data-parallax-effect="translateY"></div>
+		<noscript><img title="Kid inserts filament in the Ultimaker Original feeder" alt="Inserting filament in the Ultimaker Original" src="http://d2py9w124w2itd.cloudfront.net/img/homepage/Ultimaker-Original-Feeder.jpg"></noscript>
+		<div class="calloutsection-content">
+			<h3 class="calloutsection-title title title--xl">
+				THE ULTIMAKER COMMUNITY<br /><em>OF 3D PRINTING EXPERTS</em>
+			</h3>
+
+			<p class="r-mobile-hidden">
+				Useful tips &amp; tricks, inspiring 3D prints, immediate help and new connections are just around the corner.
+			</p>
+
+			<div class="calloutsection-actions">
+				<a href="https://ultimaker.com/en/community" class="buttonround">Start exploring</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="pagesection">
+		<div class="heroblock heroblock--big heroblock--um2fam l-cell100">
+			<div class="heroblock-content">
+				<div data-load="0" data-load-effect="fadein">
+					<div class="heroblock-background" data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/products/Ultimaker-Products@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/products/Ultimaker-Products.jpg"></div>
+					<noscript><img title="Ultimaker combines 3D printers materials and software for the best 3D printing experience" alt="Ultimaker 3D printers work best with their materials and software" src="http://d2py9w124w2itd.cloudfront.net/img/products/Ultimaker-Products.jpg"></noscript>
+					<div class="heroblock-backgroundsmall" data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/products/Ultimaker-Products-mobile@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/products/Ultimaker-Products-mobile.jpg"></div>
+					<noscript><img title="Ultimaker 3D printers work best with their materials and software" alt="Ultimaker combines 3D printers materials and software for the best 3D printing experience" src="http://d2py9w124w2itd.cloudfront.net/img/products/img/products/Ultimaker-Products-mobile.jpg"></noscript>
+				</div>
+				<div class="heroblock-copycontainer" data-load="0" data-load-effect="fromsmallbottom">
+					<div class="l-wrapper l-pad">
+						<div class="l-pad">
+							<div class="heroblock-copy">
+								<h2 class="heroblock-title title title--xl r-tablet-title-l r-mobile-title">
+									<em>CURA AND ULTIMAKER</em><br>
+									BRING OUT THE BEST <br class="r-mobile-shown">IN EACH OTHER
+								</h2>
+
+								<p>Cura has been engineered to make the very most of the Ultimaker family. And vice versa. Born from open source collaboration, together they create a stable, reliable
+									and seamless 3D printing experience.</p>
+								<a class="buttonround buttonround--fill" href="https://ultimaker.com/en/products">MEET OUR PRODUCTS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+				
+	<div class="productbannerssection">
+			<div class="pagesection">
+			<div class="calloutsection calloutsection--service calloutsection--light">
+				<div class="calloutsection-content">
+					<a name="products"></a>
+					<h3 class="calloutsection-title title title--xl">
+						THE ULTIMAKER<br><em>3D PRINTING FAMILY</em>
+					</h3>
+					<p class="r-mobile-hidden">
+						The world of Ultimaker just keeps on growing. Discover more about our premium 3D printing products and so much more below.
+					</p>
+				</div>
+			</div>
+		</div>
+	
+	
+	<div class="pagesection">
+		<div class="l-wrapper l-pad">
+			<div class="l-pad l-pad--side l-cell100">
+				<div class="productbanners">
+
+										
+																								
+
+    <div class="productbanner">
+        <div class="productbanner-listitem">
+            <i class="icon icon-go productbanner-icon"></i><span class="productbanner-title">Ultimaker 2+</span>
+        </div>
+        <div class="productbanner-content">
+                                                
+                    <div class="productbanner-panel productbanner-panel--twin">
+                        <div class="productbanner-panelcontent">
+                            <div class="productbanner-panelproductimage">
+                                <img data-srcset="//d2py9w124w2itd.cloudfront.net/photo/umproduct/560x560/568bc39548163.png 2x, //d2py9w124w2itd.cloudfront.net/photo/umproduct/280x280/568bc39548163.png" alt=""/>
+                            </div>
+                            <div class="productbanner-panelproducttitle">Ultimaker <em>2+</em></div>
+                        </div>
+                        <footer class="productbanner-panelfooter">
+                            <span class="productbanner-price">
+                                <span class="productbanner-from">From</span>
+                                <span class="productbanner-pricenumber">€ 1.895,00</span>
+                                <span class="productbanner-priceside">excl. VAT</span>
+                            </span>
+                                                            <a class="buttonround buttonround--fill" href="https://ultimaker.com/en/products/ultimaker-2-plus">Learn more</a>
+                                                    </footer>
+                    </div>
+                                    
+                    <div class="productbanner-panel productbanner-panel--twin">
+                        <div class="productbanner-panelcontent">
+                            <div class="productbanner-panelproductimage">
+                                <img data-srcset="//d2py9w124w2itd.cloudfront.net/photo/umproduct/560x560/568bc39f971c5.png 2x, //d2py9w124w2itd.cloudfront.net/photo/umproduct/280x280/568bc39f971c5.png" alt=""/>
+                            </div>
+                            <div class="productbanner-panelproducttitle">Ultimaker <em>2 Extended+</em></div>
+                        </div>
+                        <footer class="productbanner-panelfooter">
+                            <span class="productbanner-price">
+                                <span class="productbanner-from">From</span>
+                                <span class="productbanner-pricenumber">€ 2.495,00</span>
+                                <span class="productbanner-priceside">excl. VAT</span>
+                            </span>
+                                                            <a class="buttonround buttonround--fill" href="https://ultimaker.com/en/products/ultimaker-2-plus">Learn more</a>
+                                                    </footer>
+                    </div>
+                                                    </div>
+    </div>
+
+
+																														
+
+    <div class="productbanner">
+        <div class="productbanner-listitem">
+            <i class="icon icon-go productbanner-icon"></i><span class="productbanner-title">Ultimaker 2 Go</span>
+        </div>
+        <div class="productbanner-content">
+                                                
+                    <div class="productbanner-panel ">
+                        <div class="productbanner-panelcontent">
+                            <div class="productbanner-panelproductimage">
+                                <img data-srcset="//d2py9w124w2itd.cloudfront.net/photo/umproduct/560x560/5616508e14e01.png 2x, //d2py9w124w2itd.cloudfront.net/photo/umproduct/280x280/5616508e14e01.png" alt=""/>
+                            </div>
+                            <div class="productbanner-panelproducttitle">Ultimaker <em>2 Go</em></div>
+                        </div>
+                        <footer class="productbanner-panelfooter">
+                            <span class="productbanner-price">
+                                <span class="productbanner-from">From</span>
+                                <span class="productbanner-pricenumber">€ 1.195,00</span>
+                                <span class="productbanner-priceside">excl. VAT</span>
+                            </span>
+                                                            <a class="buttonround buttonround--fill" href="https://ultimaker.com/en/products/ultimaker-2-go">Learn more</a>
+                                                    </footer>
+                    </div>
+                                                    <div class="productbanner-panel productbanner-panel--background">
+                        <div class="productbanner-panelbackground">
+                            <div data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-2-Go@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-2-Go.jpg"></div>
+                            <noscript><img alt="Ultimaker 2 Go used by 14 year old kids" title="Ultimaker 2 Go used by kids" src="http://d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-2-Go@2x.jpg"></noscript>
+                        </div>
+                    </div>
+                                    </div>
+    </div>
+
+
+																														
+
+    <div class="productbanner">
+        <div class="productbanner-listitem">
+            <i class="icon icon-go productbanner-icon"></i><span class="productbanner-title">Ultimaker Original</span>
+        </div>
+        <div class="productbanner-content">
+                                                
+                    <div class="productbanner-panel productbanner-panel--twin">
+                        <div class="productbanner-panelcontent">
+                            <div class="productbanner-panelproductimage">
+                                <img data-srcset="//d2py9w124w2itd.cloudfront.net/photo/umproduct/560x560/561650d226f0e.png 2x, //d2py9w124w2itd.cloudfront.net/photo/umproduct/280x280/561650d226f0e.png" alt=""/>
+                            </div>
+                            <div class="productbanner-panelproducttitle">Ultimaker <em>Original+</em></div>
+                        </div>
+                        <footer class="productbanner-panelfooter">
+                            <span class="productbanner-price">
+                                <span class="productbanner-from">From</span>
+                                <span class="productbanner-pricenumber">€ 1.195,00</span>
+                                <span class="productbanner-priceside">excl. VAT</span>
+                            </span>
+                                                            <a class="buttonround buttonround--fill" href="https://ultimaker.com/en/products/ultimaker-original">Learn more</a>
+                                                    </footer>
+                    </div>
+                                    
+                    <div class="productbanner-panel productbanner-panel--twin">
+                        <div class="productbanner-panelcontent">
+                            <div class="productbanner-panelproductimage">
+                                <img data-srcset="//d2py9w124w2itd.cloudfront.net/photo/umproduct/560x560/561650e3c134c.png 2x, //d2py9w124w2itd.cloudfront.net/photo/umproduct/280x280/561650e3c134c.png" alt=""/>
+                            </div>
+                            <div class="productbanner-panelproducttitle">Ultimaker <em>Original</em></div>
+                        </div>
+                        <footer class="productbanner-panelfooter">
+                            <span class="productbanner-price">
+                                <span class="productbanner-from">From</span>
+                                <span class="productbanner-pricenumber">€ 995,00</span>
+                                <span class="productbanner-priceside">excl. VAT</span>
+                            </span>
+                                                            <a class="buttonround buttonround--fill" href="https://ultimaker.com/en/products/ultimaker-original">Learn more</a>
+                                                    </footer>
+                    </div>
+                                                    </div>
+    </div>
+
+
+											
+																																														
+
+    
+            
+                                                
+    <div class="productbanner is-selected productbanner--product-software">
+        <div class="productbanner-listitem">
+            <i class="icon icon-go productbanner-icon"></i><span class="productbanner-title">Cura Software</span>
+        </div>
+        <div class="productbanner-content">
+            <div class="productbanner-panel">
+                <div class="productbanner-panelcontent">
+                    <div class="productbanner-panelproductimage">
+                        <img data-srcset="//d2py9w124w2itd.cloudfront.net/img/products/thumbs/Cura-Software@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/products/thumbs/Cura-Software.jpg" alt=""/>
+                    </div>
+                    <div class="productbanner-panelproducttitle">Cura Software</div>
+                </div>
+                <footer class="productbanner-panelfooter">
+                                            <span class="productbanner-price">
+                                                        <span class="productbanner-pricenumber"></span>
+                            <span class="productbanner-priceside">Free on MacOS X,<br class="r-mobile-hidden">Windows and Linux</span>
+                        </span>
+                                                                                        <a
+                            class="buttonround buttonround--fill"
+                                                            href="https://ultimaker.com/en/products/cura-software/download-request/85"
+                                data-popup="/en/products/cura-software/download-request/85"
+                            >Download</a>
+                                                            </footer>
+            </div>
+            <div class="productbanner-panel productbanner-panel--background">
+                <div class="productbanner-panelbackground">
+                    <div data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/productbanners/Cura-Software@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/productbanners/Cura-Software.jpg"></div>
+                    <noscript><img title="3D printing slicing software" alt="Cura slicing software used by designer" width="458" height="400" src="http://d2py9w124w2itd.cloudfront.net/img/productbanners/Cura-Software.jpg"/></noscript>
+                </div>
+            </div>
+        </div>
+    </div>
+																																					
+
+    
+            
+                                                                
+    <div class="productbanner ">
+        <div class="productbanner-listitem">
+            <i class="icon icon-go productbanner-icon"></i><span class="productbanner-title">Ultimaker app</span>
+        </div>
+        <div class="productbanner-content">
+            <div class="productbanner-panel">
+                <div class="productbanner-panelcontent">
+                    <div class="productbanner-panelproductimage">
+                        <img data-srcset="//d2py9w124w2itd.cloudfront.net/img/products/thumbs/Ultimaker-App-Icon@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/products/thumbs/Ultimaker-App-Icon.jpg" alt=""/>
+                    </div>
+                    <div class="productbanner-panelproducttitle">Ultimaker <em>app</em></div>
+                </div>
+                <footer class="productbanner-panelfooter">
+                                            <span class="productbanner-price">
+                                                        <span class="productbanner-pricenumber"></span>
+                            <span class="productbanner-priceside">Free on iOS and Android</span>
+                        </span>
+                                                                <a class="buttonround buttonround--fill" href="https://ultimaker.com/en/products/ultimaker-app">Learn more</a>
+                                    </footer>
+            </div>
+            <div class="productbanner-panel productbanner-panel--background">
+                <div class="productbanner-panelbackground">
+                    <div data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-App@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-App.jpg"></div>
+                    <noscript><img title="iPhone with the Ultimaker app" alt="Ultimaker app on iPhone" width="458" height="400" src="http://d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-App.jpg"/></noscript>
+                </div>
+            </div>
+        </div>
+    </div>
+																																					
+
+    
+            
+                                                
+    <div class="productbanner ">
+        <div class="productbanner-listitem">
+            <i class="icon icon-go productbanner-icon"></i><span class="productbanner-title">Materials</span>
+        </div>
+        <div class="productbanner-content">
+            <div class="productbanner-panel">
+                <div class="productbanner-panelcontent">
+                    <div class="productbanner-panelproductimage">
+                        <img data-srcset="//d2py9w124w2itd.cloudfront.net/img/products/thumbs/Ultimaker-CPE-Blue@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/products/thumbs/Ultimaker-CPE-Blue.jpg" alt=""/>
+                    </div>
+                    <div class="productbanner-panelproducttitle">Materials</div>
+                </div>
+                <footer class="productbanner-panelfooter">
+                                            <span class="productbanner-price">
+                            <span class="productbanner-from">From</span>                            <span class="productbanner-pricenumber">€ 31,50</span>
+                            <span class="productbanner-priceside">excl. VAT</span>
+                        </span>
+                                                                <a class="buttonround buttonround--fill" href="https://ultimaker.com/en/products/materials">Learn more</a>
+                                    </footer>
+            </div>
+            <div class="productbanner-panel productbanner-panel--background">
+                <div class="productbanner-panelbackground">
+                    <div data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-Materials@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-Materials.jpg"></div>
+                    <noscript><img title="Ultimaker PLA filament" alt="Ultimaker PLA materials for the Ultimaker 2 Go" width="458" height="400" src="http://d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-Materials.jpg"/></noscript>
+                </div>
+            </div>
+        </div>
+    </div>
+																																					
+
+    
+            
+                                        
+    <div class="productbanner ">
+        <div class="productbanner-listitem">
+            <i class="icon icon-go productbanner-icon"></i><span class="productbanner-title">Add-ons</span>
+        </div>
+        <div class="productbanner-content">
+            <div class="productbanner-panel">
+                <div class="productbanner-panelcontent">
+                    <div class="productbanner-panelproductimage">
+                        <img data-srcset="//d2py9w124w2itd.cloudfront.net/img/products/thumbs/Ultimaker-2-Extrusion-upgrade-kit@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/products/thumbs/Ultimaker-2-Extrusion-upgrade-kit.jpg" alt=""/>
+                    </div>
+                    <div class="productbanner-panelproducttitle">Add-ons</div>
+                </div>
+                <footer class="productbanner-panelfooter">
+                                            <span class="productbanner-price">
+                            <span class="productbanner-from">From</span>                            <span class="productbanner-pricenumber">€ 12,00</span>
+                            <span class="productbanner-priceside">excl. VAT</span>
+                        </span>
+                                                                <a class="buttonround buttonround--fill" href="https://ultimaker.com/en/products/add-ons">Learn more</a>
+                                    </footer>
+            </div>
+            <div class="productbanner-panel productbanner-panel--background">
+                <div class="productbanner-panelbackground">
+                    <div data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-2-Extrusion-upgrade-kit@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-2-Extrusion-upgrade-kit.jpg"></div>
+                    <noscript><img title="Ultimaker 2 Extrusion upgrade kit" alt="Ultimaker 2 Extrusion upgrade kit" width="458" height="400" src="http://d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-2-Extrusion-upgrade-kit.jpg"/></noscript>
+                </div>
+            </div>
+        </div>
+    </div>
+																																					
+
+    
+            
+                                        
+    <div class="productbanner ">
+        <div class="productbanner-listitem">
+            <i class="icon icon-go productbanner-icon"></i><span class="productbanner-title">Spare parts</span>
+        </div>
+        <div class="productbanner-content">
+            <div class="productbanner-panel">
+                <div class="productbanner-panelcontent">
+                    <div class="productbanner-panelproductimage">
+                        <img data-srcset="//d2py9w124w2itd.cloudfront.net/img/products/thumbs/Ultimaker-Original-Nozzle@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/products/thumbs/Ultimaker-Original-Nozzle.jpg" alt=""/>
+                    </div>
+                    <div class="productbanner-panelproducttitle">Spare parts</div>
+                </div>
+                <footer class="productbanner-panelfooter">
+                                            <span class="productbanner-price">
+                            <span class="productbanner-from">From</span>                            <span class="productbanner-pricenumber">€ 12,00</span>
+                            <span class="productbanner-priceside">excl. VAT</span>
+                        </span>
+                                                                <a class="buttonround buttonround--fill" href="https://ultimaker.com/en/products/spare-parts">Learn more</a>
+                                    </footer>
+            </div>
+            <div class="productbanner-panel productbanner-panel--background">
+                <div class="productbanner-panelbackground">
+                    <div data-bg-srcset="//d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-Original-Spare-Parts@2x.jpg 2x, //d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-Original-Spare-Parts.jpg"></div>
+                    <noscript><img title="Ultimaker Original spare parts" alt="Ultimaker Original spare parts" width="458" height="400" src="http://d2py9w124w2itd.cloudfront.net/img/productbanners/Ultimaker-Original-Spare-Parts.jpg"/></noscript>
+                </div>
+            </div>
+        </div>
+    </div>
+											
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+        <footer class="m-footer clearfix">
+            <div class="l-wrapper l-pad">
+                <div class="l-right footer-tablet100">
+                    <div class="l-right">
+                        <span class="footer-heading footer-heading--follow">Follow Ultimaker</span>
+
+                        <div class="footer-social">
+                            <a class="l-cell50" href="https://www.facebook.com/Ultimaker" target="_blank"
+                               data-ga-category="social" data-ga-action="follow" data-ga-label="facebook">
+                                <i class="icon icon-facebook2"></i>
+                                <span>130.859</span>
+                            </a>
+                            <a class="l-cell50" href="https://twitter.com/Ultimaker" target="_blank"
+                               data-ga-category="social" data-ga-action="follow" data-ga-label="twitter">
+                                <i class="icon icon-twitter2"></i>
+                                <span>32.878</span>
+                            </a>
+                            <a class="l-cell50" href="http://instagram.com/ultimaker" target="_blank"
+                               data-ga-category="social" data-ga-action="follow" data-ga-label="instagram">
+                                <i class="icon icon-instagram2"></i>
+                                <span>14.090</span>
+                            </a>
+                            <a class="l-cell50" href="https://www.youtube.com/user/Ultimaker3D" target="_blank"
+                               data-ga-category="social" data-ga-action="follow" data-ga-label="youtube">
+                                <i class="icon icon-youtube2"></i>
+                                <span>4.680</span>
+                            </a>
+                        </div>
+                        <div class="footer-newsletter newslettersubscriber">
+                            <div class="newslettersubscriber-front">
+	<a class="j-newslettertrigger"><i class="icon icon-mail"></i> 3D news direct to your inbox</a>
+</div>
+<form class="newslettersubscriber-back" action="https://ultimaker.com/newsletter">
+	<div>
+		<i class="icon icon-mail"></i>
+		<input class="newslettersubscriber-input" name="email" type="email" />
+		<input type="submit" class="newslettersubscriber-button nouniform" data-ga-category="newsletter" data-ga-action="subscribe" data-ga-label="send" value="Send" />
+	</div>
+</form>                        </div>
+                    </div>
+                    <nav class="footer-pressnav l-right">
+                                                                                    <div class="footer-pressnav-row">
+                                    <span class="footer-heading">Meet Ultimaker</span>
+                                                                                                                <a href="https://ultimaker.com/en/resellers">Resellers</a>
+                                                                            <a href="https://ultimaker.com/en/events">Events</a>
+                                                                    </div>
+                                                            <div class="footer-pressnav-row">
+                                    <span class="footer-heading">Company</span>
+                                                                            <a href="https://ultimaker.com/en/blog">Blog</a>
+                                                                                                                <a href="https://ultimaker.com/en/about">About</a>
+                                                                            <a href="https://ultimaker.com/en/jobs">Jobs</a>
+                                                                            <a href="https://ultimaker.com/en/contact">Contact</a>
+                                                                    </div>
+                                                            <div class="footer-pressnav-row">
+                                    <span class="footer-heading">Media</span>
+                                                                                                                <a href="https://ultimaker.com/en/press-room">Press Room</a>
+                                                                            <a href="https://ultimaker.com/en/brand-assets">Brand Assets</a>
+                                                                    </div>
+                                                                                                        <div class="footer-pressnav-row">
+                                <span class="footer-heading">Resources</span>
+                                                                    <a
+                                                                                    href="https://ultimaker.com/en/resources/manuals"
+                                            >Manuals</a>
+                                                                    <a
+                                                                                    href="https://ultimaker.com/en/resources/troubleshooting"
+                                            >Troubleshooting</a>
+                                                                    <a
+                                                                                    href="https://ultimaker.com/en/resources/tips-tricks"
+                                            >Tips &amp; Tricks</a>
+                                                                    <a
+                                                                                                                                href="https://ultimaker.com/en/request-support" data-popup="/en/request-support"
+                                                                            >Request support</a>
+                                                            </div>
+                                            </nav>
+                </div>
+                <div class="footer-section l-left">
+                    <div class="footer-logo">
+                        <span class="footer-logobot"><img src="http://d2py9w124w2itd.cloudfront.net/img/logobot.svg" alt=""/></span>
+                        <a href="https://ultimaker.com/en"><img class="footer-logotext"
+                                                                             src="http://d2py9w124w2itd.cloudfront.net/img/logo-textblue.svg"
+                                                                             alt=""/></a>
+                                            </div>
+                    <div class="regionselector not-active r-mobile-hidden">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <a class="regionselector-trigger"><i class="icon icon-country"></i>France
+                                    - €</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <form action="https://ultimaker.com/setlocale" method="post">
+                            <div class="regionselector-section">
+                                <label>
+                                    <select name="countrycode">
+                                                                                    <option value="AD"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Andorra
+                                                - €</option>
+                                                                                    <option value="AR"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Argentina
+                                                - ARS</option>
+                                                                                    <option value="AUS"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Australia
+                                                - AUD</option>
+                                                                                    <option value="AT"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Austria
+                                                - €</option>
+                                                                                    <option value="BH"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Bahrain
+                                                - BHD</option>
+                                                                                    <option value="BLR"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Belarus
+                                                - BYR</option>
+                                                                                    <option value="BE"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Belgium
+                                                - €</option>
+                                                                                    <option value="BGR"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Bulgaria
+                                                - BGN</option>
+                                                                                    <option value="CA"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Canada
+                                                - $</option>
+                                                                                    <option value="CZ"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Czech Republic
+                                                - Kč</option>
+                                                                                    <option value="DK"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Denmark
+                                                - DKK</option>
+                                                                                    <option value="UAE"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Dubai (UAE)
+                                                - AED</option>
+                                                                                    <option value="FI"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Finland
+                                                - €</option>
+                                                                                    <option value="FR"
+                                                    selected="selected"                                                    data-languages='{"region": [{"en":"English"}]}'>France
+                                                - €</option>
+                                                                                    <option value="DE"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Germany
+                                                - €</option>
+                                                                                    <option value="GI"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Gibraltar
+                                                - £</option>
+                                                                                    <option value="HKG"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Hong Kong
+                                                - HKD</option>
+                                                                                    <option value="HUN"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Hungary
+                                                - HUF</option>
+                                                                                    <option value="IN"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>India
+                                                - INR</option>
+                                                                                    <option value="IRL"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Ireland
+                                                - €</option>
+                                                                                    <option value="IL"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Israel
+                                                - ILS</option>
+                                                                                    <option value="IT"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Italy
+                                                - €</option>
+                                                                                    <option value="JP"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Japan
+                                                - ¥</option>
+                                                                                    <option value="KAZ"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Kazakhstan
+                                                - KZT</option>
+                                                                                    <option value="LB"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Lebanon
+                                                - LBP</option>
+                                                                                    <option value="LT"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Lithuania
+                                                - EUR</option>
+                                                                                    <option value="LUX"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Luxembourg
+                                                - €</option>
+                                                                                    <option value="MY"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Malaysia
+                                                - MYR</option>
+                                                                                    <option value="NL"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Netherlands
+                                                - €</option>
+                                                                                    <option value="NZ"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>New Zealand
+                                                - NZD</option>
+                                                                                    <option value="NO"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Norway
+                                                - NOK</option>
+                                                                                    <option value="PH"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Philippines
+                                                - PHP</option>
+                                                                                    <option value="PL"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Poland
+                                                - Zł</option>
+                                                                                    <option value="PT"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Portugal
+                                                - €</option>
+                                                                                    <option value="RU"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Russia
+                                                - ₽</option>
+                                                                                    <option value="SG"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Singapore
+                                                - SGD</option>
+                                                                                    <option value="ZA"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>South Africa
+                                                - ZAR</option>
+                                                                                    <option value="KR"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>South Korea
+                                                - KRW</option>
+                                                                                    <option value="ES"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Spain
+                                                - €</option>
+                                                                                    <option value="SE"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Sweden
+                                                - SEK</option>
+                                                                                    <option value="CH"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Switzerland
+                                                - €</option>
+                                                                                    <option value="TWN"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Taiwan
+                                                - TWD</option>
+                                                                                    <option value="THA"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Thailand
+                                                - THB</option>
+                                                                                    <option value="TUN"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Tunisia
+                                                - TND</option>
+                                                                                    <option value="TUR"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Turkey
+                                                - TRY</option>
+                                                                                    <option value="GB"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>United Kingdom
+                                                - £</option>
+                                                                                    <option value="US"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>United States
+                                                - $</option>
+                                                                                    <option value="URY"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Uruguay
+                                                - UYU</option>
+                                                                                    <option value="Global"
+                                                                                                        data-languages='{"region": [{"en":"English"}]}'>Global
+                                                - €</option>
+                                                                            </select>
+                                </label>
+                            </div>
+                            <div class="regionselector-section language">
+                                <label>
+                                    <select name="language" data-current-lang="en">
+                                        <option value="en">English</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="regionselector-section j-close">
+                                <a class="buttonround buttonround--darkfill">Go</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="footer-copyright">
+                        <span class="footer-copyrightsection">&copy; 2016 Ultimaker B.V.</span>
+                                                                                                </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+<div class="popup">
+    <div class="popup-overlay"></div>
+    <div class="popup-loader"></div>
+    <div class="popup-window"></div>
+</div>
+
+<div class="viewer">
+	<div class="viewer-wrapper">
+		<a class="viewer-close j-close"><i class="icon icon-close"></i></a>
+		<section class="photocarousel noselect">
+			<div class="touchcarousel touchcarousel--album">
+				<div class="touchcarousel-carousel">
+					<div class="touchcarousel-carouselmachine slider">
+						<div data-viewer-slideprototype-insert>
+							<div class="slider-slideitem is-active" data-viewer-slideprototype>
+								<div class="slider-slidebackground">
+									<img class="slider-slideimage" data-viewer-image/>
+								</div>
+								<div class="touchcarousel-caption" data-viewer-slidename>Photo</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="touchcarousel-footer">
+					<div class="touchcarousel-navigation">
+						<a class="touchcarousel-navbutton j-prev"><i class="icon icon-arrowleft"></i></a>
+							<span data-viewer-navprototype-insert>
+								<div class="touchcarousel-navigationitem" data-carouselindexed data-viewer-navprototype>
+									<div class="touchcarousel-navbackground" data-viewer-background></div>
+								</div>
+							</span>
+						<a class="touchcarousel-navbutton j-next"><i class="icon icon-arrowright"></i></a>
+					</div>
+				</footer>
+			</div>
+		</section>
+	</div>
+</div>
+
+    <script src="http://d2py9w124w2itd.cloudfront.net/vendor/jquery/dist/jquery.min.js"></script>
+            <script src="http://d2py9w124w2itd.cloudfront.net/build/site/js/5eff6da2.build.min.js"></script>
+    
+
+
+<script>
+
+    var lazyitems = $('[data-bg-srcset], [data-srcset]');
+
+    hljs.initHighlightingOnLoad();
+    $.lazyLoadXT.updateEvent += ' layoutComplete golazyload';
+    $.lazyLoadXT.loadEvent += ' ajax';
+
+    $('body').on('lazyinit', '[data-bg-srcset], [data-srcset]', function (e) {
+        $(this).css({
+            opacity: 0,
+            transition: '0s'
+        });
+    });
+
+    $('body').on('lazyload', '[data-bg-srcset], [data-srcset]', function (e) {
+        var el = $(this);
+        setTimeout(function () {
+            el.removeClass('lazy-hidden').addClass('lazy-loaded');
+            el.css({
+                opacity: '',
+                transition: ''
+            });
+        }, 50);
+    });
+
+    $.extend($.lazyLoadXT, {
+        visibleOnly: false,
+        edgeY: 400,
+        edgeX: 500,
+        onload: function (e) {
+            if (!$('.dashboard, .supportblock, .nomatchheight').length) $('[data-matchheight]').matchHeight(true);
+        }
+    });
+
+    $(window).on('ajaxComplete', function () {
+        setTimeout(function () {
+            $(window).lazyLoadXT();
+            setTimeout(function () {
+                $(window).trigger('golazyload');
+            });
+        }, 10);
+    });
+
+</script>
+
+<!-- Google Analytics -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-24975537-6', 'auto');
+    ga('send', 'pageview');
+
+
+    $('body').on('click', '[data-ga-category]', function (e) {
+        var el = $(this);
+        var cat = $(this).attr('data-ga-category');
+        var action = $(this).attr('data-ga-action');
+        var label = $(this).attr('data-ga-label');
+
+        if (label) {
+            ga('send', {
+                'hitType': 'event',          // Required.
+                'eventCategory': cat,   // Required.
+                'eventAction': action,      // Required.
+                'eventLabel': label,
+                'eventValue': 1
+            });
+        } else {
+            ga('send', {
+                'hitType': 'event',          // Required.
+                'eventCategory': cat,   // Required.
+                'eventAction': action,      // Required.
+                'eventValue': 1
+            });
+        }
+
+    })
+
+</script>
+<!-- End Google Analytics -->
+
+
+		
+
+
+<!-- Google-code voor remarketingtag -->
+
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
+<script type="text/javascript">
+    /* <![CDATA[ */
+    window.google_trackConversion({
+        google_conversion_id: 1003773458,
+        google_custom_params: window.google_tag_params,
+        google_remarketing_only: true
+    });
+    //]]>
+</script>
+
+<script type="text/javascript" src="http://browser-update.org/update.min.js" async></script>
+
+        
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0037/5008.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script async="" defer="" src="http://survey.g.doubleclick.net/async_survey?site=xqt4bxfdwqdfosaqjyr5rsehgq"></script>
+
+</body>
+
+<!-- Mirrored from ultimaker.com/en/products/cura-software by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:15 GMT -->
+</html>

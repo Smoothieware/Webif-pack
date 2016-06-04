@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Mirrored from slic3r.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:15 GMT -->
+<head>  
+	<title>Slic3r - G-code generator for 3D printers</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="alternate" type="application/rss+xml" title="Slic3r RSS feed" href="http://slic3r.org/rss" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="http://slic3r.org/stylesheets/styles.css" />
+	<link rel="stylesheet" type="text/css" href="http://slic3r.org/javascripts/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" type="text/css" href="http://slic3r.org/stylesheets/tan-pink.css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=Orienta' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://slic3r.org/inc/jquery/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="http://slic3r.org/javascripts/jquery.tools.js"></script>
+	<script type="text/javascript" src="http://slic3r.org/javascripts/fancybox/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="http://slic3r.org/javascripts/site.js"></script>
+		<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			// Configure fancybox plugin
+			$("a.screenshot").fancybox({
+			    openEffect	: 'elastic',
+    	        closeEffect	: 'elastic',
+    	        helpers : {
+    		        title : {
+    			        type : 'inside'
+    		        }
+    	        },
+				'overlayShow'	:	false,
+				'beforeLoad'    : function() {
+                    var el, id = $(this.element).data('title-id');
+                    if (id) {
+                        el = $('#' + id);
+                        if (el.length) {
+                            this.title = el.html();
+                        }
+                    }
+                }
+			});
+
+			// Configure scrollable plugin
+			$(".scrollable").scrollable({ });
+		});
+	</script>
+	</head>
+<body>
+	
+	<div id="header">
+		<div class="page">
+			
+			<a href="http://slic3r.org/" class="logo"><span>Slic3r</span></a>
+			<div id="subtitle">G-code generator for 3D printers</div>
+			
+			<ul>
+			    				    <li class="active">
+				        <a href="http://slic3r.org/" style="">Home</a>
+				    </li>
+				    				    <li class="">
+				        <a href="http://slic3r.org/about" style="">About</a>
+				    </li>
+				    				    <li class="">
+				        <a href="http://slic3r.org/download" style="">Download</a>
+				    </li>
+				    				    <li class="">
+				        <a href="http://manual.slic3r.org/" style="color: red">The Manual</a>
+				    </li>
+				    				    <li class="">
+				        <a href="http://slic3r.org/blog" style="">Blog</a>
+				    </li>
+				    				    <li class="">
+				        <a href="http://slic3r.org/donations" style="">Donate</a>
+				    </li>
+				    			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<div id="page">
+				
+		<div class="top"></div>
+		<div class="content">
+			
+						<div class="header header_home page">
+				
+				<!--<div class="price_tag"></div>-->
+				<a href="http://github.com/alexrj/Slic3r"><img style="position: absolute; top: -16px; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+				
+				<!-- Start App Screenshot -->
+				<img src="http://slic3r.org/var/data/images/6_3D_view.png_hplarge.jpg"  class="main_screenshot" />				<!--<img src="/images/screenshot3_400px.png" alt="" class="main_screenshot" />-->
+				<!-- End App Screenshot -->
+		
+				<!-- Start App Info -->
+				<div class="info">
+					<h1>Slic3r 1.2.9 stable is out!</h1>
+					<p>It includes <b>real-time incremental slicing</b>, <b>3D preview</b>, <b>toolpaths preview</b>, <b>3D honeycomb</b>, <b>customizable bed shape</b>, <b>integration with OctoPrint</b>, <b>pressure regulation</b> and <a href="http://slic3r.org/blog/new-stable-1.2.9">much more</a>!</p>
+					
+<p><i>Read the full release notes for <a href="http://slic3r.org/blog/new-stable-1.2.9">1.2.9</a></i></p>					
+					<a href="http://slic3r.org/download" class="button icon"><img src="http://slic3r.org/images/go_icon.png" alt="" /><span>Download Now!</span></a>
+					<span class="trial">Free. For MacOS X, Windows and Linux.</span>
+					
+					<div class="clear" style="margin-top: 40px">
+					                            Latest blog article: <a href="http://slic3r.org/blog/new-stable-1.2.9" style="display: inline; text-decoration: none"><b>Announcing a new stable release: 1.2.9</b></a> &raquo;
+                    					</div>
+				</div>
+				<!-- End App Info -->
+				<div class="clear"></div>
+			</div>
+			
+			<div id="home" class="padding">
+				
+				<div id="hp-boxes">
+				    
+				    <div class="sidebar_box" style="width: 385px; border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; ">
+						<h4>What does Slic3r do?</h4>
+						<p>Slic3r is the tool you need to <b>convert a digital 3D model into printing instructions for your 3D printer</b>. It cuts the model into horizontal slices (<b>layers</b>), generates toolpaths to fill them and calculates the amount of material to be extruded. <a href="http://slic3r.org/about">Read more...</a></p>
+					</div>
+					
+				    <div class="sidebar_box" style="width: 385px; border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; ">
+                        <div style="float: right">
+                            <form style="margin-left: 20px" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="5VWJ863ZCTFYS">
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+</form>                        </div>
+						<p>Slic3r is <b>free software</b>, developed by <a href="http://slic3r.org/about">Alessandro Ranellucci</b></a> with the help of <a href="http://slic3r.org/about">contributors</a> and community.<br />
+						    If you find this software useful, want to say thanks and encourage development, please consider a donation (<a href="http://slic3r.org/donations/">more about donations</a>).</p>
+					</div>
+					
+				</div>
+				
+				<div id="features">
+
+					<div class="section_title">
+						<h3>Features</h3>
+					</div>
+
+					<p>
+						<b>Compatible with your printer too.</b>
+						RepRap (Prusa Mendel, MendelMax, Huxley, Tantillus...), Ultimaker, Makerbot, Lulzbot AO-100, TAZ, MakerGear M2, Rostock, Mach3, Bukobot and lots more. And even DLP printers.
+					</p>
+					
+					<p>
+						<b>Fast G-code generation is fast.</b>
+						<!--<img src="images/icons/time.gif" alt="" />-->
+						Don't wait hours for slicing that detailed model. Slic3r is about 100x faster than Skeinforge. It also uses multithreading for parallel computation.
+					</p>
+					
+					<p class="last">
+						<b>Lots of input/output formats.</b>
+						Slic3r reads STL, AMF and OBJ files while it can output G-code and SVG files.
+					</p>
+					
+					<div class="clear spacer"></div>
+					
+					<p>
+						<b>Do you like the graphical interface or command line?</b>
+						All the features of the user-friendly interface are also available from command line. This allows to integrate Slic3r in your custom toolchain and batch operations as you like.
+					</p>
+					
+					<p>
+						<b>Open source, open development.</b>
+						Slic3r is open source software, licenced under the AGPLv3 license. The development is centered on GitHub and the #slic3r IRC channel on FreeNode, where the community is highly involved in testing and providing ideas and feedback.
+					</p>
+					
+					<p class="last">
+						<b>Dependencies? Nah.</b>
+						Slic3r is super-easy to run: download, double click and enjoy. No dependencies needed. Hassle-free. For MacOS X, Windows, Linux.
+					</p>
+					
+					<div class="clear spacer"></div>
+					
+					<p>
+						<b>Print with <strike>dual</strike> multiple extruders.</b>
+						Print beautiful colored objects, or use your secondary extruder to build support material. Or put a larger nozzle on it and print a faster infill.
+					</p>
+					
+					<p>
+						<b>Use brim for the best adhesion.</b>
+						This unique feature improves built plate adhesion by generating a base flange around your objects that you can easily remove after printing.
+					</p>
+					
+					<p class="last">
+						<b>Microlayering: save time, increase accuracy.</b>
+						You can choose to print a thicker infill to benefit from low layer heights on perimeters and still keep your print time within a reasonable amount.
+					</p>
+					
+					<div class="clear spacer"></div>
+					
+					<p>
+						<b>Compose a plate but print one object at time.</b>
+						Use the built-in plating interface that allows to place objects with drag-and-drop, rotate and scale them, arrange everything as you like. The <i>sequential printing</i> feature allows to print one complete object at time in a single print job.
+					</p>
+					
+					<p>
+						<b>Cool cooling strategies.</b>
+						A very smart cooling logic will regulate your fan speed and print speed to ensure each layer has enough time to cool down before next one is laid on it.
+					</p>
+					
+					<p class="last">
+						<b>Manage multiple printers, filaments and build styles.</b>
+						The configuration handling system was designed for people working with multiple machines and filaments: you can save configurations as presets for each category avoiding to multiply your saved configurations.
+					</p>
+					
+					<div class="clear spacer"></div>
+					
+					<p>
+						<b>Enjoy support material.</b>
+						Automatic generation of support material for overhangs.
+					</p>
+					
+					<!--
+					<p>
+						<b>Cooling</b>
+						A very smart cooling logic will regulate your fan speed and print speed to ensure each layer has enough time to cool down before next one is laid on it.
+					</p>
+					
+					<p class="last">
+						<b>Manage multiple printers, filaments and build styles</b>
+						The configuration handling system was designed for people working with multiple machines and filaments: you can save configurations as presets for each category avoiding to multiply your saved configurations.
+					</p>
+					-->
+
+					<div class="clear"></div>
+				</div>
+				
+				<div id="screenshots">
+				
+					<div class="section_title">
+						<h3>Gallery</h3>
+					</div>
+				
+					<a href="javascript:;" class="controls prev">Previous</a>
+				
+					<div class="xscrollable">
+						<div class="items">
+												<!-- Start Screenshot Group 1 -->
+												<ul style="margin: 0">
+						    							    <li>
+							        <a data-title-id="title-85" href="http://slic3r.org/var/data/images/198_Screenshot_2013-11-19_12.10.52.png_large.jpg" class="screenshot" rel="group"><img src="http://slic3r.org/var/data/images/198_Screenshot_2013-11-19_12.10.52.png_hpthumb.jpg" alt="" /></a>
+							        <div id="title-85" style="display: none">
+                                                                            </div>​
+							    </li>
+														    <li>
+							        <a data-title-id="title-84" href="http://slic3r.org/var/data/images/195_Screenshot_2013-11-19_12.09.47.png_large.jpg" class="screenshot" rel="group"><img src="http://slic3r.org/var/data/images/195_Screenshot_2013-11-19_12.09.47.png_hpthumb.jpg" alt="" /></a>
+							        <div id="title-84" style="display: none">
+                                                                            </div>​
+							    </li>
+														    <li>
+							        <a data-title-id="title-66" href="http://slic3r.org/var/data/images/145_usrTZBX.jpg_large.jpg" class="screenshot" rel="group"><img src="http://slic3r.org/var/data/images/145_usrTZBX.jpg_hpthumb.jpg" alt="" /></a>
+							        <div id="title-66" style="display: none">
+                                        The <a href="http://www.thingiverse.com/thing:37926">Blossoming Lamp</a> by emmet (Slic3r 0.9.9)                                    </div>​
+							    </li>
+														    <li>
+							        <a data-title-id="title-59" href="http://slic3r.org/var/data/images/127_PICT5964_t.jpg_large.jpg" class="screenshot" rel="group"><img src="http://slic3r.org/var/data/images/127_PICT5964_t.jpg_hpthumb.jpg" alt="" /></a>
+							        <div id="title-59" style="display: none">
+                                        by blddk (Slic3r 0.9.8)                                    </div>​
+							    </li>
+														    <li>
+							        <a data-title-id="title-57" href="http://slic3r.org/var/data/images/121_2005-01-01_00.00.00-15_t.jpg_large.jpg" class="screenshot" rel="group"><img src="http://slic3r.org/var/data/images/121_2005-01-01_00.00.00-15_t.jpg_hpthumb.jpg" alt="" /></a>
+							        <div id="title-57" style="display: none">
+                                        by blddk                                    </div>​
+							    </li>
+													</ul>
+												<ul style="margin: 0">
+						    							    <li>
+							        <a data-title-id="title-56" href="http://slic3r.org/var/data/images/118_DSC_0286.JPG_large.jpg" class="screenshot" rel="group"><img src="http://slic3r.org/var/data/images/118_DSC_0286.JPG_hpthumb.jpg" alt="" /></a>
+							        <div id="title-56" style="display: none">
+                                        Wood + ABS: dual material print by jebba (<a href="http://www.lulzbot.com/">LulzBot</a>) - checkout <a href="http://devel.lulzbot.com/AO-100/hardware/dual/dual_color/biz_card_wood_abs/">more pics</a>                                    </div>​
+							    </li>
+														    <li>
+							        <a data-title-id="title-55" href="http://slic3r.org/var/data/images/115_8194187821_9852b9d6ba_b.jpg_large.jpg" class="screenshot" rel="group"><img src="http://slic3r.org/var/data/images/115_8194187821_9852b9d6ba_b.jpg_hpthumb.jpg" alt="" /></a>
+							        <div id="title-55" style="display: none">
+                                        A RepRap part printed by <a href="http://www.flickr.com/photos/68272764@N05/">Robosprout</a>                                    </div>​
+							    </li>
+														    <li>
+							        <a data-title-id="title-54" href="http://slic3r.org/var/data/images/112_IMG_0459.JPG_large.jpg" class="screenshot" rel="group"><img src="http://slic3r.org/var/data/images/112_IMG_0459.JPG_hpthumb.jpg" alt="" /></a>
+							        <div id="title-54" style="display: none">
+                                        Printed with 0.9.8 by starno (model by <a href="http://www.thingiverse.com/yzorg">Yvo Waldmeier</a>, CC-NC-SA)                                    </div>​
+							    </li>
+														    <li>
+							        <a data-title-id="title-46" href="http://slic3r.org/var/data/images/95_OoiTY.jpg_large.jpg" class="screenshot" rel="group"><img src="http://slic3r.org/var/data/images/95_OoiTY.jpg_hpthumb.jpg" alt="" /></a>
+							        <div id="title-46" style="display: none">
+                                        Yoda print by OoiTY, published in the <a href="http://forums.reprap.org/read.php?282,154559,157388#msg-157388">forums</a>                                    </div>​
+							    </li>
+														    <li>
+							        <a data-title-id="title-45" href="http://slic3r.org/var/data/images/92_dual_color.JPG_large.jpg" class="screenshot" rel="group"><img src="http://slic3r.org/var/data/images/92_dual_color.JPG_hpthumb.jpg" alt="" /></a>
+							        <div id="title-45" style="display: none">
+                                        Dual-color print                                    </div>​
+							    </li>
+													</ul>
+												<ul style="margin: 0">
+						    							    <li>
+							        <a data-title-id="title-43" href="http://slic3r.org/var/data/images/86_screenshot2_full.png_large.jpg" class="screenshot" rel="group"><img src="http://slic3r.org/var/data/images/86_screenshot2_full.png_hpthumb.jpg" alt="" /></a>
+							        <div id="title-43" style="display: none">
+                                                                            </div>​
+							    </li>
+														    <li>
+							        <a data-title-id="title-42" href="http://slic3r.org/var/data/images/83_screenshot3_full.png_large.jpg" class="screenshot" rel="group"><img src="http://slic3r.org/var/data/images/83_screenshot3_full.png_hpthumb.jpg" alt="" /></a>
+							        <div id="title-42" style="display: none">
+                                                                            </div>​
+							    </li>
+													</ul>
+												</div>
+					</div>
+				
+					<a href="javascript:;" class="controls next">Next</a>
+					
+					<div class="clear"></div>
+				</div>
+				
+			</div>
+			
+			<div class="padding">
+                <div class="section_title">
+                    <h3>Links</h3>
+                </div>
+                
+                <div style="float: left; width: 200px; text-align: center">
+                    <a href="http://reprap.org/"><img src="http://slic3r.org/img/reprap_logo.png" /><br />The RepRap Project</a>
+                </div>
+                
+                <div class="clear"></div>
+                
+			</div>
+			
+		</div>
+		<div class="bottom"></div>
+	</div>
+	
+	<div id="footer" class="page">
+		<p>Slic3r is licensed under the GNU Affero General Public License, version 3<br />
+		    The Slic3r icon was designed by <a href="http://twitter.com/cdugd/">Corey Daniels</a></p>
+		<ul>
+		    			    <li><a href="http://slic3r.org/">Home</a></li>
+						    <li><a href="http://slic3r.org/about">About</a></li>
+						    <li><a href="http://slic3r.org/download">Download</a></li>
+						    <li><a href="http://manual.slic3r.org/">The Manual</a></li>
+						    <li><a href="http://slic3r.org/blog">Blog</a></li>
+						    <li><a href="http://slic3r.org/donations">Donate</a></li>
+					</ul>
+		<div class="clear"></div>
+	</div>
+	
+</body>
+
+<!-- Mirrored from slic3r.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:15 GMT -->
+</html>

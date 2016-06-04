@@ -1,0 +1,651 @@
+HTTrack3.48-21 launched on Fri, 13 May 2016 13:21:35 at http://smoothieware.org/
+(httrack http://smoothieware.org/ -N2 -%e1 -c40 )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+13:21:35	Warning: 	* security warning: maximum number of simultaneous connections limited to 8 to avoid server overload
+13:22:39	Error: 	"Forbidden" (403) at link d3g0gp89917ko0.cloudfront.net/v--edac79f846ba (from smoothieware.org/)
+13:27:57	Warning: 	file not stored in cache due to bogus state (broken size, expected 3843610 got 638336): chibidibidiwah.wdfiles.com/local--files/gallery/16 - 1.jpg
+13:28:09	Warning: 	file not stored in cache due to bogus state (broken size, expected 683365 got 573177): chibidibidiwah.wdfiles.com/local--files/gallery/3.jpg
+13:28:10	Warning: 	file not stored in cache due to bogus state (broken size, expected 640909 got 612273): chibidibidiwah.wdfiles.com/local--files/gallery/2.jpg
+13:28:16	Warning: 	file not stored in cache due to bogus state (broken size, expected 677691 got 658609): chibidibidiwah.wdfiles.com/local--files/gallery/1.jpg
+13:34:06	Warning: 	file not stored in cache due to bogus state (broken size, expected 2919382 got 941104): chibidibidiwah.wdfiles.com/local--files/gallery/IMG_0463.JPG
+13:37:03	Warning: 	Unexpected socket error during pre-loop
+13:37:27	Warning: 	file not stored in cache due to bogus state (incomplete type with No Content (204), size 0): https://csi.gstatic.com/csi
+13:40:16	Warning: 	Note: due to dank.bengler.no remote robots.txt rules, links beginning with these path will be forbidden: /-/search?, /-/excerpt/, /-/site/bestow_kudos, /-/user/mini_profile, /-/organization/show/ (see in the options to disable this)
+13:44:50	Error: 	"Not Found" (404) at link smoothieware.org/cartesian (from smoothieware.org/)
+13:49:09	Warning: 	Note: due to www.embeddedartists.com remote robots.txt rules, links beginning with these path will be forbidden: /includes/, /misc/, /modules/, /profiles/, /scripts/, /themes/, /CHANGELOG.txt, /cron.php, /INSTALL.mysql.txt, /INSTALL.pgsql.txt, /INSTALL.sqlite.txt, /install.php, /INSTALL.txt, /LICENSE.txt, /MAINTAINERS.txt, /update.php, /UPGRADE.txt, /xmlrpc.php, /admin/, /comment/reply/, /filter/tips/, /node/add/, /search/, /user/register/, /user/password/, /user/login/, /user/logout/, /?q=admin/, /?q=comment/reply/, /?q=filter/tips/, /?q=node/add/, /?q=search/, /?q=user/password/, /?q=user/register/, /?q=user/login/, /?q=user/logout/ (see in the options to disable this)
+13:57:25	Error: 	"Forbidden" (403) at link https://developer.mbed.org/handbook/Homepage (from smoothieware.org/)
+13:57:25	Error: 	"Forbidden" (403) at link https://developer.mbed.org/cookbook/Homepage (from smoothieware.org/)
+13:58:09	Warning: 	Note: due to creativecommons.org remote robots.txt rules, links beginning with these path will be forbidden: /wordpress (see in the options to disable this)
+14:10:33	Warning: 	Unexpected socket error during pre-loop
+14:11:23	Error: 	"Bad Behavior" (403) at link reprap.org/ (from smoothieware.org/smoothieboard)
+14:12:28	Error: 	"Bad Behavior" (403) at link reprap.org/wiki/Main_Page (from smoothieware.org/smoothieboard)
+14:12:28	Error: 	"Forbidden" (403) at link https://developer.mbed.org/handbook/mbed-NXP-LPC1768 (from smoothieware.org/smoothieboard)
+14:15:35	Error: 	Exit requested by shell or user
+14:15:35	Warning: 	File not added due to mirror cancel: https://en.wikipedia.org/wiki/Peter_Barlow_(mathematician)
+14:15:35	Warning: 	File not added due to mirror cancel: https://octopart.com/robots.txt
+14:15:35	Warning: 	File not added due to mirror cancel: https://www.sparkfun.com/robots.txt
+14:15:35	Error: 	"Not Found" (404) at link https://github.com/Smoothieware/Smoothieboard/blob/master/bom.xls?raw=true (from smoothieware.org/smoothieboard)
+14:15:35	Warning: 	File not added due to mirror cancel: https://docs.google.com/robots.txt
+14:15:36	Warning: 	File not added due to mirror cancel: www.thingiverse.com/robots.txt
+14:15:36	Warning: 	File not added due to mirror cancel: www.digikey.com/robots.txt
+14:15:36	Warning: 	File not added due to mirror cancel: components.arrow.com/robots.txt
+14:15:37	Warning: 	File not added due to mirror cancel: hackaday.com/robots.txt
+14:15:37	Warning: 	File not added due to mirror cancel: mbed.org/robots.txt
+14:15:37	Warning: 	Moved Permanently for mbed.org/users/scachat/code/Smoothie/
+14:15:37	Warning: 	File has moved from mbed.org/users/scachat/code/Smoothie/ to https://developer.mbed.org/users/scachat/code/Smoothie/
+14:15:37	Warning: 	Retry after error -4 (Incorrect length (638336 Bytes, 3843610 expected)) at link chibidibidiwah.wdfiles.com/local--files/gallery/16 - 1.jpg (from smoothieware.org/gallery)
+14:15:37	Warning: 	File not added due to mirror cancel: https://hackaday.io/robots.txt
+14:15:37	Warning: 	Retry after error -4 (Incorrect length (658609 Bytes, 677691 expected)) at link chibidibidiwah.wdfiles.com/local--files/gallery/1.jpg (from smoothieware.org/gallery)
+14:15:37	Warning: 	Retry after error -4 (Incorrect length (612273 Bytes, 640909 expected)) at link chibidibidiwah.wdfiles.com/local--files/gallery/2.jpg (from smoothieware.org/gallery)
+14:15:37	Warning: 	Retry after error -4 (Incorrect length (573177 Bytes, 683365 expected)) at link chibidibidiwah.wdfiles.com/local--files/gallery/3.jpg (from smoothieware.org/gallery)
+14:15:37	Warning: 	File not added due to mirror cancel: https://www.icloud.com/robots.txt
+14:15:37	Warning: 	File not added due to mirror cancel: lobocnc.com/robots.txt
+14:15:37	Warning: 	Moved Permanently for lobocnc.com/
+14:15:37	Warning: 	File has moved from lobocnc.com/ to http://jrkerr.com/lobocnc/
+14:15:37	Warning: 	Retry after error -4 (Incorrect length (941104 Bytes, 2919382 expected)) at link chibidibidiwah.wdfiles.com/local--files/gallery/IMG_0463.JPG (from smoothieware.org/gallery)
+14:15:37	Warning: 	File not added due to mirror cancel: www.robosprout.com/robots.txt
+14:15:37	Warning: 	File not added due to mirror cancel: webchat.freenode.net/robots.txt
+14:15:37	Warning: 	File not added due to mirror cancel: d2qhngyckgiutd.cloudfront.net/robots.txt
+14:15:38	Warning: 	File not added due to mirror cancel: https://apis.google.com/robots.txt
+14:15:38	Error: 	"Not Found" (404) at link https://apis.google.com/ (from https://groups.google.com/forum/#!forum/smoothieware-support)
+14:15:39	Warning: 	File not added due to mirror cancel: https://www.google.fr/robots.txt
+14:15:39	Warning: 	File not added due to mirror cancel: www.google.fr/robots.txt
+14:15:39	Warning: 	File not added due to mirror cancel: https://play.google.com/robots.txt
+14:15:39	Warning: 	Moved Temporarily for https://play.google.com/?hl=fr&tab=g8
+14:15:39	Warning: 	File has moved from https://play.google.com/?hl=fr&tab=g8 to https://play.google.com/store?hl=fr&tab=g8
+14:15:39	Warning: 	File not added due to mirror cancel: https://news.google.fr/robots.txt
+14:15:40	Warning: 	File not added due to mirror cancel: https://mail.google.com/robots.txt
+14:15:40	Warning: 	Moved Temporarily for https://mail.google.com/mail/?tab=gm
+14:15:40	Warning: 	File has moved from https://mail.google.com/mail/?tab=gm to https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/?tab%3Dgm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1
+14:15:40	Warning: 	File not added due to mirror cancel: https://drive.google.com/robots.txt
+14:15:40	Warning: 	Moved Permanently for https://www.google.fr/intl/fr/options/
+14:15:40	Warning: 	File has moved from https://www.google.fr/intl/fr/options/ to https://www.google.fr/intl/fr/about/products/
+14:15:40	Warning: 	File not added due to mirror cancel: https://accounts.google.com/robots.txt
+14:15:40	Warning: 	File not added due to mirror cancel: https://translate.google.fr/robots.txt
+14:15:40	Error: 	"Forbidden" (403) at link https://translate.google.fr/?hl=fr&tab=gT (from https://groups.google.com/forum/#!forum/smoothieware-support)
+14:15:40	Warning: 	File not added due to mirror cancel: https://books.google.fr/robots.txt
+14:15:40	Error: 	"Unauthorized" (401) at link https://books.google.fr/bkshp?hl=fr&tab=gp (from https://groups.google.com/forum/#!forum/smoothieware-support)
+14:15:40	Warning: 	File not added due to mirror cancel: https://www.blogger.com/robots.txt
+14:15:40	Warning: 	Moved Temporarily for https://www.blogger.com/?tab=gj
+14:15:40	Warning: 	File has moved from https://www.blogger.com/?tab=gj to https://www.blogger.com/home
+14:15:40	Warning: 	File not added due to mirror cancel: https://photos.google.com/robots.txt
+14:15:40	Warning: 	Found for https://photos.google.com/?tab=gq
+14:15:40	Warning: 	File has moved from https://photos.google.com/?tab=gq to https://www.google.com/photos/about/
+14:15:40	Warning: 	File not added due to mirror cancel: video.google.fr/robots.txt
+14:15:40	Warning: 	Moved Permanently for video.google.fr/?hl=fr&tab=gv
+14:15:40	Warning: 	File has moved from video.google.fr/?hl=fr&tab=gv to http://www.google.fr/videohp?hl=fr
+14:15:40	Warning: 	Moved Temporarily for https://docs.google.com/document/?usp=docs_alc
+14:15:40	Warning: 	File has moved from https://docs.google.com/document/?usp=docs_alc to https://www.google.com/url?sa=p&q=https://www.google.com/accounts/ServiceLogin?service%3Dwise%26passive%3Dtrue%26go%3Dtrue%26continue%3Dhttps://docs.google.com/document/?usp%253Ddocs_alc%2526pref%253D2%2526pli%253D1
+14:15:40	Warning: 	File not added due to mirror cancel: https://support.google.com/robots.txt
+14:15:40	Warning: 	Found for https://plus.google.com/
+14:15:40	Warning: 	File has moved from https://plus.google.com/ to https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0
+14:15:40	Error: 	"Not Found" (404) at link https://plus.google.com/GET (from https://plus.google.com/communities/111870450664099533727)
+14:15:40	Warning: 	File not added due to mirror cancel: fonts.gstatic.com/robots.txt
+14:15:41	Warning: 	Moved Temporarily for https://play.google.com/?hl=fr&tab=X8
+14:15:41	Warning: 	File has moved from https://play.google.com/?hl=fr&tab=X8 to https://play.google.com/store?hl=fr&tab=X8
+14:15:41	Warning: 	Moved Temporarily for https://mail.google.com/mail/?tab=Xm
+14:15:41	Warning: 	File has moved from https://mail.google.com/mail/?tab=Xm to https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/?tab%3DXm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1
+14:15:41	Error: 	"Forbidden" (403) at link https://translate.google.fr/?hl=fr&tab=XT (from https://plus.google.com/communities/111870450664099533727)
+14:15:41	Error: 	"Unauthorized" (401) at link https://books.google.fr/bkshp?hl=fr&tab=Xp (from https://plus.google.com/communities/111870450664099533727)
+14:15:41	Warning: 	Moved Temporarily for https://www.blogger.com/?tab=Xj
+14:15:41	Warning: 	File has moved from https://www.blogger.com/?tab=Xj to https://www.blogger.com/home
+14:15:41	Warning: 	Found for https://photos.google.com/?tab=Xq
+14:15:41	Warning: 	File has moved from https://photos.google.com/?tab=Xq to https://www.google.com/photos/about/
+14:15:41	Warning: 	Moved Permanently for video.google.fr/?hl=fr&tab=Xv
+14:15:41	Warning: 	File has moved from video.google.fr/?hl=fr&tab=Xv to http://www.google.fr/videohp?hl=fr
+14:15:41	Warning: 	File not added due to mirror cancel: https://www.google.com/robots.txt
+14:15:41	Warning: 	Moved Permanently for https://www.google.com/support/profiles/?p=help_center&hl=fr
+14:15:41	Warning: 	File has moved from https://www.google.com/support/profiles/?p=help_center&hl=fr to https://support.google.com/plus/?p=help_center&hl=fr
+14:15:41	Warning: 	File not added due to mirror cancel: www.google.com/robots.txt
+14:15:41	Warning: 	Found for www.google.com/intl/fr/+/learnmore/forum/
+14:15:41	Warning: 	File has moved from www.google.com/intl/fr/+/learnmore/forum/ to https://plus.google.com/about?hl=fr
+14:15:42	Warning: 	Link https://plus.google.com/hangouts?n=1 not scanned (follow robots meta tag)
+14:15:42	Warning: 	Moved Permanently for https://www.google.com/intl/fr/+/policy/
+14:15:42	Warning: 	File has moved from https://www.google.com/intl/fr/+/policy/ to https://www.google.com/intl/fr/policies/privacy/
+14:15:46	Warning: 	File not added due to mirror cancel: lh3.googleusercontent.com/robots.txt
+14:15:47	Warning: 	File not added due to mirror cancel: arthurwolf.github.io/robots.txt
+14:15:48	Warning: 	File not added due to mirror cancel: www.autodesk.com/robots.txt
+14:15:50	Warning: 	File not added due to mirror cancel: octoprint.org/robots.txt
+14:15:52	Warning: 	File not added due to mirror cancel: https://www.kickstarter.com/robots.txt
+14:15:52	Warning: 	File not added due to mirror cancel: openhardwarecoza.github.io/robots.txt
+14:15:53	Warning: 	Link https://plus.google.com/s/%23smoothieboard not scanned (follow robots meta tag)
+14:15:53	Warning: 	File not added due to mirror cancel: lautr3k.github.io/robots.txt
+14:15:53	Warning: 	Retry after error -4 (Receive Error) at link lh3.googleusercontent.com/-hNv4VRVapKo/Vxg2AlwUb0I/AAAAAAAAVOw/oglvpoW3H1Yu5hz4HxoGbAO8Mr1vW5Yvw/w426-h388/ReMix+Snapshot+-+5+%2528rev0.8%2529+.png (from https://plus.google.com/communities/111870450664099533727)
+14:15:54	Error: 	"Not Found" (404) at link https://plus.google.com/https: (from https://plus.google.com/communities/111870450664099533727)
+14:15:54	Warning: 	Found for https://www.google.com/
+14:15:54	Warning: 	File has moved from https://www.google.com/ to https://www.google.fr/?gfe_rd=cr&ei=cLw1V9aSFYnF8AfrrY3ADQ
+14:15:54	Warning: 	Found for https://photos.google.com/
+14:15:54	Warning: 	File has moved from https://photos.google.com/ to https://www.google.com/photos/about/
+14:15:54	Warning: 	File not added due to mirror cancel: ssl.gstatic.com/robots.txt
+14:15:54	Error: 	"Not Found" (404) at link ssl.gstatic.com/s2/oz/images/notifications/jingles_eb4e5306b38f83915d82034fa93390d9/ (from https://plus.google.com/communities/111870450664099533727)
+14:15:54	Warning: 	File not added due to mirror cancel: https://csi.gstatic.com/robots.txt
+14:15:54	Error: 	"No Content" (204) at link https://csi.gstatic.com/csi (from https://plus.google.com/communities/111870450664099533727)
+14:15:54	Warning: 	File not added due to mirror cancel: https://hangouts.google.com/robots.txt
+14:15:54	Warning: 	Moved Temporarily for https://hangouts.google.com/hangouts/_/
+14:15:54	Warning: 	File has moved from https://hangouts.google.com/hangouts/_/ to https://www.google.com/accounts/ServiceLogin?service=talk&passive=1209600&continue=https://hangouts.google.com:443/hangouts/_/
+14:15:54	Warning: 	Moved Temporarily for https://hangouts.google.com/hangouts/_/extras/
+14:15:54	Warning: 	File has moved from https://hangouts.google.com/hangouts/_/extras/ to https://hangouts.google.com/hangouts/_/
+14:15:54	Warning: 	Moved Temporarily for https://hangouts.google.com/hangouts/_/stream/
+14:15:54	Warning: 	File has moved from https://hangouts.google.com/hangouts/_/stream/ to https://www.google.com/accounts/ServiceLogin?service=talk&passive=1209600&continue=https://hangouts.google.com:443/hangouts/_/stream/
+14:15:55	Error: 	"Not Found" (404) at link https://plus.google.com/Screenshot from 2016-05-08 10-54-55.png (from https://plus.google.com/communities/111870450664099533727)
+14:15:55	Error: 	"Unauthorized" (401) at link https://ksr-ugc.imgix.net/projects/1999360/photo-original.jpg?w (from https://plus.google.com/communities/111870450664099533727)
+14:15:55	Error: 	"Not Found" (404) at link https://plus.google.com/1.PNG (from https://plus.google.com/communities/111870450664099533727)
+14:15:55	Error: 	"Not Found" (404) at link https://plus.google.com/Smoothie-docs.png (from https://plus.google.com/communities/111870450664099533727)
+14:15:55	Error: 	"Not Found" (404) at link https://plus.google.com/Smoothie-update.png (from https://plus.google.com/communities/111870450664099533727)
+14:15:55	Error: 	"Not Found" (404) at link https://plus.google.com/Smoothieboard_BLTouch123.jpg (from https://plus.google.com/communities/111870450664099533727)
+14:15:55	Error: 	"Not Found" (404) at link https://plus.google.com/ReMix Snapshot - 5 (rev0.8) .png (from https://plus.google.com/communities/111870450664099533727)
+14:15:55	Warning: 	File not added due to mirror cancel: https://lh3.googleusercontent.com/robots.txt
+14:15:56	Warning: 	File not added due to mirror cancel: schema.org/robots.txt
+14:15:58	Warning: 	File not added due to mirror cancel: https://external-cdg2-1.xx.fbcdn.net/robots.txt
+14:15:58	Warning: 	Found for https://www.facebook.com/advertising/?campaign_id=136808916455473&placement=pf_rhc_more&extra_1=not-admgr-user
+14:15:58	Warning: 	File has moved from https://www.facebook.com/advertising/?campaign_id=136808916455473&placement=pf_rhc_more&extra_1=not-admgr-user to https://www.facebook.com/business/
+14:16:01	Warning: 	File not added due to mirror cancel: l.facebook.com/robots.txt
+14:16:01	Warning: 	File not added due to mirror cancel: origo.no/robots.txt
+14:16:02	Warning: 	File not added due to mirror cancel: apressen.o5.no/robots.txt
+14:16:02	Warning: 	File not added due to mirror cancel: https://twitter.com/robots.txt
+14:16:02	Warning: 	File not added due to mirror cancel: arduino.cc/robots.txt
+14:16:02	Warning: 	Moved Permanently for arduino.cc/blog/2011/05/20/mtm-snap-a-snap-together-arduino-powered-desktop-cnc-milling-machine/
+14:16:02	Warning: 	Redirected link is identical because of 'URL Hack' option: arduino.cc/blog/2011/05/20/mtm-snap-a-snap-together-arduino-powered-desktop-cnc-milling-machine/ and www.arduino.cc/blog/2011/05/20/mtm-snap-a-snap-together-arduino-powered-desktop-cnc-milling-machine/
+14:16:02	Warning: 	File has moved from arduino.cc/blog/2011/05/20/mtm-snap-a-snap-together-arduino-powered-desktop-cnc-milling-machine/ to http://www.arduino.cc/blog/2011/05/20/mtm-snap-a-snap-together-arduino-powered-desktop-cnc-milling-machine/
+14:16:02	Warning: 	File not added due to mirror cancel: labs.nortd.com/robots.txt
+14:16:02	Warning: 	Found for labs.nortd.com/lasersaur/
+14:16:02	Warning: 	File has moved from labs.nortd.com/lasersaur/ to http://www.lasersaur.com
+14:16:02	Warning: 	File not added due to mirror cancel: replicat.org/robots.txt
+14:16:02	Error: 	"Not Found" (404) at link https://github.com/simen/grbl/tree/v0_51 (from dank.bengler.no/-/page/show/5470_grbl?ref=checkpoint)
+14:16:02	Warning: 	File not added due to mirror cancel: www.gnu.org/robots.txt
+14:16:02	Warning: 	File not added due to mirror cancel: https://api.github.com/robots.txt
+14:16:02	Error: 	"Not Found" (404) at link https://api.github.com/_private/browser/stats (from https://github.com/Smoothieware/Smoothieware)
+14:16:02	Error: 	"Not Found" (404) at link https://api.github.com/_private/browser/errors (from https://github.com/Smoothieware/Smoothieware)
+14:16:02	Warning: 	File not added due to mirror cancel: https://assets-cdn.github.com/robots.txt
+14:16:02	Error: 	"Forbidden" (403) at link https://assets-cdn.github.com/ (from https://github.com/Smoothieware/Smoothieware)
+14:16:02	Warning: 	File not added due to mirror cancel: https://help.github.com/robots.txt
+14:16:03	Error: 	"Not Found" (404) at link https://github.com/Smoothieware/Smoothieware/branches (from https://github.com/Smoothieware/Smoothieware)
+14:16:03	Warning: 	File not added due to mirror cancel: help.github.com/robots.txt
+14:16:03	Warning: 	Moved Permanently for help.github.com/articles/which-remote-url-should-i-use/
+14:16:03	Warning: 	Redirected link is identical because of 'URL Hack' option: help.github.com/articles/which-remote-url-should-i-use/ and https://help.github.com/articles/which-remote-url-should-i-use/
+14:16:03	Warning: 	File has moved from help.github.com/articles/which-remote-url-should-i-use/ to https://help.github.com/articles/which-remote-url-should-i-use/
+14:16:03	Warning: 	File not added due to mirror cancel: https://codeload.github.com/robots.txt
+14:16:04	Warning: 	File not added due to mirror cancel: https://avatars3.githubusercontent.com/robots.txt
+14:16:11	Warning: 	File not added due to mirror cancel: https://camo.githubusercontent.com/robots.txt
+14:16:11	Warning: 	File not added due to mirror cancel: triffid-hunter.no-ip.info/robots.txt
+14:16:11	Warning: 	File not added due to mirror cancel: https://raw.githubusercontent.com/robots.txt
+14:16:11	Warning: 	File not added due to mirror cancel: https://www.paypal.com/robots.txt
+14:16:11	Warning: 	File not added due to mirror cancel: https://status.github.com/robots.txt
+14:16:11	Warning: 	File not added due to mirror cancel: https://developer.github.com/robots.txt
+14:16:11	Warning: 	File not added due to mirror cancel: https://training.github.com/robots.txt
+14:16:11	Warning: 	Moved Permanently for https://training.github.com/
+14:16:11	Warning: 	File has moved from https://training.github.com/ to https://services.github.com/
+14:16:11	Warning: 	File not added due to mirror cancel: https://shop.github.com/robots.txt
+14:16:11	Warning: 	Moved Permanently for https://shop.github.com/
+14:16:11	Warning: 	File has moved from https://shop.github.com/ to https://github.myshopify.com/
+14:16:11	Warning: 	File not added due to mirror cancel: https://wiki.gnome.org/robots.txt
+14:16:11	Warning: 	Link https://wiki.gnome.org/Apps/Gedit not scanned (follow robots meta tag)
+14:16:11	Error: 	"Bad Behavior" (403) at link reprap.org/wiki/Safety (from smoothieware.org/laser-cutter-guide)
+14:16:12	Warning: 	File not added due to mirror cancel: calculator.josefprusa.cz/robots.txt
+14:16:12	Warning: 	Moved Permanently for calculator.josefprusa.cz/
+14:16:12	Warning: 	File has moved from calculator.josefprusa.cz/ to http://prusaprinters.org/calculator/
+14:16:12	Error: 	"Bad Behavior" (403) at link reprap.org/wiki/Mechanical_Endstop (from smoothieware.org/laser-cutter-guide)
+14:16:12	Warning: 	File not added due to mirror cancel: wot.lv/robots.txt
+14:16:12	Warning: 	File not added due to mirror cancel: freeware.the-meiers.org/robots.txt
+14:16:12	Warning: 	File not added due to mirror cancel: https://help.ubuntu.com/robots.txt
+14:16:12	Warning: 	Link https://help.ubuntu.com/community/Cutecom not scanned (follow robots meta tag)
+14:16:12	Error: 	"Bad Behavior" (403) at link reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller (from smoothieware.org/laser-cutter-guide)
+14:16:12	Warning: 	File not added due to mirror cancel: sparks.gogo.co.nz/robots.txt
+14:16:12	Warning: 	File not added due to mirror cancel: www.shapeoko.com/robots.txt
+14:16:12	Warning: 	Moved Permanently for www.shapeoko.com/
+14:16:12	Warning: 	File has moved from www.shapeoko.com/ to http://carbide3d.com/shapeoko
+14:16:12	Error: 	"Bad Behavior" (403) at link reprap.org/wiki/Prusa_i3 (from smoothieware.org/laser-cutter-guide)
+14:16:14	Warning: 	File not added due to mirror cancel: www.reprapdiscount.com/robots.txt
+14:16:14	Error: 	"Bad Behavior" (403) at link reprap.org/wiki/Step_rates (from smoothieware.org/laser-cutter-guide)
+14:16:15	Warning: 	File not added due to mirror cancel: fablabo.net/robots.txt
+14:16:15	Warning: 	File not added due to mirror cancel: www.picengrave.com/robots.txt
+14:16:15	Warning: 	File not added due to mirror cancel: slic3r.org/robots.txt
+14:16:15	Warning: 	File not added due to mirror cancel: https://ultimaker.com/robots.txt
+14:16:15	Warning: 	File not added due to mirror cancel: www.pronterface.com/robots.txt
+14:16:15	Warning: 	File not added due to mirror cancel: https://www.simplify3d.com/robots.txt
+14:16:15	Warning: 	File not added due to mirror cancel: mikk36.eu/robots.txt
+14:16:15	Warning: 	File not added due to mirror cancel: openscam.org/robots.txt
+14:16:15	Warning: 	Moved Permanently for openscam.org/
+14:16:15	Warning: 	File has moved from openscam.org/ to http://camotics.org/
+14:16:15	Warning: 	File not added due to mirror cancel: openscad.org/robots.txt
+14:16:15	Warning: 	Moved Permanently for openscad.org/
+14:16:15	Warning: 	Redirected link is identical because of 'URL Hack' option: openscad.org/ and www.openscad.org/
+14:16:15	Warning: 	File has moved from openscad.org/ to http://www.openscad.org/
+14:16:15	Warning: 	File not added due to mirror cancel: www.cnc-club.ru/robots.txt
+14:16:15	Warning: 	File not added due to mirror cancel: inkscape.org/robots.txt
+14:16:15	Warning: 	Moved Permanently for inkscape.org/
+14:16:15	Warning: 	Redirected link is identical because of 'URL Hack' option: inkscape.org/ and https://inkscape.org/
+14:16:15	Warning: 	File has moved from inkscape.org/ to https://inkscape.org/
+14:16:15	Warning: 	File not added due to mirror cancel: pycam.sourceforge.net/robots.txt
+14:16:15	Warning: 	File not added due to mirror cancel: jscut.org/robots.txt
+14:16:15	Warning: 	File not added due to mirror cancel: www.cambam.info/robots.txt
+14:16:15	Warning: 	File not added due to mirror cancel: hci.rwth-aachen.de/robots.txt
+14:16:15	Error: 	"Forbidden" (403) at link www.automationtechnologiesinc.com/wp-content/uploads/2011/11/KL-2200-1024x1024.jpg (from smoothieware.org/cnc-mill-guide)
+14:16:15	Warning: 	File not added due to mirror cancel: www.computerhope.com/robots.txt
+14:16:15	Error: 	"Forbidden" (403) at link www.computerhope.com/jargon/j/jumper.htm (from smoothieware.org/cnc-mill-guide)
+14:16:15	Error: 	"Forbidden" (403) at link www.obscureinternet.com/wp-content/uploads/1268330310152.jpg (from smoothieware.org/cnc-mill-guide)
+14:16:15	Warning: 	File not added due to mirror cancel: www.onlfait.ch/robots.txt
+14:16:15	Warning: 	File not added due to mirror cancel: drillsconversion.appspot.com/robots.txt
+14:16:15	Error: 	"Not Found" (404) at link https://github.com/grbl/grbl/blob/master/planner.c (from smoothieware.org/configuration-options)
+14:16:15	Error: 	"Not Found" (404) at link smoothieware.org/menu-name (from smoothieware.org/configuration-options)
+14:16:15	Error: 	"Bad Behavior" (403) at link reprap.org/wiki/Triffid_Hunter%27s_Calibration_Guide (from smoothieware.org/extruder)
+14:16:15	Error: 	"Bad Behavior" (403) at link reprap.org/wiki/Thermistor (from smoothieware.org/temperaturecontrol)
+14:16:16	Warning: 	File not added due to mirror cancel: https://www.adafruit.com/robots.txt
+14:16:16	Error: 	"Bad Behavior" (403) at link reprap.org/wiki/G-code (from smoothieware.org/temperaturecontrol)
+14:16:16	Warning: 	File not added due to mirror cancel: brettbeauregard.com/robots.txt
+14:16:16	Warning: 	File not added due to mirror cancel: linuxcnc.org/robots.txt
+14:16:16	Warning: 	File not added due to mirror cancel: minow.blogspot.com/robots.txt
+14:16:16	Warning: 	Moved Temporarily for minow.blogspot.com/
+14:16:16	Warning: 	File has moved from minow.blogspot.com/ to http://minow.blogspot.fr/
+14:16:16	Warning: 	File not added due to mirror cancel: reprapme.com/robots.txt
+14:16:16	Warning: 	File not added due to mirror cancel: www.tridprinting.com/robots.txt
+14:16:16	Warning: 	File not added due to mirror cancel: www.ultibots.com/robots.txt
+14:16:16	Warning: 	File not added due to mirror cancel: trains.socha.com/robots.txt
+14:16:16	Warning: 	File not added due to mirror cancel: www.tormach.com/robots.txt
+14:16:16	Error: 	"Forbidden" (403) at link www.tormach.com/g81_g89_background (from smoothieware.org/drillingcycles)
+14:16:16	Warning: 	File not added due to mirror cancel: www.panucatt.com/robots.txt
+14:16:16	Warning: 	File not added due to mirror cancel: https://www.audioholics.com/robots.txt
+14:16:16	Error: 	"Permission Denied" (403) at link https://www.audioholics.com/home-theater-connection/connecting-an-external-amp-to-a-receiver/image (from smoothieware.org/panel)
+14:16:16	Error: 	"Forbidden" (403) at link https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/1015877726/original/Viki2_Wiring_Diagram.pdf?AWSAccessKeyId=AKIAJ2JSYZ7O3I4JO6DA&Expires=1454541217&Signature=MMRFZtl%2BpEqk7VniywwRSn7JXhI%3D&response-content-type=application%2Fpdf (from smoothieware.org/panel)
+14:16:16	Warning: 	File not added due to mirror cancel: koti.kapsi.fi/robots.txt
+14:16:17	Warning: 	File not added due to mirror cancel: smoothie/robots.txt
+14:16:17	Warning: 	Retry after error -5 (Unable to get server's address: Name or service not known) at link smoothie/ (from smoothieware.org/network)
+14:16:17	Warning: 	File not added due to mirror cancel: robotseed.com/robots.txt
+14:16:17	Warning: 	File not added due to mirror cancel: https://gist.github.com/robots.txt
+14:16:17	Warning: 	File not added due to mirror cancel: pastebin.com/robots.txt
+14:16:17	Warning: 	File not added due to mirror cancel: ics.nxp.com/robots.txt
+14:16:17	Warning: 	Moved Permanently for ics.nxp.com/lpcxpresso/~LPC1769/
+14:16:17	Warning: 	File has moved from ics.nxp.com/lpcxpresso/~LPC1769/ to http://www.nxp.com/techzones/microcontrollers-techzone/news.html
+14:16:17	Warning: 	File not added due to mirror cancel: https://www.pololu.com/robots.txt
+14:16:17	Error: 	"Bad Behavior" (403) at link reprap.org/wiki/StepStick (from smoothieware.org/smoothie-on-a-breadboard)
+14:16:17	Warning: 	File not added due to mirror cancel: fritzing.org/robots.txt
+14:16:17	Warning: 	FOUND for fritzing.org/
+14:16:17	Warning: 	File has moved from fritzing.org/ to http://fritzing.org/home/
+14:16:17	Warning: 	File not added due to mirror cancel: https://www.flickr.com/robots.txt
+14:16:17	Warning: 	File not added due to mirror cancel: https://store.arduino.cc/robots.txt
+14:16:18	Warning: 	File not added due to mirror cancel: https://git-scm.com/robots.txt
+14:16:18	Warning: 	File not added due to mirror cancel: builds.smoothieware.org/robots.txt
+14:16:18	Warning: 	Retry after error 500 (Internal Server Error) at link builds.smoothieware.org/Smoothie-edge.bin (from smoothieware.org/flashing-smoothie-firmware)
+14:16:18	Warning: 	File not added due to mirror cancel: sourceforge.net/robots.txt
+14:16:18	Warning: 	File not added due to mirror cancel: www.flashmagictool.com/robots.txt
+14:16:18	Warning: 	Moved Permanently for mbed.org/users/scotto/notebook/smoothie-firmware-for-mbed/
+14:16:18	Warning: 	File has moved from mbed.org/users/scotto/notebook/smoothie-firmware-for-mbed/ to https://developer.mbed.org/users/scotto/notebook/smoothie-firmware-for-mbed/
+14:16:18	Warning: 	File not added due to mirror cancel: https://fr.wikipedia.org/robots.txt
+14:16:18	Error: 	"Forbidden" (403) at link https://developer.mbed.org/handbook/Compiler-Tour (from smoothieware.org/compiling-smoothie)
+14:16:18	Warning: 	Moved Permanently for mbed.org/users/scachat/code/Smoothie/file/
+14:16:18	Warning: 	File has moved from mbed.org/users/scachat/code/Smoothie/file/ to https://developer.mbed.org/users/scachat/code/Smoothie/file/
+14:16:18	Warning: 	File not added due to mirror cancel: www.equation.com/robots.txt
+14:16:18	Warning: 	Moved Permanently for mbed.org/forum/mbed/topic/2336/
+14:16:18	Warning: 	File has moved from mbed.org/forum/mbed/topic/2336/ to https://developer.mbed.org/forum/mbed/topic/2336/
+14:16:18	Warning: 	File not added due to mirror cancel: www.intel.com/robots.txt
+14:16:18	Warning: 	File not added due to mirror cancel: www.trinamic.com/robots.txt
+14:16:18	Warning: 	File not added due to mirror cancel: shop.uberclock.com/robots.txt
+14:16:18	Warning: 	File not added due to mirror cancel: www.w3.org/robots.txt
+14:16:20	Warning: 	File not added due to mirror cancel: https://www.lpcware.com/robots.txt
+14:16:20	Warning: 	File not added due to mirror cancel: shop.freertos.org/robots.txt
+14:16:20	Warning: 	File not added due to mirror cancel: www.safetty.net/robots.txt
+14:16:20	Warning: 	File not added due to mirror cancel: www.albertonoboru.com.br/robots.txt
+14:16:20	Warning: 	File not added due to mirror cancel: www.microshadow.com/robots.txt
+14:16:20	Error: 	"Not Found" (404) at link www.embeddedartists.com/products/lpcxpresso/contact (from www.embeddedartists.com/products/lpcxpresso/lpc1769_xpr.php)
+14:16:21	Warning: 	File not added due to mirror cancel: https://www.linkedin.com/robots.txt
+14:16:21	Warning: 	File not added due to mirror cancel: www.soliditet.se/robots.txt
+14:16:21	Warning: 	File not added due to mirror cancel: https://merit.soliditet.se/robots.txt
+14:16:21	Warning: 	File not added due to mirror cancel: https://wolfpaulus.com/robots.txt
+14:16:21	Warning: 	Moved Permanently for https://wolfpaulus.com/jounal/mac/noautomount/
+14:16:21	Warning: 	File has moved from https://wolfpaulus.com/jounal/mac/noautomount/ to https://wolfpaulus.com/journal/mac/noautomount/
+14:16:21	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Delta_robot (from https://en.wikipedia.org/wiki/Delta_robot)
+14:16:21	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Delta_robot&action=edit not scanned (follow robots meta tag)
+14:16:21	Warning: 	File not added due to mirror cancel: meta.wikimedia.org/robots.txt
+14:16:21	Warning: 	TLS Redirect for meta.wikimedia.org/
+14:16:21	Warning: 	Redirected link is identical because of 'URL Hack' option: meta.wikimedia.org/ and https://meta.wikimedia.org/
+14:16:21	Warning: 	File has moved from meta.wikimedia.org/ to https://meta.wikimedia.org/
+14:16:21	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Delta_robot&action=edit&section=1 not scanned (follow robots meta tag)
+14:16:22	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Delta_robot&action=edit&section=2 not scanned (follow robots meta tag)
+14:16:22	Warning: 	File not added due to mirror cancel: www.astral.ch/robots.txt
+14:16:22	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Delta_robot&action=edit&section=3 not scanned (follow robots meta tag)
+14:16:23	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Delta_robot&action=edit&section=4 not scanned (follow robots meta tag)
+14:16:23	Warning: 	File not added due to mirror cancel: https://commons.wikimedia.org/robots.txt
+14:16:23	Warning: 	File not added due to mirror cancel: www.jarkman.co.uk/robots.txt
+14:16:23	Warning: 	File not added due to mirror cancel: www.parallemic.org/robots.txt
+14:16:23	Warning: 	File not added due to mirror cancel: www.botjunkie.com/robots.txt
+14:16:23	Warning: 	Moved Temporarily for www.botjunkie.com/2009/11/03/adept-quattro-is-fastest-ever-for-the-moment/
+14:16:23	Warning: 	File has moved from www.botjunkie.com/2009/11/03/adept-quattro-is-fastest-ever-for-the-moment/ to http://spectrum.ieee.org/blog/automaton
+14:16:23	Warning: 	File not added due to mirror cancel: worldwide.espacenet.com/robots.txt
+14:16:23	Warning: 	Link worldwide.espacenet.com/publicationDetails/biblio?CC=US&NR=4976582&KC=&FT=E&locale=en_EP not scanned (follow robots meta tag)
+14:16:23	Warning: 	File not added due to mirror cancel: library.epfl.ch/robots.txt
+14:16:23	Error: 	"Not Found" (404) at link www.fanucrobotics.com/robotics-news/fanuc-press-releases/2009-Press-Releases/FANUC Robotics Introduces M-1iA Assembly Robot.pdf (from https://en.wikipedia.org/wiki/Delta_robot)
+14:16:23	Error: 	"Not Found" (404) at link www.fanucrobotics.com/robotics-news/fanuc-press-releases/2010-Press-Releases/01-11-10 FANUC Robotics Introduces M-3iA Assembly Robot (6).pdf (from https://en.wikipedia.org/wiki/Delta_robot)
+14:16:23	Error: 	"Not Found" (404) at link www.fanucrobotics.com/robotics-news/fanuc-press-releases/2012-Press-Releases/9-12 Stamped Part Stacking-New M-2iA.pdf (from https://en.wikipedia.org/wiki/Delta_robot)
+14:16:23	Warning: 	File not added due to mirror cancel: https://issuu.com/robots.txt
+14:16:23	Warning: 	File not added due to mirror cancel: www.3dprinterworld.com/robots.txt
+14:16:23	Warning: 	File not added due to mirror cancel: sunnybains.typepad.com/robots.txt
+14:16:23	Warning: 	File not added due to mirror cancel: https://login.wikimedia.org/robots.txt
+14:16:23	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Delta_robot&oldid=709066032 not scanned (follow robots meta tag)
+14:16:23	Warning: 	Link https://en.wikipedia.org/wiki/Special:MyTalk not scanned (follow robots meta tag)
+14:16:24	Warning: 	Link https://en.wikipedia.org/wiki/Special:MyContributions not scanned (follow robots meta tag)
+14:16:24	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Delta+robot&type=signup not scanned (follow robots meta tag)
+14:16:24	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Delta+robot not scanned (follow robots meta tag)
+14:16:24	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Delta_robot&action=history not scanned (follow robots meta tag)
+14:16:24	Warning: 	File not added due to mirror cancel: https://donate.wikimedia.org/robots.txt
+14:16:24	Warning: 	Link https://donate.wikimedia.org/w/index.php?title=Special:FundraiserLandingPage&country=FR&uselang=en&utm_medium=sidebar&utm_source=donate&utm_campaign=C13_en.wikipedia.org not scanned (follow robots meta tag)
+14:16:24	Warning: 	File not added due to mirror cancel: shop.wikimedia.org/robots.txt
+14:16:24	Warning: 	TLS Redirect for shop.wikimedia.org/
+14:16:24	Warning: 	Redirected link is identical because of 'URL Hack' option: shop.wikimedia.org/ and https://shop.wikimedia.org/
+14:16:24	Warning: 	File has moved from shop.wikimedia.org/ to https://shop.wikimedia.org/
+14:16:24	Warning: 	Link https://en.wikipedia.org/wiki/Special:RecentChanges not scanned (follow robots meta tag)
+14:16:24	Warning: 	Link https://en.wikipedia.org/wiki/Special:WhatLinksHere/Delta_robot not scanned (follow robots meta tag)
+14:16:24	Warning: 	Link https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Delta_robot not scanned (follow robots meta tag)
+14:16:24	Warning: 	Link https://en.wikipedia.org/wiki/Special:SpecialPages not scanned (follow robots meta tag)
+14:16:24	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Delta_robot&action=info not scanned (follow robots meta tag)
+14:16:24	Warning: 	File not added due to mirror cancel: https://www.wikidata.org/robots.txt
+14:16:24	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Delta_robot&id=709066032 not scanned (follow robots meta tag)
+14:16:24	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=book_creator&referer=Delta+robot not scanned (follow robots meta tag)
+14:16:24	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=rendering&return_to=Delta+robot&collection_id=580916bf621e8ebc2e72fe6e20ace9540f054e33&writer=rdf2latex&is_cached=1 not scanned (follow robots meta tag)
+14:16:24	Warning: 	File not added due to mirror cancel: https://es.wikipedia.org/robots.txt
+14:16:24	Warning: 	File not added due to mirror cancel: https://ja.wikipedia.org/robots.txt
+14:16:24	Warning: 	File not added due to mirror cancel: https://ru.wikipedia.org/robots.txt
+14:16:24	Warning: 	File not added due to mirror cancel: https://sr.wikipedia.org/robots.txt
+14:16:24	Warning: 	File not added due to mirror cancel: https://wikimediafoundation.org/robots.txt
+14:16:24	Warning: 	File not added due to mirror cancel: www.wikimediafoundation.org/robots.txt
+14:16:24	Warning: 	TLS Redirect for www.wikimediafoundation.org/
+14:16:24	Warning: 	Redirected link is identical because of 'URL Hack' option: www.wikimediafoundation.org/ and https://www.wikimediafoundation.org/
+14:16:24	Warning: 	File has moved from www.wikimediafoundation.org/ to https://www.wikimediafoundation.org/
+14:16:24	Warning: 	File not added due to mirror cancel: https://www.mediawiki.org/robots.txt
+14:16:24	Warning: 	File not added due to mirror cancel: https://en.m.wikipedia.org/robots.txt
+14:16:24	Warning: 	File not added due to mirror cancel: www.mediawiki.org/robots.txt
+14:16:24	Warning: 	TLS Redirect for www.mediawiki.org/
+14:16:24	Warning: 	Redirected link is identical because of 'URL Hack' option: www.mediawiki.org/ and https://www.mediawiki.org/
+14:16:24	Warning: 	File has moved from www.mediawiki.org/ to https://www.mediawiki.org/
+14:16:25	Warning: 	File not added due to mirror cancel: community.wikidot.com/robots.txt
+14:16:25	Warning: 	File not added due to mirror cancel: handbook.wikidot.com/robots.txt
+14:16:25	Warning: 	File not added due to mirror cancel: snippets.wikidot.com/robots.txt
+14:16:25	Warning: 	File not added due to mirror cancel: blog.wikidot.com/robots.txt
+14:16:25	Warning: 	File not added due to mirror cancel: shop.wikidot.com/robots.txt
+14:16:25	Error: 	"Not Found" (404) at link www.wikidot.com/company (from www.wikidot.com/legal:terms-of-service)
+14:16:25	Warning: 	File not added due to mirror cancel: freedomdefined.org/robots.txt
+14:16:25	Warning: 	Moved Permanently for freedomdefined.org/
+14:16:25	Warning: 	File has moved from freedomdefined.org/ to http://freedomdefined.org/Definition
+14:16:25	Warning: 	File not added due to mirror cancel: https://wiki.creativecommons.org/robots.txt
+14:16:25	Warning: 	File not added due to mirror cancel: https://creativecommons.org/robots.txt
+14:16:25	Warning: 	File not added due to mirror cancel: https://donate.creativecommons.org/robots.txt
+14:16:26	Warning: 	File not added due to mirror cancel: stats.creativecommons.org/robots.txt
+14:16:26	Warning: 	Moved Permanently for stats.creativecommons.org/piwik/
+14:16:26	Warning: 	Redirected link is identical because of 'URL Hack' option: stats.creativecommons.org/piwik/ and https://stats.creativecommons.org/piwik/
+14:16:26	Warning: 	File has moved from stats.creativecommons.org/piwik/ to https://stats.creativecommons.org/piwik/
+14:16:26	Warning: 	File not added due to mirror cancel: https://stats.creativecommons.org/robots.txt
+14:16:26	Warning: 	Retry after error 500 (Internal Server Error) at link https://stats.creativecommons.org/piwik/piwik.php?idsite=2 (from creativecommons.org/licenses/by-sa/3.0/)
+14:16:26	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Open-source_hardware (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:26	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&action=edit not scanned (follow robots meta tag)
+14:16:26	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&action=edit&section=1 not scanned (follow robots meta tag)
+14:16:27	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&action=edit&section=2 not scanned (follow robots meta tag)
+14:16:27	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Hardware_license (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:28	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/John_Ackermann (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:28	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Balloon_Open_Hardware_License (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:28	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Balloon_Project_(hardware) (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:28	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Graham_Seaman (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:28	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/FreeCores (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:28	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&action=edit&section=3 not scanned (follow robots meta tag)
+14:16:29	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&action=edit&section=4 not scanned (follow robots meta tag)
+14:16:30	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&action=edit&section=5 not scanned (follow robots meta tag)
+14:16:30	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&action=edit&section=6 not scanned (follow robots meta tag)
+14:16:30	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&action=edit&section=7 not scanned (follow robots meta tag)
+14:16:31	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&action=edit&section=8 not scanned (follow robots meta tag)
+14:16:31	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&action=edit&section=9 not scanned (follow robots meta tag)
+14:16:31	Warning: 	File not added due to mirror cancel: https://www.gnu.org/robots.txt
+14:16:31	Warning: 	File not added due to mirror cancel: spp.oxfordjournals.org/robots.txt
+14:16:31	Warning: 	File not added due to mirror cancel: https://www.academia.edu/robots.txt
+14:16:31	Warning: 	File not added due to mirror cancel: https://lists.debian.org/robots.txt
+14:16:31	Warning: 	File not added due to mirror cancel: web.archive.org/robots.txt
+14:16:31	Warning: 	File not added due to mirror cancel: timreview.ca/robots.txt
+14:16:31	Error: 	"Not Found" (404) at link timreview.ca/ojs/index.php/osbr/article/view/379/340. (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:31	Warning: 	File not added due to mirror cancel: arstechnica.com/robots.txt
+14:16:31	Error: 	"Not Found" (404) at link freedomdefined.org/OSHW. (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:31	Warning: 	File not added due to mirror cancel: public.web.cern.ch/robots.txt
+14:16:31	Error: 	"Not Found" (404) at link public.web.cern.ch/press/pressreleases/Releases2011/PR08.11E.html. (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:31	Warning: 	File not added due to mirror cancel: 2016.oshwa.org/robots.txt
+14:16:31	Error: 	"Not Found" (404) at link 2016.oshwa.org/wp-content/uploads/2011/09/The-CERN-OHL_OSHW-Summit.pdf. (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:31	Warning: 	File not added due to mirror cancel: lists.openhardwaresummit.org/robots.txt
+14:16:31	Warning: 	Link lists.openhardwaresummit.org/pipermail/updates-openhardwaresummit.org/2011-September/000565.html not scanned (follow robots meta tag)
+14:16:31	Warning: 	File not added due to mirror cancel: wiki.openhardware.org/robots.txt
+14:16:31	Warning: 	Retry after error -5 (Unable to get server's address: No address associated with hostname) at link wiki.openhardware.org/Project:Constitution (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:31	Warning: 	File not added due to mirror cancel: www.oshwa.org/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: www.linuxtoday.com/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: www.fsf.org/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: www.pcworld.com/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: https://www.fsf.org/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: https://www.reddit.com/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: www.replicant.us/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: opencollector.org/robots.txt
+14:16:32	Error: 	"Not Found" (404) at link opencollector.org/hardlicense/licenses.html (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:32	Warning: 	File not added due to mirror cancel: www.freemodelfoundry.com/robots.txt
+14:16:32	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Free-IP_Project (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:32	Warning: 	File not added due to mirror cancel: www.tapr.org/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: technocrat.net/robots.txt
+14:16:32	Error: 	"Not Found" (404) at link technocrat.net/d/2007/2/5/14355 (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:32	Warning: 	File not added due to mirror cancel: www.ohwr.org/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: solderpad.org/robots.txt
+14:16:32	Warning: 	Link web.archive.org/web/20120328013824/http://wiki.openhardware.org/Recommended_Licenses not scanned (follow robots meta tag)
+14:16:32	Warning: 	File not added due to mirror cancel: opencores.org/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: www.freecores.org/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: www.linuxfund.org/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: wiki.opengraphics.org/robots.txt
+14:16:32	Error: 	"Not Found" (404) at link wiki.opengraphics.org/tiki-index.php?page=FrequentlyAskedQuestions (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:32	Warning: 	File not added due to mirror cancel: balloonboard.org/robots.txt
+14:16:32	Warning: 	Retry after error -5 (Unable to get server's address: No address associated with hostname) at link balloonboard.org/licence.html (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:32	Warning: 	File not added due to mirror cancel: www.opencollector.org/robots.txt
+14:16:32	Error: 	"Not Found" (404) at link www.opencollector.org/Whyfree/ (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:32	Warning: 	File not added due to mirror cancel: makezine.com/robots.txt
+14:16:32	Warning: 	Moved Permanently for makezine.com/open_source_hardware_what/
+14:16:32	Warning: 	File has moved from makezine.com/open_source_hardware_what/ to /category/maker-pro/open-source-hardware/
+14:16:32	Warning: 	File not added due to mirror cancel: www.halfbakery.com/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: www.ccsenet.org/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: science.sciencemag.org/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: www.academia.edu/robots.txt
+14:16:32	Warning: 	Link https://en.wikipedia.org/wiki/Special:BookSources/9780124104624 not scanned (follow robots meta tag)
+14:16:32	Warning: 	File not added due to mirror cancel: www.wired.com/robots.txt
+14:16:32	Warning: 	File not added due to mirror cancel: www.nyu.edu/robots.txt
+14:16:32	Error: 	"Not Found" (404) at link makezine.com/the_open_source_hardware_bank/ (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:32	Warning: 	File not added due to mirror cancel: www.mse.mtu.edu/robots.txt
+14:16:33	Warning: 	File not added due to mirror cancel: https://support.littlebits.cc/robots.txt
+14:16:33	Warning: 	File not added due to mirror cancel: www.sciencedirect.com/robots.txt
+14:16:33	Error: 	"Not Found" (404) at link www.sciencedirect.com/science/article/pii/S0973082612000439?via%3Dihub (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:33	Warning: 	File not added due to mirror cancel: https://blog.p2pfoundation.net/robots.txt
+14:16:33	Warning: 	File not added due to mirror cancel: www.theguardian.com/robots.txt
+14:16:33	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&action=edit&section=10 not scanned (follow robots meta tag)
+14:16:33	Warning: 	File not added due to mirror cancel: https://www.openhardware.io/robots.txt
+14:16:33	Warning: 	Retry after error -5 (error:00000001:lib(0):func(0):reason(1)) at link https://www.openhardware.io/ (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:33	Warning: 	File not added due to mirror cancel: p2pfoundation.net/robots.txt
+14:16:33	Warning: 	Retry after error -4 (No data (connection closed)) at link https://en.wikipedia.org/wiki/Harvard_Journal_of_Law_%26_Technology (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:33	Warning: 	Retry after error -4 (No data (connection closed)) at link https://en.wikipedia.org/wiki/Wired_(magazine) (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:33	Warning: 	File not added due to mirror cancel: www.economist.com/robots.txt
+14:16:33	Error: 	"Forbidden" (403) at link www.economist.com/science/tq/displaystory.cfm?story_id=11482589 (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:33	Warning: 	File not added due to mirror cancel: makingsociety.com/robots.txt
+14:16:33	Error: 	"Forbidden" (403) at link makingsociety.com/2013/03/the-worlwide-list-of-open-source-hardware-online-stores/ (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:33	Warning: 	File not added due to mirror cancel: www.digitalqatar.qa/robots.txt
+14:16:33	Error: 	"Bad Behavior" (403) at link www.digitalqatar.qa/en/2015/02/19/the-future-with-open-source-hardware (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:33	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Template:Linux_devices&action=edit not scanned (follow robots meta tag)
+14:16:34	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Vivaldi_tablet (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:35	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Netgear_FVS336G (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:35	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/IP-Plug_AK-Systems (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:35	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Axiom_Alpha (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:35	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Wizpy (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:37	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Template:Intellectual_property_activism&action=edit not scanned (follow robots meta tag)
+14:16:39	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Template:Open_navbox&action=edit not scanned (follow robots meta tag)
+14:16:41	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&oldid=715330656 not scanned (follow robots meta tag)
+14:16:41	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Open-source+hardware&type=signup not scanned (follow robots meta tag)
+14:16:41	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Open-source+hardware not scanned (follow robots meta tag)
+14:16:41	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&action=history not scanned (follow robots meta tag)
+14:16:41	Warning: 	Link https://en.wikipedia.org/wiki/Special:WhatLinksHere/Open-source_hardware not scanned (follow robots meta tag)
+14:16:41	Warning: 	Link https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Open-source_hardware not scanned (follow robots meta tag)
+14:16:41	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Open-source_hardware&action=info not scanned (follow robots meta tag)
+14:16:41	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Open-source_hardware&id=715330656 not scanned (follow robots meta tag)
+14:16:41	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=book_creator&referer=Open-source+hardware not scanned (follow robots meta tag)
+14:16:41	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=rendering&return_to=Open-source+hardware&collection_id=13a0d1b338d9f95bc0a9c63c35c8fd9e123129b9&writer=rdf2latex&is_cached=1 not scanned (follow robots meta tag)
+14:16:41	Warning: 	File not added due to mirror cancel: https://ar.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://an.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://bg.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://ca.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://de.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://eu.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://fa.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://ko.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://it.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://nl.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://pl.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://pt.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://ro.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://fi.wikipedia.org/robots.txt
+14:16:41	Warning: 	File not added due to mirror cancel: https://sv.wikipedia.org/robots.txt
+14:16:42	Warning: 	File not added due to mirror cancel: https://tr.wikipedia.org/robots.txt
+14:16:42	Warning: 	File not added due to mirror cancel: https://uk.wikipedia.org/robots.txt
+14:16:42	Warning: 	File not added due to mirror cancel: https://zh.wikipedia.org/robots.txt
+14:16:42	Warning: 	File not added due to mirror cancel: https://password.freescale.net/robots.txt
+14:16:42	Warning: 	Retry after error -5 (Unable to get server's address: No address associated with hostname) at link https://password.freescale.net/ (from www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)
+14:16:42	Error: 	"Not Found" (404) at link www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/prod_summary.jsp?tab= (from www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)
+14:16:42	Error: 	"Not Found" (404) at link www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/prod_summary.jsp? (from www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)
+14:16:42	Error: 	"Not Found" (404) at link www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/disclaimerpopup (from www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)
+14:16:42	Error: 	"Not Found" (404) at link www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/ajaxboxdivcurr (from www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)
+14:16:42	Error: 	"Not Found" (404) at link www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/ajaxboxdiv (from www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)
+14:16:42	Warning: 	File not added due to mirror cancel: https://www.nxp.com/robots.txt
+14:16:43	Warning: 	Moved Temporarily for www.nxp.com/webapp/
+14:16:43	Warning: 	File has moved from www.nxp.com/webapp/ to https://www.nxp.com/ruhp/myAccount.html
+14:16:45	Warning: 	Link www.nxp.com/webapp/parametricSelector.sp? not scanned (follow robots meta tag)
+14:16:46	Warning: 	File not added due to mirror cancel: https://community.freescale.com/robots.txt
+14:16:46	Error: 	"Forbidden" (403) at link https://community.freescale.com/community/16bit (from www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)
+14:16:47	Warning: 	File not added due to mirror cancel: media.nxp.com/robots.txt
+14:16:47	Warning: 	Moved Temporarily for media.nxp.com/
+14:16:47	Warning: 	File has moved from media.nxp.com/ to /phoenix.zhtml?c=254228&p=irol-media-center
+14:16:47	Warning: 	File not added due to mirror cancel: investors.nxp.com/robots.txt
+14:16:47	Warning: 	Moved Temporarily for investors.nxp.com/
+14:16:47	Warning: 	File has moved from investors.nxp.com/ to /phoenix.zhtml?c=209114&p=irol-IRHome
+14:16:47	Warning: 	File not added due to mirror cancel: blog.nxp.com/robots.txt
+14:16:47	Warning: 	File not added due to mirror cancel: style.nxp.com/robots.txt
+14:16:48	Warning: 	Link www.nxp.com/webapp/sps/components/hot.jsp?image= not scanned (follow robots meta tag)
+14:16:48	Warning: 	Retry after error -4 (Receive Error) at link fdc.freescale.com/dcsna6bpqoifwzzkbkpmprmyf_5x3f/njs.gif?dcsuri=/nojavascript&WT.js=No (from www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)
+14:16:49	Warning: 	File not added due to mirror cancel: https://contact.nxp.com/robots.txt
+14:16:49	Warning: 	File not added due to mirror cancel: otp.investis.com/robots.txt
+14:16:49	Warning: 	File not added due to mirror cancel: googleads.g.doubleclick.net/robots.txt
+14:16:49	Warning: 	Found for googleads.g.doubleclick.net/pagead/viewthroughconversion/1066477406/?value=0&guid=ON&script=0
+14:16:49	Warning: 	File has moved from googleads.g.doubleclick.net/pagead/viewthroughconversion/1066477406/?value=0&guid=ON&script=0 to http://www.google.com/ads/user-lists/1066477406/?script=0&random=978978869
+14:16:49	Error: 	"Not Found" (404) at link www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/feedBackajaxbox (from www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)
+14:16:49	Warning: 	Link www.nxp.com/webapp/sps/components/imageHot.jsp?image= not scanned (follow robots meta tag)
+14:16:49	Error: 	"Not Found" (404) at link www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/ajaxbox1 (from www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)
+14:16:49	Error: 	"Not Found" (404) at link www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/ajaxbox (from www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)
+14:16:49	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/SMT_placement_equipment (from https://en.wikipedia.org/wiki/Pick_and_place)
+14:16:49	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&action=edit not scanned (follow robots meta tag)
+14:16:49	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Tape_and_reel (from https://en.wikipedia.org/wiki/Pick_and_place)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&action=edit&section=1 not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&action=edit&section=2 not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&action=edit&section=3 not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&action=edit&section=4 not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&action=edit&section=5 not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&action=edit&section=6 not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&action=edit&section=7 not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&action=edit&section=8 not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&action=edit&section=9 not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&action=edit&section=10 not scanned (follow robots meta tag)
+14:16:50	Warning: 	File not added due to mirror cancel: circuitsassembly.com/robots.txt
+14:16:50	Error: 	"Forbidden" (403) at link circuitsassembly.com/ca/magazine/25128-line-balancing-1508.html (from https://en.wikipedia.org/wiki/Pick_and_place)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&oldid=719509242 not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=SMT+placement+equipment&type=signup not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=SMT+placement+equipment not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&action=history not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/wiki/Special:WhatLinksHere/SMT_placement_equipment not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/wiki/Special:RecentChangesLinked/SMT_placement_equipment not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=SMT_placement_equipment&action=info not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=SMT_placement_equipment&id=719509242 not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=book_creator&referer=SMT+placement+equipment not scanned (follow robots meta tag)
+14:16:50	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=rendering&return_to=SMT+placement+equipment&collection_id=7d688ab6a63ea32c9493020d52c66bb4979dbc4f&writer=rdf2latex not scanned (follow robots meta tag)
+14:16:51	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Stepper_motor (from https://en.wikipedia.org/wiki/Stepper_motor)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=1 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=2 not scanned (follow robots meta tag)
+14:16:51	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Permanent_magnet_stepper (from https://en.wikipedia.org/wiki/Stepper_motor)
+14:16:51	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Hybrid_synchronous_stepper (from https://en.wikipedia.org/wiki/Stepper_motor)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=3 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=4 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=5 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=6 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=7 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=8 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=9 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=10 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=11 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=12 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=13 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=14 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=15 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=16 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=17 not scanned (follow robots meta tag)
+14:16:51	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=18 not scanned (follow robots meta tag)
+14:16:52	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=19 not scanned (follow robots meta tag)
+14:16:52	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=20 not scanned (follow robots meta tag)
+14:16:52	Error: 	"Bad Behavior" (403) at link reprap.org/wiki/NEMA_Motor (from https://en.wikipedia.org/wiki/Stepper_motor)
+14:16:52	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=21 not scanned (follow robots meta tag)
+14:16:52	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=22 not scanned (follow robots meta tag)
+14:16:52	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=23 not scanned (follow robots meta tag)
+14:16:52	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=24 not scanned (follow robots meta tag)
+14:16:52	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=25 not scanned (follow robots meta tag)
+14:16:52	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=26 not scanned (follow robots meta tag)
+14:16:52	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=27 not scanned (follow robots meta tag)
+14:16:52	Warning: 	File not added due to mirror cancel: books.google.co.uk/robots.txt
+14:16:52	Error: 	"Unauthorized" (401) at link books.google.co.uk/books?id=TxKynbyaIAMC&dq=Instrument+Engineers%27+Handbook&pg=PP1&ots=jvrdPR7wxJ&sig=1hOUpQQDQH_8drYjW1yPVocJSYI&hl=en&sa=X&oi=book_result&resnum=1&ct=result (from https://en.wikipedia.org/wiki/Stepper_motor)
+14:16:52	Warning: 	Link https://en.wikipedia.org/wiki/Special:BookSources/978-0-8493-1081-2 not scanned (follow robots meta tag)
+14:16:53	Warning: 	File not added due to mirror cancel: homepage.divms.uiowa.edu/robots.txt
+14:16:53	Warning: 	File not added due to mirror cancel: www.machinedesign.comguiedits/robots.txt
+14:16:53	Warning: 	Retry after error -5 (Unable to get server's address: Name or service not known) at link www.machinedesign.comguiedits/Content/bdeee4/bdeee4_1-1.aspx (from https://en.wikipedia.org/wiki/Stepper_motor)
+14:16:53	Warning: 	File not added due to mirror cancel: www.zaber.com/robots.txt
+14:16:53	Warning: 	File not added due to mirror cancel: www.micromo.com/robots.txt
+14:16:53	Warning: 	File not added due to mirror cancel: www.applied-motion.com/robots.txt
+14:16:53	Error: 	"Not Found" (404) at link www.applied-motion.com/videos/intro-amps-ip65-rated-motors-motordrives (from https://en.wikipedia.org/wiki/Stepper_motor)
+14:16:53	Warning: 	File not added due to mirror cancel: www.stepcontrol.com/robots.txt
+14:16:53	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Stepper_motor&action=edit&section=28 not scanned (follow robots meta tag)
+14:16:53	Error: 	"Not Found" (404) at link en.nanotec.com/main_en.swf (from https://en.wikipedia.org/wiki/Stepper_motor)
+14:16:53	Warning: 	File not added due to mirror cancel: www.cs.uiowa.edu/robots.txt
+14:16:53	Warning: 	Moved Permanently for www.cs.uiowa.edu/~jones/step/
+14:16:53	Warning: 	Redirected link is identical because of 'URL Hack' option: www.cs.uiowa.edu/~jones/step/ and https://www.cs.uiowa.edu/~jones/step/
+14:16:53	Warning: 	File has moved from www.cs.uiowa.edu/~jones/step/ to https://www.cs.uiowa.edu/~jones/step/
+14:16:53	Warning: 	Link https://en.wikipedia.org/w/index.php?title=Template:Electric_motor&action=edit not scanned (follow robots meta tag)
+14:16:55	Error: 	"Not Found" (404) at link https://en.wikipedia.org/wiki/Walter_Baily (from https://en.wikipedia.org/wiki/Stepper_motor)
+14:16:55	Warning: 	File not added due to mirror cancel: chibidibidiwah.wdfiles.com/local--files/gallery/16 - 1.jpg
+14:16:55	Error: 	"mirror stopped by user" (-1) at link chibidibidiwah.wdfiles.com/local--files/gallery/16 - 1.jpg (from smoothieware.org/gallery)
+14:16:55	Warning: 	File not added due to mirror cancel: chibidibidiwah.wdfiles.com/local--files/gallery/1.jpg
+14:16:55	Error: 	"mirror stopped by user" (-1) at link chibidibidiwah.wdfiles.com/local--files/gallery/1.jpg (from smoothieware.org/gallery)
+14:16:55	Warning: 	File not added due to mirror cancel: chibidibidiwah.wdfiles.com/local--files/gallery/2.jpg
+14:16:55	Error: 	"mirror stopped by user" (-1) at link chibidibidiwah.wdfiles.com/local--files/gallery/2.jpg (from smoothieware.org/gallery)
+14:16:55	Warning: 	File not added due to mirror cancel: chibidibidiwah.wdfiles.com/local--files/gallery/3.jpg
+14:16:55	Error: 	"mirror stopped by user" (-1) at link chibidibidiwah.wdfiles.com/local--files/gallery/3.jpg (from smoothieware.org/gallery)
+14:16:55	Warning: 	File not added due to mirror cancel: chibidibidiwah.wdfiles.com/local--files/gallery/IMG_0463.JPG
+14:16:55	Error: 	"mirror stopped by user" (-1) at link chibidibidiwah.wdfiles.com/local--files/gallery/IMG_0463.JPG (from smoothieware.org/gallery)
+14:16:55	Warning: 	File not added due to mirror cancel: lh3.googleusercontent.com/-hNv4VRVapKo/Vxg2AlwUb0I/AAAAAAAAVOw/oglvpoW3H1Yu5hz4HxoGbAO8Mr1vW5Yvw/w426-h388/ReMix+Snapshot+-+5+%2528rev0.8%2529+.png
+14:16:55	Error: 	"mirror stopped by user" (-1) at link lh3.googleusercontent.com/-hNv4VRVapKo/Vxg2AlwUb0I/AAAAAAAAVOw/oglvpoW3H1Yu5hz4HxoGbAO8Mr1vW5Yvw/w426-h388/ReMix+Snapshot+-+5+%2528rev0.8%2529+.png (from https://plus.google.com/communities/111870450664099533727)
+14:16:55	Warning: 	File not added due to mirror cancel: smoothie/
+14:16:55	Error: 	"mirror stopped by user" (-1) at link smoothie/ (from smoothieware.org/network)
+14:16:55	Warning: 	File not added due to mirror cancel: builds.smoothieware.org/Smoothie-edge.bin
+14:16:55	Error: 	"mirror stopped by user" (-1) at link builds.smoothieware.org/Smoothie-edge.bin (from smoothieware.org/flashing-smoothie-firmware)
+14:16:55	Warning: 	File not added due to mirror cancel: https://stats.creativecommons.org/piwik/piwik.php?idsite=2
+14:16:55	Error: 	"mirror stopped by user" (-1) at link https://stats.creativecommons.org/piwik/piwik.php?idsite=2 (from creativecommons.org/licenses/by-sa/3.0/)
+14:16:55	Warning: 	File not added due to mirror cancel: wiki.openhardware.org/Project:Constitution
+14:16:55	Error: 	"mirror stopped by user" (-1) at link wiki.openhardware.org/Project:Constitution (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:55	Warning: 	File not added due to mirror cancel: balloonboard.org/licence.html
+14:16:55	Error: 	"mirror stopped by user" (-1) at link balloonboard.org/licence.html (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:55	Warning: 	File not added due to mirror cancel: https://www.openhardware.io/
+14:16:55	Error: 	"mirror stopped by user" (-1) at link https://www.openhardware.io/ (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:55	Warning: 	File not added due to mirror cancel: https://en.wikipedia.org/wiki/Harvard_Journal_of_Law_%26_Technology
+14:16:55	Error: 	"mirror stopped by user" (-1) at link https://en.wikipedia.org/wiki/Harvard_Journal_of_Law_%26_Technology (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:55	Warning: 	File not added due to mirror cancel: https://en.wikipedia.org/wiki/Wired_(magazine)
+14:16:55	Error: 	"mirror stopped by user" (-1) at link https://en.wikipedia.org/wiki/Wired_(magazine) (from https://en.wikipedia.org/wiki/Open-source_hardware)
+14:16:55	Warning: 	File not added due to mirror cancel: https://password.freescale.net/
+14:16:55	Error: 	"mirror stopped by user" (-1) at link https://password.freescale.net/ (from www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)
+14:16:55	Warning: 	File not added due to mirror cancel: fdc.freescale.com/dcsna6bpqoifwzzkbkpmprmyf_5x3f/njs.gif?dcsuri=/nojavascript&WT.js=No
+14:16:55	Error: 	"mirror stopped by user" (-1) at link fdc.freescale.com/dcsna6bpqoifwzzkbkpmprmyf_5x3f/njs.gif?dcsuri=/nojavascript&WT.js=No (from www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m3-mcus/lpc1300-cortex-m3-mcus/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)
+14:16:55	Warning: 	File not added due to mirror cancel: www.machinedesign.comguiedits/Content/bdeee4/bdeee4_1-1.aspx
+14:16:55	Error: 	"mirror stopped by user" (-1) at link www.machinedesign.comguiedits/Content/bdeee4/bdeee4_1-1.aspx (from https://en.wikipedia.org/wiki/Stepper_motor)
+
+HTTrack Website Copier/3.48-21 mirror complete in 55 minutes 20 seconds : 2842 links scanned, 2387 files written (232123863 bytes overall) [102335431 bytes received at 30823 bytes/sec], 177297978 bytes transferred using HTTP compression in 2152 files, ratio 22%, 1.7 requests per connection
+(117 errors, 523 warnings, 0 messages)

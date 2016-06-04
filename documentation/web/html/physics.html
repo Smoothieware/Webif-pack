@@ -1,0 +1,916 @@
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<HTML LANG="en">
+ 
+<!-- Mirrored from homepage.divms.uiowa.edu/~jones/step/physics.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<HEAD>
+  <TITLE>Jones on Stepping Motor Physics</TITLE>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+  <META name="viewport" content="width=device-width, initial-scale=1">
+  <META name="Author" content="Douglas W. Jones">
+  <META name="Language" content="English">
+  <META name="editor" content="/usr/bin/vi">
+  
+  
+  
+  <STYLE TYPE="text/css">
+   BODY { margin-left: 3%; margin-right: 3%; }
+   H2.SQUAT { margin-top: 0.4em; margin-bottom: 0.25em; }
+   H3.SQUAT { margin-top: 0.3em; margin-bottom: 0.2em; }
+   H4.SQUAT { margin-top: 0.2em; margin-bottom: 0.15em; }
+   H5.SQUAT { margin-top: 0.17em; margin-bottom: 0.15em; }
+   * { line-height: 1.1 }
+   P.SQUAT { margin-top: 0.25em; margin-bottom: 0.15em; }
+   UL.SQUAT { margin-top: 0.25em; margin-bottom: 0.15em; }
+   EM.O { font-style: normal; text-decoration: overline; }
+   EM.U { font-style: normal; text-decoration: underline; }
+   EM.S { font-style: normal; text-decoration: line-through; }
+   A { text-decoration: none; }
+   A.I { font-style: italic; text-decoration: none; }
+   SUP { vertical-align: 0; position: relative; bottom: 1ex; }
+   SUB { vertical-align: 0; position: relative; top: 0.8ex; }
+   TABLE.BOXY { border: 0; padding: 0; border-spacing: 0;
+                border-collapse: collapse; }
+   TD.BOX { border: solid; border-width: thin; border-color: DimGray;
+	      text-align: center; }
+   TD.BOXTT { border: solid; border-width: thin; border-color: DimGray;
+	      font-family: monospace; text-align: center; }
+   TD.TT { font-family: monospace; text-align: left; }
+   TD.TTSPACE { font-family: monospace; text-align: left; color: white }
+   TD.SHADE { background: Silver; text-align: center; }
+   CAPTION { padding-top: 6px; }
+   DIV.HEADBOX { border: groove; border-width: 2px; background: #F0F0E0; padding-top: 1%; padding-bottom: 1%; padding-left: 5px; }
+   DIV.HEADBOX P { margin-top: 0.8em; margin-bottom: 0.8em; }
+   DIV.HEADBOX H1 { margin-top: 0.2em; margin-bottom: 0.4em; }
+   DIV.HEADBOX H2 { margin-top: 0.2em; margin-bottom: 0.4em; }
+   DIV.INDENT { border: none; padding-left: 1em }
+   DIV.INVISIBLE { font-size: 3px; letter-spacing: -5px; color: white; background: white; }
+   DIV.INVISIBLE A:link { color: white; }
+   DIV.INVISIBLE A:visited { color: white; }
+   DIV.INVISIBLE A:active { color: white; }
+   DIV.invisible A:active { color: white; background: white; }
+  </STYLE>
+ </HEAD>
+ <BODY BGCOLOR="#FFFFFF" TEXT="#000000" link="#0000CC" vlink="#880088" alink="#880088">
+  <DIV CLASS=HEADBOX>
+   
+   <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD>&nbsp;&nbsp;<TD>
+    
+     <H1>2. Stepping Motor Physics</H1>
+    
+    
+    <P>
+    
+     Part of <A HREF="http://homepage.divms.uiowa.edu/~jones/step/index.html">
+      
+      Stepping Motors
+      
+     </A>
+     <BR>
+     
+    
+    
+     by
+     <A HREF="http://www.cs.uiowa.edu/~jones/">Douglas W. Jones</A>
+     
+     <BR>
+    
+    
+    <A HREF="http://www.uiowa.edu/">
+     T<SMALL>HE</SMALL> U<SMALL>NIVERSITY</SMALL>
+    <SMALL>OF</SMALL> I<SMALL>OWA</SMALL></A>
+    <A HREF="http://www.cs.uiowa.edu/">Department of Computer Science</A>
+    
+    
+    
+   </TABLE>
+    
+  </DIV>
+ 
+
+
+
+<UL>
+<LI><A HREF="#intro"> Introduction </A>
+<P>
+<LI><A HREF="#statics"> Statics </A>
+<LI><A HREF="#halfstep"> - Half-Stepping and Microstepping </A>
+<LI><A HREF="#friction"> - Friction and the Dead Zone </A>
+<P>
+<LI><A HREF="#dynamics"> Dynamics </A>
+<LI><A HREF="#resonance"> - Resonance </A>
+<LI><A HREF="#damping"> - Living with Resonance </A>
+<LI><A HREF="#torque"> - Torque versus Speed </A>
+<P>
+<LI><A HREF="#electro"> Electromagnetic Issues </A>
+</UL>
+
+<HR>
+
+<P>
+<H2><A NAME=intro>Introduction</A></H2>
+<P>
+In any presentation covering the quantitative physics of a class of systems,
+it is important to beware of the units of measurement used!  In this
+presentation of stepping motor physics, we will assume standard
+physical units:
+<BLOCKQUOTE>
+<TABLE BORDER CELLSPACING=0 ALIGN=CENTER>
+<TR><TD>        <TH>English<TH>CGS       <TH>MKS     </TR>
+<TR><TH>MASS    <TD>slug   <TD>gram      <TD>kilogram</TR>
+<TR><TH>FORCE   <TD>pound  <TD>dyne      <TD>newton  </TR>
+<TR><TH>DISTANCE<TD>foot   <TD>centimeter<TD>meter   </TR>
+<TR><TH>TIME    <TD>second <TD>second    <TD>second  </TR>
+<TR><TH>ANGLE   <TD>radian <TD>radian    <TD>radian  </TR>
+</TABLE>
+</BLOCKQUOTE>
+A force of one pound will accelerate a mass of one slug at one foot per second
+squared.  The same relationship holds between the force, mass, time and
+distance units of the other measurement systems.  Most people prefer to measure
+angles in degrees, and the common engineering practice of specifying mass
+in pounds or force in kilograms will not yield correct results in the
+formulas given here!  Care must be taken to convert such irregular units to
+one of the standard systems outlined above before applying the formulas
+given here!
+<P>
+<H2><A NAME=statics>Statics</A></H2>
+<P>
+For a motor that turns S radians per step, the plot of torque versus
+angular position for the rotor relative to some initial equilibrium
+position will generally approximate a sinusoid.  The actual shape of the
+curve depends on the pole geometry of both rotor and stator, and neither
+this curve nor the geometry information is given in the motor data
+sheets I've seen!  For permanent magnet and hybrid motors, the actual
+curve usually looks sinusoidal, but looks can be misleading.  For variable
+reluctance motors, the curve rarely even looks sinusoidal; trapezoidal
+and even assymetrical sawtooth curves are not uncommon.
+<P>
+For a three-winding variable reluctance or permanent magnet motors with
+S radians per step, the period of the torque versus position curve will be
+3S; for a 5-phase permanent magnet motor, the period will be 5S.  For a
+two-winding permanent magnet or hybrid motor, the most common type,
+the period will be 4S, as illustrated in Figure 2.1:
+<PRE WIDTH=65>
+<B>Figure 2.1</B> <IMG ALIGN="middle" SRC="http://homepage.divms.uiowa.edu/~jones/step/physicsf/1.gif"
+WIDTH=367 HEIGHT=127 ALT="
+                 ---   |             ---
+               /     \ |           /     \
+              /       \|          /       
+     ---+----/----+----\----+----/----+---
+       -3S  /     -S   |\  +S   /    +3S
+     \     /           | \     /
+       ---             |   ---
+">
+</PRE>
+Again, for an ideal 2 winding permanent magnet motor, this can be
+mathematically expressed as:
+<BLOCKQUOTE>
+T = -<I>h</I>
+    <I>sin</I>( ((&pi; / 2) / S)
+         &theta;
+       )
+</BLOCKQUOTE>
+Where:
+<BLOCKQUOTE>
+T -- torque
+<BR>
+<I>h</I> -- holding torque
+<BR>
+S -- step angle, in radians
+<BR>
+&theta; = shaft angle, in radians
+</BLOCKQUOTE>
+But remember, subtle departures from the ideal sinusoid described here
+are very common.
+<P>
+The <I>single-winding holding torque</I> of a stepping motor is the peak
+value of the torque versus position curve when the maximum allowed current
+is flowing through one motor winding.  If you attempt to apply a torque
+greater than this to the motor rotor while maintaining power to one
+winding, it will rotate freely.
+<P>
+It is sometimes useful to distinguish between the <I>electrical shaft angle</I>
+and the <I>mechanical shaft angle</I>.  In the mechanical frame of reference,
+2&pi; radians is defined as one full
+revolution.  In the electrical frame of reference, a revolution is defined
+as one period of the torque versus shaft angle curve.  Throughout this
+tutorial, &theta; refers to the
+mechanical shaft angle, and ((&pi;/2)/S)&theta;
+gives the electrical angle for a motor with 4 steps per cycle of the torque
+curve.
+<P>
+Assuming that the torque versus angular position curve is a good approximation
+of a sinusoid, as long as the torque remains below the holding torque of the
+motor, the rotor will remain within 1/4 period of the equilibrium position.
+For a two-winding permanent magnet or hybrid motor, this means the rotor will
+remain within one step of the equilibrium position.
+<P>
+With no power to any of the motor windings, the torque does not always fall to
+zero!  In variable reluctance stepping motors, residual magnetization in the
+magnetic circuits of the motor may lead to a small residual torque, and in
+permanent magnet and hybrid stepping motors, the combination of pole geometry
+and the permanently magnetized rotor may lead to significant torque with no
+applied power.
+<P>
+The residual torque in a permanent magnet or hybrid stepping motor is
+frequently referred to as the <I>cogging torque</I> or <I>detent torque</I>
+of the motor because a naive observer will frequently guess that there is
+a detent mechanism of some kind inside the motor.  The most common motor
+designs yield a detent torque that varies sinusoidally with rotor angle, with
+an equilibrium position at every step and an amplitude of roughly 10% of the
+rated holding torque of the motor, but a quick survey of motors from one
+manufacturer (Phytron) shows values as high as 23% for one very small motor
+to a low of 2.6% for one mid-sized motor.
+<P>
+<H3><A NAME=halfstep>Half-Stepping and Microstepping</A></H3>
+<P>
+So long as no part of the magnetic circuit saturates, powering two motor
+windings simultaneously will produce a torque versus position curve that is
+the sum of the torque versus position curves for the two motor windings taken
+in isolation.  For a two-winding permanent magnet or hybrid motor, the two
+curves will be S radians out of phase, and if the currents in the two
+windings are equal, the peaks and valleys of the sum will be displaced
+S/2 radians from the peaks of the original curves, as shown in Figure 2.2:
+<PRE WIDTH=65>
+<B>Figure 2.2</B> <IMG ALIGN="middle" SRC="http://homepage.divms.uiowa.edu/~jones/step/physicsf/2.gif"
+WIDTH=371 HEIGHT=171 ALT="
+                    -- |                --
+                  /    |              /
+                 |--  -||            |--
+     |\        /|   /\ | |\        /|   /\
+     | \-3S   / |  /  \| | \+1S   / |  /
+     ---\----+----/----+---------+----/---
+      |  \  /  | /-1S  |\ |  \  /  | /+3S
+     \|   \/   |/      | \|   \/   |/
+       \--  --/        |   \--  --/
+        \    /         |    \    /
+          --           |      --
+">
+</PRE>
+This is the basis of <I>half-stepping</I>.  The
+<I>two-winding holding torque</I> is the peak of the composite
+torque curve when two windings are carrying their maximum
+rated current.  For common two-winding permanent magnet or hybrid
+stepping motors, the two-winding holding torque will be:
+<BLOCKQUOTE>
+<I>h</I><SUB>2</SUB> = 2<SUP>0.5</SUP> <I>h</I><SUB>1</SUB>
+</BLOCKQUOTE>
+where:
+<BLOCKQUOTE>
+<I>h</I><SUB>1</SUB> -- single-winding holding torque
+<BR>
+<I>h</I><SUB>2</SUB> -- two-winding holding torque
+</BLOCKQUOTE>
+This assumes that no part of the
+magnetic circuit is saturated and that the torque versus position curve
+for each winding is an ideal sinusoid.
+<P>
+Most permanent-magnet and variable-reluctance stepping motor data sheets quote
+the two-winding holding torque and not the single-winding figure; in part,
+this is because it is larger, and in part, it is because the most common
+full-step controllers always apply power to two windings at once.
+<P>
+If any part of the motor's magnetic circuits is saturated, the two torque
+curves will not add linearly.  As a result, the composite torque will
+be less than the sum of the component torques and the equilibrium
+position of the composite may not be exactly S/2 radians from the
+equilibria of the original.
+<P>
+<I>Microstepping</I> allows even smaller steps by using
+different currents through the two motor windings, as shown in Figure 2.3:
+<PRE WIDTH=65>
+<B>Figure 2.3</B> <IMG ALIGN="middle" SRC="http://homepage.divms.uiowa.edu/~jones/step/physicsf/3.gif"
+WIDTH= 367 HEIGHT=147 ALT="
+                    -                   -
+                 -/-  \|             -/-  \
+      \        / /   \-\--         / /   \-
+       \-3S   / /  /  \|\  \+1S   / /  /  \
+     \|-\----+-/--/----\-o--\----+-/--/---
+      \  \  / /  /-1S  |\ \  \  / /  /+3S
+     \ \   /-/--       | \ \   /-/--
+       -\-  /          |   -\-  /
+          -                   -
+">
+</PRE>
+For a two-winding variable reluctance or permanent magnet motor, assuming
+nonsaturating magnetic circuits, and assuming perfectly sinusoidal torque
+versus position curves for each motor winding, the following formula gives
+the key characteristics of the composite torque curve:
+<BLOCKQUOTE>
+<I>h</I> = ( <I>a</I><SUP>2</SUP> + <I>b</I><SUP>2</SUP> )<sup>0.5</sup>
+<BR>
+<I>x</I> = ( S / (&pi; / 2) )
+           <I>arctan</I>( <I>b</I> / <I>a</I> ) 
+</BLOCKQUOTE>
+Where:
+<BLOCKQUOTE>
+<I>a</I> -- torque applied by winding with equilibrium at 0 radians.
+<BR>
+<I>b</I> -- torque applied by winding with equilibrium at S radians.
+<BR>
+<I>h</I> -- holding torque of composite.
+<BR>
+<I>x</I> -- equilibrium position, in radians.
+<BR>
+S -- step angle, in radians.
+</BLOCKQUOTE>
+In the absence of saturation, the torques <I>a</I> and <I>b</I> are directly
+proportional to the currents through the corresponding windings.  It is
+quite common to work with normalized currents and torques, so that the
+single-winding holding torque or the maximum current allowed in one motor
+winding is 1.0.
+
+<P>
+<H3><A NAME=friction>Friction and the Dead Zone</A></H3>
+<P>
+The torque versus position curve shown in Figure 2.1 does not take into
+account the torque the motor must exert to overcome friction.  Note that
+frictional forces may be divided into two large categories, static or sliding
+friction, which requires a constant torque to overcome, regardless of
+velocity, and dynamic friction or viscous drag, which offers a resistance that
+varies with velocity.  Here, we are concerned with the impact of static
+friction.  Suppose the torque needed to overcome the static friction on
+the driven system is 1/2 the peak torque of the motor, as illustrated in
+Figure 2.4.
+<PRE WIDTH=65>
+<B>Figure 2.4</B> <IMG ALIGN="middle" SRC="http://homepage.divms.uiowa.edu/~jones/step/physicsf/4.gif"
+WIDTH=367 HEIGHT=127 ALT="
+                 ---   |             ---
+     _ _ _ _ _ / _ _ \ | _ _ _ _ _ / _ _ \
+              /       \|          /       
+     ---+----/----+----\----+----/----+---
+     _ -3S _/_ _ _-S _ |\_ +S_ _/_ _ +3S _
+     \     /           | \     /
+       ---             |   ---
+">
+</PRE>
+The dotted lines in Figure 2.4 show the torque needed to overcome friction;
+only that part of the torque curve outside the dotted lines is available to
+move the rotor.  The curve showing the available torque as a function of
+shaft angle is the difference between these curves, as shown in Figure 2.5:
+<PRE WIDTH=65>
+<B>Figure 2.5</B> <IMG ALIGN="middle" SRC="http://homepage.divms.uiowa.edu/~jones/step/physicsf/5.gif"
+WIDTH=367 HEIGHT=127 ALT="
+                       |           
+            | |  ---  |||       | |  ---
+               /     \ |           /     \  
+     ---+---|+|---+---|+|---+---|+|---+---
+     \ -3S /      -S   | \ +S  /     +3S 
+       ---  | |       |||  ---  | |
+                       | 
+">
+</PRE>
+Note that the consequences of static friction are twofold.  First, the total
+torque available to move the load is reduced, and second, there is a
+<I>dead zone</I>
+about each of the equilibria of the ideal motor.  If the motor rotor is
+positioned anywhere within the dead zone for the current equilibrium position,
+the frictional torque will balance the torque applied by the motor windings,
+and the rotor will not move.  Assuming an ideal sinusoidal
+torque versus position curve in the absence of friction,
+the angular width of these dead zones will be:
+<BLOCKQUOTE>
+<I>d</I> = 2 ( S / (&pi; / 2))
+             <I>arcsin</I>( <I>f</I> / <I>h</I> )
+         = ( S / (&pi; / 4))
+             <I>arcsin</I>( <I>f</I> / <I>h</I> )
+</BLOCKQUOTE>
+where:
+<BLOCKQUOTE>
+<I>d</I> -- width of dead zone, in radians
+<BR>
+S -- step angle, in radians
+<BR>
+<I>f</I> -- torque needed to overcome static friction
+<BR>
+<I>h</I> -- holding torque
+</BLOCKQUOTE>
+<P>
+The important thing to note about the dead zone is that it limits the ultimate
+positioning accuracy.  For the example,
+where the static friction is 1/2 the peak torque, a 90&deg; per step motor
+will have dead-zones 60&deg; wide.  That means that successive steps may be
+as large as 150&deg; and as small as 30&deg;, depending on where in the
+dead zone the rotor stops after each step!
+<P>
+The presence of a dead zone has a significant impact on the
+utility of microstepping!  If the dead zone is x&deg; wide, then microstepping
+with a step size smaller than x&deg; may not move the rotor at all.  Thus,
+for systems intended to use high resolution microstepping, it is very important
+to minimize static friction.
+<P>
+This entire discussion of static friction is oversimplified because we
+assumed that the force needed to overcome static friction is a
+constant that is independent of velocity.  This is a useful approximation,
+but real sliding contact frequently exhibits another phenomonon, sometimes
+described as <I>stiction</I>.  In real systems, there is frequently a near
+constant static friction, independent of velocity, so long as the velocity
+is nonzero.  When the velocity falls sufficiently close to zero, however,
+the frictional force rises because the sliding surfaces stick.
+<P>
+<H2><A NAME=dynamics>Dynamics</A></H2>
+<P>
+Each time you step the motor, you electronically move the equilibrium
+position S radians.  This moves the entire curve illustrated in Figure 2.1
+a distance of S radians, as shown in Figure 2.6:
+<PRE WIDTH=65>
+<B>Figure 2.6</B> <IMG ALIGN="middle" SRC="http://homepage.divms.uiowa.edu/~jones/step/physicsf/6.gif"
+WIDTH=367 HEIGHT=127 ALT="
+                 ---  ---            ---
+      \        /    /\ |  \        /    /\
+       \      /    /  \|   \      /    /    
+     ---+----/----+----o----o----/----+---
+      -3S\  /    /  old|\ new\  /    /+3S
+     \    \/    /      | \    \/    /
+       ---  ---        |   ---  ---
+">
+</PRE>
+The first thing to note about the process of taking one step is that
+the maximum available torque is at a minimum when the rotor is halfway
+from one step to the next.  This minimum determines the <I>running torque</I>,
+the maximum torque the motor can drive as it steps slowly forward.  For common
+two-winding permanent magnet motors with ideal sinusoidal torque versus
+position curves and holding torque h, this will be h/(2<SUP>0.5</SUP>).
+If the motor is stepped by powering two windings at a time, the running
+torque of an ideal two-winding permanent magnet motor will be the same as
+the single-winding holding torque.
+<P>
+It shoud be noted that at higher stepping speeds, the running torque is
+sometimes defined as the <I>pull-out torque</I>.  That is, it is the maximum
+frictional torque the motor can overcome on a rotating load before the load
+is pulled out of step by the friction.  Some motor data sheets define a second
+torque figure, the <I>pull-in torque</I>.  This is the maximum frictional
+torque that the motor can overcome to accelerate a stopped load to synchronous
+speed.  The pull-in torques documented on stepping motor data sheets are of
+questionable value because the pull-in torque depends on the moment of
+inertia of the load used when they were measured, and few motor data sheets
+document this!
+<P>
+In practice, there is always some friction, so after the
+equilibrium position moves one step, the rotor is likely to oscillate
+briefly about the new equilibrium position.  The resulting trajectory
+may resemble the one shown in Figure 2.7:
+<PRE WIDTH=65>
+<B>Figure 2.7</B> <IMG ALIGN="middle" SRC="http://homepage.divms.uiowa.edu/~jones/step/physicsf/7.gif"
+WIDTH=390 HEIGHT=127 ALT="
+          |
+        0 |---. 
+ Shaft    |   :\     ___
+ Angle  S |   :.\.../...\....._---___
+          |      \_/      ---
+         -+---------------------------
+          |    Time ---&gt;
+">
+</PRE>
+Here, the trajectory of the equilibrium position is shown as a dotted
+line, while the solid curve shows the trajectory of the motor rotor.
+<P>
+<H3><A NAME=resonance>Resonance</A></H3>
+<P>
+The resonant frequency of the motor rotor depends on the amplitude of
+the oscillation; but as the amplitude decreases, the resonant
+frequency rises to a well-defined small-amplitude frequency.  This
+frequency depends on the step angle and on the ratio of the holding
+torque to the moment of inertia of the rotor.  Either a higher torque
+or a lower moment will increase the frequency!
+<P>
+Formally, the small-amplitude resonance can be computed as follows:
+First, recall Newton's law for angular acceleration:
+<BLOCKQUOTE>
+T = &micro; A
+</BLOCKQUOTE>
+Where:
+<BLOCKQUOTE>
+T -- torque applied to rotor
+<BR>
+&micro; -- moment of inertia of rotor and load
+<BR>
+A -- angular acceleration, in radians per second per second
+</BLOCKQUOTE>
+We assume that, for small amplitudes, the torque on the rotor can be
+approximated as a linear function of the displacement from the equilibrium
+position.  Therefore, Hooke's law applies:
+<BLOCKQUOTE>
+T = -<I>k</I> &theta;
+</BLOCKQUOTE>
+where:
+<BLOCKQUOTE>
+<I>k</I> -- the "spring constant" of the system, in torque units per radian
+<BR>
+&theta; -- angular position of rotor,
+in radians
+</BLOCKQUOTE>
+We can equate the two formulas for the torque to get:
+<BLOCKQUOTE>
+&micro; A = -<I>k</I> &theta;
+</BLOCKQUOTE>
+Note that acceleration is the second derivitive of position with
+respect to time:
+<BLOCKQUOTE>
+A = d<sup>2</sup>&theta;/dt<sup>2</sup>
+</BLOCKQUOTE>
+so we can rewrite this the above in differential equation form:
+<BLOCKQUOTE>
+d<sup>2</sup>&theta;/dt<sup>2</sup>
+         = -(<I>k</I>/&micro;) &theta;
+</BLOCKQUOTE>
+To solve this, recall that, for:
+<BLOCKQUOTE>
+f( <I>t</I> ) = <I>a sin bt</I>
+</BLOCKQUOTE>
+The derivitives are:
+<BLOCKQUOTE>
+df( <I>t</I> )/d<I>t</I> = <I>ab cos bt</I>
+<BR>
+d<sup>2</sup>f( <I>t</I> )/d<I>t</I><sup>2</sup>
+      = -<I>ab</I><sup>2</sup> <I>sin bt</I>
+      = -<I>b</I><sup>2</sup> f(<I>t</I>)
+</BLOCKQUOTE>
+Note that, throughout this discussion, we assumed that the rotor is
+resonating.  Therefore, it has an equation of motion something like:
+<BLOCKQUOTE>
+&theta; = <I>a sin</I> (2&pi; <I>f</I> t)
+<BR>
+<I>a</I> = angular amplitude of resonance
+<BR>
+<I>f</I> = resonant frequency
+</BLOCKQUOTE>
+This is an admissable solution to the above differential equation if we
+agree that:
+<BLOCKQUOTE>
+<I>b</I> = 2&pi; <I>f</I>
+<BR>
+<I>b</I><sup>2</sup> = <I>k</I>/&micro;
+</BLOCKQUOTE>
+Solving for the resonant frequency <I>f</I> as a function of <I>k</I> and
+&micro;, we get:
+<BLOCKQUOTE>
+<I>f</I> = ( <I>k</I>/&micro; )<sup>0.5</sup>
+             / 2&pi;
+</BLOCKQUOTE>
+It is crucial to note that it is the moment of inertia of the rotor plus
+any coupled load that matters.  The moment of the rotor, in isolation,
+is irrelevant!  Some motor data sheets include information on resonance,
+but if any load is coupled to the rotor, the resonant frequency will
+change!
+<P>
+In practice, this oscillation can cause significant problems when the
+stepping rate is anywhere near a resonant frequency of the system;
+the result frequently appears as random and uncontrollable motion.
+<P>
+<H4>Resonance and the Ideal Motor</H4>
+<P>
+Up to this point, we have dealt only with the small-angle spring constant
+<I>k</I> for the system.  This can be measured experimentally, but if the
+motor's torque versus position curve is sinusoidal, it is also a simple
+function of the motor's holding torque.  Recall that:
+<BLOCKQUOTE>
+T = -<I>h</I>
+    sin( ((&pi; / 2) / S) &theta; )
+</BLOCKQUOTE>
+The small angle spring constant <I>k</I> is the negative derivitive of T at
+the origin.
+<BLOCKQUOTE>
+<I>k</I> = -dT / d&theta;
+  = - (- <I>h</I> ((&pi; / 2) / S) cos( 0 ) )
+  = (&pi; / 2)(<I>h</I> / S)
+</BLOCKQUOTE>
+Substituting this into the formula for frequency, we get:
+<BLOCKQUOTE>
+<I>f</I> = ( (&pi; / 2)(<I>h</I> / S) /
+        &micro; )<sup>0.5</sup> / 2&pi;
+         = ( <I>h</I> / ( 8&pi; &micro; S ) )<sup>0.5</sup>
+</BLOCKQUOTE>
+Given that the holding torque and resonant frequency of the system are
+easily measured, the easiest way to determine the moment of inertia of
+the moving parts in a system driven by a stepping motor is indirectly
+from the above relationship!
+<BLOCKQUOTE>
+&micro; = <I>h</I>
+      / ( 8&pi; <I>f</I><SUP>&nbsp;2</SUP> S )
+</BLOCKQUOTE>
+For practical purposes, it is usually not the torque or the moment of
+inertia that matters, but rather, the maximum sustainable acceleration
+that matters!  Conveniently, this is a simple function of the resonant
+frequency!  Starting with the Newton's law for angular acceleration:
+<BLOCKQUOTE>
+A = T / &micro;
+</BLOCKQUOTE>
+We can substitute the above formula for the moment of inertia as a function
+of resonant frequency, and then substitute the maximum sustainable running
+torque as a function of the holding torque to get:
+<BLOCKQUOTE>
+A = ( <I>h</I> / ( 2<SUP>0.5</SUP> ) ) /
+    ( <I>h</I>
+      / ( 8&pi; <I>f</I><SUP>&nbsp;2</SUP> S )
+    )
+  =  8&pi; S <I>f</I><SUP>&nbsp;2</SUP>
+     / (2<SUP>0.5</SUP>)
+</BLOCKQUOTE>
+Measuring acceleration in steps per second squared instead of in radians per
+second squared, this simplifies to:
+<BLOCKQUOTE>
+A<SUB>steps</SUB> = A / S
+   = 8&pi; <I>f</I><SUP>&nbsp;2</SUP>
+     / (2<SUP>0.5</SUP>)
+</BLOCKQUOTE>
+Thus, for an ideal motor with a sinusoidal torque versus rotor position
+function, the maximum acceleration in steps per second squared is a trivial
+function of the resonant frequency of the motor and rigidly coupled load!
+<P>
+For a two-winding permanent-magnet or variable-reluctance motor, with
+an ideal sinusoidal torque-versus-position characteristic, the
+two-winding holding torque is a simple function of the single-winding
+holding torque:
+<BLOCKQUOTE>
+<I>h</I><SUB>2</SUB> = 2<SUP>0.5</SUP> <I>h</I><SUB>1</SUB>
+</BLOCKQUOTE>
+Where:
+<BLOCKQUOTE>
+<I>h</I><SUB>1</SUB> -- single-winding holding torque
+<BR>
+<I>h</I><SUB>2</SUB> -- two-winding holding torque
+</BLOCKQUOTE>
+Substituting this into the formula for resonant frequency, we can find
+the ratios of the resonant frequencies in these two operating modes:
+<BLOCKQUOTE>
+<I>f</I><SUB>1</SUB> = ( <I>h</I><SUB>1</SUB> / ... )<SUP>0.5</SUP>
+<BR>
+<I>f</I><SUB>2</SUB> = ( <I>h</I><SUB>2</SUB> / ... )<SUP>0.5</SUP>
+                     = ( 2<SUP>0.5</SUP> <I>h</I><SUB>1</SUB>
+                                             / ... )<SUP>0.5</SUP>
+		     = 2<SUP>0.25</SUP>
+                       ( <I>h</I><SUB>1</SUB> / ... )<SUP>0.5</SUP>
+                     = 2<SUP>0.25</SUP> <I>f</I><SUB>1</SUB>
+                     = 1.189... <I>f</I><SUB>1</SUB>
+</BLOCKQUOTE>
+This relationship only holds if the torque provided by the motor does not
+vary appreciably as the stepping rate varies between these two frequencies.
+<P>
+In general, as will be discussed <A HREF="#later">later</A>, the available
+torque will tend to remain relatively constant up until some cutoff
+stepping rate, and then it will fall.  Therefore, this relationship only
+holds if the resonant frequencies are below this cutoff stepping rate.
+At stepping rates above the cutoff rate, the two frequencies will be closer to
+each other!
+<P>
+<H3><A NAME=damping>Living with Resonance</A></H3>
+<P>
+If a rigidly mounted stepping motor is rigidly coupled to a frictionless
+load and then stepped at a frequency near the resonant frequency, energy
+will be pumped into the resonant system, and the result of this is that the
+motor will literally lose control.  There are three basic ways to deal with
+this problem:
+<P>
+<H4>Controlling resonance in the mechanism</H4>
+<P>
+Use of elastomeric motor mounts or elastomeric couplings between motor and
+load can drain energy out of the resonant system, preventing energy from
+accumulating to the extent that it allows the motor rotor to escape from
+control.
+<P>
+Or, viscous damping can be used.  Here, the damping will not only draw energy
+out of the resonant modes of the system, but it will also subtract from the
+total torque available at higher speeds.  Magnetic eddy current damping is
+equivalent to viscous damping for our purposes.
+<P>
+Figure 2.8 illustrates the use of elastomeric couplings and viscous damping
+in two typical stepping motor applications, one using a lead screw to drive
+a load, and the other using a tendon drive:
+<PRE>
+<B>Figure 2.8</B> <IMG ALIGN="middle" SRC="http://homepage.divms.uiowa.edu/~jones/step/physicsf/8.gif"
+WIDTH=280 HEIGHT=165 ALT="
+    _______   
+   |       |  _b         ___        _
+   | motor |=|_|=/=/=/=/|___|/=/=/=|_|
+   |_______|           |_____|c     d
+       |___|a         e |___| 
+                  _____|_____|_____
+       ___        -----------------
+      / b_\__________________________d
+     | (o)_|_______________________(o)
+      \___/            |_____|c      
+      |___|a          e |___| 
+                  _____|_____|_____
+                  -----------------
+">
+</PRE>
+In Figure 2.8, elastomeric moter mounts are shown at a and elastomeric
+couplings between the motor and load are shown at b and c.  The end bearing
+for the lead screw or tendon, at d, offers an opportunity for viscous damping,
+as do the ways on which the load slides, at e.  Even the friction found in
+sealed ballbearings or teflon on steel ways can provide enough damping to
+prevent resonance problems.
+<P>
+<H4>Controlling resonance in the low-level drive circuitry</H4>
+<P>
+A resonating motor rotor will induce an alternating current voltage in the
+motor windings.  If some motor winding is not currently being driven, shorting
+this winding will impose a drag on the motor rotor that is exactly equivalent
+to using a magnetic eddy current damper.
+<P>
+If some motor winding is currently being driven, the AC voltage induced by
+the resonance will tend to modulate the current through the winding.  Clamping
+the motor current with an external inductor will counteract the resonance.
+Schemes based on this idea are incorporated into some of the drive circuits
+illustrated in later sections of this tutorial.
+<P>
+<H4>Controlling resonance in the high-level control system</H4>
+<P>
+The high level control system can avoid driving the motor at known resonant
+frequencies, accelerating and decelerating through these frequencies and never
+attempting sustained rotation at these speeds.
+<P>
+Recall that the resonant frequency of a motor in half-stepped mode will vary
+by up to 20% from one half-step to the next.  As a result, half-stepping
+pumps energy into the resonant system less efficiently than full stepping.
+Furthermore, when operating near these resonant frequencies, the motor
+control system may preferentially use only the two-winding half steps when
+operating near the single-winding resonant frequency, and only the
+single-winding half steps when operating near the two-winding resonant
+frequency.  Figure 2.9 illustrates this:
+<PRE>
+<B>Figure 2.9</B> <IMG ALIGN="middle" SRC="http://homepage.divms.uiowa.edu/~jones/step/physicsf/9.gif"
+WIDTH=370 HEIGHT=217 ALT="
+          |                  Resonances
+          |  Two Winding      |     |
+          |xxxxxxxxxxxxxxxxxxxxxxx  |
+          |                   |   - |
+   Torque |------------------   -_ |  _
+          |  One Winding     | |  xxxx -_
+          |                  | |   | |xx -_
+          |                  | |   | |  xx
+          |                  | |   | |    x
+       ---+--------------------------------
+          |        Speed
+">
+</PRE>
+The darkened curve in Figure 2.9 shows the operating torque achieved by a
+simple control scheme that delivers useful torque over a wide range of speeds
+despite the fact that the available torque drops to zero at each resonance
+in the system.
+This solution is particularly effective if the resonant frequencies are
+sharply defined and well separated.  This will be the case in minimally
+damped systems operating well below the cutoff speed defined in the next
+section.
+<P>
+<H3><A NAME=torque>Torque versus Speed</A></H3>
+<P>
+An important consideration in designing high-speed stepping motor
+controllers is the effect of the inductance of the motor windings.
+As with the torque versus angular position information, this is frequently
+poorly documented in motor data sheets, and indeed, for variable reluctance
+stepping motors, it is not a constant!  The inductance of the motor
+winding determines the rise and fall time of the current through the windings.
+While we might hope for a square-wave plot of current versus time,
+the inductance forces an exponential, as illustrated in Figure 2.10:
+<PRE>
+<B>Figure 2.10</B> <IMG ALIGN="middle" SRC="http://homepage.divms.uiowa.edu/~jones/step/physicsf/10.gif"
+WIDTH=251 HEIGHT=134 ALT="
+   |
+ 1 |      ........_______
+   |ideal :    _--       :\
+   |      :  /           : \
+   |      : /5v          :  \_
+ 0 |______:/             :....--____
+   |   
+  -+--------------------------------
+   |    Time ---&gt;
+">
+</PRE>
+The details of the current-versus-time function through each winding depend
+as much on the drive circuitry as they do on the motor itself!
+It is quite common for the time constants of these exponentials to differ.
+The rise time is determined by the drive voltage and drive circuitry, while
+the fall time depends on the circuitry used to dissipate the stored energy
+in the motor winding.
+<P>
+At low stepping rates, the rise and fall times of the current through
+the motor windings has little effect on the motor's performance, but at
+higher speeds, the effect of the inductance of the motor windings is to
+reduce the available torque, as shown in Figure 2.11:
+<PRE>
+<B>Figure 2.11</B> <IMG ALIGN="middle" SRC="http://homepage.divms.uiowa.edu/~jones/step/physicsf/11.gif"
+WIDTH=370 HEIGHT=217 ALT="
+   |      
+ T |------              --- Running Torque
+   |      |\_  Resonant Speed
+   |      |  \ |
+   |      |    |
+   | Cutoff   | |\_    Max Speed
+   |  Speed        \_  |
+   |           V     \_|
+  -+--------------------------------
+ 0 |       Speed
+">
+</PRE>
+The motor's <I>maximum speed</I> is defined as the speed at which the available
+torque falls to zero.  Measuring maximum speed can be difficult when there are
+resonance problems, because these cause the torque to drop to zero prematurely.
+The <I>cutoff speed</I> is the speed above which the torque begins to fall.
+When the motor is operating below its cutoff speed, the rise and fall times
+of the current through the motor windings occupy an insignificant fraction
+of each step, while at the cutoff speed, the step duration is comparable to
+the sum of the rise and fall times.  Note that a sharp cutoff is rare, and
+therefore, statements of a motor's cutoff speed are, of necessity,
+approximate.
+<P>
+The details of the torque versus speed relationship depend on the details
+of the rise and fall times in the motor windings, and these depend on the
+motor control system as well as the motor.  Therefore, the cutoff speed
+and maximum speed for any particular motor depend, in part, on the control
+system!  The torque versus speed curves published in motor data sheets
+occasionally come with documentation of the motor controller used to obtain
+that curve, but this is far from universal practice! 
+<P>
+Similarly, the resonant speed depends on the moment of inertia of the entire
+rotating system, not just the motor rotor, and the extent to which the
+torque drops at resonance depends on the presence of mechanical damping
+and on the nature of the control system.  Some published torque versus speed
+curves show very clear resonances without documenting the moment of inertia
+of the hardware that may have been attached to the motor shaft in order to
+make torque measurements.
+<P>
+The torque versus speed curve shown in Figure 2.11 is typical of the simplest
+of control systems.  More complex control systems sometimes introduce
+electronic resonances that act to increase the available torque above the
+motor's low-speed torque.  A common result of this is a peak in the available
+torque near the cutoff speed.
+<P>
+<H2><A NAME=electro> Electromagnetic Issues </A></H2>
+<P>
+In a permanent magnet or hybrid stepping motor, the magnetic field of the
+motor rotor changes with changes in shaft angle.  The result of this is that
+turning the motor rotor induces an AC voltage in each motor winding.  This
+is referred to as the <I>counter EMF</I> because the voltage induced in each
+motor winding is always in phase with and counter to the ideal waveform
+required to turn the motor in the same direction.
+Both the frequency and amplitude of the counter EMF increase
+with rotor speed, and therefore, counter EMF contributes to the decline in
+torque with increased stepping rate.
+<P>
+Variable reluctance stepping motors also induce counter EMF!  This is because,
+as the stator winding pulls a tooth of the rotor towards its equilibrium
+position, the reluctance of the magnetic circuit declines.  This decline
+increases the inductance of the stator winding, and this change in inductance
+demands a decrease in the current through the winding in order to conserve
+energy.  This decrease is evidenced as a counter EMF.
+<P>
+The reactance (inductance and resistance) of the motor windings limits the
+current flowing through them.  Thus, by ohms law, increasing the voltage
+will increase the current, and therefore increase the available torque.
+The increased voltage also serves to overcome the counter EMF induced in the
+motor windings, but the voltage cannot be increased arbitrarily!  Thermal,
+magnetic and electronic considerations all serve to limit the useful torque
+that a motor can produce.
+<P>
+The heat given off by the motor windings is due to both simple resistive
+losses, eddy current losses, and hysteresis losses.  If this heat is not
+conducted away from the motor adequately, the motor windings will overheat.
+The simplest failure this can cause is insulation breakdown, but it can also
+heat a permanent magnet rotor to above its curie temperature, the temperature
+at which permanent magnets lose their magnetization.  This is a particular
+risk with many modern high strength magnetic alloys.
+<P>
+Even if the motor is attached to an adequate heat sink, increased drive
+voltage will not necessarily lead to increased torque.  Most motors are
+designed so that, with the rated current flowing through the windings, the
+magnetic circuits of the motor are near saturation.  Increased current will
+not lead to an appreciably increased magnetic field in such a motor!
+<P>
+Given a drive system that limits the current through each motor winding to
+the rated maximum for that winding, but uses high voltages to achieve a higher
+cutoff torque and higher torques above cutoff, there are other limits that
+come into play.  At high speeds, the motor windings must, of necessity, carry
+high frequency AC signals.  This leads to eddy current losses in the magnetic
+circuits of the motor, and it leads to skin effect losses in the motor
+windings.
+<P>
+Motors designed for very high speed running should, therefore, have magnetic
+structures using very thin laminations or even nonconductive ferrite materials,
+and they should have small gauge wire in their windings to minimize skin
+effect losses.  Common high torque motors have large-gauge motor windings
+and coarse core laminations, and at high speeds, such motors can easily
+overheat and should therefore be derated accordingly for high speed running!
+<P>
+It is also worth noting that the best way to demagnetize something is to
+expose it to a high frequency-high amplitude magnetic field.  Running the
+control system to spin the rotor at high speed when the rotor is actually
+stalled, or spinning the rotor at high speed against a control system
+trying to hold the rotor in a fixed position will both expose the rotor
+to a high amplitude high-frequency field.  If such operating conditions are
+common, particularly if the motor is run near the curie temperature of the
+permanent magnets, demagnetization is a serious risk and the field strengths
+(and expected torques) should be reduced accordingly!
+<P>
+
+</BODY>
+
+<!-- Mirrored from homepage.divms.uiowa.edu/~jones/step/physics.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:53 GMT -->
+</HTML>

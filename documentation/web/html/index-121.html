@@ -1,0 +1,314 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<!-- Mirrored from web.archive.org/web/19981212031618/http://www.openhardware.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<HEAD>
+
+
+<script type="text/javascript" src="http://web.archive.org/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app16.us.archive.org";archive_analytics.values.server_ms=254;</script>
+<link type="text/css" rel="stylesheet" href="http://web.archive.org/static/css/banner-styles.css"/>
+
+
+   <TITLE>The Open Hardware Certification Program</TITLE>
+   <META HTTP-EQUIV="Keywords" CONTENT="Open Hardware, Free Software">
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="/usr/bin/vi">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="http://web.archive.org/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="http://web.archive.org/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "http://www.openhardware.org/";
+
+var firstYear = 1996;
+var displayDay = "12";
+var displayMonth = "Dec";
+var displayYear = "1998";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="http://web.archive.org/web/" title="Wayback Machine home page"><img src="http://web.archive.org/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="http://web.archive.org/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.openhardware.org/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="19981212031618" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Nov
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 3:16:18 Dec 12, 1998">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="http://web.archive.org/web/19990125101830/http://www.openhardware.org/" title="25 Jan 1999"><strong>JAN</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="http://web.archive.org/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 3:16:18 Dec 12, 1998">12</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="http://web.archive.org/web/19990125101830/http://www.openhardware.org/" title="10:18:30 Jan 25, 1999"><img src="http://web.archive.org/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   1997
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 3:16:18 Dec 12, 1998">1998</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="http://web.archive.org/web/20000303182332/http://www.openhardware.org/" title="3 Mar 2000"><strong>2000</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="http://web.archive.org/web/19981212031618*/http://www.openhardware.org/" title="See a list of every capture for this URL">207 captures</a>
+           <div class="r" title="Timespan for captures of this URL">12 Dec 98 - 29 Apr 16</div>
+       </td>
+       <td class="k">
+       <a href="#" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="http://web.archive.org/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:11:000000000001_1999:-1:110100000000_2000:-1:001020010121_2001:-1:030000000001_2002:-1:002021013040_2003:-1:131120111422_2004:-1:10021532104a_2005:-1:a61100000001_2006:-1:020102310201_2007:-1:010000010001_2008:-1:011120001012_2009:-1:011100000000_2010:-1:011100011111_2011:-1:010110114311_2012:-1:921102021131_2013:-1:212112111212_2014:-1:211110010002_2015:-1:001011011100_2016:-1:204100000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(http://web.archive.org/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(http://web.archive.org/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<CENTER>
+<H1><IMG SRC="http://web.archive.org/web/19981212031618/http://www.openhardware.org/Pics/open_hardware.gif" ALT="Open Hardware" HEIGHT=272 WIDTH=245>
+<BR>
+The Open Hardware Certification Program </H1>
+</CENTER>
+
+<HR>
+Please use a server near you:
+
+<CENTER><P>
+<A HREF="http://web.archive.org/web/19981212031618/http://www.at.debian.org/OpenHardware/">Austria</A>&nbsp;
+<A HREF="http://web.archive.org/web/19981212031618/http://www.au.debian.org/OpenHardware/">Australia</A>&nbsp;
+<A HREF="http://web.archive.org/web/19981212031618/http://www.openhardware.org/">France</A>&nbsp;
+<A HREF="http://web.archive.org/web/19981212031618/http://www.de.debian.org/OpenHardware/">Germany</A>&nbsp;
+<A HREF="http://web.archive.org/web/19981212031618/http://www.il.debian.org/OpenHardware/">Israel</A>&nbsp;
+<A HREF="http://web.archive.org/web/19981212031618/http://www.jp.debian.org/OpenHardware/">Japan</A>&nbsp;
+<A HREF="http://web.archive.org/web/19981212031618/http://www.kr.debian.org/OpenHardware/">Korea</A>&nbsp;
+<A HREF="http://web.archive.org/web/19981212031618/http://www.nl.debian.org/OpenHardware/">Netherlands</A>&nbsp;
+<A HREF="http://web.archive.org/web/19981212031618/http://www.es.debian.org/OpenHardware/">Spain</A>&nbsp;
+<A HREF="http://web.archive.org/web/19981212031618/http://www.uk.debian.org/OpenHardware/">United Kingdom</A>&nbsp;
+<A HREF="http://web.archive.org/web/19981212031618/http://www.us.debian.org/OpenHardware/">United States</A>
+ </P></CENTER>
+
+<P><B><I>Supported by</I>: Uniforum, Free Software Foundation, Debian, FreeBSD Inc.
+<br>
+Linux International and its Member Companies:
+Digital Equipment Corporation, Redhat Software,
+Caldera, WorkGroup Solutions, Yggdrasil Computing, Metrolink, Linux Hardware
+Solutions, InfoMagic, VA Research, Xi Graphics, Tower Technology, Just
+Logic Technologies, Specialized Systems Consultants, H&amp;L Software, Pacific
+HiTech, Quant-X Service &amp; Consulting Ges.m.b.H., Sebit Ltd, Tech-X.
+<br>
+4Front Technologies, Cyclades, Sangoma, Plextor.
+</B></P>
+
+<P>The Open Hardware Certification Program is a self-certification program
+for hardware manufacturers. By certifying a hardware device as <I>Open</I>,
+the manufacturer makes a set of promises about the availability of documentation
+for programming the device-driver interface of a specific hardware device.
+While the certification does not guarantee that a device driver is available
+for a specific device and operating system, it does guarantee that anyone
+who wants to write one can get the information necessary to do so. There
+is no charge to participate in the program. Vendors of certified equipment
+have the right to apply the <I>Open Hardware</I> logo to their packaging,
+and to state in advertising that their devices are certified. Users who
+buy equipment with the <I>Open Hardware</I> logo are assured that a change
+in operating system or even the demise of the manufacturer will not make
+it impossible to get new software written for their devices. </P>
+
+<P>There is no charge for this certification program. Manufacturers go
+through a simple self-certification process and can immediately use the
+<I>Open Hardware</I> logo and can state that their devices are certified.
+</P>
+
+<p>
+If you have questions about the program, please write to Vincent Renardias at
+&lt;<a href="mailto:vincent@openhardware.org">vincent@openhardware.org</a>&gt;.
+</p>
+
+<P><I>Open Hardware</I> and <I>Debian</I> are trademarks of <I>Software
+in the Public Interest</I>, the non-profit organization that produces the
+<A HREF="http://web.archive.org/web/19981212031618/http://www.debian.org/">Debian GNU/Linux Distribution</A>.
+
+<HR>
+<P>
+
+<H2>Open Hardware Resources</H2>
+
+<UL>
+<LI><FONT SIZE=+1><A HREF="http://web.archive.org/web/19981212031618/http://www.openhardware.org/Catalog/index.html">The Open Hardware Catalog</A></FONT></LI><P>
+
+<LI><FONT SIZE=+1><A HREF="http://web.archive.org/web/19981212031618/http://www.openhardware.org/conditions.html">Conditions for Acceptance</A></FONT></LI>
+
+<LI><FONT SIZE=+1><A HREF="http://web.archive.org/web/19981212031618/http://www.openhardware.org/application.txt">Application Form</A></FONT></LI>
+
+<LI><FONT SIZE=+1><A HREF="http://web.archive.org/web/19981212031618/http://www.openhardware.org/news.html">What's new on this site?</A></FONT></LI>
+
+<LI><FONT SIZE=+1><A HREF="http://web.archive.org/web/19981212031618/http://www.openhardware.org/list-archives/">Mailing Lists archives</A></FONT></LI>
+</UL>
+
+<P>
+<HR><FONT SIZE=-1>Please send comments on these webpages to
+   <A HREF="mailto:webmaster@openhardware.org">webmaster@openhardware.org</A>.
+</FONT></P>
+
+<P><FONT SIZE=-1>Last Modified: 06 Sep 1998. Copyright &copy;1997-98 SPI;
+See <A HREF="http://web.archive.org/web/19981212031618/http://www.openhardware.org/license.html">license
+terms.</A></FONT> 
+<HR>
+
+</BODY>
+
+<!-- Mirrored from web.archive.org/web/19981212031618/http://www.openhardware.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:31 GMT -->
+</HTML>
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 3:16:18 Dec 12, 1998 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:03:30 May 13, 2016.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

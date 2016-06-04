@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PostProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="0.9.8.0">
+  <PostFile>{$comment} Made using CamBam - http://www.cambam.co.uk {$endcomment}
+{$header}
+{$mops}
+{$footer}
+</PostFile>
+  <Header>{$comment} {$cbfile.name} {$date} {$endcomment}
+{$tooltable}
+{$cbfile.header}
+{$units} {$distancemode} {$velocitymode} {$cuttercomp(off)}
+{$toolchange(first)}
+{$clearance}</Header>
+  <Footer>{$clearance}
+{$spindle(off)}
+{$endrewind}
+{$cbfile.footer}
+</Footer>
+  <ToolChange>{$clearance}
+{$comment} T{$tool.index} : {$tool.diameter} {$endcomment}
+T{$tool.index} M6</ToolChange>
+  <MOP>{$comment} {$mop.name} {$endcomment}
+{$toolchange}
+{$velocitymode} {$workplane}
+{$mop.header}
+{$spindle} {$s}
+{$blocks}
+{$mop.footer}
+  </MOP>
+  <Drill>{$comment}Debut percage{$endcomment}
+{$g0} Z{$mop.retractheight}
+{$g0} {$x} {$y}
+{$g1} {$z} 
+{$g1} Z{$mop.retractheight}
+{$comment}Fin percage{$endcomment}
+ </Drill>
+  <MinimumArcLength>0.0001</MinimumArcLength>
+  <MaximumArcRadius>10000</MaximumArcRadius>
+</PostProcessor>

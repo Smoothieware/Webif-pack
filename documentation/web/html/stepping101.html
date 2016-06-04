@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Template.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from www.stepcontrol.com/stepping101.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:53 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Advanced Micro Systems - Step Motor and System Training Overview</title>
+<!-- InstanceEndEditable -->
+<link href="http://www.stepcontrol.com/css/twoColFixLtHdr.css" rel="stylesheet" type="text/css" /><!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.twoColFixLtHdr #sidebar1 { width: 230px; }
+</style>
+<![endif]--><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColFixLtHdr #sidebar1 { padding-top: 30px; }
+.twoColFixLtHdr #mainContent { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15000819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body class="twoColFixLtHdr" onload="MM_preloadImages('http://www.stepcontrol.com/images/buttons/btnProductCatalog_f2.jpg','http://www.stepcontrol.com/images/buttons/btnSelectionGuide_f2.jpg','http://www.stepcontrol.com/images/buttons/btnAMSWorldwide_f2.jpg','http://www.stepcontrol.com/images/buttons/btnGettingStarted_f2.jpg','http://www.stepcontrol.com/images/buttons/btnTechDocuments_f2.jpg','http://www.stepcontrol.com/images/buttons/btnApplications_f2.jpg','http://www.stepcontrol.com/images/buttons/btn_FaceBook_f2.jpg','http://www.stepcontrol.com/images/buttons/btn_LinkedIn_f2.jpg','http://www.stepcontrol.com/images/buttons/btn_Twitter_f2.jpg','http://www.stepcontrol.com/images/buttons/btnArrowRight_f2.jpg','http://www.stepcontrol.com/images/sitePictures/TechDocArrow_hover.jpg','http://www.stepcontrol.com/images/buttons/btn_gotoMotors_f2.jpg')">
+
+<div id="container">
+  <div id="header">
+  
+    <div id="SiteTitle"></div>
+    <div id="NavStrip">
+    <table width="853" border="0" cellspacing="0" cellpadding="0">
+  <tr align="center">
+    <td width="695" height="40" align="left" valign="middle">
+       <p><a href="http://www.stepcontrol.com/index.html">Home</a><!-- InstanceBeginEditable name="edit_BreadCrumb" -->&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;<a href="http://www.stepcontrol.com/TechnicalDocuments.html">Technical Documents</a> &nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;<a href="http://www.stepcontrol.com/stepping101.html">stepping101</a><!-- InstanceEndEditable --></p>   
+    </td>
+    <td width="40" valign="middle"><a href="http://www.facebook.com/group.php?gid=108671525847145&amp;v=info"><img src="http://www.stepcontrol.com/images/buttons/btn_FaceBook.jpg" alt="FaceBook" width="23" height="23" border="0" id="Image7" onmouseover="MM_swapImage('Image7','','http://www.stepcontrol.com/images/buttons/btn_FaceBook_f2.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+    <td width="40" valign="middle"><a href="http://www.linkedin.com/companies/596176/Advanced+Micro+Systems?trk=pp_icon"><img src="http://www.stepcontrol.com/images/buttons/btn_LinkedIn.jpg" alt="LinkedIn" width="23" height="23" border="0" id="Image8" onmouseover="MM_swapImage('Image8','','http://www.stepcontrol.com/images/buttons/btn_LinkedIn_f2.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+    <td width="40" valign="middle"><a href="http://twitter.com/stepcontrol"><img src="http://www.stepcontrol.com/images/buttons/btn_Twitter.jpg" alt="Twitter" width="23" height="23" border="0" id="Image9" onmouseover="MM_swapImage('Image9','','http://www.stepcontrol.com/images/buttons/btn_Twitter_f2.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+    <td width="9" valign="middle">&nbsp;</td>
+    <td width="29" valign="middle">&nbsp;</td>
+  </tr>
+</table>
+
+    
+
+    </div>
+    <div id="BodyTop"></div>
+
+  </div> <!-- end #header -->
+
+  <div id="sidebar1">
+   
+    <p><a href="http://www.stepcontrol.com/ProductCatalog.html"><img src="http://www.stepcontrol.com/images/buttons/btnProducts.jpg" alt="Product Catalog" width="224" height="84" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','http://www.stepcontrol.com/images/buttons/btnProducts_f2.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></p>
+
+   
+    <p><a href="http://www.stepcontrol.com/SelectionGuide.html"><img src="http://www.stepcontrol.com/images/buttons/btnSelectionGuide.jpg" alt="Selection Guide" width="224" height="84" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','http://www.stepcontrol.com/images/buttons/btnSelectionGuide_f2.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></p>
+    <p><a href="http://www.stepcontrol.com/GettingStarted.html"><img src="http://www.stepcontrol.com/images/buttons/btnGettingStarted.jpg" alt="Getting Started" width="224" height="84" border="0" id="Image4" onmouseover="MM_swapImage('Image4','','http://www.stepcontrol.com/images/buttons/btnGettingStarted_f2.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></p>
+    <p><a href="http://www.stepcontrol.com/AMSWorldwide.html"><img src="http://www.stepcontrol.com/images/buttons/btnAMSWorldwide.jpg" alt="AMS Worldwide" width="224" height="84" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','http://www.stepcontrol.com/images/buttons/btnAMSWorldwide_f2.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></p>
+ 
+    <p><a href="http://www.stepcontrol.com/TechnicalDocuments.html"><img src="http://www.stepcontrol.com/images/buttons/btnTechDocuments.jpg" alt="Tech Documents" width="224" height="84" border="0" id="Image5" onmouseover="MM_swapImage('Image5','','http://www.stepcontrol.com/images/buttons/btnTechDocuments_f2.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></p>
+    
+    <p><a href="http://www.stepcontrol.com/Applications.html"><img src="http://www.stepcontrol.com/images/buttons/btnApplications.jpg" alt="Applications" width="224" height="84" border="0" id="Image6" onmouseover="MM_swapImage('Image6','','http://www.stepcontrol.com/images/buttons/btnApplications_f2.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></p>
+  </div> 
+  <!-- end #sidebar1 -->
+  <!-- InstanceBeginEditable name="edit_MainContent" -->
+  <div id="mainContent">
+    <table width="590" border="0" align="left" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="425"><h1>Stepper Motor System Basics</h1></td>
+    <td width="144" align="left">
+    
+    <table width="144
+    " border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="55" align="right" valign="middle">&nbsp;</td>
+        <td width="34" align="center" valign="middle" class="pt16_bold">1</td>
+        <td width="55" align="left" valign="middle"><a href="http://www.stepcontrol.com/stepping101/stepping101_Overview_1.html"><img src="http://www.stepcontrol.com/images/buttons/btnArrowRight.jpg" alt="next" width="13" height="17" border="0" id="Image71" onmouseover="MM_swapImage('Image71','','http://www.stepcontrol.com/images/buttons/btnArrowRight_f2.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+      </tr>
+    </table>
+    
+    </td>
+    <td width="21">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h2>Chapters</h2></td>
+    <td align="center" valign="middle" class="pt12_bold_italic">step101.pdf <a href="http://www.stepcontrol.com/pdf/step101.pdf"><img src="http://www.stepcontrol.com/images/sitePictures/imgPDF15.jpg" alt="pdf" width="15" height="15" border="0" align="bottom" /></a></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+    
+ 
+
+  
+    
+	<div id="ProdBodyTable">
+
+  <p><br class="clearfloat" /></p>
+
+
+<table width="550" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left"><p>&nbsp;</p></td>
+  </tr>
+</table>
+
+<table width="590" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><p><img src="http://www.stepcontrol.com/images/stepping101/flow.jpg" alt="Flow" width="382" height="127" border="0" /></p>
+      <p>&nbsp;</p></td>
+    </tr>
+  </table>
+
+ 
+
+    <div id="TechDocTable">
+  <table width="500" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="39" height="30"><a href="http://www.stepcontrol.com/stepping101/stepping101_Overview_1.html"><img src="http://www.stepcontrol.com/images/sitePictures/TechDocArrow.jpg" width="19" height="19" border="0" id="Image72" onmouseover="MM_swapImage('Image72','','http://www.stepcontrol.com/images/sitePictures/TechDocArrow_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+      <td width="461" height="30" class="pt14_reg"><a href="http://www.stepcontrol.com/stepping101/stepping101_Overview_1.html" class="pt18_bold">Stepper Motor System Overview</a></td>
+      </tr>
+    <tr>
+      <td height="30"><a href="http://www.stepcontrol.com/stepping101/stepping101_Motors_1.html"><img src="http://www.stepcontrol.com/images/sitePictures/TechDocArrow.jpg" width="19" height="19" border="0" id="Image81" onmouseover="MM_swapImage('Image81','','http://www.stepcontrol.com/images/sitePictures/TechDocArrow_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+      <td height="30" class="pt14_reg"><a href="http://www.stepcontrol.com/stepping101/stepping101_Motors_1.html" class="pt18_bold">Stepper Motors</a></td>
+      </tr>
+    <tr>
+      <td height="30"><a href="http://www.stepcontrol.com/stepping101/stepping101_Driver_1.html"><img src="http://www.stepcontrol.com/images/sitePictures/TechDocArrow.jpg" width="19" height="19" border="0" id="Image91" onmouseover="MM_swapImage('Image91','','http://www.stepcontrol.com/images/sitePictures/TechDocArrow_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+      <td height="30" class="pt14_reg"><a href="http://www.stepcontrol.com/stepping101/stepping101_Driver_1.html" class="pt18_bold">Drivers</a></td>
+      </tr>
+    <tr>
+      <td height="30"><a href="http://www.stepcontrol.com/stepping101/stepping101_PowerSupply_1.html"><img src="http://www.stepcontrol.com/images/sitePictures/TechDocArrow.jpg" width="19" height="19" border="0" id="Image10" onmouseover="MM_swapImage('Image10','','http://www.stepcontrol.com/images/sitePictures/TechDocArrow_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+      <td height="30" class="pt14_reg"><p><a href="http://www.stepcontrol.com/stepping101/stepping101_PowerSupply_1.html" class="pt18_bold">Power Supplies</a></p></td>
+    </tr>
+    <tr>
+      <td height="30"><a href="http://www.stepcontrol.com/stepping101/stepping101_Indexer_1.html"><img src="http://www.stepcontrol.com/images/sitePictures/TechDocArrow.jpg" width="19" height="19" border="0" id="Image11" onmouseover="MM_swapImage('Image11','','http://www.stepcontrol.com/images/sitePictures/TechDocArrow_hover.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+      <td height="30" class="pt14_reg"><p><a href="http://www.stepcontrol.com/stepping101/stepping101_Indexer_1.html" class="pt18_bold">Indexers</a></p></td>
+    </tr>
+
+    </table>
+    </div>
+
+       	
+	</div>
+
+   <p><br class="clearfloat" />
+   </p>
+   
+   <table width="590" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height = "20" colspan="3" align="center" valign="middle"><p>&nbsp;</p>
+      <p><img src="http://www.stepcontrol.com/images/sitePictures/SeparateLine_Horz545.gif" width="545" height="1" alt="Seperator" /></p>
+      <p>&nbsp;</p></td>
+    </tr>
+
+  <tr>
+    <td width="40">&nbsp;</td>
+    <td width="131"><a href="http://www.stepcontrol.com/productPages/StepMotors.html"><img src="http://www.stepcontrol.com/images/buttons/btn_gotoMotors.jpg" alt="Motor Selection" width="126" height="127" border="0" id="Image12" onmouseover="MM_swapImage('Image12','','http://www.stepcontrol.com/images/buttons/btn_gotoMotors_f2.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+    <td width="419" align="left" valign="top"><p class="pt14_reg"><strong>Looking for HIGH PRECISION step motors for a LOW PRICE</strong></p>
+      <p class="pt12_norm">&nbsp;</p>
+      <p class="pt12_norm">*  Compare AMS prices - Automation specialists and DIY’ers turn to AMS</p>
+      <p class="pt12_norm">&nbsp;</p>
+      <p class="pt12_norm">*  Compare AMS warranty - Industry leading 3 year</p>
+      <p class="pt12_norm">&nbsp;</p>
+      <p class="pt12_norm">*  Compare AMS service - AMS support is always just a phone call away</p></td>
+  </tr>
+</table>
+   
+
+  </div>
+  <!-- end #mainContent -->
+  <!-- InstanceEndEditable -->
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+ 
+  <p><br class="clearfloat" /></p>
+
+
+  <div id="footer">
+    <div id="BodyBottom"></div>
+    <div id="CopyNotice"> 
+      <p>©2010 AMS Inc.&nbsp;&nbsp;&nbsp;&nbsp;l&nbsp;&nbsp;&nbsp;&nbsp;29 River Road Suite B, Essex Junction, VT 05452&nbsp;&nbsp;&nbsp;&nbsp;l&nbsp;&nbsp;&nbsp;&nbsp;TEL. 603-882-1447&nbsp;&nbsp;&nbsp;&nbsp;l&nbsp;&nbsp;&nbsp;&nbsp;Email  Sales@StepControl.com</p>
+      
+                    
+    </div>
+  </div> <!-- end #footer -->
+
+</div><!-- end #container -->
+
+
+</body>
+<!-- InstanceEnd -->
+<!-- Mirrored from www.stepcontrol.com/stepping101.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:53 GMT -->
+</html>

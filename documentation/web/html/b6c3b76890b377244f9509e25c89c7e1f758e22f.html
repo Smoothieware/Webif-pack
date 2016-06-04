@@ -1,0 +1,4133 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  
+<!-- Mirrored from github.com/Smoothieware/Smoothieware/commit/b6c3b76890b377244f9509e25c89c7e1f758e22f by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-3c1694fab1568340f2e75b26efa1f55d97c5153364a7357e9e1104c718ff1a2f.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-3e95d73eb454e0099947df00d91ab0dbfc6b10be69dd5daf5de7aeb676580d20.css" media="all" rel="stylesheet" />
+    
+    
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-c4b4365da282e51c06e107368db8502a2ecf82e64094d29d791b797372212de2.css" media="all" rel="stylesheet" />
+    
+
+    <link as="script" href="https://assets-cdn.github.com/assets/frameworks-f8175c23360b42a4eb18b2319fefeae252cfeea482fb804356f4136a52bfddb3.js" rel="preload" />
+    
+    <link as="script" href="https://assets-cdn.github.com/assets/github-1502104f450cb05859f99b57e29782e071e3fb240e237adb8cbf17ebbdb271c7.js" rel="preload" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Merge pull request #920 from wolfmanjm/upstreamedge · Smoothieware/Smoothieware@b6c3b76 · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="https://github.com/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://github.com/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://github.com/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://github.com/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://github.com/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars1.githubusercontent.com/u/22263?v=3&amp;s=200" name="twitter:image:src" /><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Merge pull request #920 from wolfmanjm/upstreamedge · Smoothieware/Smoothieware@b6c3b76" name="twitter:title" /><meta content="add designator to motordriver messages" name="twitter:description" />
+      <meta content="https://avatars1.githubusercontent.com/u/22263?v=3&amp;s=200" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="Merge pull request #920 from wolfmanjm/upstreamedge · Smoothieware/Smoothieware@b6c3b76" property="og:title" /><meta content="https://github.com/Smoothieware/Smoothieware/commit/b6c3b76890b377244f9509e25c89c7e1f758e22f" property="og:url" /><meta content="add designator to motordriver messages" property="og:description" /><meta content="1461969533" property="og:updated_time" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="https://github.com/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_commits" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="55A92EEF:7A01:1232D39:5735BD8A" name="octolytics-dimension-request_id" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/commit/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="MDdjYWJhN2NjZDZiNmMzMDg2MGUwYTU3YjZlMzE3YmM1Yjc2ZDU4YWE3NDFjOWIyODAwNGYyYmRjYTFjYTEyZXx7InJlbW90ZV9hZGRyZXNzIjoiODUuMTY5LjQ2LjIzOSIsInJlcXVlc3RfaWQiOiI1NUE5MkVFRjo3QTAxOjEyMzJEMzk6NTczNUJEOEEiLCJ0aW1lc3RhbXAiOjE0NjMxMzk3MjN9">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta content="d6013ef313dc33a770980c6e66b5cb1d7130dd9d" name="form-nonce" />
+
+    <meta http-equiv="x-pjax-version" content="22dd3b7ce1aea89995da9e98ee8a9677">
+    
+
+        <link data-pjax-transient="true" href="https://github.com/Smoothieware/Smoothieware/commit/b6c3b76890b377244f9509e25c89c7e1f758e22f.diff" rel="alternate" type="text/plain+diff" />
+  <link data-pjax-transient="true" href="https://github.com/Smoothieware/Smoothieware/commit/b6c3b76890b377244f9509e25c89c7e1f758e22f.patch" rel="alternate" type="text/plain+patch" />
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+      <meta content="noindex, nofollow" name="robots" />
+
+  <meta name="description" content="Smoothieware - Modular, opensource, high performance G-code interpreter and CNC controller written in Object-Oriented C++">
+  <meta name="go-import" content="github.com/Smoothieware/Smoothieware git https://github.com/Smoothieware/Smoothieware.git">
+
+  <meta content="4834224" name="octolytics-dimension-user_id" /><meta content="Smoothieware" name="octolytics-dimension-user_login" /><meta content="2418744" name="octolytics-dimension-repository_id" /><meta content="Smoothieware/Smoothieware" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="2418744" name="octolytics-dimension-repository_network_root_id" /><meta content="Smoothieware/Smoothieware" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/Smoothieware/Smoothieware/commits/b6c3b76890b377244f9509e25c89c7e1f758e22f.atom" rel="alternate" title="Recent Commits to Smoothieware:b6c3b76890b377244f9509e25c89c7e1f758e22f" type="application/atom+xml">
+
+
+  </head>
+
+
+  <body class="logged-out   env-production  vis-public">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"></div>
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+          <header class="site-header js-details-container" role="banner">
+  <div class="container-responsive">
+    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+    </a>
+
+    <button class="btn-link right site-header-toggle js-details-target" type="button" aria-label="Toggle navigation">
+      <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path d="M11.41 9H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1z m0-4H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1zM0.59 11h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1z"></path></svg>
+    </button>
+
+    <div class="site-header-menu">
+      <nav class="site-header-nav site-header-nav-main">
+        <a href="https://github.com/personal" class="js-selected-navigation-item nav-item nav-item-personal" data-ga-click="Header, click, Nav menu - item:personal" data-selected-links="/personal /personal">
+          Personal
+</a>        <a href="https://github.com/open-source" class="js-selected-navigation-item nav-item nav-item-opensource" data-ga-click="Header, click, Nav menu - item:opensource" data-selected-links="/open-source /open-source">
+          Open source
+</a>        <a href="https://github.com/business" class="js-selected-navigation-item nav-item nav-item-business" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/features /business/customers /business">
+          Business
+</a>        <a href="https://github.com/explore" class="js-selected-navigation-item nav-item nav-item-explore" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship /explore">
+          Explore
+</a>      </nav>
+
+      <div class="site-header-actions">
+            <a class="btn btn-primary site-header-actions-btn" href="https://github.com/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+          <a class="btn site-header-actions-btn mr-2" href="https://github.com/login?return_to=%2FSmoothieware%2FSmoothieware%2Fcommit%2Fb6c3b76890b377244f9509e25c89c7e1f758e22f" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+      </div>
+
+        <nav class="site-header-nav site-header-nav-secondary">
+          <a class="nav-item" href="https://github.com/pricing">Pricing</a>
+          <a class="nav-item" href="https://github.com/blog">Blog</a>
+          <a class="nav-item" href="https://help.github.com/">Support</a>
+          <a class="nav-item header-search-link" href="https://github.com/search">Search GitHub</a>
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/Smoothieware/Smoothieware/search" class="js-site-search-form" data-scoped-search-url="/Smoothieware/Smoothieware/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        tabindex="1"
+        autocapitalize="off">
+    </label>
+</form></div>
+
+        </nav>
+    </div>
+  </div>
+</header>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="https://github.com/login?return_to=%2FSmoothieware%2FSmoothieware"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+    Watch
+  </a>
+  <a class="social-count" href="https://github.com/Smoothieware/Smoothieware/watchers">
+    131
+  </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2FSmoothieware%2FSmoothieware"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="https://github.com/Smoothieware/Smoothieware/stargazers">
+      328
+    </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2FSmoothieware%2FSmoothieware"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M8 1c-1.11 0-2 0.89-2 2 0 0.73 0.41 1.38 1 1.72v1.28L5 8 3 6v-1.28c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v1.78l3 3v1.78c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V9.5l3-3V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2zM2 4.2c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3 10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3-10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+        Fork
+      </a>
+
+    <a href="https://github.com/Smoothieware/Smoothieware/network" class="social-count">
+      397
+    </a>
+  </li>
+</ul>
+
+    <h1 class="entry-title public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a href="https://github.com/Smoothieware" class="url fn" rel="author">Smoothieware</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="https://github.com/Smoothieware/Smoothieware" data-pjax="#js-repo-pjax-container">Smoothieware</a></strong>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/Smoothieware/Smoothieware" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /Smoothieware/Smoothieware" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M9.5 3l-1.5 1.5 3.5 3.5L8 11.5l1.5 1.5 4.5-5L9.5 3zM4.5 3L0 8l4.5 5 1.5-1.5L2.5 8l3.5-3.5L4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="https://github.com/Smoothieware/Smoothieware/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /Smoothieware/Smoothieware/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7S10.14 13.7 7 13.7 1.3 11.14 1.3 8s2.56-5.7 5.7-5.7m0-1.3C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7S10.86 1 7 1z m1 3H6v5h2V4z m0 6H6v2h2V10z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">31</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://github.com/Smoothieware/Smoothieware/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /Smoothieware/Smoothieware/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 11.28c0-1.73 0-6.28 0-6.28-0.03-0.78-0.34-1.47-0.94-2.06s-1.28-0.91-2.06-0.94c0 0-1.02 0-1 0V0L4 3l3 3V4h1c0.27 0.02 0.48 0.11 0.69 0.31s0.3 0.42 0.31 0.69v6.28c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72z m-1 2.92c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2zM4 3c0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72 0 1.55 0 5.56 0 6.56-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V4.72c0.59-0.34 1-0.98 1-1.72z m-0.8 10c0 0.66-0.55 1.2-1.2 1.2s-1.2-0.55-1.2-1.2 0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2z m-1.2-8.8c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">7</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="https://github.com/Smoothieware/Smoothieware/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /Smoothieware/Smoothieware/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M2 5h4v1H2v-1z m0 3h4v-1H2v1z m0 2h4v-1H2v1z m11-5H9v1h4v-1z m0 2H9v1h4v-1z m0 2H9v1h4v-1z m2-6v9c0 0.55-0.45 1-1 1H8.5l-1 1-1-1H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h5.5l1 1 1-1h5.5c0.55 0 1 0.45 1 1z m-8 0.5l-0.5-0.5H1v9h6V3.5z m7-0.5H8.5l-0.5 0.5v8.5h6V3z"></path></svg>
+      Wiki
+</a>
+
+  <a href="https://github.com/Smoothieware/Smoothieware/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /Smoothieware/Smoothieware/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0V10h3.6L4.5 8.2l0.9 5.4L9 8.5l1.6 1.5H14V8H11.5z"></path></svg>
+    Pulse
+</a>
+  <a href="https://github.com/Smoothieware/Smoothieware/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /Smoothieware/Smoothieware/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M16 14v1H0V0h1v14h15z m-11-1H3V8h2v5z m4 0H7V3h2v10z m4 0H11V6h2v7z"></path></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+<a href="https://github.com/Smoothieware/Smoothieware/commit/b6c3b76890b377244f9509e25c89c7e1f758e22f" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+
+<include-fragment class="is-hidden" src="https://github.com/Smoothieware/Smoothieware/dsrc/b6c3b76890b377244f9509e25c89c7e1f758e22f"></include-fragment>
+
+
+
+<div class="commit full-commit merge-commit">
+  <a href="https://github.com/Smoothieware/Smoothieware/tree/b6c3b76890b377244f9509e25c89c7e1f758e22f" class="btn btn-outline right" title="Browse the repository at this point in the history" rel="nofollow">Browse files</a>
+
+    <p class="commit-title">
+      Merge pull request <a href="https://github.com/Smoothieware/Smoothieware/pull/920" class="issue-link js-issue-link" data-url="https://github.com/Smoothieware/Smoothieware/issues/920" data-id="151982590" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#920</a> from wolfmanjm/upstreamedge
+    </p>
+
+    <div class="commit-desc"><pre>add designator to motordriver messages</pre></div>
+
+  <div class="commit-branches">
+    <include-fragment src="https://github.com/Smoothieware/Smoothieware/branch_commits/b6c3b76890b377244f9509e25c89c7e1f758e22f">
+      <svg aria-hidden="true" class="octicon octicon-git-branch" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M10 5c0-1.11-0.89-2-2-2s-2 0.89-2 2c0 0.73 0.41 1.38 1 1.72v0.3c-0.02 0.52-0.23 0.98-0.63 1.38s-0.86 0.61-1.38 0.63c-0.83 0.02-1.48 0.16-2 0.45V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v6.56C0.41 11.63 0 12.27 0 13c0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.53-0.2-1-0.53-1.36 0.09-0.06 0.48-0.41 0.59-0.47 0.25-0.11 0.56-0.17 0.94-0.17 1.05-0.05 1.95-0.45 2.75-1.25s1.2-1.98 1.25-3.02h-0.02c0.61-0.36 1.02-1 1.02-1.73zM2 1.8c0.66 0 1.2 0.55 1.2 1.2s-0.55 1.2-1.2 1.2-1.2-0.55-1.2-1.2 0.55-1.2 1.2-1.2z m0 12.41c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m6-8c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+      <ul class="branches-list">
+        <li class="loading">Loading branch information<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></li>
+      </ul>
+</include-fragment>  </div>
+
+  <div class="commit-meta clearfix">
+    <span class="right">
+      <span class="sha-block" data-pjax>
+        2 parents
+          
+          <a href="https://github.com/Smoothieware/Smoothieware/commit/88e84b2304e5b2455e76b63062528e0534544a3b" class="sha" data-hotkey="p">88e84b2</a>
+           + 
+          <a href="https://github.com/Smoothieware/Smoothieware/commit/63b7731d1e9e3ce7845587ae8164cb33e09c9433" class="sha" data-hotkey="o">63b7731</a>
+      </span>
+      <span class="sha-block">commit <span class="sha user-select-contain">b6c3b76890b377244f9509e25c89c7e1f758e22f</span></span>
+    </span>
+
+    <span class="commit-author-section">
+      <img alt="@wolfmanjm" class="avatar" height="24" src="https://avatars1.githubusercontent.com/u/22263?v=3&amp;s=48" width="24" />
+      <a href="https://github.com/wolfmanjm" class="user-mention" rel="contributor">wolfmanjm</a>
+      
+      committed
+      <relative-time datetime="2016-04-29T22:38:53Z">Apr 29, 2016</relative-time>
+      
+
+    </span>
+  </div>
+</div>
+
+
+
+
+    <a name="diff-stat"></a>
+    <div id="toc" class="details-collapse table-of-contents js-details-container">
+  <div class="btn-group right" data-ga-load="Diff, view, Viewed Unified Diff">
+  <a class="btn btn-sm selected" href="https://github.com/Smoothieware/Smoothieware/commit/b6c3b76890b377244f9509e25c89c7e1f758e22f?diff=unified">
+    Unified
+  </a>
+  <a class="btn btn-sm" href="https://github.com/Smoothieware/Smoothieware/commit/b6c3b76890b377244f9509e25c89c7e1f758e22f?diff=split">
+    Split
+  </a>
+</div>
+
+
+  <div class="toc-diff-stats">
+    <svg aria-hidden="true" class="octicon octicon-diff" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M6 7h2v1H6v2h-1V8H3v-1h2V5h1v2zM3 13h5v-1H3v1z m4.5-11l3.5 3.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h6.5z m2.5 4L7 3H1v12h9V6zM8.5 0S3 0 3 0v1h5l4 4v8h1V4.5L8.5 0z"></path></svg>
+    Showing
+    <button type="button" class="btn-link js-details-target">
+      5 changed files
+    </button>
+    with
+    <strong>33 additions</strong>
+    and <strong>30 deletions</strong>.
+  </div>
+
+  <ol class="content collapse js-transitionable">
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +13
+          </span>
+          <span class="text-diff-deleted">
+            −12
+          </span>
+          <a href="#diff-01c86e8b715f906b79874296eafe0d90" class="tooltipped tooltipped-s" aria-label="25 lines changed">
+            <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span>
+          </a>
+      </span>
+      <svg aria-hidden="true" class="octicon octicon-diff-modified" height="16" title="modified" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"></path></svg>
+      <a href="#diff-01c86e8b715f906b79874296eafe0d90">src/modules/utils/motordrivercontrol/MotorDriverControl.cpp</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +7
+          </span>
+          <span class="text-diff-deleted">
+            −7
+          </span>
+          <a href="#diff-a49c0518af9f9737e1196c6c2182974d" class="tooltipped tooltipped-s" aria-label="14 lines changed">
+            <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span>
+          </a>
+      </span>
+      <svg aria-hidden="true" class="octicon octicon-diff-modified" height="16" title="modified" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"></path></svg>
+      <a href="#diff-a49c0518af9f9737e1196c6c2182974d">src/modules/utils/motordrivercontrol/drivers/DRV8711/drv8711.cpp</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +2
+          </span>
+          <span class="text-diff-deleted">
+            −2
+          </span>
+          <a href="#diff-5fd9277e553e1b6860aa374b49c73f34" class="tooltipped tooltipped-s" aria-label="4 lines changed">
+            <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span>
+          </a>
+      </span>
+      <svg aria-hidden="true" class="octicon octicon-diff-modified" height="16" title="modified" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"></path></svg>
+      <a href="#diff-5fd9277e553e1b6860aa374b49c73f34">src/modules/utils/motordrivercontrol/drivers/DRV8711/drv8711.h</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +8
+          </span>
+          <span class="text-diff-deleted">
+            −8
+          </span>
+          <a href="#diff-95e7e3640dbea0faf85e0ae64808e9e5" class="tooltipped tooltipped-s" aria-label="16 lines changed">
+            <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span>
+          </a>
+      </span>
+      <svg aria-hidden="true" class="octicon octicon-diff-modified" height="16" title="modified" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"></path></svg>
+      <a href="#diff-95e7e3640dbea0faf85e0ae64808e9e5">src/modules/utils/motordrivercontrol/drivers/TMC26X/TMC26X.cpp</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +3
+          </span>
+          <span class="text-diff-deleted">
+            −1
+          </span>
+          <a href="#diff-083054d69aa36e4db9b6bfd0a63e0322" class="tooltipped tooltipped-s" aria-label="4 lines changed">
+            <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span>
+          </a>
+      </span>
+      <svg aria-hidden="true" class="octicon octicon-diff-modified" height="16" title="modified" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 1H1C0.45 1 0 1.45 0 2v12c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V2c0-0.55-0.45-1-1-1z m0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"></path></svg>
+      <a href="#diff-083054d69aa36e4db9b6bfd0a63e0322">src/modules/utils/motordrivercontrol/drivers/TMC26X/TMC26X.h</a>
+    </li>
+  </ol>
+</div>
+
+  <div id="files" class="diff-view ">
+    
+      <a name="diff-01c86e8b715f906b79874296eafe0d90"></a>
+      <div id="diff-0"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="src/modules/utils/motordrivercontrol/MotorDriverControl.cpp">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="https://github.com/Smoothieware/Smoothieware/blob/b6c3b76890b377244f9509e25c89c7e1f758e22f/src/modules/utils/motordrivercontrol/MotorDriverControl.cpp" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version b6c3b76 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="13 additions &amp; 12 deletions">25 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+
+            <span class="user-select-contain" title="src/modules/utils/motordrivercontrol/MotorDriverControl.cpp">
+              src/modules/utils/motordrivercontrol/MotorDriverControl.cpp
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-01c86e8b715f906b79874296eafe0d90"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/b9d4efe712e4c368ae1468994d7f6082401ca600?diff=unified&amp;left_hunk_size=23&amp;mode=100644&amp;next_line_num_left=70&amp;next_line_num_right=70&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2FMotorDriverControl.cpp&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=24"
+            data-left-range="1-69" data-right-range="1-69">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -70,23 +70,24 @@ void MotorDriverControl::on_module_loaded()</td>
+  </tr>
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L70" data-line-number="70"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R70" data-line-number="70"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L71" data-line-number="71"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R71" data-line-number="71"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-k">bool</span> <span class="pl-en">MotorDriverControl::config_module</span>(<span class="pl-c1">uint16_t</span> cs)</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L72" data-line-number="72"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R72" data-line-number="72"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L73" data-line-number="73"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    spi_cs_pin.<span class="pl-c1">from_string</span>(THEKERNEL-&gt;config-&gt;<span class="pl-c1">value</span>( motor_driver_control_checksum, cs, spi_cs_pin_checksum)-&gt;<span class="pl-c1">by_default</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>nc<span class="pl-pds">&quot;</span></span>)-&gt;<span class="pl-c1">as_string</span>())-&gt;<span class="pl-c1">as_output</span>();</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L74" data-line-number="74"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-k">if</span>(!spi_cs_pin.<span class="pl-c1">connected</span>()) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L75" data-line-number="75"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>MotorDriverControl ERROR: chip select not defined<span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L76" data-line-number="76"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-k">return</span> <span class="pl-c1">false</span>; <span class="pl-c">// if not defined then we can&#39;t use this instance</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L77" data-line-number="77"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L78" data-line-number="78"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    spi_cs_pin.<span class="pl-c1">set</span>(<span class="pl-c1">1</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L79" data-line-number="79"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L80" data-line-number="80"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R73" data-line-number="73"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     std::string str= THEKERNEL-&gt;config-&gt;<span class="pl-c1">value</span>( motor_driver_control_checksum, cs, designator_checksum)-&gt;<span class="pl-c1">by_default</span>(<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>)-&gt;<span class="pl-c1">as_string</span>();</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L81" data-line-number="81"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R74" data-line-number="74"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span>(str.<span class="pl-c1">empty</span>()) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L82" data-line-number="82"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R75" data-line-number="75"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>MotorDriverControl ERROR: designator not defined<span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L83" data-line-number="83"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R76" data-line-number="76"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         <span class="pl-k">return</span> <span class="pl-c1">false</span>; <span class="pl-c">// designator required</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L84" data-line-number="84"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R77" data-line-number="77"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L85" data-line-number="85"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R78" data-line-number="78"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     designator= str[<span class="pl-c1">0</span>];</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L86" data-line-number="86"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R79" data-line-number="79"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R80" data-line-number="80"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    spi_cs_pin.<span class="pl-c1">from_string</span>(THEKERNEL-&gt;config-&gt;<span class="pl-c1">value</span>( motor_driver_control_checksum, cs, spi_cs_pin_checksum)-&gt;<span class="pl-c1">by_default</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>nc<span class="pl-pds">&quot;</span></span>)-&gt;<span class="pl-c1">as_string</span>())-&gt;<span class="pl-c1">as_output</span>();</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R81" data-line-number="81"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">if</span>(!spi_cs_pin.<span class="pl-c1">connected</span>()) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R82" data-line-number="82"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>MotorDriverControl <span class="pl-c1">%c</span> ERROR: chip select not defined<span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>, designator);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R83" data-line-number="83"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-k">return</span> <span class="pl-c1">false</span>; <span class="pl-c">// if not defined then we can&#39;t use this instance</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R84" data-line-number="84"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R85" data-line-number="85"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    spi_cs_pin.<span class="pl-c1">set</span>(<span class="pl-c1">1</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R86" data-line-number="86"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R87" data-line-number="87"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L87" data-line-number="87"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R88" data-line-number="88"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     str= THEKERNEL-&gt;config-&gt;<span class="pl-c1">value</span>( motor_driver_control_checksum, cs, chip_checksum)-&gt;<span class="pl-c1">by_default</span>(<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>)-&gt;<span class="pl-c1">as_string</span>();</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L88" data-line-number="88"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R89" data-line-number="89"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span>(str.<span class="pl-c1">empty</span>()) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L89" data-line-number="89"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>MotorDriverControl ERROR: chip type not defined<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R90" data-line-number="90"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>MotorDriverControl <span class="pl-c1 x x-first">%c</span><span class="x x-last"> </span>ERROR: chip type not defined<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L90" data-line-number="90"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R91" data-line-number="91"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         <span class="pl-k">return</span> <span class="pl-c1">false</span>; <span class="pl-c">// chip type required</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L91" data-line-number="91"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R92" data-line-number="92"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L92" data-line-number="92"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R93" data-line-number="93"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="33">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-01c86e8b715f906b79874296eafe0d90"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/b9d4efe712e4c368ae1468994d7f6082401ca600?diff=unified&amp;left_hunk_size=14&amp;mode=100644&amp;next_line_num_left=96&amp;next_line_num_right=97&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2FMotorDriverControl.cpp&amp;prev_line_num_left=92&amp;prev_line_num_right=93&amp;right_hunk_size=14"
+            data-left-range="93-95" data-right-range="94-96">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -96,14 +97,14 @@ bool MotorDriverControl::config_module(uint16_t cs)</td>
+  </tr>
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L96" data-line-number="96"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R97" data-line-number="97"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L97" data-line-number="97"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R98" data-line-number="98"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span>(str == <span class="pl-s"><span class="pl-pds">&quot;</span>DRV8711<span class="pl-pds">&quot;</span></span>) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L98" data-line-number="98"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R99" data-line-number="99"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         chip= DRV8711;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L99" data-line-number="99"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        drv8711= <span class="pl-k">new</span> <span class="pl-c1">DRV8711DRV</span>(<span class="pl-c1">std::bind</span>( &amp;MotorDriverControl::sendSPI, <span class="pl-v">this</span>, _1, _2, _3));</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R100" data-line-number="100"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        drv8711= <span class="pl-k">new</span> <span class="pl-c1">DRV8711DRV</span>(<span class="pl-c1">std::bind</span>( &amp;MotorDriverControl::sendSPI, <span class="pl-v">this</span>, _1, _2, _3)<span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L100" data-line-number="100"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R101" data-line-number="101"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L101" data-line-number="101"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R102" data-line-number="102"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }<span class="pl-k">else</span> <span class="pl-k">if</span>(str == <span class="pl-s"><span class="pl-pds">&quot;</span>TMC2660<span class="pl-pds">&quot;</span></span>) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L102" data-line-number="102"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R103" data-line-number="103"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         chip= TMC2660;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L103" data-line-number="103"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        tmc26x= <span class="pl-k">new</span> <span class="pl-c1">TMC26X</span>(<span class="pl-c1">std::bind</span>( &amp;MotorDriverControl::sendSPI, <span class="pl-v">this</span>, _1, _2, _3));</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R104" data-line-number="104"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        tmc26x= <span class="pl-k">new</span> <span class="pl-c1">TMC26X</span>(<span class="pl-c1">std::bind</span>( &amp;MotorDriverControl::sendSPI, <span class="pl-v">this</span>, _1, _2, _3)<span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L104" data-line-number="104"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R105" data-line-number="105"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L105" data-line-number="105"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R106" data-line-number="106"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }<span class="pl-k">else</span>{</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L106" data-line-number="106"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>MotorDriverControl ERROR: Unknown chip type: <span class="pl-c1">%s</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span>, str.<span class="pl-c1">c_str</span>());</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R107" data-line-number="107"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>MotorDriverControl <span class="pl-c1 x x-first">%c</span><span class="x x-last"> </span>ERROR: Unknown chip type: <span class="pl-c1">%s</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>, str.<span class="pl-c1">c_str</span>());</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L107" data-line-number="107"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R108" data-line-number="108"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         <span class="pl-k">return</span> <span class="pl-c1">false</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L108" data-line-number="108"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R109" data-line-number="109"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L109" data-line-number="109"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R110" data-line-number="110"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="51">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-01c86e8b715f906b79874296eafe0d90"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/b9d4efe712e4c368ae1468994d7f6082401ca600?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=118&amp;next_line_num_right=119&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2FMotorDriverControl.cpp&amp;prev_line_num_left=109&amp;prev_line_num_right=110&amp;right_hunk_size=7"
+            data-left-range="110-117" data-right-range="111-118">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -118,7 +119,7 @@ bool MotorDriverControl::config_module(uint16_t cs)</td>
+  </tr>
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L118" data-line-number="118"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R119" data-line-number="119"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     } <span class="pl-k">else</span> <span class="pl-k">if</span>(spi_channel == <span class="pl-c1">1</span>) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L119" data-line-number="119"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R120" data-line-number="120"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         mosi = P0_9; miso = P0_8; sclk = P0_7;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L120" data-line-number="120"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R121" data-line-number="121"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     } <span class="pl-k">else</span> {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L121" data-line-number="121"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>MotorDriverControl ERROR: Unknown SPI Channel: <span class="pl-c1">%d</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span>, spi_channel);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R122" data-line-number="122"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>MotorDriverControl <span class="pl-c1 x x-first">%c</span><span class="x x-last"> </span>ERROR: Unknown SPI Channel: <span class="pl-c1">%d</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>, spi_channel);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L122" data-line-number="122"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R123" data-line-number="123"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         <span class="pl-k">return</span> <span class="pl-c1">false</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L123" data-line-number="123"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R124" data-line-number="124"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-01c86e8b715f906b79874296eafe0d90L124" data-line-number="124"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-01c86e8b715f906b79874296eafe0d90R125" data-line-number="125"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-01c86e8b715f906b79874296eafe0d90"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/Smoothieware/Smoothieware/blob_excerpt/b9d4efe712e4c368ae1468994d7f6082401ca600?diff=unified&amp;mode=100644&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2FMotorDriverControl.cpp&amp;prev_line_num_left=124&amp;prev_line_num_right=125"
+          data-left-range="125-454"
+          data-right-range="126-454">
+       <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-a49c0518af9f9737e1196c6c2182974d"></a>
+      <div id="diff-1"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="src/modules/utils/motordrivercontrol/drivers/DRV8711/drv8711.cpp">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="https://github.com/Smoothieware/Smoothieware/blob/b6c3b76890b377244f9509e25c89c7e1f758e22f/src/modules/utils/motordrivercontrol/drivers/DRV8711/drv8711.cpp" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version b6c3b76 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="7 additions &amp; 7 deletions">14 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+
+            <span class="user-select-contain" title="src/modules/utils/motordrivercontrol/drivers/DRV8711/drv8711.cpp">
+              src/modules/utils/motordrivercontrol/drivers/DRV8711/drv8711.cpp
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-a49c0518af9f9737e1196c6c2182974d"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/0c048f26b8e2dd03d4d5ca918f53b7ed162bbca9?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=15&amp;next_line_num_right=15&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FDRV8711%2Fdrv8711.cpp&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7"
+            data-left-range="1-14" data-right-range="1-14">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -15,7 +15,7 @@</td>
+  </tr>
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL15" data-line-number="15"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR15" data-line-number="15"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> #<span class="pl-k">define</span> <span class="pl-en">REGWRITE</span>    0x00</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL16" data-line-number="16"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR16" data-line-number="16"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> #<span class="pl-k">define</span> <span class="pl-en">REGREAD</span>     0x80</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL17" data-line-number="17"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR17" data-line-number="17"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL18" data-line-number="18"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-en">DRV8711DRV::DRV8711DRV</span>(std::function&lt;<span class="pl-k">int</span>(<span class="pl-c1">uint8_t</span> *b, <span class="pl-k">int</span> cnt, <span class="pl-c1">uint8_t</span> *r)&gt; spi) : spi(spi)</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR18" data-line-number="18"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-en">DRV8711DRV::DRV8711DRV</span>(std::function&lt;<span class="pl-k">int</span>(<span class="pl-c1">uint8_t</span> *b, <span class="pl-k">int</span> cnt, <span class="pl-c1">uint8_t</span> *r)&gt; spi<span class="x x-first x-last">, char d</span>) : spi(spi<span class="x x-first x-last">), designator(d</span>)</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL19" data-line-number="19"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR19" data-line-number="19"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL20" data-line-number="20"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR20" data-line-number="20"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     error_reported.<span class="pl-c1">reset</span>();</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL21" data-line-number="21"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR21" data-line-number="21"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> }</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="9">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-a49c0518af9f9737e1196c6c2182974d"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/0c048f26b8e2dd03d4d5ca918f53b7ed162bbca9?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=216&amp;next_line_num_right=216&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FDRV8711%2Fdrv8711.cpp&amp;prev_line_num_left=21&amp;prev_line_num_right=21&amp;right_hunk_size=7"
+            data-left-range="22-215" data-right-range="22-215">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -216,7 +216,7 @@ void DRV8711DRV::dump_status(StreamOutput *stream)</td>
+  </tr>
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL216" data-line-number="216"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR216" data-line-number="216"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     DRIVE_Register_t   R_DRIVE_REG;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL217" data-line-number="217"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR217" data-line-number="217"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     STATUS_Register_t  R_STATUS_REG;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL218" data-line-number="218"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR218" data-line-number="218"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL219" data-line-number="219"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>Register Dump:<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR219" data-line-number="219"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="x x-first">designator: </span><span class="pl-c1 x">%c</span><span class="x x-last">, </span>Register Dump:<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL220" data-line-number="220"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR220" data-line-number="220"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL221" data-line-number="221"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR221" data-line-number="221"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-c">// Read CTRL Register</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL222" data-line-number="222"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR222" data-line-number="222"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     R_CTRL_REG.<span class="pl-smi">raw</span>= <span class="pl-c1">ReadRegister</span>(G_CTRL_REG.<span class="pl-smi">Address</span>);</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="18">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-a49c0518af9f9737e1196c6c2182974d"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/0c048f26b8e2dd03d4d5ca918f53b7ed162bbca9?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=332&amp;next_line_num_right=332&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FDRV8711%2Fdrv8711.cpp&amp;prev_line_num_left=222&amp;prev_line_num_right=222&amp;right_hunk_size=7"
+            data-left-range="223-331" data-right-range="223-331">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -332,7 +332,7 @@ bool DRV8711DRV::check_alarm()</td>
+  </tr>
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL332" data-line-number="332"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR332" data-line-number="332"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     R_STATUS_REG.<span class="pl-smi">raw</span>= <span class="pl-c1">ReadRegister</span>(G_STATUS_REG.<span class="pl-smi">Address</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL333" data-line-number="333"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR333" data-line-number="333"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL334" data-line-number="334"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR334" data-line-number="334"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span>(R_STATUS_REG.<span class="pl-smi">OTS</span>) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL335" data-line-number="335"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">0</span>)) THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>ERROR: Overtemperature shutdown<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR335" data-line-number="335"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">0</span>)) THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1 x x-first">%c</span><span class="x x-last">, </span>ERROR: Overtemperature shutdown<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL336" data-line-number="336"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR336" data-line-number="336"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error= <span class="pl-c1">true</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL337" data-line-number="337"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR337" data-line-number="337"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">set</span>(<span class="pl-c1">0</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL338" data-line-number="338"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR338" data-line-number="338"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }<span class="pl-k">else</span>{</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="27">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-a49c0518af9f9737e1196c6c2182974d"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/0c048f26b8e2dd03d4d5ca918f53b7ed162bbca9?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=341&amp;next_line_num_right=341&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FDRV8711%2Fdrv8711.cpp&amp;prev_line_num_left=338&amp;prev_line_num_right=338&amp;right_hunk_size=7"
+            data-left-range="339-340" data-right-range="339-340">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -341,7 +341,7 @@ bool DRV8711DRV::check_alarm()</td>
+  </tr>
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL341" data-line-number="341"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR341" data-line-number="341"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL342" data-line-number="342"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR342" data-line-number="342"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL343" data-line-number="343"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR343" data-line-number="343"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span>(R_STATUS_REG.<span class="pl-smi">AOCP</span>) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL344" data-line-number="344"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">1</span>)) THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>ERROR: Channel A over current shutdown<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR344" data-line-number="344"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">1</span>)) THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1 x x-first">%c</span><span class="x x-last">, </span>ERROR: Channel A over current shutdown<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL345" data-line-number="345"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR345" data-line-number="345"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error= <span class="pl-c1">true</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL346" data-line-number="346"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR346" data-line-number="346"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">set</span>(<span class="pl-c1">1</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL347" data-line-number="347"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR347" data-line-number="347"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }<span class="pl-k">else</span>{</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="36">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-a49c0518af9f9737e1196c6c2182974d"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/0c048f26b8e2dd03d4d5ca918f53b7ed162bbca9?diff=unified&amp;left_hunk_size=15&amp;mode=100644&amp;next_line_num_left=350&amp;next_line_num_right=350&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FDRV8711%2Fdrv8711.cpp&amp;prev_line_num_left=347&amp;prev_line_num_right=347&amp;right_hunk_size=15"
+            data-left-range="348-349" data-right-range="348-349">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -350,15 +350,15 @@ bool DRV8711DRV::check_alarm()</td>
+  </tr>
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL350" data-line-number="350"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR350" data-line-number="350"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL351" data-line-number="351"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR351" data-line-number="351"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL352" data-line-number="352"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR352" data-line-number="352"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span>(R_STATUS_REG.<span class="pl-smi">BOCP</span>) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL353" data-line-number="353"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">2</span>)) THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>ERROR: Channel B over current shutdown<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR353" data-line-number="353"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">2</span>)) THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1 x x-first">%c</span><span class="x x-last">, </span>ERROR: Channel B over current shutdown<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL354" data-line-number="354"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR354" data-line-number="354"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error= <span class="pl-c1">true</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL355" data-line-number="355"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR355" data-line-number="355"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">set</span>(<span class="pl-c1">2</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL356" data-line-number="356"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR356" data-line-number="356"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }<span class="pl-k">else</span>{</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL357" data-line-number="357"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR357" data-line-number="357"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">reset</span>(<span class="pl-c1">2</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL358" data-line-number="358"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR358" data-line-number="358"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL359" data-line-number="359"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR359" data-line-number="359"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL360" data-line-number="360"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR360" data-line-number="360"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span>(R_STATUS_REG.<span class="pl-smi">APDF</span>) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL361" data-line-number="361"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">3</span>)) THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>ERROR: Channel A predriver fault<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR361" data-line-number="361"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">3</span>)) THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1 x x-first">%c</span><span class="x x-last">, </span>ERROR: Channel A predriver fault<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL362" data-line-number="362"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR362" data-line-number="362"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error= <span class="pl-c1">true</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL363" data-line-number="363"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR363" data-line-number="363"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">set</span>(<span class="pl-c1">3</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL364" data-line-number="364"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR364" data-line-number="364"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }<span class="pl-k">else</span>{</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="54">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-a49c0518af9f9737e1196c6c2182974d"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/0c048f26b8e2dd03d4d5ca918f53b7ed162bbca9?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=367&amp;next_line_num_right=367&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FDRV8711%2Fdrv8711.cpp&amp;prev_line_num_left=364&amp;prev_line_num_right=364&amp;right_hunk_size=7"
+            data-left-range="365-366" data-right-range="365-366">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -367,7 +367,7 @@ bool DRV8711DRV::check_alarm()</td>
+  </tr>
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL367" data-line-number="367"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR367" data-line-number="367"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL368" data-line-number="368"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR368" data-line-number="368"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL369" data-line-number="369"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR369" data-line-number="369"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span>(R_STATUS_REG.<span class="pl-smi">BPDF</span>) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL370" data-line-number="370"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">4</span>)) THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>ERROR: Channel B predriver fault<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR370" data-line-number="370"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">4</span>)) THEKERNEL-&gt;streams-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1 x x-first">%c</span><span class="x x-last">, </span>ERROR: Channel B predriver fault<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL371" data-line-number="371"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR371" data-line-number="371"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error= <span class="pl-c1">true</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL372" data-line-number="372"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR372" data-line-number="372"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">set</span>(<span class="pl-c1">4</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dL373" data-line-number="373"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a49c0518af9f9737e1196c6c2182974dR373" data-line-number="373"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }<span class="pl-k">else</span>{</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-a49c0518af9f9737e1196c6c2182974d"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/Smoothieware/Smoothieware/blob_excerpt/0c048f26b8e2dd03d4d5ca918f53b7ed162bbca9?diff=unified&amp;mode=100644&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FDRV8711%2Fdrv8711.cpp&amp;prev_line_num_left=373&amp;prev_line_num_right=373"
+          data-left-range="374-459"
+          data-right-range="374-459">
+       <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-5fd9277e553e1b6860aa374b49c73f34"></a>
+      <div id="diff-2"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="https://github.com/Smoothieware/Smoothieware/commit/src/modules/utils/motordrivercontrol/drivers/DRV8711/drv8711.h">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="https://github.com/Smoothieware/Smoothieware/blob/b6c3b76890b377244f9509e25c89c7e1f758e22f/src/modules/utils/motordrivercontrol/drivers/DRV8711/drv8711.h" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version b6c3b76 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="2 additions &amp; 2 deletions">4 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+
+            <span class="user-select-contain" title="src/modules/utils/motordrivercontrol/drivers/DRV8711/drv8711.h">
+              src/modules/utils/motordrivercontrol/drivers/DRV8711/drv8711.h
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-5fd9277e553e1b6860aa374b49c73f34"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/a4bfec25d9b516ef37c6d287aa82d893580a1b20?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=8&amp;next_line_num_right=8&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FDRV8711%2Fdrv8711.h&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7"
+            data-left-range="1-7" data-right-range="1-7">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -8,7 +8,7 @@ class StreamOutput;</td>
+  </tr>
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-k">class</span> <span class="pl-en">DRV8711DRV</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L9" data-line-number="9"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R9" data-line-number="9"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-k">public:</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L11" data-line-number="11"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  <span class="pl-en">DRV8711DRV</span>(std::function&lt;<span class="pl-k">int</span>(<span class="pl-c1">uint8_t</span> *b, <span class="pl-k">int</span> cnt, <span class="pl-c1">uint8_t</span> *r)&gt; spi);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R11" data-line-number="11"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  <span class="pl-en">DRV8711DRV</span>(std::function&lt;<span class="pl-k">int</span>(<span class="pl-c1">uint8_t</span> *b, <span class="pl-k">int</span> cnt, <span class="pl-c1">uint8_t</span> *r)&gt; spi<span class="x x-first">, </span><span class="pl-k x">char</span><span class="x x-last"> designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L12" data-line-number="12"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R12" data-line-number="12"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L13" data-line-number="13"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R13" data-line-number="13"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">void</span> <span class="pl-en">init</span>(<span class="pl-c1">uint16_t</span> cs) ;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L14" data-line-number="14"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R14" data-line-number="14"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="9">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-5fd9277e553e1b6860aa374b49c73f34"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/a4bfec25d9b516ef37c6d287aa82d893580a1b20?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=142&amp;next_line_num_right=142&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FDRV8711%2Fdrv8711.h&amp;prev_line_num_left=14&amp;prev_line_num_right=14&amp;right_hunk_size=7"
+            data-left-range="15-141" data-right-range="15-141">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -142,7 +142,7 @@ class DRV8711DRV</td>
+  </tr>
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L142" data-line-number="142"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R142" data-line-number="142"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">float</span> resistor{<span class="pl-c1">0.05</span>};</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L143" data-line-number="143"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R143" data-line-number="143"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   std::bitset&lt;<span class="pl-c1">8</span>&gt; error_reported;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L144" data-line-number="144"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R144" data-line-number="144"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-c1">uint8_t</span> gain{<span class="pl-c1">20</span>};</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L145" data-line-number="145"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R145" data-line-number="145"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="x x-first">  </span><span class="pl-k x">char</span><span class="x x-last"> designator;</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L146" data-line-number="146"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R146" data-line-number="146"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L147" data-line-number="147"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R147" data-line-number="147"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-c">// float _amps;</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34L148" data-line-number="148"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5fd9277e553e1b6860aa374b49c73f34R148" data-line-number="148"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-c">// uint8_t _microstepreg;</span></span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-5fd9277e553e1b6860aa374b49c73f34"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/Smoothieware/Smoothieware/blob_excerpt/a4bfec25d9b516ef37c6d287aa82d893580a1b20?diff=unified&amp;mode=100644&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FDRV8711%2Fdrv8711.h&amp;prev_line_num_left=148&amp;prev_line_num_right=148"
+          data-left-range="149-149"
+          data-right-range="149-149">
+       <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-95e7e3640dbea0faf85e0ae64808e9e5"></a>
+      <div id="diff-3"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="src/modules/utils/motordrivercontrol/drivers/TMC26X/TMC26X.cpp">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="https://github.com/Smoothieware/Smoothieware/blob/b6c3b76890b377244f9509e25c89c7e1f758e22f/src/modules/utils/motordrivercontrol/drivers/TMC26X/TMC26X.cpp" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version b6c3b76 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="8 additions &amp; 8 deletions">16 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+
+            <span class="user-select-contain" title="src/modules/utils/motordrivercontrol/drivers/TMC26X/TMC26X.cpp">
+              src/modules/utils/motordrivercontrol/drivers/TMC26X/TMC26X.cpp
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-95e7e3640dbea0faf85e0ae64808e9e5"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/7ee2754256e410ea008467139699005866d8dc3e?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=157&amp;next_line_num_right=157&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FTMC26X%2FTMC26X.cpp&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7"
+            data-left-range="1-156" data-right-range="1-156">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -157,7 +157,7 @@</td>
+  </tr>
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L157" data-line-number="157"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R157" data-line-number="157"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">/*</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L158" data-line-number="158"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R158" data-line-number="158"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c"> * Constructor</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L159" data-line-number="159"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R159" data-line-number="159"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c"> */</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L160" data-line-number="160"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-en">TMC26X::TMC26X</span>(std::function&lt;<span class="pl-k">int</span>(<span class="pl-c1">uint8_t</span> *b, <span class="pl-k">int</span> cnt, <span class="pl-c1">uint8_t</span> *r)&gt; spi) : spi(spi)</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R160" data-line-number="160"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-en">TMC26X::TMC26X</span>(std::function&lt;<span class="pl-k">int</span>(<span class="pl-c1">uint8_t</span> *b, <span class="pl-k">int</span> cnt, <span class="pl-c1">uint8_t</span> *r)&gt; spi<span class="x x-first x-last">, char d</span>) : spi(spi<span class="x x-first x-last">), designator(d</span>)</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L161" data-line-number="161"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R161" data-line-number="161"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L162" data-line-number="162"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R162" data-line-number="162"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-c">//we are not started yet</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L163" data-line-number="163"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R163" data-line-number="163"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     started = <span class="pl-c1">false</span>;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="9">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-95e7e3640dbea0faf85e0ae64808e9e5"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/7ee2754256e410ea008467139699005866d8dc3e?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=863&amp;next_line_num_right=863&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FTMC26X%2FTMC26X.cpp&amp;prev_line_num_left=163&amp;prev_line_num_right=163&amp;right_hunk_size=7"
+            data-left-range="164-862" data-right-range="164-862">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -863,7 +863,7 @@ bool TMC26X::isCurrentScalingHalfed()</td>
+  </tr>
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L863" data-line-number="863"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R863" data-line-number="863"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-k">void</span> <span class="pl-en">TMC26X::dumpStatus</span>(StreamOutput *stream, <span class="pl-k">bool</span> readable)</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L864" data-line-number="864"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R864" data-line-number="864"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L865" data-line-number="865"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R865" data-line-number="865"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span> (readable) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L866" data-line-number="866"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>Chip type TMC26X<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R866" data-line-number="866"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="x x-first">designator </span><span class="pl-c1 x">%c</span><span class="x x-last">, </span>Chip type TMC26X<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L867" data-line-number="867"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R867" data-line-number="867"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L868" data-line-number="868"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R868" data-line-number="868"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         <span class="pl-c1">check_error_status_bits</span>(stream);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L869" data-line-number="869"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R869" data-line-number="869"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="18">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-95e7e3640dbea0faf85e0ae64808e9e5"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/7ee2754256e410ea008467139699005866d8dc3e?diff=unified&amp;left_hunk_size=30&amp;mode=100644&amp;next_line_num_left=966&amp;next_line_num_right=966&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FTMC26X%2FTMC26X.cpp&amp;prev_line_num_left=869&amp;prev_line_num_right=869&amp;right_hunk_size=30"
+            data-left-range="870-965" data-right-range="870-965">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -966,30 +966,30 @@ bool TMC26X::check_error_status_bits(StreamOutput *stream)</td>
+  </tr>
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L966" data-line-number="966"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R966" data-line-number="966"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-c1">readStatus</span>(TMC26X_READOUT_POSITION); <span class="pl-c">// get the status bits</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L967" data-line-number="967"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R967" data-line-number="967"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L968" data-line-number="968"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R968" data-line-number="968"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span> (<span class="pl-v">this</span>-&gt;<span class="pl-c1">getOverTemperature</span>()&amp;TMC26X_OVERTEMPERATURE_PREWARING) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L969" data-line-number="969"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">0</span>)) stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>WARNING: Overtemperature Prewarning!<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R969" data-line-number="969"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">0</span>)) stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1 x x-first">%c</span><span class="x x-last"> - </span>WARNING: Overtemperature Prewarning!<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L970" data-line-number="970"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R970" data-line-number="970"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">set</span>(<span class="pl-c1">0</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L971" data-line-number="971"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R971" data-line-number="971"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }<span class="pl-k">else</span>{</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L972" data-line-number="972"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R972" data-line-number="972"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">reset</span>(<span class="pl-c1">0</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L973" data-line-number="973"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R973" data-line-number="973"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L974" data-line-number="974"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R974" data-line-number="974"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L975" data-line-number="975"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R975" data-line-number="975"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span> (<span class="pl-v">this</span>-&gt;<span class="pl-c1">getOverTemperature</span>()&amp;TMC26X_OVERTEMPERATURE_SHUTDOWN) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L976" data-line-number="976"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">1</span>)) stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>ERROR: Overtemperature Shutdown!<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R976" data-line-number="976"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">1</span>)) stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1 x x-first">%c</span><span class="x x-last"> - </span>ERROR: Overtemperature Shutdown!<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L977" data-line-number="977"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R977" data-line-number="977"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error=<span class="pl-c1">true</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L978" data-line-number="978"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R978" data-line-number="978"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">set</span>(<span class="pl-c1">1</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L979" data-line-number="979"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R979" data-line-number="979"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }<span class="pl-k">else</span>{</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L980" data-line-number="980"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R980" data-line-number="980"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">reset</span>(<span class="pl-c1">1</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L981" data-line-number="981"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R981" data-line-number="981"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L982" data-line-number="982"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R982" data-line-number="982"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L983" data-line-number="983"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R983" data-line-number="983"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span> (<span class="pl-v">this</span>-&gt;<span class="pl-c1">isShortToGroundA</span>()) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L984" data-line-number="984"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">2</span>)) stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>ERROR: SHORT to ground on channel A!<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R984" data-line-number="984"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">2</span>)) stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1 x x-first">%c</span><span class="x x-last"> - </span>ERROR: SHORT to ground on channel A!<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L985" data-line-number="985"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R985" data-line-number="985"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error=<span class="pl-c1">true</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L986" data-line-number="986"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R986" data-line-number="986"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">set</span>(<span class="pl-c1">2</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L987" data-line-number="987"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R987" data-line-number="987"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }<span class="pl-k">else</span>{</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L988" data-line-number="988"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R988" data-line-number="988"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">reset</span>(<span class="pl-c1">2</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L989" data-line-number="989"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R989" data-line-number="989"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L990" data-line-number="990"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R990" data-line-number="990"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L991" data-line-number="991"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R991" data-line-number="991"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span> (<span class="pl-v">this</span>-&gt;<span class="pl-c1">isShortToGroundB</span>()) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L992" data-line-number="992"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">3</span>)) stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>ERROR: SHORT to ground on channel B!<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R992" data-line-number="992"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">3</span>)) stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1 x x-first">%c</span><span class="x x-last"> - </span>ERROR: SHORT to ground on channel B!<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L993" data-line-number="993"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R993" data-line-number="993"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error=<span class="pl-c1">true</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L994" data-line-number="994"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R994" data-line-number="994"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">set</span>(<span class="pl-c1">3</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L995" data-line-number="995"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R995" data-line-number="995"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }<span class="pl-k">else</span>{</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="53">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-95e7e3640dbea0faf85e0ae64808e9e5"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/7ee2754256e410ea008467139699005866d8dc3e?diff=unified&amp;left_hunk_size=15&amp;mode=100644&amp;next_line_num_left=998&amp;next_line_num_right=998&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FTMC26X%2FTMC26X.cpp&amp;prev_line_num_left=995&amp;prev_line_num_right=995&amp;right_hunk_size=15"
+            data-left-range="996-997" data-right-range="996-997">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -998,15 +998,15 @@ bool TMC26X::check_error_status_bits(StreamOutput *stream)</td>
+  </tr>
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L998" data-line-number="998"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R998" data-line-number="998"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L999" data-line-number="999"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R999" data-line-number="999"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-c">// these seem to be triggered when moving so ignore them for now</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L1000" data-line-number="1000"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R1000" data-line-number="1000"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span> (<span class="pl-v">this</span>-&gt;<span class="pl-c1">isOpenLoadA</span>()) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L1001" data-line-number="1001"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">4</span>)) stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>ERROR: Channel A seems to be unconnected!<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R1001" data-line-number="1001"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">4</span>)) stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1 x x-first">%c</span><span class="x x-last"> - </span>ERROR: Channel A seems to be unconnected!<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L1002" data-line-number="1002"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R1002" data-line-number="1002"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error=<span class="pl-c1">true</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L1003" data-line-number="1003"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R1003" data-line-number="1003"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">set</span>(<span class="pl-c1">4</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L1004" data-line-number="1004"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R1004" data-line-number="1004"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }<span class="pl-k">else</span>{</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L1005" data-line-number="1005"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R1005" data-line-number="1005"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">reset</span>(<span class="pl-c1">4</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L1006" data-line-number="1006"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R1006" data-line-number="1006"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L1007" data-line-number="1007"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R1007" data-line-number="1007"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L1008" data-line-number="1008"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R1008" data-line-number="1008"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span> (<span class="pl-v">this</span>-&gt;<span class="pl-c1">isOpenLoadB</span>()) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L1009" data-line-number="1009"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">5</span>)) stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>ERROR: Channel B seems to be unconnected!<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R1009" data-line-number="1009"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-k">if</span>(!error_reported.<span class="pl-c1">test</span>(<span class="pl-c1">5</span>)) stream-&gt;<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1 x x-first">%c</span><span class="x x-last"> - </span>ERROR: Channel B seems to be unconnected!<span class="pl-cce">\n</span><span class="pl-pds">"</span></span><span class="x x-first x-last">, designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L1010" data-line-number="1010"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R1010" data-line-number="1010"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error=<span class="pl-c1">true</span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L1011" data-line-number="1011"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R1011" data-line-number="1011"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         error_reported.<span class="pl-c1">set</span>(<span class="pl-c1">5</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5L1012" data-line-number="1012"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-95e7e3640dbea0faf85e0ae64808e9e5R1012" data-line-number="1012"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }<span class="pl-k">else</span>{</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-95e7e3640dbea0faf85e0ae64808e9e5"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/Smoothieware/Smoothieware/blob_excerpt/7ee2754256e410ea008467139699005866d8dc3e?diff=unified&amp;mode=100644&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FTMC26X%2FTMC26X.cpp&amp;prev_line_num_left=1012&amp;prev_line_num_right=1012"
+          data-left-range="1013-1133"
+          data-right-range="1013-1133">
+       <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-083054d69aa36e4db9b6bfd0a63e0322"></a>
+      <div id="diff-4"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="https://github.com/Smoothieware/Smoothieware/commit/src/modules/utils/motordrivercontrol/drivers/TMC26X/TMC26X.h">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="https://github.com/Smoothieware/Smoothieware/blob/b6c3b76890b377244f9509e25c89c7e1f758e22f/src/modules/utils/motordrivercontrol/drivers/TMC26X/TMC26X.h" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version b6c3b76 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="3 additions &amp; 1 deletion">4 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-deleted"></span><span class="block-diff-neutral"></span></span>
+
+            <span class="user-select-contain" title="src/modules/utils/motordrivercontrol/drivers/TMC26X/TMC26X.h">
+              src/modules/utils/motordrivercontrol/drivers/TMC26X/TMC26X.h
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-083054d69aa36e4db9b6bfd0a63e0322"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/6c1069730c834f1a0803740367e67386f0317650?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=57&amp;next_line_num_right=57&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FTMC26X%2FTMC26X.h&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7"
+            data-left-range="1-56" data-right-range="1-56">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -57,7 +57,7 @@ class TMC26X</td>
+  </tr>
+
+    <tr>
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322L57" data-line-number="57"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R57" data-line-number="57"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">     * You can select a different stepping with setMicrosteps() to aa different value.</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322L58" data-line-number="58"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R58" data-line-number="58"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">     * \sa start(), setMicrosteps()</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322L59" data-line-number="59"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R59" data-line-number="59"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">     */</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322L60" data-line-number="60"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-en">TMC26X</span>(std::function&lt;<span class="pl-k">int</span>(<span class="pl-c1">uint8_t</span> *b, <span class="pl-k">int</span> cnt, <span class="pl-c1">uint8_t</span> *r)&gt; spi);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R60" data-line-number="60"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-en">TMC26X</span>(std::function&lt;<span class="pl-k">int</span>(<span class="pl-c1">uint8_t</span> *b, <span class="pl-k">int</span> cnt, <span class="pl-c1">uint8_t</span> *r)&gt; spi<span class="x x-first">, </span><span class="pl-k x">char</span><span class="x x-last"> designator</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322L61" data-line-number="61"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R61" data-line-number="61"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322L62" data-line-number="62"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R62" data-line-number="62"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-c">/*!</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322L63" data-line-number="63"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R63" data-line-number="63"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">     * \brief configures the TMC26X stepper driver. Before you called this function the stepper driver is in nonfunctional mode.</span></span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="9">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-083054d69aa36e4db9b6bfd0a63e0322"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/Smoothieware/Smoothieware/blob_excerpt/6c1069730c834f1a0803740367e67386f0317650?diff=unified&amp;left_hunk_size=5&amp;mode=100644&amp;next_line_num_left=445&amp;next_line_num_right=445&amp;path=src%2Fmodules%2Futils%2Fmotordrivercontrol%2Fdrivers%2FTMC26X%2FTMC26X.h&amp;prev_line_num_left=63&amp;prev_line_num_right=63&amp;right_hunk_size=7"
+            data-left-range="64-444" data-right-range="64-444">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8.5l2.5 2.5c0 0.55-0.45 1-1 1H9v-1h3.5L10.5 9H3.5L1.5 11h3.5v1H1c-0.55 0-1-0.45-1-1l2.5-2.5L0 6c0-0.55 0.45-1 1-1h4v1H1.5l2 2h7l2-2H9v-1h4c0.55 0 1 0.45 1 1L11.5 8.5z m-5.5-1.5h2V4h2L7 1 4 4h2v3z m2 3H6v3H4l3 3 3-3H8V10z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -445,5 +445,7 @@ class TMC26X</td>
+  </tr>
+
+    <tr>
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322L445" data-line-number="445"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R445" data-line-number="445"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     };</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322L446" data-line-number="446"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R446" data-line-number="446"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322L447" data-line-number="447"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R447" data-line-number="447"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-c1">uint8_t</span> cool_step_lower_threshold; <span class="pl-c">// we need to remember the threshold to enable and disable the CoolStep feature</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R448" data-line-number="448"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">char</span> designator;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R449" data-line-number="449"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322L448" data-line-number="448"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R450" data-line-number="450"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> };</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322L449" data-line-number="449"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-083054d69aa36e4db9b6bfd0a63e0322R451" data-line-number="451"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+
+              </table>
+            </div>
+      </div>
+</div>
+
+<button class="js-toggle-all-file-notes" data-hotkey="i" style="display:none">Toggle all file notes</button>
+
+
+<div id="all_commit_comments" class="js-quote-selection-container ">
+
+  <div class="commit-comments-heading">
+    
+<div id="partial-visible-comments-header">
+  <span class="right">
+    
+  </span>
+
+  <h4 class="commit-comment-count">
+    0 comments
+    on commit <code class="commit-sha">b6c3b76</code>
+  </h4>
+
+</div>
+
+
+  </div>
+
+  <div id="comments" class="comment-holder">
+    
+
+<!-- Rendered timeline since 2016-04-29 15:38:53 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="Smoothieware/Smoothieware:commit:b6c3b76890b377244f9509e25c89c7e1f758e22f"
+      data-url="/Smoothieware/Smoothieware/commit/b6c3b76890b377244f9509e25c89c7e1f758e22f/show_partial?partial=commit%2Ftimeline_marker&amp;since=1461969533"
+      data-last-modified="Fri, 29 Apr 2016 22:38:53 GMT">
+
+</div>
+
+  </div>
+
+  
+
+    Please <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FSmoothieware%2FSmoothieware%2Fcommit%2Fb6c3b76890b377244f9509e25c89c7e1f758e22f" rel="nofollow">sign in</a> to comment.
+
+</div>
+
+
+  </div>
+  <div class="modal-backdrop"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com/" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2016 <span title="0.33281s from github-fe154-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com/" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/compat-7db58f8b7b91111107fac755dd8b178fe7db0f209ced51fc339c446ad3f8da2b.js"></script>
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-f8175c23360b42a4eb18b2319fefeae252cfeea482fb804356f4136a52bfddb3.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-1502104f450cb05859f99b57e29782e071e3fb240e237adb8cbf17ebbdb271c7.js"></script>
+      
+      
+      
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="#">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="#">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  </body>
+
+<!-- Mirrored from github.com/Smoothieware/Smoothieware/commit/b6c3b76890b377244f9509e25c89c7e1f758e22f by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:04 GMT -->
+</html>
+

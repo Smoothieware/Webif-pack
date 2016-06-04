@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/3d-printer-guide by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:42:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>3D Printer Guide - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="login__customdomainscriptf36a.html?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="../images/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = '../images/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "3d-printer-guide";
+        OZONE.request.timestamp = 1463138517;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "3d-printer-guide";
+        WIKIREQUEST.info.pageId = 21663124;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="../images/wikidot.combined.js"></script>
+            <script type="text/javascript" src="../images/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="../images/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(../images/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(../images/style.css);
+                    @import url(../images/style-2.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="../images/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="../images/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="../images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="../images/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="index.html">Documentation</a><br /></li>
+<li><img src="../images/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="smoothieboard.html">SmoothieBoard</a><br /></li>
+<li><img src="../images/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="blog.html">Blog</a><br /></li>
+<li><img src="../images/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="gallery.html">Gallery</a><br /></li>
+<li><img src="../images/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="irc.html">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="general.html">Forum</a></li>
+<li><a href="http://groups.google.com/group/smoothieware-support">Support/Help Mailing list</a></li>
+<li><a href="http://groups.google.com/group/smoothie-dev">Developper Mailing list</a></li>
+<li><a href="111870450664099533727.html">Google+ Community</a></li>
+<li><a href="index-2.html">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="../images/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="search.html">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="../images/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>3D Printer Guide</span></div>
+          
+          <div id="page-content">
+
+<h1><span>Your guide to installing Smoothieboard in a 3D printer</span></h1>
+<div class="col-md-6">
+<div class="image-container floatleft"><img src="../images/icon-3dprinter-big-round.png" height="80" width="80" alt="icon-3Dprinter-big-round.png" class="image" /></div>
+<p>Probably the machine for which Smoothie is most used, due to Smoothie's roots in the <a href="main_page.html">RepRap</a> project, 3D printers are fairly simple to Smoothiefy.</p>
+<p>This is a step-by-step guide to connecting your board to the various components of the 3D printer, configuring everything, from the beginning to actual printing.</p>
+<p>This guide is a <a href="irc.html">community</a> effort, and this page is a Wiki. Please don't hesitate to <a href="#_editpage">edit it</a> to fix mistakes and add information, any help is very welcome.</p>
+<img src="../images/smoothieboard-fritzing.png" width="100%" alt="smoothieboard-fritzing.png" class="image" /></div>
+<div class="col-md-6">
+<table style="margin:0; padding:0">
+<tr>
+<td style="margin:0; padding:0">
+<div id="toc">
+<div id="toc-action-bar"><a href="javascript:;" onclick="WIKIDOT.page.listeners.foldToc(event)">Fold</a><a style="display: none" href="javascript:;" onclick="WIKIDOT.page.listeners.unfoldToc(event)">Unfold</a></div>
+<div class="title">Table of Contents</div>
+<div id="toc-list">
+<div style="margin-left: 2em;"><a href="#toc0">Unboxing</a></div>
+<div style="margin-left: 2em;"><a href="#toc1">Main Power Input</a></div>
+<div style="margin-left: 3em;"><a href="#toc2">Setup</a></div>
+<div style="margin-left: 2em;"><a href="#toc3">Stepper Motors</a></div>
+<div style="margin-left: 3em;"><a href="#toc4">Wiring</a></div>
+<div style="margin-left: 4em;"><a href="#toc5">Direct wiring</a></div>
+<div style="margin-left: 4em;"><a href="#toc6">External Stepper driver</a></div>
+<div style="margin-left: 3em;"><a href="#toc7">Configuring</a></div>
+<div style="margin-left: 2em;"><a href="#toc8">Temperature control</a></div>
+<div style="margin-left: 3em;"><a href="#toc9">Thermistor</a></div>
+<div style="margin-left: 3em;"><a href="#toc10">Heating element</a></div>
+<div style="margin-left: 4em;"><a href="#toc11">Current rating</a></div>
+<div style="margin-left: 3em;"><a href="#toc12">Testing</a></div>
+<div style="margin-left: 3em;"><a href="#toc13">PID</a></div>
+<div style="margin-left: 3em;"><a href="#toc14">PID autotuning</a></div>
+<div style="margin-left: 2em;"><a href="#toc15">Endstops</a></div>
+<div style="margin-left: 3em;"><a href="#toc16">Endstop Wiring</a></div>
+<div style="margin-left: 3em;"><a href="#toc17">Testing</a></div>
+<div style="margin-left: 2em;"><a href="#toc18">Fans</a></div>
+<div style="margin-left: 2em;"><a href="#toc19">Appendixes</a></div>
+<div style="margin-left: 3em;"><a href="#toc20">Printing, milling or cutting from the SD card</a></div>
+<div style="margin-left: 3em;"><a href="#toc21">Crimping connectors</a></div>
+<div style="margin-left: 3em;"><a href="#toc22">Soldering connectors</a></div>
+<div style="margin-left: 3em;"><a href="#toc23">Using two steppers motor on a single driver</a></div>
+<div style="margin-left: 3em;"><a href="#toc24">Doubling stepper motor drivers.</a></div>
+<div style="margin-left: 3em;"><a href="#toc25">External Stepper Drivers</a></div>
+<div style="margin-left: 3em;"><a href="#toc26">Solid State Relays</a></div>
+<div style="margin-left: 3em;"><a href="#toc27">Swapping stepper motor drivers</a></div>
+<div style="margin-left: 3em;"><a href="#toc28">Which pins are which</a></div>
+<div style="margin-left: 3em;"><a href="#toc29">Multiple extruders</a></div>
+<div style="margin-left: 3em;"><a href="#toc30">Safety thermistor</a></div>
+<div style="margin-left: 2em;"><a href="#toc31">Troubleshooting</a></div>
+<div style="margin-left: 2em;"><a href="#toc32">Software</a></div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/67/USB.svg/500px-USB.svg.png" width="450px" alt="500px-USB.svg.png" class="image" /></div>
+<h2 id="toc0"><span><a name="unboxing"></a> Unboxing</span></h2>
+<p>Your Smoothieboard comes with a microSD card in the microSD slot.</p>
+<p>The boards come pre-flashed. With a basic configuration file installed on the SD card, no preparation is needed before you can connect Smoothieboard to your computer and start interacting with it.</p>
+<p>A good first step is to connect your board to your computer to familiarize yourself with it. Connect a <a href="http://en.wikipedia.org/wiki/USB#.22A.22_.26_.22B.22_connectors">USB-B</a> cable to the USB connector on the board, and to your computer.</p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://chibidibidiwah.wdfiles.com/local--files/3d-printer-guide/smoothie-config-screencap.png" width="450px" alt="smoothie-config-screencap.png" class="image" /></div>
+<p>A moment after connection, your computer will recognize the Smoothieboard as a <a href="http://en.wikipedia.org/wiki/USB_mass_storage_device_class">USB Mass Storage Device</a> (like a USB disk-drive or a SD card reader), showing you the files present on the SD card. Drivers are needed for Windows 7/8, while Linux and Mac OS X directly support the device, you can <a href="windows-drivers.html">find those drivers here</a>.</p>
+<p>This allows you to add, copy, edit or delete any file you'd like. Already present on the SD card is a file named &quot;config&quot;. This file contains all of the configuration options for your board and is read when you start or reset your board. You edit the <a href="configuring-smoothie.html">configuration</a> simply by editing this file in a <a href="https://wiki.gnome.org/Apps/Gedit">Text Editor</a>, saving it and resetting the board. No need to recompile or flash the board.</p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="wiki-note">
+<p>The SD card can also be used to flash a more recent version of the firmware to your board, see <a href="getting-smoothie.html">where to get the binary file</a> and <a href="flashing-smoothie-firmware.html">how to flash it via the SD card</a>.<br />
+It can also be used to store and play <a href="http://en.wikipedia.org/wiki/G-code">G-Code</a> files, see <a href="player.html">Player</a>.</p>
+</div>
+<p>USB Mass Storage is not the only thing you get when you connect the board. The board also exposes a <a href="http://en.wikipedia.org/wiki/USB_communications_device_class">USB CDC</a> Serial interface, allowing you to send G-Code and receive answers. (There is also a DFU&nbsp;interface for flashing firmwares but that's mostly for developers).</p>
+<p>The CDC (Serial) interface is the interface host programs like <a href="pronterface.html">Pronterface</a> use to allow you to interact with your machine. If you are already familiar with it, you can try connecting right now and get an answer from the board. If not, we explain it all later in this guide.</p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<h2><span><a name="warning"></a> Warnings</span></h2>
+<p>Before you start wiring your machine's elements to the board, there are several things you need to keep in mind and be careful about during all of the assembly.</p>
+<p><strong>Make sure you read this. Seriously.</strong></p>
+<div class="image-container floatright"><img src="http://chibidibidiwah.wdfiles.com/local--files/3d-printer-guide/smoothieboard-polarity.png" width="450px" alt="smoothieboard-polarity.png" class="image" /></div>
+<div class="bs-callout bs-callout-danger">
+<h4><span>Polarity</span></h4>
+<p>Always make sure the <a href="http://en.wikipedia.org/wiki/Electrical_polarity">polarity</a> is correct when wiring in power inputs (coming from the <a href="http://en.wikipedia.org/wiki/Power_supply_unit_(computer)">Power Supply</a>). Reversed polarity can damage or destroy all or part of your board. Polarity is indicated on the board itself by the + and - signs. Double check. On older versions of the board, markings are partially hidden by the connector, making it confusing. Rely on only the diagrams.</p>
+<p>To check the polarity of your power source, attach your multimeter probes to the two wires of your power source respectively. If the voltmeter reading is positive it implies that the red probe is connected to the positive wire (+) and the black probe to the negative wire (-).</p>
+<p>The main (labeled VBB) power input has a reverse polarity protection, however, it will not hold forever. As soon as you notice something is wrong, turn the power supply off and check again.</p>
+</div>
+<div class="bs-callout bs-callout-danger">
+<h4><span>Disconnecting</span></h4>
+<p><strong><a href="http://datacent.com/images/shots/burnt_chip.jpg">Never</a></strong> disconnect or connect stepper motors from the stepper motor drivers while the board is powered (i.e., when the Power Supply is turned on).</p>
+<p>The drivers have very good protection against most possible problems and are very hard to destroy accidentally. But it is possible.</p>
+</div>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Shorts</span></h4>
+<p>Be careful that nothing metallic <strong>ever</strong> touches the board while it is powered on. Falling screwdrivers, nuts and bolts can cause shorts and destroy the board.<br />
+Check the board before powering it on.<br />
+Do not press the reset button with anything metallic, as you could slip and cause a short, use a plastic screwdriver or the like.</p>
+</div>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Use the right connector</span></h4>
+<p>Always check the schematic before connecting power sources (coming from the Power Supply) to the board. Connected to the wrong connector can destroy components. A common example of this problem is plugging a power input cable, into the connector for an output, or plugging the limit switches in backwards.</p>
+</div>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Crimping</span></h4>
+<p>Make absolutely sure of your connections using <a href="http://en.wikipedia.org/wiki/Crimp_connection">crimps</a> or screw terminals, from wires to any type of connector, are very careful and well done. Connections (to the stepper motors for example) lost while the machine is running can destroy your board.</p>
+</div>
+<div class="bs-callout bs-callout-danger">
+<h4><span>Markings</span></h4>
+<p>In the case of the VBB power input, be careful. If your board came with connectors pre-soldered, the 5mm connector is present, and the polarity of that connector is that of the large traces in the wiring diagram to the right (red is +, blue is -). On some boards, the marking on the boards may be hidden by the connector itself, so for VBB, do not rely on the markings on the board, but on the diagrams on this page. However, if you did not get your connectors soldered, and want to solder a 3.5mm connector instead of a 5mm connector, also note that the polarity is the opposite.</p>
+</div>
+<div class="bs-callout bs-callout-info">
+<h4><span>USB v Ethernet</span></h4>
+<p>USB&nbsp;can, in some setups, be subject to interference, which causes disconnections, and can ruin your work. This is very hard to prevent if it happens even in normal conditions. Ethernet, on the other hand, does not have this problem: save yourself the trouble, and use Ethernet right away. It's very nice. See <a href="network.html">Network</a> for information on how to set it up.</p>
+</div>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Destroying your board</span></h4>
+<p>If you receive a bad board, you will get a replacement. But if you destroy your own board, your only options will be to fix it yourself (which can be quite difficult), or get a new one.</p>
+<p>This is why it is very important you make sure you do not destroy your own board. Smoothieboard is reasonably protected, but there are still things that will destroy it. The general idea is: if a part of the board gets too much power, it will get destroyed. Here are some common mistake users do that cause the board to get too much power and die:&nbsp;</p>
+<ul>
+<li>Plugging 12-24v (motor power) into anything you are not supposed to. Like the 5V line, or an end-stop or thermistor input for example. Problems with the 5V or 3.3V power are not as much of a problem as the board is 5V-tolerant, so wrong connections and shorts should be okay as long as they do not last too long.</li>
+<li>Shorting 12-24v to anything else, which is essentially the same as plugging it into a place you are not supposed to (see above). This can happen by dropping a metal object onto the board, bad soldering, loose wires, un-protected wires, etc &#8230;</li>
+<li>Using an inductive load (like a motor, fan or solenoid) on a MOSFET, without a diode across (see Fan documentation).</li>
+</ul>
+<p>The general idea here is: always make sure everything is clean, and double-check everything <strong>before</strong> turning the power on. You can not learn by making mistakes here, as mistakes will likely cost you your board.</p>
+<p><a href="https://en.wikipedia.org/wiki/Electrostatic_discharge">Electrostatic discharge</a> can also destroy your board : make sure you <a href="http://smoothieware.org/forum/t-1381690?from=email#post-2475310">properly ground everything</a>.</p>
+</div>
+<p>For a good read about safety, you can refer to the <a href="http://reprap.org/wiki/Safety">RepRap Wiki documentation on the subject</a></p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://i00.i.aliimg.com/wsphoto/v0/546867934/Genuine-MeanWell-Mean-Well-MW-7-5V-46A-350W-Regulated-AC-DC-Switching-Power-Supply-NES.jpg" width="450px" alt="Genuine-MeanWell-Mean-Well-MW-7-5V-46A-350W-Regulated-AC-DC-Switching-Power-Supply-NES.jpg" class="image" /></div>
+<h2 id="toc1"><span><a name="main-power-input"></a> Main Power Input</span></h2>
+<p>Without power, your board can not do much. The board uses power to move stepper motors, and power heating elements, fans, and others.</p>
+How to choose a power supply unit (PSU) :<br />
+<dl>
+<dt><a href="http://en.wikipedia.org/wiki/Voltage">Voltage</a> (V)</dt>
+<dd>Can be from 12 to 24V. While most of the components on the Smoothieboard are rated up to 32V, it is not recommended or supported to use that voltage. 12V PSUs are more common, and generally cheaper. However, the higher the voltage, the more you will get out of your stepper motors. This is the reason some designers use 24V PSUs. However, be careful that with a 24V PSU, you will need 24V fans, and will need to reduce the PWM setting for your heating elements.</dd>
+</dl>
+<h3 id="toc2"><span>Setup</span></h3>
+<p>Make sure you use a <a href="http://en.wikipedia.org/wiki/Regulated_power_supply">Regulated Power Supply</a>, make sure you connect the ground wire for the <a href="http://en.wikipedia.org/wiki/Mains_electricity">mains</a> to the power supply, and if it has a fan, make sure it has sufficient space around it to let air flow and cool it appropriately.</p>
+<p>To wire the power supply unit to <a href="http://en.wikipedia.org/wiki/Mains_electricity">mains</a> (wall AC power), make sure you connect the right colored wires to the right connectors on the PSU. The 3 connectors are &quot;live&quot;, &quot;neutral&quot; and &quot;ground&quot;. Color changes from cable to cable, you can find charts for your specific country/cable on the internet, but the following colors are the most common:</p>
+<ul>
+<li>US: Black = Load/Live, White = Neutral, Green = Earth</li>
+<li>Europe: Brown = Load/Live, light Blue = Neutral, Yellow/Green = Earth</li>
+</ul>
+<p>Once the wires connected to the PSU, make sure none of your computers is doing something important (like a system upgrade). In case something goes wrong, plug the PSU into a power strip with an on/off button. Then turn that button ON. If your house loses power, you did something wrong. If an LED illuminates on the PSU, everything is fine: unplug the PSU and continue.</p>
+<div class="bs-callout bs-callout-danger">
+<h4><span>Don't die</span></h4>
+<p><strong><a href="http://1.media.collegehumor.cvcdn.com/60/74/db2c0a0e1cbfdbe1eecf50a0289884d3-free-key-cleaner.jpg">NEVER</a></strong> manipulate mains (220/110V) power wires while they are plugged into the wall plug. Unpleasantness and/or death are common consequences of not respecting this rule.</p>
+</div>
+<div class="bs-callout bs-callout-danger">
+<p>Ground your printer's frame by connecting it to the Earth terminal on your power supply. In the (unlikely) event that a power supply wire comes undone and touches the printer's frame, this will prevent you from getting an unpleasant and/or deadly shock.</p>
+</div>
+<div class="bs-callout bs-callout-primary">
+<h4><span>5V</span></h4>
+<p>Your board needs two sorts of power to work : 12-24V power to turn motors, heat hotends, etc, and 5V power to power the microcontroller ( the brain ).</p>
+<p>There are three ways to provide 5V power to the board :&nbsp;</p>
+<ul>
+<li>By plugging a USB cable in, USB cables provide 5V</li>
+<li>By soldering a <a href="voltageregulator.html">voltageregulator</a> to the board ( and providing 12+24V, which the voltage regulator then turns into 5V )</li>
+<li>By providing 5V directly to the 5V power input ( next to the VBB power input )</li>
+</ul>
+</div>
+<p>Now that the PSU is getting mains power, your PSU is converting it into 12 or 24V power. You need to connect wires from it to the Smoothieboard to provide power.</p>
+<p>The most important thing is to respect polarity : <strong>+</strong> goes to <strong>+</strong>, <strong>-</strong> goes to <strong>-</strong>. On the PSU, <strong>+</strong> terminals are indicated as <strong>+</strong>, <strong>V+</strong>, <strong>12V+</strong> or <strong>24V+</strong>. Ground (<strong>-</strong>) terminals are indicated as <strong>-</strong>, <strong>V-</strong>, <strong>COM</strong> or <strong>GND</strong>.</p>
+<p>On the Smoothieboard they are indicated simply as <strong>+</strong> and <strong>-</strong>.</p>
+<div class="image-container alignleft"><img src="https://raw.githubusercontent.com/Bouni/smoothieboard-graphics/master/smoothieboard-power.png" width="800px" alt="smoothieboard-power.png" class="image" /></div>
+<p>By convention, black (sometimes brown) wires are used for ground, and red (sometimes orange, white or yellow) wires are used for power connections.</p>
+<p>Once the wires are correctly connected, you can turn the PSU ON. If everything was done correctly, the red LED (marked <strong>VBB</strong>) on the Smoothieboard will light up brightly.</p>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Be careful</span></h4>
+<p>If it does not, immediately turn the PSU off.</p>
+<p>Check polarity, and check all the connections are strong and properly done.</p>
+<p>When you turn the PSU&nbsp;on, make sure you are ready to immediately turn it back off.</p>
+</div>
+<p>Now that the board has power, you can use that power to move things!</p>
+<h3><span>Emergency stop</span></h3>
+<p>It is recommended you setup an emergency stop button on your machine, so that in case of a problem, you can easily and quickly turn the machine off. For information on how to do this, please read <a href="http://smoothieware.org/emergencystop">EmergencyStop</a>.</p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<p><iframe width="420" height="315" src="https://www.youtube.com/embed/bngx2dKl5jU" frameborder="0" style="float:right" allowfullscreen=""></iframe></p>
+<h2 id="toc3"><span><a name="stepper-motors"></a> Stepper Motors</span></h2>
+<p>A bit of theory :</p>
+<blockquote>
+<p>« A stepper motor (or step motor) is a brushless DC electric motor that divides a full rotation of the motor into a number of equal steps. The motor's position can then be commanded to move and hold at one of these steps without any feedback sensor (an open-loop controller). » (<a href="stepper_motor.html">Wikipedia</a>)</p>
+</blockquote>
+<p>Because they work by steps, and you can accurately control how many steps you move in each direction, stepper motors are a very practical way of moving things to a desired position. This makes them great for most CNC applications.</p>
+<p>Smoothie comes with stepper motor drivers designed for bipolar stepper motors, with a maximum current rating of 2 Amps.</p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://chibidibidiwah.wdfiles.com/local--files/3d-printer-guide/smoothieboard-steppers-wiring.png" width="450px" alt="smoothieboard-steppers-wiring.png" class="image" /></div>
+<h3 id="toc4"><span>Wiring</span></h3>
+<h4 id="toc5"><span>Direct wiring</span></h4>
+<p>Bipolar stepper motors have two poles (bi-polar). Each pole is connected to two wires. That's 4 wires coming out of your stepper motor. These have to be connected to your Smoothieboard.</p>
+<p>Each stepper motor driver on the Smoothieboard has 4 connections to that effect. (Stepper motor drivers are labeled M1, M2 etc &#8230;)</p>
+<p>The tricky thing is often to find out which wires connect to which poles. If you just wire things at random, you have a chance it will work, but let's be scientific about it. Several methods:</p>
+<p>Now to connect the wires to the Smoothieboard. Let's call one coil A, and the other coil B. It doesn't matter which is which. Polarity also doesn't matter, all it changes is the direction the motor turns, and you can change that in the configuration file. Now simply connect your two wires to the Smoothieboard's 4 pins for that stepper motor driver as such : AABB or BBAA. Other combinations like ABBA or ABAB will not work.</p>
+<div class="image-container alignleft"><img src="https://raw.githubusercontent.com/Bouni/smoothieboard-graphics/master/smoothieboard-stepper-wiring.png" width="800px" alt="smoothieboard-stepper-wiring.png" class="image" /></div>
+<p>Once your stepper motor is properly connected to your Smoothieboard, it is ready to be controlled.</p>
+<div class="thumbnail"><img src="http://arthurwolf.github.io/smoothieboard-graphics/schematics/stepper-basic.svg" width="100%" alt="stepper-basic.svg" class="image" />
+<h4><span>Wiring a stepper motor to a stepper motor driver.</span></h4>
+<p>In this example, a stepper motor is connected to the M1 driver, and power is provided to VBB ( the main power input ).</p>
+</div>
+<h4 id="toc6"><span>External Stepper driver</span></h4>
+<p>If you want to use larger stepper motors than the Smoothieboard's drivers can handle ( 2A max ), you need to use external stepper drivers.</p>
+<p>You can find detailed information on how to wire an external stepper motor driver to a Smoothieboard in the <strong><a href="http://smoothieware.org/general-appendixes#external-drivers">External driver appendix</a></strong>.</p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://www.automationdirect.com/images/products/labels/pl_stpmtr17060_01.jpg" width="450px" alt="pl_stpmtr17060_01.jpg" class="image" /></div>
+<h3 id="toc7"><span>Configuring</span></h3>
+<p>Example configurations are available in github <a href="configsamples.html">https://github.com/Smoothieware/Smoothieware/tree/edge/ConfigSamples</a>.</p>
+<p>You can also refer to the <a href="configuring-smoothie.html">Configuration documentation</a>.</p>
+<h4><span>Current</span></h4>
+<p>The first thing you have to do is tell the stepper motor drivers what is the current rating for your stepper motors is. To drive the stepper motor correctly, the driver has to know the motor's current rating.</p>
+<p>Each stepper motor model has a precise current rating. You can drive your stepper motor at a lower current, which will make it more silent, but also less powerful. But you can not drive the motor at a higher current than it is rated at. This would cause overheating, and possibly skipped steps.</p>
+<p>The rating is often written on your stepper motor's label ( see picture on the right ). If it is not, you can get it by googling the stepper motor model number, or by contacting your seller or manufacturer.</p>
+<p>Once you have the correct rating, you can set the corresponding parametr in the configuration file.</p>
+<p>Smoothie has a funny way of naming stepper motor drivers. Instead of naming them X, Y or Z, because this makes no sense in <a href="http://en.wikipedia.org/wiki/Cartesian_coordinate_robot">non-cartesian</a> robots like <a href="delta_robot.html">delta</a> robots, we name the drivers using Greek letters so they are <a href="http://en.wikipedia.org/wiki/Arm_solution">arm application</a> agnostic :</p>
+<table class="wiki-content-table">
+<tr>
+<th>Label on the Smoothieboard</th>
+<th>M1</th>
+<th>M2</th>
+<th>M3</th>
+<th>M4</th>
+<th>M5</th>
+</tr>
+<tr>
+<td>Axis in a Cartesian machine</td>
+<td><strong>X</strong> (left-right)</td>
+<td><strong>Y</strong> (front-back)</td>
+<td><strong>Z</strong> (up-down)</td>
+<td><strong>E0</strong> : First extruder</td>
+<td><strong>E1</strong> : Second extruder</td>
+</tr>
+<tr>
+<td>Greek letter</td>
+<td><strong><span style="white-space: pre-wrap;">α</span></strong> (alpha)</td>
+<td><strong><span style="white-space: pre-wrap;">β</span></strong> (beta)</td>
+<td><strong><span style="white-space: pre-wrap;">γ</span></strong> (gamma)</td>
+<td><strong><span style="white-space: pre-wrap;">δ</span></strong> (delta)</td>
+<td><strong><span style="white-space: pre-wrap;">ε</span></strong> (epsilon)</td>
+</tr>
+<tr>
+<td>Current setting configuration option</td>
+<td>alpha_current</td>
+<td>beta_current</td>
+<td>gamma_current</td>
+<td>delta_current</td>
+<td>epsilon_current</td>
+</tr>
+</table>
+<p>Now, as described in the &quot;Unboxing&quot; paragraph, connect the board to your computer, open the &quot;config&quot; file with a text editor, and change the configuration value for each stepper motor driver to the correct value.</p>
+<p>For example, if your alpha stepper motor has a current rating of 1.68A, edit the corresponding line to read :</p>
+<div class="code">
+<pre>
+<code>alpha_current                                1.68             # X stepper motor current</code>
+</pre></div>
+<p>Do this for each stepper motor you have to connect to the board. (If you have a Cartesian robot, see which motor connects to which stepper driver in the array above. If you use another type of arm solution, see the specific documentation.)</p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://cncsuperstore.com/image/cache/data/Products/Kits_Assemblies/JS KH42JM2B182A KIT/8-500x500.JPG" width="450px" alt="8-500x500.JPG" class="image" /></div>
+<h4><span>Steps per millimeter</span></h4>
+<p>A stepper motor driver operates in steps. It moves a certain number of steps in one direction, then a certain number of steps in another. You think in millimetres. You want your machine to go to a certain position in millimetres, then another position in millimetres.</p>
+<p>You need Smoothieboard to convert the millimetres you ask of it, into steps the stepper motor driver understands.</p>
+<p>That conversion depends on your exact arm solution. The most common, and the simplest, is the Cartesian arm solution, and it is the one we will focus on here. Documentation for other arm solutions can be found separately.</p>
+<p>In the case of a Cartesian arm solution, you simply convert a certain number of millimeters to a certain numbers of steps. That is the steps_per_millimeter configuration option that you have to set for each stepper motor.</p>
+<p>To compute it, you must multiply a certain number of factors.</p>
+<ul>
+<li>The object you move moves a certain number of millimetres for each rotation of the stepper motor. (This depends on the characteristics of the belt/pulley, or lead-screw system you are using.)</li>
+<li>The stepper motor moves a certain number of <strong>full</strong> steps per rotation. That is usually 200. (But it can be 400.)</li>
+<li>Each step is divided by the stepper motor driver in a certain number of <a href="stepper_motor.html#Microstepping">microsteps</a>. It is that number, and not the number of full steps, that we want. Smoothie always divides steps into 16 microsteps.</li>
+</ul>
+<p>The formula is as follows :</p>
+<div style="text-align: center;">
+<p><span class="math-inline">$\text{(micro) steps per millimeter} = ( \text{full steps per rotation} * \text{microsteps per step} ) / \text{millimeters per rotation}$</span></p>
+</div>
+<p>To help you, there is an awesome calculator by the awesome Josef Prusa: <strong><a href="http://calculator.josefprusa.cz/">http://calculator.josefprusa.cz/</a></strong></p>
+<p>Once you know the correct value for a given stepper motor driver, set it in the config file.:</p>
+<div class="code">
+<pre>
+<code>alpha_steps_per_mm                           80               # Steps per mm for alpha stepper</code>
+</pre></div>
+<p>Do this for each stepper motor driver.</p>
+<p>In the case of your extruder stepper motor, the principle is the same, but the value is <em>extruder_steps_per_mm</em>.</p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://reprap.org/mediawiki/images/1/12/Pronterface.png" width="450px" alt="Pronterface.png" class="image" /></div>
+<h4><span>Direction</span></h4>
+<p>It is now time to test your stepper motors. For this you will need to use host software like <a href="pronterface.html">Pronterface</a> or the <a href="network.html">web interface</a>.</p>
+<p>Now connect to your Smoothieboard over the serial interface. Power your machine on by plugging the PSU into the wall.</p>
+<p>Now you need to move an axis to make sure the stepper motor is turning in the right direction. In <a href="pronterface.html">Pronterface</a>, click near the yellow arrow marked <strong>&quot;+X&quot;</strong>.</p>
+<p>Your X axis will move. If it moved to the right, great! Everything is fine, and you have nothing to change. If it moved to the left, you need to invert the direction of that axis.</p>
+<p>You do this by editing the configuration file, and inverting the direction pin for that stepper motor driver :</p>
+<div class="code">
+<pre>
+<code>alpha_dir_pin                                0.5              # Pin for alpha stepper direction</code>
+</pre></div>
+<p>Becomes :</p>
+<div class="code">
+<pre>
+<code>alpha_dir_pin                                0.5!             # Pin for alpha stepper direction</code>
+</pre></div>
+<p>This is for your axes. In the case of your extruder, the config value is <em>extruder_dir_pin</em>.</p>
+<p>Save the config file, reset the Smoothieboard, connect again using <a href="pronterface.html">Pronterface</a>. Now the axis will move in the right direction.</p>
+<p>Do this for each axis.</p>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Moving bed</span></h4>
+<p>If you have a moving bed in the Y axis for example, as opposed to a moving tool, be careful : what matters is the direction of the head relative to the bed, not the direction of the bed relative to the machine. It's very common to get confused and invert your Y&nbsp;axis on moving bed machines (or not invert it when it should be). Basically, if an asymmetrical object looks like the model when it is printed, then your Y axis is correct, otherwise you need to change your configuration.</p>
+</div>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="https://www.hotends.com/image/cache/data/standard/jhn_mk5b-500x500.jpg" width="450px" alt="jhn_mk5b-500x500.jpg" class="image" /></div>
+<h2 id="toc8"><span><a name="temperature-control"></a> Temperature control</span></h2>
+<p>In a 3D printer, you heat thermoplastics. There are two different parts in which you want to do that. First the hot-end heats the plastic to the point where it is liquid enough to go through the nozzle. Second, the heated bed (in only some printers), on which the first layer is deposited, is heated to allow for better sticking of the plastic to the bed, and more uniform temperature in the part while printing.</p>
+<p>For detailed information about temperature control in Smoothie, you can look at this part of the documentation:&nbsp;<strong><a href="temperaturecontrol.html">TemperatureControl</a></strong></p>
+<p>The process is essentially the same to wire and control a hot-end, or a heated bed, and is as follows :&nbsp;</p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://chibidibidiwah.wdfiles.com/local--files/3d-printer-guide/smoothieboard-thermistor-inputs.png" width="450px" alt="smoothieboard-thermistor-inputs.png" class="image" /></div>
+<h3 id="toc9"><span>Thermistor</span></h3>
+<p>A <a href="http://en.wikipedia.org/wiki/Thermistor">thermistor</a>'s resistance changes with temperature. By reading that resistance, we can determine the temperature of a hot-end or a heated bed.</p>
+<p>This allows Smoothie to turn the heater on or off depending on the temperature it reads, to achieve the desired temperature.</p>
+<div class="thumbnail"><img src="http://arthurwolf.github.io/smoothieboard-graphics/schematics/thermistor-basic.svg" width="100%" alt="thermistor-basic.svg" class="image" />
+<h4><span>Wiring a thermistor.</span></h4>
+<p>To wire the thermistor, take the two wires from the thermistor on your hot-end or heated bed, and connect them to one of the pairs of thermistor inputs on the Smoothieboard. Each input is two pins, one for each thermistor wire. There is no polarity to respect.</p>
+</div>
+<p>Smoothieboard has 4 thermistor inputs total, meaning a line of 8 pins on the edge of the board. Polarity is not important for thermistors.</p>
+<p>By convention (meaning that if you wire things according to the way it is specified in the default configuration file, you do not need to edit the configuration file as it will already be correct),</p>
+<ul>
+<li>Hot-end thermistor connects to T0</li>
+<li>Heated bed thermistor connects to T1</li>
+</ul>
+<p>In the <a href="https://github.com/Smoothieware/Smoothieware/blob/edge/ConfigSamples/Smoothieboard/config">default configuration file</a>, the thermistor pins are set up using that convention :&nbsp;</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.thermistor_pin    0.23             # Pin for the thermistor to read (here T0)
+
+temperature_control.bed.thermistor_pin       0.24             # Pin for the heated bed to read (here T1)</code>
+</pre></div>
+<p>You can, however, use any thermistor pin you want for any temperaturecontrol module you want.</p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://i01.i.aliimg.com/wsphoto/v1/1281713471_2/10pcs-Lot-100Kohm-NTC-Thermistors-NTC-100K-for-Temperature-Sensor-MK2a-3D-Printer-Reprap-Prusa-Mendel.jpg" width="450px" alt="10pcs-Lot-100Kohm-NTC-Thermistors-NTC-100K-for-Temperature-Sensor-MK2a-3D-Printer-Reprap-Prusa-Mendel.jpg" class="image" /></div>
+<p>There are different models of thermistors. Each hotend or heated bed has one, and it's a specific given type. Different thermistor models translate a given temperature into different resistances. This means you must tell Smoothie which exact thermistor model you have, to be sure Smoothie can read it correctly.</p>
+<p>This is done using the <strong>thermistor</strong> option in the configuration file. You pass it the name of your thermistor, and it will configure the math correctly accordingly.</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.thermistor        EPCOS100K</code>
+</pre></div>
+<p>Smoothie does not know the name of all the thermistors in existence. At the moment these are the ones it knows about:</p>
+<table class="wiki-content-table">
+<tr>
+<th>Name</th>
+<th>Beta for 0-80°C</th>
+<th>Beta for 185-230°C</th>
+<th>I for Steinhart Hart</th>
+<th>J for Steinhart Hart</th>
+<th>K for Steinhart Hart</th>
+<th>Part number</th>
+</tr>
+<tr>
+<td><tt>EPCOS100K</tt></td>
+<td>4066</td>
+<td>4193</td>
+<td>0.000722378300319346F</td>
+<td>0.000216301852054578F</td>
+<td>9.2641025635702e-08F</td>
+<td>B57540G0104F000</td>
+</tr>
+<tr>
+<td><tt>Honeywell100K</tt></td>
+<td>3974</td>
+<td>4385</td>
+<td>0.000596153185928425F</td>
+<td>0.000231333192738335F</td>
+<td>6.19534004306738e-08F</td>
+<td>135-104LAG-J01</td>
+</tr>
+<tr>
+<td><tt>Semitec</tt></td>
+<td>4267</td>
+<td>4375</td>
+<td>0.000811290160145459F</td>
+<td>0.000211355789144265F</td>
+<td>7.17614730463848e-08F</td>
+<td>104GT-2</td>
+</tr>
+<tr>
+<td><tt>Honeywell-QAD</tt></td>
+<td></td>
+<td></td>
+<td>0.000827339299500986F</td>
+<td>0.000208786427208899F</td>
+<td>8.05595282332277e-08F</td>
+<td>135-104QAD-J01</td>
+</tr>
+<tr>
+<td><tt>RRRF100K</tt></td>
+<td>3960</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><tt>RRRF10K</tt></td>
+<td>3964</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><tt>HT100K</tt></td>
+<td>3990</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<p><strong>In case you have a thermistor that is not known to Smoothie</strong> you can simply define the parameters in config. There are two methods, using the beta value ( good but not perfect ), and using the Steinhart Hart algorythm ( perfect ).</p>
+<p><strong>Using beta values :</strong></p>
+<p>Set the beta value in the configuration file :</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.beta       4066   # set beta for thermistor</code>
+</pre></div>
+<div class="bs-callout bs-callout-warning">
+<h4><span>About beta values</span></h4>
+<p>The betas published by most manufacturers, are for the 0-80°C range.</p>
+<p>For the 185-230°C this results in readings being about 7-10°C too high.</p>
+<p>This means beta values are usually good for a heated bed, but not for a hotend.</p>
+</div>
+<p>If the thermistor is 100K ohms at 25°C then this is usually enough.</p>
+<p>You can also set r0,t0,r1,r2 but this is not usually needed as the defaults are sufficient.</p>
+<p>If you do not know what thermistor model you have, contact the designer or seller of your 3D&nbsp;printer, hotend or heated bed and get the spec which will tell you what the beta value is for the thermistor.</p>
+<p><strong>Using the Steinhart Hart algorythm :</strong></p>
+<p>This is the recommended method. Set the parameters in the configuration file :&nbsp;</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.coefficients 0.000722376862540841,0.000216302098124288,0.000000092640163984</code>
+</pre></div>
+<p>To find what the Steinhart Hart coefficients for a given thermistor are, please read the <a href="http://smoothieware.org/steinharthart">SteinhartHart</a> page.</p>
+<p>If you have the temperature curve for your thermistor, you can also define three points on that curve, and let Smoothie calculate everything :</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.rt_curve          20.0,126800,150,1360,240,206.5</code>
+</pre></div>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://chibidibidiwah.wdfiles.com/local--files/3d-printer-guide/smoothieboard-mosfets.png" width="450px" alt="smoothieboard-mosfets.png" class="image" /></div>
+<h3 id="toc10"><span>Heating element</span></h3>
+<p>Now that Smoothie can read the temperature, it needs a way to heat things and maintain a desired temperature. This is the heating element. On a hot-end, that is usually a resistor or a <a href="http://en.wikipedia.org/wiki/Cartridge_heater">cartridge heater</a>, on a heated bed, that is usually a <a href="http://reprap.org/wiki/PCB_Heatbed">PCB plate</a> designed to have the right resistance, or a <a href="https://www.google.com/search?q=kapton+heater&amp;source=lnms&amp;tbm=isch&amp;biw=1920&amp;bih=1032">kapton heated bed</a>.</p>
+<p>Because of its resistance, when power is applied to a heater, the heater consumes energy to generate heat.</p>
+<p>These heating elements need to be connected to Smoothieboard on a port that allows Smoothie to turn them ON or OFF as needed. This is done by the use of <a href="http://en.wikipedia.org/wiki/MOSFET">MOSFET</a> that takes a digital input signal, and, depending on its value, lets current pass or not.</p>
+<p>Smoothie has up to 6 MOSFET controls ( 6 on 5X, 4 on 4X and 2 on 3X ). You have to connect your PSU to the power input connector for those FETs, and connect your power consuming element ( be it heating element, spindle, etc&#8230; ) to the power outputs of those same FETs. Essentially Smoothie connects/disconnects the element ( connected to the mosfet connector ) from the PSU ( connected to the power input connector ) as needed to maintain temperature or as requested by G-codes.</p>
+<p>There are three main pairs of Mosfets on the board :</p>
+<ul>
+<li>Big MOSFETS pair : Their outputs are labelled <strong>P2_7</strong> and <strong>P2_5</strong> on the schematic, the input connector for them is found between them. They are found on the 4X and 5X boards.</li>
+<li>Small MOSFETS pair : Their outputs are labelled <strong>P2_6</strong> and <strong>P2_4</strong> on the schematic, the input connector for them is found by their side, between P2_6 and P1_23. They are found on all of the boards.</li>
+<li>Mixed MOSFETS pair : Their outputs are labelled <strong>P1_22</strong> and <strong>P1_23</strong> on the schematic. The pair is called &quot;mixed&quot; because it consists of one big MOSFET and one small MOSFET. They do not have a specific input, they take power directly from VBB ( the Stepper motors power input described in the Stepper Motors chapter ).</li>
+</ul>
+<div class="wiki-note">
+<p>MOSFET power inputs have a polarity, make sure you connect <strong>+</strong> on that connector to <strong>+</strong> on your PSU, and <strong>-</strong> to <strong>-</strong> on the PSU. Heater elements however do not have a polarity, so you do not have to worry about polarity on the outputs. If you are using another output element like a Peltier or a Spindle, you need to be careful to respect the polarity for the outputs too.</p>
+</div>
+<p>Big MOSFETS can handle up to 20A without cooling, but the 5mm green connectors are rated up to only 12A, and the Small MOSFETS can handle up to 3A, and their connectors are rated up to 7.5A. Therefore, never use the big MOSFETS for more than 12A ( and monitor connector and MOSFET temperatures at that current use ), and the small MOSFETS' use should be limited to small fans. Trying to power a 40W hotend cartridge heater at 12V with the small FETs will destroy them, locking them to the &quot;ON&quot; state.</p>
+<p>If you need to control more than 12Amps, you can not do it with one of the MOSFETS on board, however you can use a Solid State Relay. For information see the <a href="#solidstaterelay">Solid State Relay Appendix on this page</a>.</p>
+<div class="wiki-note">
+<p>In the case of both the Big MOSFETS pair, and the Small MOSFETS pair, you take power from the PSU to them via their respective power input connectors.</p>
+<p>There is an alternative however. For each pair, you can use jumpers ( one jumper for the small MOSFETS pair ( <strong>JP28</strong> ), two parralel jumpers for the two big MOSFETS pair ( <strong>JP11</strong> and <strong>JP27</strong> ) ). If you solder the pins for those, and connect a <a href="http://www.computerhope.com/jargon/j/jumper.htm">jumper</a> to those pins, closing the circuit to VBB ( the stepper motors power input ), allowing you to take the power from those MOSFETS from the same place as the stepper motors do.</p>
+<p>In the case of the big MOSFETS, you have to solder and put in place two jumpers, in parallel, in order to handle more current.</p>
+</div>
+<div class="bs-callout bs-callout-warning">
+<h4 id="toc11"><span>Current rating</span></h4>
+<p>However, <strong><a href="http://www.obscureinternet.com/wp-content/uploads/1268330310152.jpg">WARNING</a></strong>, each jumper is rated for only 2A of current. This means you can not use this way of powering your MOSFETS if you are going to use more than 2A ( for the small MOSFETS ) or 4A ( for the big MOSFETS, with both jumpers used, for 2 x 2A ).</p>
+<p>Do not use the jumpers to power a heated bed for example, as it uses much more than 4A.</p>
+</div>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://reprap.org/mediawiki/images/thumb/1/1a/PCB_Heatbed_MK2_front_small.jpg/400px-PCB_Heatbed_MK2_front_small.jpg" width="450px" alt="400px-PCB_Heatbed_MK2_front_small.jpg" class="image" /></div>
+<h4><span>Example</span></h4>
+<p>Let's say you want to connect a heated bed to your Smoothieboard. First, wire the thermistor to the thermistor input. Then, find out (from the Internet, or your seller/manufacturer) the current rating for that heated bed. In this example it will be the classical <a href="index-6.html">RepRap</a> PCB plate <a href="http://reprap.org/wiki/PCB_Heatbed">Heatbed</a>.</p>
+<p>Ours has a 11A current rating, this means we can not use it with a small MOSFET, and we need to wire it to a big MOSFET.</p>
+<p>We connect our PSU to the power input for the big MOSFETS pair (don't forget to check the labels on the board for polarity).</p>
+<p>Then we connect the two wires from the PCB bed to one of the big MOSFETS out. Polarity is not important here.</p>
+<p>Because this is the heated bed, we connect it to the <strong>P2_5</strong> (pin 2.5 in the configuration file). This is a convention:&nbsp;it is configured that way in the default configuration file, meaning that if you connect it there, you do not need to change the configuration file to specify where you are connecting it: the configuration file is already correct.</p>
+<p>For the hot-end, the default output is <strong>P2_7</strong> (pin 2.7 in the configuration file).</p>
+<p>To set a different MOSFET output for the bed or the hot-end, you have to edit the configuration file to the digital output pin corresponding to your chosen MOSFET. These are the lines you would have to edit :&nbsp;</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.heater_pin        2.7              # Pin that controls the heater cartridge for the hot-end
+temperature_control.bed.heater_pin           2.5              # Pin that controls the heated bed</code>
+</pre></div>
+<p>To help you figure out what is what, here is a recapitulating table :&nbsp;</p>
+<table class="wiki-content-table">
+<tr>
+<th>MOSFET Pair</th>
+<td colspan="2">Big MOSFETS</td>
+<td colspan="2">Small MOSFETS</td>
+<td colspan="2">Mixed MOSFETS</td>
+</tr>
+<tr>
+<th>Label on diagram</th>
+<td><strong>P2_7</strong></td>
+<td><strong>P2_5</strong></td>
+<td><strong>P2_4</strong></td>
+<td><strong>P2_6</strong></td>
+<td><strong>P1_23</strong></td>
+<td><strong>P1_22</strong></td>
+</tr>
+<tr>
+<th>Digital output pin</th>
+<td>2.7</td>
+<td>2.5</td>
+<td>2.4</td>
+<td>2.6</td>
+<td>1.23</td>
+<td>1.22</td>
+</tr>
+<tr>
+<th>Power Input</th>
+<td colspan="2">Between <strong>P2_7</strong> and <strong>P2_5</strong></td>
+<td colspan="2">Between <strong>P2_6</strong> and <strong>P1_23</strong></td>
+<td colspan="2">Taken from <strong>VBB</strong></td>
+</tr>
+<tr>
+<th>Size</th>
+<td>Big</td>
+<td>Big</td>
+<td>Small</td>
+<td>Small</td>
+<td>Big</td>
+<td>Small</td>
+</tr>
+<tr>
+<th>Maximum current</th>
+<td>12A</td>
+<td>12A</td>
+<td>0.5A*</td>
+<td>0.5A*</td>
+<td>12A</td>
+<td>0.5A*</td>
+</tr>
+<tr>
+<th>Used for</th>
+<td>Hotend</td>
+<td>Heated bed</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<p>*While the datasheet says it can handle ~5A, it should not be used for anything but low-current fans, at least at 12V. Trying to run a hotend off of the small MOSFETs will destroy them (experimentally proven at 12V).</p>
+<h3 id="toc12"><span>Testing</span></h3>
+<p>Once your thermistor is connected, and both the power input and the heater elements are plugged in, you are ready to test your temperature controller.</p>
+<p>To do this, reset your Smoothieboard, then connect to it using host software like <a href="http://reprap.org/wiki/Printrun">Pronterface</a>, or using the <a href="network.html">web interface</a>.</p>
+<p>Now connect to your Smoothieboard over the serial interface. Power your machine on by plugging the PSU into the wall.</p>
+<p>If anything burns or smells funny, turn everything off immediately and investigate.</p>
+<p>The heaters are off by default when Smoothie starts. Check that they are not heating ( one indication of the heater being ON is if the <a href="http://en.wikipedia.org/wiki/Light-emitting_diode">LED</a> near the MOSFET is lit up, the other being checking the heater itself ), if they are heating, something is wrong, turn everything off immediately and investigate.</p>
+<p>Now, in Pronterface, set the temperature for either your bed or your hot-end, depending on what you are testing ( wire and test only one at a time for easier problem investigation ) at a low temperature (20°C above room temperature is a good idea), and monitor temperature to see if the temperature rises. If it does rise, everything is fine. If not, turn everything off immediately and investigate.</p>
+<p>Once you know the heater works correctly, there is still some tuning to do:&nbsp;tuning your PID&nbsp;settings.</p>
+<h3 id="toc13"><span>PID</span></h3>
+<div class="image-container floatright"><img src="http://m.eet.com/media/1074906/0208bcfig2.gif" style="width: 450px" alt="0208bcfig2.gif" class="image" /></div>
+<p>PID is important. Without PID, a simple way to control temperature would be :</p>
+<ul>
+<li>If temperature too cold, turn heater on</li>
+<li>If temperature too hot, turn heater off</li>
+</ul>
+<p>But there is a big problem with that method. Due to temperature not travelling instantly in what you heat from the heater to the thermistor, when the thermistor reads a given temperature, the heater is already hotter than what the thermistor reads. And that overshooting is something we do not want. It means reaching temperatures that could be undesirable, and it means you will not be able to correctly stabilize the temperature.</p>
+<p>The solution to this is <a href="http://en.wikipedia.org/wiki/PID_controller">PID</a>. It uses some math, allowing us to correct those problems by turning the heater on and off in a smarter sequence.</p>
+<p>The P, I and D factors are configured as follows :</p>
+<div class="code">
+<pre>
+<code>temperature_control.hotend.p_factor     100
+temperature_control.hotend.i_factor     0.1
+temperature_control.hotend.d_factor     100</code>
+</pre></div>
+<p>But the really tricky thing is to find the right values for these 3 factors : the default ones are most probably wrong for your setup. So unless you have been given those values with your hardware, or you are a PID grand-master, you will need some help :</p>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Marlin</span></h4>
+<p>Do not try to use PID settings from Marlin as they are not compatible.</p>
+</div>
+<h3 id="toc14"><span>PID autotuning</span></h3>
+<p>Using a process described here <a href="http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/">http://brettbeauregard.com/blog/2012/01/arduino-pid-autotune-library/</a>, Smoothie can automatically tune ( find ) your P, I and D factors.</p>
+<p>Here is an example of the G-code command used to launch PID autotune :</p>
+<div class="code">
+<pre>
+<code>M303 E0 S190</code>
+</pre></div>
+<ul>
+<li>E<strong>0</strong> is the number of the temperaturecontrol module, in the order they have been configured. Here it would be 0 for the hotend, and 1 for the bed.</li>
+<li>S<strong>190</strong> is the temperature to autotune for. Use the temperature you will be using your heater at in real life. For a hotend here we use 190c</li>
+</ul>
+<p>When you run the command, tuning begins :</p>
+<div class="code">
+<pre>
+<code>Target: 190.0
+Start PID tune, command is M303 E0 S190
+T: Starting PID Autotune, M304 aborts
+ok
+T:  21.3/190.0 @80 1 0/8
+T:  22.0/190.0 @80 1 0/8
+T:  22.3/190.0 @80 1 0/8
+T:  22.1/190.0 @80 1 0/8
+Etc ...</code>
+</pre></div>
+<p>It continues for 3 to 8 cycles, heating up, cooling down. Then :</p>
+<div class="code">
+<pre>
+<code>Cycle 4: max: 246.189, min: 227.627, avg separation: 0.418274
+    Ku: 34.9838, Pu: 39.85
+    Trying:
+    Kp:  21.0
+    Ki: 1.053
+    Kd:   105
+PID Autotune Complete! The settings above have been loaded into memory, but not written to your config file.</code>
+</pre></div>
+<p>Now edit your configuration to use those three values ( <strong>Kp</strong> is <tt>p_factor</tt>, <strong>Ki</strong> is <tt>i_factor</tt>, <strong>Kd</strong> is <tt>d_factor</tt> ), reset, and temperature control should work much better. (Also M301 can be used to set the PID values and saved with M500)</p>
+<p>Alternatively, you can also enter the following G-code :</p>
+<div class="code">
+<pre>
+<code>M500</code>
+</pre></div>
+<p>Which will save the configuration values automatically in a configuration override file.</p>
+<p>Learn more about configuration overrides here : <a href="configuring-smoothie.html">Configuring Smoothie</a></p>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Network</span></h4>
+<p>Do not send M303&nbsp;over the web interface, use Telnet, Pronterface or any other serial terminal. If sent over the web, the answers will accumulate in Smoothie's RAM and may crash it.</p>
+</div>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://www.a2aprinter.ca/image/cache/data/48-600x450.jpg" width="450px" alt="48-600x450.jpg" class="image" /></div>
+<h2 id="toc15"><span><a name="endstops"></a> Endstops</span></h2>
+<p>End-stops are small interrupters that you put at the end of each of your axes. When you boot your machine up, Smoothie has no way of knowing the position of each axis. When it starts a print, Smoothie moves the axis until it touches that interrupter, and when it is hit, it declares that that is position <strong>0</strong> for that axis. And does so for all axes.</p>
+<p>This allows Smoothie to then precisely know where everything is relative to that initial position. It is quite convenient as it saves you the hassle of actually moving the machine into that position when you want to start a print. Automation is great.</p>
+<p>However, end-stops are not necessary, you could do without them. They are just so convenient that most machines use them.</p>
+<p>End-stops can also be used as Limit Switches which prevent the machine from attempting to move beyond the physical limits of the axis (by pausing/stopping movement when triggered), see the <a href="endstops.html">Endstops page</a> for details about configuring Smoothie to use End Stops as limit switches.</p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div class="image-container floatright"><img src="http://chibidibidiwah.wdfiles.com/local--files/3d-printer-guide/smoothieboard-endstops.png" width="450px" alt="smoothieboard-endstops.png" class="image" /></div>
+<h3 id="toc16"><span>Endstop Wiring</span></h3>
+<p>This will concentrate on the most common type of end-stops : the mechanical ones. Other types exist like optical or hall-o sensors, see the dedicated appendixes for those.</p>
+<blockquote>
+<p>TODO : Do those appendixes</p>
+</blockquote>
+<p><a href="http://reprap.org/wiki/Mechanical_Endstop">Mechanical end-stops</a> are simple interrupters : when not pressed, they do not let the current pass, when pressed, they let the current pass. By connecting a digital input pin on the Smoothieboard to the interrupter, and connecting the other side of the interrupter to Ground, the Smoothieboard can read whether or not it is connected to Ground, and therefore whether or not the end-stop is pressed.</p>
+<p>Most mechanical end-stops have 3 connection points, to which you have to attach your wires :</p>
+<ul>
+<li><strong>C</strong> : Common</li>
+<li><strong>NO</strong> : Normally Open, meaning it is not connected to <strong>C</strong> when the interrupter is not pressed, and connected to <strong>C</strong> when the interrupter is pressed.</li>
+<li><strong>NC</strong> : Normally Closed, meaning it is connected to <strong>C</strong> when the interrupter is not pressed, and connected not to <strong>C</strong> when the interrupter is pressed.</li>
+</ul>
+<div class="thumbnail"><img src="http://arthurwolf.github.io/smoothieboard-graphics/schematics/endstop-basic.svg" width="100%" alt="endstop-basic.svg" class="image" />
+<h4><span>Wiring a basic NC endstop</span></h4>
+<p>You want to connect the <strong>Signal</strong> ( green in the schematic ) and <strong>Ground</strong> ( blue in the schematic ) pins for the end-stop on the Smoothieboard, to the <strong>C</strong> and <strong>NC</strong> connection points on the end-stop.</p>
+</div>
+<div class="wiki-note">
+<p>For each endstop, we connect C to Signal and NC to Ground because this means the digital input pin ( endstop connector ) will be connected to Ground in it's normal state and cut from Ground when the button is pressed. This approach is less prone to noise than the reverse. See <a href="http://wot.lv/combating-endstop-noise-on-a-reprap.html">here</a> for more information.<br />
+Another positive effect of this approach is, that if a wire breaks for some reason you get the same signal as if the endstop is pressed. That makes sure that even with a damaged wire you are not able to overrun the endstop.</p>
+</div>
+<p>Order is not important as polarity is not important here.</p>
+<div class="bs-callout bs-callout-warning">
+<p>Make absolutely sure that you do not connect VCC ( red ) and GND ( blue ) to a mechanical (microswitch) endstop! Depending on your wiring that may fries your smoothieboard instantly or when the switch gets pressed. There is a wiring where this not happens and you switch the signal between VCC and GND, but if you're not careful enough you damage your board.</p>
+</div>
+<p>You want to connect your X end-stop to the X min pins, Y end-stop to the Y min pins, and Z end-stop to the Z min pins.</p>
+<h3 id="toc17"><span>Testing</span></h3>
+<p>The default configuration most probably already has everything you need : the pins are already correct and the default speeds are reasonable.</p>
+<p>Once they are wired, you can test your end-stops.</p>
+<p>To do this, reset your Smoothieboard, then connect to it using host software like <a href="pronterface.html">Pronterface</a> or the <a href="network.html">web interface</a>.</p>
+<p>Now connect to your Smoothieboard over the serial interface. Power your machine on by plugging the PSU into the wall.</p>
+<p>Now in Pronterface, home one axis by clicking the small &quot;home&quot; icon for that axis. Begin with X, then Y, then Z.</p>
+<p>If your axis moves until it hits the end-stop, then stops when it hits it, moves a small distance back, then goes a bit slower back to the end-stop and stops, that end-stop is working fine.</p>
+<p>On the other hand, if the axis moves a small distance in the wrong direction, then stops, you have a problem : your Smoothieboard always reads the end-stop as being pressed. So when you ask it to move until the end-stop is hit, it reads it immediately as pressed and stops there.</p>
+<p>Another problem can be that the axis moves and never stops, even after the end-stop is physically hit. This means your Smoothieboard actually never reads the end-stop as being pressed.</p>
+<p>There is a command that allows you to debug this kind of situation : in Pronterface, enter the &quot;<strong>M119</strong>&quot; G-code.</p>
+<p>Smoothie will answer with the status of each endstop like this :</p>
+<div class="code">
+<pre>
+<code>X min:1 Y min:0 Z min:0</code>
+</pre></div>
+<p>This means : X endstop is pressed, Y and Z endstops are not pressed.</p>
+<p>Use a combination of this command, and manually pressing end-stop, to determine what is going on.</p>
+<p>If an end-stop is read as always pressed, or never pressed, even when you press or release it, then you probably have a wiring problem, check everything.</p>
+<p>If an endstop is read as pressed when it is not, and not pressed when it is, then your end-stop is inverted.</p>
+<p>You can fix that situation by inverting the digital input pin in your configuration file. For example if your X min endstop pin is inverted, change :</p>
+<div class="code">
+<pre>
+<code>alpha_min_endstop                            1.28^</code>
+</pre></div>
+<p>To :</p>
+<div class="code">
+<pre>
+<code>alpha_min_endstop                            1.28^!</code>
+</pre></div>
+<p>Here is the exact mapping of pin names to inputs on the Smoothieboard :</p>
+<table class="wiki-content-table">
+<tr>
+<th>Endstop</th>
+<th>X MIN</th>
+<th>X MAX</th>
+<th>Y MIN</th>
+<th>Y MAX</th>
+<th>Z MIN</th>
+<th>Z MAX</th>
+</tr>
+<tr>
+<th>Config value</th>
+<td>alpha_min</td>
+<td>alpha_max</td>
+<td>beta_min</td>
+<td>beta_max</td>
+<td>gamma_min</td>
+<td>gamma_max</td>
+</tr>
+<tr>
+<th>Pin name</th>
+<td>1.24</td>
+<td>1.25</td>
+<td>1.26</td>
+<td>1.27</td>
+<td>1.28</td>
+<td>1.29</td>
+</tr>
+</table>
+<p>More information can be found here. <a href="endstops.html">http://smoothieware.org/endstops</a></p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<h2 id="toc18"><span><a name="fans"></a> Fans</span></h2>
+<p>Fans are important: they help you cool things down. On a 3D printer there are two main things you need to cool :&nbsp;</p>
+<p>First most often your hot-end's &quot;cool&quot; part (the top of it) needs to be cooled so heat does not accumulate there and transfer to the rest of the machine and damage it.</p>
+<p>Secondly, you often (in the case of printing PLA) need to cool down the top layer currently being printed by your machine so that heat does not accumulate in the printed part and cause mayhem.</p>
+<p>While the first one is usually safest being always powered on, the second one you want digital control via MOSFETs, as most modern slicing software allows for smart control of that fan.</p>
+<h3><span>Always ON fan</span></h3>
+<p>For the fan that is always ON, all you need is to find power somewhere to power it.</p>
+<p>You can wire it directly to your PSU ( + goes to +, - goes to - ), but there is also a little trick if you want to wire it to your Smoothieboard.</p>
+<p>If you add the jumper to JP28 like described in the MOSFETs section of the Temperature Control section of this tutorial, then the connector usually used for providing power to the small MOSFETs, will actually output whatever power is provided to the VBB (stepper motors) connector.</p>
+<p>This means you can simply add this jumper, then connect your fan to the small MOSFETs power input (X6).</p>
+<h3><span>Digitally controlled fan</span></h3>
+<p>You do not need a big MOSFET to control a fan. One of the small MOSFETs is more than enough. See the Temperature Control section to identify which you want to use and which GPIO&nbsp;pin corresponds to that MOSFET.</p>
+<p>Then, you need to edit your configuration file to add (or alter) this section :</p>
+<div class="code">
+<pre>
+<code># Switch module for fan control
+switch.fan.enable                            true             #
+switch.fan.input_on_command                  M106             #
+switch.fan.input_off_command                 M107             #
+switch.fan.output_pin                        2.4              # The pin matching the MOSFET we chose
+switch.fan.output_type                       pwm              # PWM output settable with S parameter in the input_on_comand
+#switch.fan.max_pwm                           255              # set max PWM for the pin default is 255</code>
+</pre></div>
+<p>Now wire the fan to the output for that MOSFET (here it is the first small MOSFET, using pin 2.4), make sure you respect polarity.</p>
+<div class="thumbnail"><img src="http://arthurwolf.github.io/smoothieboard-graphics/schematics/fan-basic.svg" width="100%" alt="fan-basic.svg" class="image" />
+<h4><span>Wiring a fan to a small mosfet</span></h4>
+<p>The fan is wired to the output for the first small mosfet ( watch the polarity, and make sure you always add a diode when wiring a fan ), and the small mosfets are getting power via their power input.</p>
+</div>
+<p>You can now control your fan digitally: issue the M106 G-code to turn it on, and M107 to turn it off. Those are also the commands slicing software generates to control fans.</p>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Caution</span></h4>
+<p>Fans ( and other active loads like solenoids, mechanical relays, motors, anything with a coil ) can feed power back into the MOSFET and destroy it.</p>
+<p>You likely will be fine for fans with current ratings bellow 0.25Amps (most common types), however, while it is common practice to omit the diode under that rating, we still require you install one for safety. (Understand: if you do not install a diode and burn your MOSFET because of it, it will be considered user error.) Above this, you need to install a diode across the MOSFET's power output as you are pretty much guaranteed to burn the MOSFET without one.</p>
+<img src="https://farm8.staticflickr.com/7284/15838800004_d94bd040f9_b_d.jpg" style="width:600px" alt="15838800004_d94bd040f9_b_d.jpg" class="image" />
+<p><a href="https://www.flickr.com/photos/68272764@N05/15838800004/sizes/l">link</a></p>
+<p>The diode should be installed with the white band (negative side of the diode) soldered to the + (positive side) of the power output, and the other side to the - (negative side) of the power output.</p>
+<p>Good diodes to use are: 1N5819 or SS34 series should be fine, basically any shottky type rated 30-40V and 1-3A.</p>
+</div>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Voltage</span></h4>
+<p>If you are using a 24V PSU, do not use 12V fans. You definitely need 24V fans with a 24V PSU.</p>
+<p>Lowering the PWM is not going to work, and will destroy your fan.</p>
+</div>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<h2 id="toc19"><span>Appendixes</span></h2>
+<h3 id="toc20"><span>Printing, milling or cutting from the SD card</span></h3>
+<p>Printing, milling or cutting from the SD card on Smoothieboard is easy. First, you transfer your gcode files to the card. You can do this by moving the SD card to your computer and copying the files to it or simply copy the files to the card when it mounts on your desktop. If it isn't mounting automatically, you are probably running Linux and have automount disabled. You can change that or manually mount it. The other option is to use the built in <a href="network.html">Web Server</a> if you have installed the RJ45 connector and an ethernet connection to the board. You can upload files to the SD card with this convenient Web interface.</p>
+<p>Now, with your gcode files on the SD card, there are a few options to run it from there :</p>
+<div class="bs-callout bs-callout-primary">
+<h4><span>Serial terminal</span></h4>
+<p>You can use a serial port terminal application like <a href="http://freeware.the-meiers.org/" target="_blank">CoolTerm</a> (it supports OSX, Windows, Linux) or <a href="https://help.ubuntu.com/community/Cutecom">Cutecom</a> ( OSX and Linux ). Once connected, enter <tt>help</tt> to get a list of <a href="console-commands.html">supported console commands</a>.</p>
+<p>If you use <a href="pronterface.html">Pronterface</a> with your 3D printer, you can use its built-in serial terminal feature - just prefix serial commands with an &quot;@&quot;. So, once connected to smoothie send &quot;<tt>@help</tt>&quot; and it will list all of the available commands.</p>
+<p>You can find more information about using the <tt>play</tt> command <a href="player.html">here</a>.</p>
+<p>You can also use the <tt>M24</tt> G-code to play files from the SD card, see <a href="supported-g-codes.html">Supported G-codes</a>.</p>
+</div>
+<div class="bs-callout bs-callout-primary">
+<h4><span>Web interface</span></h4>
+<p>Another option is to use the <a href="network.html">Web interface</a> mentioned above.</p>
+</div>
+<div class="bs-callout bs-callout-primary">
+<h4><span>Panel</span></h4>
+<p>If you have a <a href="panel.html">panel</a> (like the <a href="http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller" target="_blank">RepRapDiscount GLCD</a>) you can use the panel menus to run/pause/stop printing your gcode files.</p>
+</div>
+<h3 id="toc21"><span><a name="crimping-connectors"></a> Crimping connectors</span></h3>
+<div class="col-md-6">
+<p>If your Smoothieboard came with connectors, you got connector casings, and <a href="http://en.wikipedia.org/wiki/Crimp_connection">crimps</a>. You will need to attach your crimps to your cables, and then insert the crimps into the connector casings.</p>
+<p><a href="http://sparks.gogo.co.nz/crimping/index.html">This tutorial</a> is a good read about crimping properly.</p>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Patience</span></h4>
+<p>Please be careful and patient, if you have never done it before you will probably fail a few times before getting the hang of it. Also be careful to insert the crimp into your connector the right way around.</p>
+</div>
+</div>
+<div class="col-md-6">
+<p><iframe width="100%" height="400px" src="http://www.youtube.com/embed/L8Mfvv1PqpY" frameborder="0" allowfullscreen=""></iframe></p>
+</div>
+<h3 id="toc22"><span><a name="soldering-connectors"></a> Soldering connectors</span></h3>
+<p>Please read <a href="http://mightyohm.com/files/soldercomic/FullSolderComic_EN.pdf">this comic</a> before soldering anything.</p>
+<h3 id="toc23"><span><a name="doubling-steppers"></a> Using two steppers motor on a single driver</span></h3>
+<p>Stepper motor drivers on Smoothieboard can handle up to 2Amps per driver.</p>
+<p>If you want to control two separate motors with a single driver ( for example you have two stepper motors for your Y&nbsp;axis like on a <a href="http://www.shapeoko.com/">Shapeoko</a>, or two stepper motors for your Z axis like on a <a href="http://reprap.org/wiki/Prusa_i3">Reprap Prusa i3</a> ) and have both motors move simultaneously, you have two options.</p>
+<p>If the total of the current used by your motors is more than 2Amps ( for example two 1.5Amps motors are 3Amps ), you can not wire them together on a single driver, and you need to look at <a href="#doubling-drivers">doubling drivers just bellow</a>.</p>
+<p>However, if your total current is less than 2Amps, you can wire both motors in parallel to a single driver.</p>
+<p>To do so, find for each stepper motor, which wires match which coils, and wire the same coils into the stepper motor connections on the Smoothieboard ( two wires per connection, one from each motor, for each pin ).</p>
+<p>If when you test it, the two motors turn in reverse, you need to reverse one of the coils of one of the stepper motors, and they will start turning in the same direction.</p>
+<p>You also need to set a current value for that driver that matches the total current your two motors will be using. For example if the motors are each 0.8Amps, your total is 1.6Amps and you need to set for that specific driver ( here gamma driver is shown ) :</p>
+<div class="code">
+<pre>
+<code>gamma_current      1.6</code>
+</pre></div>
+<h3 id="toc24"><span><a name="doubling-drivers"></a> Doubling stepper motor drivers.</span></h3>
+<p>If you need to drive two motors with a single axis, but the total current used for the motors is more than 2Amps ( for example two 1.5Amps motors add up to 3Amps ), you can not wire the steppers in parallel to a single driver and have it control both motors at the same time like described <a href="#doubling-steppers">above</a>.</p>
+<p>This is the case for example for the Y&nbsp;axis of <a href="http://www.shapeoko.com/">Shapeoko</a> machines.</p>
+<p>In this case, you will need to use one driver for each of your motors. This means you need a Smoothieboard with one more stepper motor driver than you have axes. If you have 3 axes and need to double one, you will need a 4X&nbsp;or a 5X&nbsp;Smoothieboard.</p>
+<p>To enslave a driver to another, you will need to connect the control pins for both drivers together.</p>
+<p>For example if you want the epsilon ( M5 ) driver to be the slave to the gamma ( M3 ) driver you will need to connect :&nbsp;</p>
+<ul>
+<li>EN3 to EN5</li>
+<li>ST3 to ST5</li>
+<li>DIR3 to DIR5</li>
+</ul>
+<p>The connectors for this can be found close to the stepper motor drivers, and are labelled.</p>
+<p><iframe width="560" height="315" src="http://www.youtube.com/embed/b0dCM0JDYOM" frameborder="0" allowfullscreen=""></iframe></p>
+<p>Finally you need to do two things in your configuration file :&nbsp;</p>
+<p>First, set the current value for <strong>both</strong> drivers. For example if you are using beta and delta set :&nbsp;</p>
+<div class="code">
+<pre>
+<code>gamma_current       1.5
+epsilon_current      1.5</code>
+</pre></div>
+<p>Then, you need to make sure that none of the step, dir and enable configuration values for your slave stepper motor driver, are present in the configuration file.</p>
+<p>For example if you are using gamma as a slave, make sure that none of the following values are present in the configuration file :&nbsp;</p>
+<div class="code">
+<pre>
+<code>gamma_step_pin
+gamma_dir_pin
+gamma_en_pin</code>
+</pre></div>
+<p>If they are, remove them. And be careful, for the delta driver, if you started from the 3D printer configuration file, they are not refered to as delta_xxx_pin but as extruder_xxx_pin, if they are present you must remove them all.</p>
+<p>Only remove the lines for the slave driver.</p>
+<h3 id="toc25"><span><a name="external-drivers"></a> External Stepper Drivers</span></h3>
+<p>The logic pins that control the stepper drivers are broken out on all 5 axes to 1x4 pin headers found near each driver on the board. The 4 pins are EN, DIR, STP, and ground. These pins or their equivalents are found on most external stepper drivers. Many drivers call the STP (step) pin PUL (pulse). Some will call the DIR (direction) pin PHA (phase).</p>
+<p>Most external drivers have both a + and - pin for each of EN, DIR, and STP. The simplest way to connect the external driver is to wire Smoothieboard GND to all 3 - pins, and the logic pins of Smoothieboard to the corresponding + pins. Note that Smoothie is 3.3V logic and each pin can only supply a maximum current of 4&#160;mA, which is not usually a problem unless interfacing to very large, or very old external drivers which may need a little more.</p>
+<div class="bs-callout bs-callout-success">
+<h4><span>Pins</span></h4>
+<p>While this example will show using the pins of one of the on-board drivers to control the external driver, you can use pretty much any free GPIO&nbsp;pin to control the step/direction/enable pins on your external driver.</p>
+<p>See <a href="http://smoothieware.org/pinout">pinout</a> and <a href="lpc1769-pin-usage.html">pin usage</a> to find free pins.</p>
+</div>
+<p>All loadouts of Smoothieboard (3x, 4x, 5x) can control 5 external stepper drivers using these ports. The presence or absence of a built in driver will not affect the external driver.</p>
+<div class="thumbnail"><img src="http://arthurwolf.github.io/smoothieboard-graphics/schematics/external-driver.svg" width="100%" alt="external-driver.svg" class="image" />
+<h4><span>Wiring an external driver with a common cathode</span></h4>
+<p>This shows control of an external driver using the pins on the positive side of the external driver's input.</p>
+<p>GPIO pins are taken to the positive inputs on the driver, and the ground is shared.</p>
+</div>
+<p>Please note, if your external driver requires 5V, that Smoothieboard only provides 3.3v on it's output pins.</p>
+<p>Two solutions to this : either use a <a href="https://www.sparkfun.com/products/12009">level shifter</a> or use the Smoothieboard's pins as Open-Drain ( ie linking to ground instead of linking to 3.3v, when closed ), and wire accordingly.</p>
+<p>For example :&nbsp;</p>
+<div class="thumbnail"><img src="http://arthurwolf.github.io/smoothieboard-graphics/schematics/external-driver-open-drain.svg" width="100%" alt="external-driver-open-drain.svg" class="image" />
+<h4><span>Wiring an external driver with a common anode</span></h4>
+<p>Here, the 5V is taken from an endstop input's positive terminal, taken to the 5V inputs on the external driver. The step/direction/enable pins on the Smoothieboard are taken to the GND inputs on the external driver.</p>
+<p>You will also need to change those pins to be open-drain. To change a pin from being normal to being open-drain, you add a <tt>o</tt> to the pin's number. For example :</p>
+<div class="code">
+<pre>
+<code>alpha_step_pin    2.0      # Pin for alpha stepper step signal</code>
+</pre></div>
+<p>becomes</p>
+<div class="code">
+<pre>
+<code>alpha_step_pin   2.0o     # Pin for alpha stepper step signal</code>
+</pre></div>
+</div>
+<div class="bs-callout bs-callout-info">
+<h4><span>ReprapDiscount Silencio</span></h4>
+<p><a href="http://www.reprapdiscount.com/">Reprap Discount</a> has a nice <a href="http://www.reprapdiscount.com/electronics/74-rrd-silencioso-128-microstep-driver-pololu-compatible.html">external driver called the Silencio</a>.</p>
+<p>It does 1/128 microstepping, so using it with Smoothie makes a lot of sense since Smoothie can do higher <a href="http://reprap.org/wiki/Step_rates">step rates</a>.</p>
+<p>It comes with an adapter for pololu-type drivers for RAMPS-type boards. However, you can also simply wire it to Smoothie's external driver connectors.</p>
+<p>The only catch is :&nbsp;the pins are not in the same order in Smoothie and on the driver's cable. (Note the colors maybe different on your cable)</p>
+<table class="wiki-content-table">
+<tr>
+<td>Silencio cable color</td>
+<td>Black</td>
+<td>Green</td>
+<td>Red</td>
+<td>Blue</td>
+</tr>
+<tr>
+<td>Silencio connector order</td>
+<td>+5v</td>
+<td>Enable</td>
+<td>Direction</td>
+<td>Step</td>
+</tr>
+<tr>
+<td>Smoothie connector order</td>
+<td>Ground</td>
+<td>Step</td>
+<td>Direction</td>
+<td>Enable</td>
+</tr>
+</table>
+<p>No big deal though, you simply need to swap the step and enable pins in the configuration file.<br />
+Also DO NOT connect the Black wire to the 4th pin om smoothie which is gnd on smoothie, it must be connected to a +5v pin elsewhere (eg on the endstops)</p>
+<p>Additionally, you need to invert ( by adding a <tt>!</tt> to the pin number ) the enable pin ( that's specific to the Silencio )<br />
+The step pin does not need to be inverted.</p>
+<p>For example for your alpha driver, change :</p>
+<div class="code">
+<pre>
+<code>alpha_step_pin      2.0       # Pin for alpha stepper step signal
+alpha_dir_pin       0.5       # Pin for alpha stepper direction
+alpha_en_pin        0.4       # Pin for alpha enable pin</code>
+</pre></div>
+<p>to</p>
+<div class="code">
+<pre>
+<code>alpha_step_pin        0.4       # Pin for alpha stepper step signal
+alpha_dir_pin         0.5       # Pin for alpha stepper direction
+alpha_en_pin          2.0!      # Pin for alpha enable pin</code>
+</pre></div>
+<p>And just wire the Silencio connector to the Smoothieboard external driver connector</p>
+</div>
+<h3 id="toc26"><span><a name="solidstaterelay"></a> Solid State Relays</span></h3>
+<p>The big mosfets on the Smoothieboard can handle up to 12Amps. Sometimes that's not enough. Say you want to control a big spindle, a gigantic heated bed, or a tesla coil.</p>
+<p>Typical Solid State Relays ( SSR ) can handle up to 40Amps easily, sometimes more. AC ones can run 220V AC, and DC ones up to 60V DC ( typically, look at the specs for yours ).</p>
+<p>To control your Solid State Relay ( SSR ), you will need one GPIO&nbsp;pin ( use one of the free ones on the board ideally ), and a connection to GND ( plenty of those ).</p>
+<p>A&nbsp;SSR is essentially a big switch : you cut a wire, plug each end of the cut wire into it's two terminals, and then you'll be able to control whether or not those two ends of the wire connect or not. Simple as that.</p>
+<div class="thumbnail"><img src="http://arthurwolf.github.io/smoothieboard-graphics/schematics/ssr-basic.svg" width="100%" alt="ssr-basic.svg" class="image" />
+<h4><span>Wiring a Solid State Relay</span></h4>
+<p>You will need to connect GND on the Smoothieboard to the &quot;-&quot; connection on the Input side of the SSR, and the GPIO pin on the Smoothieboard to the &quot;+&quot; connection on the Input side of the SSR.</p>
+<p>This example shows using P<tt>1.30</tt></p>
+</div>
+<br />
+Then simply configure the module that will be using the SSR to use that pin, for example in the case of <a href="switch.html">Switch</a> :
+<div class="code">
+<pre>
+<code>switch.misc.enable                   true #
+switch.misc.input_on_command         M42  #
+switch.misc.input_off_command        M43  #
+switch.misc.output_pin               2.4  # GPIO pin we connected to &quot;+&quot; on the SSR
+switch.misc.output_type              digital        # just an on or off pin</code>
+</pre></div>
+<p>In the case of <a href="temperaturecontrol.html">TemperatureControl</a>, where you use the SSR to control a heating element for example, there is a catch.</p>
+<p>SSRs have a low maximum frequency they can be switched at. You need to specify that frequency or Smoothie will drive it way too fast. In this example, the maximum frequency is 20Hz.</p>
+<p>So, you need to modify your module to both use the correct pin ( the free GPIO&nbsp;you wired to the SSR ), and to the correct frequency. Here are the two lines to change :&nbsp;</p>
+<div class="code">
+<pre>
+<code>temperature_control.swimming_pool_heating.heater_pin               2.4
+temperature_control.swimming_pool_heating.pwm_frequency            20</code>
+</pre></div>
+<p>Another option, which turns the heaters on/off even less often, is to use bang-bang, where the state is only changed when temperature deviates too much from the set value :</p>
+<div class="code">
+<pre>
+<code>temperature_control.bed.bang_bang            true            # set to true to use bang bang control rather than PID
+temperature_control.bed.hysteresis           2.0             # set to the temperature in degrees C to use as hysteresis
+                                                              # when using bang bang</code>
+</pre></div>
+<h3 id="toc27"><span>Swapping stepper motor drivers</span></h3>
+<p>On some boards, you might want to swap two axes.</p>
+<p>For example, you have a board that has two connectors on the Z axis, but you want to connect two motors to the Y axis ( which has only one connector ).</p>
+<p>In that case, all you need to do is exchange the 3 pin definitions for these two axes.</p>
+<p>For example :&nbsp;</p>
+<div class="code">
+<pre>
+<code>beta_step_pin                                2.1              # Pin for beta stepper step signal
+beta_dir_pin                                 0.11             # Pin for beta stepper direction
+beta_en_pin                                  0.10             # Pin for beta enable
+
+gamma_step_pin                               2.2              # Pin for gamma stepper step signal
+gamma_dir_pin                                0.20             # Pin for gamma stepper direction
+gamma_en_pin                                 0.19             # Pin for gamma enable</code>
+</pre></div>
+<p>Becomes :</p>
+<div class="code">
+<pre>
+<code>beta_step_pin                                2.2              # Pin for beta stepper step signal
+beta_dir_pin                                 0.20             # Pin for beta stepper direction
+beta_en_pin                                  0.19             # Pin for beta enable
+
+gamma_step_pin                               2.1              # Pin for gamma stepper step signal
+gamma_dir_pin                                0.11             # Pin for gamma stepper direction
+gamma_en_pin                                 0.10             # Pin for gamma enable</code>
+</pre></div>
+<p>Now your beta driver becomes your Z axis, and your gamma driver becomes your Y&nbsp;axis</p>
+<h3 id="toc28"><span>Which pins are which</span></h3>
+<div class="bs-callout bs-callout-primary">
+<h4><span>Smoothieboard pinout</span></h4>
+<div class="image-container aligncenter"><img src="../images/smoothieboard-wiring.svg" width="1024px" alt="smoothieboard-wiring.svg" class="image" /></div>
+<p><a href="../images/smoothieboard-wiring.png">Full size version</a></p>
+</div>
+<div class="bs-callout bs-callout-primary">
+<h4><span>Smoothieboard pin capabilities</span></h4>
+<div class="image-container aligncenter"><img src="../images/smoothieboard-pin-capabilities.png" width="1024px" alt="smoothieboard-pin-capabilities.png" class="image" /></div>
+<p><a href="../images/smoothieboard-pin-capabilities-2.png">Full size version</a></p>
+<p>Also see the <a href="lpc1769-pin-usage.html">pin usage table</a></p>
+</div>
+<h3 id="toc29"><span>Multiple extruders</span></h3>
+<div class="image-container floatright"><img src="http://www.geeky-gadgets.com/wp-content/uploads/2014/11/Dual-Extruder.jpg" width="450px" alt="Dual-Extruder.jpg" class="image" /></div>
+<p>You can setup Smoothie to handle as many extruders as you'd like.</p>
+<p>There is no limit in the firmware : you simply add <a href="extruder.html">Extruder</a> ( controlling the extruder motor ) and <a href="temperaturecontrol.html">TemperatureControl</a> ( controlling the hotend ) modules to the configuration file for each new extruder.</p>
+<h4><span>Hardware requirements</span></h4>
+<p>For each extruder you are going to need :</p>
+<ul>
+<li>One temperature input for the hotend. Smoothieboard has 4 thermistor inputs, this means one heated bed and three hotends, or four hotends and no bed. To add additional hotends you have the option of using thermocouple external boards, which can be connected to the SPI port : either a single one, or four using a SPI hub, leaving you with a maximam total of 8 hotends, or more if you chain SPI hubs.</li>
+<li>One MOSFET output : Smoothieboard has 6 MOSFET outputs maximum ( 3 small 3 big ) that can be used for hotends, but depending on whether or not you use a bed you might only have 5 available. However you can wire external MOSFETs or SSRs to any free GPIO pin, giving you as many as there are free GPIO pins ( going to 8 or more being then easy ).</li>
+<li>One stepper motor driver. Smoothieboard has 5 maximum ( depending on board type ). You need 3 for 3-dimensional movement, regardless of your arm solution. This leaves you being able to drive at most two extruders with the on-board drivers. However, wiring additional drivers is as simple as using free GPIO pins. Simply wire any pin on the Smoothieboard as the step, direction and enable pins for your external stepper driver.</li>
+</ul>
+<p>This means, assuming you are using a heated bed, you can drive two extruders easily with what is on-board the Smoothieboard. To go to three extruders you will need to add one external stepper motor driver. To go to four you will need to add another external stepper motor driver, and use a SPI thermocouple temperature input external board, etc &#8230;</p>
+<p>We will here concentrate on a dual extruder setup.</p>
+<h4><span>Configuration</span></h4>
+<p>The default configuration in the Smoothie firmware is for a single extruder.</p>
+<p>In order to setup a second one, you need to use the syntax dedicated to multiple extruder systems. This means using the &quot;module generation&quot; syntax you could be familiar with from the <a href="temperaturecontrol.html">TemperatureControl</a> and <a href="switch.html">Switch</a> modules.</p>
+<p>Here is what it looks like :</p>
+<div class="code">
+<pre>
+<code># Extruder module configuration
+extruder.first.enable                              true             # Whether to activate the extruder module at all. All configuration is ignored if false
+extruder.first.steps_per_mm                        400              # Steps per mm for extruder stepper
+extruder.first.default_feed_rate                   600              # Default rate ( mm/minute ) for moves where only the extruder moves
+extruder.first.acceleration                        500               # Acceleration for the stepper motor, as of 0.6, arbitrary ratio
+extruder.first.max_speed                           3000             # mm^3/s
+extruder.first.step_pin                            2.3              # Pin for extruder step signal
+extruder.first.dir_pin                             0.22             # Pin for extruder dir signal
+extruder.first.en_pin                              0.21             # Pin for extruder enable signal
+delta_current                                        1.5              # Extruder stepper motor current
+
+#settings for second extruder
+extruder.second.enable                              true             # Whether to activate the extruder module at all. All configuration is ignored if false
+extruder.second.steps_per_mm                        400              # Steps per mm for extruder stepper
+extruder.second.default_feed_rate                   600              # Default rate ( mm/minute ) for moves where only the extruder moves
+extruder.second.acceleration                        500               # Acceleration for the stepper motor, as of 0.6, arbitrary ratio
+extruder.second.max_speed                           3000             # mm^3/s
+extruder.second.step_pin                            2.8              # Pin for extruder step signal
+extruder.second.dir_pin                             2.13             # Pin for extruder dir signal
+extruder.second.en_pin                              4.29            # Pin for extruder enable signal
+epsilon_current                                      1.5              # 5th axis</code>
+</pre></div>
+<p>As you can see it is quite similar to the normal extruder configuration, only extended to multiple extruders. You can add other extruders the same way. There is no specific name you have to name your extruders, simply add as many as you want, with whatever names you want, as long as the names are different.</p>
+<p>Simply replace your current extruder configuration with this in the config file.</p>
+<p>You will also need to configure an additional <a href="temperaturecontrol.html">TemperatureControl</a> module for the hotend.</p>
+<p>It is recommended you read the <a href="temperaturecontrol.html">TemperatureControl</a> documentation.</p>
+<p>Here is an example configuration for a two extruders setup :</p>
+<div class="code">
+<pre>
+<code># Hotend temperature control configuration
+temperature_control.hotend.enable            true             # Whether to activate this ( &quot;hotend&quot; ) module at all.
+                                                              # All configuration is ignored if false.
+temperature_control.hotend.thermistor_pin    0.23             # Pin for the thermistor to read
+temperature_control.hotend.heater_pin        2.7              # Pin that controls the heater, set to nc if a readonly thermistor is being defined
+temperature_control.hotend.thermistor        EPCOS100K        # see http://smoothieware.org/temperaturecontrol#toc5
+temperature_control.hotend.set_m_code        104              #
+temperature_control.hotend.set_and_wait_m_code 109            #
+temperature_control.hotend.designator        T                #
+temperature_control.hotend.max_temp         250              # Set maximum temperature
+temperature_control.hotend.min_temp         0                # Set minimum temperature - Will prevent heating below if set
+temperature_control.hotend.p_factor         13.7             # permanently set the PID values after an auto pid
+temperature_control.hotend.i_factor         0.097            #
+temperature_control.hotend.d_factor         24               #
+temperature_control.hotend.max_pwm          64               # max pwm, 64 is a good value if driving a 12v resistor with 24v.
+
+# Hotend2 temperature control configuration
+temperature_control.hotend2.enable            true             # Whether to activate this ( &quot;hotend&quot; ) module at all.
+                                                                # All configuration is ignored if false.
+temperature_control.hotend2.thermistor_pin    0.25             # Pin for the thermistor to read
+temperature_control.hotend2.heater_pin        1.23             # Pin that controls the heater
+temperature_control.hotend2.thermistor        EPCOS100K        # see http://smoothieware.org/temperaturecontrol#toc5
+temperature_control.hotend2.set_m_code        104              #
+temperature_control.hotend2.set_and_wait_m_code 109            #
+temperature_control.hotend2.designator        T1               #
+temperature_control.hotend2.p_factor          13.7           # permanently set the PID values after an auto pid
+temperature_control.hotend2.i_factor          0.097          #
+temperature_control.hotend2.d_factor          24             #
+temperature_control.hotend2.max_pwm          64               # max pwm, 64 is a good value if driving a 12v resistor with 24v.</code>
+</pre></div>
+<div class="bs-callout bs-callout-warning">
+<h4><span>Ctrl+C</span></h4>
+<p>Please do not mindlessly copy/paste the examples here, they probably do not fit your particular setup. Understand what is going on, and actually adapt the configuration to your specific situation. These are only examples.</p>
+</div>
+<h4><span>Wiring</span></h4>
+<p>The first extruder in this configuration is wired to M4, the second one to M5.</p>
+<p>If you have more extruders, you will need to use external stepper motor drivers. Please see the specific documentation for this in the 3D printer guide.</p>
+<h3 id="toc30"><span>Safety thermistor</span></h3>
+<p>Hot-ends have a heating element (controlled by a MOSFET) and a thermistor to read its temperature.</p>
+<p>When the thermistor is read, the Smoothie calculates the temperature, and then turns the heater on or off depending on whether heat is needed or not.</p>
+<p>A&nbsp;few bad things can happen :</p>
+<ul>
+<li>The thermistor can get disconnected from the board, in this case, Smoothie detects it and turns everything off.</li>
+<li>The thermistor can fall off the heater, in which case Smoothie will think the hot-end is cold, and heat it too much.</li>
+<li>The MOSFET can fail, and be always on, resulting in the hot-end being over-heated.</li>
+</ul>
+<p>One way to prevent the last two bad things, is to add a second thermistor to the hot-end. The second thermistor also reads the temperature on the hot-end, and if something goes bad, Smoothie turns the PSU off, preventing damage.</p>
+<p>To implement this, you need three things:&nbsp;</p>
+<ul>
+<li>A&nbsp;<a href="switch.html">switch</a> module that turns the PSU on and OFF. (See the <a href="switch.html">Switch</a> documentation.)</li>
+<li>A <a href="temperaturecontrol.html">temperaturecontrol</a> module that doesn't control any MOSFET, but reads just the safety thermistor.</li>
+<li>A <a href="temperatureswitch.html">temperatureswitch</a> module that turns a switch off if a temperaturecontrol module goes above a given temperature.</li>
+</ul>
+<p>Here is an example configuration :&nbsp;</p>
+<div class="code">
+<pre>
+<code>temperatureswitch.psu.enable               true             #
+temperatureswitch.psu.switch               psuswitch        #
+temperatureswitch.psu.designator           F                #
+temperatureswitch.psu.threshold_temp       45               #  Turn the PSU OFF above this temperature, and ON below this temperature. In °C.
+
+switch.psuswitch.enable                            true             # turn PSU on/off
+switch.psuswitch.input_on_command                  M80              #
+switch.psuswitch.input_off_command                 M81              #
+switch.psuswitch.output_pin                        1.22!            # 3rd small FET, or pin on header
+switch.psuswitch.output_type                       digital          # on/off only
+
+# define a readonly temperaturecontrol for a PSU cutoff
+temperature_control.psu.enable             true             # Whether to activate this module at all. All configuration is ignored if false.
+temperature_control.psu.thermistor_pin     0.25             # Pin for the thermistor to read
+temperature_control.psu.heater_pin         nc               # set to nc to make it a read-only temperature control
+temperature_control.psu.thermistor         Semitec          # thermistor name
+temperature_control.psu.designator         F                # Failsafe designator</code>
+</pre></div>
+<p>A few notes :&nbsp;</p>
+<ul>
+<li>Doing this requires you add an M80 command at the beginning of your G-code files so the PSU will be turned on.</li>
+<li>If you have a voltage regulator as your only 5V source on Smoothieboard, this will not work, as turning the PSU off will also turn the 5V off.</li>
+<li>If you use an ATX PSU, you can wire the 5VSB supply to the 5V input on the Smoothieboard, in which case the Smoothieboard will still get its 5V even if the PSU is shut down by the switch module. Wire the ATX PS_ON to the ground of a small MOSFET. This will allow it to turn on/off with M80/M81, and will also shut off in case of crash.</li>
+</ul>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+<h2 id="toc31"><span>Troubleshooting</span></h2>
+<p>If you run into trouble, something doesn't work as it should, head over to the <a href="troubleshooting.html">Troubleshooting</a> page for a list of common problems and means of diagnosis.</p>
+<p>You can also contact the <a href="irc.html">Community</a> for help if you can't find an answer in the documentation.</p>
+<h2 id="toc32"><span>Software</span></h2>
+<p>All software bellow either knows how to interface with, or how to generate g-code for, Smoothieware.</p>
+<h4><span>3D Printing</span></h4>
+<ul>
+<li><a href="http://slic3r.org/" target="_blank">Slic3r</a> - 3D&nbsp;printing slicer</li>
+<li><a href="https://ultimaker.com/en/products/software" target="_blank">Cura</a> - 3D printing slicer and host.</li>
+<li><a href="http://www.pronterface.com/" target="_blank">Pronterface</a> - 3D printing host. See the guide on the Wiki : <a href="pronterface.html">Pronterface</a></li>
+<li><a href="https://github.com/minad/3delta" target="_blank">3Delta Printer Control</a> - 3D printing host especially suited for delta printers.</li>
+<li><a href="http://octoprint.org/" target="_blank">OctoPrint</a> - Awesome web interface for 3D printer control. On the wiki :&nbsp;<a href="http://smoothieware.org/octoprint">Octoprint</a></li>
+<li><a href="https://www.simplify3d.com/" target="_blank">Simplify3D</a> - Closed source 3D&nbsp;printing slicer and host. On the wiki :&nbsp;<a href="http://smoothieware.org/simplify3d">Simplify3D</a> Requires post-processing of gcode to use on smoothie, see <a href="http://mikk36.eu/SimplifyS3D/">http://mikk36.eu/SimplifyS3D/</a></li>
+</ul>
+<h4><span>CNC</span></h4>
+<ul>
+<li><a href="https://github.com/vlachoudis/bCNC/wiki" target="_blank">bCNC</a> - Open-Source CNC host with great preview and other operations. Set machine type to smoothie. and add <tt>grbl_mode true</tt> to your smoothie config.</li>
+<li><a href="http://openscam.org/" target="_blank">OpenSCAM.org</a> - Open-Source Simulation &amp; Computer Aided Machining (Free 3-axis CNC Simulator which understands G-Code)</li>
+<li><a href="http://openscad.org/" target="_blank">OpenSCAD.org</a> - Open-Source CAD software.</li>
+<li><a href="http://www.cnc-club.ru/forum/viewtopic.php?t=35" target="_blank">GCode plug-in for InkScape</a> - Output GCode from SVG files in <a href="http://inkscape.org/" target="_blank">Inkscape</a>.</li>
+<li><a href="http://pycam.sourceforge.net/" target="_blank">PyCAM</a> - Open-Source CAM software.</li>
+<li><a href="http://www.shapeoko.com/wiki/index.php/Software" target="_blank">More links at ShapeOko.com</a>.</li>
+<li><a href="http://jscut.org/" target="_blank">jscut</a> - Open-Source in-browser CAM software.</li>
+<li><a href="http://www.cambam.info/" target="_blank">CamBam</a> - Closed-Source, but cheap and feature-full CAM software. Widely used by hobbyists.</li>
+<li><a href="http://www.autodesk.com/products/fusion-360/overview" target="_blank">Fusion360</a> - Closed-source, free for hobby/fablab/small business.</li>
+</ul>
+<h4><span>Laser</span></h4>
+<ul>
+<li><a href="http://www.cnc-club.ru/forum/viewtopic.php?t=35" target="_blank">GCode plug-in for InkScape</a> - Output GCode from SVG files in <a href="http://inkscape.org/" target="_blank">Inkscape</a>. <a href="https://www.youtube.com/watch?v=xw8h0c5Vdw8">Video tutorial</a>.</li>
+<li><a href="http://hci.rwth-aachen.de/visicut">Visicut</a> - Full laser control application, has Smoothieware interface. <a href="https://www.youtube.com/watch?v=lbTTPkDEhOg&amp;feature=autoshare">Video tutorial</a>.</li>
+<li><a href="https://github.com/openhardwarecoza/LaserWeb/wiki">LaserWeb</a> - Web-based full laser control application, has Smoothieware interface</li>
+</ul>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 158, last edited: <span class="odate time_1454615444 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">04 Feb 2016 19:50</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="legal_terms-of-service.html" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="legal_privacy-policy.html" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="index-4.html">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="index-5.html">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="../images/p-edl3gsnujjzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/3d-printer-guide by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:42:50 GMT -->
+</html>

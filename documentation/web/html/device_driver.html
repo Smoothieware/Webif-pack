@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from en.wikipedia.org/wiki/Device_driver by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Device driver - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Device_driver","wgTitle":"Device driver","wgCurRevisionId":718601897,"wgRevisionId":718601897,"wgArticleId":9101,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia introduction cleanup from February 2013","All pages needing cleanup","Articles covered by WikiProject Wikify from February 2013","All articles covered by WikiProject Wikify","Articles needing additional references from February 2013","All articles needing additional references","Articles containing potentially dated statements from 2009","All articles containing potentially dated statements","Wikipedia articles with LCCN identifiers","Wikipedia articles with GND identifiers","Wikipedia articles with BNF identifiers","Device drivers","Linux drivers","Computing terminology","Windows NT kernel"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Device_driver","wgRelevantArticleId":9101,"wgRequestId":"VzXBsQpAEKgAAAyDxf0AAAAK","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSAcceptLanguageList":["en","*"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCentralAuthMobileDomain":false,"wgWikibaseItemId":"Q1033951","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","ext.centralNotice.bannerController","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.tmh.thumbnail.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.raggett%2CsectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector"/>
+<script async="" src="https://en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.28.0-wmf.1"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="https://en.wikipedia.org/wiki/android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Device_driver"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit"/>
+<link rel="apple-touch-icon" href="https://en.wikipedia.org/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="https://en.wikipedia.org/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Device_driver"/>
+<link rel="dns-prefetch" href="http://meta.wikimedia.org/" />
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Device_driver rootpage-Device_driver skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Device driver</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div role="note" class="hatnote">For other uses, see <a href="https://en.wikipedia.org/wiki/Driver_(disambiguation)" title="Driver (disambiguation)" class="mw-redirect mw-disambig">Driver</a>.</div>
+<table class="metadata plainlinks ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<table class="mw-collapsible" style="width:95%; background:transparent;" role="presentation">
+<tr>
+<th style="text-align:left; padding:0.2em 2px 0.2em 0;">This article has multiple issues. <span style="font-weight: normal;">Please help <b><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit">improve it</a></b> (<a href="https://en.wikipedia.org/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">see how</a>) or discuss these issues on the <b><a href="https://en.wikipedia.org/wiki/Talk:Device_driver" title="Talk:Device driver">talk page</a></b>.</span></th>
+</tr>
+<tr>
+<td>
+<table class="metadata plainlinks ambox ambox-style ambox-lead_too_short" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article's <b><a href="https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Lead_section" title="Wikipedia:Manual of Style/Lead section">lead section</a> may not adequately <a href="https://en.wikipedia.org/wiki/Wikipedia:Summary_style" title="Wikipedia:Summary style">summarize</a> key points of its contents</b>. <span class="hide-when-compact">Please consider expanding the lead to <a href="https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Lead_section#Provide_an_accessible_overview" title="Wikipedia:Manual of Style/Lead section">provide an accessible overview</a> of all important aspects of the article. Please discuss this issue on the article's <a href="https://en.wikipedia.org/wiki/Talk:Device_driver" title="Talk:Device driver">talk page</a>.</span> <small><i>(February 2013)</i></small></span></td>
+</tr>
+</table>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="https://en.wikipedia.org/wiki/File:Question_book-new.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="262" data-file-height="204" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="https://en.wikipedia.org/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit">improve this article</a> by <a href="https://en.wikipedia.org/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(February 2013)</i></small> <small class="hide-when-compact"><i>(<a href="https://en.wikipedia.org/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></span></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<small class="hide-when-compact"><i>(<a href="https://en.wikipedia.org/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></td>
+</tr>
+</table>
+<table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%">
+<tr>
+<th style="padding:0.2em 0.4em 0.2em;font-size:145%;line-height:1.2em"><a href="https://en.wikipedia.org/wiki/Operating_system" title="Operating system">Operating systems</a></th>
+</tr>
+<tr>
+<td style="padding:0.2em 0 0.4em">
+<div class="center">
+<div class="floatnone">
+<div class="noresize" style="height: 244px; width: 165px; "><map name="ImageMap_1_1671586545" id="ImageMap_1_1671586545">
+<area href="https://en.wikipedia.org/wiki/User_(computing)" shape="rect" coords="1,1,165,59" alt="User" title="User" />
+<area href="https://en.wikipedia.org/wiki/Application_software" shape="rect" coords="1,60,165,119" alt="Application" title="Application" />
+<area href="https://en.wikipedia.org/wiki/Operating_system" shape="rect" coords="1,119,165,178" alt="Operating System" title="Operating System" />
+<area href="https://en.wikipedia.org/wiki/Personal_computer_hardware" shape="rect" coords="1,179,165,237" alt="Hardware" title="Hardware" /></map><img alt="Operating system placement.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Operating_system_placement.svg/165px-Operating_system_placement.svg.png" width="165" height="244" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Operating_system_placement.svg/248px-Operating_system_placement.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Operating_system_placement.svg/330px-Operating_system_placement.svg.png 2x" data-file-width="250" data-file-height="370" usemap="#ImageMap_1_1671586545" />
+<div style="margin-left: 145px; margin-top: -20px; text-align: left;"><a href="https://en.wikipedia.org/wiki/File:Operating_system_placement.svg" title="About this image"><img alt="About this image" src="https://en.wikipedia.org/w/extensions/ImageMap/desc-20.png?15600" style="border: none;" /></a></div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em;font-size:110%;">Common features</th>
+</tr>
+<tr>
+<td class="plainlist nowrap" style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Process_management_(computing)" title="Process management (computing)">Process management</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Interrupt" title="Interrupt">Interrupts</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Memory_management" title="Memory management">Memory management</a></li>
+<li><a href="https://en.wikipedia.org/wiki/File_system" title="File system">File system</a></li>
+<li><strong class="selflink">Device drivers</strong></li>
+<li><a href="https://en.wikipedia.org/wiki/Computer_network" title="Computer network">Networking</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Computer_security" title="Computer security">Security</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Input/output" title="Input/output">I&#160;/ O</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;font-size:115%">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:OS" title="Template:OS"><abbr title="View this template">v</abbr></a></li>
+<li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:OS" title="Template talk:OS"><abbr title="Discuss this template">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:OS&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p>In computing, a <b>device driver</b> (commonly referred to as a <i>driver</i>) is a <a href="https://en.wikipedia.org/wiki/Computer_program" title="Computer program">computer program</a> that operates or controls a particular type of device that is attached to a computer.<sup id="cite_ref-dev1_1-0" class="reference"><a href="#cite_note-dev1-1">[1]</a></sup> A driver provides a <a href="https://en.wikipedia.org/wiki/Software_interface" title="Software interface" class="mw-redirect">software interface</a> to hardware devices, enabling operating systems and other computer programs to access hardware functions without needing to know precise details of the hardware being used.</p>
+<p>A driver communicates with the <a href="https://en.wikipedia.org/wiki/Peripheral" title="Peripheral">device</a> through the <a href="https://en.wikipedia.org/wiki/Computer_bus" title="Computer bus" class="mw-redirect">computer bus</a> or communications subsystem to which the hardware connects. When a calling program invokes a <a href="https://en.wikipedia.org/wiki/Subroutine" title="Subroutine">routine</a> in the driver, the driver issues commands to the device. Once the device sends data back to the driver, the driver may invoke routines in the original calling program. Drivers are hardware dependent and <a href="https://en.wikipedia.org/wiki/Operating_system" title="Operating system">operating-system</a>-specific. They usually provide the <a href="https://en.wikipedia.org/wiki/Interrupt" title="Interrupt">interrupt</a> handling required for any necessary asynchronous time-dependent hardware interface.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Purpose"><span class="tocnumber">1</span> <span class="toctext">Purpose</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Development"><span class="tocnumber">2</span> <span class="toctext">Development</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Kernel_mode_vs._user_mode"><span class="tocnumber">3</span> <span class="toctext">Kernel mode vs. user mode</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Applications"><span class="tocnumber">4</span> <span class="toctext">Applications</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Virtual_device_drivers"><span class="tocnumber">5</span> <span class="toctext">Virtual device drivers</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Open_drivers"><span class="tocnumber">6</span> <span class="toctext">Open drivers</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#APIs"><span class="tocnumber">7</span> <span class="toctext">APIs</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Identifiers"><span class="tocnumber">8</span> <span class="toctext">Identifiers</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#External_links"><span class="tocnumber">11</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Purpose">Purpose</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit&amp;section=1" title="Edit section: Purpose">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Device drivers simplify programming by acting as translator between a hardware device and the applications or <a href="https://en.wikipedia.org/wiki/Operating_system" title="Operating system">operating systems</a> that use it.<sup id="cite_ref-dev1_1-1" class="reference"><a href="#cite_note-dev1-1">[1]</a></sup> Programmers can write the higher-level application code independently of whatever specific hardware the end-user is using.</p>
+<p>For example, a high-level application for interacting with a <a href="https://en.wikipedia.org/wiki/Serial_port" title="Serial port">serial port</a> may simply have two functions for "send data" and "receive data". At a lower level, a device driver implementing these functions would communicate to the particular serial port controller installed on a user's computer. The commands needed to control a <a href="https://en.wikipedia.org/wiki/16550_UART" title="16550 UART">16550 UART</a> are much different from the commands needed to control an <a href="https://en.wikipedia.org/wiki/FTDI" title="FTDI">FTDI</a> serial port converter, but each hardware-specific device driver <a href="https://en.wikipedia.org/wiki/Abstraction_(computer_science)" title="Abstraction (computer science)" class="mw-redirect">abstracts</a> these details into the same (or similar) software interface.</p>
+<h2><span class="mw-headline" id="Development">Development</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit&amp;section=2" title="Edit section: Development">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Writing a device driver requires an in-depth understanding of how the hardware and the software works for a given <a href="https://en.wikipedia.org/wiki/Computing_platform" title="Computing platform">platform</a> function. Because drivers require low-level access to hardware functions in order to operate, drivers typically operate in a highly <a href="https://en.wikipedia.org/wiki/Privilege_(computing)" title="Privilege (computing)">privileged</a> environment and can cause system operational issues if something goes wrong. In contrast, most user-level software on modern <a href="https://en.wikipedia.org/wiki/Operating_system" title="Operating system">operating systems</a> can be stopped without greatly affecting the rest of the system. Even drivers executing in <a href="https://en.wikipedia.org/wiki/User_mode" title="User mode" class="mw-redirect">user mode</a> can crash a system if the device is erroneously programmed. These factors make it more difficult and dangerous to diagnose problems.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></p>
+<p>The task of writing drivers thus usually falls to <a href="https://en.wikipedia.org/wiki/Software_engineer" title="Software engineer">software engineers</a> or <a href="https://en.wikipedia.org/wiki/Computer_engineer" title="Computer engineer" class="mw-redirect">computer engineers</a> who work for hardware-development companies. This is because they have better information than most outsiders about the design of their hardware. Moreover, it was traditionally considered in the hardware <a href="https://en.wikipedia.org/wiki/Manufacturer" title="Manufacturer" class="mw-redirect">manufacturer</a>'s interest to guarantee that their clients can use their hardware in an optimum way. Typically, the <a href="https://en.wikipedia.org/w/index.php?title=Logical_device_driver&amp;action=edit&amp;redlink=1" class="new" title="Logical device driver (page does not exist)">logical device driver</a> (LDD) is written by the operating system vendor, while the <a href="https://en.wikipedia.org/w/index.php?title=Physical_device_driver&amp;action=edit&amp;redlink=1" class="new" title="Physical device driver (page does not exist)">physical device driver</a> (PDD) is implemented by the device vendor. But in recent years non-vendors have written numerous device drivers, mainly for use with <a href="https://en.wikipedia.org/wiki/Free_and_open_source_software" title="Free and open source software" class="mw-redirect">free and open source</a> <a href="https://en.wikipedia.org/wiki/Operating_system" title="Operating system">operating systems</a>. In such cases, it is important that the hardware manufacturer provides information on how the device communicates. Although this information can instead be learned by <a href="https://en.wikipedia.org/wiki/Reverse_engineering" title="Reverse engineering">reverse engineering</a>, this is much more difficult with hardware than it is with software.</p>
+<p><a href="https://en.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a> has attempted to reduce system instability due to poorly written device drivers by creating a new framework for driver development, called <a href="https://en.wikipedia.org/wiki/Windows_Driver_Foundation" title="Windows Driver Foundation" class="mw-redirect">Windows Driver Foundation</a> (WDF). This includes <a href="https://en.wikipedia.org/wiki/User-Mode_Driver_Framework" title="User-Mode Driver Framework">User-Mode Driver Framework</a> (UMDF) that encourages development of certain types of drivers—primarily those that implement a <a href="https://en.wikipedia.org/wiki/Message-based_protocol" title="Message-based protocol" class="mw-redirect">message-based protocol</a> for communicating with their devices—as user-mode drivers. If such drivers malfunction, they do not cause system instability. The <a href="https://en.wikipedia.org/wiki/Kernel-Mode_Driver_Framework" title="Kernel-Mode Driver Framework">Kernel-Mode Driver Framework</a> (KMDF) model continues to allow development of kernel-mode device drivers, but attempts to provide standard implementations of functions that are known to cause problems, including cancellation of I/O operations, power management, and plug and play device support.</p>
+<p><a href="https://en.wikipedia.org/wiki/Apple_Inc." title="Apple Inc.">Apple</a> has an open-source framework for developing drivers on <a href="https://en.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS&#160;X</a> called the <a href="https://en.wikipedia.org/wiki/I/O_Kit" title="I/O Kit">I/O&#160;Kit</a>.</p>
+<p>In <a href="https://en.wikipedia.org/wiki/Linux_kernel" title="Linux kernel">Linux</a> environments, programmers can build device drivers as parts of the <a href="https://en.wikipedia.org/wiki/Linux_kernel" title="Linux kernel">kernel</a>, separately as loadable <a href="https://en.wikipedia.org/wiki/Loadable_kernel_module" title="Loadable kernel module">modules</a>, or as user-mode drivers (for certain types of devices where kernel interfaces exist, such as for USB devices). <a href="https://en.wikipedia.org/wiki/Makedev" title="Makedev" class="mw-redirect">Makedev</a> includes a list of the devices in Linux: ttyS (terminal), lp (<a href="https://en.wikipedia.org/wiki/Parallel_port" title="Parallel port">parallel port</a>), hd (disk), loop, sound (these include <a href="https://en.wikipedia.org/wiki/Sound_card_mixer" title="Sound card mixer">mixer</a>, <a href="https://en.wikipedia.org/wiki/Music_sequencer" title="Music sequencer">sequencer</a>, <a href="https://en.wikipedia.org/wiki/Digital_signal_processor" title="Digital signal processor">dsp</a>, and audio)...<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<p>The <a href="https://en.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> <a href="https://en.wikipedia.org/wiki/.sys" title=".sys">.sys</a> files and <a href="https://en.wikipedia.org/wiki/Linux" title="Linux">Linux</a> .ko modules contain loadable device drivers. The advantage of loadable device drivers is that they can be loaded only when necessary and then unloaded, thus saving kernel memory.</p>
+<h2><span class="mw-headline" id="Kernel_mode_vs._user_mode">Kernel mode vs. user mode</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit&amp;section=3" title="Edit section: Kernel mode vs. user mode">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Device drivers, particularly on modern<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit">[update]</a></sup> <a href="https://en.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> platforms, can run in <a href="https://en.wikipedia.org/wiki/CPU_modes" title="CPU modes">kernel-mode</a> (<a href="https://en.wikipedia.org/wiki/Ring_(computer_security)" title="Ring (computer security)" class="mw-redirect">Ring 0 on x86 CPUs</a>) or in <a href="https://en.wikipedia.org/wiki/User_space" title="User space">user-mode</a> (Ring&#160;3 on x86 CPUs).<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> The primary benefit of running a driver in user mode is improved stability, since a poorly written user mode device driver cannot crash the system by overwriting kernel memory.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> On the other hand, user/kernel-mode transitions usually impose a considerable performance overhead, thereby prohibiting user-mode drivers for low latency and high throughput requirements.</p>
+<p>Kernel space can be accessed by user module only through the use of system calls. End user programs like the UNIX shell or other GUI-based applications are part of the user space. These applications interact with hardware through kernel supported functions.</p>
+<h2><span class="mw-headline" id="Applications">Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit&amp;section=4" title="Edit section: Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Because of the diversity of modern<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit">[update]</a></sup> hardware and operating systems, drivers operate in many different environments.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> Drivers may <a href="https://en.wikipedia.org/wiki/Interface_(computer_science)" title="Interface (computer science)" class="mw-redirect">interface</a> with:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Computer_printer" title="Computer printer" class="mw-redirect">Printers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Video_card" title="Video card">Video adapters</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Network_interface_controller" title="Network interface controller">Network cards</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sound_card" title="Sound card">Sound cards</a></li>
+<li>Local <a href="https://en.wikipedia.org/wiki/Computer_bus" title="Computer bus" class="mw-redirect">buses</a> of various sorts—in particular, for <a href="https://en.wikipedia.org/wiki/Bus_mastering" title="Bus mastering">bus mastering</a> on modern systems</li>
+<li>Low-<a href="https://en.wikipedia.org/wiki/Bandwidth_(computing)" title="Bandwidth (computing)">bandwidth</a> <a href="https://en.wikipedia.org/wiki/Input/output" title="Input/output">I/O</a> buses of various sorts (for <a href="https://en.wikipedia.org/wiki/Pointing_device" title="Pointing device">pointing devices</a> such as <a href="https://en.wikipedia.org/wiki/Computer_mouse" title="Computer mouse">mice</a>, <a href="https://en.wikipedia.org/wiki/Computer_keyboard" title="Computer keyboard">keyboards</a>, <a href="https://en.wikipedia.org/wiki/Universal_Serial_Bus" title="Universal Serial Bus" class="mw-redirect">USB</a>, etc.)</li>
+<li><a href="https://en.wikipedia.org/wiki/Computer_storage" title="Computer storage" class="mw-redirect">Computer storage</a> devices such as <a href="https://en.wikipedia.org/wiki/Hard_disk_drive" title="Hard disk drive">hard disk</a>, <a href="https://en.wikipedia.org/wiki/CD-ROM" title="CD-ROM">CD-ROM</a>, and <a href="https://en.wikipedia.org/wiki/Floppy_disk" title="Floppy disk">floppy disk</a> buses (<a href="https://en.wikipedia.org/wiki/Advanced_Technology_Attachment" title="Advanced Technology Attachment" class="mw-redirect">ATA</a>, <a href="https://en.wikipedia.org/wiki/Serial_ATA" title="Serial ATA">SATA</a>, <a href="https://en.wikipedia.org/wiki/SCSI" title="SCSI">SCSI</a>)</li>
+<li>Implementing support for different <a href="https://en.wikipedia.org/wiki/File_system" title="File system">file systems</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Image_scanner" title="Image scanner">Image scanners</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Digital_camera" title="Digital camera">Digital cameras</a></li>
+</ul>
+<p>Common levels of abstraction for device drivers include:</p>
+<ul>
+<li>For hardware:
+<ul>
+<li>Interfacing directly</li>
+<li>Writing to or reading from a <a href="https://en.wikipedia.org/wiki/Device_control_register" title="Device control register">device control register</a></li>
+<li>Using some higher-level interface (e.g. <a href="https://en.wikipedia.org/wiki/Video_BIOS" title="Video BIOS">Video BIOS</a>)</li>
+<li>Using another lower-level device driver (e.g. file system drivers using disk drivers)</li>
+<li>Simulating work with hardware, while doing something entirely different<sup id="cite_ref-Computer_Peripherals_and_Interfaces_8-0" class="reference"><a href="#cite_note-Computer_Peripherals_and_Interfaces-8">[8]</a></sup></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>For software:
+<ul>
+<li>Allowing the operating system direct access to hardware resources</li>
+<li>Implementing only <a href="https://en.wikipedia.org/wiki/Primitive_(computer_science)" title="Primitive (computer science)" class="mw-redirect">primitives</a></li>
+<li>Implementing an interface for non-driver software (e.g.,&#160;<a href="https://en.wikipedia.org/wiki/TWAIN" title="TWAIN">TWAIN</a>)</li>
+<li>Implementing a language, sometimes quite high-level (e.g.,&#160;<a href="https://en.wikipedia.org/wiki/PostScript" title="PostScript">PostScript</a>)</li>
+</ul>
+</li>
+</ul>
+<p>So choosing and installing the correct device drivers for given hardware is often a key component of computer system configuration.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup></p>
+<h2><span class="mw-headline" id="Virtual_device_drivers">Virtual device drivers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit&amp;section=5" title="Edit section: Virtual device drivers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Virtual device drivers represent a particular variant of device drivers. They are used to emulate a hardware device, particularly in <a href="https://en.wikipedia.org/wiki/Virtual_machine" title="Virtual machine">virtualization</a> environments, for example when a <a href="https://en.wikipedia.org/wiki/DOS" title="DOS">DOS</a> program is run on a <a href="https://en.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> computer or when a guest <a href="https://en.wikipedia.org/wiki/Operating_system" title="Operating system">operating system</a> is run on, for example, a <a href="https://en.wikipedia.org/wiki/Xen" title="Xen">Xen</a> host. Instead of enabling the guest operating system to dialog with hardware, virtual device drivers take the opposite role and emulate a piece of hardware, so that the guest operating system and its drivers running inside a <a href="https://en.wikipedia.org/wiki/Virtual_machine" title="Virtual machine">virtual machine</a> can have the illusion of accessing real hardware. Attempts by the guest operating system to access the hardware are routed to the virtual device driver in the host operating system as e.g.,&#160;<a href="https://en.wikipedia.org/wiki/Function_call" title="Function call" class="mw-redirect">function calls</a>. The virtual device driver can also send simulated processor-level events like <a href="https://en.wikipedia.org/wiki/Interrupt" title="Interrupt">interrupts</a> into the virtual machine.</p>
+<p>Virtual devices may also operate in a non-virtualized environment. For example, a virtual <a href="https://en.wikipedia.org/wiki/Network_interface_controller" title="Network interface controller">network adapter</a> is used with a <a href="https://en.wikipedia.org/wiki/Virtual_private_network" title="Virtual private network">virtual private network</a>, while a virtual <a href="https://en.wikipedia.org/wiki/Hard_disk_drive" title="Hard disk drive">disk</a> device is used with <a href="https://en.wikipedia.org/wiki/ISCSI" title="ISCSI">iSCSI</a>. A good example for virtual device drivers can be <a href="https://en.wikipedia.org/wiki/Daemon_Tools" title="Daemon Tools">Daemon Tools</a>.</p>
+<p>There are several variants of virtual device drivers, such as <a href="https://en.wikipedia.org/wiki/VxD" title="VxD">VxDs</a>, <a href="https://en.wikipedia.org/wiki/VLM_(NetWare)" title="VLM (NetWare)" class="mw-redirect">VLMs</a>, VDDs.</p>
+<h2><span class="mw-headline" id="Open_drivers">Open drivers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit&amp;section=6" title="Edit section: Open drivers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Printers: <a href="https://en.wikipedia.org/wiki/CUPS" title="CUPS">CUPS</a></li>
+<li>RAIDs: CCISS<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> (Compaq Command Interface for SCSI-3 Support<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup>)</li>
+<li>Scanners: <a href="https://en.wikipedia.org/wiki/Scanner_Access_Now_Easy" title="Scanner Access Now Easy">SANE</a></li>
+<li>Video: <a href="https://en.wikipedia.org/wiki/Vidix" title="Vidix">Vidix</a>, <a href="https://en.wikipedia.org/wiki/Direct_Rendering_Infrastructure" title="Direct Rendering Infrastructure">Direct Rendering Infrastructure</a></li>
+</ul>
+<p><a href="https://en.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a> descriptions of commonly used device drivers</p>
+<ul>
+<li>fas: Fast/wide SCSI controller</li>
+<li>hme: Fast (10/100 Mbit/s) Ethernet</li>
+<li>isp: Differential SCSI controllers and the SunSwift card</li>
+<li>glm: (Gigabaud Link Module<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup>) UltraSCSI controllers</li>
+<li>scsi: Small Computer Serial Interface (SCSI) devices</li>
+<li>sf: soc+ or social Fiber Channel Arbitrated Loop (FCAL)</li>
+<li>soc: SPARC Storage Array (SSA) controllers and the control device</li>
+<li>social: Serial optical controllers for FCAL (soc+)</li>
+</ul>
+<h2><span class="mw-headline" id="APIs">APIs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit&amp;section=7" title="Edit section: APIs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Windows_Display_Driver_Model" title="Windows Display Driver Model">Windows Display Driver Model</a> (WDDM) – the graphic display driver architecture for <a href="https://en.wikipedia.org/wiki/Windows_Vista" title="Windows Vista">Windows Vista</a>, <a href="https://en.wikipedia.org/wiki/Windows_7" title="Windows 7">Windows 7</a> and <a href="https://en.wikipedia.org/wiki/Windows_8" title="Windows 8">Windows 8</a>.</li>
+<li>Unified Audio Model (UAM)</li>
+<li><a href="https://en.wikipedia.org/wiki/Windows_Driver_Foundation" title="Windows Driver Foundation" class="mw-redirect">Windows Driver Foundation</a> (WDF)</li>
+<li><a href="https://en.wikipedia.org/wiki/Windows_Driver_Model" title="Windows Driver Model">Windows Driver Model</a> (WDM)</li>
+<li><a href="https://en.wikipedia.org/wiki/Network_Driver_Interface_Specification" title="Network Driver Interface Specification">Network Driver Interface Specification</a> (NDIS) – a standard <a href="https://en.wikipedia.org/wiki/Network_card" title="Network card" class="mw-redirect">network card</a> driver API</li>
+<li><a href="https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture" title="Advanced Linux Sound Architecture">Advanced Linux Sound Architecture</a> (ALSA) – as of 2009<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit">[update]</a></sup> the standard Linux sound-driver interface</li>
+<li><a href="https://en.wikipedia.org/wiki/Scanner_Access_Now_Easy" title="Scanner Access Now Easy">Scanner Access Now Easy</a> (SANE) – a public-domain interface to raster-image scanner-hardware</li>
+<li><a href="https://en.wikipedia.org/wiki/I/O_Kit" title="I/O Kit">I/O Kit</a> – an open-source framework from <a href="https://en.wikipedia.org/wiki/Apple_Computer" title="Apple Computer" class="mw-redirect">Apple</a> for developing <a href="https://en.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a> device drivers</li>
+<li><a href="https://en.wikipedia.org/wiki/Installable_File_System" title="Installable File System">Installable File System</a> (IFS) – a <a href="https://en.wikipedia.org/wiki/Filesystem_API" title="Filesystem API" class="mw-redirect">filesystem API</a> for IBM OS/2 and Microsoft Windows NT</li>
+<li><a href="https://en.wikipedia.org/wiki/Open_Data-Link_Interface" title="Open Data-Link Interface">Open Data-Link Interface</a> (ODI) – a network card API similar to NDIS</li>
+<li><a href="https://en.wikipedia.org/wiki/Uniform_Driver_Interface" title="Uniform Driver Interface">Uniform Driver Interface</a> (UDI) – a cross-platform driver interface project</li>
+<li><a href="https://en.wikipedia.org/w/index.php?title=Dynax_Driver_Framework&amp;action=edit&amp;redlink=1" class="new" title="Dynax Driver Framework (page does not exist)">Dynax Driver Framework</a> (dxd) – C++ open source cross-platform driver framework for KMDF and IOKit</li>
+</ul>
+<h2><span class="mw-headline" id="Identifiers">Identifiers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit&amp;section=8" title="Edit section: Identifiers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A device on the <a href="https://en.wikipedia.org/wiki/Conventional_PCI" title="Conventional PCI">PCI bus</a> or USB is identified by two IDs which consist of 4 <a href="https://en.wikipedia.org/wiki/Hexadecimal" title="Hexadecimal">hexadecimal</a> numbers each. The vendor ID identifies the vendor of the device. The device ID identifies a specific device from that manufacturer/vendor.</p>
+<p>A PCI device has often an ID pair for the main chip of the device, and also a subsystem ID pair which identifies the vendor, which may be different from the chip manufacturer.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit&amp;section=9" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="div-col columns column-width" style="-moz-column-width: 22em; -webkit-column-width: 22em; column-width: 22em;">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Class_driver" title="Class driver">Class driver</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Device_driver_synthesis_and_verification" title="Device driver synthesis and verification">Device driver synthesis and verification</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Driver_wrapper" title="Driver wrapper">Driver wrapper</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Free_software" title="Free software">Free software</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Firmware" title="Firmware">Firmware</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Interrupt" title="Interrupt">Interrupt</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Loadable_kernel_module" title="Loadable kernel module">Loadable kernel module</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Makedev" title="Makedev" class="mw-redirect">Makedev</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Open-source_hardware" title="Open-source hardware">Open-source hardware</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Printer_driver" title="Printer driver">Printer driver</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Replicant_(operating_system)" title="Replicant (operating system)">Replicant (operating system)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Udev" title="Udev">udev</a></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-dev1-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-dev1_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-dev1_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20141021035445/https://www.pc-gesund.de/it-wissen/what-is-a-device-driver">"What is a device driver?, The purpose of device drivers"</a>. PC Gesund. Archived from <a rel="nofollow" class="external text" href="https://www.pc-gesund.de/it-wissen/what-is-a-device-driver">the original</a> on October 21, 2014<span class="reference-accessdate">. Retrieved <span class="nowrap">November 8,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADevice+driver&amp;rft.btitle=What+is+a+device+driver%3F%2C+The+purpose+of+device+drivers&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.pc-gesund.de%2Fit-wissen%2Fwhat-is-a-device-driver&amp;rft.pub=PC+Gesund&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation book">EMC Education Services (2010). <a rel="nofollow" class="external text" href="http://books.google.com.ph/books?id=sCCfRAj3aCgC&amp;dq=device+driver+hardware+dependent&amp;hl=fil&amp;source=gbs_navlinks_s"><i>Information Storage and Management: Storing, Managing, and Protecting Digital Information</i></a>. John Wiley &amp; Sons.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADevice+driver&amp;rft.au=EMC+Education+Services&amp;rft.btitle=Information+Storage+and+Management%3A+Storing%2C+Managing%2C+and+Protecting+Digital+Information&amp;rft.date=2010&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com.ph%2Fbooks%3Fid%3DsCCfRAj3aCgC%26dq%3Ddevice%2Bdriver%2Bhardware%2Bdependent%26hl%3Dfil%26source%3Dgbs_navlinks_s&amp;rft.pub=John+Wiley+%26+Sons&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation book">Burke, Timothy (1995). <a rel="nofollow" class="external text" href="http://books.google.com.ph/books?id=9aFQAAAAMAAJ&amp;q=writing+a+device+driver&amp;dq=writing+a+device+driver&amp;hl=fil&amp;sa=X&amp;ei=yA2jUJyXEKmfiAes44CIAQ&amp;ved=0CC8Q6AEwAQ"><i>Writing device drivers: tutorial and reference</i></a>. Digital Press.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADevice+driver&amp;rft.au=Burke%2C+Timothy&amp;rft.btitle=Writing+device+drivers%3A+tutorial+and+reference&amp;rft.date=1995&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com.ph%2Fbooks%3Fid%3D9aFQAAAAMAAJ%26q%3Dwriting%2Ba%2Bdevice%2Bdriver%26dq%3Dwriting%2Ba%2Bdevice%2Bdriver%26hl%3Dfil%26sa%3DX%26ei%3DyA2jUJyXEKmfiAes44CIAQ%26ved%3D0CC8Q6AEwAQ&amp;rft.pub=Digital+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://linux.about.com/od/commands/l/blcmdl8_MAKEDEV.htm">"MAKEDEV&#160;— Linux Command&#160;— Unix Command"</a>. Linux.about.com. 2009-09-11<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-09-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADevice+driver&amp;rft.btitle=MAKEDEV+%94+Linux+Command+%94+Unix+Command&amp;rft.date=2009-09-11&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flinux.about.com%2Fod%2Fcommands%2Fl%2Fblcmdl8_MAKEDEV.htm&amp;rft.pub=Linux.about.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://technet2.microsoft.com/windowsserver/en/library/eb1936c0-e19c-4a17-a1a8-39292e4929a41033.mspx?mfr=true">"User-mode vs. Kernel-mode Drivers"</a>. <a href="https://en.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a>. 2003-03-01<span class="reference-accessdate">. Retrieved <span class="nowrap">2008-03-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADevice+driver&amp;rft.btitle=User-mode+vs.+Kernel-mode+Drivers&amp;rft.date=2003-03-01&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ftechnet2.microsoft.com%2Fwindowsserver%2Fen%2Flibrary%2Feb1936c0-e19c-4a17-a1a8-39292e4929a41033.mspx%3Fmfr%3Dtrue&amp;rft.pub=Microsoft&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://blogs.msdn.com/iliast/archive/2006/10/10/Introduction-to-the-User_2D00_Mode-Driver-Framework.aspx">"Introduction to the User-Mode Driver Framework (UMDF)"</a>. <a href="https://en.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a>. 2006-10-10<span class="reference-accessdate">. Retrieved <span class="nowrap">2008-03-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADevice+driver&amp;rft.btitle=Introduction+to+the+User-Mode+Driver+Framework+%28UMDF%29&amp;rft.date=2006-10-10&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblogs.msdn.com%2Filiast%2Farchive%2F2006%2F10%2F10%2FIntroduction-to-the-User_2D00_Mode-Driver-Framework.aspx&amp;rft.pub=Microsoft&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation book">Deborah Morley (2009). <a rel="nofollow" class="external text" href="http://books.google.com.ph/books?id=tfU7RtI7OX8C&amp;dq=applications+device+driver&amp;hl=fil&amp;source=gbs_navlinks_s"><i>Understanding Computers 2009: Today and Tomorrow</i></a>. Cengage Learning.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADevice+driver&amp;rft.au=Deborah+Morley&amp;rft.btitle=Understanding+Computers+2009%3A+Today+and+Tomorrow&amp;rft.date=2009&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com.ph%2Fbooks%3Fid%3DtfU7RtI7OX8C%26dq%3Dapplications%2Bdevice%2Bdriver%26hl%3Dfil%26source%3Dgbs_navlinks_s&amp;rft.pub=Cengage+Learning&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Computer_Peripherals_and_Interfaces-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-Computer_Peripherals_and_Interfaces_8-0">^</a></b></span> <span class="reference-text"><cite id="CPIbook" class="citation book"><a rel="nofollow" class="external text" href="https://books.google.co.uk/books?id=uK01xKT_mAMC&amp;pg=SA5-PA8&amp;lpg=SA5-PA8&amp;dq=Simulating+work+with+hardware,+while+doing+something+entirely+different&amp;source=bl&amp;ots=tFgCB2iFaQ&amp;sig=G4YPK6LI2KrIT7MN6IoDKt4THOk&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjhpOnBxMDMAhXHvBQKHYYMAwEQ6AEIHTAA#v=onepage&amp;q=Simulating%20work%20with%20hardware%2C%20while%20doing%20something%20entirely%20different&amp;f=false"><i>Computer Peripherals and Interfaces</i></a>. Technical Publications Pune. Jan 2008. pp.&#160;5–8. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="https://en.wikipedia.org/wiki/Special:BookSources/8184314744" title="Special:BookSources/8184314744">8184314744</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-05-03</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADevice+driver&amp;rft.btitle=Computer+Peripherals+and+Interfaces&amp;rft.date=2008-01&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fbooks.google.co.uk%2Fbooks%3Fid%3DuK01xKT_mAMC%26pg%3DSA5-PA8%26lpg%3DSA5-PA8%26dq%3DSimulating%2Bwork%2Bwith%2Bhardware%2C%2Bwhile%2Bdoing%2Bsomething%2Bentirely%2Bdifferent%26source%3Dbl%26ots%3DtFgCB2iFaQ%26sig%3DG4YPK6LI2KrIT7MN6IoDKt4THOk%26hl%3Den%26sa%3DX%26ved%3D0ahUKEwjhpOnBxMDMAhXHvBQKHYYMAwEQ6AEIHTAA%23v%3Donepage%26q%3DSimulating%2520work%2520with%2520hardware%252C%2520while%2520doing%2520something%2520entirely%2520different%26f%3Dfalse&amp;rft.isbn=8184314744&amp;rft.pages=5-8&amp;rft.pub=Technical+Publications+Pune&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.drivers.com/update/drivers-news/what-are-device-drivers-and-why-do-we-need-them/">"What are Device Drivers and why do we need them?"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADevice+driver&amp;rft.btitle=What+are+Device+Drivers+and+why+do+we+need+them%3F&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.drivers.com%2Fupdate%2Fdrivers-news%2Fwhat-are-device-drivers-and-why-do-we-need-them%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/cciss/">"CCISS"</a>. <i><a href="https://en.wikipedia.org/wiki/SourceForge" title="SourceForge">SourceForge</a></i>. 2010<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-08-11</span></span>. <q>Drivers for the HP (previously Compaq) Smart Array controllers which provide hardware RAID capability.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADevice+driver&amp;rft.atitle=CCISS&amp;rft.date=2010&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fcciss%2F&amp;rft.jtitle=SourceForge&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web">Russell, Steve; et al. (2003-10-21). <a rel="nofollow" class="external text" href="http://www.redbooks.ibm.com/redbooks/pdfs/sg246852.pd">"Abbreviations and acronyms"</a>. <i>Server Consolidation with the IBM eserver xSeries 440 and VMware ESX Serve</i>. IBM International Technical Support Organization. p.&#160;207. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="https://en.wikipedia.org/wiki/Special:BookSources/0-7384-2684-9" title="Special:BookSources/0-7384-2684-9">0-7384-2684-9</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2011-08-14</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADevice+driver&amp;rft.atitle=Abbreviations+and+acronyms&amp;rft.aufirst=Steve&amp;rft.aulast=Russell&amp;rft.date=2003-10-21&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.redbooks.ibm.com%2Fredbooks%2Fpdfs%2Fsg246852.pd&amp;rft.isbn=0-7384-2684-9&amp;rft.jtitle=Server+Consolidation+with+the+IBM+eserver+xSeries+440+and+VMware+ESX+Serve&amp;rft.pages=207&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.patentstorm.us/patents/5969841.html">"US Patent 5969841 - Gigabaud link module with received power detect signal"</a>. PatentStorm LLC<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-09-08</span></span>. <q>An improved Gigabaud Link Module (GLM) is provided for performing bi-directional data transfers between a host device and a serial transfer medium.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADevice+driver&amp;rft.btitle=US+Patent+5969841+-+Gigabaud+link+module+with+received+power+detect+signal&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.patentstorm.us%2Fpatents%2F5969841.html&amp;rft.pub=PatentStorm+LLC&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit&amp;section=11" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.microsoft.com/whdc">Microsoft Windows Hardware Developer Central</a></li>
+<li><a rel="nofollow" class="external text" href="http://myfixbase.com/">The database of Windows drivers</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.filehelp.info/drivers">FileHelp - Database of drivers</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.linux-drivers.org/">Linux Hardware Compatibility Lists and Linux Drivers</a></li>
+<li><a rel="nofollow" class="external text" href="http://pages.cs.wisc.edu/~kadav/study/study.pdf">Understanding Modern Device Drivers(Linux)</a></li>
+<li><a rel="nofollow" class="external text" href="https://help.ubuntu.com/community/BinaryDriverHowto/">BinaryDriverHowto, Ubuntu.</a></li>
+<li><a rel="nofollow" class="external text" href="http://howtoupdatedrivershq.com/how-to-update-drivers-the-manual-way/">How To Update Device Drivers Manual</a></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:Operating_system" title="Template:Operating system"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:Operating_system" title="Template talk:Operating system"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Operating_system&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="https://en.wikipedia.org/wiki/Operating_system" title="Operating system">Operating systems</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">General</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Operating_system_advocacy" title="Operating system advocacy">Advocacy</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Comparison_of_operating_systems" title="Comparison of operating systems">Comparison</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Forensic_software_engineering" title="Forensic software engineering">Forensic engineering</a></li>
+<li><a href="https://en.wikipedia.org/wiki/History_of_operating_systems" title="History of operating systems">History</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hobbyist_operating_system_development" title="Hobbyist operating system development">Hobbyist development</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_operating_systems" title="List of operating systems">List</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Timeline_of_operating_systems" title="Timeline of operating systems">Timeline</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Usage_share_of_operating_systems" title="Usage share of operating systems">Usage share</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Kernel_(operating_system)" title="Kernel (operating system)">Kernel</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;width: 9em;">
+<div style="padding:0em 0.75em;"><a href="https://en.wikipedia.org/wiki/Computer_architecture" title="Computer architecture">Architectures</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;width: auto;">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Exokernel" title="Exokernel">Exokernel</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hybrid_kernel" title="Hybrid kernel">Hybrid</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Microkernel" title="Microkernel">Microkernel</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Monolithic_kernel" title="Monolithic kernel">Monolithic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;width: 9em;">
+<div style="padding:0em 0.75em;">Components</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;width: auto;">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">Device driver</strong></li>
+<li><a href="https://en.wikipedia.org/wiki/Loadable_kernel_module" title="Loadable kernel module">Loadable kernel module</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Microkernel" title="Microkernel">Microkernel</a></li>
+<li><a href="https://en.wikipedia.org/wiki/User_space" title="User space">User space</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Process_management_(computing)" title="Process management (computing)">Process management</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;width: 9em;">
+<div style="padding:0em 0.75em;">Concepts</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;width: auto;">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Context_switch" title="Context switch">Context switch</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Interrupt" title="Interrupt">Interrupt</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Inter-process_communication" title="Inter-process communication">IPC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">Process</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Process_control_block" title="Process control block">Process control block</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Thread_(computing)" title="Thread (computing)">Thread</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Time-sharing" title="Time-sharing">Time-sharing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;width: 9em;">
+<div style="padding:0em 0.75em;"><a href="https://en.wikipedia.org/wiki/Scheduling_(computing)" title="Scheduling (computing)">Scheduling<br />
+algorithms</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;width: auto;">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Computer_multitasking" title="Computer multitasking">Computer multitasking</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fixed-priority_pre-emptive_scheduling" title="Fixed-priority pre-emptive scheduling">Fixed-priority preemptive</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Multilevel_feedback_queue" title="Multilevel feedback queue">Multilevel feedback queue</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Preemption_(computing)" title="Preemption (computing)">Preemptive</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Round-robin_scheduling" title="Round-robin scheduling">Round-robin</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shortest_job_next" title="Shortest job next">Shortest job next</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Memory_management" title="Memory management">Memory management</a> and<br />
+<a href="https://en.wikipedia.org/wiki/System_resource" title="System resource">resource</a> protection</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Bus_error" title="Bus error">Bus error</a></li>
+<li><a href="https://en.wikipedia.org/wiki/General_protection_fault" title="General protection fault">General protection fault</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Memory_protection" title="Memory protection">Memory protection</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Paging" title="Paging">Paging</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Protection_ring" title="Protection ring">Protection ring</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Segmentation_fault" title="Segmentation fault">Segmentation fault</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Virtual_memory" title="Virtual memory">Virtual memory</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Non-volatile_memory" title="Non-volatile memory">Storage</a> access and<br />
+<a href="https://en.wikipedia.org/wiki/File_system" title="File system">file systems</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Boot_loader" title="Boot loader" class="mw-redirect">Boot loader</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Defragmentation" title="Defragmentation">Defragmentation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Device_file" title="Device file">Device file</a></li>
+<li><a href="https://en.wikipedia.org/wiki/File_attribute" title="File attribute">File attribute</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Inode" title="Inode">Inode</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Journaling_file_system" title="Journaling file system">Journal</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Disk_partitioning" title="Disk partitioning">Partition</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Virtual_file_system" title="Virtual file system">Virtual file system</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Virtual_tape_library" title="Virtual tape library">Virtual tape library</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/List_of_operating_systems" title="List of operating systems">List</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/AmigaOS" title="AmigaOS">AmigaOS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Android_(operating_system)" title="Android (operating system)">Android</a></li>
+<li><a href="https://en.wikipedia.org/wiki/BeOS" title="BeOS">BeOS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chrome_OS" title="Chrome OS">Chrome OS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CP/M" title="CP/M">CP/M</a></li>
+<li><a href="https://en.wikipedia.org/wiki/DOS" title="DOS">DOS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GNU_Hurd" title="GNU Hurd">Hurd</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Haiku_(operating_system)" title="Haiku (operating system)">Haiku</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Illumos" title="Illumos">illumos</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IOS" title="IOS">iOS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Linux" title="Linux">Linux</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mac_OS" title="Mac OS">Mac OS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Minix" title="Minix" class="mw-redirect">Minix</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MorphOS" title="MorphOS">MorphOS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MUSIC/SP" title="MUSIC/SP">MUSIC/SP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/NOS_(software)" title="NOS (software)">NOS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenVMS" title="OpenVMS">OpenVMS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ORVYL_and_WYLBUR" title="ORVYL and WYLBUR">ORVYL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OS/2" title="OS/2">OS/2</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OSv" title="OSv">OSv</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pick_operating_system" title="Pick operating system">Pick</a></li>
+<li><a href="https://en.wikipedia.org/wiki/QNX" title="QNX">QNX</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ReactOS" title="ReactOS">ReactOS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/RISC_OS" title="RISC OS">RISC OS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/RSTS/E" title="RSTS/E">RSTS/E</a></li>
+<li><a href="https://en.wikipedia.org/wiki/RSX-11" title="RSX-11">RSX-11</a></li>
+<li><a href="https://en.wikipedia.org/wiki/RT-11" title="RT-11">RT-11</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a></li>
+<li><a href="https://en.wikipedia.org/wiki/TOPS-10" title="TOPS-10">TOPS-10</a>/<a href="https://en.wikipedia.org/wiki/TOPS-20" title="TOPS-20">TOPS-20</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Transaction_Processing_Facility" title="Transaction Processing Facility">TPF</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Unix" title="Unix">Unix</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Visi_On" title="Visi On">Visi On</a></li>
+<li><a href="https://en.wikipedia.org/wiki/VM_(operating_system)" title="VM (operating system)">VM/CMS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/VS/9" title="VS/9">VS/9</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Xinu" title="Xinu">Xinu</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Z/OS" title="Z/OS">z/OS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Miscellaneous concepts</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface">API</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Computer_network" title="Computer network">Computer network</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hardware_abstraction" title="Hardware abstraction">HAL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Live_CD" title="Live CD">Live CD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Live_USB" title="Live USB">Live USB</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shell_(computing)" title="Shell (computing)">OS shell</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Command-line_interface" title="Command-line interface">CLI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Graphical_user_interface" title="Graphical user interface">GUI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Text-based_user_interface" title="Text-based user interface">TUI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Voice_user_interface" title="Voice user interface">VUI</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Preboot_Execution_Environment" title="Preboot Execution Environment">PXE</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Help:Authority_control" title="Help:Authority control">Authority control</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Library_of_Congress_Control_Number" title="Library of Congress Control Number">LCCN</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://id.loc.gov/authorities/subjects/sh93009551">sh93009551</a></span></li>
+<li><a href="https://en.wikipedia.org/wiki/Integrated_Authority_File" title="Integrated Authority File">GND</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://d-nb.info/gnd/4185971-6">4185971-6</a></span></li>
+<li><a href="https://en.wikipedia.org/wiki/Bibliothèque_nationale_de_France" title="Bibliothèque nationale de France">BNF</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://catalogue.bnf.fr/ark:/12148/cb12492202q">cb12492202q</a> <a rel="nofollow" class="external text" href="http://data.bnf.fr/ark:/12148/cb12492202q">(data)</a></span></li>
+<li><a href="https://en.wikipedia.org/wiki/National_Diet_Library" title="National Diet Library">NDL</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://id.ndl.go.jp/auth/ndlna/01108739">01108739</a></span></li>
+<li><a href="https://en.wikipedia.org/wiki/Biblioteca_Nacional_de_España" title="Biblioteca Nacional de España">BNE</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://catalogo.bne.es/uhtbin/authoritybrowse.cgi?action=display&amp;authority_id=XX546589">XX546589</a></span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1204
+Cached time: 20160513095057
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.327 seconds
+Real time usage: 0.407 seconds
+Preprocessor visited node count: 2262/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 80670/2097152 bytes
+Template argument size: 5930/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 4/500
+Lua time usage: 0.136/10.000 seconds
+Lua memory usage: 4.38 MB/50 MB
+Number of Wikibase entities loaded: 1-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  328.937      1 - -total
+ 33.84%  111.298      1 - Template:Reflist
+ 24.08%   79.199      3 - Template:Ambox
+ 20.91%   68.777      8 - Template:Cite_web
+ 18.45%   60.682      1 - Template:Multiple_issues
+ 14.42%   47.438      3 - Template:Navbox
+ 11.76%   38.689      1 - Template:Operating_System
+  8.22%   27.025      1 - Template:Other_uses
+  7.93%   26.094      1 - Template:OS
+  7.60%   24.992      1 - Template:Authority_control
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:9101-0!*!0!!en!4!* and timestamp 20160513095056 and revision id 718601897
+ -->
+<noscript><img src="http://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;oldid=718601897">https://en.wikipedia.org/w/index.php?title=Device_driver&amp;oldid=718601897</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Device_drivers" title="Category:Device drivers">Device drivers</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Linux_drivers" title="Category:Linux drivers">Linux drivers</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Computing_terminology" title="Category:Computing terminology">Computing terminology</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Windows_NT_kernel" title="Category:Windows NT kernel">Windows NT kernel</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Wikipedia_introduction_cleanup_from_February_2013" title="Category:Wikipedia introduction cleanup from February 2013">Wikipedia introduction cleanup from February 2013</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_pages_needing_cleanup" title="Category:All pages needing cleanup">All pages needing cleanup</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_covered_by_WikiProject_Wikify_from_February_2013" title="Category:Articles covered by WikiProject Wikify from February 2013">Articles covered by WikiProject Wikify from February 2013</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_covered_by_WikiProject_Wikify" title="Category:All articles covered by WikiProject Wikify">All articles covered by WikiProject Wikify</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_needing_additional_references_from_February_2013" title="Category:Articles needing additional references from February 2013">Articles needing additional references from February 2013</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_containing_potentially_dated_statements_from_2009" title="Category:Articles containing potentially dated statements from 2009">Articles containing potentially dated statements from 2009</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Wikipedia_articles_with_LCCN_identifiers" title="Category:Wikipedia articles with LCCN identifiers">Wikipedia articles with LCCN identifiers</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Wikipedia_articles_with_GND_identifiers" title="Category:Wikipedia articles with GND identifiers">Wikipedia articles with GND identifiers</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Wikipedia_articles_with_BNF_identifiers" title="Category:Wikipedia articles with BNF identifiers">Wikipedia articles with BNF identifiers</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://en.wikipedia.org/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://en.wikipedia.org/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Device+driver&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Device+driver" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="https://en.wikipedia.org/wiki/Device_driver"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="https://en.wikipedia.org/wiki/Talk:Device_driver"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="https://en.wikipedia.org/wiki/Device_driver" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://en.wikipedia.org/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://en.wikipedia.org/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="https://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="https://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="https://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="https://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="https://en.wikipedia.org/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="http://shop.wikimedia.org/" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="https://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="https://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Device_driver" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Device_driver" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;oldid=718601897" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q1033951" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&amp;page=Device_driver&amp;id=718601897" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="https://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Device+driver">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="https://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Device+driver&amp;returnto=Device+driver&amp;oldid=718601897&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="https://en.wikipedia.org/w/index.php?title=Device_driver&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Hardware_drivers" hreflang="en">Wikimedia Commons</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="http://ar.wikipedia.org/wiki/مشغل_(حاسوب)" title="مشغل (حاسوب) – Arabic" lang="ar" hreflang="ar">العربية</a></li><li class="interlanguage-link interwiki-az"><a href="http://az.wikipedia.org/wiki/Sürücü" title="Sürücü – Azerbaijani" lang="az" hreflang="az">Azərbaycanca</a></li><li class="interlanguage-link interwiki-bg"><a href="http://bg.wikipedia.org/wiki/Драйвер" title="Драйвер – Bulgarian" lang="bg" hreflang="bg">Български</a></li><li class="interlanguage-link interwiki-bs"><a href="http://bs.wikipedia.org/wiki/Upravljački_program" title="Upravljački program – Bosnian" lang="bs" hreflang="bs">Bosanski</a></li><li class="interlanguage-link interwiki-ca"><a href="http://ca.wikipedia.org/wiki/Controlador_de_dispositiu" title="Controlador de dispositiu – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Ovladač_zařízení" title="Ovladač zařízení – Czech" lang="cs" hreflang="cs">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="http://da.wikipedia.org/wiki/Hardwaredriver" title="Hardwaredriver – Danish" lang="da" hreflang="da">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="http://de.wikipedia.org/wiki/Gerätetreiber" title="Gerätetreiber – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="http://et.wikipedia.org/wiki/Seadmedraiver" title="Seadmedraiver – Estonian" lang="et" hreflang="et">Eesti</a></li><li class="interlanguage-link interwiki-el"><a href="http://el.wikipedia.org/wiki/Οδηγός_συσκευής" title="Οδηγός συσκευής – Greek" lang="el" hreflang="el">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="http://es.wikipedia.org/wiki/Manejador_de_dispositivo" title="Manejador de dispositivo – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="http://eo.wikipedia.org/wiki/Pelilo" title="Pelilo – Esperanto" lang="eo" hreflang="eo">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="http://fa.wikipedia.org/wiki/گرداننده_دستگاه" title="گرداننده دستگاه – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Pilote_informatique" title="Pilote informatique – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="http://ko.wikipedia.org/wiki/장치_드라이버" title="장치 드라이버 – Korean" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-hsb"><a href="http://hsb.wikipedia.org/wiki/Ćěrjak_(informatika)" title="Ćěrjak (informatika) – Upper Sorbian" lang="hsb" hreflang="hsb">Hornjoserbsce</a></li><li class="interlanguage-link interwiki-hr"><a href="http://hr.wikipedia.org/wiki/Upravljački_program" title="Upravljački program – Croatian" lang="hr" hreflang="hr">Hrvatski</a></li><li class="interlanguage-link interwiki-id"><a href="http://id.wikipedia.org/wiki/Pemacu_peranti" title="Pemacu peranti – Indonesian" lang="id" hreflang="id">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-is"><a href="http://is.wikipedia.org/wiki/Rekill_(tölvunarfræði)" title="Rekill (tölvunarfræði) – Icelandic" lang="is" hreflang="is">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="http://it.wikipedia.org/wiki/Driver" title="Driver – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="http://he.wikipedia.org/wiki/מנהל_התקן" title="מנהל התקן – Hebrew" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-kk"><a href="http://kk.wikipedia.org/wiki/Драйвер" title="Драйвер – Kazakh" lang="kk" hreflang="kk">Қазақша</a></li><li class="interlanguage-link interwiki-ky"><a href="http://ky.wikipedia.org/wiki/Драйвер" title="Драйвер – Kyrgyz" lang="ky" hreflang="ky">Кыргызча</a></li><li class="interlanguage-link interwiki-lv"><a href="http://lv.wikipedia.org/wiki/Dzinis" title="Dzinis – Latvian" lang="lv" hreflang="lv">Latviešu</a></li><li class="interlanguage-link interwiki-lb"><a href="http://lb.wikipedia.org/wiki/Driver" title="Driver – Luxembourgish" lang="lb" hreflang="lb">Lëtzebuergesch</a></li><li class="interlanguage-link interwiki-lt"><a href="http://lt.wikipedia.org/wiki/Tvarkyklė" title="Tvarkyklė – Lithuanian" lang="lt" hreflang="lt">Lietuvių</a></li><li class="interlanguage-link interwiki-hu"><a href="http://hu.wikipedia.org/wiki/Hardver-illesztőprogram" title="Hardver-illesztőprogram – Hungarian" lang="hu" hreflang="hu">Magyar</a></li><li class="interlanguage-link interwiki-ms"><a href="http://ms.wikipedia.org/wiki/Pemacu_peranti" title="Pemacu peranti – Malay" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Stuurprogramma" title="Stuurprogramma – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="http://ja.wikipedia.org/wiki/デバイスドライバ" title="デバイスドライバ – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="http://no.wikipedia.org/wiki/Driver" title="Driver – Norwegian" lang="no" hreflang="no">Norsk bokmål</a></li><li class="interlanguage-link interwiki-nn"><a href="http://nn.wikipedia.org/wiki/Drivar" title="Drivar – Norwegian Nynorsk" lang="nn" hreflang="nn">Norsk nynorsk</a></li><li class="interlanguage-link interwiki-mhr"><a href="http://mhr.wikipedia.org/wiki/Драйвер" title="Драйвер – Eastern Mari" lang="mhr" hreflang="mhr">Олык марий</a></li><li class="interlanguage-link interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Sterownik_urządzenia" title="Sterownik urządzenia – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Driver_de_dispositivo" title="Driver de dispositivo – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="http://ro.wikipedia.org/wiki/Driver" title="Driver – Romanian" lang="ro" hreflang="ro">Română</a></li><li class="interlanguage-link interwiki-rue"><a href="http://rue.wikipedia.org/wiki/Драйвер" title="Драйвер – Rusyn" lang="rue" hreflang="rue">Русиньскый</a></li><li class="interlanguage-link interwiki-ru"><a href="http://ru.wikipedia.org/wiki/Драйвер" title="Драйвер – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-simple"><a href="http://simple.wikipedia.org/wiki/Device_driver" title="Device driver – Simple English" lang="simple" hreflang="simple">Simple English</a></li><li class="interlanguage-link interwiki-sk"><a href="http://sk.wikipedia.org/wiki/Ovládač_(informatika)" title="Ovládač (informatika) – Slovak" lang="sk" hreflang="sk">Slovenčina</a></li><li class="interlanguage-link interwiki-sr"><a href="http://sr.wikipedia.org/wiki/Драјвер" title="Драјвер – Serbian" lang="sr" hreflang="sr">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Laiteajuri" title="Laiteajuri – Finnish" lang="fi" hreflang="fi">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Drivrutin" title="Drivrutin – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-te"><a href="http://te.wikipedia.org/wiki/డివైజ్_డ్రైవర్" title="డివైజ్ డ్రైవర్ – Telugu" lang="te" hreflang="te">తెలుగు</a></li><li class="interlanguage-link interwiki-tr"><a href="http://tr.wikipedia.org/wiki/Aygıt_sürücüsü" title="Aygıt sürücüsü – Turkish" lang="tr" hreflang="tr">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="http://uk.wikipedia.org/wiki/Драйвер" title="Драйвер – Ukrainian" lang="uk" hreflang="uk">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="http://vi.wikipedia.org/wiki/Chương_trình_điều_khiển" title="Chương trình điều khiển – Vietnamese" lang="vi" hreflang="vi">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh-yue"><a href="http://zh-yue.wikipedia.org/wiki/驅動程式" title="驅動程式 – Cantonese" lang="zh-yue" hreflang="zh-yue">粵語</a></li><li class="interlanguage-link interwiki-zh"><a href="http://zh.wikipedia.org/wiki/驱动程序" title="驱动程序 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q1033951#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 4 May 2016, at 13:46.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="http://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="http://en.m.wikipedia.org/w/index.php?title=Device_driver&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="https://en.wikipedia.org/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="http://www.mediawiki.org/"><img src="https://en.wikipedia.org/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.eventLogging.subscriber","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":129,"wgHostname":"mw1213"});});</script>
+	</body>
+
+<!-- Mirrored from en.wikipedia.org/wiki/Device_driver by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:26 GMT -->
+</html>

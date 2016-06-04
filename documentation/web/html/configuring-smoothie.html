@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/configuring-smoothie by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:44:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Configuring Smoothie - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="login__customdomainscriptf36a.html?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="../images/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = '../images/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "configuring-smoothie";
+        OZONE.request.timestamp = 1463138520;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "configuring-smoothie";
+        WIKIREQUEST.info.pageId = 11637277;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="../images/wikidot.combined.js"></script>
+            <script type="text/javascript" src="../images/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="../images/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(../images/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(../images/style.css);
+                    @import url(../images/style-2.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="../images/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="../images/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="../images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="../images/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="index.html">Documentation</a><br /></li>
+<li><img src="../images/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="smoothieboard.html">SmoothieBoard</a><br /></li>
+<li><img src="../images/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="blog.html">Blog</a><br /></li>
+<li><img src="../images/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="gallery.html">Gallery</a><br /></li>
+<li><img src="../images/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="irc.html">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="general.html">Forum</a></li>
+<li><a href="smoothieware-support.html">Support/Help Mailing list</a></li>
+<li><a href="smoothie-dev.html">Developper Mailing list</a></li>
+<li><a href="111870450664099533727.html">Google+ Community</a></li>
+<li><a href="index-2.html">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="../images/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="search.html">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="../images/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Configuring Smoothie</span></div>
+          
+          <div id="page-content">
+
+<h2 id="toc0"><span>Configuration file</span></h2>
+<p>Smoothie is configured simply by editing a configuration file on its sd-card.</p>
+<p>There is no need to recompile or re-flash, simply edit the configuration file, <strong>unmount/safely eject</strong> the sdcard from the host and reset the board ( press the reset button, unplug the USB&nbsp;cable, or issue the <tt>reset</tt> command ).</p>
+<p>You can find a default config file for 3D printing <a href="../images/config">here in the github repository</a>.</p>
+<p><strong><a class="btn btn-primary btn-lg" style="width:100%" href="../images/config">Get the latest configuration file example</a></strong></p>
+<p>The file consists of key and value pairs. Most values are commented to indicate what they mean, but a lot of them are also explained in this documentation.</p>
+<p>Example :</p>
+<div class="code">
+<pre>
+<code>default_feed_rate                 4000                 # Default rate ( mm/minute ) for G1/G2/G3 moves</code>
+</pre></div>
+<div class="bs-callout bs-callout-danger">
+<h4><span>Comments</span></h4>
+<p>If a line begins with a <tt>#</tt>, it means it is commented and Smoothie will ignore it. Anything after a <tt>#</tt> is also ignored ( like the explanations at the end of the lines ).</p>
+<p>Some values are commented by default, you need to uncomment them by removing the <tt>#</tt> at the beginning of the line if you want them to take effect.</p>
+</div>
+<p>Smoothie will not work without a valid configuration file on the SD card.</p>
+<p>The filename must be <tt>config</tt> or <tt>config.txt</tt></p>
+<div class="bs-callout bs-callout-warning">
+<h4 id="toc1"><span>Note</span></h4>
+<p>It is not recommended you allow the sdcard to auto mount, and it is highly recommended that the sdcard be unmounted at all times except when files need to be copied or the config file needs to be edited.</p>
+<p>Concurrent access to the sdcard via the host and the smoothie is not supported. The sdcard must be safely removed or unmounted then smoothie reset after copying or editing files from the host mount point.</p>
+<p>This is especially true on Macs which randomly like to read and write the sdcard. If this happens during a print it will cause pauses and other printing problems.</p>
+</div>
+<div class="bs-callout bs-callout-primary">
+<h4 id="toc2"><span>This is optional</span></h4>
+<p>Smoothieboard comes with a configuration file already on the SD card. You need to get only a new configuration file if you are making your own board, or if you are upgrading your firmware.</p>
+</div>
+<h2 id="toc3"><span>Options</span></h2>
+<p>You can find all configuration options on this page :&nbsp;<a href="configuration-options.html">All configuration options</a></p>
+<p>And you can also find the configuration options for each module, in that module's page.</p>
+<h2 id="toc4"><span>Encoding</span></h2>
+<p>If you make the config file by yourself please save it using ANSI encoding.</p>
+<p>Using Unicode can cause problems.</p>
+<p>To avoid problems, use the default file on github ( see link above ) as your starting point.</p>
+<div class="bs-callout bs-callout-danger">
+<h4><span>Notepad++</span></h4>
+<p>Do not use Notepad++ to edit the configuration file, it thinks it's smarter than everybody and modifies the file in invisible ways that can make it unreadable or confusing to Smoothie.</p>
+</div>
+<h2 id="toc5"><span>Console configuration commands</span></h2>
+<p>There are <a href="console-commands.html">console commands</a> that allow you to edit the configuration file over serial, without having to open the file in a text editor.</p>
+<p>These commands are :&nbsp;</p>
+<div class="code">
+<pre>
+<code>config-get sd acceleration</code>
+</pre></div>
+<p>Will return the current acceleration setting from the SD card</p>
+<div class="code">
+<pre>
+<code>config-set sd acceleration 1000</code>
+</pre></div>
+<p>Will set the current acceleration setting to 1000.</p>
+<p>You need to reset the board after changing a value for it to be taken into account.</p>
+<p>You can find more information at <a href="console-commands.html">Console Commands</a>.</p>
+<h2 id="toc6"><span>Config Overrides</span></h2>
+<p>Many settings in smoothie can be set immediately with <tt>M</tt> commands, these settings are lost on reset, however they can be saved to a non-volatile storage (similar to EEPROM on other systems). The values in the configuration file will be overridden for those configuration options.</p>
+<p>There is a set of M-codes (<tt>M50x</tt>) documented below that allow you to save all the current settings that have Mxxx commands to set them. This is particularly convenient for parameters that require tuning, as you can use a command to modify them without having to open the file and reset the board.</p>
+<p>As these settings can be temporarily overridden with Mxxx commands there is a way to save these settings. Once saved they are reloaded on reset or boot overriding the settings in the config file. If you then edit the config file, make sure the setting you are editing is not being overridden by the override file (<tt>M503</tt> will tell you if there is an active override file). This can sometimes explain why editing the config file appears to have no effect.</p>
+<table class="wiki-content-table">
+<tr>
+<th>M-code</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td><tt>M500</tt></td>
+<td>Save settings to an override file</td>
+<td></td>
+</tr>
+<tr>
+<td><tt>M501</tt></td>
+<td>load config-override file optionally specifying the extension</td>
+<td><tt>M501</tt> - loads <tt>config-override</tt>, <tt>M501 test1</tt> - loads <tt>config-override.test1</tt></td>
+</tr>
+<tr>
+<td><tt>M502</tt></td>
+<td>Delete the override file, reverting to config settings at next reset</td>
+<td></td>
+</tr>
+<tr>
+<td><tt>M503</tt></td>
+<td>Display overridden settings if any</td>
+<td></td>
+</tr>
+<tr>
+<td><tt>M504</tt></td>
+<td>Save the settings to an override file with specified extension</td>
+<td><tt>M504</tt> blue-pla</td>
+</tr>
+</table>
+<div class="bs-callout bs-callout-danger">
+<h4 id="toc7"><span>Do not issue <tt>M500</tt> or <tt>M504</tt> when printing</span></h4>
+</div>
+<div class="code">
+<pre>
+<code>;Steps per unit:
+M92 X80.00000 Y80.00000 Z1259.84253
+;Acceleration mm/sec^2:
+M204 S2000.00000
+;X- Junction Deviation, S - Minimum Planner speed:
+M205 X0.05000 S0.00000
+;Max feedrates in mm/sec, XYZ cartesian, ABC actuator:
+M203 X333.00000 Y333.00000 Z3.33330 A333.00000 B333.00000 C3.33330
+;E Steps per mm:
+M92 E367.0000
+;Extruder current:
+M907 E1.50000
+;PID settings:
+M301 S1 P35.5000 I2.5830 D122.0000
+;Home offset (mm):
+M206 X-15.00 Y15.00 Z5.90
+
+Additionally a delta will save... 
+M665/666 is used when you want to make an adjustment during calibration and not have to reboot your Smoothie.
+;Trim (mm). Note M666 expect all values to be specified as negative and with a decimal point in mm
+;Example M666 X-6.14 Y-0.97 Z-6.05
+M666
+
+;M665 allows you to set the diagonal rod length L, the delta_radius R, and Max Z all in mm. The L and R values are optional if you don't want/need to override the config settings. 
+;Example: M665 L220.0 R113.8 Z244.0
+M665</code>
+</pre></div>
+<div class="bs-callout bs-callout-danger">
+<h4 id="toc8"><span>Do not</span></h4>
+<p>Edit the config-override file yourself, only use the commands to edit the values.</p>
+</div>
+<h2 id="toc9"><span>Advanced pin configuration</span></h2>
+<p>You can have a pin's output inverted by adding a <strong>&quot;!&quot;</strong> after this pin's number in the config line, example :</p>
+<div class="code">
+<pre>
+<code>my_pin_name                      19!</code>
+</pre></div>
+<p>There are other modifiers for pins :</p>
+<div class="bs-callout bs-callout-primary">
+<h4 id="toc10"><span>All options</span></h4>
+<table class="wiki-content-table">
+<tr>
+<td>!</td>
+<td>invert pin</td>
+</tr>
+<tr>
+<td>o</td>
+<td>set pin to open drain</td>
+</tr>
+<tr>
+<td>^</td>
+<td>set pin to pull up</td>
+</tr>
+<tr>
+<td>v</td>
+<td>set pin to pull down</td>
+</tr>
+<tr>
+<td>-</td>
+<td>to set no pullup</td>
+</tr>
+<tr>
+<td>@</td>
+<td>to set repeater mode</td>
+</tr>
+</table>
+</div>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 59, last edited: <span class="odate time_1450748844 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">22 Dec 2015 01:47</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="doc_start.html" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="legal_terms-of-service.html" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="legal_privacy-policy.html" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="index-4.html">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="index-5.html">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="../images/p-edl3gsnujjzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/configuring-smoothie by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:44:38 GMT -->
+</html>

@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:gd="http://schemas.google.com/g/2005" xmlns:georss="http://www.georss.org/georss" xmlns:thread="http://purl.org/syndication/thread/1.0" xmlns="http://www.w3.org/2005/Atom" xmlns:origo="http://origo.no/atom">
+  <title>Dank</title>
+  <link href="http://origo.no/-/feed/global/sandbox/269682_dank" rel="self"/>
+  <link href="http://origo.no/-/sandbox/show/269682_dank" rel="alternate"/>
+  <id>http://origo.no/-/posts</id>
+  <updated>2011-03-04T09:07:23Z</updated>
+  <author>
+    <name>Dank</name>
+  </author>
+  <entry>
+    <title>One stop Arduino-shield for Grbl!</title>
+    <link href="http://origo.no/-/bulletin/show/634222_one-stop-arduino-shield-for-grbl" rel="alternate"/>
+    <id>http://origo.no/-/bulletin/show/634222_one-stop-arduino-shield-for-grbl</id>
+    <updated>2012-01-27T10:38:00Z</updated>
+    <author>
+      <name>Simen S. S.</name>
+      <uri>http://origo.no/-/user/show/4_simen-s-s</uri>
+      <origo:avatar width="32" height="32" href="http://media4.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_32x32_cub.jpeg"/>
+    </author>
+    <content type="html">
+&lt;div class='text textile'&gt;
+
+&lt;img alt=&quot;&quot; class=&quot;image bordered_photo&quot; height=&quot;376&quot; src=&quot;http://media3.origo.no/-/cache/image/2045397_ha13321e37fe9cf5432cf_v1327657069_562x450.jpeg&quot; title=&quot;index&quot; width=&quot;562&quot; /&gt;
+
+&lt;p&gt;Riley Porter and Alden Hart of &lt;a href=&quot;https://www.synthetos.com/blog/&quot;&gt;Synthetos&lt;/a&gt; has just announced their &lt;a href=&quot;http://blog.makezine.com/arduino/grbl&quot;&gt;Grbl-shield&lt;/a&gt;, an Arduino shield purpose built for working with Grbl! Ours is in the mail, and we can&amp;#8217;t wait to try it out. (Featured in the blogs of &lt;a href=&quot;http://blog.makezine.com/archive/2011/03/announcing-the-arduino-grblshield.html&quot;&gt;Make&lt;/a&gt; and &lt;a href=&quot;http://www.adafruit.com/blog/2011/03/02/the-grblshield/&quot;&gt;Adafruit&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;object data=&quot;http://www.flickr.com/apps/video/stewart.swf?v=71377&quot; type=&quot;application/x-shockwave-flash&quot; height=&quot;225&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; width=&quot;400&quot;&gt; &lt;param name=&quot;flashvars&quot; value=&quot;intl_lang=en-us&amp;amp;photo_secret=3bb47be3d2&amp;amp;photo_id=5483126319&quot; /&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.flickr.com/apps/video/stewart.swf?v=71377&quot; /&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#000000&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed src=&quot;http://www.flickr.com/apps/video/stewart.swf?v=71377&quot; allowfullscreen=&quot;true&quot; type=&quot;application/x-shockwave-flash&quot; height=&quot;225&quot; flashvars=&quot;intl_lang=en-us&amp;amp;photo_secret=3bb47be3d2&amp;amp;photo_id=5483126319&quot; bgcolor=&quot;#000000&quot; width=&quot;400&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Plug and play compatible with grbl 0.6&lt;/li&gt;
+	&lt;li&gt;Three stepper motors supporting X, Y and Z axes&lt;/li&gt;
+	&lt;li&gt;8x microstepping&lt;/li&gt;
+	&lt;li&gt;2.5 amps per winding (bipolar steppers)&lt;/li&gt;
+	&lt;li&gt;12v-30v motor voltage supported&lt;/li&gt;
+	&lt;li&gt;Independent current control per axis&lt;/li&gt;
+	&lt;li&gt;Motor connectors plug compatible with RepRap and Makerbot electronics&lt;/li&gt;
+	&lt;li&gt;Uses TI DRV8811 stepper drivers&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;feed_author&quot;&gt;
+  
+    &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-right: 5px&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;24&quot; src=&quot;http://media2.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_24x24_cub.jpeg&quot; title=&quot;Simen S. S.&quot; width=&quot;24&quot; /&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-top:6px; padding-right: 10px&quot;&gt;
+    
+        &lt;a href=&quot;http://origo.no/-/user/show/4_simen-s-s&quot; class=&quot;user_instance object_link&quot;&gt;Simen S. S.&lt;/a&gt;     
+          
+            i &lt;a href=&quot;http://origo.no/-/sandbox/show/269682_dank&quot; class=&quot;sandbox_instance object_link organization_22&quot;&gt;Dank&lt;/a&gt;
+          
+    
+  
+    &lt;/div&gt;
+  
+      &lt;div style=&quot;float: left;&quot;&gt;
+        &lt;a href=&quot;http://origo.no/-/bulletin/show/634222_one-stop-arduino-shield-for-grbl&quot;&gt;&lt;img alt=&quot;Fs_13_fc_0262e5_t_3032478&quot; src=&quot;http://origo.no/-/cache/comment_count/fs_13_fc_0262e5_t_3032478.png&quot; /&gt;&lt;/a&gt;      &lt;/div&gt;
+      &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+  
+&lt;/div&gt;    </content>
+    <category scheme="http://origo.no/atom/tag" term="grbl" label="grbl"/>
+    <category scheme="http://origo.no/atom/tag" term="synthetos" label="synthetos"/>
+    <category scheme="http://origo.no/atom/tag" term="arduino" label="arduino"/>
+    <category scheme="http://origo.no/atom/tag" term="shield" label="shield"/>
+    <origo:object object_class="Bulletin" id="634222"/>
+    <origo:author>
+Simen S. S.    </origo:author>
+    <origo:comment_count>4</origo:comment_count>
+    <thread:total>4</thread:total>
+    <origo:sandbox id="269682" title="Dank"/>
+    <origo:policy visibility="everyone" name="authorized"/>
+  </entry>
+  <entry>
+    <title>Teardown time! Interfacing &quot;Pocket Radar&quot; </title>
+    <link href="http://origo.no/-/bulletin/show/634166_teardown-time-interfacing-pocket-radar" rel="alternate"/>
+    <id>http://origo.no/-/bulletin/show/634166_teardown-time-interfacing-pocket-radar</id>
+    <updated>2011-03-04T11:50:33Z</updated>
+    <author>
+      <name>Even W.</name>
+      <uri>http://origo.no/-/user/show/2_even-w</uri>
+      <origo:avatar width="32" height="32" href="http://media3.origo.no/-/cache/image/74837_h13d41645511a8469f08e_32x32_cub.jpeg"/>
+    </author>
+    <content type="html">
+&lt;div class='text textile'&gt;&lt;p&gt;Having children warps your perspective. Totally. And last summer I spent an unhealthy amount of time being annoyed at cars racing up our narrow residential street while rambling incoherently, &amp;#8220;Heathens! Think of the children!&amp;#8221;&lt;/p&gt;
+&lt;p&gt;So what does one do? I think some friendly automated neighborhood traffic surveillance would go a long way. So a while back I therefore got hold of a &lt;a href=&quot;http://pocketradar.com/&quot;&gt;Pocket Radar&lt;/a&gt;. While it does evoke the stray &amp;#8216;is that a radar in your pocket&amp;#8217;-joke it is in fact a precise, yet tiny unit. The interface is admirably simple &#8211; one big red button (&lt;span class=&quot;caps&quot;&gt;BRB&lt;/span&gt;) which starts metering and upon release displays the speed of anything substantial hurtling towards you to within a couple of km/h. So how does it interface?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&quot;caps&quot;&gt;HEED&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;THIS&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;JOURNEYMAN&lt;/span&gt;: According to Pocket Radar the device is very sensitive to static discharge &#8211; mostly the pins on the RF board &#8211; so if you intend to poke around one of these you should consider an &lt;span class=&quot;caps&quot;&gt;ESD&lt;/span&gt; work mat and proper grounding. I did my probing in winter, wearing wooly socks while sliding around on hardwood floors with nothing for protection apart from my sanguine temperament. Stupid luck, most probably.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Promisingly the unit breaks out a few pins right over the battery compartment behind a little sticker. These however proved not to actually carry data, and are probably just diagnostics. Meh.&lt;/p&gt;
+&lt;p&gt;So here we go.&lt;/p&gt;
+
+&lt;img alt=&quot;&quot; class=&quot;image bordered_photo&quot; height=&quot;450&quot; src=&quot;http://media1.origo.no/-/cache/image/1690390_h185ee27a4b6bca95028d_v1299191063_562x450.jpeg&quot; title=&quot;front&quot; width=&quot;294&quot; /&gt;
+
+
+
+&lt;img alt=&quot;&quot; class=&quot;image bordered_photo&quot; height=&quot;450&quot; src=&quot;http://media2.origo.no/-/cache/image/1690387_hd8681ee8e15490c75dd0_v1299190979_562x450.jpeg&quot; title=&quot;back&quot; width=&quot;490&quot; /&gt;
+
+&lt;p&gt;Broadly the front of the board carries:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;1 16-bit TI microcontroller &#8211; &lt;a href=&quot;http://focus.ti.com/docs/prod/folders/print/msp430f2132.html&quot;&gt;&lt;span class=&quot;caps&quot;&gt;MCU&lt;/span&gt; MSP430F21x2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;1 TI programmable &lt;span class=&quot;caps&quot;&gt;DSP&lt;/span&gt; &#8211; &lt;a href=&quot;http://focus.ti.com/docs/prod/folders/print/tms320lf2401a.html&quot;&gt;TMS320LF2401A&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;4 8-bit shift registers for driving the display &#8211;&#160;&amp;quot;SN74AHC595PW&amp;quot;:http://focus.ti.com/lit/ds/symlink/sn74ahc595.pdf&lt;/li&gt;
+	&lt;li&gt;A slew of analog electronics for powering and filtering whatever comes back from the antenna.&lt;/li&gt;
+	&lt;li&gt;2 &lt;a href=&quot;http://focus.ti.com/lit/ds/symlink/lm324k.pdf&quot;&gt;L324&lt;/a&gt; op-amps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The back has fat pads connecting to the &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; and a light sprinkling of analog components. The bold 7 segment &lt;span class=&quot;caps&quot;&gt;LCD&lt;/span&gt; display seems pure oldskool as do the shift registers. It doesn&amp;#8217;t have hidden vias or mutiple layers. It&amp;#8217;s a &lt;span class=&quot;caps&quot;&gt;USPS&lt;/span&gt; truck. It&amp;#8217;ll keep on truckin&amp;#8217; till long after the apocalypse.&lt;/p&gt;
+&lt;p&gt;Photoshop grants me x-ray specs:&lt;/p&gt;
+
+&lt;img alt=&quot;&quot; class=&quot;image bordered_photo&quot; height=&quot;450&quot; src=&quot;http://media3.origo.no/-/cache/image/1690389_h9eb38eecbc61c27099e8_v1299191031_562x450.jpeg&quot; title=&quot;composite&quot; width=&quot;371&quot; /&gt;
+
+&lt;p&gt;Anyways, poking about a bit reveals that the &lt;span class=&quot;caps&quot;&gt;DSP&lt;/span&gt; does signal acquisition from the op-amp / RC grid while the shift registers hang off the other &lt;span class=&quot;caps&quot;&gt;MCU&lt;/span&gt; and do display refresh. So given:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;RADAR&lt;/span&gt; &amp;#8594; &lt;strong&gt;&lt;span class=&quot;caps&quot;&gt;DSP&lt;/span&gt; &amp;#8594; &lt;span class=&quot;caps&quot;&gt;MCU&lt;/span&gt;&lt;/strong&gt; &amp;#8594; &lt;span class=&quot;caps&quot;&gt;SHIFT&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;REGISTERS&lt;/span&gt; &amp;#8594; &lt;span class=&quot;caps&quot;&gt;DISPLAY&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;we might just be lucky and find an available digital signal between the &lt;span class=&quot;caps&quot;&gt;DSP&lt;/span&gt; and the &lt;span class=&quot;caps&quot;&gt;MCU&lt;/span&gt;. Unfortunately finding out what the unit is doing could be somewhat difficult as the antenna is affixed to the back plate of the unit. The same back plate you remove in dissasembling it. Doh. But hey, the unit still powers up and pressing the &lt;span class=&quot;caps&quot;&gt;BRB&lt;/span&gt; still still produces a random speed reading every once in a while. I&amp;#8217;m guessing this is just noise from the hanging pins usually connected to the antenna.&lt;/p&gt;
+&lt;p&gt;Probing the &lt;span class=&quot;caps&quot;&gt;DSP&lt;/span&gt; while staying far away from the sensitive op-amps reveals that pin 3, &lt;span class=&quot;caps&quot;&gt;SCITXD&lt;/span&gt;, unsurprisingly sends something digital and serial to the MCUs RX pin. The TIs support normal &lt;span class=&quot;caps&quot;&gt;UART&lt;/span&gt;, but after doing 3 captures I&amp;#8217;m left with this:&lt;/p&gt;
+
+&lt;img alt=&quot;&quot; class=&quot;image bordered_photo&quot; height=&quot;450&quot; src=&quot;http://media4.origo.no/-/cache/image/1690391_hce86f15c01f4183ce635_v1299191065_562x450.png&quot; title=&quot;waveforms&quot; width=&quot;314&quot; /&gt;
+
+&lt;p&gt;2 different lengths of signal. Yet a total of 12 changes in sign for all of them.&lt;/p&gt;
+&lt;p&gt;The display can be set to meters/sec, feet/sec, km/hour and mi/hour. For all we know the data is coming off the &lt;span class=&quot;caps&quot;&gt;DSP&lt;/span&gt; in a fifth intermediate format. Hoping that it&amp;#8217;s one of the four above and counting.&lt;/p&gt;
+&lt;p&gt;The width of each pulse is 122&#181;s = 0.122ms = 8196,7 baud. Now, 8196,7 / 2 is 4098 which seems just too much of a coincidence.&lt;/p&gt;
+&lt;p&gt;Transcribing the bits as clocked out gives us:&lt;/p&gt;&lt;code class='codeblock'&gt;&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;1. low -&amp;gt;  1010101011100010101000 -&amp;gt; high &lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;2. low -&amp;gt;  10101010111011100010001110 -&amp;gt; high&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;3. low -&amp;gt;  1010101000101110001010 -&amp;gt; high&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;&lt;/code&gt;&lt;p&gt;While the display readings in binary are:&lt;/p&gt;&lt;code class='codeblock'&gt;&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;1.&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;86m/s &#8211;&#8211;    1010110     / lsb 0110101&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;283f/s &#8211;&#8211;   100011011   / lsb 110110001&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;311km/h &#8211;&#8211;  10011011    / lsb 11011001&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;193mi/h &#8211;&#8211;  11000001    / lsb 10000011&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;2.&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;81m/s   &#8211;&#8211;    1010001   / lsb   1000101&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;267f/s  &#8211;&#8211;  100001011   / lsb 110100001&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;293km/h &#8211;&#8211;  100100101   / lsb 101001001&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;182mi/h &#8211;&#8211;  010110110   / lsb  01101101&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;3.&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;136m/s - 10001000&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;446f/s&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;489km/h&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;304mi/h - 100110000&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;&lt;/code&gt;&lt;p&gt;The repeats seem to be carrying information, but how? I stare unblinkingly at it for half an hour to grok pattern, but give up at 1:30AM. Next day I give Simen a call. He remembers a blog post he happenend upon describing an unclocked serial protocol where the recipient meters the baud-rate, by looking at the initial pulses. The repeats then carry a specific truth value regardless of their being high or low. This &lt;em&gt;very quickly&lt;/em&gt; gets results.&lt;/p&gt;&lt;code class='codeblock'&gt;&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;1. low -&amp;gt;  1010101 011100010101000 -&amp;gt; high &lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;    mi/h     0 0 0  0  1  100000  1&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;2. low -&amp;gt;  1010101 0111011100010001110 -&amp;gt; high&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;   mi/h     0 0 0  0  10  1  10  1  10&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;3. low -&amp;gt;  1010101 000101110001010 -&amp;gt; high&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;   mi/h     0 0 0  1  00  1  10000&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;&lt;/code&gt;&lt;p&gt;The protocol starts with 7 bits of toggling, presumably to establish a bit rate, 9 bits of data follow. Repeats are signal true, any other toggle is false. The data is in miles per hour.&lt;/p&gt;
+&lt;p&gt;This snippet of ruby will run the decoder for you &#8211; raising an error for repeats that aren&amp;#8217;t threes is left as an exercise to the reader:&lt;/p&gt;&lt;code class='codeblock'&gt;&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;pulses = [&quot;1010101000101110001010&quot;, &quot;10101010111011100010001110&quot;, &quot;1010101011100010101000&quot;]&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;should_equal = [304, 182, 193]&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;def decode pulse&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;  # chop first 7 bits. sync pulse&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;  pulse = pulse[7..-1]&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;  result = &quot;&quot; and cnt = 0&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;  while cnt &amp;lt; pulse.length do&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;    if pulse[cnt] != pulse[cnt+1]&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;      result &amp;lt;&amp;lt; &quot;0&quot; &lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;      cnt += 1&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;    else&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;      result &amp;lt;&amp;lt; &quot;1&quot;&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;      cnt += 3&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;    end&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;  end&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;  return result.to_i(2)&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;end&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;pulses.each_with_index do |pulse, index|&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;  puts &quot;= #{decode(pulse)} // #{should_equal[index]}&quot;&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;
+&lt;code class='codeblock_line'&gt;&lt;span class='codeblock_line_content'&gt;end&lt;/span&gt;&lt;br/&gt;&lt;/code&gt;&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;feed_author&quot;&gt;
+  
+    &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-right: 5px&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;24&quot; src=&quot;http://media3.origo.no/-/cache/image/74837_he297647db3bbbe3b9a9f_24x24_cub.jpeg&quot; title=&quot;Even W.&quot; width=&quot;24&quot; /&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-top:6px; padding-right: 10px&quot;&gt;
+    
+        &lt;a href=&quot;http://origo.no/-/user/show/2_even-w&quot; class=&quot;user_instance object_link&quot;&gt;Even W.&lt;/a&gt;     
+          
+            i &lt;a href=&quot;http://origo.no/-/sandbox/show/269682_dank&quot; class=&quot;sandbox_instance object_link organization_22&quot;&gt;Dank&lt;/a&gt;
+          
+    
+  
+    &lt;/div&gt;
+  
+      &lt;div style=&quot;float: left;&quot;&gt;
+        &lt;a href=&quot;http://origo.no/-/bulletin/show/634166_teardown-time-interfacing-pocket-radar&quot;&gt;&lt;img alt=&quot;Fs_13_fc_0262e5_t_3031759&quot; src=&quot;http://origo.no/-/cache/comment_count/fs_13_fc_0262e5_t_3031759.png&quot; /&gt;&lt;/a&gt;      &lt;/div&gt;
+      &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+  
+&lt;/div&gt;    </content>
+    <origo:object object_class="Bulletin" id="634166"/>
+    <origo:author>
+Even W.    </origo:author>
+    <origo:comment_count>1</origo:comment_count>
+    <thread:total>1</thread:total>
+    <origo:sandbox id="269682" title="Dank"/>
+    <origo:policy visibility="everyone" name="authorized"/>
+  </entry>
+  <entry>
+    <title>Open source laser cutter Lasersaur using Grbl*</title>
+    <link href="http://origo.no/-/bulletin/show/628581_open-source-laser-cutter-lasersaur-using-grbl" rel="alternate"/>
+    <id>http://origo.no/-/bulletin/show/628581_open-source-laser-cutter-lasersaur-using-grbl</id>
+    <updated>2011-02-08T23:18:32Z</updated>
+    <author>
+      <name>Simen S. S.</name>
+      <uri>http://origo.no/-/user/show/4_simen-s-s</uri>
+      <origo:avatar width="32" height="32" href="http://media4.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_32x32_cub.jpeg"/>
+    </author>
+    <content type="html">
+&lt;div class='text textile'&gt;&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/stfnix/5416074288/&quot; title=&quot;Sweet laser glasses! by stfnix, on Flickr&quot;&gt;&lt;img src=&quot;http://farm6.static.flickr.com/5138/5416074288_72db0fec9e.jpg&quot; height=&quot;375&quot; alt=&quot;Sweet laser glasses!&quot; width=&quot;500&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Stefan and Addie or &lt;a href=&quot;http://labs.nortd.com/about/&quot;&gt;Nortd Labs&lt;/a&gt; are creating an &lt;a href=&quot;http://labs.nortd.com/lasersaur/&quot;&gt;open source laser cutter&lt;/a&gt;. Looking for a suitable firmware they happened across Grbl and dared to try out the &lt;a href=&quot;https://github.com/simen/grbl/tree/accelleration&quot;&gt;ultra-beta acceleration branch&lt;/a&gt; which turned out nicely for them:&lt;/p&gt;
+&lt;p&gt;&lt;object data=&quot;http://www.flickr.com/apps/video/stewart.swf?v=71377&quot; type=&quot;application/x-shockwave-flash&quot; height=&quot;300&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; width=&quot;400&quot;&gt; &lt;param name=&quot;flashvars&quot; value=&quot;intl_lang=en-us&amp;photo_secret=4f84763d95&amp;photo_id=5415891178&quot; /&gt; &lt;param name=&quot;movie&quot; value=&quot;http://www.flickr.com/apps/video/stewart.swf?v=71377&quot; /&gt; &lt;param name=&quot;bgcolor&quot; value=&quot;#000000&quot; /&gt; &lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed src=&quot;http://www.flickr.com/apps/video/stewart.swf?v=71377&quot; allowfullscreen=&quot;true&quot; type=&quot;application/x-shockwave-flash&quot; height=&quot;300&quot; flashvars=&quot;intl_lang=en-us&amp;photo_secret=4f84763d95&amp;photo_id=5415891178&quot; bgcolor=&quot;#000000&quot; width=&quot;400&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Initially we wanted to write our own firmware from scratch for an &lt;span class=&quot;caps&quot;&gt;ARM&lt;/span&gt; Cortex M3. Then we started playing with some open source &lt;span class=&quot;caps&quot;&gt;AVR&lt;/span&gt; firmwares. Man, these 8-bit hackers have done some impressive work. [&#8230;] In the end we only got grbl to perform smoothly (after updating to the super cutting edge code of Feb 3).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We appreciate their enthusiasm and look forward to assist them in adapting Grbl for laser cutting as much as we look forward to being able to build our own open source laser cutter from their plans.&lt;/p&gt;
+&lt;p&gt;(Also, if you&amp;#8217;d like one, consider pitching in via the paypal links &lt;a href=&quot;http://labs.nortd.com/lasersaur/&quot;&gt;at the bottom of this page&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;*) Grbl is our free, open source, high performance &lt;span class=&quot;caps&quot;&gt;CNC&lt;/span&gt; controller written in optimized C that will run on a straight Arduino.&lt;/em&gt; &lt;a href=&quot;http://dank.bengler.no/-/page/show/5470_grbl&quot;&gt;More&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;feed_author&quot;&gt;
+  
+    &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-right: 5px&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;24&quot; src=&quot;http://media2.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_24x24_cub.jpeg&quot; title=&quot;Simen S. S.&quot; width=&quot;24&quot; /&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-top:6px; padding-right: 10px&quot;&gt;
+    
+        &lt;a href=&quot;http://origo.no/-/user/show/4_simen-s-s&quot; class=&quot;user_instance object_link&quot;&gt;Simen S. S.&lt;/a&gt;     
+          
+            i &lt;a href=&quot;http://origo.no/-/sandbox/show/269682_dank&quot; class=&quot;sandbox_instance object_link organization_22&quot;&gt;Dank&lt;/a&gt;
+          
+    
+  
+    &lt;/div&gt;
+  
+      &lt;div style=&quot;float: left;&quot;&gt;
+        &lt;a href=&quot;http://origo.no/-/bulletin/show/628581_open-source-laser-cutter-lasersaur-using-grbl&quot;&gt;&lt;img alt=&quot;Fs_13_fc_0262e5_t_2937293&quot; src=&quot;http://origo.no/-/cache/comment_count/fs_13_fc_0262e5_t_2937293.png&quot; /&gt;&lt;/a&gt;      &lt;/div&gt;
+      &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+  
+&lt;/div&gt;    </content>
+    <origo:object object_class="Bulletin" id="628581"/>
+    <origo:author>
+Simen S. S.    </origo:author>
+    <origo:comment_count>0</origo:comment_count>
+    <thread:total>0</thread:total>
+    <origo:sandbox id="269682" title="Dank"/>
+    <origo:policy visibility="everyone" name="authorized"/>
+  </entry>
+  <entry>
+    <title>Hello Kitty Stencil</title>
+    <link href="http://origo.no/-/bulletin/show/626488_hello-kitty-stencil" rel="alternate"/>
+    <id>http://origo.no/-/bulletin/show/626488_hello-kitty-stencil</id>
+    <updated>2011-03-03T21:29:22Z</updated>
+    <author>
+      <name>Even W.</name>
+      <uri>http://origo.no/-/user/show/2_even-w</uri>
+      <origo:avatar width="32" height="32" href="http://media3.origo.no/-/cache/image/74837_h13d41645511a8469f08e_32x32_cub.jpeg"/>
+    </author>
+    <content type="html">
+&lt;div class='text textile'&gt;&lt;p&gt;When my first daughter was born 2.5 years ago I attempted shielding her from the insiped, trite garbage that is marketed to their bracket. Pink was not to be worn. Unisex garb in earth tones mandated. And indeed, as resistance proves to be futile, today I milled her a Hello Kitty stencil. So she can wield a clone army of pink little kitties and bomb her way to day care.&lt;/p&gt;
+&lt;p&gt;&lt;iframe class=&quot;youtube-player&quot; title=&quot;YouTube video player&quot; allowfullscreen src=&quot;http://www.youtube.com/embed/jNbhgQ5_p_Y&quot; frameborder=&quot;0&quot; type=&quot;text/html&quot; height=&quot;390&quot; width=&quot;640&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Shot and edited on my phone. The volume tends to vary.&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;feed_author&quot;&gt;
+  
+    &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-right: 5px&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;24&quot; src=&quot;http://media3.origo.no/-/cache/image/74837_he297647db3bbbe3b9a9f_24x24_cub.jpeg&quot; title=&quot;Even W.&quot; width=&quot;24&quot; /&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-top:6px; padding-right: 10px&quot;&gt;
+    
+        &lt;a href=&quot;http://origo.no/-/user/show/2_even-w&quot; class=&quot;user_instance object_link&quot;&gt;Even W.&lt;/a&gt;     
+          
+            i &lt;a href=&quot;http://origo.no/-/sandbox/show/269682_dank&quot; class=&quot;sandbox_instance object_link organization_22&quot;&gt;Dank&lt;/a&gt;
+          
+    
+  
+    &lt;/div&gt;
+  
+      &lt;div style=&quot;float: left;&quot;&gt;
+        &lt;a href=&quot;http://origo.no/-/bulletin/show/626488_hello-kitty-stencil&quot;&gt;&lt;img alt=&quot;Fs_13_fc_0262e5_t_2905194&quot; src=&quot;http://origo.no/-/cache/comment_count/fs_13_fc_0262e5_t_2905194.png&quot; /&gt;&lt;/a&gt;      &lt;/div&gt;
+      &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+  
+&lt;/div&gt;    </content>
+    <origo:object object_class="Bulletin" id="626488"/>
+    <origo:author>
+Even W.    </origo:author>
+    <origo:comment_count>2</origo:comment_count>
+    <thread:total>2</thread:total>
+    <origo:sandbox id="269682" title="Dank"/>
+    <origo:policy visibility="everyone" name="authorized"/>
+  </entry>
+  <entry>
+    <title>Optimizing the cornering algorithm for the Grbl acceleration code.</title>
+    <link href="http://origo.no/-/bulletin/show/623637_optimizing-the-cornering-algorithm-for-the-grbl-acceleration" rel="alternate"/>
+    <id>http://origo.no/-/bulletin/show/623637_optimizing-the-cornering-algorithm-for-the-grbl-acceleration</id>
+    <updated>2011-01-19T08:18:18Z</updated>
+    <author>
+      <name>Simen S. S.</name>
+      <uri>http://origo.no/-/user/show/4_simen-s-s</uri>
+      <origo:avatar width="32" height="32" href="http://media4.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_32x32_cub.jpeg"/>
+    </author>
+    <content type="html">
+&lt;div class='text textile'&gt;
+
+&lt;img alt=&quot;&quot; class=&quot;image bordered_photo&quot; height=&quot;395&quot; src=&quot;http://media4.origo.no/-/cache/image/1642843_h50b99ba37ede3e389453_v1295388765_562x450.png&quot; title=&quot;Screen shot 2011-01-18 at 23.12.08&quot; width=&quot;562&quot; /&gt;
+
+&lt;p&gt;Attempting to discover the best algorithm for determining optimal speed reduction in order to pass a corner at maximum speed but within a set jerk limit.&lt;/p&gt;
+&lt;p&gt;Red: The jerk-limit, Yellow: The actual jerk, Transparent blue: The sum of incoming and outgoing feed rate. The intersection between the red and yellow is the set of candidate cornering factors, the optimum one is the one where the speed is the highest, i.e. where the blue transparent layer is at its tallest.&lt;/p&gt;
+&lt;p&gt;The final optimizing algorithm must run on the AVR328 in a matter of milliseconds.&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;feed_author&quot;&gt;
+  
+    &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-right: 5px&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;24&quot; src=&quot;http://media2.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_24x24_cub.jpeg&quot; title=&quot;Simen S. S.&quot; width=&quot;24&quot; /&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-top:6px; padding-right: 10px&quot;&gt;
+    
+        &lt;a href=&quot;http://origo.no/-/user/show/4_simen-s-s&quot; class=&quot;user_instance object_link&quot;&gt;Simen S. S.&lt;/a&gt;     
+          
+            i &lt;a href=&quot;http://origo.no/-/sandbox/show/269682_dank&quot; class=&quot;sandbox_instance object_link organization_22&quot;&gt;Dank&lt;/a&gt;
+          
+    
+  
+    &lt;/div&gt;
+  
+      &lt;div style=&quot;float: left;&quot;&gt;
+        &lt;a href=&quot;http://origo.no/-/bulletin/show/623637_optimizing-the-cornering-algorithm-for-the-grbl-acceleration&quot;&gt;&lt;img alt=&quot;Fs_13_fc_0262e5_t_2859282&quot; src=&quot;http://origo.no/-/cache/comment_count/fs_13_fc_0262e5_t_2859282.png&quot; /&gt;&lt;/a&gt;      &lt;/div&gt;
+      &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+  
+&lt;/div&gt;    </content>
+    <origo:object object_class="Bulletin" id="623637"/>
+    <origo:author>
+Simen S. S.    </origo:author>
+    <origo:comment_count>1</origo:comment_count>
+    <thread:total>1</thread:total>
+    <origo:sandbox id="269682" title="Dank"/>
+    <origo:policy visibility="everyone" name="authorized"/>
+  </entry>
+  <entry>
+    <title>Mad professor control unit</title>
+    <link href="http://origo.no/-/bulletin/show/622731_mad-professor-control-unit" rel="alternate"/>
+    <id>http://origo.no/-/bulletin/show/622731_mad-professor-control-unit</id>
+    <updated>2011-01-15T11:10:01Z</updated>
+    <author>
+      <name>Simen S. S.</name>
+      <uri>http://origo.no/-/user/show/4_simen-s-s</uri>
+      <origo:avatar width="32" height="32" href="http://media4.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_32x32_cub.jpeg"/>
+    </author>
+    <content type="html">
+&lt;div class='text textile'&gt;
+
+&lt;img alt=&quot;&quot; class=&quot;image bordered_photo&quot; height=&quot;422&quot; src=&quot;http://media4.origo.no/-/cache/image/1637590_hb66d344be0f6c4d110a9_v1295085147_562x450.jpeg&quot; title=&quot;21.12.2010&quot; width=&quot;562&quot; /&gt;
+
+&lt;p&gt;We are experimenting with real time controls for the milling operation and came up with this unit cobbled together from dumpster spoils and the &lt;a href=&quot;http://www.sparkfun.com/products/9181&quot;&gt;Big Dome Push Button&lt;/a&gt;. Now we can tweak the feed rate in real time using the sliding pot, see if we suffer buffer underruns because of poor serial comms and we have two buttons for pause and emergency stop. There is an experimental branch up on github if you want to experiment with real time feed rate tweaking: &lt;a href=&quot;https://github.com/simen/grbl/tree/controls&quot;&gt;Control&lt;/a&gt;. (Warning: The pins had to be remapped. Be sure to check config.h for the updated pin out.)&lt;/p&gt;
+
+&lt;img alt=&quot;&quot; class=&quot;image bordered_photo&quot; height=&quot;343&quot; src=&quot;http://media1.origo.no/-/cache/image/1637598_h6827787aaff112493c0d_v1295085971_562x450.jpeg&quot; title=&quot;15.01.2011&quot; width=&quot;562&quot; /&gt;
+
+&lt;p&gt;In related news: We finally have gotten through most of the code for a look ahead optimizing acceleration manager for &lt;a href=&quot;http://dank.bengler.no/-/page/show/5470_grbl&quot;&gt;Grbl&lt;/a&gt;. It is completely untested yet, but if you are so inclined you can have a look at the code &lt;a href=&quot;https://github.com/simen/grbl/tree/accelleration&quot;&gt;in this experimental branch&lt;/a&gt;. The details will be explained in a proper blog post later.&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;feed_author&quot;&gt;
+  
+    &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-right: 5px&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;24&quot; src=&quot;http://media2.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_24x24_cub.jpeg&quot; title=&quot;Simen S. S.&quot; width=&quot;24&quot; /&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-top:6px; padding-right: 10px&quot;&gt;
+    
+        &lt;a href=&quot;http://origo.no/-/user/show/4_simen-s-s&quot; class=&quot;user_instance object_link&quot;&gt;Simen S. S.&lt;/a&gt;     
+          
+            i &lt;a href=&quot;http://origo.no/-/sandbox/show/269682_dank&quot; class=&quot;sandbox_instance object_link organization_22&quot;&gt;Dank&lt;/a&gt;
+          
+    
+  
+    &lt;/div&gt;
+  
+      &lt;div style=&quot;float: left;&quot;&gt;
+        &lt;a href=&quot;http://origo.no/-/bulletin/show/622731_mad-professor-control-unit&quot;&gt;&lt;img alt=&quot;Fs_13_fc_0262e5_t_2846589&quot; src=&quot;http://origo.no/-/cache/comment_count/fs_13_fc_0262e5_t_2846589.png&quot; /&gt;&lt;/a&gt;      &lt;/div&gt;
+      &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+  
+&lt;/div&gt;    </content>
+    <origo:object object_class="Bulletin" id="622731"/>
+    <origo:author>
+Simen S. S.    </origo:author>
+    <origo:comment_count>0</origo:comment_count>
+    <thread:total>0</thread:total>
+    <origo:sandbox id="269682" title="Dank"/>
+    <origo:policy visibility="everyone" name="authorized"/>
+  </entry>
+  <entry>
+    <title>74LS-heaven</title>
+    <link href="http://origo.no/-/image/show/1423883_ls-heaven" rel="alternate"/>
+    <id>http://origo.no/-/image/show/1423883_ls-heaven</id>
+    <updated>2010-06-24T23:27:39Z</updated>
+    <author>
+      <name>Simen S. S.</name>
+      <uri>http://origo.no/-/user/show/4_simen-s-s</uri>
+      <origo:avatar width="32" height="32" href="http://media4.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_32x32_cub.jpeg"/>
+    </author>
+    <content type="html">
+&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
+&lt;a href=&quot;http://origo.no/-/image/show/1423883_ls-heaven&quot; class=&quot;image_instance object_link&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;225&quot; src=&quot;http://media4.origo.no/-/cache/image/1423883_haf802eb4d88eb1da2d65_v1277413946_300x.jpeg&quot; title=&quot;74LS-heaven&quot; width=&quot;300&quot; /&gt;&lt;/a&gt;
+&lt;div class='text textile'&gt;&lt;p&gt;While diving our favorite dumpster: a clutch of more than 300 vintage &lt;a href=&quot;http://en.wikipedia.org/wiki/7400_series&quot;&gt;7400-series logic chips&lt;/a&gt;! Previously we have scored stepper motors to last a life time in this very dumpster.&lt;/p&gt;&lt;/div&gt;
+&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;
+&lt;br/&gt;
+&lt;div class=&quot;feed_author&quot;&gt;
+  
+    &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-right: 5px&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;24&quot; src=&quot;http://media2.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_24x24_cub.jpeg&quot; title=&quot;Simen S. S.&quot; width=&quot;24&quot; /&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-top:6px; padding-right: 10px&quot;&gt;
+    
+        &lt;a href=&quot;http://origo.no/-/user/show/4_simen-s-s&quot; class=&quot;user_instance object_link&quot;&gt;Simen S. S.&lt;/a&gt;     
+          
+            i &lt;a href=&quot;http://origo.no/-/sandbox/show/269682_dank&quot; class=&quot;sandbox_instance object_link organization_22&quot;&gt;Dank&lt;/a&gt;
+          
+    
+  
+    &lt;/div&gt;
+  
+      &lt;div style=&quot;float: left;&quot;&gt;
+        &lt;a href=&quot;http://origo.no/-/image/show/1423883_ls-heaven&quot;&gt;&lt;img alt=&quot;Fs_13_fc_0262e5_t_2140404&quot; src=&quot;http://origo.no/-/cache/comment_count/fs_13_fc_0262e5_t_2140404.png&quot; /&gt;&lt;/a&gt;      &lt;/div&gt;
+      &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+  
+&lt;/div&gt;
+    </content>
+    <origo:object object_class="Image" id="1423883"/>
+    <origo:author>
+Simen S. S.    </origo:author>
+    <origo:comment_count>1</origo:comment_count>
+    <thread:total>1</thread:total>
+    <origo:sandbox id="269682" title="Dank"/>
+    <origo:policy visibility="everyone" name="open"/>
+    <georss:point>
+59.9202975505634 10.7709601521492    </georss:point>
+    <georss:featurename>74LS-heaven</georss:featurename>
+  </entry>
+  <entry>
+    <title>Configuring Grbl</title>
+    <link href="http://origo.no/-/page/show/5474_configuringgrbl" rel="alternate"/>
+    <id>http://origo.no/-/page/show/5474_configuringgrbl</id>
+    <updated>2011-02-21T11:52:31Z</updated>
+    <author>
+      <name>Simen S. S.</name>
+      <uri>http://origo.no/-/user/show/4_simen-s-s</uri>
+      <origo:avatar width="32" height="32" href="http://media4.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_32x32_cub.jpeg"/>
+    </author>
+    <content type="html">
+&lt;div class='text textile'&gt;&lt;p&gt;Grbl has the neat &amp;#8216;$&amp;#8217;-command to tweak the settings at runtime.&lt;/p&gt;
+&lt;p&gt;Connect to Grbl using the serial terminal of your choice (baud rate 9600 unless you changed that in &lt;code&gt;config.h&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Once connected you should get the Grbl-prompt. Write $ and press enter. You should see something like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$0 = 400.0 (steps/mm x)
+$1 = 400.0 (steps/mm y)
+$2 = 400.0 (steps/mm z)
+$3 = 30 (microseconds step pulse)
+$4 = 480.0 (mm/sec default feed rate)
+$5 = 480.0 (mm/sec default seek rate)
+$6 = 0.100 (mm/arc segment)
+$7 = 0 (step port invert mask. binary = 0)
+$8 = 25 (acceleration in mm/sec^2)
+$9 = 300 (max instant cornering speed change in delta mm/min)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To change e.g. the microseconds step pulse option to 50us you would do this:&lt;br /&gt;
+&lt;code&gt;&amp;gt;&amp;gt; $3=50&lt;/code&gt;&lt;br /&gt;
+The settings are stored in eeprom and will be retained forever or until you change them.&lt;/p&gt;
+&lt;h4&gt;$0, $1 and $2 &#8211; Steps/mm&lt;/h4&gt;
+&lt;p&gt;Grbl needs to know how far each step will take the tool in reality. To calculate steps/mm for an axis of your machine you need to know:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;The turns per mm of the lead screw&lt;/li&gt;
+	&lt;li&gt;The full steps per revolution of your steppers (typically 200)&lt;/li&gt;
+	&lt;li&gt;The microsteps per step of your controller (typically 1, 8 or 16)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The steps/mm can then be calculated like this&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;steps_per_mm = (steps_per_revolution*microsteps)/turns_per_mm&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Do this for every axis.&lt;/p&gt;
+&lt;h4&gt;$3 &#8211; Microseconds/step pulse&lt;/h4&gt;
+&lt;p&gt;Stepper drivers are rated for a certain minimum step pulse length. Check the data sheet or just try some numbers. You want as short pulses as the stepper drivers can reliably recognize. If the pulses are too long you might run into trouble running the system at high feed rates. Generally something between 20 and 50 microseconds works.&lt;/p&gt;
+&lt;h4&gt;$5 &#8211; default feed rate&lt;/h4&gt;
+&lt;p&gt;When running G-code this setting will usually not enter into the picture as all feed rates will be specified in the file. I set these to the highest practical feed rates.&lt;/p&gt;
+&lt;h4&gt;$6 &#8211; mm/arc segment&lt;/h4&gt;
+&lt;p&gt;Grbl renders circles and arcs by subdividing them into teeny tiny lines. You will probably never need to adjust this value &#8211; but if you find that your circles are too crude (really? one tenth of a millimeter is not precise enough for you? Are you in nanotech?) you may adjust this. Lower values gives higher precision but may lead to performance issues.&lt;/p&gt;
+&lt;h4&gt;$7 &#8211; invert mask&lt;/h4&gt;
+&lt;p&gt;My cnc-stepper controller needs its values inverted. Signal lines are normally high and goes low for a couple of microsecond to signal an event.  To achieve this I need to invert some of the bits. This value is a byte that is xored with the step-data before it is sent down the stepping port. That way you can use this both to invert step pulses (like I do) or to invert one or more of the directions of the axes. The bits in this byte corresponds to the pins assigned to stepping in config.h. Per default bits are assigned like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&lt;/p&gt;
+&lt;p&gt;#define X_STEP_BIT           0&lt;br /&gt;
+#define Y_STEP_BIT           1&lt;br /&gt;
+#define Z_STEP_BIT           2&lt;br /&gt;
+#define X_DIRECTION_BIT            3&lt;br /&gt;
+#define Y_DIRECTION_BIT            4&lt;br /&gt;
+#define Z_DIRECTION_BIT            5&lt;br /&gt;
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If you wanted to invert the X and Y direction in this setup you would calculate a value like this (in your favourite calculating environment):&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt;&amp;gt; (1&amp;lt;&amp;lt;X_DIRECTION_BIT)|(1&amp;lt;&amp;lt;Y_DIRECTION_BIT)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Which is equal to 24 so issuing this command would invert them:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt;&amp;gt; $7=24&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;$8 &#8211; acceleration&lt;/h4&gt;
+&lt;p&gt;This is the acceleration in mm/second/second. You don&amp;#8217;t have to understand what that means, suffice it to say that a lower value gives smooooother acceleration while a higher value yields tighter moves.&lt;/p&gt;
+&lt;h4&gt;$9 &#8211; max instant cornering speed change&lt;/h4&gt;
+&lt;p&gt;This is the maximum immediate speed change that the acceleration manager will allow. Higher values gives generally faster, possibly jerkier motion. Lower values makes the acceleration manager more careful and will lead to careful cornering.&lt;/p&gt;
+&lt;p&gt;Coming soon: Using Grbl&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;feed_author&quot;&gt;
+  
+    &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-right: 5px&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;24&quot; src=&quot;http://media2.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_24x24_cub.jpeg&quot; title=&quot;Simen S. S.&quot; width=&quot;24&quot; /&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-top:6px; padding-right: 10px&quot;&gt;
+    
+        &lt;a href=&quot;http://origo.no/-/user/show/4_simen-s-s&quot; class=&quot;user_instance object_link&quot;&gt;Simen S. S.&lt;/a&gt;     
+          
+            i &lt;a href=&quot;http://origo.no/-/sandbox/show/269682_dank&quot; class=&quot;sandbox_instance object_link organization_22&quot;&gt;Dank&lt;/a&gt;
+          
+    
+  
+    &lt;/div&gt;
+  
+  
+&lt;/div&gt;
+    </content>
+    <origo:object object_class="Page" id="5474"/>
+    <origo:author>
+Simen S. S.    </origo:author>
+    <origo:sandbox id="269682" title="Dank"/>
+    <origo:policy visibility="everyone" name="authorized"/>
+  </entry>
+  <entry>
+    <title>Connecting Grbl</title>
+    <link href="http://origo.no/-/page/show/5473_connectinggrbl" rel="alternate"/>
+    <id>http://origo.no/-/page/show/5473_connectinggrbl</id>
+    <updated>2011-02-21T11:41:43Z</updated>
+    <author>
+      <name>Simen S. S.</name>
+      <uri>http://origo.no/-/user/show/4_simen-s-s</uri>
+      <origo:avatar width="32" height="32" href="http://media4.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_32x32_cub.jpeg"/>
+    </author>
+    <content type="html">
+&lt;div class='text textile'&gt;&lt;p&gt;Grbl provides control pulses that control stepper motors. It connects to stepper drivers that actually drive the steppers. To connect a stepper driver you need to connect three wires from the Arduino to each controller board: Ground, Step and Direction. Step is pulsed once for each step the stepper should move. Direction indicates the direction of the step. By default Grbl holds Direction low for forward motion and high for reverse.&lt;/p&gt;
+&lt;p&gt;By default Grbl uses the &lt;span class=&quot;caps&quot;&gt;AVR&lt;/span&gt; port D for stepping pulses. PD0, PD1 and PD2 is step signal for X, Y and Z axis respectively. PD3, PD4 and PD5 is direction signals accordingly. So e.g. for the X stepper controller you shoud connect Step to PD0 and Direction to PD3.&lt;/p&gt;
+&lt;p&gt;To make things simple, the Arduino is not marked according to &lt;span class=&quot;caps&quot;&gt;AVR&lt;/span&gt; port-mnemonics. Referring to the chart below we see that PC0-PC5 corresponds to the pins named &amp;#8220;analog input&amp;#8221; 0-5.&lt;/p&gt;
+
+&lt;a href=&quot;http://www.arduino.cc/en/Hacking/PinMapping168&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;image bordered_photo&quot; height=&quot;364&quot; src=&quot;http://media3.origo.no/-/cache/image/1414361_ha462af3615a8ffd253b2_v1276550526_562x450.png&quot; title=&quot;Atmega168PinMap2&quot; width=&quot;562&quot; /&gt;&lt;/a&gt;
+
+&lt;p&gt;&lt;em&gt;The pin mapping is identical for atmega 328&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;If you need to &#8211; and you are building Grbl yourself &#8211; you can reassign all ports used by Grbl by editing &lt;code&gt;config.h&lt;/code&gt;. The relevant piece of code looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;
+#define STEPPING_DDR       DDRD
+#define STEPPING_PORT      PORTD
+#define X_STEP_BIT           2
+#define Y_STEP_BIT           3
+#define Z_STEP_BIT           4
+#define X_DIRECTION_BIT      5
+#define Y_DIRECTION_BIT      6
+#define Z_DIRECTION_BIT      7
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;For performance reasons all step and direction-pins need to be on the same port, but you can pick port and bits at will. Make sure STEPPING_DDR and STEPPING_PORT point to the same port, and always do a full clean before you rebuild after changing config.h as changes in header-files will not automatically lead to recompilation of the affected units. Rebuild like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;% make clean &amp;amp;&amp;amp; make &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/-/page/show/5474_configuringgrbl&quot;&gt;Next: Configuring Grbl&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;feed_author&quot;&gt;
+  
+    &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-right: 5px&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;24&quot; src=&quot;http://media2.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_24x24_cub.jpeg&quot; title=&quot;Simen S. S.&quot; width=&quot;24&quot; /&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-top:6px; padding-right: 10px&quot;&gt;
+    
+        &lt;a href=&quot;http://origo.no/-/user/show/4_simen-s-s&quot; class=&quot;user_instance object_link&quot;&gt;Simen S. S.&lt;/a&gt;     
+          
+            i &lt;a href=&quot;http://origo.no/-/sandbox/show/269682_dank&quot; class=&quot;sandbox_instance object_link organization_22&quot;&gt;Dank&lt;/a&gt;
+          
+    
+  
+    &lt;/div&gt;
+  
+  
+&lt;/div&gt;
+    </content>
+    <origo:object object_class="Page" id="5473"/>
+    <origo:author>
+Simen S. S.    </origo:author>
+    <origo:sandbox id="269682" title="Dank"/>
+    <origo:policy visibility="everyone" name="authorized"/>
+  </entry>
+  <entry>
+    <title>Getting Grbl</title>
+    <link href="http://origo.no/-/page/show/5471_gettinggrbl" rel="alternate"/>
+    <id>http://origo.no/-/page/show/5471_gettinggrbl</id>
+    <updated>2011-02-19T23:15:06Z</updated>
+    <author>
+      <name>Simen S. S.</name>
+      <uri>http://origo.no/-/user/show/4_simen-s-s</uri>
+      <origo:avatar width="32" height="32" href="http://media4.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_32x32_cub.jpeg"/>
+    </author>
+    <content type="html">
+&lt;div class='text textile'&gt;&lt;p&gt;Grbl runs on the &lt;span class=&quot;caps&quot;&gt;AVR&lt;/span&gt; Atmega 168 and 328 microcontrollers, the processor that powers the famous Arduinos. The code is freely available from our &lt;a href=&quot;http://github.com/simen/grbl&quot;&gt;github repository&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;The simplest possible way&lt;/h4&gt;
+&lt;p&gt;Getting a prebuilt version running is easyish if you are able to do a bit of detective work using the console on your system. If you&amp;#8217;d rather build Grbl yourself &lt;a href=&quot;#build&quot;&gt;check out the &lt;span class=&quot;caps&quot;&gt;DIY&lt;/span&gt; way&lt;/a&gt;.&lt;/p&gt;
+&lt;h5&gt;For windows&lt;/h5&gt;
+&lt;ol&gt;
+	&lt;li&gt;Get an &lt;a href=&quot;http://arduino.cc/en/Main/Buy&quot;&gt;Arduino Duemilanove&lt;/a&gt; or some other *uino-flavor based on the atmega 168 or 328&lt;/li&gt;
+	&lt;li&gt;Download one of the prebuilt .hex-files from the &lt;a href=&quot;http://github.com/simen/grbl/downloads&quot;&gt;Github downloads-page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Connect the Arduino to your computer&lt;/li&gt;
+	&lt;li&gt;Install the &lt;a href=&quot;http://www.ngcoders.com/downloads/arduino-hex-uploader-and-programmer&quot;&gt;Arduino Uploader&lt;/a&gt; and upload the .hex-file to the Arduino and you&amp;#8217;re done. Move on to &lt;a href=&quot;/-/page/show/5473_connectinggrbl&quot;&gt;Connecting Grbl&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;For mac/linux&lt;/h5&gt;
+&lt;ol&gt;
+	&lt;li&gt;Get an &lt;a href=&quot;http://arduino.cc/en/Main/Buy&quot;&gt;Arduino Duemilanove&lt;/a&gt; or some other *uino-flavor based on the atmega 168 or 328&lt;/li&gt;
+	&lt;li&gt;Download one of the prebuilt .hex-files from the &lt;a href=&quot;http://github.com/simen/grbl/downloads&quot;&gt;Github downloads-page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Download and install the &lt;a href=&quot;http://arduino.cc/en/Main/Software&quot;&gt;Arduino &lt;span class=&quot;caps&quot;&gt;IDE&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Connect the Arduino to your computer&lt;/li&gt;
+	&lt;li&gt;Then just flash the code onto the arduino using avrdude which installed with the Arduino &lt;span class=&quot;caps&quot;&gt;IDE&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&#8230; which can seem a bit hairy the first time you do it. Here goes:&lt;/p&gt;
+&lt;p&gt;Locate avrdude inside the Arduino &lt;span class=&quot;caps&quot;&gt;IDE&lt;/span&gt; folder. On my Mac it is located here (on your system it might be somewhere else):&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin/avrdude/avrdude &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Locate avrdude.conf inside the Arduino &lt;span class=&quot;caps&quot;&gt;IDE&lt;/span&gt; folder. On my system it is here:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/Applications/Arduino.app/Contents/Resources/Java/hardware//tools/avr/etc/avrdude.conf &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Discover the name of the serial port for your Arduino. (This instruction is for Linux or Mac &#8211; I actually have no idea what you would do on a Windows-box.) Making sure the board is connected write:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;% ls /dev/tty.usbserial*&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The name of the device will be listed. If more than one device shows up, you might have to guess a little. You&amp;#8217;ll figure it out.&lt;/p&gt;
+&lt;p&gt;Then, being inside the folder where your .hex-file is residing, issue a command like this substituting your two paths, the serial port device name and the name of the hex file you are flashing:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/path/.../.../avrdude -C/path/.../.../avrude.conf -pm168 -cstk500v1 -P/dev/tty.usbserial-A3132 -b19200 -D -Uflash:w:grbl_328.hex&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You should see something like this:&lt;br /&gt;
+&lt;code&gt;
+avrdude: AVR device initialized and ready to accept instructions&lt;/p&gt;
+&lt;p&gt;Reading | ################################################## | 100% 0.01s&lt;/p&gt;
+&lt;p&gt;avrdude: Device signature = 0&amp;#215;1e9406&lt;br /&gt;
+avrdude: erasing chip&lt;br /&gt;
+avrdude: reading input file &amp;#8220;grbl.hex&amp;#8221;&lt;br /&gt;
+avrdude: input file grbl.hex auto detected as Intel Hex&lt;br /&gt;
+avrdude: writing flash (14228 bytes):&lt;/p&gt;
+&lt;p&gt;Writing | ################################################## | 100% 8.06s&lt;/p&gt;
+&lt;p&gt;avrdude: 14228 bytes of flash written&lt;br /&gt;
+avrdude: verifying flash memory against grbl.hex:&lt;br /&gt;
+avrdude: load data flash data from input file grbl.hex:&lt;br /&gt;
+avrdude: input file grbl.hex auto detected as Intel Hex&lt;br /&gt;
+avrdude: input file grbl.hex contains 14228 bytes&lt;br /&gt;
+avrdude: reading on-chip flash data:&lt;/p&gt;
+&lt;p&gt;Reading | ################################################## | 100% 6.45s&lt;/p&gt;
+&lt;p&gt;avrdude: verifying &amp;#8230;&lt;br /&gt;
+avrdude: 14228 bytes of flash verified&lt;/p&gt;
+&lt;p&gt;avrdude: safemode: Fuses OK&lt;/p&gt;
+&lt;p&gt;avrdude done.  Thank you.&lt;br /&gt;
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/-/page/show/5473_connectinggrbl&quot;&gt;Next: Connecting Grbl&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a name=&quot;build&quot;&gt;&lt;h4&gt;The &lt;span class=&quot;caps&quot;&gt;DIY&lt;/span&gt; way&lt;/h4&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Grbl compiles using the avr-gcc toolchain. On most linux-systems this is availible as a package. On Windows you&amp;#8217;ll have the &lt;a href=&quot;http://winavr.sourceforge.net/&quot;&gt;Winavr&lt;/a&gt; package.&lt;/p&gt;
+&lt;p&gt;If you use a Mac you should avoid the MacPorts-package (old, old!) and just use the toolchain that comes installed with the Arduino &lt;span class=&quot;caps&quot;&gt;IDE&lt;/span&gt;. On my system I keep this line in my ~/.bash_profile:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Use the currently installed Arduino build environment as the avr-gcc-compiler&lt;br /&gt;
+export &lt;span class=&quot;caps&quot;&gt;PATH&lt;/span&gt;=$&lt;span class=&quot;caps&quot;&gt;PATH&lt;/span&gt;:/Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin&lt;br /&gt;
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This works exactly like the macports-package, except it is a current version and it even runs on Snow Leopard (thank you Arduino-people!)&lt;/p&gt;
+&lt;p&gt;If you are serious about &lt;span class=&quot;caps&quot;&gt;AVR&lt;/span&gt;-development you should also get a proper programmer. We use the &lt;a href=&quot;http://www.atmel.com/dyn/products/tools_card.asp?tool_id=3808&quot;&gt;AVRISPmkII&lt;/a&gt; and the &lt;a href=&quot;http://www.sparkfun.com/commerce/product_info.php?products_id=8702&quot;&gt;STK500 Compatible &lt;span class=&quot;caps&quot;&gt;USB&lt;/span&gt; Programmer&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The source code lives in &lt;a href=&quot;http://github.com/simen/grbl&quot;&gt;this repository&lt;/a&gt; at github. You will need to install the version control system &lt;a href=&quot;http://git-scm.com/&quot;&gt;git&lt;/a&gt; to check out the code. When you got it, do this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;% git clone git@github.com:simen/grbl.git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The code will be in a folder named &amp;#8216;grbl&amp;#8217; in your current directory.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;% cd grbl
+% make&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The code should build. Connect the programmer and do this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;% make flash&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;And you&amp;#8217;re done. Good luck! If you come up with some nice feature, please consider contributing a patch!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/-/page/show/5473_connectinggrbl&quot;&gt;Next: Connecting Grbl&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;feed_author&quot;&gt;
+  
+    &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-right: 5px&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;24&quot; src=&quot;http://media2.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_24x24_cub.jpeg&quot; title=&quot;Simen S. S.&quot; width=&quot;24&quot; /&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-top:6px; padding-right: 10px&quot;&gt;
+    
+        &lt;a href=&quot;http://origo.no/-/user/show/4_simen-s-s&quot; class=&quot;user_instance object_link&quot;&gt;Simen S. S.&lt;/a&gt;     
+          
+            i &lt;a href=&quot;http://origo.no/-/sandbox/show/269682_dank&quot; class=&quot;sandbox_instance object_link organization_22&quot;&gt;Dank&lt;/a&gt;
+          
+    
+  
+    &lt;/div&gt;
+  
+  
+&lt;/div&gt;
+    </content>
+    <origo:object object_class="Page" id="5471"/>
+    <origo:author>
+Simen S. S.    </origo:author>
+    <origo:sandbox id="269682" title="Dank"/>
+    <origo:policy visibility="everyone" name="authorized"/>
+  </entry>
+  <entry>
+    <title>Grbl</title>
+    <link href="http://origo.no/-/page/show/5470_grbl" rel="alternate"/>
+    <id>http://origo.no/-/page/show/5470_grbl</id>
+    <updated>2012-04-25T23:01:25Z</updated>
+    <author>
+      <name>Simen S. S.</name>
+      <uri>http://origo.no/-/user/show/4_simen-s-s</uri>
+      <origo:avatar width="32" height="32" href="http://media4.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_32x32_cub.jpeg"/>
+    </author>
+    <content type="html">
+&lt;div class='text textile'&gt;&lt;p&gt;&lt;strong&gt;Grbl is a free, open source, high performance &lt;span class=&quot;caps&quot;&gt;CNC&lt;/span&gt; milling controller written in optimized C that will run on a straight Arduino.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://github.com/grbl/grbl&quot;&gt;Get the code at Github&lt;/a&gt; | &lt;a href=&quot;https://twitter.com/grblcnc&quot;&gt;Follow Grbl on Twitter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe title=&quot;YouTube video player&quot; width=&quot;640&quot; height=&quot;390&quot; src=&quot;http://www.youtube.com/embed/jNbhgQ5_p_Y&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://arduino.cc/blog/2011/05/20/mtm-snap-a-snap-together-arduino-powered-desktop-cnc-milling-machine/&quot;&gt;&lt;img src=&quot;http://farm6.static.flickr.com/5148/5688670014_dbd2635d02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://arduino.cc/blog/2011/05/20/mtm-snap-a-snap-together-arduino-powered-desktop-cnc-milling-machine/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;MIT&lt;/span&gt; Center for Bits and Atoms designed a beautifyl snap fit &lt;span class=&quot;caps&quot;&gt;CNC&lt;/span&gt; machine controlled by Grbl.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://labs.nortd.com/lasersaur/&quot;&gt;&lt;img src=&quot;http://farm7.staticflickr.com/6225/6366889949_a039fbf4fb_z.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://labs.nortd.com/lasersaur/&quot;&gt;Nortd Labs runs their open source laser cutters with a Grbl-based firmware&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Who shoud use Grbl&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;Makers who do milling and need a nice, simple controller for their system (and who can handle the lack of a user friendly, graphical client)&lt;/li&gt;
+	&lt;li&gt;People who loathe to clutter their space with legacy PC-towers just for the parallel-port&lt;/li&gt;
+	&lt;li&gt;Tinkerers who need a controller written in tidy, modular C as a basis for their project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Nice features&lt;/h4&gt;
+&lt;p&gt;Grbl is ready for light duty production. We use it for all our milling here at Dank running it from our laptops using a simple console script (included) to stream the G-code. It is written in optimized C utilizing all the clever features of the Atmega168*/328-chips to achieve precise timing and asynchronous operation. It is able to maintain more than 30kHz step rate and delivers a clean, jitter free stream of control pulses.&lt;/p&gt;
+&lt;p&gt;The G-code interpreter impements a subset of the rs274/ngc standard and is tested with the output of a number of &lt;span class=&quot;caps&quot;&gt;CAM&lt;/span&gt;-tools with no issues. Linear, circular and helical motion are all fully supported.&lt;/p&gt;
+&lt;p&gt;Most configuration options can be set at runtime and is saved in eeprom between sessions and even retained between different versions of Grbl as you upgrade the firmware.&lt;/p&gt;
+&lt;h4&gt;Acceleration management&lt;/h4&gt;
+&lt;p&gt;The most requested feature that we really wanted to have was a nice and advanced look-ahead accelleration manager. Some users were not able to run their CNCs at full speed without some kind of easing. It proved complicated to get this feature just the way we wanted it (simple yet optimal) so it took more than a year, but finally I think we got it: Grbl&amp;#8217;s full acceleration-management with look ahead planner will ease into the fastest feed rates and brake (just enough) before sharp corners for fast yet jerk free operation.&lt;/p&gt;
+&lt;h4&gt;Limitations by design&lt;/h4&gt;
+&lt;p&gt;At this time we have no nice desktop client for Grbl. If you want one anytime soon, you&amp;#8217;ll probably have to contribute one yourself. With Grbl you&amp;#8217;ll have to be comfortable in a terminal window as all our client tools are simple (yet nice) text based scripts. (We do try to stay compatible with the RepRap software, so you might get stuff like &lt;a href=&quot;http://replicat.org/&quot;&gt;ReplicatorG&lt;/a&gt; to control it, but last time we tried it was so buggy on the Mac that we gave up.)&lt;/p&gt;
+&lt;p&gt;We have limited g-code-support by design. Grbl support all the common operations encountered in output from &lt;span class=&quot;caps&quot;&gt;CAM&lt;/span&gt;-tools, but leave human g-coders frustrated. No variables, no tool offsets, no functions, no arithmetic and no control structures. Just the basic machine operations. We have yet to find a &lt;span class=&quot;caps&quot;&gt;CAM&lt;/span&gt;-generated file that failed to run, though.&lt;/p&gt;
+&lt;p&gt;Grbl is for three axis machines. No rotation axes &#8211; just x, y and z.&lt;/p&gt;
+&lt;h4&gt;Coming attractions&lt;/h4&gt;
+&lt;p&gt;End stops, emergency stop, spindle control, autodetection of client baud-rate, support for alphanumeric read-outs and headless mode via SD-card.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/-/page/show/5471_gettinggrbl&quot;&gt;Next: Getting Grbl&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&lt;br /&gt;
+_*) Grbl 0.6 fits in the limited code space of the atmega168 only by dropping the circle/arc code. 168-people who needs their circles please use version 0.51 which has no acceleration management, yet is still maintained in &lt;a href=&quot;http://is.gd/VT6uDw&quot;&gt;this branch&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Grbl&lt;/strong&gt; is licenced under the &lt;a href=&quot;http://www.gnu.org/licenses/quick-guide-gplv3.html&quot;&gt;&lt;span class=&quot;caps&quot;&gt;GNU&lt;/span&gt; General Public License&lt;/a&gt; and developed at Dank by Simen Svale Skogsrud.&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;feed_author&quot;&gt;
+  
+    &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-right: 5px&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;24&quot; src=&quot;http://media2.origo.no/-/cache/image/10962_h0e0f90e04a8393764d3b_24x24_cub.jpeg&quot; title=&quot;Simen S. S.&quot; width=&quot;24&quot; /&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-top:6px; padding-right: 10px&quot;&gt;
+    
+        &lt;a href=&quot;http://origo.no/-/user/show/4_simen-s-s&quot; class=&quot;user_instance object_link&quot;&gt;Simen S. S.&lt;/a&gt;     
+          
+            i &lt;a href=&quot;http://origo.no/-/sandbox/show/269682_dank&quot; class=&quot;sandbox_instance object_link organization_22&quot;&gt;Dank&lt;/a&gt;
+          
+    
+  
+    &lt;/div&gt;
+  
+  
+&lt;/div&gt;
+    </content>
+    <origo:object object_class="Page" id="5470"/>
+    <origo:author>
+Simen S. S.    </origo:author>
+    <origo:sandbox id="269682" title="Dank"/>
+    <origo:policy visibility="everyone" name="authorized"/>
+  </entry>
+  <entry>
+    <title>If Norwegian Road Spending was Elevation</title>
+    <link href="http://origo.no/-/bulletin/show/577916_if-norwegian-road-spending-was-elevation" rel="alternate"/>
+    <id>http://origo.no/-/bulletin/show/577916_if-norwegian-road-spending-was-elevation</id>
+    <updated>2010-06-19T00:38:22Z</updated>
+    <author>
+      <name>Even W.</name>
+      <uri>http://origo.no/-/user/show/2_even-w</uri>
+      <origo:avatar width="32" height="32" href="http://media3.origo.no/-/cache/image/74837_h13d41645511a8469f08e_32x32_cub.jpeg"/>
+    </author>
+    <content type="html">
+&lt;div class='text textile'&gt;&lt;p&gt;After seeing Doug McCune&amp;#8217;s playful visualization of public data, &lt;a href=&quot;http://dougmccune.com/blog/2010/06/05/if-san-francisco-crime-was-elevation&quot;&gt;If San Fracisco Crime were Elevation&lt;/a&gt; I was tempted to do the same for a Norwegian data set.&lt;/p&gt;
+&lt;p&gt;After casting about for something to make heat maps out of I came upon &lt;a href=&quot;http://www.ssb.no/kostra/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;KOSTRA&lt;/span&gt;&lt;/a&gt;, the official statistics from Norwegian municipalities. While not exactly as spectacular as prostitution in the Tenderloin, Norwegian road spending per capita is a political hot potato (or at least, a semi-lukewarm potato). Here follows a few renders from last night. Like Doug I have to emphasize that this is close to useless as strict infoviz, but it does make for nice eye candy.&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;485&quot; src=&quot;http://media3.origo.no/-/cache/image/1413437_hb85d637ade1a7fd7ee4e_v1276511173_647x485.png&quot; title=&quot;Roads&quot; width=&quot;485&quot; /&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;418&quot; src=&quot;http://media3.origo.no/-/cache/image/1413440_ha191784d3d47f837694e_v1276511277_647x485.png&quot; title=&quot;result vei south corrected 02&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;&quot; height=&quot;485&quot; src=&quot;http://media2.origo.no/-/cache/image/1413442_hd3dc56c74a08d1e2ac7c_v1276511302_647x485.png&quot; title=&quot;result vei closer&quot; width=&quot;485&quot; /&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;feed_author&quot;&gt;
+  
+    &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-right: 5px&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;24&quot; src=&quot;http://media3.origo.no/-/cache/image/74837_he297647db3bbbe3b9a9f_24x24_cub.jpeg&quot; title=&quot;Even W.&quot; width=&quot;24&quot; /&gt;&lt;/div&gt;
+    &lt;div style=&quot;float: left; padding-top:6px; padding-right: 10px&quot;&gt;
+    
+        &lt;a href=&quot;http://origo.no/-/user/show/2_even-w&quot; class=&quot;user_instance object_link&quot;&gt;Even W.&lt;/a&gt;     
+          
+            i &lt;a href=&quot;http://origo.no/-/sandbox/show/269682_dank&quot; class=&quot;sandbox_instance object_link organization_22&quot;&gt;Dank&lt;/a&gt;
+          
+    
+  
+    &lt;/div&gt;
+  
+      &lt;div style=&quot;float: left;&quot;&gt;
+        &lt;a href=&quot;http://origo.no/-/bulletin/show/577916_if-norwegian-road-spending-was-elevation&quot;&gt;&lt;img alt=&quot;Fs_13_fc_0262e5_t_2102788&quot; src=&quot;http://origo.no/-/cache/comment_count/fs_13_fc_0262e5_t_2102788.png&quot; /&gt;&lt;/a&gt;      &lt;/div&gt;
+      &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+  
+&lt;/div&gt;    </content>
+    <origo:object object_class="Bulletin" id="577916"/>
+    <origo:author>
+Even W.    </origo:author>
+    <origo:comment_count>2</origo:comment_count>
+    <thread:total>2</thread:total>
+    <origo:sandbox id="269682" title="Dank"/>
+    <origo:policy visibility="everyone" name="authorized"/>
+  </entry>
+</feed>

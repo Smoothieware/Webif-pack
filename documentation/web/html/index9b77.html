@@ -1,0 +1,1295 @@
+<!DOCTYPE HTML>
+
+<!-- Mirrored from www.nxp.com/video/vault/?searchLabel=renderHomepage by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="http://style.nxp.com/v1.43/shared/js/jquery/jquery_ui_min.css" type="text/css"/>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/jquery/jquery.plus.min.js"></script>
+<!-- Code changes starts here -->
+<title>Video Vault</title>
+<meta name="Keywords" content="Video Vault">
+<meta name="description" content="Video Vault">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="stylesheet" href="http://style.nxp.com/v1.43/shared/js/jquery/jquery_ui_min.css" type="text/css">
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/jquery/jquery-1.9.1.min.js"></script>
+<script> var jQuery_1_9_1 = $.noConflict(true); </script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/public_common.js"> </script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/jquery/jquery.min.js"></script>
+<!-- Added by b49843 for CR-59742 on 18-may-2015 start -->
+<script>
+function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        //return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        return results == null ? "" : results[1];
+    }
+
+function searchAction()
+{
+
+		        e.preventDefault;
+		        var url=window.location.href;
+		        var currentQ=getParameterByName('q');
+		        var odlParam="q="+currentQ;
+		        var oldParam=getParameterByName('searchLabel');		
+				
+				if(url.indexOf("&q=") >=0)
+					 {
+								
+							 	url = url.replace(odlParam,"q="+$("#searchText")[0].value);
+							 	
+					}
+					else{
+								url=url+"&q="+$("#searchText")[0].value;
+					}
+				 url=url.replace('searchLabel='+oldParam,'searchLabel=renderSearchPage');
+		       	 window.location.href=url;
+            
+}
+</script>
+
+<!-- Added by b49843 for CR-59742 end -->
+<script type="text/javascript">
+		$(document).ready(function() {
+
+			function add() {
+			    if($(this).val() === ''){
+			      $(this).val($(this).attr('placeholder')).addClass('placeholder');
+			    }
+			  }
+
+			  function remove() {
+			    if($(this).val() === $(this).attr('placeholder')){
+			      $(this).val('').removeClass('placeholder');
+			    }
+			  }
+
+			  // Create a dummy element for feature detection
+			  if (!('placeholder' in $('<input>')[0])) {
+
+			    // Select the elements that have a placeholder attribute
+			    $('input[placeholder]').blur(add).focus(remove).each(add);
+		    		 
+			
+			  }
+				
+		 });
+
+		
+</script>
+<script>
+var LANG_CD_LIST = "zh-Hans,ja,ko";
+var URL_DOMAIN = "www.nxp.com";
+var URL_MAJOR_DOMAIN = "nxp.com";
+var CACHE_URL_DOMAINS = ["cache.nxp.com", "style.nxp.com", "image.nxp.com"];
+</script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/webanalytics.js"></script>
+<script type="text/javascript" src="http://assets.adobedtm.com/f2bd0c145f764c0e7b6dae5f9269061e38fabacd/satelliteLib-2fb7098ae4e0938976f1eee822973607d3f48c60.js"></script></head>
+<body class="homepage-jsp">
+
+<script type="text/javascript">
+   	var s_vt_id = getCookieForSiteCatalyst("freescale_visitor_id");
+	var s_site_platform = "normal";
+	var s_normal_site = "normal";
+	if(s_site_platform == s_normal_site) {
+		s_site_platform = "full";
+	}
+
+	var s_do_pagecall = true;
+	
+	var s_searchQryTxt = "";
+	var s_searchResultCnt = "";
+	
+	var s_searchFilter = "";
+	
+	
+	if(s_searchResultCnt == '' || s_searchResultCnt == "0"){
+		s_searchResultCnt = "zero";
+	}
+
+	var s_currentUrl = document.URL;
+
+	var searchLabel = null;
+	var code = null;	
+	var type = null;
+	var nodeId = null;
+	var partnerId = null;
+	var partNumber = null;
+	var partNumber1 = null;
+	var packageId = null;
+	var orderablePartNum = null;
+	var yid = null;
+	var pageLoadRule = "";
+	var summaryPageType = "";
+	var pageCategory = "";
+	var sourceId = "";
+	var sourceType = "";
+
+	
+	pageCategory = "VIDEO VAULT";
+	
+		pageLoadRule = pageLoadRule == "" ? "General":pageLoadRule;
+
+	
+		
+	
+	searchLabel = "renderHomepage";
+	
+	
+	s_currentUrl = getCleanPageURL();
+	if(searchLabel != null) s_currentUrl = s_currentUrl +'?searchLabel=' + searchLabel;
+	if(partnerId != null) s_currentUrl = s_currentUrl +'?partnerId=' + partnerId;	
+	if(partNumber != null) s_currentUrl = s_currentUrl +'?PART_NUMBER=' + partNumber;
+	if(partNumber1 != null) s_currentUrl = s_currentUrl +'?partnumber=' + partNumber1;
+	if(packageId != null) s_currentUrl = s_currentUrl +'?packageId=' + packageId;
+	if(orderablePartNum != null) s_currentUrl = s_currentUrl +'?orderablePartNum=' + orderablePartNum;	
+
+	var eventPathing = "";
+	var pageName = "Video: Video Vault";
+	var formReference = "";
+	var eVar57 = "";
+		
+	
+		eventPathing = "D=pageName";
+        if (typeof(eVar57) != "undefined" && eVar57.indexOf("Rich Media Component") != -1) {
+        	eventPathing = eVar57;
+        }
+	
+	
+	var digitalData={};
+	digitalData.pageInfo = {};
+	digitalData.pageInfo.pageLoadRule = pageLoadRule; 
+	digitalData.pageInfo.pageName = pageName;
+	digitalData.pageInfo.pageURLClean = s_currentUrl;			
+	digitalData.pageInfo.pageType = "Video";		
+	digitalData.pageInfo.siteSection1 = "Video Vault";
+	digitalData.pageInfo.siteSection2 = "";
+	digitalData.pageInfo.siteSection3 = "";
+	digitalData.pageInfo.siteSection4 = "";
+	digitalData.pageInfo.siteSection5 = "";
+	digitalData.pageInfo.siteSection6 = "";
+	digitalData.pageInfo.siteSection7 = "";
+	digitalData.pageInfo.pageEventPathing = eventPathing;
+	
+	digitalData.pageInfo.pageTab = "";
+	digitalData.pageInfo.nodeID = "";	
+	digitalData.pageInfo.assetID = "";
+	digitalData.pageInfo.localTitle = "Video Vault";
+
+	digitalData.pageInfo.pageCodeID = "";
+	if ((pageName != null && pageName != "") && (pageName.indexOf("Shopping Cart:Distributors | ")!= -1 || 
+		    pageName.indexOf("General: More Info | ")!= -1 || pageName.indexOf("General: Reliability Report | ")!= -1 || 
+			pageName.indexOf("General: Parts Piece Detail | ")!= -1)){
+			digitalData.pageInfo.pageCodeID = "D=pageName";		 
+	}	
+
+	digitalData.pageInfo.summaryPageType = summaryPageType;
+	digitalData.pageInfo.pageCategory = pageCategory;
+	digitalData.pageInfo.sourceId = sourceId;
+	digitalData.pageInfo.sourceType = "";
+	if(pageCategory == "PSP" && sourceId != "")
+		digitalData.pageInfo.sourceType = sourceType;
+
+
+	var s_contentFinder = getContentFinding(document.referrer, document.URL);
+	digitalData.pageInfo.contentFinding = s_contentFinder;
+	
+				
+
+	digitalData.userInfo = {};
+	digitalData.userInfo.fslVisitorID = s_vt_id;
+
+	digitalData.siteInfo = {};
+	digitalData.siteInfo.sitePlatform = s_site_platform;
+	digitalData.siteInfo.lang = "en";
+
+	</script>
+<script type="text/javascript">
+ if (typeof jQuery != 'undefined') { 
+	  jQuery(document).ready(function() {  
+			$('a.thickbox').click(function(event){
+				var blkImgpath=$(this).find('img', this).attr("src"); 	    
+				if(blkImgpath.indexOf('/files/graphic/block_diagram') > -1){
+					var blkTitle = $(this).find('img', this).attr("alt");			
+					if(blkImgpath.indexOf("http") < 0) {
+						blkImgpath = window.location.protocol+"//"+window.location.host + blkImgpath;
+					}
+					blkImgpath=blkImgpath.replace("cache.nxp.com","www.nxp.com");
+					blkImgpath=blkImgpath.replace("cache-uat.freescale.com","uat.freescale.com");	
+					trackAnalyticsBlockDiagram(blkImgpath, blkTitle);
+				}
+			});							 
+		});  
+	}
+ </script>
+
+<!--googleoff: all-->
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1; width=device-width;">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<script>
+var conflict = false; 
+if(typeof $ != "undefined") 
+	conflict = true;
+</script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+var jQuery_1_9_1 = jQuery;
+if(conflict) 
+	jQuery_1_9_1 = jQuery.noConflict(true);
+</script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/historyMenu.js"></script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/header.js"></script>
+
+<link rel="stylesheet" href="http://style.nxp.com/shared/stylesheets/nxp-common.min.css" type="text/css" />
+ <link rel="stylesheet" href="http://style.nxp.com/files/css/nxp-common-delta.css" type="text/css" />
+
+<!--[if lte IE 9]>
+	<link rel="stylesheet" href="http://style.nxp.com/shared/stylesheets/nxp-common-ie.min.css" type="text/css" />
+	<script src="http://style.nxp.com/v1.43/files/js/html5shiv.js"></script>
+<![endif]--> 
+
+<!--[if lt IE 9]>	
+	<script src="http://style.nxp.com/v1.43/files/js/placeholders.min.js"></script>
+	<script src="http://style.nxp.com/v1.43/shared/js/respond.min.js"></script>
+	<link rel="stylesheet" href="http://style.nxp.com/shared/stylesheets/nxp-common-ie8.min.css">
+<![endif]-->
+
+ 
+<a name="top"></a>
+                <!-- <noindex> --><input type="hidden" name="baseUrl" value="http://www.nxp.com/webapp"/>
+        <input type ="hidden" name="PART_NUMBER" value=""/>
+        <input type ="hidden" name="SEARCH_OPERATOR" value="Contains"/>
+
+        <!--[if lt IE 9]>
+		<div class="ie-alert ie-alert-warning ie-alert-dismissible" role="alert" id="ie8Alert">
+		  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true" class="icon-close2"></span><span class="ie-alert-close">Close</span></button>
+		  Some features of this site may not be available on the browser version you are using. For an enhanced experience, please use a more current browser.</div>
+		<![endif]-->
+        
+        <header>
+       <div id="header" class="nxp-nav">
+        <div class="container">
+				<div class="row">
+					<div class="col-sm-1">
+        				<div id="fsl-logo">
+							<a title="NXP Semiconductors" href="http://www.nxp.com/">
+							<img alt="NXP Semiconductors" src="http://style.nxp.com/v1.43/shared/images/NXP_logo.png"></a>
+						</div>
+					</div>
+					<div class="col-sm-8 pull-right zIndex2">
+						<ul class="list-inline pull-right" id="top-nav">
+							<li>
+									<div class="dropdown" id="login-block">
+									
+	                                	<a href="https://www.nxp.com/security/public/login.LoginActionController.sp" class="login dtmHeaderLogin">
+	                                		<span class="icon-user nxp-orange-text"></span>&nbsp;Sign In or Register</a>
+	                                	</div>
+	                                </li>
+									<li>
+              <div class="dropdown" id="languages">
+                <a href="#" id="languageDropdownMenu" data-toggle="dropdown">
+                <span class="icon-globe2 nxp-blue-text"></span>&nbsp;English&nbsp;<span class="icon-arrow-down2"></span></a>
+                <ul id="language-actions" class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="languageDropdownMenu">
+                  <li role="presentation" class="select-lang">Select language</li>
+                 <!--  <li role="presentation"><a role="menuitem" class="lang-en selected">English <span class="icon-checkmark3 pull-right"></span></a></li> -->
+                  <li role="presentation"><a role="menuitem" class="lang-en selected" href="http://www.nxp.com/video/vault/?searchLabel=renderHomepage&amp;uc=true&amp;lang_cd=en">
+                 <span class="icon-globe2 nxp-blue-text pull-left"></span>
+                  <span class="icon-checkmark3 fsl-orange-text pull-right"></span> 
+				 &nbsp;English&nbsp;
+                 </a></li>
+                  
+                <li role="presentation"><a role="menuitem" class="lang-zh-Hans" href="http://www.nxp.com/zh-Hans/video/vault/?searchLabel=renderHomepage&amp;uc=true&amp;lang_cd=zh-Hans">
+                 <span class="flag flag-zh pull-left"></span>
+                  <span class=""></span> 
+				 &nbsp;中文&nbsp;
+                 </a></li>
+                  
+                <li role="presentation"><a role="menuitem" class="lang-ja" href="http://www.nxp.com/ja/video/vault/?searchLabel=renderHomepage&amp;uc=true&amp;lang_cd=ja">
+                 <span class="flag flag-ja pull-left"></span>
+                  <span class=""></span> 
+				 &nbsp;日本語&nbsp;
+                 </a></li>
+                  
+                <li role="presentation"><a role="menuitem" class="lang-ko" href="http://www.nxp.com/ko/video/vault/?searchLabel=renderHomepage&amp;uc=true&amp;lang_cd=ko">
+                 <span class="flag flag-ko pull-left"></span>
+                  <span class=""></span> 
+				 &nbsp;한국어&nbsp;
+                 </a></li>
+                  
+                <div class="dropdown-border"></div>
+                </ul>
+              </div>
+            </li>
+            	<li>
+            	<div id="shopping-cart">
+            			<a href="https://www.nxp.com/webapp/ecommerce.show_cart.framework"><span class="icon-cart nxp-green-text"></span>&nbsp;Cart</a>
+				</div>
+								</li>
+							</ul>
+							
+						</div>
+						<!--new searchBox-->
+						<div class="col-sm-8 pull-right" id="search-block">
+								<div class="input-group pull-right" id="search-input">
+								
+								
+							  
+							  <form id="search" class="search-form" name="gs" method="GET" action="http://www.nxp.com/search" onSubmit="return validateSubmitQuery(this);">
+							<div class="sf-row">
+							<div class="input-group-btn zIndex5" id="search-all">
+							
+								
+								  <button type="button" class="btn btn-default dropdown-toggle everything" data-toggle="dropdown" tabindex="-1"><span id="Default-choice-list">ALL &nbsp;</span><span class="icon-arrow-down2"></span></button>
+								  <ul id="search-choices" class="dropdown-menu" role="menu">	
+								    <!--Modified for CR-60627 by b7215 start -->
+								    <li id="All"  name="nxp_search_all_results"><a style="cursor:pointer"><span class="icon-globe"></span>&nbsp;&nbsp;ALL</a></li>
+									<li id="Products" name="nxp_search_products" ><a style="cursor:pointer"><span class="icon-part"></span>&nbsp;&nbsp;Products</a></li>
+									<li id="Documents" name="nxp_search_documents"><a style="cursor:pointer"><span class="icon-document"></span>&nbsp;&nbsp;Documents</a></li>
+									<li id="SoftwareTools" name="nxp_search_sw_tools"><a style="cursor:pointer"><span class="icon-tools"></span>&nbsp;&nbsp;Software & Tools</a></li>
+									<li id="Support" name="nxp_search_support"><a style="cursor:pointer"><span class="icon-question6"></span>&nbsp;&nbsp;Support</a></li>
+									<!-- <li id="Applications" name="nxp_search_applications"><a style="cursor:pointer"><span class="icon-tree3"></span>&nbsp;&nbsp;Applications</a></li>-->
+									<li id="Videos" name="nxp_search_videos"><a style="cursor:pointer"><span class="icon-film"></span>&nbsp;&nbsp;Videos</a></li>
+									<li id="Trainings" name="nxp_search_training"><a style="cursor:pointer"><span class="icon-graduation"></span>&nbsp;&nbsp;Training</a></li>
+									<li id="Community" name="nxp_search_community"><a style="cursor:pointer"><span class="icon-bubbles"></span>&nbsp;&nbsp;Community</a></li>
+									<li id="Blogs" name="nxp_search_blogs"><a style="cursor:pointer"><span class="icon-bubble11"></span>&nbsp;&nbsp;Blogs</a></li>
+									<li id="Partners" name="nxp_search_partner"><a style="cursor:pointer"><span class="icon-user7"></span>&nbsp;&nbsp;Partners</a></li>
+								    <li id="CrossReference" name="CrossReference"><a style="cursor:pointer"><span class="icon-shuffle2"></span>&nbsp;&nbsp;Cross Reference</a></li>
+								    <li id="PackageSearch" name="PackageSearch"><a style="cursor:pointer"><span class="icon-key-keyboard"></span>&nbsp;&nbsp;Package Search</a></li>
+								    <li id="ChemicalFinder" name="ChemicalFinder"><a style="cursor:pointer"><span class="icon-leaf2"></span>&nbsp;&nbsp;Chemical Finder</a></li>
+								    <li id="ProductSelector" name="ProductSelector"><a style="cursor:pointer"><span class="icon-equalizer"></span>&nbsp;&nbsp;Product Selector</a></li>
+								    <!-- Modified for CR-60627 by b47215 end -->
+								  </ul>
+								  
+								  
+								</div>
+									<input type="text" value="" autocomplete="off" onkeyup=" searchTop(event)" id="parts" name="q"
+										placeholder="Search..." class="form-control"/>
+									
+									<div class="input-group-btn " id="keyword-button-div" >
+								  <button style="cursor:pointer" type="submit" class="btn btn-default search-submit"><span class="icon-search2 fsl-gray-text"></span></button>
+								<table style="width: 205px; visibility: hidden; margin-left:-368px; margin-top:00px;"
+									id="result_suggest" cellpadding="0" cellspacing="0"
+									class="ss-gac-m"></table>
+								</div>
+								
+								
+		
+							   
+							    
+								<input id="client" name="client" value="nxp_search_all_results"
+									type="hidden"> <input id="site" name="site"
+									value="nxp_en" type="hidden"> <input
+									id="proxystylesheet" name="proxystylesheet"
+									value="nxp_search_style_fe" type="hidden"> <input
+									id="sort" name="sort" value="date:D:L:d1" type="hidden">
+								<input id="oe" name="oe" value="UTF-8" type="hidden"> <input
+									id="ie" name="ie" value="UTF-8" type="hidden"> <input
+									id="ud" name="ud" value="1" type="hidden"> <input
+									id="output" name="output" value="xml_no_dtd" type="hidden">
+								<input id="exclude_apps" name="exclude_apps" value="1"
+									type="hidden"> <input id="callback" name="callback"
+									value="ss_show" type="hidden"> <input id="lang_cd"
+									name="lang_cd" value="en"
+									type="hidden"> <input id="filter" name="filter" value="0"
+									type="hidden"> <input id="getfields" name="getfields"
+									value="*" type="hidden"> <input type="hidden"
+									name="baseUrl" value="http://www.nxp.com/webapp"> <input
+									type="hidden" name="SEARCH_OPERATOR" value="Contains"> <input
+									type="hidden" name="attempt" value="-1"> <input
+									type="hidden" name="rc" value="1"> <input type="hidden"
+									name="hl" value="en">
+									
+									<input id="dnavs" name="dnavs" type="hidden"> 
+									</div>
+							</form>
+
+						</div>
+						<!--new searchBox-->
+						</div>
+					</div>
+					<div class="navbar navbar-default megamenu">
+					<div class="navbar-header">
+						
+						<a href="#nogo" data-toggle="collapse" data-target="#navbar-collapse-fsl" class="navbar-toggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</a>
+					</div>
+				<div class="container">
+				<div id="navbar-collapse-fsl" class="navbar-collapse collapse">
+					<div class="navbar-center">
+					   
+  <ul class="nav navbar-nav"> 
+        <li class="dropdown  megamenu-fw productsmenu"> 
+          <a href="http://www.nxp.com/webapp/sps/library/prod_lib.jsp" data-toggle="dropdown" class="dropdown-toggle">PRODUCTS</a> 
+          <div class="dropdown-menu dtmMegaMenu" data-dtmName="PRODUCTS"> 
+              <div class="row"> 
+                <div class="col-sm-4"> 
+	                  <h5><a href="http://www.nxp.com/products/arm-processors:ARM-ARCHITECTURE">ARM<sup>&reg;</sup> PROCESSORS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <ul> 
+                    <li><a href="http://www.nxp.com/products/arm-processors/kinetis-cortex-m:KINETIS">Kinetis Cortex&reg;-M Microcontrollers</a></li> 
+                    <li><a href="http://www.nxp.com/products/arm-processors/lpc-arm-cortex-m-mcus:LPC-ARM-CORTEX-M-MCUS">LPC Cortex-M Microcontrollers</a></li> 
+                    <li><a href="http://www.nxp.com/products/arm-processors/lpc-arm7-arm9-mcus:LPC-ARM7-ARM9-MCUS">LPC ARM7/ARM9 Microcontrollers</a></li> 
+                    <li><a href="http://www.nxp.com/products/arm-processors/i.mx-applications-processors-based-on-arm-cores:IMX_HOME">i.MX Applications Processors</a></li> 
+                    <li><a href="http://www.nxp.com/products/power-architecture-processors/qoriq-platforms:QORIQ_HOME">QorIQ Multicore Processors</a></li> 
+              </ul> 
+	                  <h5><a href="http://www.nxp.com/products/power-architecture-processors:POWER-ARCHITECTURE">POWER ARCHITECTURE<sup>&reg;</sup><br/>PROCESSORS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+	                  <h5><a href="http://www.nxp.com/products/more-processors:MORE-PROCESSORS">MORE PROCESSORS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                </div> 
+                <div class="col-sm-4"> 
+	                  <h5><a href="http://www.nxp.com/products/discretes-and-logic:DISCRETES-AND-LOGIC">DISCRETE & LOGIC&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <ul > 
+                    <li><a href="http://www.nxp.com/products/discretes-and-logic/bipolar-transistors:MC_71078">Bipolar Transistors</a></li> 
+                    <li><a href="http://www.nxp.com/products/diodes-beta:MC_71100">Diodes</a></li> 
+                    <li><a href="http://www.nxp.com/products/esd-protection-beta:MC_56902">ESD Protection, TVS, Filters</a></li> 
+                    <li><a href="http://www.nxp.com/products/logic-beta:MC_50808">Logic</a></li> 
+                    <li><a href="http://www.nxp.com/products/mosfets-beta:MC_71128">MOSFETs</a></li> 
+                  </ul> 
+                  <h5><a href="http://www.nxp.com/products/zidentification-and-security-beta:MC_53420">IDENTIFICATION & SECURITY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <ul > 
+                    <li><a href="http://www.nxp.com/products/identification-and-security/smart-card-ics/mifare-ics:MC_53422">MIFARE</a></li> 
+                    <li><a href="http://www.nxp.com/products/identification-and-security/nfc-and-reader-ics:MC_71110">NFC</a></li> 
+               	  </ul> 
+                    <h5><a href="http://www.nxp.com/products/interface-and-connectivity:INTERFACE-AND-CONNECTIVITY">INTERFACE AND CONNECTIVITY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  	<ul > 
+                    	<li><a href="http://www.nxp.com/products/interface-and-connectivity/interface-and-system-management/i2c:MC_41735">I<sup>2</sup>C</a></li> 
+                    	<li><a href="http://www.nxp.com/products/interface-and-connectivity/wired-connectivity/usb-type-c:USB-TYPE-C">USB Type-C</a></li> 
+               		</ul> 
+                    <h5><a href="http://www.nxp.com/products/media-and-audio-processing:MEDIA-AND-AUDIO-PROCESSING">MEDIA AND AUDIO PROCESSING&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                    <h5><a href="http://www.nxp.com/products/power-management:POWER-MANAGEMENT">POWER MANAGEMENT&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                    <h5><a href="http://www.nxp.com/products/rf:RF_HOME">RF&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                    <h5><a href="http://www.nxp.com/products/sensors:SNSHOME">SENSORS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                </div> 
+                <div class="col-sm-4"> 
+	                    <h5 ><a href="http://www.nxp.com/products/automotive-products:MC_50802">AUTOMOTIVE PRODUCTS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+    								<ul> 
+  										<li><a href="http://www.nxp.com/products/analog-power-management/advanced-automotive-safety/automotive-radar:MITERWAVEICS">Automotive Radar</a></li> 
+  										<li><a href="http://www.nxp.com/products/zinterface-and-connectivity-beta/can-lin-flexray-transceivers-beta:MC_50862">CAN/LIN/FlexRay Transceivers</a></li> 
+  										<li><a href="http://www.nxp.com/products/automotive-products/identification-and-security:IDENTIFICATION-SECURITY-AUTO">Car Access & Immobilizers</a></li> 
+  										<li><a href="http://www.nxp.com/products/automotive-products/media-and-audio-processing/multi-standard-digital-radio:MC_53738">Multi Standard Digital Radio</a></li> 
+  										<li><a href="http://www.nxp.com/products/automotive-products/microcontrollers-and-processors:MICROCONTROLLERS-PROCESSORS-AUTO">S12 & S32 MCUs/MPUs</a></li> 
+  										<!--li><a href="http://www.nxp.com/products/more-processors/16-bit-mcus/s12-magni-mixed-signal-mcusmagniv:S12MAGNIVMCU?cof=0&am=0">S12 MagniV Microcontroller</a></li> 
+  										<li><a href="http://www.nxp.com/products/arm-processors/s32-processors-and-microcontrollers:S32V200">S32 MCUs/MPUs</a></li--> 
+   <hr/> 
+	                    <h5 ><a href="http://www.nxp.com/tools/embedded-software-and-tools:DEVELOPER_HOME">DEVELOPMENT TOOLS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+	                    <h5 ><a href="http://www.nxp.com/webapp/software-center/library.jsp#/home/query/~query~/~filter~/popularity/0 ">SOFTWARE CENTER&nbsp;<span class="icon-angle-right"></span></a></h5> 
+   <hr/> 
+	                    <h5 >MORE PRODUCT INFORMATION&nbsp;</h5> 
+                  <ul > 
+                    <li><a href="http://www.nxp.com/products/products:PCPRODCAT">All Products</a></li> 
+                    <li><a href="http://www.nxp.com/webapp/crosscheck/competitorXRef.sp">Competitor Cross Reference Tool</a></li> 
+                    <li><a href="http://www.nxp.com/packages">Packages</a></li> 
+                    <li><a href="http://www.nxp.com/about/technology-programs/product-longevity:PRDCT_LONGEVITY_HM">Product Longevity Program</a></li> 
+                    <li><a href="http://www.nxp.com/webapp/parametricSelector.sp?">Product Selector</a></li> 
+               </ul> 
+                </div> 
+              </div> 
+          <div class="dropdown-border"></div> 
+          </div> 
+      </li> 
+      <li class="dropdown megamenu-fw applicationsmenu"> 
+        <a href="http://www.nxp.com/webapp/sps/site/homepage.jsp?code=IFINDSTRYFCS" data-toggle="dropdown" class="dropdown-toggle">SOLUTIONS</a> 
+        <div class="dropdown-menu dtmMegaMenu" data-dtmName="SOLUTIONS"> 
+            <div class="row" style="padding:0 15px;"> 
+  			  <div class="col-sm-6" style="padding:0 5px;"> 
+  				<h5><a href="http://www.nxp.com/applications/smart-connected-solutions:SMART-CONNECTED-SOLUTIONS" style="padding-left: 0px !important;">SMART CONNECTED SOLUTIONS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+  				<a href="http://www.nxp.com/applications/smart-connected-solutions:SMART-CONNECTED-SOLUTIONS"><img src="http://cache.nxp.com/files/graphic/banner/main_pu/SMART-CONNECTED-DEVICES-MENU.jpg" class="img-responsive" alt="Smart Connected Devices" style="width:33%;"></a> 
+  				<p>An unrivaled portfolio of solutions for the Internet of Things (IoT), spanning everything from the end node, to the gateway, to the cloud.</p> 
+  			  </div> 
+              <div class="col-sm-6" style="padding:0 5px;"> 
+  				<h5><a href="http://www.nxp.com/applications/secure-connected-vehicle:SECURE-CONNECTED-VEHICLE" style="padding-left: 0px !important;">SECURE CONNECTED VEHICLE&nbsp;<span class="icon-angle-right"></span></a></h5> 
+  				<a href="http://www.nxp.com/applications/secure-connected-vehicle:SECURE-CONNECTED-VEHICLE"><img src="http://cache.nxp.com/files/graphic/banner/main_pu/SECURE-CONNECTED-VEHICLE-MENU.jpg" class="img-responsive" alt="Secure Connected Vehicle" style="width:33%;"></a> 
+  				<p>Innovative solutions that enable breakthrough automotive designs in and around the car, enhancing safety and the driver experience.</p> 
+  			  </div> 
+            </div> 
+            <div class="row" style="padding:0 15px;"> 
+  			  <div class="col-sm-6" style="padding:0 5px;"> 
+  				<h5><a href="http://www.nxp.com/applications/solutions-for-the-iot-and-adas/smart-connected-solutions-for-the-iot/smart-cities-in-the-age-of-iot:SMART-CITIES" style="padding-left: 0px !important;" >SMART CITIES&nbsp;<span class="icon-angle-right"></span></a></h5> 
+  				<a href="http://www.nxp.com/applications/solutions-for-the-iot-and-adas/smart-connected-solutions-for-the-iot/smart-cities-in-the-age-of-iot:SMART-CITIES"><img src="http://cache.nxp.com/files/graphic/banner/SMART-CITIES-BANNER.jpg" class="img-responsive" alt="Smart Cities" style="width:33%;"></a> 
+  				<p>Ready for the future? We are. Providing reliable, more efficient technologies to safely navigate the growing demand of urban IoT.</p> 
+              </div> 
+  			  <div class="col-sm-6" style="padding:0 5px;"> 
+  				<h5><a href="http://www.nxp.com/applications/end-to-end-security-and-privacy:END-TO-END-SECURITY-AND-PRIVACY" style="padding-left: 0px !important;">END-TO-END SECURITY AND PRIVACY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+  				<a href="http://www.nxp.com/applications/end-to-end-security-and-privacy:END-TO-END-SECURITY-AND-PRIVACY"><img src="http://cache.nxp.com/files/graphic/banner/main_pu/SECURITY-AND-PRIVACY-MENU.jpg" class="img-responsive" alt="End to End Security and Privacy" style="width:33%;"></a> 
+  				<p>Security solutions that deliver the highest levels of protection, while making it as easy and convenient for users to interact with any service or device.</p> 
+              </div> 
+            </div> 
+            <div class="row" style="padding:0 15px;"> 
+  			  <div class="col-sm-6" style="padding:0 5px;"> 
+              </div> 
+  			  <div class="col-sm-6" style="padding:0 5px;"> 
+  				<h5><a href="http://www.nxp.com/applications/solutions-for-the-iot-and-adas/smart-society:SMART-SOCIETY" style="padding-left: 0px !important;">SMART SOCIETY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+  				<a href="http://www.nxp.com/applications/solutions-for-the-iot-and-adas/smart-society:SMART-SOCIETY"><img src="http://cache.nxp.com/files/graphic/banner/main_pu/SMART-SOCIETY-MENU.jpg" class="img-responsive" alt="End to End Security and Privacy" style="width:33%;"></a> 
+  				<p>Creating the infrastructure for the next generation of innovators through STEM programs, start-up communities and educational tools.</p> 
+              </div> 
+            </div> 
+          <div class="dropdown-border"></div> 
+        </div> 
+      </li> 
+        <li class="dropdown megamenu-fw trainingmenu"> 
+          <a href="http://www.nxp.com/training/sales-and-support:SUPPORTHOME" data-toggle="dropdown" class="dropdown-toggle">SUPPORT</a> 
+          <div class="dropdown-menu dtmMegaMenu" data-dtmName="SUPPORT"> 
+              <div class="row"> 
+                <div class="col-sm-4"> 
+	                      <h5><a href="http://www.nxp.com/pages/communities:COMMUNITIES" target="_blank">NXP COMMUNITY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <ul > 
+                    <li><a href="https://community.freescale.com/community/codewarrior" target="_blank">CodeWarrior Development Tools</a></li> 
+                    <li><a href="https://community.freescale.com/community/imx" target="_blank">i.MX Community (SoCs and PMIC Support)</a></li> 
+                    <li><a href="https://community.freescale.com/community/nfc" target="_blank">NFC</a></li> 
+                    <li><a href="https://community.freescale.com/community/iot-center" target="_blank">IoT Solutions Center</a></li> 
+                    <li><a href="https://community.freescale.com/community/kinetis" target="_blank">Kinetis Microcontrollers</a></li> 
+                    <li><a href="https://www.lpcware.com/forum" target="_blank">LPC Forums</a></li> 
+                    <li><a href="https://community.freescale.com/community/qoriq" target="_blank">QorIQ Processors</a></li> 
+                    <li><a href="https://community.freescale.com/community/16bit" target="_blank">S12/MagniV Microcontrollers</a></li> 
+                    <li><a href="https://community.freescale.com/community/wireless-connectivity" target="_blank">Wireless Connectivity</a></li> 
+                    <li><a href="http://www.nxp.com/pages/communities:COMMUNITIES" target="_blank">View All</a></li> 
+                  </ul> 
+                </div> 
+                <div class="col-sm-4"> 
+                  <h5><a href="http://www.nxp.com/training/online-academy:ON_DEMAND_TRNG">ONLINE TRAINING ACADEMY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <h5 ><a href="http://www.nxp.com/training/classroom-training-events:CLASSROOM-TRAINING-EVENTS">CLASSROOM TRAINING&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <ul  > 
+                    <li><a href="http://www.nxp.com/support/classroom-training-events/nxp-technology-forum:NXP-FTF-TECH-FORUM-HOME">NXP FTF Tech Forum</a></li> 
+                    <li><a href="http://www.nxp.com/support/classroom-training-events/nxp-tech-days:NXP-TECH-DAYS">NXP Technology Days</a></li> 
+                    <li><a href="http://www.nxp.com/training/classroom-training-events/industry-events:EVENTS_HOME">Industry Events</a></li> 
+                    <li><a href="http://www.nxp.com/training/classroom-training-events/certified-training-workshops:LIVE_TRNG">Certified Training Workshops</a></li> 
+                  </ul> 
+                  <h5><a href="http://www.nxp.com/training/university-programs:UNIVPROGRAM_HOME_CAT">UNIVERSITY PROGRAMS&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <h5><a href="http://www.nxp.com/video/vault/?searchLabel=renderHomepage">VIDEO VAULT&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                </div> 
+                <div class="col-sm-4"> 
+                  <h5><a href="http://www.nxp.com/training/sales-and-support:SUPPORTHOME">SUPPORT RESOURCES&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                  <ul  > 
+                    <li><a href="http://www.nxp.com/pages/documentation:DOCUMENTATION">Documentation Library</a></li> 
+                    <li><a href="http://www.nxp.com/training/sales-and-support:SUPPORTHOME">Sales and Support</a></li> 
+                    <li><a href="http://www.nxp.com/pages/nxp-professional-services:PROFESSIONAL-SERVICES">Professional Engineering Services</a></li> 
+                    <li><a href="http://www.nxp.com/webapp/software-center/library.jsp#/home/query/~query~/~filter~/popularity/0">Software Center</a></li> 
+                  </ul> 
+   	              <h5><a href="http://www.nxp.com/webapp/connect/memberDirSearch.sp">NXP PARTNER PROGRAM&nbsp;<span class="icon-angle-right"></span></a></h5> 	
+                </div> 
+              </div> 
+          <div class="dropdown-border"></div> 
+          </div> 
+        </li> 
+      <li class="dropdown  megamenu-fw aboutmenu"> 
+        <a href="http://www.nxp.com/about/about-nxp:COMPANY_INFO_HOME" data-toggle="dropdown" class="dropdown-toggle">ABOUT</a> 
+        <div class="dropdown-menu dtmMegaMenu" data-dtmName="ABOUT"> 
+            <div class="row"> 
+              <div class="col-sm-4"> 
+	                      <h5 ><a href="http://www.nxp.com/about/about-nxp:COMPANY_INFO_HOME">ABOUT NXP&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                <ul > 
+                <li><a href="http://www.nxp.com/about/worldwide-locations:GLOBAL_SITES">NXP Worldwide</a></li> 
+                <li><a href="http://www.nxp.com/about/worldwide-locations/worldwide-sales-offices/distributor-network:DISTRIBUTORS">Distributor Network</a></li> 
+                <li><a href="http://media.nxp.com/">Media Center</a></li> 
+                <li><a href="http://investors.nxp.com/">Investor Relations</a></li> 
+                <li><a href="http://www.nxp.com/about/careers-at-nxp:CAREERS">Careers</a></li> 
+                <li><a href="http://www.nxp.com/about/our-customers:ABOUT_CUSTOMERS">Customers</a></li> 
+                <li><a href="http://blog.nxp.com/" target="_blank">Blogs</a></li> 
+              </ul>  
+              </div> 
+              <div class="col-sm-4"> 
+              <h5 ><a href="http://www.nxp.com/about/corporate-responsibility:CORP_SOCIAL_RESP">CORPORATE RESPONSIBILITY&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                <ul > 
+                <li><a href="http://www.nxp.com/about/technology-leadership/environmentally-preferred-products:ABUENVPRFPRDX">Environmental Compliance Office</a></li> 
+                <li><a href="http://www.nxp.com/about/corporate-responsibility/ethics:ETHICS">Ethics</a></li> 
+                <li><a href="http://www.nxp.com/about/corporate-responsibility/employees:EMPLOYEES">Employees</a></li> 
+              </ul>  
+              <h5><a href="http://www.nxp.com/webapp/connect/memberDirSearch.sp">NXP PARTNER PROGRAM&nbsp;<span class="icon-angle-right"></span></a></h5> 	
+              <h5 ><a href="http://www.nxp.com/about/technology-leadership:RESEARCH_AND_DEVELOPMENT">TECHNOLOGY LEADERSHIP&nbsp;<span class="icon-angle-right"></span></a></h5> 
+                <ul > 
+                <li><a href="http://www.nxp.com/about/technology-programs/product-longevity:PRDCT_LONGEVITY_HM">Product Longevity</a></li> 
+                <li><a href="http://www.nxp.com/about/technology-leadership/quality:QUALITY_HOME">Quality</a></li> 
+                <li><a href="http://www.nxp.com/about/technology-leadership/safeassure-functional-safety-program:SAFETYPRGRM">SafeAssure</a></li> 
+                </ul>  
+              </div> 
+            </div> 
+
+          <div class="dropdown-border"></div> 
+        </div> 
+      </li> 
+    </ul> 
+   
+</div>
+					</div>
+					</div>
+					</div>
+				</div>
+				</div>
+				
+	<input type="hidden" id="sechighlight" name="sechighlight" value="noHighlight" />
+
+<script type="text/javascript">
+
+
+
+jQuery_1_9_1('[data-toggle=dropdown]').dropdown();
+
+
+jQuery_1_9_1(document).ready(function ($) 
+{   
+	var nonSecureHost="http://www.nxp.com/webapp";
+	var siteBlogs="nxp_blogs";
+	var siteCommunity="nxp_community";
+	var siteSupport="nxp_support_en";
+	var siteVar="nxp_en";
+	//code added for CR-59954 starts
+	var secHighlight = $('#sechighlight').val();
+	 $('.'+secHighlight).css("background-color", "#ffffff");
+	 $('.'+secHighlight+' > a ').css("color", "#777777");
+	//code added for CR-59954 ends
+	document.getElementById("dnavs").value="";	
+	$("#All").hide();
+	$('#ProductSelector').mouseover(function (e){
+  		
+		$("#parts").prop('disabled', true);
+		$("#parts").css('background-color' , '#DEDEDE');
+		$("#parts").css('color' , '#DEDEDE');
+	});
+	$('#ProductSelector').mouseout(function (e){
+		if (! $(this).data("sticky")){
+		$("#parts").prop('disabled', false);
+		$("#parts").css('background-color' , '#FFFFFF');
+		$("#parts").css('color' , '#666666');
+		}
+	
+	});
+  	$('#search-choices li').click(function () {
+		
+ 	document.getElementById("client").value  = $(this).attr('name');
+  	document.getElementById("Default-choice-list").innerHTML=$(this).text() + " ";
+
+  	if("Blogs"!=$(this).attr('id') && "Community"!=$(this).attr('id') && "Support"!=$(this).attr('id')){
+  		document.getElementById("site").value  =siteVar;
+  	  	}
+
+  	if("Blogs"==$(this).attr('id')){
+  		document.getElementById("site").value  =siteBlogs;
+  	}
+  	if("Community"==$(this).attr('id')){
+  		document.getElementById("site").value  =siteCommunity;
+  	}
+  	if("Support"==$(this).attr('id')){
+  		document.getElementById("site").value  =siteSupport;
+  	}
+
+  	if("ProductSelector"==document.getElementById("client").value){
+  		$(this).data("sticky", true);
+  		$("#parts").prop('disabled', true);
+  		$("#parts").css('background-color' , '#DEDEDE');
+  		$("#parts").css('color' , '#DEDEDE');
+  		var lang=document.getElementById("lang_cd").value;
+  		if("en"==lang)
+	     window.location=nonSecureHost+"/parametricSelector.sp?";
+	  	else
+	  	 window.location=nonSecureHost+"/parametricSelector.sp?lang_cd="+lang;
+  	  	
+
+    }
+	
+  	if($.trim($(this).text())!="All"){
+  	document.getElementById("dnavs").value=$(this).attr('id'); 
+	$('ul li').show();
+	$(this).hide();
+  	}
+  	else{
+  	document.getElementById("dnavs").value="";
+    $('ul li').show();
+    $("#All").hide();
+    }
+  });
+  	
+});
+
+
+var LANG_CD_LIST = "zh-Hans,ja,ko";
+var URL_DOMAIN = "www.nxp.com";
+var URL_MAJOR_DOMAIN = "nxp.com";
+var CACHE_URL_DOMAINS = ["cache.nxp.com", "style.nxp.com", "image.nxp.com"];
+</script>
+        	</header>
+     <!-- </noindex> --><script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/favorite.js"></script>
+<script>
+
+var ss_gsa_host = "//www.nxp.com";
+var nxp_domain = "http://www1.nxp.com/";
+//Added by b22154 for CR-60627 for using in gsa_suggestions.js
+var blogsClient="nxp_search_blogs";
+var communityClient="nxp_search_community";
+var supportClient="nxp_search_support";
+</script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/search/javascript/gsa_suggestions.js"></script>
+
+<style type="text/css"> 
+.ss-gac-m {
+background: white;
+border: 1px solid black;
+cursor: default;
+font-size: 13px;
+line-height: 17px;
+margin: 0;
+position: absolute;
+z-index: 99;
+}
+
+.ss-gac-b {
+  background: #36c;
+  color: white;
+}
+
+.ss-gac-c {
+  overflow: hidden;
+  padding-left: 3px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.ss-gac-d {
+  color: green;
+  font-size: 10px;
+  overflow: hidden;
+  padding: 0 3px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.ss-gac-b td {
+  color: white;
+}
+</html>
+
+.ss-gac-d {
+	display:none;
+}
+
+</style>
+<!--googleon: all-->
+
+<div class="clearfix"></div>
+
+
+ 
+ <script> var ss_gsa_host = "//www.freescale.com"; </script>
+ <script type="text/javascript" src="http://style.nxp.com/v1.43/search/javascript/gsa_suggestions.js"></script>
+ 
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
+	  
+	  <link rel="stylesheet" href="http://style.nxp.com/videostore/css/videostore.css">
+	  
+	  
+<div class="videostore-container container">
+	
+		<div id="bc" class="col-xs-offset-2">
+			<ul>
+			
+			<li><a style="background:none" href="http://www.nxp.com/">NXP</a></li>
+				<li>Video Vault</li>
+			     </ul>
+		</div>
+		<div><p></p></div>
+
+		 <div class="row">
+			<div class="col-xs-10 col-xs-offset-2">		
+					
+
+<link rel="stylesheet" href="http://styles-uat.freescale.com/v1.1/softwarestore/stylesheet/storeFront.css" type="text/css">
+<style>
+.h4{
+font-size: 18px !important;
+}
+</style>
+<h1 style="margin-top:0;">Video Vault</h1>
+<div class="row">
+	<div class="col-md-1">
+		<p class="intro"><span class="icon-film" style="font-size: 60px; color:#F9B500;"></span></p>
+	</div>
+	<div class="col-md-11">
+		<p class="intro">
+		Search our library of product introductions, technical overviews, demonstrations and how-to videos. You can refine results to focus on specific products and applications and many videos offer links to related resources.
+		</p>
+	</div>
+
+	
+	
+
+ 
+ <div class="col-md-12">
+<form name="keywordSearch" class="ng-pristine ng-valid" id="keywordSearch" action="javascript:searchAction();">		
+				<div class="search_box_container">
+					<div class="input-group">
+							<input maxlength="250" name="queryText" id="searchText" placeholder="Search All Videos" class="form-control" type="text">
+							
+						<span class="input-group-btn" >
+							<input class="btn btn-orange" value="Search Videos" type="submit">
+						</span>
+					</div>
+				</div>
+				<div class="padMe5"></div>
+			</form>
+			</div>
+			</div>
+<div class="padMe5"></div>
+<div class="padMe5"></div>
+<div class="padMe5"></div>
+<div class="padMe5"></div>
+<div class="padMe5"></div>
+
+
+
+
+<style>
+.col-sm-4 h5 {
+	font-size: 15px;
+	color:#333;
+	font-weight: 700;
+}
+.dropdown-menu h5 a{
+	color: #007088;
+	font-size: 15px;
+}
+.dropdown-menu h5 a:visited{
+	color: #007088;
+	font-size: 15px;
+}
+a{
+	color: #646464;
+	font-size: 14px;
+}
+a:visited{
+	color: #646464;
+	font-size: 14px;
+}
+</style>
+<div class="navbar navbar-default megamenu" style="backgroung">
+	<ul class="nav navbar-nav">
+	 <!-- Grid 12 Menu -->
+	 <li class="dropdown megamenu-fw">
+	   <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="h4">Products</span>&nbsp;<span class="icon-plus-circle"></span></a>
+	   <div class="dropdown-menu" style="font-size; padding:20px; background-color:#fff; border-color:#ccd6d8; width:780px;">
+		   <div class="row">
+			 <div class="col-sm-4">
+				<h5>PROCESSORS <span class="icon-angle-right"></span></h5>
+				<ul class="boxes">
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderChannelPage&amp;code=KINETIS_VIDEOS">Kinetis Cortex<sup>&#174;</sup>-M Microcontrollers</a></li>
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=LPC">LPC Cortex-M Microcontrollers</a></li>
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=LPC,%20ARM">LPC ARM7/ARM9 Microcontrollers</a></li>
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderChannelPage&amp;code=IMX_HOME_VIDEOS">i.MX Applications Processors</a></li>
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderChannelPage&amp;code=QORIQ_HOME_VIDEOS">QorIQ Multicore Processors</a></li>
+				</ul>
+				<br/>
+				<h5><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=POWER%20ARCHITECTURE%20PROCESSORS">POWER ARCHITECTURE<sup>&#174;</sup> PROCESSORS <span class="icon-angle-right"></span></a></h5>
+				<br/>
+				<h5><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=more%20processors|%208%20bit%20|16%20bit">MORE PROCESSORS <span class="icon-angle-right"></span></a></h5>
+			 </div>
+
+		 <div class="col-sm-4">
+		 	<h5>DISCRETE & LOGIC <span class="icon-angle-right"></span></h5>
+				<ul class="list-unstyled boxes">
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=Bipolar%20|%20Transistors">Bipolar Transistors</a></li>
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=Diodes">Diodes</a></li>
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=ESD">ESD Protection</a></li>
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=Logic">Logic</a></li>
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=MOSFETs">MOSFETs</a></li>
+			</ul>
+			<br/>
+			<h5>IDENTIFICATION & SECURITY <span class="icon-angle-right"></span></h5>
+			<ul class="list-unstyled boxes">
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=NFC">NFC</a></li>
+			</ul>
+			<br/>
+			<h5><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=INTERFACE%20|%20CONNECTIVITY">INTERFACE AND CONNECTIVITY</a> <span class="icon-angle-right"></span></h5>
+			<br/>
+			<h5><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=MEDIA%20|%20AUDIO">MEDIA AND AUDIO PROCESSING</a> <span class="icon-angle-right"></span></h5>
+			<br/>
+			<h5><a href="http://www.nxp.com/video/vault/?searchLabel=renderChannelPage&amp;code=ANALOGHOME_VIDEOS">POWER MANAGEMENT</a> <span class="icon-angle-right"></span></h5>
+			<br/>
+			<h5><a href="http://www.nxp.com/video/vault/?searchLabel=renderChannelPage&amp;code=RF_HOME_VIDEOS">RF</a> <span class="icon-angle-right"></span></h5>
+			<br/>
+			<h5><a href="http://www.nxp.com/video/vault/?searchLabel=renderChannelPage&amp;code=SNSHOME_VIDEOS">SENSORS</a> <span class="icon-angle-right"></span></h5>
+		</div>
+		 
+		 <div class="col-sm-4">
+		 	<h5>AUTOMOTIVE PRODUCTS <span class="icon-angle-right"></span></h5>
+				<ul class="list-unstyled boxes">
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=radar">Automotive Radar</a></li>
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=CAN%20|%20LIN%20|%20FlexRay">CAN/LIN/FlexRay Transceivers</a></li>
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=Car%20access%20|%20immobilizers">Car access & immobilizers</a></li>
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=radio">Multi standard digital radio</a></li>
+				<li><a href="http://www.nxp.com/video/vault/?searchLabel=renderSearchPage&amp;q=s12%20|%20s32%20|%20magniv">S12 & S32 MCUs/MPUs</a></li>
+			</ul>
+		 </div>		
+		 
+		 </div>
+		</div>
+	   </li>
+	 </ul>
+</div>
+<div class="carousel-slide" id="carousel2">
+					  <div class="carousel-inner">
+					  
+						<div id="foo2" class="list-inline">
+								<a data-toggle="popover" data-content="NFC can make your hotel stay experience so much more enjoyable.<br><br><b>Posted Date</b>: 12 May 2016<br><b>Duration</b>: 02:27" title="NFC Hotel" class="videoThumbnail" href="/video/nfc-hotel:NFC-HOTEL-VID"> <div class="overlay"></div><div class="title"> NFC Hotel </div><div class="views"></div><div class="time">02:27</div><img src="http://cache.nxp.com/videos/thumbnail/NFC-HOTEL-VID.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 27 April 2016<br><b>Views</b>: 111<br><b>Rating</b>: 5/5<br><b>Duration</b>: 01:49" title="Kinetis Designs" class="videoThumbnail" href="/video/kinetis-designs:KINETIS-DESIGNS-INTRODUCTION"> <div class="overlay"></div><div class="title"> Kinetis Designs </div><div class="views">111 Views</div><div class="time">01:49</div><img src="http://cache.nxp.com/videos/thumbnail/KINETIS-DESIGNS-INTRODUCTION.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 09 February 2016<br><b>Views</b>: 193<br><b>Rating</b>: 4/5<br><b>Duration</b>: 64:00" title="QorIQ DDR configuration &amp; QCVS tool" class="videoThumbnail" href="/video/qoriq-ddr-configuration-qcvs-tool:QOIQ-DDR-CONFIGURATION-QCVS"> <div class="overlay"></div><div class="title"> QorIQ DDR configuration & QCVS tool </div><div class="views">193 Views</div><div class="time">64:00</div><img src="http://cache.nxp.com/videos/thumbnail/QOIQ-DDR-CONFIGURATION-QCVS.jpg"></a><a data-toggle="popover" data-content="Configure, optimize and validate your QorIQ DDR interface in less than a few minutes.<br><br><b>Posted Date</b>: 09 February 2016<br><b>Views</b>: 99<br><b>Rating</b>: 5/5<br><b>Duration</b>: 03:41" title="Configure QorIQ DDR in 3 minutes" class="videoThumbnail" href="/video/configure-qoriq-ddr-in-3-minutes:QRIQ-DDR-CONFIGURATION"> <div class="overlay"></div><div class="title"> Configure QorIQ DDR in 3 minutes </div><div class="views">99 Views</div><div class="time">03:41</div><img src="http://cache.nxp.com/videos/thumbnail/QRIQ-DDR-CONFIGURATION.jpg"></a><a data-toggle="popover" data-content="This video demonstrates how to use the QCVS SerDes Tool to create a project, read the target's confi<br><br><b>Posted Date</b>: 09 February 2016<br><b>Views</b>: 56<br><b>Duration</b>: 09:51" title="How to Use the SerDes Configuration and Validation Tool to Generate Data Eye" class="videoThumbnail" href="/video/how-to-use-the-serdes-configuration-and-validation-tool-to-generate-data-eye:SEDES-GENERATE-DATA-EYE"> <div class="overlay"></div><div class="title"> How to Use the SerDes Configuration and Validation Tool to Generate Data Eye </div><div class="views">56 Views</div><div class="time">09:51</div><img src="http://cache.nxp.com/videos/thumbnail/SEDES-GENERATE-DATA-EYE.jpg"></a><a data-toggle="popover" data-content="This video shows how to create a Reset Configuration Word definition file that can be used in a Code<br><br><b>Posted Date</b>: 09 February 2016<br><b>Views</b>: 151<br><b>Rating</b>: 4/5<br><b>Duration</b>: 05:29" title="How to Create a RCW Override Configuration File for Use in a CodeWarrior QorIQ Debugger" class="videoThumbnail" href="/video/how-to-create-a-rcw-override-configuration-file-for-use-in-a-codewarrior-qoriq-debugger:RCW-QORIQ-DEBUGGER"> <div class="overlay"></div><div class="title"> How to Create a RCW Override Configuration File for Use in a CodeWarrior QorIQ Debugger </div><div class="views">151 Views</div><div class="time">05:29</div><img src="http://cache.nxp.com/videos/thumbnail/RCW-QORIQ-DEBUGGER.jpg"></a><a data-toggle="popover" data-content="Learn about: Decide, design, and deliver DDR4 interface<br><br><b>Posted Date</b>: 09 February 2016<br><b>Views</b>: 67<br><b>Duration</b>: 63:04" title="Simplify DDR4 Transition" class="videoThumbnail" href="/video/simplify-ddr4-transition:SIMPLIFY-DDR4-TRANSITION"> <div class="overlay"></div><div class="title"> Simplify DDR4 Transition </div><div class="views">67 Views</div><div class="time">63:04</div><img src="http://cache.nxp.com/videos/thumbnail/SIMPLIFY-DDR4-TRANSITION.jpg"></a><a data-toggle="popover" data-content="Explore the PCA9410&amp;#8217;s features that enhance the NFC User&amp;#8217;s experience.<br><br><b>Posted Date</b>: 12 January 2016<br><b>Views</b>: 97<br><b>Duration</b>: 02:36" title="Introducing the PCA9410" class="videoThumbnail" href="/video/introducing-the-pca9410:INTRODUCING-PCA9410"> <div class="overlay"></div><div class="title"> Introducing the PCA9410 </div><div class="views">97 Views</div><div class="time">02:36</div><img src="http://cache.nxp.com/videos/thumbnail/INTRODUCING-PCA9410.jpg"></a><a data-toggle="popover" data-content="Discover how multiple radios within your smartphone work together and with the newly created NFC fea<br><br><b>Posted Date</b>: 12 January 2016<br><b>Views</b>: 33<br><b>Duration</b>: 05:44" title="Near Field Communications NFC Technology" class="videoThumbnail" href="/video/near-field-communications-nfc-technology:NEAR-FIELD-COMMUNICATIONS"> <div class="overlay"></div><div class="title"> Near Field Communications NFC Technology </div><div class="views">33 Views</div><div class="time">05:44</div><img src="http://cache.nxp.com/videos/thumbnail/NEAR-FIELD-COMMUNICATIONS.jpg"></a><a data-toggle="popover" data-content="Learn about Near Field Communications (NFC) Technology, and the benefit of boosting the cellphone&amp;#8<br><br><b>Posted Date</b>: 12 January 2016<br><b>Views</b>: 92<br><b>Duration</b>: 10:35" title="PCA9410 DC-DC Boost Converter" class="videoThumbnail" href="/video/pca9410-dc-dc-boost-converter:PCA9410-DC-BOOST-CONVERTER"> <div class="overlay"></div><div class="title"> PCA9410 DC-DC Boost Converter </div><div class="views">92 Views</div><div class="time">10:35</div><img src="http://cache.nxp.com/videos/thumbnail/PCA9410-DC-BOOST-CONVERTER.jpg"></a><a data-toggle="popover" data-content="A seek preview of things to come as NXP leads power management &amp;#8220;Wall to Battery&amp;#8221;, and NX<br><br><b>Posted Date</b>: 12 January 2016<br><b>Views</b>: 32<br><b>Duration</b>: 02:40" title="Wall to Battery Solutions and NFC Boost Converters " class="videoThumbnail" href="/video/wall-to-battery-solutions-and-nfc-boost-converters:WALL-TO-BATTERY-NFC"> <div class="overlay"></div><div class="title"> Wall to Battery Solutions and NFC Boost Converters  </div><div class="views">32 Views</div><div class="time">02:40</div><img src="http://cache.nxp.com/videos/thumbnail/WALL-TO-BATTERY-NFC.jpg"></a><a data-toggle="popover" data-content="This video demonstrates the Cycling Speed and Cadence Bluetooth&amp;#174; Smart profile capabilities of <br><br><b>Posted Date</b>: 14 October 2015<br><b>Views</b>: 189<br><b>Rating</b>: 5/5<br><b>Duration</b>: 02:00" title="Kinetis KW40Z Bluetooth&amp;#174; Low Energy Bike Computer Demo" class="videoThumbnail" href="/video/kinetis-kw40z-bluetooth-low-energy-bike-computer-demo:KINETIS-KW40Z-BLE-BIKE-COMPUTER"> <div class="overlay"></div><div class="title"> Kinetis KW40Z Bluetooth&#174; Low Energy Bike Computer Demo </div><div class="views">189 Views</div><div class="time">02:00</div><img src="http://cache.nxp.com/videos/thumbnail/KINETIS-KW40Z-BLE-BIKE-COMPUTER.jpg"></a><a data-toggle="popover" data-content="As automotive applications become more complex, additional real-estate is required within the same m<br><br><b>Posted Date</b>: 08 October 2015<br><b>By</b>: NXP<br><b>Views</b>: 48<br><b>Duration</b>: 02:19" title="LFPAK Power-SO8 vs. DPAK - NXP Semiconductors Quick Learning 18" class="videoThumbnail" href="/video/lfpak-power-so8-vs.-dpak-nxp-semiconductors-quick-learning-18:LFPAK-POWERSO8-VS-DPAK"> <div class="overlay"></div><div class="title"> LFPAK Power-SO8 vs. DPAK - NXP Semiconductors Quick Learning 18 </div><div class="views">48 Views</div><div class="time">02:19</div><img src="http://cache.nxp.com/videos/thumbnail/LFPAK-POWERSO8-VS-DPAK.jpg"></a><a data-toggle="popover" data-content="NXP&amp;apos;s low RDSon MOSFETs in 2x2 mm package with tin-plated solderable side pads decrease size of<br><br><b>Posted Date</b>: 08 October 2015<br><b>By</b>: NXP<br><b>Views</b>: 32<br><b>Duration</b>: 03:00" title="First 2x2 mm MOSFETs with solderable side pads" class="videoThumbnail" href="/video/first-2x2-mm-mosfets-with-solderable-side-pads:2X2-MM-MOSFET-SOLDERABLE-PADS"> <div class="overlay"></div><div class="title"> First 2x2 mm MOSFETs with solderable side pads </div><div class="views">32 Views</div><div class="time">03:00</div><img src="http://cache.nxp.com/videos/thumbnail/2X2-MM-MOSFET-SOLDERABLE-PADS.jpg"></a><a data-toggle="popover" data-content="Maclain Lobdell, Product Marketing Manager, demonstrates just how easy it is to get started with the<br><br><b>Posted Date</b>: 23 September 2015<br><b>By</b>: Maclain Lobdell<br><b>Views</b>: 105<br><b>Duration</b>: 02:49" title="Getting Started Video: Power Estimation Tool" class="videoThumbnail" href="/video/getting-started-video-power-estimation-tool:POWER-ESTIMATION-TOOL-VIDEO"> <div class="overlay"></div><div class="title"> Getting Started Video: Power Estimation Tool </div><div class="views">105 Views</div><div class="time">02:49</div><img src="http://cache.nxp.com/videos/thumbnail/POWER-ESTIMATION-TOOL-VIDEO.jpg"></a><a data-toggle="popover" data-content="Kinetis KV5x ARM Cortex-M7 MCU in a drone/UAV application. 1x Kinetis KV5x MCU performing embedded s<br><br><b>Posted Date</b>: 22 September 2015<br><b>Views</b>: 210<br><b>Rating</b>: 5/5<br><b>Duration</b>: 09:40" title="The Hills are Alive With the Sound of ... Drone UAVs&amp;#8217; Based on Kinetis V Series ARM&amp;#174; Cortex&amp;#174;-M7 MCUs" class="videoThumbnail" href="/video/the-hills-are-alive-with-the-sound-of-...-drone-uavs-based-on-kinetis-v-series-arm-cortex-m7-mcus:KV-Drone-Demo"> <div class="overlay"></div><div class="title"> The Hills are Alive With the Sound of ... Drone UAVs&#8217; Based on Kinetis V Series ARM&#174; Cortex&#174;-M7 MCUs </div><div class="views">210 Views</div><div class="time">09:40</div><img src="http://cache.nxp.com/videos/thumbnail/KV-Drone-Demo.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 18 September 2015<br><b>Views</b>: 5<br><b>Duration</b>: 04:19" title="Installing software for the FRDM-KL02" class="videoThumbnail" href="/video/installing-software-for-the-frdm-kl02:FRDM-KL02-INSTALL-SOFTWARE"> <div class="overlay"></div><div class="title"> Installing software for the FRDM-KL02 </div><div class="views">5 Views</div><div class="time">04:19</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL02-INSTALL-SOFTWARE.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 18 September 2015<br><b>Views</b>: 10<br><b>Duration</b>: 04:18" title="Create an Application for the FRDM-KL03" class="videoThumbnail" href="/video/create-an-application-for-the-frdm-kl03:FRDM-KL03-CREATE-APPLICATION"> <div class="overlay"></div><div class="title"> Create an Application for the FRDM-KL03 </div><div class="views">10 Views</div><div class="time">04:18</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL03-CREATE-APPLICATION.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 18 September 2015<br><b>Views</b>: 7<br><b>Duration</b>: 00:54" title="Get Started with FRDM-KL02 Development Platform - How To " class="videoThumbnail" href="/video/get-started-with-frdm-kl02-development-platform-how-to:FRDM-KL02-STARTED"> <div class="overlay"></div><div class="title"> Get Started with FRDM-KL02 Development Platform - How To  </div><div class="views">7 Views</div><div class="time">00:54</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL02-STARTED.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 18 September 2015<br><b>Views</b>: 10<br><b>Duration</b>: 00:54" title="Get Started with FRDM-KL03 Development Platform - How To " class="videoThumbnail" href="/video/get-started-with-frdm-kl03-development-platform-how-to:FRDM-KL03-STARTED"> <div class="overlay"></div><div class="title"> Get Started with FRDM-KL03 Development Platform - How To  </div><div class="views">10 Views</div><div class="time">00:54</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL03-STARTED.jpg"></a></div>
+						<div class="left-arrow"><a id="foo2_prev" href="#left"><span class="icon-angle-left"></span></a></div>
+						<div class="right-arrow"><a id="foo2_next" href="#right"><span class="icon-angle-right"></span></a></div>
+					  </div>
+				  </div>
+			<div class="navbar navbar-default megamenu">
+	                   <ul class="nav navbar-nav">
+	                     <!-- Grid 12 Menu -->
+	                     <li class="dropdown megamenu-fw"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="h4">Software and Tools</span>&nbsp;<span class="icon-plus-circle"></span></a>
+	                       <ul class="dropdown-menu" style="font-size; padding:20px; background-color:#fff; border-color:#ccd6d8">
+	                         <li>
+	                           <div class="row">
+	                             <div class="col-xs-4">
+									<!-- h4><a href="/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&q=NXP Enablement Series">NXP Enablement Series</a></h4 -->
+	                             	<h5 style="font-size: 16px; color:#e66a08; font-weight: 700;">Target Software</h5>
+									<ul class="list-unstyled">
+									<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=MQX">MQX (realtime operating system)</a></li>
+	                             	<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=PEG">PEG (GUI interface builder)</a></li>
+	                             	<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=Vortiqa">Vortiqa (Networking suite)</a></li>
+									<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=other%20target%20software">Other Target Software</a></li>
+									</ul>
+								</div>
+	                             <div class="col-xs-4">
+									<h5 style="font-size: 16px; color:#e66a08; font-weight: 700;">Development Platforms</h5>
+									<ul class="list-unstyled">
+	                             	<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=Tower">Tower</a></li>
+	                             	<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=Freedom">Freedom</a></li>
+	                             	<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=Sabre">Sabre</a></li>
+									<!-- li><a href="/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&q=StarterTRAK">StarterTRAK</a></li -->
+									<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=i.MX%20EVK">i.MX EVK (evaluation kits)</a></li>
+									<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=other%20development%20platforms">Other Development Platforms</a></li>
+									</ul>
+								 </div>
+								<div class="col-xs-4">
+									<h5 style="font-size: 16px; color:#e66a08; font-weight: 700;">Development Tools</h5>
+									<ul class="list-unstyled">
+									<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=Codewarrior">Codewarrior (IDE)</a></li>
+									<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=Linux">Linux</a></li>
+									<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=Android">Android</a></li>
+									<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=Processor%20Expert">Processor Expert</a></li>
+									<li><a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=renderSearchPage&amp;q=Other%20Development%20Tools">Other Development Tools</a></li>
+									</ul>
+								</div>
+	                           </div>
+	                           	                         </li>
+	                       </ul>
+	                     </li>
+	                    
+	                    
+	                    
+	                   </ul>
+	               </div>
+<div id="foo4" class="list-inline">
+								<a data-toggle="popover" data-content="Explore MC06XSD200, MC10XSD200, MC16XSD200 and MC50XS4200 eXtreme switch products that are showcased<br><br><b>Posted Date</b>: 08 May 2014<br><b>Views</b>: 363<br><b>Rating</b>: 2/5<br><b>Duration</b>: 04:31" title="36 V eXtreme Switch Tower System Module - Demo" class="videoThumbnail" href="/video/36-v-extreme-switch-tower-system-module-demo:FTF2014_TOWERSYSTMOD_VID"> <div class="overlay"></div><div class="title"> 36 V eXtreme Switch Tower System Module - Demo </div><div class="views">363 Views</div><div class="time">04:31</div><img src="http://cache.nxp.com/videos/thumbnail/FTF2014_TOWERSYSTMOD_VID.jpg"></a><a data-toggle="popover" data-content="Packet Tools Software from NXP gives you insight you normally only get from sophisticated test equip<br><br><b>Posted Date</b>: 03 April 2014<br><b>Views</b>: 498<br><b>Rating</b>: 4/5<br><b>Duration</b>: 05:38" title="Packet Analysis Tools for QorIQ DPAA - Demo" class="videoThumbnail" href="/video/packet-analysis-tools-for-qoriq-dpaa-demo:PACKETTOOLSDEMO_VID"> <div class="overlay"></div><div class="title"> Packet Analysis Tools for QorIQ DPAA - Demo </div><div class="views">498 Views</div><div class="time">05:38</div><img src="http://cache.nxp.com/videos/thumbnail/PACKETTOOLSDEMO_VID.jpg"></a></div>
+						<p >
+<span class="h4">How To</span> (<a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=rendertypeChannelPage&amp;type=How%20To">View All</a>)
+</p><div class="carousel-slide" id="carousel6">
+					  <div class="carousel-inner">
+						<div id="foo6" class="list-inline">
+								<a data-toggle="popover" data-content="<b>Posted Date</b>: 05 May 2016<br><b>Views</b>: 21<br><b>Duration</b>: 03:40" title="Installing software for the TWR-K80F150M" class="videoThumbnail" href="/video/installing-software-for-the-twr-k80f150m:TWR-K80F150M-INSTALL-SOFTWARE"> <div class="overlay"></div><div class="title"> Installing software for the TWR-K80F150M </div><div class="views">21 Views</div><div class="time">03:40</div><img src="http://cache.nxp.com/videos/thumbnail/TWR-K80F150M-INSTALL-SOFTWARE.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 05 May 2016<br><b>Views</b>: 22<br><b>Duration</b>: 03:29" title="Installing software for the FRDM-K82F" class="videoThumbnail" href="/video/installing-software-for-the-frdm-k82f:FRDM-K82F-INSTALL-SOFTWARE"> <div class="overlay"></div><div class="title"> Installing software for the FRDM-K82F </div><div class="views">22 Views</div><div class="time">03:29</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-K82F-INSTALL-SOFTWARE.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 05 May 2016<br><b>Views</b>: 19<br><b>Duration</b>: 03:48" title="Create an Application for the TWR-K80F150M" class="videoThumbnail" href="/video/create-an-application-for-the-twr-k80f150m:TWR-K80F150M-CREATE-APPLICATION"> <div class="overlay"></div><div class="title"> Create an Application for the TWR-K80F150M </div><div class="views">19 Views</div><div class="time">03:48</div><img src="http://cache.nxp.com/videos/thumbnail/TWR-K80F150M-CREATE-APPLICATION.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 05 May 2016<br><b>Views</b>: 18<br><b>Duration</b>: 06:09" title="Build and Run SDK Demos on the TWR-K80F150M - How To" class="videoThumbnail" href="/video/build-and-run-sdk-demos-on-the-twr-k80f150m-how-to:TWR-K80F150M-SDK-DEMOS"> <div class="overlay"></div><div class="title"> Build and Run SDK Demos on the TWR-K80F150M - How To </div><div class="views">18 Views</div><div class="time">06:09</div><img src="http://cache.nxp.com/videos/thumbnail/TWR-K80F150M-SDK-DEMOS.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 05 May 2016<br><b>Views</b>: 21<br><b>Duration</b>: 06:15" title="Build and Run SDK Demos on the FRDM-K82F - How To" class="videoThumbnail" href="/video/build-and-run-sdk-demos-on-the-frdm-k82f-how-to:FRDM-K82F-SDK-DEMOS"> <div class="overlay"></div><div class="title"> Build and Run SDK Demos on the FRDM-K82F - How To </div><div class="views">21 Views</div><div class="time">06:15</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-K82F-SDK-DEMOS.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 05 May 2016<br><b>Views</b>: 25<br><b>Duration</b>: 03:18" title="Create an Application for the FRDM-K82F" class="videoThumbnail" href="/video/create-an-application-for-the-frdm-k82f:FRDM-K82F-CREATE-APPLICATION"> <div class="overlay"></div><div class="title"> Create an Application for the FRDM-K82F </div><div class="views">25 Views</div><div class="time">03:18</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-K82F-CREATE-APPLICATION.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 25<br><b>Duration</b>: 00:54" title="Get Started with FRDM-KL03Z Development Platform - How To " class="videoThumbnail" href="/video/get-started-with-frdm-kl03z-development-platform-how-to:FRDM-KL03-STARTED-ZH"> <div class="overlay"></div><div class="title"> Get Started with FRDM-KL03Z Development Platform - How To  </div><div class="views">25 Views</div><div class="time">00:54</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL03-STARTED-ZH.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 10<br><b>Duration</b>: 06:38" title="Build and Run SDK Demos on the FRDM-KL26Z- How To" class="videoThumbnail" href="/video/build-and-run-sdk-demos-on-the-frdm-kl26z-how-to:FRDM-KL26Z-SDK-DEMOS-ZH"> <div class="overlay"></div><div class="title"> Build and Run SDK Demos on the FRDM-KL26Z- How To </div><div class="views">10 Views</div><div class="time">06:38</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL26Z-SDK-DEMOS-ZH.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 13<br><b>Duration</b>: 07:09" title="Build and Run SDK Demos on the FRDM-K64F - How To" class="videoThumbnail" href="/video/build-and-run-sdk-demos-on-the-frdm-k64f-how-to:FRDM-K64F-SDK-DEMOS-ZH"> <div class="overlay"></div><div class="title"> Build and Run SDK Demos on the FRDM-K64F - How To </div><div class="views">13 Views</div><div class="time">07:09</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-K64F-SDK-DEMOS-ZH.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 15<br><b>Duration</b>: 05:11" title="Installing software for the FRDM-KL46Z" class="videoThumbnail" href="/video/installing-software-for-the-frdm-kl46z:FRDM-KL46Z-INSTALL-SOFTWARE-ZH"> <div class="overlay"></div><div class="title"> Installing software for the FRDM-KL46Z </div><div class="views">15 Views</div><div class="time">05:11</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL46Z-INSTALL-SOFTWARE-ZH.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 4<br><b>Duration</b>: 04:35" title="Installing software for the FRDM-KL27Z" class="videoThumbnail" href="/video/installing-software-for-the-frdm-kl27z:FRDM-KL27Z-INSTALL-SOFTWARE-ZH"> <div class="overlay"></div><div class="title"> Installing software for the FRDM-KL27Z </div><div class="views">4 Views</div><div class="time">04:35</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL27Z-INSTALL-SOFTWARE-ZH.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 35<br><b>Duration</b>: 00:56" title="Get Started with FRDM-KL25Z Development Platform - How To " class="videoThumbnail" href="/video/get-started-with-frdm-kl25z-development-platform-how-to:FRDM-KL25Z-STARTED-ZH"> <div class="overlay"></div><div class="title"> Get Started with FRDM-KL25Z Development Platform - How To  </div><div class="views">35 Views</div><div class="time">00:56</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL25Z-STARTED-ZH.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 8<br><b>Duration</b>: 04:19" title="Installing software for the FRDM-KL02Z" class="videoThumbnail" href="/video/installing-software-for-the-frdm-kl02z:FRDM-KL02-INSTALL-SOFTWARE-ZH"> <div class="overlay"></div><div class="title"> Installing software for the FRDM-KL02Z </div><div class="views">8 Views</div><div class="time">04:19</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL02-INSTALL-SOFTWARE-ZH.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 7<br><b>Duration</b>: 05:19" title="Installing software for the FRDM-K22F" class="videoThumbnail" href="/video/installing-software-for-the-frdm-k22f:FRDM-K22F-INSTALL-SOFTWARE-ZH"> <div class="overlay"></div><div class="title"> Installing software for the FRDM-K22F </div><div class="views">7 Views</div><div class="time">05:19</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-K22F-INSTALL-SOFTWARE-ZH.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 23<br><b>Duration</b>: 04:50" title="Installing software for the FRDM-KL25Z" class="videoThumbnail" href="/video/installing-software-for-the-frdm-kl25z:FRDM-KL25Z-INSTALL-SOFTWARE-ZH"> <div class="overlay"></div><div class="title"> Installing software for the FRDM-KL25Z </div><div class="views">23 Views</div><div class="time">04:50</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL25Z-INSTALL-SOFTWARE-ZH.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 7<br><b>Duration</b>: 08:22" title="Build and Run SDK Demos on the FRDM-KL46Z- How To" class="videoThumbnail" href="/video/build-and-run-sdk-demos-on-the-frdm-kl46z-how-to:FRDM-KL46Z-SDK-DEMOS-ZH"> <div class="overlay"></div><div class="title"> Build and Run SDK Demos on the FRDM-KL46Z- How To </div><div class="views">7 Views</div><div class="time">08:22</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL46Z-SDK-DEMOS-ZH.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 6<br><b>Duration</b>: 00:49" title="Get Started with FRDM-KL27Z Development Platform - How To " class="videoThumbnail" href="/video/get-started-with-frdm-kl27z-development-platform-how-to:FRDM-KL27Z-STARTED-ZH"> <div class="overlay"></div><div class="title"> Get Started with FRDM-KL27Z Development Platform - How To  </div><div class="views">6 Views</div><div class="time">00:49</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL27Z-STARTED-ZH.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 10<br><b>Duration</b>: 03:31" title="Installing software for the FRDM-KL26Z" class="videoThumbnail" href="/video/installing-software-for-the-frdm-kl26z:FRDM-KL26Z-INSTALL-SOFTWARE-ZH"> <div class="overlay"></div><div class="title"> Installing software for the FRDM-KL26Z </div><div class="views">10 Views</div><div class="time">03:31</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-KL26Z-INSTALL-SOFTWARE-ZH.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 20<br><b>Rating</b>: 3/5<br><b>Duration</b>: 03:35" title="Create an Application for the FRDM-K64F" class="videoThumbnail" href="/video/create-an-application-for-the-frdm-k64f:FRDM-K64F-CREATE-APPLICATION-ZH"> <div class="overlay"></div><div class="title"> Create an Application for the FRDM-K64F </div><div class="views">20 Views</div><div class="time">03:35</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-K64F-CREATE-APPLICATION-ZH.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 19 April 2016<br><b>Views</b>: 14<br><b>Duration</b>: 04:43" title="Installing software for the FRDM-K64F" class="videoThumbnail" href="/video/installing-software-for-the-frdm-k64f:FRDM-K64F-INSTALL-SOFTWARE-ZH"> <div class="overlay"></div><div class="title"> Installing software for the FRDM-K64F </div><div class="views">14 Views</div><div class="time">04:43</div><img src="http://cache.nxp.com/videos/thumbnail/FRDM-K64F-INSTALL-SOFTWARE-ZH.jpg"></a></div>
+						<div class="left-arrow"><a id="foo6_prev" href="#left"><span class="icon-angle-left"></span></a></div>
+						<div class="right-arrow"><a id="foo6_next" href="#right"><span class="icon-angle-right"></span></a></div>
+					  </div>
+			  </div>
+			<p >
+<span class="h4">Demo</span> (<a href="http://www.nxp.com/webapp/video_vault/videoSummary.sp?searchLabel=rendertypeChannelPage&amp;type=Demo">View All</a>)
+</p><div class="carousel-slide" id="carousel7">
+					  <div class="carousel-inner">
+						<div id="foo7" class="list-inline">
+								<a data-toggle="popover" data-content="Selecting the correct power MOSFET for battery power applications requires the right selection crite<br><br><b>Posted Date</b>: 14 April 2016<br><b>By</b>: NXP<br><b>Views</b>: 118<br><b>Duration</b>: 02:36" title="How to select MOSFETs for battery power applications" class="videoThumbnail" href="/video/how-to-select-mosfets-for-battery-power-applications:MOSFET-BATTERY-POWER-APPS"> <div class="overlay"></div><div class="title"> How to select MOSFETs for battery power applications </div><div class="views">118 Views</div><div class="time">02:36</div><img src="http://cache.nxp.com/videos/thumbnail/MOSFET-BATTERY-POWER-APPS.jpg"></a><a data-toggle="popover" data-content="This video walks through the steps to program CMSIS-DAP or JLINK debug probe firmware onto LPCXpress<br><br><b>Posted Date</b>: 14 April 2016<br><b>Views</b>: 26<br><b>Duration</b>: 05:25" title="LPC Tips &amp; Tricks: LPCScrypt LPC-Link2 Debug Probe Programming" class="videoThumbnail" href="/video/lpc-tips-tricks-lpcscrypt-lpc-link2-debug-probe-programming:LPC-TIPS-LPCSCRYPT-LPC-LINK2"> <div class="overlay"></div><div class="title"> LPC Tips & Tricks: LPCScrypt LPC-Link2 Debug Probe Programming </div><div class="views">26 Views</div><div class="time">05:25</div><img src="http://cache.nxp.com/videos/thumbnail/LPC-TIPS-LPCSCRYPT-LPC-LINK2.jpg"></a><a data-toggle="popover" data-content="This video walks the user through the different steps to using this updated tool. New features of th<br><br><b>Posted Date</b>: 13 April 2016<br><b>Views</b>: 43<br><b>Duration</b>: 27:38" title="How to run a simulator project for MC33816 or PT2000" class="videoThumbnail" href="/video/how-to-run-a-simulator-project-for-mc33816-or-pt2000:PT2000-MC33816-SIMULATOR"> <div class="overlay"></div><div class="title"> How to run a simulator project for MC33816 or PT2000 </div><div class="views">43 Views</div><div class="time">27:38</div><img src="http://cache.nxp.com/videos/thumbnail/PT2000-MC33816-SIMULATOR.jpg"></a><a data-toggle="popover" data-content="This video shows, how to execute the calibration for the Dynamic Power Control (DPC). The DPC is a f<br><br><b>Posted Date</b>: 06 April 2016<br><b>Views</b>: 51<br><b>Rating</b>: 5/5<br><b>Duration</b>: 04:30" title="PN5180 DPC calibration" class="videoThumbnail" href="/video/pn5180-dpc-calibration:NXP-DPC-CALIBRATION"> <div class="overlay"></div><div class="title"> PN5180 DPC calibration </div><div class="views">51 Views</div><div class="time">04:30</div><img src="http://cache.nxp.com/videos/thumbnail/NXP-DPC-CALIBRATION.jpg"></a><a data-toggle="popover" data-content="This video shows, how to adjust and optimize the type B wave shapes for an ISO/IEC 14443, NFC or EMV<br><br><b>Posted Date</b>: 06 April 2016<br><b>Views</b>: 18<br><b>Duration</b>: 03:27" title="PN5180 Wave shape type B" class="videoThumbnail" href="/video/pn5180-wave-shape-type-b:PN5180-WAVE-SHAPE-B"> <div class="overlay"></div><div class="title"> PN5180 Wave shape type B </div><div class="views">18 Views</div><div class="time">03:27</div><img src="http://cache.nxp.com/videos/thumbnail/PN5180-WAVE-SHAPE-B.jpg"></a><a data-toggle="popover" data-content="This video shows, how to execute the correlation test for the Dynamic Power Control (DPC). The DPC i<br><br><b>Posted Date</b>: 06 April 2016<br><b>Views</b>: 105<br><b>Duration</b>: 05:12" title="PN5180 DPC correlation test" class="videoThumbnail" href="/video/pn5180-dpc-correlation-test:NXP-DPC-CORRELATION"> <div class="overlay"></div><div class="title"> PN5180 DPC correlation test </div><div class="views">105 Views</div><div class="time">05:12</div><img src="http://cache.nxp.com/videos/thumbnail/NXP-DPC-CORRELATION.jpg"></a><a data-toggle="popover" data-content="This video shows, how to adjust and optimize the type A wave shapes for an ISO/IEC 14443, NFC or EMV<br><br><b>Posted Date</b>: 06 April 2016<br><b>Views</b>: 48<br><b>Duration</b>: 04:39" title="PN5180 Wave shape type A" class="videoThumbnail" href="/video/pn5180-wave-shape-type-a:PN5180-WAVE-SHAPE-A"> <div class="overlay"></div><div class="title"> PN5180 Wave shape type A </div><div class="views">48 Views</div><div class="time">04:39</div><img src="http://cache.nxp.com/videos/thumbnail/PN5180-WAVE-SHAPE-A.jpg"></a><a data-toggle="popover" data-content="<b>Posted Date</b>: 17 March 2016<br><b>Views</b>: 147<br><b>Duration</b>: 01:12" title="ZigBee Networks with NFC Commissioning" class="videoThumbnail" href="/video/zigbee-networks-with-nfc-commissioning:ZIGBEE-NETWORKS-NFC"> <div class="overlay"></div><div class="title"> ZigBee Networks with NFC Commissioning </div><div class="views">147 Views</div><div class="time">01:12</div><img src="http://cache.nxp.com/videos/thumbnail/ZIGBEE-NETWORKS-NFC.jpg"></a><a data-toggle="popover" data-content="Discover the history of the MIFARE brand.<br><br><b>Posted Date</b>: 01 March 2016<br><b>Views</b>: 229<br><b>Rating</b>: 5/5<br><b>Duration</b>: 03:32" title="MIFARE History" class="videoThumbnail" href="/video/mifare-history:MIFARE-HISTORY"> <div class="overlay"></div><div class="title"> MIFARE History </div><div class="views">229 Views</div><div class="time">03:32</div><img src="http://cache.nxp.com/videos/thumbnail/MIFARE-HISTORY.jpg"></a><a data-toggle="popover" data-content="Pantech Audio Engineer Kim Kyu-tae describes the collaboration with NXP Software in imlementing Voic<br><br><b>Posted Date</b>: 17 February 2016<br><b>Views</b>: 25<br><b>Duration</b>: 00:48" title="Pantech testimonial on LifeVibes VoiceExperience integration" class="videoThumbnail" href="/video/pantech-testimonial-on-lifevibes-voiceexperience-integration:PANTECH-TESTIMONIAL"> <div class="overlay"></div><div class="title"> Pantech testimonial on LifeVibes VoiceExperience integration </div><div class="views">25 Views</div><div class="time">00:48</div><img src="http://cache.nxp.com/videos/thumbnail/PANTECH-TESTIMONIAL.jpg"></a><a data-toggle="popover" data-content="To demonstrate context awareness of LifeVibes AudioSense an immersive context demo room was created <br><br><b>Posted Date</b>: 17 February 2016<br><b>Views</b>: 38<br><b>Duration</b>: 00:25" title="Context call demo room at MWC 2015" class="videoThumbnail" href="/video/context-call-demo-room-at-mwc-2015:CONTEXT-CALL-DEMO"> <div class="overlay"></div><div class="title"> Context call demo room at MWC 2015 </div><div class="views">38 Views</div><div class="time">00:25</div><img src="http://cache.nxp.com/videos/thumbnail/CONTEXT-CALL-DEMO.jpg"></a><a data-toggle="popover" data-content="NXP Software leader of beam forming and noise suppression demo at Mobile World Congress 2014.<br><br><b>Posted Date</b>: 17 February 2016<br><b>Views</b>: 38<br><b>Duration</b>: 01:01" title="Beam forming and noise suppression demo" class="videoThumbnail" href="/video/beam-forming-and-noise-suppression-demo:NOISE-SUPPRESSION-DEMO"> <div class="overlay"></div><div class="title"> Beam forming and noise suppression demo </div><div class="views">38 Views</div><div class="time">01:01</div><img src="http://cache.nxp.com/videos/thumbnail/NOISE-SUPPRESSION-DEMO.jpg"></a><a data-toggle="popover" data-content="At Mobile World Congress 2015 Marketing Director Edwin Zuidema is interviewed on Context Awareness S<br><br><b>Posted Date</b>: 17 February 2016<br><b>Views</b>: 28<br><b>Duration</b>: 01:11" title="Context Awareness Software at MWC 2015" class="videoThumbnail" href="/video/context-awareness-software-at-mwc-2015:CONTEXT-AWARENESS-SOFTWARE"> <div class="overlay"></div><div class="title"> Context Awareness Software at MWC 2015 </div><div class="views">28 Views</div><div class="time">01:11</div><img src="http://cache.nxp.com/videos/thumbnail/CONTEXT-AWARENESS-SOFTWARE.jpg"></a><a data-toggle="popover" data-content="LifeVibes VoiceExperience and AudioSense software solutions by NXP Software. Smarter listening. Bett<br><br><b>Posted Date</b>: 17 February 2016<br><b>Views</b>: 20<br><b>Duration</b>: 02:29" title="LifeVibes VoiceExperience and AudioSense" class="videoThumbnail" href="/video/lifevibes-voiceexperience-and-audiosense:LIFEVIBES-VOICE-EXPERIENCE"> <div class="overlay"></div><div class="title"> LifeVibes VoiceExperience and AudioSense </div><div class="views">20 Views</div><div class="time">02:29</div><img src="http://cache.nxp.com/videos/thumbnail/LIFEVIBES-VOICE-EXPERIENCE.jpg"></a><a data-toggle="popover" data-content="NXP Software is the leading voice software vendor for mobile devices. Our expertise is in developing<br><br><b>Posted Date</b>: 17 February 2016<br><b>Views</b>: 30<br><b>Duration</b>: 02:54" title="Mobile Ecosystem" class="videoThumbnail" href="/video/mobile-ecosystem:MOBILE-ECOSYSTEM"> <div class="overlay"></div><div class="title"> Mobile Ecosystem </div><div class="views">30 Views</div><div class="time">02:54</div><img src="http://cache.nxp.com/videos/thumbnail/MOBILE-ECOSYSTEM.jpg"></a><a data-toggle="popover" data-content="ZTE deployed LifeVibes VoiceExperience voice software on the ZTE Blade Apex 2. Cheng Cheng form the <br><br><b>Posted Date</b>: 17 February 2016<br><b>Views</b>: 34<br><b>Duration</b>: 01:42" title="ZTE on implementation of VoiceExperience on ZTE Blade Apex 2" class="videoThumbnail" href="/video/zte-on-implementation-of-voiceexperience-on-zte-blade-apex-2:ZTE_VOICE-EXPERIENCE"> <div class="overlay"></div><div class="title"> ZTE on implementation of VoiceExperience on ZTE Blade Apex 2 </div><div class="views">34 Views</div><div class="time">01:42</div><img src="http://cache.nxp.com/videos/thumbnail/ZTE_VOICE-EXPERIENCE.jpg"></a><a data-toggle="popover" data-content="CEVA and NXP Software Noise Reduction Demo with LifeVibes VoiceExperience Dual-microphone based smar<br><br><b>Posted Date</b>: 17 February 2016<br><b>Views</b>: 34<br><b>Duration</b>: 01:53" title="CEVA - NXP Software Noise Suppression Demo" class="videoThumbnail" href="/video/ceva-nxp-software-noise-suppression-demo:CEVA-NOISE-SUPPRESSION-DEMO"> <div class="overlay"></div><div class="title"> CEVA - NXP Software Noise Suppression Demo </div><div class="views">34 Views</div><div class="time">01:53</div><img src="http://cache.nxp.com/videos/thumbnail/CEVA-NOISE-SUPPRESSION-DEMO.jpg"></a><a data-toggle="popover" data-content="&lt;p&gt;The NFC Innovation Lab gives insights into the latest NFC technology innovations at NXP. In the f<br><br><b>Posted Date</b>: 11 January 2016<br><b>Views</b>: 104<br><b>Rating</b>: 5/5<br><b>Duration</b>: 05:59" title="NFC Innovation Lab" class="videoThumbnail" href="/video/nfc-innovation-lab:NFC-INNOVATION-LAB-2016"> <div class="overlay"></div><div class="title"> NFC Innovation Lab </div><div class="views">104 Views</div><div class="time">05:59</div><img src="http://cache.nxp.com/videos/thumbnail/NFC-INNOVATION-LAB-2016.jpg"></a><a data-toggle="popover" data-content="HomeKit control of Hue bulb using NXP Freedom-K64F and HomeKit software&amp;#10;<br><br><b>Posted Date</b>: 20 October 2015<br><b>Views</b>: 92<br><b>Duration</b>: 02:17" title="HomeKit Control of Hue Bulb" class="videoThumbnail" href="/video/homekit-control-of-hue-bulb:FREEDOM-K64F-HOMEKIT-CONTROL"> <div class="overlay"></div><div class="title"> HomeKit Control of Hue Bulb </div><div class="views">92 Views</div><div class="time">02:17</div><img src="http://cache.nxp.com/videos/thumbnail/FREEDOM-K64F-HOMEKIT-CONTROL.jpg"></a><a data-toggle="popover" data-content="This video demonstrates the Cycling Speed and Cadence Bluetooth&amp;#174; Smart profile capabilities of <br><br><b>Posted Date</b>: 14 October 2015<br><b>Views</b>: 189<br><b>Rating</b>: 5/5<br><b>Duration</b>: 02:00" title="Kinetis KW40Z Bluetooth&amp;#174; Low Energy Bike Computer Demo" class="videoThumbnail" href="/video/kinetis-kw40z-bluetooth-low-energy-bike-computer-demo:KINETIS-KW40Z-BLE-BIKE-COMPUTER"> <div class="overlay"></div><div class="title"> Kinetis KW40Z Bluetooth&#174; Low Energy Bike Computer Demo </div><div class="views">189 Views</div><div class="time">02:00</div><img src="http://cache.nxp.com/videos/thumbnail/KINETIS-KW40Z-BLE-BIKE-COMPUTER.jpg"></a></div>
+						<div class="left-arrow"><a id="foo7_prev" href="#left"><span class="icon-angle-left"></span></a></div>
+						<div class="right-arrow"><a id="foo7_next" href="#right"><span class="icon-angle-right"></span></a></div>
+					  </div>
+				  </div>
+				</div> 
+		</div>
+</div><!-- fsl-container -->
+<!--googleoff: all-->
+
+<!-- <noindex> --><div class="clearfix"></div>
+<footer>
+  
+    <div id="footer" class="nxp-nav container"> 
+        <div class="row"> 
+        <div class="col-sm-2 col-xs-6 dtmFooter" data-dtmName="ABOUT NXP"> 
+        <h4 >ABOUT NXP</h4> 
+          <ul class="list-unstyled"> 
+            <li class="paddingtop5"><a href="http://investors.nxp.com/phoenix.zhtml?c=209114&amp;p=irol-irhome">Investors</a></li> 
+            <li class="paddingtop5"><a href="http://www.nxp.com/webapp/connect/memberDirSearch.sp">Partners</a></li> 
+            <li class="paddingtop5"><a href="http://www.nxp.com/about/careers-at-nxp:CAREERS">Careers</a></li> 
+          </ul> 
+        </div>   
+        <div class="col-sm-2 col-xs-6 dtmFooter" data-dtmName="RESOURCES"> 
+        <h4 >RESOURCES</h4> 
+          <ul class="list-unstyled"> 
+            <li class="paddingtop5"><a href="http://www.nxp.com/about/nxp-mobile-applications:MOBILE">Mobile Apps</a></li> 
+            <li class="paddingtop5"><a href="http://media.nxp.com/">Press, News, Blogs</a></li> 
+            <li class="paddingtop5"><a href="http://www.nxp.com/pages/contact-us:CONTACTUS">Contact Us</a></li> 
+          </ul> 
+        </div>   
+        <div class="col-sm-3 col-xs-12 dtmFooter" data-dtmName="FOLLOW US"><h4 >FOLLOW US</h4> 
+        <ul id="footer-social" class="list-inline paddingtop5">  
+          <li class="twitter"><a href="https://twitter.com/NXP" title="Follow NXP on Twitter" target="_blank" data-content-finding="Footer" data-content-subfinding="Footer: FOLLOW US"><span class="icon-twitter22"></span></a></li>     
+          <li class="linkedin"><a href="http://www.linkedin.com/company/nxp-semiconductors" title="Follow NXP on Linked In" target="_blank" data-content-finding="Footer" data-content-subfinding="Footer: FOLLOW US"><span class="icon-linkedin"></span></a></li>   
+          <li class="facebook"><a href="https://www.facebook.com/NXPsemi" title="Follow NXP on Facebook" target="_blank" data-content-finding="Footer" data-content-subfinding="Footer: FOLLOW US"><span class="icon-facebook"></span></a></li> 
+          <!--li class="youtube"><a href="https://www.youtube.com/nxpsemiconductors" title="Follow NXP on Youtube" target="_blank" data-content-finding="Footer" data-content-subfinding="Footer: FOLLOW US"><span class="icon-youtube-square2"></span></a></li--> 
+          <li class="email"><a href="https://contact.nxp.com/Subscription-Center" target="_blank" title="Subscription Center"><span class="icon-mail2"></span></a></li>   
+          </ul> 
+        </div>   
+        <div class="col-sm-5 col-xs-12"> 
+          <div id="newsContainer"> 
+            <div id="news"> 
+            <div class="newsItem"><h5>NEWS</h5><p>NXP Semiconductor Announces Second Quarter 2015 Results</p><a href="http://otp.investis.com/clients/us/free_scale/usn/usnews-story.aspx?cid=896&amp;newsid=29975" class="readmore" target="_blank">Read More</a></div> 
+            </div> 
+            <div id="newsDirection"> 
+              <a href="#left" id="newsLeft"><span class="icon-angle-left"></span></a> 
+              <a href="#right" id="newsRight"><span class="icon-angle-right"></span></a> 
+            </div> 
+          </div>  
+        </div> 
+        </div> 
+        <div class="row legal paddingtop5"> 
+          <div class="col-sm-7 paddingleft35 dtmFooter" data-dtmName="Privacy"> 
+             <ul class="list-inline vertical"> 
+               <li><a href="http://www.nxp.com/about/privacy:PRIVACYPRACTICES">Privacy</a></li> 
+               <li><a href="http://www.nxp.com/about/terms-of-use:TERMSOFUSE">Terms of Use</a></li> 
+  			   <li><a href="http://www.nxp.com/about/our-standard-terms-and-conditions-of-sale-counter-offer:TERMSCONDITIONSSALE">Terms of Sale</a></li> 
+               <li><a href="#stay_here" id="stay_here" name="stay_here" onclick="displayBlock();">Feedback</a></li> 
+             </ul> 
+          </div> 
+          <div class="col-sm-5 pull-right" style="margin-top:6px;"> 
+            <span class="pull-right nxp-gray-text small">&copy;2006-2016 NXP Semiconductors. All rights reserved.</span> 
+          </div> 
+        </div> 
+      </div> </footer>	
+<script src="http://www.nxp.com/docs/headlines/NXP-NEWS-en.js"></script>
+<script	src="http://cache.nxp.com/files/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script	src="http://style.nxp.com/v1.43/files/header/nxp-news.js"></script>
+<script src="http://www.nxp.com/files/abstract/misc/public_common_delta.js" language="javascript" type="text/javascript"></script>
+
+
+<input id="mobileUrl" type="hidden" name="mobileUrl" value="/video/vault/?searchLabel=renderHomepage&amp;site_preference=mobile"/>
+<input id="language_option" type="hidden" name="language_option" value="en"/>
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1066477406;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1066477406/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<div id="divBlockLayer" class="blockLayer" ></div>
+<div id="asdf" style="position:absolute;"></div>
+                        
+                                        <!-- <div id="divBottomRight" style="position:absolute;z-index:8;width:70px">
+                                                <center>
+                                                <span id="image_feedback" alt="Feedback" onclick="displayBlock();"></span>
+                                                </center>
+                                        </div> -->
+
+            <!-- <link href="/shared/stylesheets/feedback.css" rel="stylesheet" type="text/css"> -->
+                        <script language="JavaScript" type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/dhtmlwindow.js"></script>
+                        <script language="JavaScript" type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/FloatingIcon.js"></script>
+                        <script language="Javascript" type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/CountChars.js"></script>
+                        <script language="JavaScript" type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/checkTextareaLimit.js"></script>
+
+
+
+
+<script type="text/javascript">
+var  XMLRequest=getAjaxRequest();
+function openfeedBackBlock(window_title,blockDiagUrl,code,psp_URL,width,height,fastpreview){
+	if(document.getElementById('feedBackajaxbox')!=null){
+           document.getElementById('feedBackajaxbox').contentarea.innerHTML="";
+    }
+    var url = getPreviewUrl('http://www.nxp.com/webapp/sps/components/hotFeedback.jsp?collateralCode=NEWCO_FEEDBACK_FORM');
+    ajaxwin=dhtmlwindow.open('http://www.nxp.com/video/vault/feedBackajaxbox',url,window_title, 'width='+width+'px,height='+height+'px,left=172px,resize=0,scrolling=1');
+    return ajaxwin ;
+}
+
+function openthankYouBlock(window_title,blockDiagUrl,code,psp_URL,width,height,fastpreview){
+    var url = getPreviewUrl('http://www.nxp.com/webapp/sps/components/hotFeedback.jsp?collateralCode=ONLINE_THANK_YOU');
+    ajaxwin=dhtmlwindow.open('http://www.nxp.com/video/vault/feedBackajaxbox',url,window_title, 'width='+width+'px,height='+height+'px,left=165px,resize=0,scrolling=1');
+    return ajaxwin ;
+}
+
+function getPreviewUrl(url, fastpreview){
+    if(fastpreview!=null  &&  (trim(fastpreview) != '' ) ){
+        return url+'&fastpreview=1' ;
+    }else{
+        return url ;
+    }
+}
+
+</script>
+<script language="JavaScript1.2" src="http://style.nxp.com/v1.43/shared/js/HM_Loader_ScriptDOM.js" type='text/javascript'></script>
+
+
+<script>
+$(document).ready(function() {
+	var url = window.location.href;
+		/* if (url.indexOf("?")>-1){
+			url = url.substr(0,url.indexOf("?"));
+		} */
+		var secNodeValue= $('#sechighlight').val();
+		if(secNodeValue == 'noHighlight'){
+		   $.getJSON('/files/abstract/text_insert/NewCoSectionalNavRules.json', function(data) {
+			   $.each(data, function(index, element) {
+	        	   if(url.match("^"+index) || url.indexOf(index)!=-1){
+	            	   $('.'+element[0].Nodeid).css("background-color", "#ffffff");
+	        		   $('.'+element[0].Nodeid+' > a ').css("color", "#777777");
+	        		   return false;
+	        	   }
+	    	    });
+	       });
+	}
+});
+
+</script>
+
+<!-- </noindex> --><!--googleon: all-->
+
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/shared/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://style.nxp.com/v1.43/files/abstract/misc/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script>
+	jQuery(document).ready(function($) {
+		jQuery_1_9_1('[data-toggle=dropdown]').dropdown();
+		
+		$("#foo2").carouFredSel({
+			circular: false,
+			infinite: false,
+			
+			width: "variable",
+			items: {
+				visible: 4
+			},
+			scroll: {
+				items: 3,
+				fx: "scroll"
+			},
+			auto: false,
+			prev: "#foo2_prev",
+			next: "#foo2_next"
+		});
+
+		$("#foo3").carouFredSel({
+			circular: false,
+			infinite: false,
+			
+			width: "variable",
+			items: {
+				visible: 4
+			},
+			scroll: {
+				items: 3,
+				fx: "scroll"
+			},
+			auto: false,
+			prev: "#foo3_prev",
+			next: "#foo3_next"
+		});
+
+		$("#foo4").carouFredSel({
+			circular: false,
+			infinite: false,
+			
+			width: "variable",
+			items: {
+				visible: 4
+			},
+			scroll: {
+				items: 3,
+				fx: "scroll"
+			},
+			auto: false,
+			prev: "#foo4_prev",
+			next: "#foo4_next"
+		});
+
+		$("#foo5").carouFredSel({
+			circular: false,
+			infinite: false,
+			
+			width: "variable",
+			items: {
+				visible: 4
+			},
+			scroll: {
+				items: 3,
+				fx: "scroll"
+			},
+			auto: false,
+			prev: "#foo5_prev",
+			next: "#foo5_next"
+		});
+
+		$("#foo6").carouFredSel({
+			circular: false,
+			infinite: false,
+			
+			width: "variable",
+			items: {
+				visible: 4
+			},
+			scroll: {
+				items: 3,
+				fx: "scroll"
+			},
+			auto: false,
+			prev: "#foo6_prev",
+			next: "#foo6_next"
+		});
+
+		$("#foo7").carouFredSel({
+			circular: false,
+			infinite: false,
+			
+			width: "variable",
+			items: {
+				visible: 4
+			},
+			scroll: {
+				items: 3,
+				fx: "scroll"
+			},
+			auto: false,
+			prev: "#foo7_prev",
+			next: "#foo7_next"
+		});
+		
+		
+		$('[data-toggle=popover]').popover({trigger: 'hover', placement: 'top', html: true});
+		loadBanner();
+	});
+
+</script>
+<script type="text/javascript" src="http://style.nxp.com/files/js/elqNow/elqwebanalytics.js"></script>
+<script type="text/javascript">_satellite.pageBottom();</script>
+<script type="text/javascript" src="http://style.nxp.com/files/abstract/misc/blueconic.js"></script></body>
+
+<!-- Mirrored from www.nxp.com/video/vault/?searchLabel=renderHomepage by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 12:16:47 GMT -->
+</html>

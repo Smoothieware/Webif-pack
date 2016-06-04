@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/moduleexample by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:54:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>ModuleExample - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="login__customdomainscriptf36a.html?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="../images/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = '../images/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "moduleexample";
+        OZONE.request.timestamp = 1463138545;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "moduleexample";
+        WIKIREQUEST.info.pageId = 11636822;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="../images/wikidot.combined.js"></script>
+            <script type="text/javascript" src="../images/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="../images/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(../images/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(../images/style.css);
+                    @import url(../images/style-2.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="../images/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="../images/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="../images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="../images/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="index.html">Documentation</a><br /></li>
+<li><img src="../images/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="smoothieboard.html">SmoothieBoard</a><br /></li>
+<li><img src="../images/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="blog.html">Blog</a><br /></li>
+<li><img src="../images/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="gallery.html">Gallery</a><br /></li>
+<li><img src="../images/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="irc.html">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="general.html">Forum</a></li>
+<li><a href="smoothieware-support.html">Support/Help Mailing list</a></li>
+<li><a href="smoothie-dev.html">Developper Mailing list</a></li>
+<li><a href="111870450664099533727.html">Google+ Community</a></li>
+<li><a href="index-2.html">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="../images/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="search.html">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="../images/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>ModuleExample</span></div>
+          
+          <div id="page-content">
+
+<p>The aim of this is to provide a step-by-step overview of how to create a basic module for use with Smoothie.<br />
+The example here will be a laser control module.</p>
+<h2 id="toc0"><span>What is a module</span></h2>
+<p>In smoothie, everything is a module.<br />
+A&nbsp;module is basically a piece of code ( an object ), that's connected to the rest of the code only by event calls and event handlers.<br />
+The core of smoothie ( serial communication, motion planning, actual stepping ) is separated in modules.<br />
+And then <strong>you</strong> can write modules for additional tasks, like controlling a laser, 3D printing or whatever the cool idea you have.<br />
+The big idea is to be able to add these additional functionalities in the simplest way possible, without having to edit the core, just connect to/call events.</p>
+<h2 id="toc1"><span>About this example</span></h2>
+<p>For the example we'll create a simple module that turns the laser on and off depending on received G codes, and PWM adjusts the laser power to the robot's speed so that it plays nice with look-ahead acceleration management. This should actually be sufficient to do basic laser cutting.<br />
+Also there'll be a lot of explaining here, but if you landed on this page, you will probably understand everything just looking at the code, it's not that complicated.<br />
+Good examples also are the core modules, in /modules/communication/ and /modules/robot/ .</p>
+<h2 id="toc2"><span>Code style</span></h2>
+<p>For this example, we'll put all of the function code withing the class definition. You should obviously not do that for real life coding, but it makes life easier for an example.</p>
+<h2 id="toc3"><span>Our base module</span></h2>
+<p>So here is what your basic module skeleton looks like :</p>
+<div class="code">
+<div class="hl-main">
+<pre>
+<span class="hl-comment">//Basic laser control module</span><span class="hl-code">
+</span><span class="hl-types">class</span><span class="hl-code"> </span><span class="hl-identifier">Laser</span><span class="hl-code"> : </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Module</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code">:
+        </span><span class="hl-identifier">Laser</span><span class="hl-brackets">(){}</span><span class="hl-code">
+        </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">on_module_loaded</span><span class="hl-brackets">()</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">;</span>
+</pre></div>
+</div>
+<p>We make a Laser class, <a href="object-oriented_programming.html">extending</a> the base Module class.<br />
+The on_module_loaded method will be called automagically when the kernel is done loading the module. You shouldn't call the kernel, like to register for an event, <strong>before</strong> on_module_loaded is called, like in the constructor.</p>
+<h2 id="toc4"><span>About the Kernel</span></h2>
+<p>The kernel ( libs/Kernel.h ) is basically what you talk to when registering for an event, calling an event, and what calls you ( the Module ) when you have registered for an event, and another Module calls this event.</p>
+<p>Your module must be added to it like this, in main.cpp :</p>
+<div class="code">
+<div class="hl-main">
+<pre>
+<span class="hl-comment">//Add Laser module to Kernel</span><span class="hl-code">
+</span><span class="hl-identifier">Laser</span><span class="hl-code"> </span><span class="hl-identifier">laser</span><span class="hl-code"> = </span><span class="hl-identifier">Laser</span><span class="hl-brackets">()</span><span class="hl-code">;
+</span><span class="hl-identifier">kernel</span><span class="hl-code">-&gt;</span><span class="hl-identifier">add_module</span><span class="hl-brackets">(</span><span class="hl-code"> &amp;</span><span class="hl-identifier">laser</span><span class="hl-code"> </span><span class="hl-brackets">)</span><span class="hl-code">;</span>
+</pre></div>
+</div>
+<p>Once the module is added, on_module_loaded() is called so that you can register for events.</p>
+<h2 id="toc5"><span>On the two G code events</span></h2>
+<p>So in our example we want to turn the laser on/off depending on the G codes we recieve. But because of the acceleration management ( G code look-ahead, see the Planner class ), received G codes are not executed when they are received. They are pushed in a queue, and then poped out when the previous movement has finished executing.<br />
+So there are two events : on_gcode_received and on_gcode_execute. The one that's of interrest to us now is on_gcode_execute, which is called right before the movement corresponding to that G code line is executed.</p>
+<h2 id="toc6"><span>Registering for an event</span></h2>
+<p>So here is how we register for an event in our code :</p>
+<div class="code">
+<div class="hl-main">
+<pre>
+<span class="hl-types">class</span><span class="hl-code"> </span><span class="hl-identifier">Laser</span><span class="hl-code"> : </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Module</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code">:
+        </span><span class="hl-identifier">Laser</span><span class="hl-brackets">(){}</span><span class="hl-code">
+ 
+        </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">on_module_loaded</span><span class="hl-brackets">()</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">this</span><span class="hl-code">-&gt;</span><span class="hl-identifier">register_for_event</span><span class="hl-brackets">(</span><span class="hl-identifier">ON_GCODE_EXECUTE</span><span class="hl-brackets">)</span><span class="hl-code">;       </span><span class="hl-comment">// Tell the kernel to call us whenever a gcode is executed ( not received )</span><span class="hl-code">
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">on_gcode_execute</span><span class="hl-brackets">(</span><span class="hl-types">void</span><span class="hl-code">* </span><span class="hl-identifier">argument</span><span class="hl-brackets">){</span><span class="hl-code">                </span><span class="hl-comment">// Callback function</span><span class="hl-code">
+            </span><span class="hl-identifier">Gcode</span><span class="hl-code">* </span><span class="hl-identifier">gcode</span><span class="hl-code"> = </span><span class="hl-reserved">static_cast</span><span class="hl-code">&lt;</span><span class="hl-identifier">Gcode</span><span class="hl-code">*&gt;</span><span class="hl-brackets">(</span><span class="hl-identifier">argument</span><span class="hl-brackets">)</span><span class="hl-code">;     </span><span class="hl-comment">// Casting of the argument ( a Gcode object )</span><span class="hl-code">
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+</span><span class="hl-brackets">}</span><span class="hl-code">;</span>
+</pre></div>
+</div>
+<p>So now, whenever a module calls the on_gcode_execute event, this callback function will be called. In this case, the Stepper module calls this upon deleting a move it has just finished stepping.<br />
+Because of the way C++ works, arguments to events here must be passed as void pointers and then manually cast in the callback function. You can see how that's done : here we cast a Gcode object.</p>
+<p>You can find more information about the different events in <a href="listofevents.html">ListOfEvents</a>.</p>
+<h2 id="toc7"><span>Doing something usefull</span></h2>
+<p>We have to modify the class a bit to add a PwmOut to it. Then we can do some usefull stuff :&nbsp;</p>
+<div class="code">
+<div class="hl-main">
+<pre>
+<span class="hl-types">class</span><span class="hl-code"> </span><span class="hl-identifier">Laser</span><span class="hl-code"> : </span><span class="hl-reserved">public</span><span class="hl-code"> </span><span class="hl-identifier">Module</span><span class="hl-brackets">{</span><span class="hl-code">
+    </span><span class="hl-reserved">public</span><span class="hl-code">:
+        </span><span class="hl-identifier">Laser</span><span class="hl-brackets">(</span><span class="hl-identifier">PinName</span><span class="hl-code"> </span><span class="hl-identifier">pin</span><span class="hl-brackets">)</span><span class="hl-code"> : </span><span class="hl-identifier">laser_pin</span><span class="hl-brackets">(</span><span class="hl-identifier">pin</span><span class="hl-brackets">){</span><span class="hl-code">
+            </span><span class="hl-reserved">this</span><span class="hl-code">-&gt;</span><span class="hl-identifier">laser_pin</span><span class="hl-code">.</span><span class="hl-identifier">period_us</span><span class="hl-brackets">(</span><span class="hl-number">10</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">on_module_loaded</span><span class="hl-brackets">()</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">this</span><span class="hl-code">-&gt;</span><span class="hl-identifier">register_for_event</span><span class="hl-brackets">(</span><span class="hl-identifier">ON_GCODE_EXECUTE</span><span class="hl-brackets">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">this</span><span class="hl-code">-&gt;</span><span class="hl-identifier">register_for_event</span><span class="hl-brackets">(</span><span class="hl-identifier">ON_SPEED_CHANGE</span><span class="hl-brackets">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">on_gcode_execute</span><span class="hl-brackets">(</span><span class="hl-types">void</span><span class="hl-code">* </span><span class="hl-identifier">argument</span><span class="hl-brackets">){</span><span class="hl-code">
+            </span><span class="hl-identifier">Gcode</span><span class="hl-code">* </span><span class="hl-identifier">gcode</span><span class="hl-code"> = </span><span class="hl-reserved">static_cast</span><span class="hl-code">&lt;</span><span class="hl-identifier">Gcode</span><span class="hl-code">*&gt;</span><span class="hl-brackets">(</span><span class="hl-identifier">argument</span><span class="hl-brackets">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">gcode</span><span class="hl-code">-&gt;</span><span class="hl-identifier">has_letter</span><span class="hl-brackets">(</span><span class="hl-code">'</span><span class="hl-identifier">G</span><span class="hl-code">' </span><span class="hl-brackets">)){</span><span class="hl-code">
+                </span><span class="hl-types">int</span><span class="hl-code"> </span><span class="hl-identifier">code</span><span class="hl-code"> = </span><span class="hl-identifier">gcode</span><span class="hl-code">-&gt;</span><span class="hl-identifier">get_value</span><span class="hl-brackets">(</span><span class="hl-code">'</span><span class="hl-identifier">G</span><span class="hl-code">'</span><span class="hl-brackets">)</span><span class="hl-code">;
+                </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">code</span><span class="hl-code"> == </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-brackets">){</span><span class="hl-code">                  </span><span class="hl-comment">// G0</span><span class="hl-code">
+                    </span><span class="hl-reserved">this</span><span class="hl-code">-&gt;</span><span class="hl-identifier">laser_pin</span><span class="hl-code"> = </span><span class="hl-number">0</span><span class="hl-code">;
+                    </span><span class="hl-reserved">this</span><span class="hl-code">-&gt;</span><span class="hl-identifier">laser_on</span><span class="hl-code"> =  </span><span class="hl-reserved">false</span><span class="hl-code">;
+                </span><span class="hl-brackets">}</span><span class="hl-reserved">else</span><span class="hl-code"> </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-identifier">code</span><span class="hl-code"> &gt; </span><span class="hl-number">0</span><span class="hl-code"> &amp;&amp; </span><span class="hl-identifier">code</span><span class="hl-code"> &lt; </span><span class="hl-number">4</span><span class="hl-code"> </span><span class="hl-brackets">){</span><span class="hl-code"> </span><span class="hl-comment">// G1, G2, G3</span><span class="hl-code">
+                    </span><span class="hl-reserved">this</span><span class="hl-code">-&gt;</span><span class="hl-identifier">laser_on</span><span class="hl-code"> =  </span><span class="hl-reserved">true</span><span class="hl-code">;
+                </span><span class="hl-brackets">}</span><span class="hl-code">
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-types">void</span><span class="hl-code"> </span><span class="hl-identifier">on_speed_change</span><span class="hl-brackets">(</span><span class="hl-types">void</span><span class="hl-code">* </span><span class="hl-identifier">argument</span><span class="hl-brackets">){</span><span class="hl-code">
+            </span><span class="hl-identifier">Stepper</span><span class="hl-code">* </span><span class="hl-identifier">stepper</span><span class="hl-code"> = </span><span class="hl-reserved">static_cast</span><span class="hl-code">&lt;</span><span class="hl-identifier">Stepper</span><span class="hl-code">*&gt;</span><span class="hl-brackets">(</span><span class="hl-identifier">argument</span><span class="hl-brackets">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">if</span><span class="hl-brackets">(</span><span class="hl-code"> </span><span class="hl-reserved">this</span><span class="hl-code">-&gt;</span><span class="hl-identifier">laser_on</span><span class="hl-code"> </span><span class="hl-brackets">){</span><span class="hl-code"> 
+                </span><span class="hl-reserved">this</span><span class="hl-code">-&gt;</span><span class="hl-identifier">laser_pin</span><span class="hl-code"> = </span><span class="hl-types">double</span><span class="hl-brackets">(</span><span class="hl-identifier">stepper</span><span class="hl-code">-&gt;</span><span class="hl-identifier">trapezoid_adjusted_rate</span><span class="hl-brackets">)</span><span class="hl-code">/</span><span class="hl-types">double</span><span class="hl-brackets">(</span><span class="hl-identifier">stepper</span><span class="hl-code">-&gt;</span><span class="hl-identifier">current_block</span><span class="hl-code">-&gt;</span><span class="hl-identifier">nominal_rate</span><span class="hl-brackets">)</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">PwmOut</span><span class="hl-code"> </span><span class="hl-identifier">laser_pin</span><span class="hl-code">;
+        </span><span class="hl-types">bool</span><span class="hl-code">   </span><span class="hl-identifier">laser_on</span><span class="hl-code">;
+ 
+</span><span class="hl-brackets">}</span><span class="hl-code">;</span>
+</pre></div>
+</div>
+<p>And also change a bit the way we instantiate the module :</p>
+<div class="code">
+<div class="hl-main">
+<pre>
+<span class="hl-identifier">Laser</span><span class="hl-code">  </span><span class="hl-identifier">laser</span><span class="hl-code">  = </span><span class="hl-identifier">Laser</span><span class="hl-brackets">(</span><span class="hl-identifier">p21</span><span class="hl-brackets">)</span><span class="hl-code">;</span>
+</pre></div>
+</div>
+<p>That's it, now the Laser pin will be LOW during G0 moves, and HIGH during G1 G2 and G3 moves.<br />
+But that's not enough. Because we use acceleration, the speed is not constant. And thus if the power of the laser stays constant, that power will be too much when accelerating and decelerating.<br />
+So we need to have a laser power that is proportional to the instant speed of the robot.<br />
+That's the kind of thing the on_speed_change event is for.</p>
+<h2 id="toc8"><span>Conclusion</span></h2>
+<p>As you can see here, we have added functionality to Smoothie without having to modify the core, which is the whole point of the modular design.</p>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 11, last edited: <span class="odate time_1414345446 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">26 Oct 2014 17:44</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="doc_start.html" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="legal_terms-of-service.html" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="legal_privacy-policy.html" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="index-4.html">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="index-5.html">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="../images/p-edl3gsnujjzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/moduleexample by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:54:02 GMT -->
+</html>

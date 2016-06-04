@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.embeddedartists.com"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Embedded Artists AB</title>
+ <link>http://www.embeddedartists.com</link>
+ <description>Latest News from Embedded Artists AB</description>
+ <language>en</language>
+<item>
+ <title>Site of the Day at EEWeb</title>
+ <link>http://www.embeddedartists.com/node/408</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Embedded Artists website has been listed as &lt;a href=&quot;http://www.eeweb.com/websites/embedded-artists&quot;&gt;Engineering Site of the Day&lt;/a&gt; at EEWeb.com.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.eeweb.com/websites/embedded-artists&quot; target=&quot;new&quot;&gt;http://www.eeweb.com/websites/embedded-artists&lt;/a&gt;</description>
+ <pubDate>Tue, 01 Mar 2016 11:15:46 +0000</pubDate>
+ <guid isPermaLink="false">408 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>More iMX6 based COM boards are released</title>
+ <link>http://www.embeddedartists.com/node/407</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Embedded Artists is releasing more iMX6 based COM boards and related Developer&#039;s Kits&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 11 Feb 2016 12:20:39 +0000</pubDate>
+ <guid isPermaLink="false">407 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Product: LPC1769 LPCXpresso with CMSIS-DAP</title>
+ <link>http://www.embeddedartists.com/node/401</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;A new version of the popular LPC1769 LPCXpresso board has been released. Now with CMSIS-DAP debug interface.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/lpcxpresso/lpc1769_cmsis_xpr.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/lpcxpresso/lpc1769_cmsis_xpr.php&lt;/a&gt;</description>
+ <pubDate>Thu, 01 Oct 2015 10:45:06 +0000</pubDate>
+ <guid isPermaLink="false">401 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New product: iMX6 SoloX COM Board</title>
+ <link>http://www.embeddedartists.com/node/400</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Embedded Artists &lt;a href=&quot;/products/com/imx6solox.php&quot;&gt;i.MX6 SoloX COM Board&lt;/a&gt; has been released&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/com/imx6solox.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/com/imx6solox.php&lt;/a&gt;</description>
+ <pubDate>Mon, 28 Sep 2015 10:48:40 +0000</pubDate>
+ <guid isPermaLink="false">400 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Product: i.MX6 SoloX Developer&#039;s Kit</title>
+ <link>http://www.embeddedartists.com/node/399</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Embedded Artists &lt;a href=&quot;/products/kits/imx6solox_kit.php&quot;&gt;i.MX6 SoloX Developer&#039;s Kit&lt;/a&gt; has been released&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/kits/imx6solox_kit.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/kits/imx6solox_kit.php&lt;/a&gt;</description>
+ <pubDate>Mon, 28 Sep 2015 08:51:08 +0000</pubDate>
+ <guid isPermaLink="false">399 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Products: Cellular Shield</title>
+ <link>http://www.embeddedartists.com/node/393</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;A 2.5G/GSM Cellular Shield has been released.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/acc/cell_2g_shield.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/acc/cell_2g_shield.php&lt;/a&gt;</description>
+ <pubDate>Wed, 26 Aug 2015 10:52:28 +0000</pubDate>
+ <guid isPermaLink="false">393 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Products: Intelligent Display Modules</title>
+ <link>http://www.embeddedartists.com/node/380</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Embedded Artists is releasing a number of Intelligent Display Modules&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/displaymodules&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/displaymodules&lt;/a&gt;</description>
+ <pubDate>Wed, 04 Mar 2015 07:53:10 +0000</pubDate>
+ <guid isPermaLink="false">380 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>ISO 9001 and ISO 14001</title>
+ <link>http://www.embeddedartists.com/node/376</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Embedded Artists is since December 2, 2014 certified according to the Quality Managment standard ISO 9001:2008 and the Environmental Management standard ISO 14001:2004.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 12 Dec 2014 06:44:23 +0000</pubDate>
+ <guid isPermaLink="false">376 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Product: LPC54102 LPCXpresso Board</title>
+ <link>http://www.embeddedartists.com/node/372</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The LPC54102 LPCXpresso Board has been released.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/lpcxpresso/lpc54102_xpr.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/lpcxpresso/lpc54102_xpr.php&lt;/a&gt;</description>
+ <pubDate>Fri, 07 Nov 2014 08:33:35 +0000</pubDate>
+ <guid isPermaLink="false">372 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>LPC4088 Experiment Base Board in ARM&#039;s University Program</title>
+ <link>http://www.embeddedartists.com/node/370</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The &lt;a href=&quot;/products/boards/lpc4088_exp_bb.php&quot;&gt;LPC4088 Experiment Base Board&lt;/a&gt; has been selected as one of the toolkits to be used in ARM&#039;s University Program.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.arm.com/about/newsroom/arm-launches-embedded-systems-education-kit-to-make-students-work-ready.php?sf33153501=1&quot; target=&quot;new&quot;&gt;http://www.arm.com/about/newsroom/arm-launches-embedded-systems-education-kit-to-make-students-work-ready.php?sf33153501=1&lt;/a&gt;</description>
+ <pubDate>Wed, 05 Nov 2014 07:54:56 +0000</pubDate>
+ <guid isPermaLink="false">370 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Product: Cellular and Positioning Shield</title>
+ <link>http://www.embeddedartists.com/node/369</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The Cellular and Positioning Shield has been released.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/acc/cell_pos_shield.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/acc/cell_pos_shield.php&lt;/a&gt;</description>
+ <pubDate>Fri, 17 Oct 2014 09:16:49 +0000</pubDate>
+ <guid isPermaLink="false">369 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Products: Display Expansion Kits</title>
+ <link>http://www.embeddedartists.com/node/368</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Two Display Expansion Kits, 4.3 inch and 5 inch, for the LPC4088 Experiment Base Board have been released.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/displays/disp_exp_50.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/displays/disp_exp_50.php&lt;/a&gt;</description>
+ <pubDate>Wed, 15 Oct 2014 10:27:48 +0000</pubDate>
+ <guid isPermaLink="false">368 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Product: LPC4088 Experiment Base Board</title>
+ <link>http://www.embeddedartists.com/node/367</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The LPC4088 Experiment Base Board has been released.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/boards/lpc4088_exp_bb.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/boards/lpc4088_exp_bb.php&lt;/a&gt;</description>
+ <pubDate>Tue, 14 Oct 2014 05:59:58 +0000</pubDate>
+ <guid isPermaLink="false">367 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Product: LPC824 LPCXpresso Board</title>
+ <link>http://www.embeddedartists.com/node/364</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The LPC824 LPCXpresso Board has been released.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/lpcxpresso/lpc824_xpr.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/lpcxpresso/lpc824_xpr.php&lt;/a&gt;</description>
+ <pubDate>Thu, 02 Oct 2014 12:46:15 +0000</pubDate>
+ <guid isPermaLink="false">364 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Product: LPC11U37H LPCXpresso Board</title>
+ <link>http://www.embeddedartists.com/node/357</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The LPC11U37H LPCXpresso Board has been released.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/lpcxpresso/lpc11U37H_xpr.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/lpcxpresso/lpc11U37H_xpr.php&lt;/a&gt;</description>
+ <pubDate>Mon, 22 Sep 2014 11:34:41 +0000</pubDate>
+ <guid isPermaLink="false">357 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Product: LPC11U24 LPCXpresso Board</title>
+ <link>http://www.embeddedartists.com/node/355</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The LPC11U24 LPCXpresso Board has been released&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/lpcxpresso/lpc11U24_xpr.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/lpcxpresso/lpc11U24_xpr.php&lt;/a&gt;</description>
+ <pubDate>Thu, 18 Sep 2014 11:54:49 +0000</pubDate>
+ <guid isPermaLink="false">355 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Distributors</title>
+ <link>http://www.embeddedartists.com/node/352</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;NexPCB and Conrad Electronics starts to distribute Embedded Artists products.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/shop/distributors.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/shop/distributors.php&lt;/a&gt;</description>
+ <pubDate>Thu, 12 Jun 2014 08:59:43 +0000</pubDate>
+ <guid isPermaLink="false">352 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Generation of LPCXpresso Boards</title>
+ <link>http://www.embeddedartists.com/node/346</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;A new generation of LPCXpresso boards is now available. &lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.lpcware.com/LPCXpressoV2Boards&quot; target=&quot;new&quot;&gt;http://www.lpcware.com/LPCXpressoV2Boards&lt;/a&gt;</description>
+ <pubDate>Thu, 06 Mar 2014 10:37:01 +0000</pubDate>
+ <guid isPermaLink="false">346 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Product: LPC4088 QSB Base Board</title>
+ <link>http://www.embeddedartists.com/node/340</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The LPC4088 QSB Base Board has been released&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/boards/lpc4088_qsb_bb.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/boards/lpc4088_qsb_bb.php&lt;/a&gt;</description>
+ <pubDate>Mon, 09 Dec 2013 12:48:26 +0000</pubDate>
+ <guid isPermaLink="false">340 at http://www.embeddedartists.com</guid>
+</item>
+<item>
+ <title>New Product: LPC812 MAX Experiment Kit</title>
+ <link>http://www.embeddedartists.com/node/338</link>
+ <description>&lt;div class=&quot;field field-name-ea-news-intro field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The LPC812 MAX Experiment Kit has been released&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;http://www.embeddedartists.com/products/lpcxpresso/experiment_max_kit.php&quot; target=&quot;new&quot;&gt;http://www.embeddedartists.com/products/lpcxpresso/experiment_max_kit.php&lt;/a&gt;</description>
+ <pubDate>Wed, 27 Nov 2013 08:30:06 +0000</pubDate>
+ <guid isPermaLink="false">338 at http://www.embeddedartists.com</guid>
+</item>
+</channel>
+</rss>

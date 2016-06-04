@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- Mirrored from smoothieware.org/troubleshooting by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:47:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Troubleshooting - Smoothie Project</title>
+    
+    	<script type="text/javascript" src="login__customdomainscriptf36a.html?site_id=269117"></script>
+
+    
+    <script type="text/javascript" src="../images/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = '../images/v--edac79f846ba';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "smoothieware.org";
+        WIKIREQUEST.info.siteId = 269117;
+        WIKIREQUEST.info.siteUnixName = "chibidibidiwah";
+        WIKIREQUEST.info.categoryId = 1474485;
+        WIKIREQUEST.info.themeId = 256585;
+        WIKIREQUEST.info.requestPageName = "troubleshooting";
+        OZONE.request.timestamp = 1463138538;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "troubleshooting";
+        WIKIREQUEST.info.pageId = 21305698;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script  type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="../images/wikidot.combined.js"></script>
+            <script type="text/javascript" src="../images/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <link href="../images/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+        
+                /* bootstrap */
+            @import url(../images/bootstrap.min.css);
+                
+        /* theme */
+                    @import url(../images/style.css);
+                    @import url(../images/style-2.css);
+            </style>
+    
+            <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        
+        
+    <link rel="shortcut icon" href="../images/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="../images/favicon.gif"/>
+    
+            <link rel="apple-touch-icon" href="../images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png" />
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-26338855-1']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+    </head>
+<body id="html-body">
+<div id="skrollr-body">
+<!---------------------------------------------------------
+  Standard Template Layout
+  Developed by the Wikidot Community
+  Version: 1.00.140723
+---------------------------------------------------------->
+
+<div class="container-wrap-wrap">
+<div class="container-wrap">
+
+<div class="container">
+<header class="header-wrap" role="banner">
+  
+  <nav class="top-bar-wrap navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container top-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="display:none">Home</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-target">
+
+        <ul class="nav navbar-nav">
+        
+
+<ul class="nav navbar-nav">
+<li><img src="../images/icon-firmware-48.png" alt="icon-firmware-48.png" class="image" /><br /></li>
+<li><a href="index.html">Documentation</a><br /></li>
+<li><img src="../images/icon-board-48.png" alt="icon-board-48.png" class="image" /><br /></li>
+<li><a href="smoothieboard.html">SmoothieBoard</a><br /></li>
+<li><img src="../images/icon-blog-48.png" alt="icon-blog-48.png" class="image" /><br /></li>
+<li><a href="blog.html">Blog</a><br /></li>
+<li><img src="../images/icon-gallery-48.png" alt="icon-gallery-48.png" class="image" /><br /></li>
+<li><a href="gallery.html">Gallery</a><br /></li>
+<li><img src="../images/icon-community-48.png" alt="icon-community-48.png" class="image" /><br /></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community</a><br />
+<ul class="dropdown-menu">
+<li><a href="irc.html">IRC : recommended (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</a></li>
+<li><a href="general.html">Forum</a></li>
+<li><a href="smoothieware-support.html">Support/Help Mailing list</a></li>
+<li><a href="smoothie-dev.html">Developper Mailing list</a></li>
+<li><a href="111870450664099533727.html">Google+ Community</a></li>
+<li><a href="index-2.html">Facebook page</a></li>
+</ul>
+</li>
+<li><img src="../images/icon-search-48.png" alt="icon-search-48.png" class="image" /><br /></li>
+<li><a href="search.html">Search</a><br /></li>
+</ul>
+<div style="position:fixed; left: 10pt; bottom: -20pt"><img src="../images/smoothie-icon-small-78.png" alt="smoothie-icon-small-78.png" class="image" /></div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-extra-div-1"><span></span></div>
+  <div class="header-extra-div-2"><span></span></div>
+  <div class="header-extra-div-3"><span></span></div>
+</header>
+</div>
+
+
+
+
+
+
+
+
+
+
+ 
+<main class="content-wrap" role="main">
+  <div class="container content">
+    <div class="row">
+    
+      
+      <div class="main-content-wrap col-md-12">
+        <div class="main-content">
+          <div class="page-title page-header" style="display:none"><span>Troubleshooting</span></div>
+          
+          <div id="page-content">
+
+<div id="toc" class="floatright">
+<div id="toc-action-bar"><a href="javascript:;" onclick="WIKIDOT.page.listeners.foldToc(event)">Fold</a><a style="display: none" href="javascript:;" onclick="WIKIDOT.page.listeners.unfoldToc(event)">Unfold</a></div>
+<div class="title">Table of Contents</div>
+<div id="toc-list">
+<div style="margin-left: 2em;"><a href="#toc0">Smoothieboard does not work at all</a></div>
+<div style="margin-left: 3em;"><a href="#toc1">Smoothieboard is plugged in and the 3.3V LED&nbsp;is not ON</a></div>
+<div style="margin-left: 3em;"><a href="#toc2">The 3.3V LED&nbsp;is ON but LED4 is not ON</a></div>
+<div style="margin-left: 3em;"><a href="#toc3">The 3.3V LED&nbsp;is ON but none of the 1 through 4 LEDS is ON</a></div>
+<div style="margin-left: 3em;"><a href="#toc4">12 or 24V power is plugged in but the VBB&nbsp;LED is not ON</a></div>
+<div style="margin-left: 3em;"><a href="#toc5">All LEDs are on but LED 2 and 3 are solid</a></div>
+<div style="margin-left: 2em;"><a href="#toc6">It smells like something is burning!</a></div>
+<div style="margin-left: 2em;"><a href="#toc7">My stepper motor does not turn correctly</a></div>
+<div style="margin-left: 2em;"><a href="#toc8">My stepper motor does not turn at all (or only a few weak steps) and makes a very high-pitched sound</a></div>
+<div style="margin-left: 2em;"><a href="#toc9">My stepper motor does not turn at all and does not present any resistance/torque when turning it manually</a></div>
+<div style="margin-left: 2em;"><a href="#toc10">My stepper motor turns in the wrong direction</a></div>
+<div style="margin-left: 2em;"><a href="#toc11">My stepper motor loses steps</a></div>
+<div style="margin-left: 2em;"><a href="#toc12">I get disconnected from my host frequently</a></div>
+<div style="margin-left: 2em;"><a href="#toc13">Homing does not work</a></div>
+<div style="margin-left: 3em;"><a href="#toc14">Homing does not stop when hitting the endstops</a></div>
+<div style="margin-left: 2em;"><a href="#toc15">Smoothieboard Mass storage (SD card) is recognized, but not the Serial interface, on Windows</a></div>
+<div style="margin-left: 2em;"><a href="#toc16">How to disable MSD permanently</a></div>
+<div style="margin-left: 2em;"><a href="#toc17">Smoothieboard Mass storage (SD card) won't mount on my host computer</a></div>
+<div style="margin-left: 2em;"><a href="#toc18">Motor won't turn but all lights are correct, motors make no noise at all</a></div>
+</div>
+</div>
+<h2 id="toc0"><span>Smoothieboard does not work at all</span></h2>
+<p>There can be a few different symptoms here. In the middle of the board, there is a series of six LEDs that indicate your Smoothieboard's status.</p>
+<p>These can help us detect what the problem is.</p>
+<h3 id="toc1"><span>Smoothieboard is plugged in and the 3.3V LED&nbsp;is not ON</span></h3>
+<p>This means the microcontroller on your Smoothieboard is not getting any power.</p>
+<p>Smoothieboard gets this power from your USB&nbsp;cable (unless you are using the optional voltage regulator or the 5V input) :&nbsp;check that Smoothieboard is correctly connected to a USB&nbsp;port or otherwise powered.</p>
+<p>If it is, but the 3.3V LED&nbsp;is still not lit up, one other possible reason would be a short on your board.</p>
+<p>Unplug the USB&nbsp;cable, and disconnect everything else from your Smoothieboard. Then plug the USB&nbsp;cable back in and check if it starts working again.</p>
+<p>If so, there is a short in one of the peripherals. Quite often this is due to incorrectly wired Endstops (shorting 3.3V to GND instead of connecting GND to Signal for example).</p>
+<p>If this still does not solve the problem, examine the board for problems with your soldering of components/connectors and any other anomalies you can detect.</p>
+<p>If you can still not find anything, <a href="getting-help-community.html">contact the community</a>.</p>
+<h3 id="toc2"><span>The 3.3V LED&nbsp;is ON but LED4 is not ON</span></h3>
+<p>LED4 indicates SD&nbsp;card status. If it is not lit up, it means there is a problem with your SD card.</p>
+<p>First thing to try is taking the microSD card out of your Smoothieboard and testing it on your computer with a SD card reader.</p>
+<p>If it works there, copy the files that are on it elsewhere, format it (as FAT32), copy the files back on it and try again.</p>
+<p>If it still does not work in the Smoothieboard after this, take another microSD card, format it (as FAT32), copy the files to it, then try again.</p>
+<p>If it still fails, then as you tried two SD cards they are probably both fine. The problem could be with the files on it.</p>
+<p>Format a SD&nbsp;card as FAT32, and on that fresh card, copy two files :&nbsp;</p>
+<ul>
+<li><strong>firmware.bin</strong> , with this exact name, which you can find <a href="getting-smoothie.html">here</a></li>
+<li><strong>config</strong> , with this exact name, which you can find <a href="configuring-smoothie.html">here</a></li>
+</ul>
+<p>Then insert the card into your Smoothieboard and try again.</p>
+<h3 id="toc3"><span>The 3.3V LED&nbsp;is ON but none of the 1 through 4 LEDS is ON</span></h3>
+<p>Or LED1 and LED4 are ON, but LED2 and LED3 are not blinking.</p>
+<p>This could be caused by a firmware bug, or by a problem with your configuration file.</p>
+<p>Try with a <a href="configuring-smoothie.html">fresh configuration file</a>, and if it does not solve the problem <a href="getting-help-community.html">contact the community</a>.</p>
+<p>If you soldered the smoothieboard then check either the 12&#160;MHz oscillator or the SD card/SD card slot.<br />
+*This could be a bad solder joint with the 12&#160;MHz oscillator (crystal), a bad SD card slot, a bad SD card, and/or a bad config file.</p>
+<h3 id="toc4"><span>12 or 24V power is plugged in but the VBB&nbsp;LED is not ON</span></h3>
+<p>Unplug power immediately !</p>
+<p>Check that your power is not in reverse polarity.</p>
+<p>Even if you think you have it correct (read the instructions carefully, the markings on the board can be a bit confusing), try reversing it just in case.</p>
+<h3 id="toc5"><span>All LEDs are on but LED 2 and 3 are solid</span></h3>
+<p>Firmware didn't get flashed, you need to flash it and also make sure you uploaded a valid config.</p>
+<h2 id="toc6"><span>It smells like something is burning!</span></h2>
+<p>Whaaaaa! Unplug everything!&nbsp;Get a fire extinguisher!</p>
+<p>Now, try to remember exactly what you were doing with your board, and contact whomever sold it to you.</p>
+<h2 id="toc7"><span>My stepper motor does not turn correctly</span></h2>
+<p>If it always turns in the same direction, and/or turns only weakly, and/or makes a strange sound, one very common cause of that is that only 3&nbsp;of the wires of the motor are connected to the stepper motor driver.</p>
+<p>Check your connector and your cables.</p>
+<h2 id="toc8"><span>My stepper motor does not turn at all (or only a few weak steps) and makes a very high-pitched sound</span></h2>
+<p>This can happen with Z axis (or any leadscrew driven stepper motor) due to the high steps per millimeter number. You are probably trying to move it too fast. Try asking it to move at a much lower speed.</p>
+<p>If you are using external stepper motor drivers (driven by ENn, Stn and DIRn pins) check polarity, voltage and timings of signals to your driver. Also consider increasing <tt>microseconds_per_step_pulse</tt> slightly if the default 1us pulse width is too narrow for your driver or cable lengths.</p>
+<h2 id="toc9"><span>My stepper motor does not turn at all and does not present any resistance/torque when turning it manually</span></h2>
+<p>This means the stepper motor driver is maybe not able to power the stepper motor.</p>
+<p>Try wiring a different motor to that driver and try again. If the new motor works on this driver, then the motor is the problem. Otherwise the driver is probably the problem.</p>
+<p>If you changed any of the stepper motor driver pins in your configuration, try testing again with a <a href="configuring-smoothie.html">fresh configuration file</a>.</p>
+<h2 id="toc10"><span>My stepper motor turns in the wrong direction</span></h2>
+<p>There are two solutions to this :</p>
+<p>You can reverse the order of the wires on the stepper motor connector.</p>
+<p>Or you can edit your configuration file. For example, if you have this problem on the <strong>beta</strong> stepper motor driver, you need to invert the direction pin for that driver :&nbsp;</p>
+<div class="code">
+<pre>
+<code>beta_dir_pin                                 0.11</code>
+</pre></div>
+<p>Becomes :</p>
+<div class="code">
+<pre>
+<code>beta_dir_pin                                 0.11!</code>
+</pre></div>
+<p>Save, reset and start again.</p>
+<h2 id="toc11"><span>My stepper motor loses steps</span></h2>
+<p>Losing steps means not moving the exact number you asked of your motor. This will result in your machine loosing its position and working where it shouldn't, often in the form of small offsets.</p>
+<p>There can be several causes to this, here are some things to try :&nbsp;</p>
+<ul>
+<li>Make sure you have correctly set the current value for that stepper motor. Too high as well as too low values can cause this problem</li>
+<li>Make sure there is no mechanical problem in your machine, like misaligned axes, things hitting other things, too much tension in belts, things like that</li>
+<li>Is your stepper motor driver too hot to touch ? Try aiming a big fan at your board (ideally the bottom of it), the stepper motor drivers might be overheating and shutting down for safety reasons. <strong>Never</strong> put heatsinks on top of your drivers, they are designed to be cooled from the bottom.</li>
+</ul>
+<h2 id="toc12"><span>I get disconnected from my host frequently</span></h2>
+<p>This can be caused by several things :</p>
+<ul>
+<li>Make sure you use a short good quality USB cable with ferrite beads on it.</li>
+<li>Make sure the Smoothie PSU is plugged into the same outlet as the PC you are connected to, otherwise you can get ground loops.</li>
+</ul>
+<p><iframe width="560" height="315" src="3rwenyptep4.html" frameborder="0" allowfullscreen=""></iframe></p>
+<h2 id="toc13"><span>Homing does not work</span></h2>
+<p>You ask Smoothieboard to home an axis, and instead of going to the endstop and stopping there, it either does not move at all, or moves a little bit and stops.</p>
+<p>What is probably happening here is either Smoothie thinks your endstops are always triggered (even when they are not), or it things they are triggered when they are not and not triggered when they are (inversion).</p>
+<p>If it thinks they are always triggered, check your wiring.</p>
+<p>If they are inverted, there is either something wrong with your wiring, or your configuration. See the <a href="guide-endstops.html">Endstops</a> section for more information on how to fix this</p>
+<h3 id="toc14"><span>Homing does not stop when hitting the endstops</span></h3>
+<p>The endstops are always read as not triggered. Check your wiring and see the <a href="guide-endstops.html">Endstops</a> section for more information on how to fix this. Also sometimes having the sdcard mounted on the host (especially Macs) will cause this, unmount the sdcard and see if it still happens.</p>
+<h2 id="toc15"><span>Smoothieboard Mass storage (SD card) is recognized, but not the Serial interface, on Windows</span></h2>
+<p>Please take a look at <a href="windows-drivers.html">windows-drivers</a><br />
+and see next section if that does not work.</p>
+<h2 id="toc16"><span>How to disable MSD permanently</span></h2>
+<p>Install this version or firmware <a href="../images/firmware-disablemsd.bin?raw=true">https://github.com/Smoothieware/Smoothieware/blob/edge/FirmwareBin/firmware-disablemsd.bin?raw=true</a><br />
+(Remember to rename it firmware.bin)</p>
+<p>and add this to your config file</p>
+<div class="code">
+<pre>
+<code>msd_disable  true  # disable msd</code>
+</pre></div>
+<p>The mass storage device will no longer be available, but serial should work.</p>
+<h2 id="toc17"><span>Smoothieboard Mass storage (SD card) won't mount on my host computer</span></h2>
+<p>Even if the smoothieboard seems to work OK, this is almost certainly a problem with the SD card itself. Try using a different SD card. This problem has been reported with some SD cards that shipped with the original kickstarter boards. See <a href="index-77.html#!msg/smoothieware-support/g09v8pZch0s/WKpNBMugIJMJ">this thread</a> for more discussion of the problem. See the <a href="sd-card.html">SD Card</a> page for information about setting up a new SD card.</p>
+<h2 id="toc18"><span>Motor won't turn but all lights are correct, motors make no noise at all</span></h2>
+<p>Bad USB cable or insufficient power to 5v(Required to give motors enable signal) - Don't underestimate the power of a bad USB cable to waste hours or days of your life.</p>
+</div>
+          
+          <div style="height:150px"></div>
+          <div class="page-info-break"></div>
+          <div class="page-options-container"><div id="page-info">page revision: 40, last edited: <span class="odate time_1456388876 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">25 Feb 2016 08:27</span></div>
+            <div id="page-options-bottom"  class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+</div>
+          <div id="action-area" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+<footer class="footer-wrap" role="contentinfo">
+  <div class="container footer">
+    <div class="options" style="display: block; visibility: visible;">
+    <a href="doc_start.html" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="legal_terms-of-service.html" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="legal_privacy-policy.html" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="index-4.html">Wikidot.com</a> 
+    <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license" href="index-5.html">Creative Commons Attribution-ShareAlike 3.0 License</a></div>
+  </div>
+  <div class="extrac-div-1"><span></span></div>
+  <div class="extrac-div-2"><span></span></div>
+  <div class="extrac-div-3"><span></span></div>
+</footer>
+ 
+
+</div> <!-- container-wrap -->
+ 
+<div class="extra-div-1"><span></span></div>
+<div class="extra-div-2"><span></span></div>
+<div class="extra-div-3"><span></span></div>
+<div class="extra-div-4"><span></span></div>
+<div class="extra-div-5"><span></span></div>
+<div class="extra-div-6"><span></span></div>
+</div> <!-- container-wrap-wrap -->
+</div>
+<div id="dummy-ondomready-block" style="display: none;" ></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="../images/p-edl3gsnujjzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    <div id="edit-button-hovertip">
+        Click here to edit contents of this page.    </div>
+</div>
+<div id="page-options-bottom-2-tips"  style="display: none;">
+    <div id="edit-sections-button-hovertip">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an &quot;edit&quot; link when available.    </div>
+    <div id="edit-append-button-hovertip">
+        Append content without editing the whole page source.    </div>
+    <div id="history-button-hovertip">
+        Check out how this page has evolved in the past.    </div>
+    <div id="discuss-button-hovertip">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div>
+    <div id="files-button-hovertip">
+        View and manage file attachments for this page.    </div>
+    <div id="site-tools-button-hovertip">
+        A few useful tools to manage this Site.    </div>
+    <div id="backlinks-button-hovertip">
+        See pages that link to and include this page.    </div>
+    <div id="rename-move-button-hovertip">
+        Change the name (also URL address, possibly the category) of the page.    </div>
+    <div id="view-source-button-hovertip">
+        View wiki source for this page without editing.    </div>
+    <div id="parent-page-button-hovertip">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div>
+            <div id="abuse-report-button-hovertip">
+            Notify administrators if there is objectionable content in this page.        </div>
+        <div id="bug-report-button-hovertip">
+            Something does not work as expected? Find out what you can do.        </div>
+        <div id="wikidot-help-button-hovertip">
+            General Wikidot.com documentation and help section.        </div>
+        <div id="wikidot-tos-button-hovertip">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div>
+        <div id="wikidot-privacy-button-hovertip">
+            Wikidot.com Privacy Policy.          
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from smoothieware.org/troubleshooting by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 May 2016 11:47:15 GMT -->
+</html>
