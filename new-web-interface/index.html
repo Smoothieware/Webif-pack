@@ -1,0 +1,889 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Smoothie Web</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuelux/3.16.3/js/fuelux.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.20/fabric.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="functions.js"></script>
+  <link href="bootstrap-milestones.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fuelux/3.16.3/css/fuelux.css" rel="stylesheet">
+	<link href="smoothie.css" rel="stylesheet"/>
+
+</head>
+
+<body class="bootstrap fuelux">
+
+  <div class="container">
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Smoothie web interface</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <main role="main">
+
+			<div class="row">
+      <div class="col-md-4">
+
+      <div class="panel panel-default">
+        <div class="panel-heading"> <span class="glyphicon glyphicon-move" aria-hidden="true"></span> Axis control</div>
+        <div class="panel-body">
+
+          <svg width="320" height="260" xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+            <defs>
+
+              <style type="text/css">
+                <![CDATA[ text {
+                  font-family: helvetica;
+                  stroke: black;
+                  stroke-width: 1;
+                  #fill: black;
+                }
+                text.home {
+                  font-family: helvetica;
+                  stroke: black;
+                  stroke-width: 1;
+                  #fill: black;
+                  font-weight: 900;
+                  font-size: 16;
+                  pointer-events: none;
+                }
+                text.scl {
+                  font-family: helvetica;
+                  stroke: white;
+                  stroke-width: 1;
+                  fill: white;
+                  pointer-events: none;
+                }
+                circle.scl {
+                  fill: black;
+                  stroke: red;
+                  stroke-width: 3;
+                  #filter: url(#f1);
+                  pointer-events: none;
+                }
+                path.home {
+                  stroke: black;
+                }
+                path.std {
+                  stroke: black;
+                  stroke-width: 1;
+                  #filter: url(#f1);
+                }
+                rect.std {
+                  stroke: black;
+                  stroke-width: 1;
+                  #filter: url(#f1);
+                }
+                ]]>
+
+              </style>
+
+              <filter id="f1" x="-1" y="-1" width="300%" height="300%">
+                <feOffset result="offOut" in="SourceAlpha" dx="3" dy="3" />
+                <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4" />
+                <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+              </filter>
+
+              <symbol id="HomeIcon" viewBox="0 0 20 18" pointer-events="none">
+                <desc>HomeIcon - house</desc>
+                <path class="home" d="M3,18 v-8 l7,-6 l7,6 v8 h-5 v-6 h-4 v6 z" fill="black" />
+                <path class="home" d="M0,10 l10-8.5 l10,8.5" stroke-width="1.5" fill="none" />
+                <path class="home" d="M15,3 v2.8 l1,.8 v-3.6 z" />
+              </symbol>
+
+              <symbol id="JogRose" viewBox="20 -10 260 260">
+                <g id="HomeAll" onmouseup="runCommandSilent('G28')">
+                  <path class="std" d="M10 182.5 h-10 v57.5 h57.5 v-10 a 125,125 0 0,1 -47.5 -47.5 Z" fill="#f0f0f0">
+                    <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                  </path>
+                  <use x="3" y="217" width="20" height="18" xlink:href="#HomeIcon" />
+                </g>
+
+                <g id="HomeX" onmouseup="runCommandSilent('G28 X0')">
+                  <path class="std" d="M10 57.50 h-10 v-57.5 h57.5 v10 a 125,125 0 0,0 -47.5 47.5 Z" fill="Khaki">
+                    <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                  </path>
+                  <use x="3" y="5" width="20" height="18" xlink:href="#HomeIcon" />
+                  <text x="25" y="20" class="home"> X </text>
+                </g>
+                <g id="HomeY" onmouseup="runCommandSilent('G28 Y0')">
+                  <path class="std" d="M230 57.50 h10 v-57.5 h-57.5 v10 a 125,125 0 0,1 47.5 47.5 z" fill="SteelBlue">
+                    <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                  </path>
+                  <use x="217" y="5" width="20" height="18" xlink:href="#HomeIcon" />
+                  <text x="202" y="20" class="home"> Y </text>
+                </g>
+
+                <g id="HomeZ" onmouseup="runCommandSilent('G28 Z0')">
+                  <path class="std" d="M230 182.5 h10 v57.5 h-57.5 v-10 a 125,125 0 0,0 47.5 -47.5 z" fill="DarkSeaGreen">
+                    <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                  </path>
+                  <use x="217" y="217" width="20" height="18" xlink:href="#HomeIcon" />
+                  <text x="202" y="232" class="home"> Z </text>
+                </g>
+
+                <g id="Jog100" fill="#c0c0c0" class="std">
+                  <g id="Y+100" onmouseup="jogXYClick('Y100')" transform="translate(120 120)">
+                    <path class="std" d="M-60 -67.07 L-75.93,-83 A112.5,112.5 0 0,1 75,-83 L60,-67.07 A90,90 0 0,0 -60.00,-67.07 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                  <g id="X+100" onmouseup="jogXYClick('X100')" transform="translate(120 120)">
+                    <path class="std" d="M67.07,-60 L83,-75.93 A112.5,112.5 0 0,1 83,75.93 L67.07,60 A90,90 0 0,0 67.07,-60">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                  <g id="Y-100" onmouseup="jogXYClick('Y-100')" transform="translate(120 120)">
+                    <path class="std" d="M-60,67.07 L-75.93,83 A112.5,112.5 0 0,0 75,83 L60,67.07 A90,90 0 0,1 -60.00,67.07 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                  <g id="X-100" onmouseup="jogXYClick('X-100')" transform="translate(120 120)">
+                    <path class="std" d="M-67.07,-60 L-83,-75.93 A112.5,112.5 0 0,0 -83,75.93 L-67.07,60 A90,90 0 0,1 -67.07,-60 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                </g>
+                <g id="Jog10" fill="#d0d0d0">
+
+                  <g id="Y+10" onmouseup="jogXYClick('Y10')" transform="translate(120 120)">
+                    <path class="std" d="M-44.06 -51.13 L-60,-67.07 A90,90 0 0,1 60,-67 L44.06,-51.13 A67.5,67.5 0 0,0 -44.06,-51.13 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                  <g id="X+10" onmouseup="jogXYClick('X10')" transform="translate(120 120)">
+                    <path class="std" d="M51.13 44.06 L67.07,60 A90,90 0 0,0 67.07,-60 L51.13,-44.06 A67.5,67.5 0 0,1 51.13,44.06 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                  <g id="Y-10" onmouseup="jogXYClick('Y-10')" transform="translate(120 120)">
+                    <path class="std" d="M-44.06 51.13 L-60,67.07 A90,90 0 0,0 60,67 L44.06,51.13 A67.5,67.5 0 0,1 -44.06,51.13 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                  <g id="X-10" onmouseup="jogXYClick('X-10')" transform="translate(120 120)">
+                    <path class="std" d="M-51.13 44.06 L-67.07,60 A90,90 0 0,1 -67.07,-60 L-51.13,-44.06 A67.5,67.5 0 0,0 -51.13,44.06 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                </g>
+
+                <g id="Jog1" fill="#e0e0e0">
+                  <g id="Y+1" onmouseup="jogXYClick('Y1')" transform="translate(120 120)">
+                    <path class="std" d="M-28.09 -35.16 L-44.06,-51.13 A67.5,67.5 0 0,1 44.06,-51.13 L28.09,-35.16 A45,45 0 0,0 -28.09,-35.16 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                  <g id="X+1" onmouseup="jogXYClick('X1')" transform="translate(120 120)">
+                    <path class="std" d="M35.16 -28.09 L51.13,-44.06 A67.5,67.05 0 0,1 51.13,44.06 L35.16,28.09 A45,45 0 0,0 35.16,-28.09 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                  <g id="Y-1" onmouseup="jogXYClick('Y-1')" transform="translate(120 120)">
+                    <path class="std" d="M-28.09 35.16 L-44.06,51.13 A67.5,67.5 0 0,0 44.06,51.13 L28.09,35.16 A45,45 0 0,1 -28.09,35.16 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                  <g id="X-1" onmouseup="jogXYClick('X-1')" transform="translate(120 120)">
+                    <path class="std" d="M-35.16 -28.09 L-51.13,-44.06 A67.5,67.05 0 0,0 -51.13,44.06 L-35.16,28.09 A45,45 0 0,1 -35.16,-28.09 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                </g>
+
+                <g id="Jog0_1" fill="#f0f0f0">
+                  <g id="Y+0.1" onmouseup="jogXYClick('Y0.1')" transform="translate(120 120)">
+                    <path class="std" d="M-28.09 -35.16 A45,45 0 0,1 29.09,-35.16 L0,-7.07 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                  <g id="X+0_1" onmouseup="jogXYClick('X0.1')" transform="translate(120 120)">
+                    <path class="std" d="M35.16 -28.09 A45,45 0 0,1 35.16,28.09 L7.07,0 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                  <g id="Y-0_1" onmouseup="jogXYClick('Y-0.1')" transform="translate(120 120)">
+                    <path class="std" d="M-28.09 35.16 A45,45 0 0,0 29.09,35.16 L0,7.07 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                  <g id="X-0_1" onmouseup="jogXYClick('X-0.1')" transform="translate(120 120)">
+                    <path class="std" d="M-35.16 -28.09 A45,45 0 0,0 -35.16,28.09 L-7.07,0 z">
+                      <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                    </path>
+                  </g>
+                </g>
+
+                <g id="RoseScale">
+                  <g>
+                    <circle class="scl" cx="144" cy="96" r="9.5" />
+                    <circle class="scl" cx="159.5" cy="80.5" r="10.5" />
+                    <circle class="scl" cx="175" cy="65" r="12" />
+                    <circle class="scl" cx="195" cy="45" r="15" />
+                    <text class="scl" x="137" y="99" font-size="10"> 0.1 </text>
+                    <text class="scl" x="155" y="85" font-size="14"> 1 </text>
+                    <text class="scl" x="166" y="70" font-size="15"> 10 </text>
+                    <text class="scl" x="182" y="50" font-size="15"> 100 </text>
+                  </g>
+                </g>
+                <g id="Decoration" pointer-events="none" font-weight="900" font-size="11" fill-opacity=".6">
+                  <path class="std" d="M120,20 l17,17 h-10 v11 h-14 v-11 h-10 z" fill="SteelBlue" />
+                  <!-- y pos arrow -->
+                  <path class="std" d="M120,220 l17,-17 h-10 v-11 h-14 v11 h-10 z" fill="SteelBlue" />
+                  <!-- y neg arrow -->
+                  <path class="std" d="M20,120 l17,17 v-10 h11 v-14 h-11 v-10 z" fill="Khaki" />
+                  <!-- x neg arrow -->
+                  <path class="std" d="M220,120 l-17,-17 v10 h-11 v14 h11 v10 z" fill="Khaki" />
+                  <!-- x pos arrow -->
+                  <text x="113" y="37"> +Y </text>
+                  <text x="113" y="212"> -Y </text>
+                  <text x="27" y="124"> -X </text>
+                  <text x="196" y="124"> +X </text>
+                </g>
+
+              </symbol>
+
+              <symbol id="JogBar" viewBox="20 -10 260 260">
+                <desc>JogBar - Z jogging bar</desc>
+                <g id="+Z" fill="#b0b0b0">
+                  <path class="std" d=" M5,0 h30 a5,5 0 0,1 5,5 v27 h-40 v-27 a5,5 0 0,1 5,-5 z" />
+                  <path class="std" d="M20,2 l17,17 h-10 v11 h-14 v-11 h-10 z" fill="DarkSeaGreen" />
+                  <text x="11" y="18" font-size="12"> +Z </text>
+                </g>
+                <g id="-Z" fill="#b0b0b0">
+                  <path class="std" d=" M0,208 h40 v27 a5,5 0 0,1 -5,5 h-30 a5,5 0 0,1 -5,-5 z" />
+                  <path class="std" d="M20,238 l-17,-17 h10 v-11 h14 v11 h10 z" fill="DarkSeaGreen" />
+                  <text x="13" y="230" font-size="12"> -Z </text>
+                </g>
+                <g id="Z+10" fill="#d0d0d0" onmouseup="jogZClick('Z10')">
+                  <rect class="std" x="0" y="32" width="40" height="30">
+                    <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                  </rect>
+                  <circle class="scl" cx="20" cy="47" r="13" />
+                  <text class="scl" x="9" y="53" font-size="18"> 10 </text>
+                </g>
+                <g id="Z+1" fill="#e0e0e0" onmouseup="jogZClick('Z1')">
+                  <rect class="std" x="0" y="62" width="40" height="26">
+                    <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                  </rect>
+                  <circle class="scl" cx="20" cy="75" r="11" />
+                  <text class="scl" x="15" y="81.5" font-size="18"> 1 </text>
+                </g>
+                <g id="Z+0.1" fill="#f0f0f0" onmouseup="jogZClick('Z0.1')">
+                  <rect class="std" x="0" y="88" width="40" height="24">
+                    <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                  </rect>
+                  <circle class="scl" cx="20" cy="100" r="9.5" />
+                  <text class="scl" x="13" y="103.5" font-size="10"> 0.1 </text>
+                </g>
+                <g id="Z-10" fill="#d0d0d0" onmouseup="jogZClick('Z-10')">
+                  <rect class="std" x="0" y="178" width="40" height="30">
+                    <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                  </rect>
+                </g>
+                <g id="Z-1" fill="#e0e0e0" onmouseup="jogZClick('Z-1')">
+                  <rect class="std" x="0" y="152" width="40" height="26">
+                    <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                  </rect>
+                </g>
+                <g id="Z-0_1" fill="#f0f0f0" onmouseup="jogZClick('Z-0.1')">
+                  <rect class="std" x="0" y="128" width="40" height="24">
+                    <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
+                  </rect>
+                </g>
+                <g id="ZSpace" fill="#000000">
+                  <rect class="std" x="0" y="112" width="40" height="16" />
+                </g>
+              </symbol>
+
+              <symbol id="PrinterCtl">
+                <use x="0" y="0" xlink:href="#JogRose" />
+                <use x="260" y="0" xlink:href="#JogBar" />
+              </symbol>
+
+            </defs>
+
+            <use x="0" y="0" xlink:href="#PrinterCtl" />
+
+          </svg>
+
+					<table class="table table-hover"  style="font-size: 14px;">
+					  <tr>
+							<th> Axis </th>
+							<th> Jog Speed </th>
+						</tr>
+						<tr>
+							<td> <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span> X Y </td>
+							<td>
+							<input type="text" id="xy_velocity" value=3000 style="width:80px" data-toggle="tooltip" data-placement="right" title="This is set to the value of alpha_max_rate in config"/> mm/min
+							</td>
+						</tr>
+						<tr>
+							<td> <span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span> Z </td>
+							<td>
+							<input type="text" id="z_velocity" value=200 style="width:80px" data-toggle="tooltip" data-placement="right" title="This is set to the value of gamma_max_rate in config"> mm/min
+							</td>
+						</tr>
+					</table>
+
+          <div class="row">
+            <div class="col-md-4">
+					     <button type="button" id="motors_off" onclick="motorsOff(event)" class="btn btn-default btn-block"> <span class="glyphicon glyphicon-off" aria-hidden="true"></span> Motors Off</button>
+            </div>
+            <div class="col-md-4">
+					     <button id="motors_off" onclick="jump();" class="btn btn-default btn-block"> <span class="glyphicon glyphicon-off" aria-hidden="true"></span> Jump</button>
+            </div>
+            <div class="col-md-4">
+               <button id="motors_off" onclick="" class="btn btn-default btn-block"> <span class="glyphicon glyphicon-off" aria-hidden="true"></span> Other</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-md-8">
+              <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Status
+            </div>
+            <div class="col-md-4 pull-right">
+              <span id="machine_status"/>
+            </div>
+          </div>
+        </div>
+        <div class="panel-body">
+        <div class="row">
+          <div class="col-md-4"> Axis</div>
+          <div class="col-md-4"> <b> Machine </b> </div>
+          <div class="col-md-4"> <b> Workpiece </b> </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-4"> X</div>
+            <samp class="col-md-4" id="machine_position_X"> </samp>
+            <samp class="col-md-4" id="work_position_X"> </samp>
+          </div>
+          <div class="row">
+            <div class="col-md-4"> Y</div>
+            <samp class="col-md-4" id="machine_position_Y"></samp>
+            <samp class="col-md-4" id="work_position_Y"></samp>
+          </div>
+          <div class="row">
+            <div class="col-md-4"> Z</div>
+            <samp class="col-md-4" id="machine_position_Z"></samp>
+            <samp class="col-md-4" id="work_position_Z"></samp>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading"> <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Commands</div>
+        <div class="panel-body">
+
+          <form action="/command" id="commandForm">
+          <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-console" aria-hidden="true"></span></span>
+            <div class="placard" data-initialize="placard" style="width:100%">
+              <div class="placard-popup"></div>
+              <div class="placard-header"><h5>Type a command</h5></div>
+              <input class="form-control placard-field" type="text" name="commandText" placeholder="Send Command..."/>
+              <div class="placard-footer">
+                <a class="placard-cancel" href="#">Cancel</a>
+                <button class="btn btn-primary btn-xs placard-accept" type="submit" value="Send">Execute</button>
+              </div>
+            </div>
+            </div>
+          </form>
+          <!-- the result of the command will be rendered inside this div -->
+          <ul id="command_result" class="milestones"></ul>
+					<a type="submit" value="Show command log" class="btn btn-default" onclick="$('#command_log_modal').modal();"> <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> Show command log </a>
+          <script>
+            // Attach a submit handler to the form
+            $("#commandForm").submit(function(event) {
+              // Stop form from submitting normally
+              event.preventDefault();
+              // Get some values from elements on the page:
+              var $form = $(this);
+              command = $form.find("input[name='commandText']").val();
+							runCommand(command);
+            });
+          </script>
+        </div>
+      </div>
+
+
+			</div>
+      <div class="col-md-4">
+
+			<div class="panel panel-default" id="temperature_panel">
+        <div class="panel-heading"> <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> Temperature</div>
+        <div class="panel-body" id="temperature_controls">
+        </div>
+      </div>
+
+			<script id="temperature_template" type="text/x-handlebars-template">
+      <div class="panel panel-default" id="{{letter}}_panel">
+      <div class="panel-heading">
+        <div class="row">
+         <div class="col-md-6 text-capitalize">{{name}}</div>
+         <div class="col-md-6"><span id="{{letter}}_temp" class="badge"/> / <span id="{{letter}}_target" class="badge"/> <span id="{{letter}}_power" class="badge"/></div>
+        </div>
+      </div>
+          <div class="panel-body">
+            <div class="input-group">
+
+              <div class="placard" data-initialize="placard" id="myPlacard4" style="width:100%">
+                <div class="placard-popup"></div>
+                <div class="placard-header"><h5>Change temperature</h5></div>
+                <input type="text" id="heat_value_{{letter}}" size=3 style="width:100%" value=0 class="form-control placard-field" data-toggle="tooltip" data-placement="top" title="Set the desired temperature for {{name}} here then click «Set» to commit">
+                <div class="placard-footer">
+                  <a class="placard-cancel" href="#">Cancel</a>
+                  <button class="btn btn-primary btn-xs placard-accept" type="button">Set</button>
+                </div>
+              </div>
+              <span class="input-group-addon" id="basic-addon2"><b>°C</b></span>
+              <div class=" input-group-btn btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Actions <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:heatOff({{config.set_m_code}})">Turn off</a></li>
+                  <li><a href="javascript:heatSet({{config.set_m_code}}, '{{letter}}')">Set to <span id="set_to_{{letter}}"> </span> °C</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="javascript:setTemp('{{../name}}', '+5');">Up 5 °C</a></li>
+                  <li><a href="javascript:setTemp('{{../name}}', '-5');">Down 5 °C</a></li>
+                  <li role="separator" class="divider"></li>
+                  {{#each temps}}
+                    <li><a href="javascript:setTemp('{{../name}}', {{this}});">Set to {{this}} °C</a></li>
+                  {{/each}}
+                </ul>
+              </div>
+
+              <!--
+              <span class="input-group-btn"> <button id="heat_set" onclick="heatSet({{config.set_m_code}}, '{{letter}}')" class="btn btn-default form-control" data-toggle="tooltip" data-placement="top" title="Click here to set the temperature for {{name}}">Set</button> </span>
+              -->
+            </div>
+            <br/>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger progress-bar-striped active" id="{{letter}}_temp_pc">
+                <span class="sr-only"></span>
+              </div>
+              <div class="progress-bar progress-bar-warning" id="{{letter}}_target_pc">
+                <span class="sr-only"></span>
+              </div>
+            </div>
+          </div>
+          <div id="{{letter}}_slider" style="display: none;" class="text-center">
+            <input type="text" value="75" id="{{letter}}_dial" data-linecap='round' data-angleOffset=20 data-angleArc=320 data-step="5">
+          </div>
+          <div class="alert alert-warning alert-dismissible" role="alert" style="display:none;">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Warning!</strong> Reading "inf" means your thermistor is probably disconnected.
+          </div>
+      </div>
+			</script>
+
+
+      <div class="panel panel-default" id="extruder_panel">
+        <div class="panel-heading"> <span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Extruder</div>
+        <div class="panel-body">
+				    <div id="extruder_controls" style="font-size: 14px;">
+				    </div>
+        </div>
+      </div>
+
+			<script id="extruder_template" type="text/x-handlebars-template">
+        <div class="panel panel-default">
+          <div class="panel-heading text-capitalize">
+            {{name}}
+          </div>
+          <div class="panel-body">
+				    <div id="extruder_controls" style="font-size: 14px;">
+              <div class="row">
+                <div class="col-md-4">
+                  <button id="extrude" onclick="extrude(event)" class="btn btn-default form-control btn-block" data-toggle="tooltip" data-placement="top" title="Remove all filament from {{name}}">Empty</button>
+                </div>
+                <div class="col-md-4">
+                  <button id="extrude" onclick="extrude(event)" class="btn btn-default form-control btn-block" data-toggle="tooltip" data-placement="top" title="Extrude filament out of {{name}}">Extrude</button>
+                </div>
+                <div class="col-md-4">
+                  <button id="reverse" onclick="extrude(event)" class="btn btn-default form-control btn-block" data-toggle="tooltip" data-placement="top" title="Retract filament back into {{name}}">Retract</button>
+                </div>
+              </div>
+              <p>
+              <div class="input-group">
+                <span class="input-group-addon">Length</span>
+                <input type="text" class="form-control" placeholder="">
+                <span class="input-group-addon">mm</span>
+              </div>
+              </p>
+              <p>
+              <div class="input-group">
+                <span class="input-group-addon">Speed</span>
+                <input type="text" class="form-control" placeholder="">
+                <span class="input-group-addon">mm/s</span>
+              </div>
+              </p>
+				    </div>
+          </div>
+        </div>
+			</script>
+
+
+									<div class="panel panel-default">
+										<div class="panel-heading"> <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Probing</div>
+										<div class="panel-body">
+										</div>
+									</div>
+
+									<div class="panel panel-default" id="laser_panel">
+										<div class="panel-heading"> <span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Laser</div>
+										<div class="panel-body" id="laser_controls">
+                    <div style="font-size: 14px;" class="row">
+                      <div class="col-md-4">
+                        <button onclick="" class="btn btn-default form-control btn-block" data-toggle="tooltip" data-placement="top" title="Turn {{name}} on using {{switch.input_on_command}}">Test</button>
+                      </div>
+                      <div class="col-md-4">
+                        <button onclick="" class="btn btn-default form-control btn-block" data-toggle="tooltip" data-placement="top" title="Turn  {{name}} off using {{switch.input_off_command}}">Turn off</button>
+                      </div>
+                      <div class="col-md-4">
+                        <button onclick="" class="btn btn-default form-control btn-block" data-toggle="tooltip" data-placement="top" title="Read {{name}}'s status">Read</button>
+                      </div>
+                    </div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-heading"> <span class="glyphicon glyphicon-cd" aria-hidden="true"></span> Spindle</div>
+										<div class="panel-body">
+										</div>
+									</div>
+
+                  <div class="panel panel-default" id="switch_panel">
+                    <div class="panel-heading"> <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span> Switches</div>
+                    <div class="panel-body" id="switch_controls">
+                    </div>
+                  </div>
+
+                  <script id="switch_template" type="text/x-handlebars-template">
+                    <div class="panel panel-default">
+                      <div class="panel-heading text-capitalize">
+                        {{name}}
+                      </div>
+                      <div class="panel-body">
+                        <div style="font-size: 14px;" class="row">
+                          <div class="col-md-4">
+                            <button onclick="" class="btn btn-default form-control btn-block" data-toggle="tooltip" data-placement="top" title="Turn {{name}} on using {{switch.input_on_command}}">Turn on</button>
+                          </div>
+                          <div class="col-md-4">
+                            <button onclick="" class="btn btn-default form-control btn-block" data-toggle="tooltip" data-placement="top" title="Turn  {{name}} off using {{switch.input_off_command}}">Turn off</button>
+                          </div>
+                          <div class="col-md-4">
+                            <button onclick="" class="btn btn-default form-control btn-block" data-toggle="tooltip" data-placement="top" title="Read {{name}}'s status">Read</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </script>
+
+
+
+			</div>
+      <div class="col-md-4">
+
+
+
+			      <div class="panel panel-default">
+			        <div class="panel-heading"> <span class="glyphicon glyphicon-open" aria-hidden="true"></span> Upload file</div>
+			        <div class="panel-body">
+			          <input class="btn btn-default" type="file" id="files" name="files[]" onchange="upload();">
+
+                <div id="uploading_status">
+			          <h3>Uploading file</h3>
+			          <output id="list"></output>
+			          <div id="progress"></div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                    0%
+                  </div>
+                </div>
+			          <script>
+			            document.getElementById('files').addEventListener('change', handleFileSelect, false);
+			          </script>
+                </div>
+                <div id="uploadresult"></div>
+
+			        </div>
+			      </div>
+
+			      <div class="panel panel-default">
+			        <div class="panel-heading"> <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Printable file list</div>
+			        <div class="panel-body">
+
+			          <br/>
+			          <table class="table table-striped" id="fileList"  style="font-size: 14px;">
+									<tr> <th> File </th> <th> Actions </th> </tr>
+			          </table>
+                <!--
+			             <button id="progress" onclick="runCommand('progress', false)" class="btn btn-default">Progress</button>
+			             <button id="abort" onclick="runCommand('abort', false)" class="btn btn-default">Abort</button>
+                -->
+								<button id="refreshFiles" onclick="refreshFiles()" class="btn btn-default"> <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh</button>
+								<button id="display_file_list" onclick="displayFileList('/sd')" class="btn btn-default"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> File browser</button>
+
+			        </div>
+			      </div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading"> <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> Configuration</div>
+							<div class="panel-body">
+								<button class="btn btn-default" onclick="editConfig();"> <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit configuration file</button>
+							</div>
+						</div>
+
+						<div class="panel panel-default" id="switch_panel">
+							<div class="panel-heading"> <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Macros</div>
+							<div class="panel-body" id="switch_controls">
+							</div>
+						</div>
+
+			</div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; Smoothie project</p>
+    </footer>
+
+  </div>
+  <!-- /container -->
+
+	<!--- Start up modal -->
+<div class="modal fade" id="start_modal" tabindex="-1" role="dialog" aria-labelledby="start_modal_label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="start_modal_label">Setting up web interface</h4>
+      </div>
+      <div class="modal-body">
+
+			<div class="row" id="ip_input">
+			  <div class="col-lg-6">
+					We couldn't connect to a Smoothieboard directly, please provide the IP for your board :
+			  </div><!-- /.col-lg-6 -->
+			  <div class="col-lg-6">
+			    <div class="input-group">
+			      <input type="text" class="form-control" placeholder="IP Address">
+			      <span class="input-group-btn">
+			        <button class="btn btn-default" type="button">Connect !</button>
+			      </span>
+			    </div><!-- /input-group -->
+			  </div><!-- /.col-lg-6 -->
+			</div><!-- /.row -->
+			<h2> Log </h2>
+			<ul id="start_log">
+			</ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--- Command log modal -->
+<div class="modal fade" id="command_log_modal" tabindex="-1" role="dialog" aria-labelledby="start_modal_label">
+<div class="modal-dialog modal-lg" role="document">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="start_modal_label">Command log</h4>
+		</div>
+		<div class="modal-body">
+		  <ul id="command_log" class="milestones">
+      </ul>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		</div>
+	</div>
+</div>
+</div>
+
+<!--- Config file edit modal -->
+<div class="modal fade" id="config_edit_modal" tabindex="-1" role="dialog" aria-labelledby="start_modal_label">
+<div class="modal-dialog" role="document" style="width:90%">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="config_edit_modal_label">Configuration file edition</h4>
+		</div>
+		<div class="modal-body">
+			<textarea id="config_content" style="width:100%; height:80%;"></textarea>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-default" data-dismiss="modal" onclick="uploadConfig(false);">Save file</button>
+		  <button type="button" class="btn btn-default" data-dismiss="modal" onclick="uploadConfig(true);">Save file and reset</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		</div>
+	</div>
+</div>
+</div>
+
+<!--- File list modal -->
+<div class="modal fade" id="file_list_modal" tabindex="-1" role="dialog" aria-labelledby="start_modal_label">
+<div class="modal-dialog" role="document" style="width:90%">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="file_list_label">File Browser</h4>
+		</div>
+		<div class="modal-body" id="file_list">
+
+		</div>
+		<div class="modal-footer">
+      <span id="file_actions">
+        <button id="delete_file" class="btn btn-default">Delete</button>
+        <button id="play_file" class="btn btn-default">Play</button>
+      </span>
+		  <button id="display_file_list" onclick="displayFileList('/sd')" class="btn btn-default">Back</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		</div>
+	</div>
+</div>
+</div>
+
+<script id="file_list_template" type="text/x-handlebars-template">
+	<table class="table table-striped">
+		<tr>
+			<th> # </th>
+			<th> File name </th>
+			<th> Size </th>
+		</tr>
+		{{#each files}}
+			<tr>
+				<td> {{id}} </td>
+				<td {{#if folder}} style="font-weight: bold;" {{/if}}> <a href="javascript:void(0)" onclick="{{#if folder}}displayFileList('{{../path}}/{{name}}'){{else}}displayFile('{{../path}}/{{name}}', '{{size}}'){{/if}}"> {{name}} </a> </td>
+				<td> {{size}} </td>
+			</tr>
+		{{/each}}
+	</table>
+</script>
+
+<script id="file_template" type="text/x-handlebars-template">
+	<p> File name :  <b> {{file}} </b> </p>
+	<p> File size :  {{size}} </p>
+	<p> First 100 lines : </p>
+	<p> <pre style="height:50%"> {{data}} </pre> </p>
+</script>
+
+<!--- Currently playing modal -->
+<div class="modal fade" id="playing_modal" tabindex="-1" role="dialog" aria-labelledby="start_modal_label">
+<div class="modal-dialog" role="document">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h4 class="modal-title" id="playing_label">Playing file</h4>
+		</div>
+		<div class="modal-body" id="playing">
+		</div>
+    <div class="modal-body" id="playing_tools">
+    </div>
+		<div class="modal-footer">
+      <button id="abort" onclick="runCommand('abort', false)" class="btn btn-default">Abort</button>
+		  <button type="button" onclick="tuningTools()" class="btn btn-default">Tuning tools</button>
+		</div>
+	</div>
+</div>
+</div>
+
+<script id="playing_template" type="text/x-handlebars-template">
+	<p> File name :  <b> {{file}} </b> </p>
+	<p> Progress : {{percent}}% </p>
+	<p> Elapsed : {{elapsed.hour}}:{{elapsed.minute}}:{{elapsed.second}} </p>
+	<p> Estimated left : {{estimated.hour}}:{{estimated.minute}}:{{estimated.second}} </p>
+	<p>
+		<div class="progress">
+	  	<div class="progress-bar" role="progressbar" aria-valuenow="{{percent}}" aria-valuemin="0" aria-valuemax="100" style="width: {{percent}}%;">
+	    	{{percent}}%
+	  	</div>
+		</div>
+	</p>
+</script>
+
+<script id="tuning_tools_template" type="text/x-handlebars-template">
+  <hr/>
+  {{#each settings}}
+  <div class="row">
+  <div class="col-lg-6">
+    {{title}}
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="..." value="{{value}}">
+      <span class="input-group-addon"> {{unit}} </span>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right">
+          {{#each values}}
+            <li><a href="#">Set to {{this}}</a></li>
+          {{/each}}
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Apply live</a></li>
+          <li><a href="#">Save to config-override</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <!-- <button class="btn btn-default" type="button">Update</button> -->
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+{{/each}}
+</script>
+
+<!--- Jumping modal -->
+<div class="modal fade" id="jumping_modal" tabindex="-1" role="dialog" aria-labelledby="start_modal_label">
+<div class="modal-dialog" role="document">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h4 class="modal-title" id="playing_label">Jump to new location</h4>
+		</div>
+		<div class="modal-body" width="800px">
+      <canvas id="jumping_canvas" width="800px"></canvas>
+		</div>
+		<div class="modal-footer">
+      <button id="abort" onclick="" class="btn btn-default">Close</button>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<script>
+</script>
+
+
+</body>
+
+</html>
