@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Smoothieboard CNC Web by Paul Bristow v2</title>
+	<title>Smoothieboard CNC Mill based on Paul Bristow v2</title>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script type="text/javascript" src="functionscnc.js"></script>
 
@@ -12,6 +12,7 @@
   
     function updatePos() {
         var now = runCommandCallback("M114", false);
+        var now = runCommandCallback2("M114.2", false);
     }
   
     updatePos();
@@ -25,15 +26,16 @@
 
 <body>
 
-<h1>Pangloss Labs OX CNC Control</h1>
-
-<input id="pos" name="pos" type="text" value="" size="40" hidden="true"/>
+<input id="pos" name="pos" type="text" value="" size="2" hidden="true"/>
 
 <table>
 <tr>
+
+<button id="reset_smoothie" onclick="reset_smoothie(event)">Reset_Smoothie</button>      
+<button id="motors_off" onclick="motorsOff(event)">Motors Off</button>
+<button id="motors_on" onclick="motorsOn(event)">Motors On</button>
   <td valign="top">
 
-<button id="motors_off" onclick="motorsOff(event)">Motors Off</button>
 
 XY:<input type="text" id="xy_velocity" size=4 value=5000 style="width:50px" />mm/min
 
@@ -41,7 +43,6 @@ Z:<input type="text" id="z_velocity" size=3 value=800 style="width:45px">
 <br/>
 
   <svg width="320" height="260" xmlns="http://www.w3.org/2000/svg" version="1.1">
-
     <defs>
 
         <style type="text/css"><![CDATA[
@@ -113,21 +114,21 @@ Z:<input type="text" id="z_velocity" size=3 value=800 style="width:45px">
         </symbol>
 
         <symbol id="JogRose" viewBox="20 -10 260 260">
-            <g id="HomeAll" onmouseup="runCommandSilent('G28 X0Y0')">
+            <g id="HomeAll" onmouseup="runCommandSilent('G0 X0Y0Z0')">
                 <path class="std" d="M10 182.5 h-10 v57.5 h57.5 v-10 a 125,125 0 0,1 -47.5 -47.5 Z" fill="#f0f0f0">
                     <set attributeName="fill" to="orange" begin="mouseover" end="mouseout"/>
                 </path>
                 <use x="3" y="217" width="20" height="18" xlink:href="#HomeIcon"/>
             </g>
 
-            <g id="HomeX" onmouseup="runCommandSilent('G28 X0')">
+            <g id="HomeX" onmouseup="runCommandSilent('G0 X0')">
                 <path class="std" d="M10 57.50 h-10 v-57.5 h57.5 v10 a 125,125 0 0,0 -47.5 47.5 Z" fill="Khaki">
                     <set attributeName="fill" to="orange" begin="mouseover" end="mouseout"/>
                 </path>
                 <use x="3" y="5" width="20" height="18" xlink:href="#HomeIcon"/>
                 <text x="25" y="20" class="home"> X </text>
             </g>
-            <g id="HomeY" onmouseup="runCommandSilent('G28 Y0')">
+            <g id="HomeY" onmouseup="runCommandSilent('G0 Y0')">
                 <path class="std" d="M230 57.50 h10 v-57.5 h-57.5 v10 a 125,125 0 0,1 47.5 47.5 z" fill="SteelBlue">
                     <set attributeName="fill" to="orange" begin="mouseover" end="mouseout"/>
                 </path>
@@ -135,7 +136,7 @@ Z:<input type="text" id="z_velocity" size=3 value=800 style="width:45px">
                 <text x="202" y="20" class="home"> Y </text>
             </g>
 
-            <g id="HomeZ" onmouseup="runCommandSilent('G28 Z0 G01 Z5')">
+            <g id="HomeZ" onmouseup="runCommandSilent('G0 Z0')">
                 <path class="std" d="M230 182.5 h10 v57.5 h-57.5 v-10 a 125,125 0 0,0 47.5 -47.5 z" fill="DarkSeaGreen">
                     <set attributeName="fill" to="orange" begin="mouseover" end="mouseout"/>
                 </path>
@@ -143,23 +144,23 @@ Z:<input type="text" id="z_velocity" size=3 value=800 style="width:45px">
                 <text x="202" y="232" class="home"> Z </text>
             </g>
 
-            <g id="Jog100" fill="#c0c0c0" class="std">
-                <g id="Y+100" onmouseup="jogXYClick('Y100')" transform="translate(120 120)">
+            <g id="Jog20" fill="#c0c0c0" class="std">
+                <g id="Y+20" onmouseup="jogXYClick('Y20')" transform="translate(120 120)">
                     <path class="std" d="M-60 -67.07 L-75.93,-83 A112.5,112.5 0 0,1 75,-83 L60,-67.07 A90,90 0 0,0 -60.00,-67.07 z">
                         <set attributeName="fill" to="orange" begin="mouseover" end="mouseout" />
                     </path>
                 </g>
-                <g id="X+100" onmouseup="jogXYClick('X100')" transform="translate(120 120)">
+                <g id="X+20" onmouseup="jogXYClick('X20')" transform="translate(120 120)">
                     <path class="std" d="M67.07,-60 L83,-75.93 A112.5,112.5 0 0,1 83,75.93 L67.07,60 A90,90 0 0,0 67.07,-60">
                         <set attributeName="fill" to="orange" begin="mouseover" end="mouseout"/>
                     </path>
                 </g>
-                <g id="Y-100" onmouseup="jogXYClick('Y-100')" transform="translate(120 120)">
+                <g id="Y-20" onmouseup="jogXYClick('Y-20')" transform="translate(120 120)">
                     <path class="std" d="M-60,67.07 L-75.93,83 A112.5,112.5 0 0,0 75,83 L60,67.07 A90,90 0 0,1 -60.00,67.07 z">
                         <set attributeName="fill" to="orange" begin="mouseover" end="mouseout"/>
                     </path>
                 </g>
-                <g id="X-100" onmouseup="jogXYClick('X-100')" transform="translate(120 120)">
+                <g id="X-20" onmouseup="jogXYClick('X-20')" transform="translate(120 120)">
                     <path class="std" d="M-67.07,-60 L-83,-75.93 A112.5,112.5 0 0,0 -83,75.93 L-67.07,60 A90,90 0 0,1 -67.07,-60 z">
                         <set attributeName="fill" to="orange" begin="mouseover" end="mouseout"/>
                     </path>
@@ -244,7 +245,7 @@ Z:<input type="text" id="z_velocity" size=3 value=800 style="width:45px">
                     <text class="scl" x="137" y="99" font-size="10"> 0.1 </text>
                     <text class="scl" x="155" y="85" font-size="14"> 1  </text>
                     <text class="scl" x="166" y="70" font-size="15"> 10 </text>
-                    <text class="scl" x="182" y="50" font-size="15"> 100 </text>
+                    <text class="scl" x="182" y="50" font-size="15"> 20 </text>
                 </g>
             </g>
             <g id="Decoration" pointer-events="none"
@@ -326,45 +327,61 @@ Z:<input type="text" id="z_velocity" size=3 value=800 style="width:45px">
   </svg>
 
   </td>
-  <td valign="top">
+  <td>
+
+    <table
+    <tr>
+
+</tr>
+</table>
+
+  </td>
+</tr>
+</table>
+
+<button id="spindle_on" onclick="spindleON(event)">Spindle On</button>
+<button id="spindle_off" onclick="spindleOFF(event)">Spindle Off</button>
     <table>
-       <tr><h3>XYZ Axis Control</h3></tr> 
+       <tr><h4>XYZ Axis Control</h4></tr> 
        <tr> 
         <td></td>
         <td></td>
-        <td style="text-align:center">Requested</td>
-        <td style="text-align:center">Actual</td>
+        <td style="text-align:center">Wpos</td>
+        <td style="text-align:center">Mpos</td>
+        <td style="text-align:center">Over</td>
         <td></td>
       </tr>
       <tr>
         <td style="text-align:right">X Axis:</td>
         <td><button id="zero_x" onclick="zeroX(event)">Zero X</button></td>
-        <td><input type="text" id="x_requested" size=3 style="width:80px" value=0></td>
-        <td><input type="text" id="x_position" size=3 style="width:80px" value=0></td>
+        <td><input type="text" id="x_Wpos" size=3 style="width:80px" value=0></td>
+        <td><input type="text" id="x_Mpos" size=3 style="width:80px" value=0></td>
         <td><input type="text" id="x_override" size=3 style="width:60px" value=0></td>
         <td><button id="set_x" onclick="posXset()">Override X</button></td>
       </tr>
       <tr>
         <td style="text-align:right">Y Axis:</td>
         <td><button id="zero_y" onclick="zeroY(event)">Zero Y</button></td>
-        <td><input type="text" id="y_requested" size=3 style="width:80px" value=0></td>
-        <td><input type="text" id="y_position" size=3 style="width:80px" value=0></td>
+        <td><input type="text" id="y_Wpos" size=3 style="width:80px" value=0></td>
+        <td><input type="text" id="y_Mpos" size=3 style="width:80px" value=0></td>
         <td><input type="text" id="y_override" size=3 style="width:60px" value=0></td>
         <td><button id="set_y" onclick="posYset()">Override Y</button></td>
       </tr>
       <tr>
         <td style="text-align:right">Z Axis:</td>
         <td><button id="zero_z" onclick="zeroZ(event)">Zero Z</button></td>
-        <td><input type="text" id="z_requested" size=3 style="width:80px" value=0></td>
-        <td><input type="text" id="z_position" size=3 style="width:80px" value=0></td>
+        <td><input type="text" id="z_Wpos" size=3 style="width:80px" value=0></td>
+        <td><input type="text" id="z_Mpos" size=3 style="width:80px" value=0></td>
         <td><input type="text" id="z_override" size=3 style="width:60px" value=0></td>
         <td><button id="set_z" onclick="posZset()">Override Z</button></td>
       </tr>
-    </table>
-    <table
-    <tr>
-   <td><h3>Commands</h3>
-<p>Handy commands are M119 (end stops), G01 XYZF (go to position X,Y,Z at feedrate F)</p> 
+    </table>  
+  <td><h4>Commands</h4> 
+<button id="home_endstop" onclick="home_endstop(event)">Home to Endstop</button>
+<button id="unlock_endstop" onclick="unlock_endstop(event)">Unlock Endstop and Error</button>
+<button id="auto_probe" onclick="auto_probe(event)">Auto Probe</button>
+
+
 <form action="/command" id="commandForm">
 		<input type="text" name="commandText" placeholder="Send Command...">
 		<input type="submit" value="Send">
@@ -394,17 +411,10 @@ Z:<input type="text" id="z_velocity" size=3 value=800 style="width:45px">
 </script>
 
 </td>
-</tr>
-</table>
-
-  </td>
-</tr>
-</table>
-
-<h2> Upload Gcode File </h2>
+<h4> Upload Gcode File </h4>
 <input type="file" id="files" name="files[]" onchange="upload();">
 
-<h3>Uploading gcode file(s)</h3>
+<h4>Uploading gcode file(s)</h4>
 <output id="list"></output>
 <div id="progress"></div>
 <div id="uploadresult"></div>
@@ -412,7 +422,7 @@ Z:<input type="text" id="z_velocity" size=3 value=800 style="width:45px">
   document.getElementById('files').addEventListener('change', handleFileSelect, false);
 </script>
 
-<h2>Machineable file list <button id="getgcodeFile" onclick="getgcodeFiles()">Refresh</button> </h2>
+<h4>Machineable file list <button id="getgcodeFile" onclick="getgcodeFiles()">Refresh</button> </h4>
 <br/>
 <table id="fileList">
 </table>
